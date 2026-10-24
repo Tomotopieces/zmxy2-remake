@@ -8,6 +8,7 @@ const HEADS := [&"wait1", &"wait2", &"wait3", &"wait4", &"wait5"]
 var _head: StringName = &"wait1"
 var _swap := 0.0
 var _puppet: Monster
+var _summoned := false   ## the puppet comes once: killed, it stays dead like any other monster
 
 func setup() -> void:
 	m.fly = true
@@ -29,7 +30,8 @@ func custom_animation() -> bool:
 	return true
 
 func think(delta: float) -> void:
-	if _puppet == null:
+	if not _summoned:
+		_summoned = true
 		_puppet = m.summon(35, m.global_position)
 	m.velocity = Vector2.ZERO
 	if m.state != Monster.State.MOVE:
