@@ -94,10 +94,12 @@ func _adjust_incoming(h: Hit, dmg: int) -> int:
 		return 1
 	return dmg
 
-## 反伤架势: the attacker takes twice its own attack, ignoring defense, with no knockback.
+## 反伤架势: the attacker takes twice its own attack power (Role3.checkAttackBack: getRealPower x2), ignoring defense,
+## with no knockback.
 func _after_damage(h: Hit, _dmg: int) -> void:
 	if _in_stance() and is_instance_valid(h.source) and h.source is Monster:
-		(h.source as Monster).hurt_directly(int(h.damage * float(data.kit.reflect.mul)))
+		var m := h.source as Monster
+		m.hurt_directly(int(m.outgoing_damage(h.attack) * float(data.kit.reflect.mul)))
 
 func _count_lock() -> void:
 	if not _in_stance():

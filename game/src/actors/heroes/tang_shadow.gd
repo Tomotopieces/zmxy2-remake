@@ -33,7 +33,10 @@ func _ready() -> void:
 	Timers.start(self, life, func(): if not _busy: queue_free())   # (a cast in progress frees it when it ends)
 
 func _physics_process(delta: float) -> void:
-	velocity.x = 0.0 if _busy else facing * speed
+	if _busy:
+		velocity = Vector2.ZERO   # casting holds it in place, no gravity (Role2Shadow.doHit3: setStatic)
+		return
+	velocity.x = facing * speed
 	velocity.y += hero.data.gravity * delta
 	move_and_slide()
 

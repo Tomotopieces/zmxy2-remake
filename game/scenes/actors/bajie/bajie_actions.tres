@@ -2282,10 +2282,10 @@ tracks/51/path = NodePath("Hitbox/Shape:disabled")
 tracks/51/interp = 0
 tracks/51/loop_wrap = true
 tracks/51/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.29166667),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false]
+"values": [false, true]
 }
 tracks/52/type = "value"
 tracks/52/imported = false
@@ -3753,7 +3753,7 @@ tracks/41/keys = {
 "times": PackedFloat32Array(0.16666667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(6.7, 10.3)]
+"values": [Vector2(-2.8, 13.3)]
 }
 tracks/42/type = "value"
 tracks/42/imported = false
@@ -3765,7 +3765,7 @@ tracks/42/keys = {
 "times": PackedFloat32Array(0.16666667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(103, 78)]
+"values": [Vector2(150, 150)]
 }
 tracks/43/type = "value"
 tracks/43/imported = false

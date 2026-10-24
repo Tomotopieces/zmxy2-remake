@@ -98,19 +98,21 @@
 [ext_resource type="PackedScene" path="res://assets/puppets/tangseng/slots/slot1038_11.tscn" id="96_p86fq"]
 [ext_resource type="PackedScene" path="res://assets/puppets/tangseng/slots/slot1038_12.tscn" id="97_7fvk7"]
 [ext_resource type="Texture2D" uid="uid://kym7eyjb417t" path="res://assets/puppets/tangseng/tex/Role_v6_1039.png" id="98_xje0y"]
-[ext_resource type="Texture2D" uid="uid://cjw728tdl4eqj" path="res://assets/shared/puppets/3_544.png" id="99_hvked"]
+[ext_resource type="Texture2D" uid="uid://drasw208q6p8y" path="res://assets/shared/puppets/3_535.png" id="99_du3dg"]
 [ext_resource type="PackedScene" path="res://assets/puppets/tangseng/slots/slot1050_2.tscn" id="100_yhhpv"]
+[ext_resource type="Texture2D" uid="uid://covh4icwghqlx" path="res://assets/puppets/tangseng/tex/Role_v6_1051.png" id="101_77546"]
 [ext_resource type="Texture2D" uid="uid://bpist6kwl8kop" path="res://assets/puppets/tangseng/tex/Role_v6_1058.png" id="102_hl0uo"]
 [ext_resource type="Texture2D" uid="uid://b3f13loydhl3c" path="res://assets/puppets/tangseng/tex/Role_v6_1059.png" id="103_mnc1e"]
 [ext_resource type="Texture2D" uid="uid://5n5w7u2pesl0" path="res://assets/puppets/tangseng/tex/Role_v6_1060.png" id="104_lo1mv"]
+[ext_resource type="Texture2D" uid="uid://dwnugiiu6kr13" path="res://assets/puppets/tangseng/tex/Role_v6_1052.png" id="105_i5oji"]
 [ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="106_jvg4u"]
-[ext_resource type="Texture2D" uid="uid://berck66uxc6pe" path="res://assets/shared/puppets/3_564.png" id="107_nsb7l"]
-[ext_resource type="Texture2D" uid="uid://ffiuo2s3t3ix" path="res://assets/shared/puppets/3_549.png" id="108_0sdwu"]
+[ext_resource type="Texture2D" uid="uid://b2jpqafufo85r" path="res://assets/shared/puppets/3_576.png" id="107_bssql"]
+[ext_resource type="Texture2D" uid="uid://d3s7w2vfxq1r7" path="res://assets/shared/puppets/3_561.png" id="108_fkbxp"]
 [ext_resource type="Texture2D" uid="uid://bu3rxbl5hy0rj" path="res://assets/shared/puppets/3_558.png" id="109_c6hu0"]
 [ext_resource type="Texture2D" uid="uid://cof7kp8hmxu2h" path="res://assets/shared/puppets/3_578.png" id="110_a7p0g"]
 [ext_resource type="Texture2D" uid="uid://cyobtyyviu7as" path="res://assets/shared/puppets/3_550.png" id="111_a2fwa"]
 [ext_resource type="PackedScene" path="res://assets/puppets/tangseng/slots/slot1069_2.tscn" id="112_p5ji6"]
-[ext_resource type="Texture2D" uid="uid://ct3ngyrdce3su" path="res://assets/puppets/tangseng/tex/Role_v6_1075.png" id="113_jqj4c"]
+[ext_resource type="Texture2D" uid="uid://bckgnxo60gg65" path="res://assets/puppets/tangseng/tex/Role_v6_1092.png" id="113_kv4yi"]
 [ext_resource type="Texture2D" uid="uid://dollxpdf4k3c7" path="res://assets/shared/puppets/3_559.png" id="114_bd55w"]
 [ext_resource type="Texture2D" uid="uid://c5q7qe4upkt56" path="res://assets/puppets/tangseng/tex/Role_v6_1073.png" id="115_k31mh"]
 [ext_resource type="Texture2D" uid="uid://bdwtpa6hs521k" path="res://assets/shared/puppets/3_557.png" id="116_ubvc3"]
@@ -904,11 +906,12 @@ variants = {
 }
 
 [node name="Hit1" type="Node2D" parent="Poses" unique_id=429108975]
+visible = false
 
 [node name="Hit1Slot1" type="Node2D" parent="Poses/Hit1" unique_id=2113583555]
-position = Vector2(-41.1, -80.45)
-rotation = -0.20857815
-scale = Vector2(0.99966645, 0.99966645)
+position = Vector2(-19.5, -85.8)
+rotation = -0.100166164
+scale = Vector2(1.0000125, 1.0000125)
 script = ExtResource("2_77546")
 kind = "wing"
 variants = {
@@ -917,9 +920,9 @@ variants = {
 }
 
 [node name="Hit1Part1" type="Sprite2D" parent="Poses/Hit1" unique_id=2099683677]
-position = Vector2(-32.2, -18.45)
+position = Vector2(-16.949999, -30.2)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("99_hvked")
+texture = ExtResource("99_du3dg")
 centered = false
 
 [node name="Hit1Slot2" type="Node2D" parent="Poses/Hit1" unique_id=55863443]
@@ -930,9 +933,10 @@ variants = {
 }
 
 [node name="Hit1Slot3" type="Node2D" parent="Poses/Hit1" unique_id=68385337]
-position = Vector2(-38.9, 2.85)
-rotation = -0.4332455
-scale = Vector2(1.0004319, 1.0004319)
+position = Vector2(12.3, 14.15)
+rotation = -0.15264933
+scale = Vector2(0.9996239, 0.9997765)
+skew = -0.0009886026
 script = ExtResource("2_77546")
 kind = "weapon"
 variants = {
@@ -946,19 +950,20 @@ variants = {
 }
 
 [node name="Hit1Part2" type="Sprite2D" parent="Poses/Hit1" unique_id=768184972]
-visible = false
-position = Vector2(13.350002, 5.5999994)
+position = Vector2(11, 9.299999)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("150_3avio")
+texture = ExtResource("101_77546")
 centered = false
 
 [node name="Hit1Part3" type="Sprite2D" parent="Poses/Hit1" unique_id=442382248]
+visible = false
 position = Vector2(-42.4, -10.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("102_hl0uo")
 centered = false
 
 [node name="Hit1Slot4" type="Node2D" parent="Poses/Hit1" unique_id=238744090]
+visible = false
 position = Vector2(-18.25, -0.75)
 rotation = 0.88197964
 scale = Vector2(0.8432657, 0.8432657)
@@ -978,10 +983,10 @@ variants = {
 }
 
 [node name="Hit1Slot5" type="Node2D" parent="Poses/Hit1" unique_id=1667478169]
-position = Vector2(-4.15, 20.5)
-rotation = -0.091650605
-scale = Vector2(1.0052189, 1.2196892)
-skew = 0.058029175
+position = Vector2(1.35, 22.45)
+rotation = -0.04192553
+scale = Vector2(0.8827758, 1.105)
+skew = 0.04192543
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -998,10 +1003,8 @@ variants = {
 }
 
 [node name="Hit1Slot6" type="Node2D" parent="Poses/Hit1" unique_id=745939700]
-position = Vector2(-7.3, 7.2)
-rotation = -0.19778286
-scale = Vector2(1.0127437, 0.99961245)
-skew = 0.0045073032
+position = Vector2(0.3, 7.95)
+scale = Vector2(0.906, 1)
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1018,10 +1021,8 @@ variants = {
 }
 
 [node name="Hit1Slot7" type="Node2D" parent="Poses/Hit1" unique_id=1528598791]
-position = Vector2(-7.3, 6.6)
-rotation = -0.21689057
-scale = Vector2(0.9758632, 1.0005924)
-skew = -0.0006943941
+position = Vector2(0.25, 8.55)
+scale = Vector2(0.899, 1)
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1035,12 +1036,14 @@ variants = {
 }
 
 [node name="Hit1Part4" type="Sprite2D" parent="Poses/Hit1" unique_id=158675167]
+visible = false
 position = Vector2(-34.949997, -13.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("103_mnc1e")
 centered = false
 
 [node name="Hit1Slot8" type="Node2D" parent="Poses/Hit1" unique_id=429476267]
+visible = false
 position = Vector2(-38.9, 2.85)
 rotation = -0.4332455
 scale = Vector2(1.0004319, 1.0004319)
@@ -1057,9 +1060,9 @@ variants = {
 }
 
 [node name="Hit1Slot9" type="Node2D" parent="Poses/Hit1" unique_id=1795059186]
-position = Vector2(-24.6, -5.05)
-rotation = 1.2566358
-scale = Vector2(0.99994093, 0.99994093)
+position = Vector2(10.75, -2.7)
+rotation = -0.017998056
+scale = Vector2(1.000162, 1.000162)
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1076,10 +1079,10 @@ variants = {
 }
 
 [node name="Hit1Slot10" type="Node2D" parent="Poses/Hit1" unique_id=2137637094]
-visible = false
-position = Vector2(18.8, 9.7)
-rotation = -0.52447706
-scale = Vector2(1.0004784, 1.0004784)
+position = Vector2(12.3, 14.15)
+rotation = -0.15264933
+scale = Vector2(0.9996239, 0.9997765)
+skew = -0.0009886026
 script = ExtResource("2_77546")
 kind = "weapon"
 variants = {
@@ -1093,22 +1096,22 @@ variants = {
 }
 
 [node name="Hit1Part5" type="Sprite2D" parent="Poses/Hit1" unique_id=959803029]
+visible = false
 position = Vector2(-42.5, -52.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("104_lo1mv")
 centered = false
 
 [node name="Hit1Part6" type="Sprite2D" parent="Poses/Hit1" unique_id=951754754]
-visible = false
-position = Vector2(-29.849998, -52.1)
+position = Vector2(-25.949999, -54.35)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("152_wagk8")
+texture = ExtResource("105_i5oji")
 centered = false
 
 [node name="Hit1Slot11" type="Node2D" parent="Poses/Hit1" unique_id=1367306383]
-position = Vector2(-23.3, -47.45)
-rotation = -0.068031125
-scale = Vector2(1.000314, 1.000314)
+position = Vector2(-6.65, -49.95)
+rotation = -0.047012378
+scale = Vector2(1.000105, 1.000105)
 script = ExtResource("2_77546")
 variants = {
 2: ExtResource("67_ekhut"),
@@ -1126,9 +1129,9 @@ variants = {
 visible = false
 
 [node name="Hit3Slot1" type="Node2D" parent="Poses/Hit3" unique_id=1186122491]
-position = Vector2(-21.4, -84.75)
-rotation = -0.100166164
-scale = Vector2(1.0000125, 1.0000125)
+position = Vector2(-84.15, -19.35)
+rotation = -1.0507821
+scale = Vector2(1.0002165, 1.0002165)
 script = ExtResource("2_77546")
 kind = "wing"
 variants = {
@@ -1140,16 +1143,18 @@ variants = {
 material = SubResource("ShaderMaterial_858ag")
 position = Vector2(-79.05, 2.2980003)
 scale = Vector2(0.5, 0.1385)
-texture = ExtResource("107_nsb7l")
+texture = ExtResource("107_bssql")
 centered = false
 
 [node name="Hit3Part2" type="Sprite2D" parent="Poses/Hit3" unique_id=1149709729]
-position = Vector2(-16.95, -30.2)
+visible = false
+position = Vector2(-13.900001, -19.8)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("108_0sdwu")
+texture = ExtResource("108_fkbxp")
 centered = false
 
 [node name="Hit3Slot2" type="Node2D" parent="Poses/Hit3" unique_id=864858226]
+visible = false
 position = Vector2(13.45, 14.15)
 rotation = -0.15264933
 scale = Vector2(0.9996239, 0.9997765)
@@ -1167,6 +1172,7 @@ variants = {
 }
 
 [node name="Hit3Part3" type="Sprite2D" parent="Poses/Hit3" unique_id=352865415]
+visible = false
 position = Vector2(-28.7, -31.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("109_c6hu0")
@@ -1195,6 +1201,7 @@ variants = {
 }
 
 [node name="Hit3Part5" type="Sprite2D" parent="Poses/Hit3" unique_id=733503699]
+visible = false
 position = Vector2(6.2999997, -17.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("111_a2fwa")
@@ -1228,10 +1235,10 @@ variants = {
 }
 
 [node name="Hit3Slot6" type="Node2D" parent="Poses/Hit3" unique_id=1053641639]
-position = Vector2(6.15, 21.2)
-rotation = -0.04164258
-scale = Vector2(0.9368121, 1.173)
-skew = 0.041642547
+position = Vector2(1.95, 21.55)
+rotation = -0.22503829
+scale = Vector2(0.93661624, 1.1725093)
+skew = 0.042362332
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1248,10 +1255,10 @@ variants = {
 }
 
 [node name="Hit3Slot7" type="Node2D" parent="Poses/Hit3" unique_id=63196013]
-position = Vector2(4.05, 6.65)
-rotation = -0.29557854
-scale = Vector2(0.9063029, 1.0005563)
-skew = -0.00056910515
+position = Vector2(-1.35, 13.1)
+rotation = -0.9144952
+scale = Vector2(0.9062742, 1.0004745)
+skew = -0.000605464
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1285,9 +1292,9 @@ variants = {
 }
 
 [node name="Hit3Slot9" type="Node2D" parent="Poses/Hit3" unique_id=23967342]
-position = Vector2(-15.5, 15.1)
-rotation = 0.039019223
-scale = Vector2(0.999761, 0.999761)
+position = Vector2(-18.2, 36.5)
+rotation = -0.36602542
+scale = Vector2(1.00026, 1.00026)
 script = ExtResource("2_77546")
 kind = "weapon"
 variants = {
@@ -1301,6 +1308,7 @@ variants = {
 }
 
 [node name="Hit3Slot10" type="Node2D" parent="Poses/Hit3" unique_id=1816704317]
+visible = false
 position = Vector2(4.6, 6.75)
 rotation = -0.10476048
 scale = Vector2(0.8989282, 1.0005249)
@@ -1318,10 +1326,9 @@ variants = {
 }
 
 [node name="Hit3Slot11" type="Node2D" parent="Poses/Hit3" unique_id=1394182502]
-position = Vector2(-8.25, -17.05)
-rotation = 2.6613991
-scale = Vector2(1.0001065, 0.99964494)
-skew = 0.00088715553
+position = Vector2(-13.25, 20.15)
+rotation = 0.4278687
+scale = Vector2(1.0001625, 1.0001625)
 script = ExtResource("2_77546")
 kind = "cloth_ex"
 variants = {
@@ -1338,6 +1345,7 @@ variants = {
 }
 
 [node name="Hit3Slot12" type="Node2D" parent="Poses/Hit3" unique_id=794766001]
+visible = false
 position = Vector2(1.45, 23.4)
 rotation = -0.04192553
 scale = Vector2(0.8827758, 1.105)
@@ -1358,6 +1366,7 @@ variants = {
 }
 
 [node name="Hit3Slot13" type="Node2D" parent="Poses/Hit3" unique_id=26568881]
+visible = false
 position = Vector2(0.4, 8.9)
 scale = Vector2(0.906, 1)
 script = ExtResource("2_77546")
@@ -1376,12 +1385,13 @@ variants = {
 }
 
 [node name="Hit3Part6" type="Sprite2D" parent="Poses/Hit3" unique_id=691687435]
-position = Vector2(-41.55, -40.45)
+position = Vector2(-51.2, -20)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("113_jqj4c")
+texture = ExtResource("113_kv4yi")
 centered = false
 
 [node name="Hit3Slot14" type="Node2D" parent="Poses/Hit3" unique_id=486059255]
+visible = false
 position = Vector2(0.35, 9.5)
 scale = Vector2(0.899, 1)
 script = ExtResource("2_77546")
@@ -1397,6 +1407,7 @@ variants = {
 }
 
 [node name="Hit3Slot15" type="Node2D" parent="Poses/Hit3" unique_id=257445743]
+visible = false
 position = Vector2(13.45, 14.15)
 rotation = -0.15264933
 scale = Vector2(0.9996239, 0.9997765)
@@ -1414,6 +1425,7 @@ variants = {
 }
 
 [node name="Hit3Slot16" type="Node2D" parent="Poses/Hit3" unique_id=575284402]
+visible = false
 position = Vector2(10.35, -3.7)
 rotation = -0.017998056
 scale = Vector2(1.000162, 1.000162)
@@ -1433,12 +1445,14 @@ variants = {
 }
 
 [node name="Hit3Part7" type="Sprite2D" parent="Poses/Hit3" unique_id=455163747]
+visible = false
 position = Vector2(-23.5, -55.2)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("114_bd55w")
 centered = false
 
 [node name="Hit3Slot17" type="Node2D" parent="Poses/Hit3" unique_id=135282267]
+visible = false
 position = Vector2(-5.9, -36.35)
 rotation = 2.0509899
 scale = Vector2(1.0001065, 1.0001065)
@@ -1455,12 +1469,14 @@ variants = {
 }
 
 [node name="Hit3Part8" type="Sprite2D" parent="Poses/Hit3" unique_id=373372063]
+visible = false
 position = Vector2(-10.8, -39.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("115_k31mh")
 centered = false
 
 [node name="Hit3Slot18" type="Node2D" parent="Poses/Hit3" unique_id=1271681052]
+visible = false
 position = Vector2(1.25, -23.1)
 rotation = -3.1375928
 scale = Vector2(1.000008, 1.000008)
@@ -1480,15 +1496,16 @@ variants = {
 }
 
 [node name="Hit3Part9" type="Sprite2D" parent="Poses/Hit3" unique_id=1436453180]
+visible = false
 position = Vector2(-25.95, -54.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("116_ubvc3")
 centered = false
 
 [node name="Hit3Slot19" type="Node2D" parent="Poses/Hit3" unique_id=969291766]
-position = Vector2(-6.4, -49.7)
-rotation = -0.044015598
-scale = Vector2(0.9999685, 0.9999685)
+position = Vector2(-36.3, -14.4)
+rotation = -0.31195006
+scale = Vector2(1.0002766, 1.0002766)
 script = ExtResource("2_77546")
 variants = {
 2: ExtResource("67_ekhut"),
@@ -2985,6 +3002,6 @@ shape = SubResource("RectangleShape2D_s8snb")
 callback_mode_process = 0
 libraries/ = ExtResource("170_taced")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1760281556]
 position = Vector2(0.5, -4.2)
 shape = SubResource("RectangleShape2D_Body")

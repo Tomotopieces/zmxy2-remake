@@ -49,6 +49,7 @@ var _last_attack_at := -100.0
 var _no_gravity := false
 var _no_input := false
 var _hit10_down := false
+var _hit10_from := Vector2.ZERO   ## 火魔斩: where he took off; the enemies "nearby" are measured from there
 var _hit10_land := false   ## 火魔斩's animation has run out while he is still falling: the move waits for the landing
 var _lock_count := 0
 var _last_hurt_at := -100.0
@@ -447,6 +448,7 @@ func _on_puppet_event(n: StringName, args: Array) -> void:
 				"set_lost_keyboard":
 					_no_input = true
 				"add_hit10_pre":
+					_hit10_from = global_position
 					Fx.spawn("fx_hit10_pre", global_position + Vector2(0, 20), -facing)   # art faces the other way
 				"add_hit10_and1":
 					_hit10_seek()
@@ -485,7 +487,7 @@ func _hit10_seek() -> void:
 			continue
 		var r: Rect2 = m.hurt_rect()
 		if r.position.x > v.position.x + 20 and r.position.x < v.end.x - 20 \
-				and m.global_position.distance_to(global_position) <= ex.seek_radius:
+				and m.global_position.distance_to(_hit10_from) <= ex.seek_radius:   # (from the take-off: by now he is ~200 px up)
 			Snd.sfx("Role1_hit10_2", SKILL_PITCH)
 			_skill_projectile("wukong_hit10_1", &"hit10_1", m.global_position).push_dir = facing   # the combo drives the target the way he faces
 			global_position = m.global_position + Vector2(0, -2)
@@ -612,7 +614,8 @@ func take_hit(h: Hit) -> bool:
 	_after_damage(h, dmg)
 	if (transformed and data.super_armor_in_rage) or _super_armor():
 		return true   # super armor: damage only, no knockback or hit stun (Role1.beAttackDoing)
-	velocity = Vector2(h.attack.knockback.x * h.direction, h.attack.knockback.y)
+	if not (transformed and not data.knockback_in_rage):
+		velocity = Vector2(h.attack.knockback.x * h.direction, h.attack.knockback.y)
 	if state == State.HURT:
 		puppet.play(&"hurt", true)
 	else:
