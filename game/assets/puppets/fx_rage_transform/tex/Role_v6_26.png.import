@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1w887bvrc421"
-path="res://.godot/imported/2_87.png-e67295165eaf87b701c03e645573cad6.ctex"
+uid="uid://b0vx31qe7i2mg"
+path="res://.godot/imported/Role_v6_26.png-6988e68dc410d2f40bd3bc5ff2297e1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/puppets/doorcalled/tex/2_87.png"
-dest_files=["res://.godot/imported/2_87.png-e67295165eaf87b701c03e645573cad6.ctex"]
+source_file="res://assets/puppets/fx_rage_transform/tex/Role_v6_26.png"
+dest_files=["res://.godot/imported/Role_v6_26.png-6988e68dc410d2f40bd3bc5ff2297e1e.ctex"]
 
 [params]
 

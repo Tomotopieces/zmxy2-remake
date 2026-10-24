@@ -1,15 +1,10 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://assets/puppets/fx_rage_transform/tex/Role_v6_1.png" id="1_olc3v"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/Common_v7_448.png" id="2_ob3qs"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/Common_v7_450.png" id="3_4fo4y"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/Common_v7_452.png" id="4_cj5ac"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/Common_v7_454.png" id="5_qqf51"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/Common_v7_456.png" id="6_hkdxy"]
-[ext_resource type="Texture2D" path="res://assets/puppets/fx_rage_transform/tex/Role_v6_6.png" id="7_0ge6c"]
-[ext_resource type="Texture2D" path="res://assets/puppets/fx_rage_transform/tex/Role_v6_29.png" id="8_f86kt"]
-[ext_resource type="Texture2D" path="res://assets/puppets/fx_rage_transform/tex/Role_v6_2.png" id="9_ukjk7"]
-[ext_resource type="Texture2D" path="res://assets/puppets/fx_rage_transform/tex/Role_v6_4.png" id="10_kqut3"]
 
 [sub_resource type="Animation" id="Animation_5kui3"]
 loop_mode = 1
@@ -148,11 +143,11 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Part6:visible")
+tracks/11/path = NodePath("Wukong/Part1:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.041666668),
+"times": PackedFloat32Array(0, 0.041667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -160,23 +155,23 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Part6:transform")
+tracks/12/path = NodePath("Wukong/Part2:visible")
 tracks/12/interp = 0
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.041667, 0.083333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.278, 0, 0, 0.278, -800.67316, -71.859604)]
+"values": [false, true, false]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Part7:visible")
+tracks/13/path = NodePath("Wukong/Part3:visible")
 tracks/13/interp = 0
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336),
+"times": PackedFloat32Array(0, 0.083333, 0.125),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
@@ -184,23 +179,23 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Part7:transform")
+tracks/14/path = NodePath("Wukong/Part4:visible")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0.041666668),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.125, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.3125, 0, 0, 0.3125, -733.5375, -82.05)]
+"values": [false, true, false]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Part8:visible")
+tracks/15/path = NodePath("Wukong/Part5:visible")
 tracks/15/interp = 0
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.125),
+"times": PackedFloat32Array(0, 0.166667, 0.208333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
@@ -208,47 +203,47 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Part8:transform")
+tracks/16/path = NodePath("Wukong/Part6:visible")
 tracks/16/interp = 0
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(0.083333336),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.208333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [Transform2D(0.3465, 0, 0, 0.3465, -666.1871, -92.06881)]
+"values": [false, true]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Part9:visible")
+tracks/17/path = NodePath("Tangseng/Part1:visible")
 tracks/17/interp = 0
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.16666667),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.041667),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, false]
+"values": [true, false]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Part9:transform")
+tracks/18/path = NodePath("Tangseng/Part2:visible")
 tracks/18/interp = 0
 tracks/18/loop_wrap = true
 tracks/18/keys = {
-"times": PackedFloat32Array(0.125),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.041667, 0.083333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.381, 0, 0, 0.381, -599.0514, -102.20921)]
+"values": [false, true, false]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Part10:visible")
+tracks/19/path = NodePath("Tangseng/Part3:visible")
 tracks/19/interp = 0
 tracks/19/loop_wrap = true
 tracks/19/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.20833333),
+"times": PackedFloat32Array(0, 0.083333, 0.125),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
@@ -256,40 +251,111 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Part10:transform")
+tracks/20/path = NodePath("Tangseng/Part4:visible")
 tracks/20/interp = 0
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(0.16666667),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.125, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.4155, 0, 0, 0.4155, -531.91565, -112.3996)]
+"values": [false, true, false]
 }
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("Part11:visible")
+tracks/21/path = NodePath("Tangseng/Part5:visible")
 tracks/21/interp = 0
 tracks/21/loop_wrap = true
 tracks/21/keys = {
-"times": PackedFloat32Array(0, 0.20833333),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.166667, 0.208333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [false, true, false]
 }
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("Part11:transform")
+tracks/22/path = NodePath("Tangseng/Part6:visible")
 tracks/22/interp = 0
 tracks/22/loop_wrap = true
 tracks/22/keys = {
-"times": PackedFloat32Array(0.20833333),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.208333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [Transform2D(0.45, 0, 0, 0.45, -464.77997, -122.590004)]
+"values": [false, true]
 }
-
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Bajie/Part1:visible")
+tracks/23/interp = 0
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.041667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Bajie/Part2:visible")
+tracks/24/interp = 0
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.041667, 0.083333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Bajie/Part3:visible")
+tracks/25/interp = 0
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.083333, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Bajie/Part4:visible")
+tracks/26/interp = 0
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Bajie/Part5:visible")
+tracks/27/interp = 0
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.208333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Bajie/Part6:visible")
+tracks/28/interp = 0
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.208333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 [resource]
 _data = {
 &"default": SubResource("Animation_5kui3")

@@ -82,6 +82,8 @@ func toast(text: String) -> void:
 func play_rage_transform() -> void:
 	var r := Puppet.create("fx_rage_transform")
 	r.position = Layers.VIEW / 2.0
+	for portrait in ["Wukong", "Tangseng", "Bajie"]:   # only the playing hero's picture (WsEffect Role1Mc..Role3Mc)
+		r.get_node(portrait).visible = portrait == GameState.role.to_pascal_case()
 	add_child(r)
 	r.play(r.actions[0])
 	get_tree().create_timer(r.anim.current_animation_length, true).timeout.connect(r.queue_free)
