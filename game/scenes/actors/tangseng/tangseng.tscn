@@ -3002,6 +3002,10 @@ shape = SubResource("RectangleShape2D_s8snb")
 callback_mode_process = 0
 libraries/ = ExtResource("170_taced")
 
-[node name="Body" type="CollisionShape2D" parent="." unique_id=1760281556]
+[node name="Body" type="StaticBody2D" parent="." unique_id=1760281556]
+collision_layer = 0
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Body"]
 position = Vector2(0.5, -4.2)
 shape = SubResource("RectangleShape2D_Body")

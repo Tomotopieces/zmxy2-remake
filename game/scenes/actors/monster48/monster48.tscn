@@ -2393,6 +2393,10 @@ disabled = true
 callback_mode_process = 0
 libraries/ = ExtResource("104_72aje")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="StaticBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Body"]
 position = Vector2(0.4, 0.5)
 shape = SubResource("RectangleShape2D_Body")
