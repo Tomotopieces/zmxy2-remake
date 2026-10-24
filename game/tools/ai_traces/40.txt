@@ -35,9 +35,8 @@
 371 #0 ATTACK/hit3 hp=4000/10000 dx=297
 430 #0 MOVE/hit3 hp=4000/10000 dx=297
 431 #0 MOVE/walk hp=4000/10000 dx=296
-550 #1 appears id=53 hp=3000 x=533
-550 #1 MOVE/walk hp=3000/3000 dx=0
-551 #1 MOVE/wait hp=3000/3000 dx=0
+545 #1 appears id=53 hp=3000 x=535
+545 #1 MOVE/wait hp=3000/3000 dx=2
 552 #0 ATTACK/hit3 hp=2000/10000 dx=152
 611 #0 MOVE/hit3 hp=2000/10000 dx=152
 612 #0 MOVE/walk hp=2000/10000 dx=151
@@ -47,7 +46,7 @@
 710 #0 MOVE/wait hp=2000/10000 dx=149
 720 #0 ATTACK/hit1 hp=2000/10000 dx=149
 721 #0 DEAD/dead hp=0/10000 dx=149
-721 #1 DEAD/dead hp=0/3000 dx=0
+721 #1 DEAD/dead hp=0/3000 dx=2
 798 #1 gone
 826 #0 gone
 # 40 far

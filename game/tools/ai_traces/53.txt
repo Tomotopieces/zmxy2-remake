@@ -1,7 +1,6 @@
 # 53 near
 0 #0 appears id=53 hp=3000 x=833
-0 #0 MOVE/walk hp=3000/3000 dx=90
-1 #0 MOVE/wait hp=2400/3000 dx=90
+0 #0 MOVE/wait hp=3000/3000 dx=90
 181 #1 appears id=37 hp=1000 x=833
 181 #1 MOVE/walk hp=1000/1000 dx=90
 182 #1 MOVE/wait hp=1000/1000 dx=90
@@ -185,8 +184,7 @@
 4491 #2 ATTACK/hit1 hp=1400/1400 dx=90
 # 53 mid
 0 #0 appears id=53 hp=3000 x=833
-0 #0 MOVE/walk hp=3000/3000 dx=300
-1 #0 MOVE/wait hp=2400/3000 dx=300
+0 #0 MOVE/wait hp=3000/3000 dx=300
 181 #1 appears id=37 hp=1000 x=833
 181 #1 MOVE/walk hp=1000/1000 dx=300
 182 #1 MOVE/wait hp=1000/1000 dx=300
@@ -369,8 +367,7 @@
 4494 #1 MOVE/wait hp=1000/1000 dx=149
 # 53 far
 0 #0 appears id=53 hp=3000 x=833
-0 #0 MOVE/walk hp=3000/3000 dx=650
-1 #0 MOVE/wait hp=2400/3000 dx=650
+0 #0 MOVE/wait hp=3000/3000 dx=650
 181 #1 appears id=37 hp=1000 x=833
 181 #1 MOVE/walk hp=1000/1000 dx=650
 182 #1 MOVE/wait hp=1000/1000 dx=650

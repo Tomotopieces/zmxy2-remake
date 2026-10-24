@@ -7,6 +7,7 @@ extends MonsterBrain
 var _next := 0
 
 func setup() -> void:
+	m.puppet.play(&"wait")   # from its first frame (its walk pose would show for one frame)
 	Timers.start(m, float(param("first", param("every", 1.0))), func():
 		_act()
 		Timers.start(m, float(param("every", 1.0)), _act, true))

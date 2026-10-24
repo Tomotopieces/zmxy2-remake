@@ -6,6 +6,7 @@ extends "res://src/actors/brains/boss_b.gd"
 const DOOR := "doorcalled"
 const TOTEMS := [53, 54, 55]
 const THRESHOLDS := [0.8, 0.6, 0.4]
+const DOOR_TOTEM := Vector2(2.0, -170.8)   ## doorcalled's last frame draws the totem at (-153.65, -274.35); the totem scene at (-155.65, -103.55)
 
 var _doors := 0
 var _totems: Array[Monster] = []
@@ -37,14 +38,16 @@ func _open_door() -> void:
 	if hero == null or _doors >= 3:
 		return
 	var pos := Vector2(hero.global_position.x, m.global_position.y + 80)
-	Fx.spawn(DOOR, pos)
+	var door := Fx.spawn(DOOR, pos)
 	var id: int = TOTEMS[_doors]
 	_doors += 1
-	m.after(float(param("summon_delay", 2.0)), func():
+	# the totem takes over from the door's last frame, at the same moment (no empty frames in between) and where the
+	# door drew it
+	(door.get_child(0) as Puppet).action_finished.connect(m.owned(func(_a):
 		if m.state != Monster.State.DEAD:
-			var t := m.summon(id, pos + Vector2(0, -190))
+			var t := m.summon(id, pos + DOOR_TOTEM)
 			if t:
-				_totems.append(t))
+				_totems.append(t)))
 
 func on_died() -> void:
 	for t in _totems:

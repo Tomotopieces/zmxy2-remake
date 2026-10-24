@@ -56,6 +56,5 @@ brain = {
 "near_cd": 10.833333333333334,
 "near_skill": "hit2",
 "range_y_mul": 2.0,
-"summon_delay": 2.0,
 "summon_invuln": 1.1666666666666667
 }
