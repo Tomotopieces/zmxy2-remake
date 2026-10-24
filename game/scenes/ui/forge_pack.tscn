@@ -71,10 +71,10 @@ centered = false
 [node name="Souls" type="Label" parent="." unique_id=1899312030]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 703.80
-offset_top = 109.65
-offset_right = 764.70
-offset_bottom = 133.35
+offset_left = 693.5
+offset_top = 550.69995
+offset_right = 828.5
+offset_bottom = 587.49994
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
