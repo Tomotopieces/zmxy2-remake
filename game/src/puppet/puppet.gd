@@ -89,8 +89,14 @@ static func _tint_debug_shape(box: Area2D, c: Color) -> void:
 	if box != null and box.get_child_count() > 0 and box.get_child(0) is CollisionShape2D:
 		(box.get_child(0) as CollisionShape2D).debug_color = c
 
+## Deferred like the keys (_emit): a key on the very last frame is queued first, so it is handled before whoever
+## listens to the end plays the next action (which would drop it).
 func _on_anim_finished(n: StringName) -> void:
-	action_finished.emit(n)
+	_finished_late.call_deferred(n, _play_count)
+
+func _finished_late(n: StringName, count: int) -> void:
+	if count == _play_count:
+		action_finished.emit(n)
 
 ## Play an action from its start (restart=false keeps playing when already in it). Its keys at time 0 fire right away.
 func play(a: StringName, restart := false) -> void:

@@ -31,9 +31,10 @@ func _press(k: StringName, up: bool) -> bool:
 			return _cast_stance()
 	return false
 
-## (八戒's skills do not repeat while held.)
+## (八戒's skills do not repeat while held, except 土流盾: holding I spins again as soon as one ends.)
 func _read_attack_input() -> void:
-	pass
+	if Input.is_action_pressed("skill_i") and state == State.MOVE:
+		_cast(&"hit6", &"hit6")
 
 func _cancelable_actions() -> Array:
 	return CANCELABLE
@@ -74,9 +75,10 @@ func _cast_stance() -> bool:
 func _attack_motion() -> void:
 	if attack_action == &"hit5":
 		return   # the charge's speed comes from its animation
-	if is_on_floor():
+	if is_on_floor() and attack_action != &"hit6":
 		velocity.x = 0.0
 	else:
+		# 土流盾 walks with the left / right keys (the original stopped the spin when he stood still: not kept)
 		velocity.x = _dir * data.walk_speed * (data.rage_speed_mul if transformed else 1.0)
 
 # ------------------------------------------------------------------ taking hits
