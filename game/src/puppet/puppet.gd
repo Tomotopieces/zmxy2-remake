@@ -322,5 +322,17 @@ static func warm(names: Array) -> void:
 		if ResourceLoader.load_threaded_request(_path(n)) == OK:
 			_loading[n] = _path(n)
 
+## The art alone. A character / potion scene has its logic body as the root with the art as its "Puppet" child: that
+## child is taken out (for pictures of a character: glows, shadows, previews).
 static func create(puppet_name: String) -> Puppet:
+	var n := scene(puppet_name).instantiate()
+	if n is Puppet:
+		return n
+	var p := n.get_node("Puppet") as Puppet
+	n.remove_child(p)
+	n.free()
+	return p
+
+## A whole scene: for a character, its logic body (Hero / Monster / Potion) with the art and body collider inside.
+static func instance(puppet_name: String) -> Node:
 	return scene(puppet_name).instantiate()

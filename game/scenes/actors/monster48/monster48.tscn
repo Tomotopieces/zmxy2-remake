@@ -1,5 +1,7 @@
 [gd_scene format=3]
 
+[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_7j0ws"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_puvq2"]
 [ext_resource type="Texture2D" path="res://assets/puppets/monster48/tex/3_120.png" id="3_eqe3j"]
@@ -182,7 +184,10 @@ resource_local_to_scene = true
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(40, 90)
 
-[node name="Monster48" type="Node2D" unique_id=1327823027]
+[node name="Monster48" type="CharacterBody2D"]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=1327823027]
 script = ExtResource("1_7j0ws")
 actions = PackedStringArray("hit1", "hit5", "hit6", "hit7", "hit3", "walk", "wait", "hurt", "hit2", "hit4", "dead")
 markers = {
@@ -193,54 +198,54 @@ markers = {
 "weapon1": Vector2(1.55, -11.95)
 }
 
-[node name="Poses" type="Node2D" parent="." unique_id=1942741846]
+[node name="Poses" type="Node2D" parent="Puppet" unique_id=1942741846]
 
-[node name="Hit1" type="Node2D" parent="Poses" unique_id=290301601]
+[node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=290301601]
 visible = false
 
-[node name="Hit1Part1" type="Sprite2D" parent="Poses/Hit1" unique_id=972319749]
+[node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=972319749]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.4, -22.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_eqe3j")
 centered = false
 
-[node name="Hit1Part2" type="Sprite2D" parent="Poses/Hit1" unique_id=2125760818]
+[node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=2125760818]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-26.2, -23.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_aiixi")
 centered = false
 
-[node name="Hit1Part3" type="Sprite2D" parent="Poses/Hit1" unique_id=1401042553]
+[node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1401042553]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-37.1, -19.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_m7vdi")
 centered = false
 
-[node name="Hit1Part4" type="Sprite2D" parent="Poses/Hit1" unique_id=257559601]
+[node name="Hit1Part4" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=257559601]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.7, -7.199999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit1Part5" type="Sprite2D" parent="Poses/Hit1" unique_id=395243817]
+[node name="Hit1Part5" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=395243817]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9, -14.950001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit1Part6" type="Sprite2D" parent="Poses/Hit1" unique_id=1616985762]
+[node name="Hit1Part6" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1616985762]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.55, 18.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_p5r0o")
 centered = false
 
-[node name="Hit1Part7" type="Sprite2D" parent="Poses/Hit1" unique_id=2047349589]
+[node name="Hit1Part7" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=2047349589]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.359697, 25.2286)
 rotation = -0.12613529
@@ -249,7 +254,7 @@ skew = 9.775162e-05
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit1Part8" type="Sprite2D" parent="Poses/Hit1" unique_id=396287481]
+[node name="Hit1Part8" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=396287481]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.815851, 4.6754503)
 rotation = 1.1514547
@@ -257,7 +262,7 @@ scale = Vector2(0.49980447, 0.49980447)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit1Part9" type="Sprite2D" parent="Poses/Hit1" unique_id=275073999]
+[node name="Hit1Part9" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=275073999]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-17.8059, 23.1464)
 rotation = -0.15293531
@@ -266,7 +271,7 @@ skew = 0.00013947487
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit1Part10" type="Sprite2D" parent="Poses/Hit1" unique_id=1967571943]
+[node name="Hit1Part10" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1967571943]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-17.7613, 23.0871)
 rotation = -0.15293531
@@ -275,7 +280,7 @@ skew = 0.00013947487
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit1Part11" type="Sprite2D" parent="Poses/Hit1" unique_id=1780451820]
+[node name="Hit1Part11" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1780451820]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-67.2256, 9.858799)
 rotation = 0.05300336
@@ -283,14 +288,14 @@ scale = Vector2(0.5002025, 0.5002025)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit1Part12" type="Sprite2D" parent="Poses/Hit1" unique_id=673386657]
+[node name="Hit1Part12" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=673386657]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-0.6000004, -14.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("14_fnbws")
 centered = false
 
-[node name="Hit1Part13" type="Sprite2D" parent="Poses/Hit1" unique_id=57268471]
+[node name="Hit1Part13" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=57268471]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-1.7283492, -14.98455)
 rotation = 0.26195496
@@ -298,115 +303,115 @@ scale = Vector2(0.50005925, 0.50005925)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit1Part14" type="Sprite2D" parent="Poses/Hit1" unique_id=1778188510]
+[node name="Hit1Part14" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1778188510]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-35.2, -49.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("16_1pkxg")
 centered = false
 
-[node name="Hit1Part15" type="Sprite2D" parent="Poses/Hit1" unique_id=1696966637]
+[node name="Hit1Part15" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1696966637]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.266449, 20.25355)
 scale = Vector2(0.5395, 0.5395)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit1Part16" type="Sprite2D" parent="Poses/Hit1" unique_id=1702707117]
+[node name="Hit1Part16" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1702707117]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.75, 18.449999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit1Part17" type="Sprite2D" parent="Poses/Hit1" unique_id=1544169266]
+[node name="Hit1Part17" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1544169266]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.7, 18.4)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit1Part18" type="Sprite2D" parent="Poses/Hit1" unique_id=514128102]
+[node name="Hit1Part18" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=514128102]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-10.85, -6.9)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_cj0ol")
 centered = false
 
-[node name="Hit1Part19" type="Sprite2D" parent="Poses/Hit1" unique_id=1402778437]
+[node name="Hit1Part19" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1402778437]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.75, -8.9)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit1Part20" type="Sprite2D" parent="Poses/Hit1" unique_id=1257823790]
+[node name="Hit1Part20" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1257823790]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.049999, 3.9500003)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit1Part21" type="Sprite2D" parent="Poses/Hit1" unique_id=981901787]
+[node name="Hit1Part21" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=981901787]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-52, 14.150001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit1Part22" type="Sprite2D" parent="Poses/Hit1" unique_id=858809360]
+[node name="Hit1Part22" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=858809360]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.25, -8.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("19_15s22")
 centered = false
 
-[node name="Hit1Part23" type="Sprite2D" parent="Poses/Hit1" unique_id=1096905780]
+[node name="Hit1Part23" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1096905780]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(1.8500004, -9.549999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit1Part24" type="Sprite2D" parent="Poses/Hit1" unique_id=1730713519]
+[node name="Hit1Part24" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1730713519]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.2, -49.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("20_ewgpm")
 centered = false
 
-[node name="Hit1Part25" type="Sprite2D" parent="Poses/Hit1" unique_id=1067180542]
+[node name="Hit1Part25" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1067180542]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(16.75, 0.1500001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit1Part26" type="Sprite2D" parent="Poses/Hit1" unique_id=1459995061]
+[node name="Hit1Part26" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1459995061]
 material = SubResource("ShaderMaterial_mj776")
 position = Vector2(-55, 9.999999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("22_ueauj")
 centered = false
 
-[node name="Hit5" type="Node2D" parent="Poses" unique_id=231758344]
+[node name="Hit5" type="Node2D" parent="Puppet/Poses" unique_id=231758344]
 visible = false
 
-[node name="Hit5Part1" type="Sprite2D" parent="Poses/Hit5" unique_id=1379014817]
+[node name="Hit5Part1" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1379014817]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-21.25, 9.6)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("23_g7v8g")
 centered = false
 
-[node name="Hit5Part2" type="Sprite2D" parent="Poses/Hit5" unique_id=991877447]
+[node name="Hit5Part2" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=991877447]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-27.65, -23.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("24_cjy7l")
 centered = false
 
-[node name="Hit5Part3" type="Sprite2D" parent="Poses/Hit5" unique_id=69103886]
+[node name="Hit5Part3" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=69103886]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.1772, 3.8065996)
 rotation = 1.0471848
@@ -414,14 +419,14 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit5Part4" type="Sprite2D" parent="Poses/Hit5" unique_id=76129293]
+[node name="Hit5Part4" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=76129293]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.4, -22.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_8odu2")
 centered = false
 
-[node name="Hit5Part5" type="Sprite2D" parent="Poses/Hit5" unique_id=102562199]
+[node name="Hit5Part5" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=102562199]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.7228003, -7.3934)
 rotation = 2.0944078
@@ -429,14 +434,14 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit5Part6" type="Sprite2D" parent="Poses/Hit5" unique_id=58491118]
+[node name="Hit5Part6" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=58491118]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.55, -2.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("26_2qanl")
 centered = false
 
-[node name="Hit5Part7" type="Sprite2D" parent="Poses/Hit5" unique_id=234050861]
+[node name="Hit5Part7" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=234050861]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-6.1251497, -11.529449)
 rotation = 2.279748
@@ -444,7 +449,7 @@ scale = Vector2(0.4999705, 0.4999705)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit5Part8" type="Sprite2D" parent="Poses/Hit5" unique_id=1253275855]
+[node name="Hit5Part8" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1253275855]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(29.624397, 77.3996)
 rotation = -1.7446576
@@ -452,21 +457,21 @@ scale = Vector2(0.5000385, 0.5000385)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit5Part9" type="Sprite2D" parent="Poses/Hit5" unique_id=671797228]
+[node name="Hit5Part9" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=671797228]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.6, -25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("27_184qe")
 centered = false
 
-[node name="Hit5Part10" type="Sprite2D" parent="Poses/Hit5" unique_id=596505827]
+[node name="Hit5Part10" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=596505827]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.4, -21)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("28_e0sbs")
 centered = false
 
-[node name="Hit5Part11" type="Sprite2D" parent="Poses/Hit5" unique_id=1914042382]
+[node name="Hit5Part11" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1914042382]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-26.119299, 7.1436996)
 rotation = -0.4435161
@@ -475,7 +480,7 @@ skew = -0.076372385
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit5Part12" type="Sprite2D" parent="Poses/Hit5" unique_id=774149721]
+[node name="Hit5Part12" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=774149721]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.02935, -2.9043503)
 rotation = -0.4435161
@@ -484,7 +489,7 @@ skew = -0.076372385
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit5Part13" type="Sprite2D" parent="Poses/Hit5" unique_id=482154285]
+[node name="Hit5Part13" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=482154285]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.44165, 19.192348)
 rotation = 0.12601127
@@ -492,14 +497,14 @@ scale = Vector2(0.63654715, 0.63654715)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit5Part14" type="Sprite2D" parent="Poses/Hit5" unique_id=622620954]
+[node name="Hit5Part14" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=622620954]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.35, 22.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("29_e1u30")
 centered = false
 
-[node name="Hit5Part15" type="Sprite2D" parent="Poses/Hit5" unique_id=1007494677]
+[node name="Hit5Part15" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1007494677]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.714449, -7.6228485)
 rotation = -0.1212552
@@ -507,7 +512,7 @@ scale = Vector2(0.5001725, 0.5001725)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit5Part16" type="Sprite2D" parent="Poses/Hit5" unique_id=893630384]
+[node name="Hit5Part16" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=893630384]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.004149, -16.250448)
 rotation = -0.1212552
@@ -515,7 +520,7 @@ scale = Vector2(0.5001725, 0.5001725)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit5Part17" type="Sprite2D" parent="Poses/Hit5" unique_id=129940470]
+[node name="Hit5Part17" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=129940470]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.957698, 18.90755)
 rotation = 0.12619154
@@ -524,14 +529,14 @@ skew = -0.000816226
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit5Part18" type="Sprite2D" parent="Poses/Hit5" unique_id=1827228858]
+[node name="Hit5Part18" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1827228858]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-39.25, -34.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("30_vffa5")
 centered = false
 
-[node name="Hit5Part19" type="Sprite2D" parent="Poses/Hit5" unique_id=41507000]
+[node name="Hit5Part19" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=41507000]
 modulate = Color(1, 1, 1, 0.699)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(32.796803, 61.5522)
@@ -540,7 +545,7 @@ scale = Vector2(0.49971393, 0.49971393)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part20" type="Sprite2D" parent="Poses/Hit5" unique_id=744751782]
+[node name="Hit5Part20" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=744751782]
 modulate = Color(1, 1, 1, 0.461)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(10.76535, 70.23905)
@@ -549,7 +554,7 @@ scale = Vector2(0.5002012, 0.5002012)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part21" type="Sprite2D" parent="Poses/Hit5" unique_id=659977161]
+[node name="Hit5Part21" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=659977161]
 modulate = Color(1, 1, 1, 0.25)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.644951, 72.62285)
@@ -558,28 +563,28 @@ scale = Vector2(0.50000626, 0.50000626)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part22" type="Sprite2D" parent="Poses/Hit5" unique_id=586045678]
+[node name="Hit5Part22" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=586045678]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.6439, 19.449999)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit5Part23" type="Sprite2D" parent="Poses/Hit5" unique_id=566470461]
+[node name="Hit5Part23" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=566470461]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.5904, 19.4)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit5Part24" type="Sprite2D" parent="Poses/Hit5" unique_id=1025252231]
+[node name="Hit5Part24" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1025252231]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-21.95, 15.2)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("32_uc0bw")
 centered = false
 
-[node name="Hit5Part25" type="Sprite2D" parent="Poses/Hit5" unique_id=1586884830]
+[node name="Hit5Part25" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1586884830]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-76.8542, -19.0666)
 rotation = 0.4368084
@@ -587,7 +592,7 @@ scale = Vector2(0.49994126, 0.49994126)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit5Part26" type="Sprite2D" parent="Poses/Hit5" unique_id=37469031]
+[node name="Hit5Part26" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=37469031]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.09225, 21.64975)
 rotation = -1.3857539
@@ -595,14 +600,14 @@ scale = Vector2(0.30164963, 0.30164963)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit5Part27" type="Sprite2D" parent="Poses/Hit5" unique_id=1261346073]
+[node name="Hit5Part27" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1261346073]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-0.6999998, -12.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("33_1dj5l")
 centered = false
 
-[node name="Hit5Part28" type="Sprite2D" parent="Poses/Hit5" unique_id=155453492]
+[node name="Hit5Part28" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=155453492]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.0615501, -10.699349)
 rotation = 0.50525296
@@ -610,14 +615,14 @@ scale = Vector2(0.49997026, 0.49997026)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit5Part29" type="Sprite2D" parent="Poses/Hit5" unique_id=1990809708]
+[node name="Hit5Part29" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1990809708]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-31.45, -43.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("34_6mwy5")
 centered = false
 
-[node name="Hit5Part30" type="Sprite2D" parent="Poses/Hit5" unique_id=409130867]
+[node name="Hit5Part30" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=409130867]
 modulate = Color(1, 1, 1, 0.699)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-3.5499992, -84.85)
@@ -625,7 +630,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part31" type="Sprite2D" parent="Poses/Hit5" unique_id=1894235750]
+[node name="Hit5Part31" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1894235750]
 modulate = Color(1, 1, 1, 0.379)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(10.226651, -81.40225)
@@ -634,7 +639,7 @@ scale = Vector2(0.50005925, 0.50005925)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part32" type="Sprite2D" parent="Poses/Hit5" unique_id=1478595504]
+[node name="Hit5Part32" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1478595504]
 modulate = Color(1, 1, 1, 0.172)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(22.8457, -75.670296)
@@ -643,7 +648,7 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part33" type="Sprite2D" parent="Poses/Hit5" unique_id=662883321]
+[node name="Hit5Part33" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=662883321]
 modulate = Color(1, 1, 1, 0.129)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-53.619896, -76.3607)
@@ -652,7 +657,7 @@ scale = Vector2(0.500025, 0.500025)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit5Part34" type="Sprite2D" parent="Poses/Hit5" unique_id=1455868310]
+[node name="Hit5Part34" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1455868310]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(19.7088, -84.6868)
 rotation = 2.0442827
@@ -660,14 +665,14 @@ scale = Vector2(0.500009, 0.500009)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit5Part35" type="Sprite2D" parent="Poses/Hit5" unique_id=1306204597]
+[node name="Hit5Part35" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1306204597]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-31.65, -7.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("35_d7dq8")
 centered = false
 
-[node name="Hit5Part36" type="Sprite2D" parent="Poses/Hit5" unique_id=2091242235]
+[node name="Hit5Part36" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=2091242235]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(10.277699, -5.3198996)
 rotation = 2.0944078
@@ -675,35 +680,35 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit5Part37" type="Sprite2D" parent="Poses/Hit5" unique_id=458145824]
+[node name="Hit5Part37" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=458145824]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-21.75, -49.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("36_wlckn")
 centered = false
 
-[node name="Hit5Part38" type="Sprite2D" parent="Poses/Hit5" unique_id=1082564137]
+[node name="Hit5Part38" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1082564137]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.229797, 21.271198)
 scale = Vector2(0.588, 0.588)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit5Part39" type="Sprite2D" parent="Poses/Hit5" unique_id=775854392]
+[node name="Hit5Part39" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=775854392]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.193899, 19.599998)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit5Part40" type="Sprite2D" parent="Poses/Hit5" unique_id=1815238782]
+[node name="Hit5Part40" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1815238782]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.1404, 19.55)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit5Part41" type="Sprite2D" parent="Poses/Hit5" unique_id=1831686709]
+[node name="Hit5Part41" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1831686709]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.483601, 4.9954996)
 rotation = 2.6179812
@@ -711,7 +716,7 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit5Part42" type="Sprite2D" parent="Poses/Hit5" unique_id=1762710282]
+[node name="Hit5Part42" type="Sprite2D" parent="Puppet/Poses/Hit5" unique_id=1762710282]
 modulate = Color(1, 1, 1, 0.648)
 material = SubResource("ShaderMaterial_g7nn5")
 position = Vector2(-17.400002, -101.85)
@@ -719,38 +724,38 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("37_n756s")
 centered = false
 
-[node name="Hit6" type="Node2D" parent="Poses" unique_id=1807160176]
+[node name="Hit6" type="Node2D" parent="Puppet/Poses" unique_id=1807160176]
 visible = false
 
-[node name="Hit6Part1" type="Sprite2D" parent="Poses/Hit6" unique_id=2064718969]
+[node name="Hit6Part1" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=2064718969]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-35.65, -10.750001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("38_dhb7f")
 centered = false
 
-[node name="Hit6Part2" type="Sprite2D" parent="Poses/Hit6" unique_id=1577455386]
+[node name="Hit6Part2" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1577455386]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-27.5, -4.9000015)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("39_s8cux")
 centered = false
 
-[node name="Hit6Part3" type="Sprite2D" parent="Poses/Hit6" unique_id=1218579240]
+[node name="Hit6Part3" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1218579240]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.65, -24.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("40_kple8")
 centered = false
 
-[node name="Hit6Part4" type="Sprite2D" parent="Poses/Hit6" unique_id=2075164627]
+[node name="Hit6Part4" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=2075164627]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(9.7, -26.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("41_xcvnv")
 centered = false
 
-[node name="Hit6Part5" type="Sprite2D" parent="Poses/Hit6" unique_id=422389504]
+[node name="Hit6Part5" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=422389504]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-38.922997, 14.572249)
 rotation = -0.6185063
@@ -758,7 +763,7 @@ scale = Vector2(0.5001562, 0.5001562)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit6Part6" type="Sprite2D" parent="Poses/Hit6" unique_id=1789647423]
+[node name="Hit6Part6" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1789647423]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-37.14075, 3.7915)
 rotation = -0.6185063
@@ -766,7 +771,7 @@ scale = Vector2(0.5001562, 0.5001562)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit6Part7" type="Sprite2D" parent="Poses/Hit6" unique_id=1991291149]
+[node name="Hit6Part7" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1991291149]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(21.9566, -14.1728)
 rotation = 0.5236115
@@ -774,14 +779,14 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit6Part8" type="Sprite2D" parent="Poses/Hit6" unique_id=327393355]
+[node name="Hit6Part8" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=327393355]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-29.900002, 6.699999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("42_khhb7")
 centered = false
 
-[node name="Hit6Part9" type="Sprite2D" parent="Poses/Hit6" unique_id=1503006984]
+[node name="Hit6Part9" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1503006984]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-27.84425, 15.5465)
 rotation = -0.75639004
@@ -789,14 +794,14 @@ scale = Vector2(0.4997812, 0.4997812)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit6Part10" type="Sprite2D" parent="Poses/Hit6" unique_id=1167742325]
+[node name="Hit6Part10" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1167742325]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-30.3, 6.699999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("43_graof")
 centered = false
 
-[node name="Hit6Part11" type="Sprite2D" parent="Poses/Hit6" unique_id=1846084631]
+[node name="Hit6Part11" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1846084631]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-89.9592, 13.423201)
 rotation = 0.045014616
@@ -804,7 +809,7 @@ scale = Vector2(0.5000065, 0.5000065)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit6Part12" type="Sprite2D" parent="Poses/Hit6" unique_id=1800451438]
+[node name="Hit6Part12" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1800451438]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-33.313797, 31.347603)
 rotation = -0.1743134
@@ -812,14 +817,14 @@ scale = Vector2(0.64578635, 0.64578635)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit6Part13" type="Sprite2D" parent="Poses/Hit6" unique_id=307962782]
+[node name="Hit6Part13" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=307962782]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.7, 2.3499985)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("44_wku8p")
 centered = false
 
-[node name="Hit6Part14" type="Sprite2D" parent="Poses/Hit6" unique_id=233434287]
+[node name="Hit6Part14" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=233434287]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.501099, 3.0556998)
 rotation = -0.3362973
@@ -827,14 +832,14 @@ scale = Vector2(0.500009, 0.500009)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit6Part15" type="Sprite2D" parent="Poses/Hit6" unique_id=1495060025]
+[node name="Hit6Part15" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1495060025]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-56.550003, -29.800001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("45_d454j")
 centered = false
 
-[node name="Hit6Part16" type="Sprite2D" parent="Poses/Hit6" unique_id=593593120]
+[node name="Hit6Part16" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=593593120]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.7784, 29.967201)
 rotation = -0.2619224
@@ -843,7 +848,7 @@ skew = -3.2663345e-05
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit6Part17" type="Sprite2D" parent="Poses/Hit6" unique_id=1590876038]
+[node name="Hit6Part17" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1590876038]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.73985, 29.9049)
 rotation = -0.2619224
@@ -852,7 +857,7 @@ skew = -3.2663345e-05
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit6Part18" type="Sprite2D" parent="Poses/Hit6" unique_id=698687954]
+[node name="Hit6Part18" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=698687954]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.0766, -5.2630496)
 rotation = 1.2322805
@@ -860,14 +865,14 @@ scale = Vector2(0.49986824, 0.49986824)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit6Part19" type="Sprite2D" parent="Poses/Hit6" unique_id=1154228575]
+[node name="Hit6Part19" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1154228575]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.4, -25.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("46_rhuf2")
 centered = false
 
-[node name="Hit6Part20" type="Sprite2D" parent="Poses/Hit6" unique_id=1577636284]
+[node name="Hit6Part20" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1577636284]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.4622, -6.0345993)
 rotation = -0.15660189
@@ -875,7 +880,7 @@ scale = Vector2(0.50012, 0.50012)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit6Part21" type="Sprite2D" parent="Poses/Hit6" unique_id=1190865876]
+[node name="Hit6Part21" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1190865876]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.0634, -14.890202)
 rotation = -0.15660189
@@ -883,7 +888,7 @@ scale = Vector2(0.50012, 0.50012)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit6Part22" type="Sprite2D" parent="Poses/Hit6" unique_id=1559469314]
+[node name="Hit6Part22" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1559469314]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-83.947, -16.646198)
 rotation = 0.30688292
@@ -891,14 +896,14 @@ scale = Vector2(0.49985322, 0.49985322)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit6Part23" type="Sprite2D" parent="Poses/Hit6" unique_id=892596091]
+[node name="Hit6Part23" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=892596091]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.55, -8.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("47_yg24o")
 centered = false
 
-[node name="Hit6Part24" type="Sprite2D" parent="Poses/Hit6" unique_id=1058484271]
+[node name="Hit6Part24" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1058484271]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-33.313797, 31.347603)
 rotation = -0.1743134
@@ -906,14 +911,14 @@ scale = Vector2(0.64578635, 0.64578635)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit6Part25" type="Sprite2D" parent="Poses/Hit6" unique_id=1268371414]
+[node name="Hit6Part25" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1268371414]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.7, 2.3499985)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("44_wku8p")
 centered = false
 
-[node name="Hit6Part26" type="Sprite2D" parent="Poses/Hit6" unique_id=834935284]
+[node name="Hit6Part26" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=834935284]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(36.201298, -15.993599)
 rotation = 0.788227
@@ -921,7 +926,7 @@ scale = Vector2(0.4999265, 0.4999265)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit6Part27" type="Sprite2D" parent="Poses/Hit6" unique_id=2072581270]
+[node name="Hit6Part27" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=2072581270]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(24.7122, -2.984599)
 rotation = -2.9849908
@@ -929,7 +934,7 @@ scale = Vector2(0.50012, -0.50012)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit6Part28" type="Sprite2D" parent="Poses/Hit6" unique_id=578984680]
+[node name="Hit6Part28" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=578984680]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(18.3134, -11.840201)
 rotation = -2.9849908
@@ -937,14 +942,14 @@ scale = Vector2(0.50012, -0.50012)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit6Part29" type="Sprite2D" parent="Poses/Hit6" unique_id=341240693]
+[node name="Hit6Part29" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=341240693]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-2.25, -3.4000015)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("48_ba2tj")
 centered = false
 
-[node name="Hit6Part30" type="Sprite2D" parent="Poses/Hit6" unique_id=1245554758]
+[node name="Hit6Part30" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1245554758]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.54915, -14.09155)
 rotation = 0.44889015
@@ -952,14 +957,14 @@ scale = Vector2(0.5000392, 0.5000392)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit6Part31" type="Sprite2D" parent="Poses/Hit6" unique_id=400935646]
+[node name="Hit6Part31" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=400935646]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-28.099998, -48.4)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("49_om1x1")
 centered = false
 
-[node name="Hit6Part32" type="Sprite2D" parent="Poses/Hit6" unique_id=800116295]
+[node name="Hit6Part32" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=800116295]
 modulate = Color(1, 1, 1, 0.699)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-73.912796, 13.43275)
@@ -969,7 +974,7 @@ skew = 0.00016999245
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit6Part33" type="Sprite2D" parent="Poses/Hit6" unique_id=545448714]
+[node name="Hit6Part33" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=545448714]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.7122, -6.684599)
 rotation = -0.15660189
@@ -977,7 +982,7 @@ scale = Vector2(0.50012, 0.50012)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit6Part34" type="Sprite2D" parent="Poses/Hit6" unique_id=973877700]
+[node name="Hit6Part34" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=973877700]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.3134, -15.540201)
 rotation = -0.15660189
@@ -985,14 +990,14 @@ scale = Vector2(0.50012, 0.50012)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit6Part35" type="Sprite2D" parent="Poses/Hit6" unique_id=436796979]
+[node name="Hit6Part35" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=436796979]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(5.8, -53.050003)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("50_s86lx")
 centered = false
 
-[node name="Hit6Part36" type="Sprite2D" parent="Poses/Hit6" unique_id=1689411497]
+[node name="Hit6Part36" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1689411497]
 modulate = Color(1, 1, 1, 0.379)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-72.77735, -0.74075127)
@@ -1001,14 +1006,14 @@ scale = Vector2(0.5000742, 0.5000742)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit6Part37" type="Sprite2D" parent="Poses/Hit6" unique_id=238067684]
+[node name="Hit6Part37" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=238067684]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.950001, -8.650001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("51_hudtf")
 centered = false
 
-[node name="Hit6Part38" type="Sprite2D" parent="Poses/Hit6" unique_id=2127087906]
+[node name="Hit6Part38" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=2127087906]
 modulate = Color(1, 1, 1, 0.172)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-69.2662, -14.0844)
@@ -1017,28 +1022,28 @@ scale = Vector2(0.49989, 0.49989)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit6Part39" type="Sprite2D" parent="Poses/Hit6" unique_id=2003861489]
+[node name="Hit6Part39" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=2003861489]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.15, -10.8)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit6Part40" type="Sprite2D" parent="Poses/Hit6" unique_id=1328757281]
+[node name="Hit6Part40" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1328757281]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.85, -46.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("52_57dav")
 centered = false
 
-[node name="Hit6Part41" type="Sprite2D" parent="Poses/Hit6" unique_id=176572652]
+[node name="Hit6Part41" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=176572652]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.599998, -50.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("53_k5f8j")
 centered = false
 
-[node name="Hit6Part42" type="Sprite2D" parent="Poses/Hit6" unique_id=1061739967]
+[node name="Hit6Part42" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1061739967]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-17.837748, 23.73925)
 rotation = -0.042527538
@@ -1046,28 +1051,28 @@ scale = Vector2(0.58803165, 0.58803165)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit6Part43" type="Sprite2D" parent="Poses/Hit6" unique_id=625673773]
+[node name="Hit6Part43" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=625673773]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.3439, 20.4)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit6Part44" type="Sprite2D" parent="Poses/Hit6" unique_id=1727101666]
+[node name="Hit6Part44" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1727101666]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.2904, 20.35)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit6Part45" type="Sprite2D" parent="Poses/Hit6" unique_id=1588039873]
+[node name="Hit6Part45" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1588039873]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(4.05, 0.8499985)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("54_n0yh5")
 centered = false
 
-[node name="Hit6Part46" type="Sprite2D" parent="Poses/Hit6" unique_id=1635544663]
+[node name="Hit6Part46" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1635544663]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(24.6536, 5.3002996)
 rotation = 2.017451
@@ -1075,21 +1080,21 @@ scale = Vector2(0.500057, 0.500057)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit6Part47" type="Sprite2D" parent="Poses/Hit6" unique_id=1570416104]
+[node name="Hit6Part47" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=1570416104]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-56.550003, -29.800001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("55_qgbk5")
 centered = false
 
-[node name="Hit6Part48" type="Sprite2D" parent="Poses/Hit6" unique_id=848270113]
+[node name="Hit6Part48" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=848270113]
 material = SubResource("ShaderMaterial_pawqb")
 position = Vector2(-87.8, -27)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("56_54mvk")
 centered = false
 
-[node name="Hit6Part49" type="Sprite2D" parent="Poses/Hit6" unique_id=204960564]
+[node name="Hit6Part49" type="Sprite2D" parent="Puppet/Poses/Hit6" unique_id=204960564]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(19.975998, -48.219)
 rotation = 1.5707964
@@ -1097,31 +1102,31 @@ scale = Vector2(4.741, 0.562)
 texture = ExtResource("57_wcfcf")
 centered = false
 
-[node name="Hit7" type="Node2D" parent="Poses" unique_id=1036680743]
+[node name="Hit7" type="Node2D" parent="Puppet/Poses" unique_id=1036680743]
 visible = false
 
-[node name="Hit7Part1" type="Sprite2D" parent="Poses/Hit7" unique_id=1154486413]
+[node name="Hit7Part1" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1154486413]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19, 21.149998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("58_w3411")
 centered = false
 
-[node name="Hit7Part2" type="Sprite2D" parent="Poses/Hit7" unique_id=1850124953]
+[node name="Hit7Part2" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1850124953]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.3, 5.799999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("59_mkv2c")
 centered = false
 
-[node name="Hit7Part3" type="Sprite2D" parent="Poses/Hit7" unique_id=8528736]
+[node name="Hit7Part3" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=8528736]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.55, -22.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("60_6godt")
 centered = false
 
-[node name="Hit7Part4" type="Sprite2D" parent="Poses/Hit7" unique_id=1305507846]
+[node name="Hit7Part4" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1305507846]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.67325, 5.274001)
 rotation = 1.075839
@@ -1129,14 +1134,14 @@ scale = Vector2(0.50000626, 0.50000626)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit7Part5" type="Sprite2D" parent="Poses/Hit7" unique_id=599546215]
+[node name="Hit7Part5" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=599546215]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.999999, -22.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("61_xxn67")
 centered = false
 
-[node name="Hit7Part6" type="Sprite2D" parent="Poses/Hit7" unique_id=1959370276]
+[node name="Hit7Part6" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1959370276]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.01135, -3.2373495)
 rotation = -0.25783268
@@ -1144,7 +1149,7 @@ scale = Vector2(0.5000285, 0.5000285)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit7Part7" type="Sprite2D" parent="Poses/Hit7" unique_id=590062900]
+[node name="Hit7Part7" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=590062900]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.5414505, -12.693952)
 rotation = -0.25783268
@@ -1152,7 +1157,7 @@ scale = Vector2(0.5000285, 0.5000285)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit7Part8" type="Sprite2D" parent="Poses/Hit7" unique_id=590247802]
+[node name="Hit7Part8" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=590247802]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.202847, 22.97735)
 rotation = -0.044226464
@@ -1160,7 +1165,7 @@ scale = Vector2(0.58807504, 0.58807504)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit7Part9" type="Sprite2D" parent="Poses/Hit7" unique_id=1949301384]
+[node name="Hit7Part9" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1949301384]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.746599, 19.6143)
 rotation = -0.00093196623
@@ -1169,7 +1174,7 @@ skew = -6.8068504e-05
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit7Part10" type="Sprite2D" parent="Poses/Hit7" unique_id=52935607]
+[node name="Hit7Part10" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=52935607]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.69315, 19.5638)
 rotation = -0.00093196623
@@ -1178,7 +1183,7 @@ skew = -6.8068504e-05
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit7Part11" type="Sprite2D" parent="Poses/Hit7" unique_id=560744190]
+[node name="Hit7Part11" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=560744190]
 modulate = Color(1, 1, 1, 0.699)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-71.8522, 9.299201)
@@ -1187,7 +1192,7 @@ scale = Vector2(0.500034, 0.500034)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit7Part12" type="Sprite2D" parent="Poses/Hit7" unique_id=1482468911]
+[node name="Hit7Part12" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1482468911]
 modulate = Color(1, 1, 1, 0.379)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-67.5099, -21.0323)
@@ -1196,7 +1201,7 @@ scale = Vector2(0.500165, 0.500165)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit7Part13" type="Sprite2D" parent="Poses/Hit7" unique_id=1271586962]
+[node name="Hit7Part13" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1271586962]
 modulate = Color(1, 1, 1, 0.172)
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-53.569897, -41.660698)
@@ -1205,7 +1210,7 @@ scale = Vector2(0.500025, 0.500025)
 texture = ExtResource("31_auaaj")
 centered = false
 
-[node name="Hit7Part14" type="Sprite2D" parent="Poses/Hit7" unique_id=2020110353]
+[node name="Hit7Part14" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=2020110353]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(62.716797, 18.1536)
 rotation = -2.9053473
@@ -1213,21 +1218,21 @@ scale = Vector2(0.499885, 0.499885)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit7Part15" type="Sprite2D" parent="Poses/Hit7" unique_id=1378320835]
+[node name="Hit7Part15" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1378320835]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(1.5500002, -9.450001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("62_on1i5")
 centered = false
 
-[node name="Hit7Part16" type="Sprite2D" parent="Poses/Hit7" unique_id=1874038058]
+[node name="Hit7Part16" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1874038058]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-17.25, -28.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("63_6gosj")
 centered = false
 
-[node name="Hit7Part17" type="Sprite2D" parent="Poses/Hit7" unique_id=1183623257]
+[node name="Hit7Part17" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1183623257]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.0418005, -12.693199)
 rotation = 0.003999979
@@ -1235,7 +1240,7 @@ scale = Vector2(0.500004, 0.500004)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit7Part18" type="Sprite2D" parent="Poses/Hit7" unique_id=1758324909]
+[node name="Hit7Part18" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1758324909]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-4.3115997, -20.4114)
 rotation = 0.003999979
@@ -1243,14 +1248,14 @@ scale = Vector2(0.500004, 0.500004)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit7Part19" type="Sprite2D" parent="Poses/Hit7" unique_id=1720921444]
+[node name="Hit7Part19" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1720921444]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-26.5, -11.800001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("64_3ujmo")
 centered = false
 
-[node name="Hit7Part20" type="Sprite2D" parent="Poses/Hit7" unique_id=304658657]
+[node name="Hit7Part20" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=304658657]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(13.64155, -5.7008505)
 rotation = 2.0196865
@@ -1258,14 +1263,14 @@ scale = Vector2(0.5000392, 0.5000392)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit7Part21" type="Sprite2D" parent="Poses/Hit7" unique_id=5702866]
+[node name="Hit7Part21" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=5702866]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.45, -49.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("65_40tw5")
 centered = false
 
-[node name="Hit7Part22" type="Sprite2D" parent="Poses/Hit7" unique_id=178118015]
+[node name="Hit7Part22" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=178118015]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.16765, 17.58555)
 rotation = 0.091968685
@@ -1273,7 +1278,7 @@ scale = Vector2(0.5879849, 0.5879849)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit7Part23" type="Sprite2D" parent="Poses/Hit7" unique_id=2017513426]
+[node name="Hit7Part23" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=2017513426]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.3534, 15.115101)
 rotation = 0.134521
@@ -1282,7 +1287,7 @@ skew = -0.00011920929
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit7Part24" type="Sprite2D" parent="Poses/Hit7" unique_id=378476390]
+[node name="Hit7Part24" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=378476390]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.2937, 15.072551)
 rotation = 0.134521
@@ -1291,7 +1296,7 @@ skew = -0.00011920929
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit7Part25" type="Sprite2D" parent="Poses/Hit7" unique_id=967512479]
+[node name="Hit7Part25" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=967512479]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-10.5807, 8.0241)
 rotation = -3.0602705
@@ -1300,7 +1305,7 @@ skew = 0.0009095669
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit7Part26" type="Sprite2D" parent="Poses/Hit7" unique_id=1652720923]
+[node name="Hit7Part26" type="Sprite2D" parent="Puppet/Poses/Hit7" unique_id=1652720923]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(32.794, 0.3409996)
 rotation = 1.8326217
@@ -1309,24 +1314,24 @@ skew = -5.38826e-05
 texture = ExtResource("57_wcfcf")
 centered = false
 
-[node name="Hit3" type="Node2D" parent="Poses" unique_id=417994489]
+[node name="Hit3" type="Node2D" parent="Puppet/Poses" unique_id=417994489]
 visible = false
 
-[node name="Hit3Part1" type="Sprite2D" parent="Poses/Hit3" unique_id=414031794]
+[node name="Hit3Part1" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=414031794]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-24.050001, -15.55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("66_14wu4")
 centered = false
 
-[node name="Hit3Part2" type="Sprite2D" parent="Poses/Hit3" unique_id=352338093]
+[node name="Hit3Part2" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=352338093]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.5, 21.9)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("67_0w2w5")
 centered = false
 
-[node name="Hit3Part3" type="Sprite2D" parent="Poses/Hit3" unique_id=1435130280]
+[node name="Hit3Part3" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1435130280]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-2.5171013, -9.00055)
 rotation = 2.0966396
@@ -1334,14 +1339,14 @@ scale = Vector2(0.5000572, 0.5000572)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit3Part4" type="Sprite2D" parent="Poses/Hit3" unique_id=1798688665]
+[node name="Hit3Part4" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1798688665]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-24.95, -10.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("68_urgxm")
 centered = false
 
-[node name="Hit3Part5" type="Sprite2D" parent="Poses/Hit3" unique_id=390000616]
+[node name="Hit3Part5" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=390000616]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-78.2276, -37.7172)
 rotation = 0.36602542
@@ -1349,7 +1354,7 @@ scale = Vector2(0.50013, 0.50013)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit3Part6" type="Sprite2D" parent="Poses/Hit3" unique_id=585219358]
+[node name="Hit3Part6" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=585219358]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(1.2906003, -1.0973)
 rotation = 1.8378373
@@ -1357,21 +1362,21 @@ scale = Vector2(0.5002302, 0.5002302)
 texture = ExtResource("18_ed6x3")
 centered = false
 
-[node name="Hit3Part7" type="Sprite2D" parent="Poses/Hit3" unique_id=1869690103]
+[node name="Hit3Part7" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1869690103]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.9, -23.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("69_bp581")
 centered = false
 
-[node name="Hit3Part8" type="Sprite2D" parent="Poses/Hit3" unique_id=1928941715]
+[node name="Hit3Part8" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1928941715]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.25, -23.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("70_2w0jn")
 centered = false
 
-[node name="Hit3Part9" type="Sprite2D" parent="Poses/Hit3" unique_id=660937967]
+[node name="Hit3Part9" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=660937967]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.74625, 20.59105)
 rotation = -0.042647235
@@ -1379,14 +1384,14 @@ scale = Vector2(0.62156516, 0.62156516)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit3Part10" type="Sprite2D" parent="Poses/Hit3" unique_id=169911683]
+[node name="Hit3Part10" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=169911683]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.65, -23.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("71_mkvtd")
 centered = false
 
-[node name="Hit3Part11" type="Sprite2D" parent="Poses/Hit3" unique_id=684421479]
+[node name="Hit3Part11" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=684421479]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-23.881948, -4.2431984)
 rotation = -0.36477035
@@ -1395,7 +1400,7 @@ skew = -0.09972799
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit3Part12" type="Sprite2D" parent="Poses/Hit3" unique_id=1850927546]
+[node name="Hit3Part12" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1850927546]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.654148, -14.152151)
 rotation = -0.36477035
@@ -1404,7 +1409,7 @@ skew = -0.09972799
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit3Part13" type="Sprite2D" parent="Poses/Hit3" unique_id=193055397]
+[node name="Hit3Part13" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=193055397]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.54625, 20.441048)
 rotation = -0.042647235
@@ -1412,7 +1417,7 @@ scale = Vector2(0.62156516, 0.62156516)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit3Part14" type="Sprite2D" parent="Poses/Hit3" unique_id=857399141]
+[node name="Hit3Part14" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=857399141]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-5.6225996, 3.27845)
 rotation = 2.6071796
@@ -1420,14 +1425,14 @@ scale = Vector2(0.49967015, 0.49967015)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit3Part15" type="Sprite2D" parent="Poses/Hit3" unique_id=219523459]
+[node name="Hit3Part15" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=219523459]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.35, -24.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("72_3b6lf")
 centered = false
 
-[node name="Hit3Part16" type="Sprite2D" parent="Poses/Hit3" unique_id=1505129988]
+[node name="Hit3Part16" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1505129988]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.09035, -8.557548)
 rotation = -0.20445703
@@ -1435,7 +1440,7 @@ scale = Vector2(0.49991247, 0.49991247)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit3Part17" type="Sprite2D" parent="Poses/Hit3" unique_id=1163562194]
+[node name="Hit3Part17" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1163562194]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.12645, -17.70735)
 rotation = -0.20445703
@@ -1443,7 +1448,7 @@ scale = Vector2(0.49991247, 0.49991247)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit3Part18" type="Sprite2D" parent="Poses/Hit3" unique_id=1476791136]
+[node name="Hit3Part18" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1476791136]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.537748, 20.939249)
 rotation = -0.042527538
@@ -1451,28 +1456,28 @@ scale = Vector2(0.58803165, 0.58803165)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit3Part19" type="Sprite2D" parent="Poses/Hit3" unique_id=309388299]
+[node name="Hit3Part19" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=309388299]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.0439, 17.599998)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit3Part20" type="Sprite2D" parent="Poses/Hit3" unique_id=7533070]
+[node name="Hit3Part20" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=7533070]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.990399, 17.55)
 scale = Vector2(0.5365, 0.5)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit3Part21" type="Sprite2D" parent="Poses/Hit3" unique_id=1920736511]
+[node name="Hit3Part21" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1920736511]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(5.25, -13.700001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("73_pnbl2")
 centered = false
 
-[node name="Hit3Part22" type="Sprite2D" parent="Poses/Hit3" unique_id=1511091636]
+[node name="Hit3Part22" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1511091636]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(52.3504, -32.142)
 rotation = 2.7235713
@@ -1480,14 +1485,14 @@ scale = Vector2(0.500058, 0.500058)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit3Part23" type="Sprite2D" parent="Poses/Hit3" unique_id=1409090511]
+[node name="Hit3Part23" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1409090511]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(2.0500002, -15.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("74_xb2aw")
 centered = false
 
-[node name="Hit3Part24" type="Sprite2D" parent="Poses/Hit3" unique_id=75801853]
+[node name="Hit3Part24" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=75801853]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.4960008, -14.621999)
 rotation = 0.2837941
@@ -1495,14 +1500,14 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit3Part25" type="Sprite2D" parent="Poses/Hit3" unique_id=2130205597]
+[node name="Hit3Part25" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2130205597]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-28.95, -49.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("75_v5lpk")
 centered = false
 
-[node name="Hit3Part26" type="Sprite2D" parent="Poses/Hit3" unique_id=463597957]
+[node name="Hit3Part26" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=463597957]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(15.855299, -2.1112003)
 rotation = 0.7143665
@@ -1510,7 +1515,7 @@ scale = Vector2(0.54797536, 0.54797536)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit3Part27" type="Sprite2D" parent="Poses/Hit3" unique_id=516743135]
+[node name="Hit3Part27" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=516743135]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(15.594198, 0.52164936)
 rotation = 0.5089597
@@ -1518,24 +1523,24 @@ scale = Vector2(0.5479519, 0.5479519)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit3Part28" type="Sprite2D" parent="Poses/Hit3" unique_id=981365566]
+[node name="Hit3Part28" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=981365566]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-87.1, 22.05)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("76_g04s8")
 centered = false
 
-[node name="Walk" type="Node2D" parent="Poses" unique_id=984308994]
+[node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=984308994]
 visible = false
 
-[node name="WalkPart1" type="Sprite2D" parent="Poses/Walk" unique_id=1443686054]
+[node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1443686054]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.1, -8.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("77_wcnqr")
 centered = false
 
-[node name="WalkPart2" type="Sprite2D" parent="Poses/Walk" unique_id=2017087865]
+[node name="WalkPart2" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=2017087865]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-2.8435497, 4.1970997)
 rotation = 2.5302932
@@ -1543,14 +1548,14 @@ scale = Vector2(0.50005925, 0.50005925)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="WalkPart3" type="Sprite2D" parent="Poses/Walk" unique_id=1464974918]
+[node name="WalkPart3" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1464974918]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.1, -8.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("78_a78nn")
 centered = false
 
-[node name="WalkPart4" type="Sprite2D" parent="Poses/Walk" unique_id=48311518]
+[node name="WalkPart4" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=48311518]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(52.859, -28.8494)
 rotation = 2.7365696
@@ -1558,14 +1563,14 @@ scale = Vector2(0.49994925, 0.49994925)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="WalkPart5" type="Sprite2D" parent="Poses/Walk" unique_id=1695750167]
+[node name="WalkPart5" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1695750167]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.799999, -21.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("79_1dbw2")
 centered = false
 
-[node name="WalkPart6" type="Sprite2D" parent="Poses/Walk" unique_id=58436728]
+[node name="WalkPart6" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=58436728]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.998199, -3.4822493)
 rotation = -0.21367821
@@ -1573,7 +1578,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="WalkPart7" type="Sprite2D" parent="Poses/Walk" unique_id=1870517677]
+[node name="WalkPart7" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1870517677]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.11965, -12.687499)
 rotation = -0.21367821
@@ -1581,7 +1586,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="WalkPart8" type="Sprite2D" parent="Poses/Walk" unique_id=979605992]
+[node name="WalkPart8" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=979605992]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.262199, 24.792698)
 rotation = -0.082602315
@@ -1589,28 +1594,28 @@ scale = Vector2(0.53933895, 0.53933895)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="WalkPart9" type="Sprite2D" parent="Poses/Walk" unique_id=1366019319]
+[node name="WalkPart9" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1366019319]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.243601, 22.4096)
 scale = Vector2(0.526, 0.526)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="WalkPart10" type="Sprite2D" parent="Poses/Walk" unique_id=1923923950]
+[node name="WalkPart10" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1923923950]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.190601, 22.357)
 scale = Vector2(0.526, 0.526)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="WalkPart11" type="Sprite2D" parent="Poses/Walk" unique_id=1569955746]
+[node name="WalkPart11" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1569955746]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(8.5, -12.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("80_o8u1x")
 centered = false
 
-[node name="WalkPart12" type="Sprite2D" parent="Poses/Walk" unique_id=286806480]
+[node name="WalkPart12" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=286806480]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(9.424549, -13.880849)
 rotation = 0.6026992
@@ -1618,14 +1623,14 @@ scale = Vector2(0.5001162, 0.5001162)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="WalkPart13" type="Sprite2D" parent="Poses/Walk" unique_id=1321049483]
+[node name="WalkPart13" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1321049483]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-24.2, -47.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("81_ktf75")
 centered = false
 
-[node name="WalkPart14" type="Sprite2D" parent="Poses/Walk" unique_id=1180155813]
+[node name="WalkPart14" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1180155813]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-3.323701, 10.6818495)
 rotation = 3.0677254
@@ -1633,14 +1638,14 @@ scale = Vector2(0.5149041, 0.5149041)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="WalkPart15" type="Sprite2D" parent="Poses/Walk" unique_id=959962836]
+[node name="WalkPart15" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=959962836]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.799999, -21)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("82_alunw")
 centered = false
 
-[node name="WalkPart16" type="Sprite2D" parent="Poses/Walk" unique_id=819199678]
+[node name="WalkPart16" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=819199678]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.6494, 25.714697)
 rotation = -0.082764015
@@ -1648,7 +1653,7 @@ scale = Vector2(0.5503839, 0.5503839)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="WalkPart17" type="Sprite2D" parent="Poses/Walk" unique_id=940124704]
+[node name="WalkPart17" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=940124704]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.8482, -2.2822495)
 rotation = -0.21367821
@@ -1656,7 +1661,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="WalkPart18" type="Sprite2D" parent="Poses/Walk" unique_id=399122012]
+[node name="WalkPart18" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=399122012]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-8.96965, -11.487499)
 rotation = -0.21367821
@@ -1664,21 +1669,21 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="WalkPart19" type="Sprite2D" parent="Poses/Walk" unique_id=319274841]
+[node name="WalkPart19" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=319274841]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.5082, 23.2502)
 scale = Vector2(0.537, 0.537)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="WalkPart20" type="Sprite2D" parent="Poses/Walk" unique_id=1881446360]
+[node name="WalkPart20" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1881446360]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.4542, 23.196499)
 scale = Vector2(0.537, 0.537)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="WalkPart21" type="Sprite2D" parent="Poses/Walk" unique_id=1956876655]
+[node name="WalkPart21" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1956876655]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(53.7348, -25.371601)
 rotation = 2.7755673
@@ -1686,14 +1691,14 @@ scale = Vector2(0.50013, 0.50013)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="WalkPart22" type="Sprite2D" parent="Poses/Walk" unique_id=460321948]
+[node name="WalkPart22" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=460321948]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-12.049999, -5.9)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("83_dvg8h")
 centered = false
 
-[node name="WalkPart23" type="Sprite2D" parent="Poses/Walk" unique_id=220878317]
+[node name="WalkPart23" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=220878317]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(14.805199, -10.4359)
 rotation = 1.3887057
@@ -1701,14 +1706,14 @@ scale = Vector2(0.49976245, 0.49976245)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="WalkPart24" type="Sprite2D" parent="Poses/Walk" unique_id=1500453101]
+[node name="WalkPart24" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1500453101]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-24.7, -46)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("84_fpww2")
 centered = false
 
-[node name="WalkPart25" type="Sprite2D" parent="Poses/Walk" unique_id=366511279]
+[node name="WalkPart25" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=366511279]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-1.9935493, 5.3971004)
 rotation = 2.5302932
@@ -1716,7 +1721,7 @@ scale = Vector2(0.50005925, 0.50005925)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="WalkPart26" type="Sprite2D" parent="Poses/Walk" unique_id=1181320185]
+[node name="WalkPart26" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1181320185]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(52.859, -28.8494)
 rotation = 2.7365696
@@ -1724,21 +1729,21 @@ scale = Vector2(0.49994925, 0.49994925)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="WalkPart27" type="Sprite2D" parent="Poses/Walk" unique_id=922574286]
+[node name="WalkPart27" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=922574286]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.65, -21)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("85_0uq0e")
 centered = false
 
-[node name="WalkPart28" type="Sprite2D" parent="Poses/Walk" unique_id=1953375591]
+[node name="WalkPart28" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1953375591]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.799999, -21.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("79_1dbw2")
 centered = false
 
-[node name="WalkPart29" type="Sprite2D" parent="Poses/Walk" unique_id=687786362]
+[node name="WalkPart29" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=687786362]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.998199, -3.4822493)
 rotation = -0.21367821
@@ -1746,7 +1751,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="WalkPart30" type="Sprite2D" parent="Poses/Walk" unique_id=1627702005]
+[node name="WalkPart30" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1627702005]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.11965, -12.687499)
 rotation = -0.21367821
@@ -1754,7 +1759,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="WalkPart31" type="Sprite2D" parent="Poses/Walk" unique_id=634243520]
+[node name="WalkPart31" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=634243520]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.062199, 24.5927)
 rotation = -0.082602315
@@ -1762,7 +1767,7 @@ scale = Vector2(0.53933895, 0.53933895)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="WalkPart32" type="Sprite2D" parent="Poses/Walk" unique_id=1531852294]
+[node name="WalkPart32" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1531852294]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.898199, -3.5322495)
 rotation = -0.21367821
@@ -1770,7 +1775,7 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="WalkPart33" type="Sprite2D" parent="Poses/Walk" unique_id=1463535155]
+[node name="WalkPart33" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1463535155]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.01965, -12.737499)
 rotation = -0.21367821
@@ -1778,21 +1783,21 @@ scale = Vector2(0.4998682, 0.4998682)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="WalkPart34" type="Sprite2D" parent="Poses/Walk" unique_id=523021711]
+[node name="WalkPart34" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=523021711]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.190601, 22.357)
 scale = Vector2(0.526, 0.526)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="WalkPart35" type="Sprite2D" parent="Poses/Walk" unique_id=517631139]
+[node name="WalkPart35" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=517631139]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(4.0499997, -8.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("86_66c54")
 centered = false
 
-[node name="WalkPart36" type="Sprite2D" parent="Poses/Walk" unique_id=1350735889]
+[node name="WalkPart36" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1350735889]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(53.8352, -23.2292)
 rotation = 2.8052955
@@ -1800,7 +1805,7 @@ scale = Vector2(0.500009, 0.500009)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="WalkPart37" type="Sprite2D" parent="Poses/Walk" unique_id=918736548]
+[node name="WalkPart37" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=918736548]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.764101, -7.9551997)
 rotation = -0.18209063
@@ -1808,28 +1813,28 @@ scale = Vector2(0.49976245, 0.49976245)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="WalkPart38" type="Sprite2D" parent="Poses/Walk" unique_id=1851339443]
+[node name="WalkPart38" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1851339443]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-24.65, -46.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("87_6s5pt")
 centered = false
 
-[node name="WalkPart39" type="Sprite2D" parent="Poses/Walk" unique_id=1448864856]
+[node name="WalkPart39" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1448864856]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.193602, 22.3596)
 scale = Vector2(0.526, 0.526)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="WalkPart40" type="Sprite2D" parent="Poses/Walk" unique_id=867050550]
+[node name="WalkPart40" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=867050550]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.140601, 22.307001)
 scale = Vector2(0.526, 0.526)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="WalkPart41" type="Sprite2D" parent="Poses/Walk" unique_id=671780932]
+[node name="WalkPart41" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=671780932]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(20.18095, -1.2530494)
 rotation = -0.073089235
@@ -1837,24 +1842,24 @@ scale = Vector2(0.49983448, 0.49983448)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Wait" type="Node2D" parent="Poses" unique_id=1932494364]
+[node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=1932494364]
 visible = false
 
-[node name="WaitPart1" type="Sprite2D" parent="Poses/Wait" unique_id=407350483]
+[node name="WaitPart1" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=407350483]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.599998, -8.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("88_gyblj")
 centered = false
 
-[node name="WaitPart2" type="Sprite2D" parent="Poses/Wait" unique_id=97465304]
+[node name="WaitPart2" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=97465304]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.599998, -7.0499997)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("89_gfdwl")
 centered = false
 
-[node name="WaitPart3" type="Sprite2D" parent="Poses/Wait" unique_id=220150868]
+[node name="WaitPart3" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=220150868]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.1295996, 5.42675)
 rotation = 2.6466353
@@ -1863,21 +1868,21 @@ skew = 0.0008803606
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="WaitPart4" type="Sprite2D" parent="Poses/Wait" unique_id=2324759]
+[node name="WaitPart4" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=2324759]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16, -21.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("90_0v7w3")
 centered = false
 
-[node name="WaitPart5" type="Sprite2D" parent="Poses/Wait" unique_id=180720249]
+[node name="WaitPart5" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=180720249]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.75, -21.650002)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("91_rlhih")
 centered = false
 
-[node name="WaitPart6" type="Sprite2D" parent="Poses/Wait" unique_id=928930258]
+[node name="WaitPart6" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=928930258]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.40965, -3.3172007)
 rotation = -0.21877742
@@ -1885,7 +1890,7 @@ scale = Vector2(0.49991626, 0.49991626)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="WaitPart7" type="Sprite2D" parent="Poses/Wait" unique_id=134711053]
+[node name="WaitPart7" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=134711053]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.5773, -12.551151)
 rotation = -0.21877742
@@ -1893,7 +1898,7 @@ scale = Vector2(0.49991626, 0.49991626)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="WaitPart8" type="Sprite2D" parent="Poses/Wait" unique_id=1726593614]
+[node name="WaitPart8" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1726593614]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.397398, 25.202301)
 rotation = -0.047822453
@@ -1901,7 +1906,7 @@ scale = Vector2(0.59618163, 0.59618163)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="WaitPart9" type="Sprite2D" parent="Poses/Wait" unique_id=199107137]
+[node name="WaitPart9" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=199107137]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.674101, 22.903801)
 rotation = -0.070196964
@@ -1910,7 +1915,7 @@ skew = 8.1419945e-05
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="WaitPart10" type="Sprite2D" parent="Poses/Wait" unique_id=953816413]
+[node name="WaitPart10" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=953816413]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.626451, 22.8521)
 rotation = -0.070196964
@@ -1919,14 +1924,14 @@ skew = 8.1419945e-05
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="WaitPart11" type="Sprite2D" parent="Poses/Wait" unique_id=1918719280]
+[node name="WaitPart11" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1918719280]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(4.6000004, -11.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("73_pnbl2")
 centered = false
 
-[node name="WaitPart12" type="Sprite2D" parent="Poses/Wait" unique_id=134152945]
+[node name="WaitPart12" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=134152945]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(50.934998, -28.124199)
 rotation = 2.744186
@@ -1934,7 +1939,7 @@ scale = Vector2(0.49996325, 0.49996325)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="WaitPart13" type="Sprite2D" parent="Poses/Wait" unique_id=1943770069]
+[node name="WaitPart13" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1943770069]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.6319504, -11.374149)
 rotation = 0.3005579
@@ -1942,14 +1947,14 @@ scale = Vector2(0.49991024, 0.49991024)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="WaitPart14" type="Sprite2D" parent="Poses/Wait" unique_id=1629977373]
+[node name="WaitPart14" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1629977373]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-29.599998, -47.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("92_pehr7")
 centered = false
 
-[node name="WaitPart15" type="Sprite2D" parent="Poses/Wait" unique_id=1305578190]
+[node name="WaitPart15" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1305578190]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(15.1238, 3.1812992)
 rotation = 0.5444858
@@ -1957,17 +1962,17 @@ scale = Vector2(0.54828554, 0.54828554)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hurt" type="Node2D" parent="Poses" unique_id=2093774819]
+[node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=2093774819]
 visible = false
 
-[node name="HurtPart1" type="Sprite2D" parent="Poses/Hurt" unique_id=753555193]
+[node name="HurtPart1" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=753555193]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.2, -28.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("93_f6ye5")
 centered = false
 
-[node name="HurtPart2" type="Sprite2D" parent="Poses/Hurt" unique_id=1148724127]
+[node name="HurtPart2" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1148724127]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(40.5426, 23.1086)
 rotation = -2.5144868
@@ -1975,14 +1980,14 @@ scale = Vector2(0.50016725, 0.50016725)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="HurtPart3" type="Sprite2D" parent="Poses/Hurt" unique_id=2067925410]
+[node name="HurtPart3" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=2067925410]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-28.650002, -26.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("94_erfic")
 centered = false
 
-[node name="HurtPart4" type="Sprite2D" parent="Poses/Hurt" unique_id=2058312540]
+[node name="HurtPart4" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=2058312540]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-8.05, -10.049999)
 rotation = 3.1415927
@@ -1990,7 +1995,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="HurtPart5" type="Sprite2D" parent="Poses/Hurt" unique_id=1439069682]
+[node name="HurtPart5" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1439069682]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.16655, -11.6571)
 rotation = 0.11319612
@@ -1998,7 +2003,7 @@ scale = Vector2(0.5002012, 0.5002012)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="HurtPart6" type="Sprite2D" parent="Poses/Hurt" unique_id=1741798636]
+[node name="HurtPart6" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1741798636]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-10.6356, -18.489452)
 rotation = 0.11319612
@@ -2006,14 +2011,14 @@ scale = Vector2(0.5002012, 0.5002012)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="HurtPart7" type="Sprite2D" parent="Poses/Hurt" unique_id=329975343]
+[node name="HurtPart7" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=329975343]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(5.299999, -10.549999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("95_vwx1b")
 centered = false
 
-[node name="HurtPart8" type="Sprite2D" parent="Poses/Hurt" unique_id=131405676]
+[node name="HurtPart8" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=131405676]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(4.7801003, -12.427699)
 rotation = 0.5236115
@@ -2021,14 +2026,14 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="HurtPart9" type="Sprite2D" parent="Poses/Hurt" unique_id=315814196]
+[node name="HurtPart9" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=315814196]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.300001, -51.050003)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("96_bbr3o")
 centered = false
 
-[node name="HurtPart10" type="Sprite2D" parent="Poses/Hurt" unique_id=1242724063]
+[node name="HurtPart10" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1242724063]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-28.549648, 14.071151)
 rotation = 0.32201254
@@ -2036,7 +2041,7 @@ scale = Vector2(0.6035207, 0.6035207)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="HurtPart11" type="Sprite2D" parent="Poses/Hurt" unique_id=174926424]
+[node name="HurtPart11" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=174926424]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.2711, 14.6201)
 rotation = 0.2619617
@@ -2044,7 +2049,7 @@ scale = Vector2(0.5212842, 0.5212842)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="HurtPart12" type="Sprite2D" parent="Poses/Hurt" unique_id=1501057031]
+[node name="HurtPart12" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1501057031]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.2071, 14.582749)
 rotation = 0.2619617
@@ -2052,7 +2057,7 @@ scale = Vector2(0.5212842, 0.5212842)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="HurtPart13" type="Sprite2D" parent="Poses/Hurt" unique_id=1614706720]
+[node name="HurtPart13" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1614706720]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(12.2749, 4.689599)
 rotation = 0.7019048
@@ -2060,17 +2065,17 @@ scale = Vector2(0.50025296, 0.50025296)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit2" type="Node2D" parent="Poses" unique_id=333099240]
+[node name="Hit2" type="Node2D" parent="Puppet/Poses" unique_id=333099240]
 visible = false
 
-[node name="Hit2Part1" type="Sprite2D" parent="Poses/Hit2" unique_id=165995939]
+[node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=165995939]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.849998, -24.949999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("97_5xc8c")
 centered = false
 
-[node name="Hit2Part2" type="Sprite2D" parent="Poses/Hit2" unique_id=1895658742]
+[node name="Hit2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1895658742]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.58535, 0.014249802)
 rotation = 1.1496288
@@ -2079,7 +2084,7 @@ skew = -0.00040900707
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit2Part3" type="Sprite2D" parent="Poses/Hit2" unique_id=490933276]
+[node name="Hit2Part3" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=490933276]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.867401, -9.2264)
 rotation = -0.29512247
@@ -2088,7 +2093,7 @@ skew = -0.25258744
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit2Part4" type="Sprite2D" parent="Poses/Hit2" unique_id=720120556]
+[node name="Hit2Part4" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=720120556]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-14.68855, -18.7463)
 rotation = -0.29512247
@@ -2097,7 +2102,7 @@ skew = -0.25258744
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit2Part5" type="Sprite2D" parent="Poses/Hit2" unique_id=241780172]
+[node name="Hit2Part5" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=241780172]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.1559477, 19.00245)
 rotation = -0.13985355
@@ -2105,7 +2110,7 @@ scale = Vector2(0.58824337, 0.58824337)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit2Part6" type="Sprite2D" parent="Poses/Hit2" unique_id=672497648]
+[node name="Hit2Part6" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=672497648]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-82.9664, 7.1356)
 rotation = 0.00799983
@@ -2113,7 +2118,7 @@ scale = Vector2(0.500016, 0.500016)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit2Part7" type="Sprite2D" parent="Poses/Hit2" unique_id=1466593847]
+[node name="Hit2Part7" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1466593847]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-1.4719992, 17.3391)
 rotation = -0.1553293
@@ -2122,7 +2127,7 @@ skew = -0.29570198
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit2Part8" type="Sprite2D" parent="Poses/Hit2" unique_id=57491800]
+[node name="Hit2Part8" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=57491800]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-1.4454479, 17.28165)
 rotation = -0.1553293
@@ -2131,14 +2136,14 @@ skew = -0.29570198
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit2Part9" type="Sprite2D" parent="Poses/Hit2" unique_id=2123279469]
+[node name="Hit2Part9" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=2123279469]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(2.000001, -16.449999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("98_glfai")
 centered = false
 
-[node name="Hit2Part10" type="Sprite2D" parent="Poses/Hit2" unique_id=719691037]
+[node name="Hit2Part10" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=719691037]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.4207506, -17.009249)
 rotation = -0.0049999584
@@ -2146,14 +2151,14 @@ scale = Vector2(0.50000626, 0.50000626)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit2Part11" type="Sprite2D" parent="Poses/Hit2" unique_id=1872355740]
+[node name="Hit2Part11" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1872355740]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-32.8, -46.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("99_xcnqd")
 centered = false
 
-[node name="Hit2Part12" type="Sprite2D" parent="Poses/Hit2" unique_id=1618731369]
+[node name="Hit2Part12" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1618731369]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(18.31425, -2.2981505)
 rotation = 1.2920845
@@ -2161,17 +2166,17 @@ scale = Vector2(0.49978647, 0.49978647)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit2Part13" type="Sprite2D" parent="Poses/Hit2" unique_id=1263866519]
+[node name="Hit2Part13" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1263866519]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-157, -27.9)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("100_8y6ui")
 centered = false
 
-[node name="Hit4" type="Node2D" parent="Poses" unique_id=451702499]
+[node name="Hit4" type="Node2D" parent="Puppet/Poses" unique_id=451702499]
 visible = false
 
-[node name="Hit4Part1" type="Sprite2D" parent="Poses/Hit4" unique_id=253561932]
+[node name="Hit4Part1" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=253561932]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(34.3, -29.55)
 rotation = 3.1415927
@@ -2179,7 +2184,7 @@ scale = Vector2(0.5, -0.5)
 texture = ExtResource("101_uvdr5")
 centered = false
 
-[node name="Hit4Part2" type="Sprite2D" parent="Poses/Hit4" unique_id=877007030]
+[node name="Hit4Part2" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=877007030]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-5.57845, -10.2658)
 rotation = 0.71983916
@@ -2188,7 +2193,7 @@ skew = -0.0007338524
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="Hit4Part3" type="Sprite2D" parent="Poses/Hit4" unique_id=1446084469]
+[node name="Hit4Part3" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1446084469]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(44.460003, 24.249998)
 rotation = -2.3561945
@@ -2196,7 +2201,7 @@ scale = Vector2(0.51265246, 0.51265246)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="Hit4Part4" type="Sprite2D" parent="Poses/Hit4" unique_id=389411753]
+[node name="Hit4Part4" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=389411753]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(33.3, -32.95)
 rotation = 3.1415927
@@ -2204,7 +2209,7 @@ scale = Vector2(0.5, -0.5)
 texture = ExtResource("102_vp6eg")
 centered = false
 
-[node name="Hit4Part5" type="Sprite2D" parent="Poses/Hit4" unique_id=1024434147]
+[node name="Hit4Part5" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1024434147]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-19.8494, -9.8705)
 rotation = -0.46975574
@@ -2212,7 +2217,7 @@ scale = Vector2(0.5125163, 0.5125163)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="Hit4Part6" type="Sprite2D" parent="Poses/Hit4" unique_id=154219225]
+[node name="Hit4Part6" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=154219225]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.4093, -20.527)
 rotation = -0.46975574
@@ -2220,7 +2225,7 @@ scale = Vector2(0.5125163, 0.5125163)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="Hit4Part7" type="Sprite2D" parent="Poses/Hit4" unique_id=1851679872]
+[node name="Hit4Part7" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1851679872]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-1.6589489, -20.80785)
 rotation = -0.15665257
@@ -2228,7 +2233,7 @@ scale = Vector2(0.51277894, 0.51277894)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="Hit4Part8" type="Sprite2D" parent="Poses/Hit4" unique_id=1011223595]
+[node name="Hit4Part8" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1011223595]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(15.25, -58.749996)
 rotation = 3.1415927
@@ -2236,7 +2241,7 @@ scale = Vector2(0.5, -0.5)
 texture = ExtResource("103_gmb7p")
 centered = false
 
-[node name="Hit4Part9" type="Sprite2D" parent="Poses/Hit4" unique_id=437585759]
+[node name="Hit4Part9" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=437585759]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-13.515148, 17.39075)
 rotation = -0.22589628
@@ -2244,7 +2249,7 @@ scale = Vector2(0.6228236, 0.6228236)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="Hit4Part10" type="Sprite2D" parent="Poses/Hit4" unique_id=2036723367]
+[node name="Hit4Part10" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=2036723367]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.9144, 14.2132)
 rotation = -0.26152766
@@ -2252,7 +2257,7 @@ scale = Vector2(0.55693805, 0.55693805)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="Hit4Part11" type="Sprite2D" parent="Poses/Hit4" unique_id=1153181851]
+[node name="Hit4Part11" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1153181851]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.8748007, 14.1444)
 rotation = -0.26152766
@@ -2260,7 +2265,7 @@ scale = Vector2(0.55693805, 0.55693805)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="Hit4Part12" type="Sprite2D" parent="Poses/Hit4" unique_id=573968603]
+[node name="Hit4Part12" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=573968603]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(14.195899, -13.5854)
 rotation = -0.052685574
@@ -2268,17 +2273,17 @@ scale = Vector2(0.51271147, 0.51271147)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Dead" type="Node2D" parent="Poses" unique_id=2005287570]
+[node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=2005287570]
 visible = false
 
-[node name="DeadPart1" type="Sprite2D" parent="Poses/Dead" unique_id=1772668309]
+[node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1772668309]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.9, -26.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("93_f6ye5")
 centered = false
 
-[node name="DeadPart2" type="Sprite2D" parent="Poses/Dead" unique_id=365875629]
+[node name="DeadPart2" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=365875629]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(43.842598, 25.1086)
 rotation = -2.5144868
@@ -2286,14 +2291,14 @@ scale = Vector2(0.50016725, 0.50016725)
 texture = ExtResource("13_ar6ww")
 centered = false
 
-[node name="DeadPart3" type="Sprite2D" parent="Poses/Dead" unique_id=1799449531]
+[node name="DeadPart3" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1799449531]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.349998, -24.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("94_erfic")
 centered = false
 
-[node name="DeadPart4" type="Sprite2D" parent="Poses/Dead" unique_id=1104607800]
+[node name="DeadPart4" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1104607800]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-4.75, -8.049999)
 rotation = 3.1415927
@@ -2301,7 +2306,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_r2pkm")
 centered = false
 
-[node name="DeadPart5" type="Sprite2D" parent="Poses/Dead" unique_id=1664919032]
+[node name="DeadPart5" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1664919032]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15.86655, -9.6571)
 rotation = 0.11319612
@@ -2309,7 +2314,7 @@ scale = Vector2(0.5002012, 0.5002012)
 texture = ExtResource("6_0ktfv")
 centered = false
 
-[node name="DeadPart6" type="Sprite2D" parent="Poses/Dead" unique_id=1800038200]
+[node name="DeadPart6" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1800038200]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-7.3356, -16.489452)
 rotation = 0.11319612
@@ -2317,14 +2322,14 @@ scale = Vector2(0.5002012, 0.5002012)
 texture = ExtResource("7_nhtit")
 centered = false
 
-[node name="DeadPart7" type="Sprite2D" parent="Poses/Dead" unique_id=860629521]
+[node name="DeadPart7" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=860629521]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(8.6, -8.549999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("95_vwx1b")
 centered = false
 
-[node name="DeadPart8" type="Sprite2D" parent="Poses/Dead" unique_id=384206450]
+[node name="DeadPart8" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=384206450]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(8.080101, -10.427699)
 rotation = 0.5236115
@@ -2332,14 +2337,14 @@ scale = Vector2(0.499989, 0.499989)
 texture = ExtResource("15_u7vu2")
 centered = false
 
-[node name="DeadPart9" type="Sprite2D" parent="Poses/Dead" unique_id=1002252775]
+[node name="DeadPart9" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1002252775]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-15, -49.050003)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("96_bbr3o")
 centered = false
 
-[node name="DeadPart10" type="Sprite2D" parent="Poses/Dead" unique_id=1204370223]
+[node name="DeadPart10" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1204370223]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-25.24965, 16.071152)
 rotation = 0.32201254
@@ -2347,7 +2352,7 @@ scale = Vector2(0.6035207, 0.6035207)
 texture = ExtResource("9_afcc2")
 centered = false
 
-[node name="DeadPart11" type="Sprite2D" parent="Poses/Dead" unique_id=1680600755]
+[node name="DeadPart11" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1680600755]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.9711, 16.6201)
 rotation = 0.2619617
@@ -2355,7 +2360,7 @@ scale = Vector2(0.5212842, 0.5212842)
 texture = ExtResource("11_8a2v1")
 centered = false
 
-[node name="DeadPart12" type="Sprite2D" parent="Poses/Dead" unique_id=1734761311]
+[node name="DeadPart12" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1734761311]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-18.907099, 16.582748)
 rotation = 0.2619617
@@ -2363,7 +2368,7 @@ scale = Vector2(0.5212842, 0.5212842)
 texture = ExtResource("12_u2783")
 centered = false
 
-[node name="DeadPart13" type="Sprite2D" parent="Poses/Dead" unique_id=1228188546]
+[node name="DeadPart13" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1228188546]
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(15.5749, 6.6896)
 rotation = 0.7019048
@@ -2371,32 +2376,28 @@ scale = Vector2(0.50025296, 0.50025296)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hitbox" type="Area2D" parent="." unique_id=1430168815]
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=1430168815]
 collision_layer = 0
 collision_mask = 0
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1621778472]
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1621778472]
 shape = SubResource("RectangleShape2D_d2i3a")
 disabled = true
 
-[node name="Hurtbox" type="Area2D" parent="." unique_id=347452098]
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=347452098]
 collision_layer = 0
 collision_mask = 0
 monitoring = false
 
-[node name="Shape" type="CollisionShape2D" parent="Hurtbox" unique_id=1745040138]
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1745040138]
 shape = SubResource("RectangleShape2D_1jyot")
 disabled = true
 
-[node name="Anim" type="AnimationPlayer" parent="." unique_id=715834341]
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=715834341]
 callback_mode_process = 0
 libraries/ = ExtResource("104_72aje")
 
-[node name="Body" type="StaticBody2D" parent="."]
-collision_layer = 0
-collision_mask = 0
-
-[node name="Shape" type="CollisionShape2D" parent="Body"]
+[node name="Body" type="CollisionShape2D" parent="."]
 position = Vector2(0.4, 0.5)
 shape = SubResource("RectangleShape2D_Body")

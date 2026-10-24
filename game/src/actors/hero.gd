@@ -6,7 +6,6 @@ extends Actor
 
 enum State { MOVE, ATTACK, HURT, DEAD }
 
-const HERO_DIR := "res://src/actors/heroes/hero_%s.gd"
 const COMBO := [&"hit1", &"hit2", &"hit3", &"hit4", &"hit5"]
 const CANCEL_INTO_HIT8 := [&"hit1", &"hit2", &"hit3", &"hit4"]
 const HIT7_HOLD := 99.0   ## 烈焰闪: "until the dash stops" (cleared by its stop event, or when the move ends)
@@ -60,17 +59,16 @@ var _lock_glow := false   ## the anti-lock protection runs
 var treasure: Treasure  ## worn magic treasure following the hero (H)
 var controls_locked := false   ## stage over: no more input
 
-## The hero of the current game (GameState.role): its own script when it has one.
+## The hero of the current game (GameState.role): its scene, whose root carries its script.
 static func create() -> Hero:
-	var path: String = HERO_DIR % GameState.role
-	return load(path).new() if ResourceLoader.exists(path) else Hero.new()
+	return Puppet.instance(GameState.hero_data.puppet) as Hero
 
 func _ready() -> void:
 	data = GameState.hero_data
 	gravity = data.gravity
 	collision_layer = LAYER_HERO
 	collision_mask = LAYER_WORLD | LAYER_ONEWAY
-	setup_puppet(data.puppet)
+	setup_puppet()
 	add_child(debuffs)
 	_apply_appearance()
 	facing = 1
@@ -822,8 +820,7 @@ func _update_tint(delta: float) -> void:
 
 func _make_glow() -> void:
 	_glow_mat = SpriteFx.glow_material(Color.WHITE, GLOW_BLUR.x, GLOW_STRENGTH, true)
-	_glow_puppet = Puppet.create(data.puppet)
-	_glow_puppet.get_node("Body").free()   # (a picture only)
+	_glow_puppet = Puppet.create(data.puppet)   # (a picture only)
 	add_child(_glow_puppet)
 	move_child(_glow_puppet, puppet.get_index())   # behind the body
 	_glow_puppet.play(puppet.action, true)

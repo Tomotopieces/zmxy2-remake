@@ -14,15 +14,12 @@ var _life := 0.0
 var _used := false
 
 static func spawn(k: Kind, pos: Vector2, t: DropTable) -> Potion:
-	var p := Potion.new()
+	var p := Puppet.instance(PUPPETS[k]) as Potion   # its scene: this body, its art "Puppet" and collider "Body"
 	p.kind = k
 	p.table = t
 	p.amount = {Kind.SMALL_HP: t.small_hp, Kind.BIG_HP: t.big_hp, Kind.SMALL_MP: t.small_mp}[k]
-	p.puppet = Puppet.create(PUPPETS[k])
-	p.add_child(p.puppet)
-	var body := Actor.take_body_shape(p.puppet)   # the scene's Body/Shape: the bottle's collider
-	p.add_child(body)
-	var shape := body.shape as RectangleShape2D
+	p.puppet = p.get_node("Puppet")
+	var shape := (p.get_node("Body") as CollisionShape2D).shape as RectangleShape2D
 	p.puppet.hurtbox.collision_mask = Actor.LAYER_HURT_HERO   # it picks up the hero's hurt box
 	p.puppet.hurtbox.monitoring = true
 	p.collision_layer = 0

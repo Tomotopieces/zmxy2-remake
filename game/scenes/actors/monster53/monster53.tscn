@@ -1,5 +1,7 @@
 [gd_scene format=3]
 
+[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_geffr"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_fv6ld"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/2_140.png" id="3_0t2p7"]
@@ -32,16 +34,19 @@ resource_local_to_scene = true
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(180, 250)
 
-[node name="Monster53" type="Node2D" unique_id=102102827]
+[node name="Monster53" type="CharacterBody2D"]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=102102827]
 script = ExtResource("1_geffr")
 actions = PackedStringArray("walk", "wait", "dead")
 
-[node name="Poses" type="Node2D" parent="." unique_id=1259957038]
+[node name="Poses" type="Node2D" parent="Puppet" unique_id=1259957038]
 
-[node name="Walk" type="Node2D" parent="Poses" unique_id=805757804]
+[node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=805757804]
 visible = false
 
-[node name="WalkPart1" type="Sprite2D" parent="Poses/Walk" unique_id=1935721958]
+[node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1935721958]
 material = SubResource("ShaderMaterial_vai1u")
 position = Vector2(-155.65001, -103.6)
 scale = Vector2(0.5, 0.5)
@@ -49,16 +54,16 @@ texture = ExtResource("3_0t2p7")
 centered = false
 region_enabled = true
 
-[node name="WalkPart2" type="Sprite2D" parent="Poses/Walk" unique_id=2053416742]
+[node name="WalkPart2" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=2053416742]
 position = Vector2(-136.65, -162.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_egdrm")
 centered = false
 
-[node name="Wait" type="Node2D" parent="Poses" unique_id=1355304569]
+[node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=1355304569]
 visible = false
 
-[node name="WaitPart1" type="Sprite2D" parent="Poses/Wait" unique_id=204612999]
+[node name="WaitPart1" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=204612999]
 material = SubResource("ShaderMaterial_vai1u")
 position = Vector2(-155.65001, -103.55)
 scale = Vector2(0.5, 0.5)
@@ -66,16 +71,16 @@ texture = ExtResource("3_0t2p7")
 centered = false
 region_enabled = true
 
-[node name="WaitPart2" type="Sprite2D" parent="Poses/Wait" unique_id=584337678]
+[node name="WaitPart2" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=584337678]
 position = Vector2(-136.65, -162.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_egdrm")
 centered = false
 
-[node name="Dead" type="Node2D" parent="Poses" unique_id=470220471]
+[node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=470220471]
 visible = false
 
-[node name="DeadPart1" type="Sprite2D" parent="Poses/Dead" unique_id=1143881002]
+[node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1143881002]
 material = SubResource("ShaderMaterial_vai1u")
 position = Vector2(-155.65001, -103.6)
 scale = Vector2(0.5, 0.5)
@@ -83,42 +88,38 @@ texture = ExtResource("3_0t2p7")
 centered = false
 region_enabled = true
 
-[node name="DeadPart2" type="Sprite2D" parent="Poses/Dead" unique_id=1982975648]
+[node name="DeadPart2" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1982975648]
 centered = false
 region_enabled = true
 
-[node name="DeadPart3" type="Sprite2D" parent="Poses/Dead" unique_id=1090641123]
+[node name="DeadPart3" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1090641123]
 position = Vector2(-136.65, -162.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_egdrm")
 centered = false
 
-[node name="Hitbox" type="Area2D" parent="." unique_id=2145273514]
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=2145273514]
 collision_layer = 0
 collision_mask = 0
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1783126979]
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1783126979]
 shape = SubResource("RectangleShape2D_5efui")
 disabled = true
 
-[node name="Hurtbox" type="Area2D" parent="." unique_id=1575232297]
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=1575232297]
 collision_layer = 0
 collision_mask = 0
 monitoring = false
 
-[node name="Shape" type="CollisionShape2D" parent="Hurtbox" unique_id=611921783]
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=611921783]
 shape = SubResource("RectangleShape2D_m5q8n")
 disabled = true
 
-[node name="Anim" type="AnimationPlayer" parent="." unique_id=1280733535]
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1280733535]
 callback_mode_process = 0
 libraries/ = ExtResource("5_xbf1t")
 
-[node name="Body" type="StaticBody2D" parent="."]
-collision_layer = 0
-collision_mask = 0
-
-[node name="Shape" type="CollisionShape2D" parent="Body"]
+[node name="Body" type="CollisionShape2D" parent="."]
 position = Vector2(1.4, 34.9)
 shape = SubResource("RectangleShape2D_Body")

@@ -23,7 +23,7 @@ func _init() -> void:
 	floor_snap_length = 8.0
 
 var puppet: Puppet
-var body_shape: CollisionShape2D   ## the actor's body collider: Body/Shape of its scene
+var body_shape: CollisionShape2D   ## the actor's body collider: Body of its scene
 var hp := 1
 var max_hp := 1
 var gravity := 0.0
@@ -37,10 +37,10 @@ var facing := -1:
 		if puppet:
 			puppet.scale.x = -facing
 
-## The actor's art: its hand-edited scene scenes/actors/<name>/<name>.tscn (README "Actor scenes").
-func setup_puppet(puppet_name: String) -> void:
-	puppet = Puppet.create(puppet_name)
-	add_child(puppet)
+## Wires the scene's own nodes (scenes/actors/<name>/<name>.tscn, README "Actor scenes"): the art "Puppet" and the
+## body collider "Body".
+func setup_puppet() -> void:
+	puppet = $Puppet
 	puppet.scale.x = -facing
 	puppet.event.connect(_on_puppet_event)
 	# attacks find their targets by physics overlap: this body's hurt box is on its team's hurt layer, its hit box looks at the other
@@ -50,21 +50,7 @@ func setup_puppet(puppet_name: String) -> void:
 	puppet.hitbox.collision_mask = LAYER_HURT_MONSTER if hero else LAYER_HURT_HERO
 	puppet.action_finished.connect(_on_action_finished)
 	puppet.play(&"wait" if puppet.actions.has("wait") else StringName(puppet.actions[0]))
-	# Body/Shape of the scene is the collider of this CharacterBody2D (it must be its child; the facing flip is not applied
-	# to it). Body is only the editor holder that keeps the shape valid in the puppet scene.
-	body_shape = take_body_shape(puppet)
-	body_shape.position.x *= puppet.scale.x
-	add_child(body_shape)
-
-## Lifts Body/Shape out of a puppet (freeing the empty Body) so the caller can make it its own collider.
-static func take_body_shape(p: Puppet) -> CollisionShape2D:
-	var holder := p.get_node("Body")
-	var shape := holder.get_node("Shape") as CollisionShape2D
-	holder.remove_child(shape)
-	shape.position += holder.position
-	shape.name = &"Body"
-	holder.free()
-	return shape
+	body_shape = $Body   # (not under Puppet: the facing flip is not applied to it)
 
 func is_alive() -> bool:
 	return hp > 0

@@ -1,5 +1,7 @@
 [gd_scene format=3]
 
+[ext_resource type="Script" path="res://src/items/potion.gd" id="actor_logic"]
+
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_t5g37"]
 [ext_resource type="Texture2D" path="res://assets/puppets/potion_SmallMP/tex/OtherMat_v10_224.png" id="2_06xat"]
 [ext_resource type="AnimationLibrary" path="res://scenes/actors/potion_SmallMP/potion_SmallMP_actions.tres" id="3_lvjwy"]
@@ -10,33 +12,32 @@ resource_local_to_scene = true
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(20, 20)
 
-[node name="PotionSmallMp" type="Node2D" unique_id=1703986775]
+[node name="PotionSmallMp" type="CharacterBody2D"]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=1703986775]
 script = ExtResource("1_t5g37")
 actions = PackedStringArray("default")
 
-[node name="Sprite" type="Sprite2D" parent="." unique_id=1768778903]
+[node name="Sprite" type="Sprite2D" parent="Puppet" unique_id=1768778903]
 position = Vector2(-23.5, -21.8)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_06xat")
 centered = false
 
-[node name="Hurtbox" type="Area2D" parent="." unique_id=896403839]
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=896403839]
 collision_layer = 0
 collision_mask = 0
 monitoring = false
 
-[node name="Shape" type="CollisionShape2D" parent="Hurtbox" unique_id=958267569]
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=958267569]
 shape = SubResource("RectangleShape2D_o568x")
 disabled = true
 
-[node name="Anim" type="AnimationPlayer" parent="." unique_id=1577646603]
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1577646603]
 callback_mode_process = 0
 libraries/ = ExtResource("3_lvjwy")
 
-[node name="Body" type="StaticBody2D" parent="."]
-collision_layer = 0
-collision_mask = 0
-
-[node name="Shape" type="CollisionShape2D" parent="Body"]
+[node name="Body" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0)
 shape = SubResource("RectangleShape2D_Body")
