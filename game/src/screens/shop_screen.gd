@@ -28,12 +28,8 @@ func _ready() -> void:
 	HeroPortrait.build(_ui)
 	var per_page := int(EquipmentCatalog.get_catalog().shop.per_page)
 	for i in per_page:
-		var st := _ui.piece("Thing%d" % (i + 1)) as Node2D   # the art's goods mark where the live ones go
-		var t := UiLayout.create("shop_thing")
-		t.position = st.position
-		st.visible = false
+		var t := _ui.piece("Thing%d" % (i + 1)) as UiLayout   # the scene's shop_thing.tscn instances
 		t.button_pressed.connect(_on_thing_button.bind(i))
-		add_child(t)
 		_things.append(t)
 		_counts.append(1)
 	_icons = Control.new()
@@ -142,7 +138,7 @@ func _refresh() -> void:
 		t.set_text("Price", "%d功勋" % Forge.price(id))
 		t.set_text("Count", str(_counts[i]))
 		var cell := UiLayout.create("pack_cell")
-		cell.position = t.position + Vector2(4, 5)
+		cell.position = t.global_position + Vector2(4, 5)   # (_icons sits at the layer origin)
 		_icons.add_child(cell)
 		var item := GameState.make_item(id)
 		var icon := ItemIcon.create(item, 50.0).place(cell.position)
