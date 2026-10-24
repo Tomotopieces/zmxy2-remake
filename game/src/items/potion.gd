@@ -19,12 +19,20 @@ static func spawn(k: Kind, pos: Vector2, t: DropTable) -> Potion:
 	p.table = t
 	p.amount = {Kind.SMALL_HP: t.small_hp, Kind.BIG_HP: t.big_hp, Kind.SMALL_MP: t.small_mp}[k]
 	p.puppet = p.get_node("Puppet")
-	var shape := (p.get_node("Body") as CollisionShape2D).shape as RectangleShape2D
-	p.puppet.hurtbox.collision_mask = Actor.LAYER_HURT_HERO   # it picks up the hero's hurt box
-	p.puppet.hurtbox.monitoring = true
+	var body := p.get_node("Body") as CollisionShape2D   # the one rectangle: the bottle on the floor and where it is picked up
+	var shape := body.shape as RectangleShape2D
+	var pick := Area2D.new()   # like GroundItem: the hero takes it when his hurt box overlaps the rectangle
+	pick.name = "Pickup"
+	pick.collision_layer = 0
+	pick.collision_mask = Actor.LAYER_HURT_HERO
+	var ps := CollisionShape2D.new()
+	ps.shape = shape
+	ps.position = body.position
+	pick.add_child(ps)
+	p.add_child(pick)
 	p.collision_layer = 0
 	p.collision_mask = Actor.LAYER_WORLD | Actor.LAYER_ONEWAY
-	p.position = pos - Vector2(0, shape.size.y)
+	p.position = pos - Vector2(0, shape.size.y / 2.0 + body.position.y)   # standing on the floor point
 	p.z_index = Layers.Z_PICKUP
 	Level.current.add_object(p)
 	p.puppet.play(p.puppet.actions[0])
@@ -40,7 +48,7 @@ func _physics_process(delta: float) -> void:
 	velocity.y += GameState.hero_data.gravity * delta
 	move_and_slide()
 	var h: Hero = Level.current.hero
-	if is_instance_valid(h) and h.touches(puppet.hurtbox):
+	if is_instance_valid(h) and h.touches($Pickup):
 		_use(h)
 
 func _use(h: Hero) -> void:
