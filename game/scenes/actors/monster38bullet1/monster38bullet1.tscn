@@ -1,11 +1,12 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://cpxmvqxpy2esk"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_0tt43"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_286.png" id="2_fxobs"]
+[ext_resource type="Texture2D" uid="uid://bvbaayjbd8g7d" path="res://assets/shared/puppets/2_286.png" id="2_fxobs"]
 [ext_resource type="AnimationLibrary" path="res://scenes/actors/monster38bullet1/monster38bullet1_actions.tres" id="3_j82eb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wuh8b"]
 resource_local_to_scene = true
+size = Vector2(32, 22)
 
 [node name="Monster38Bullet1" type="Node2D" unique_id=426571678]
 script = ExtResource("1_0tt43")
@@ -22,8 +23,8 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=679405032]
+position = Vector2(18, 13)
 shape = SubResource("RectangleShape2D_wuh8b")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="." unique_id=1139343070]
 callback_mode_process = 0

@@ -1,38 +1,39 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://chorm3pj74fd2"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_da746"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_291.png" id="2_h2qji"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_290.png" id="3_ne2pc"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_295.png" id="4_xo3qp"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_297.png" id="5_aus7b"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_331.png" id="6_gws3t"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_333.png" id="7_fg701"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_335.png" id="8_qwsbo"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_383.png" id="9_dwfed"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_385.png" id="10_gihmk"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_386.png" id="11_q33p2"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_417.png" id="12_e2m5i"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_413.png" id="13_0pjpm"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_421.png" id="14_y5012"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_414.png" id="15_4x2rt"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_422.png" id="16_6nmkj"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_412.png" id="17_5wqeg"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39/tex/2_416.png" id="18_xdy1s"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_425.png" id="19_t3l3c"]
-[ext_resource type="AnimationLibrary" path="res://scenes/actors/monster39/monster39_actions.tres" id="20_dyjs3"]
+[ext_resource type="Texture2D" uid="uid://gt6u3rrjvki4" path="res://assets/puppets/monster39/tex/2_291.png" id="2_h2qji"]
+[ext_resource type="Texture2D" uid="uid://cy2kp301v1i5l" path="res://assets/puppets/monster39/tex/2_290.png" id="3_ne2pc"]
+[ext_resource type="Texture2D" uid="uid://bo8afh3gowed" path="res://assets/puppets/monster39/tex/2_295.png" id="4_xo3qp"]
+[ext_resource type="Texture2D" uid="uid://c1pd3pjee7c1d" path="res://assets/puppets/monster39/tex/2_297.png" id="5_aus7b"]
+[ext_resource type="Texture2D" uid="uid://dgyp6xq0dsc6" path="res://assets/puppets/monster39/tex/2_332.png" id="7_h2qji"]
+[ext_resource type="Texture2D" uid="uid://weqpsahpxya5" path="res://assets/puppets/monster39/tex/2_380.png" id="8_ne2pc"]
+[ext_resource type="Texture2D" uid="uid://b0y0c7xa68nmu" path="res://assets/puppets/monster39/tex/2_383.png" id="9_dwfed"]
+[ext_resource type="Texture2D" uid="uid://e2n2ldjja4fs" path="res://assets/puppets/monster39/tex/2_351.png" id="9_xo3qp"]
+[ext_resource type="Texture2D" uid="uid://dxnjmnnvsuk8u" path="res://assets/puppets/monster39/tex/2_385.png" id="10_gihmk"]
+[ext_resource type="Texture2D" uid="uid://dnvkbak5li3q" path="res://assets/puppets/monster39/tex/2_386.png" id="11_q33p2"]
+[ext_resource type="Texture2D" uid="uid://dain8as87e4hw" path="res://assets/shared/puppets/2_417.png" id="12_e2m5i"]
+[ext_resource type="Texture2D" uid="uid://cmdufosvf43ik" path="res://assets/puppets/monster39/tex/2_413.png" id="13_0pjpm"]
+[ext_resource type="Texture2D" uid="uid://cpm7p7isgia38" path="res://assets/shared/puppets/2_421.png" id="14_y5012"]
+[ext_resource type="Texture2D" uid="uid://dn73qq8js7n3l" path="res://assets/shared/puppets/2_414.png" id="15_4x2rt"]
+[ext_resource type="Texture2D" uid="uid://3bmrxcra5mw5" path="res://assets/shared/puppets/2_422.png" id="16_6nmkj"]
+[ext_resource type="Texture2D" uid="uid://4vgwyc06umr5" path="res://assets/puppets/monster39/tex/2_412.png" id="17_5wqeg"]
+[ext_resource type="Texture2D" uid="uid://tnp2n0xabv1q" path="res://assets/puppets/monster39/tex/2_416.png" id="18_xdy1s"]
+[ext_resource type="Texture2D" uid="uid://bkbd7y0odw8hb" path="res://assets/shared/puppets/2_425.png" id="19_t3l3c"]
+[ext_resource type="AnimationLibrary" uid="uid://dim15ig1u02a1" path="res://scenes/actors/monster39/monster39_actions.tres" id="20_dyjs3"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pw5jr"]
 resource_local_to_scene = true
+size = Vector2(114.5, 121.2)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iv1kf"]
 resource_local_to_scene = true
+size = Vector2(50, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(50, 120)
 
-[node name="Monster39" type="CharacterBody2D"]
+[node name="Monster39" type="CharacterBody2D" unique_id=1262757530]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=1307969282]
@@ -75,21 +76,22 @@ centered = false
 visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=926458374]
-position = Vector2(-38.800003, -72.799995)
+visible = false
+position = Vector2(-32.600002, -68.1)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("6_gws3t")
+texture = ExtResource("7_h2qji")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1340779396]
 position = Vector2(-41.25, -63.5)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_fg701")
+texture = ExtResource("8_ne2pc")
 centered = false
 
 [node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1826070882]
-position = Vector2(-152.8, -53.45)
+position = Vector2(-159.75, -86.049995)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_qwsbo")
+texture = ExtResource("9_xo3qp")
 centered = false
 
 [node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=1544118406]
@@ -188,6 +190,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1486760604]
+position = Vector2(-95.55, -15.8)
 shape = SubResource("RectangleShape2D_pw5jr")
 disabled = true
 
@@ -197,13 +200,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1679141700]
+position = Vector2(0.4, 9)
 shape = SubResource("RectangleShape2D_iv1kf")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1734287628]
 callback_mode_process = 0
 libraries/ = ExtResource("20_dyjs3")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=632922411]
 position = Vector2(0.4, 9)
 shape = SubResource("RectangleShape2D_Body")

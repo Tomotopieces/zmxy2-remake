@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://n00bjnbh5ru4" path="res://assets/ui/forge_pack/tex/OtherMat_v10_562.png" id="2_d3q6t"]
 [ext_resource type="Texture2D" uid="uid://dsx8qh8pwujqv" path="res://assets/ui/pad_icons/xbox_lb_outline.png" id="pad_lb"]
 [ext_resource type="Texture2D" uid="uid://5qnv7l32si02" path="res://assets/ui/pad_icons/xbox_rb_outline.png" id="pad_rb"]
-[ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://scenes/ui/components/yellow_button.tscn" id="yellow_button"]
 [ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://scenes/ui/components/set_btn.tscn" id="set_btn"]
+[ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://scenes/ui/components/yellow_button.tscn" id="yellow_button"]
 
 [node name="forge_pack" type="Control" unique_id=646844994]
 layout_mode = 3
@@ -90,10 +90,10 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_left = 175.0
 offset_top = 546.0
-offset_right = 263.0
+offset_right = 279.0
 offset_bottom = 578.0
 theme_override_font_sizes/font_size = 20
-text = "强 化"
+text = "强化"
 
 [node name="FusionTab" parent="." unique_id=168202555 instance=ExtResource("set_btn")]
 unique_name_in_owner = true
@@ -103,4 +103,4 @@ offset_top = 546.0
 offset_right = 341.0
 offset_bottom = 578.0
 theme_override_font_sizes/font_size = 20
-text = "熔 炼"
+text = "熔炼"

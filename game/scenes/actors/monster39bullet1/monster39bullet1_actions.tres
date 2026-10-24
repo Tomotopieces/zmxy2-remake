@@ -1,11 +1,12 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://cgplr6i7ds0i3"]
 
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39bullet1/tex/2_446.png" id="1_dd0q6"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster39bullet1/tex/2_448.png" id="2_ma1cw"]
+[ext_resource type="Texture2D" uid="uid://buwug81x27jmq" path="res://assets/puppets/monster39bullet1/tex/2_446.png" id="1_dd0q6"]
+[ext_resource type="Texture2D" uid="uid://2rd4ffx6xvbo" path="res://assets/puppets/monster39bullet1/tex/2_448.png" id="2_ma1cw"]
 
 [sub_resource type="Animation" id="Animation_gukyi"]
 length = 0.16666666666666666
 loop_mode = 1
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -37,10 +38,10 @@ tracks/2/path = NodePath("Hitbox/Shape:position")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.125),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(-11.4, 0.4), Vector2(-8, 0.4), Vector2(-8.1, 0.4)]
+"values": [Vector2(-11.4, 0.4)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -49,10 +50,10 @@ tracks/3/path = NodePath("Hitbox/Shape:shape:size")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.125),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(107, 43), Vector2(113.8, 43), Vector2(114, 43)]
+"values": [Vector2(107, 43)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false

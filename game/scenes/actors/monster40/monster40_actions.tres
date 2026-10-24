@@ -1,59 +1,71 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://cou0laba6dpok"]
 
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_60.png" id="1_j5x51"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_61.png" id="2_44chx"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_63.png" id="3_qgb8g"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_64.png" id="4_7p6np"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_65.png" id="5_es4np"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_66.png" id="6_4jp5l"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_67.png" id="7_ncbrb"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_68.png" id="8_byfw4"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_69.png" id="9_cli1f"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_70.png" id="10_mmefj"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_71.png" id="11_1po2a"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_72.png" id="12_suken"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_73.png" id="13_o4fna"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_75.png" id="14_ig0sr"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_76.png" id="15_3x3h2"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_77.png" id="16_4lhoa"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_78.png" id="17_tywqw"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_81.png" id="18_rdokg"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_82.png" id="19_ydg5p"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_19.png" id="20_oivuu"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_41.png" id="21_pjkmn"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_42.png" id="22_chfmm"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_43.png" id="23_swjnf"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_44.png" id="24_yuq4r"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_45.png" id="25_6btg3"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_46.png" id="26_pnged"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_21.png" id="27_eqtd6"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_23.png" id="28_kef6f"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_25.png" id="29_gtaxj"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_27.png" id="30_4vb75"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_29.png" id="31_6ky8e"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_31.png" id="32_oqr1d"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_33.png" id="33_2gkdg"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_35.png" id="34_6igo8"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_37.png" id="35_5u6r8"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_39.png" id="36_p8yef"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_49.png" id="37_miykf"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_50.png" id="38_vqt7c"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_51.png" id="39_4wxvv"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_13.png" id="40_dt1t8"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_14.png" id="41_tdq16"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_15.png" id="42_g1kl7"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_16.png" id="43_g076q"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_12.png" id="44_whblk"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_9.png" id="45_5jno7"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_53.png" id="46_q8baj"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_54.png" id="47_u25al"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_55.png" id="48_0rvcm"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_56.png" id="49_fk5tr"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_57.png" id="50_r7rqg"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_58.png" id="51_7b33p"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_4.png" id="52_0615o"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_2.png" id="53_7l7sk"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster40/tex/2_3.png" id="54_mq1qa"]
+[ext_resource type="Texture2D" uid="uid://m0u037t4i1ac" path="res://assets/puppets/monster40/tex/2_60.png" id="1_j5x51"]
+[ext_resource type="Texture2D" uid="uid://brtkja1xvtlds" path="res://assets/puppets/monster40/tex/2_61.png" id="2_44chx"]
+[ext_resource type="Texture2D" uid="uid://boq0kdebqkdqi" path="res://assets/puppets/monster40/tex/2_63.png" id="3_qgb8g"]
+[ext_resource type="Texture2D" uid="uid://yqwn0q2p0kl" path="res://assets/puppets/monster40/tex/2_64.png" id="4_7p6np"]
+[ext_resource type="Texture2D" uid="uid://dwl2jg1c123so" path="res://assets/puppets/monster40/tex/2_65.png" id="5_es4np"]
+[ext_resource type="Texture2D" uid="uid://y3ssroklnc6c" path="res://assets/puppets/monster40/tex/2_66.png" id="6_4jp5l"]
+[ext_resource type="Texture2D" uid="uid://boqlht7t6r0op" path="res://assets/puppets/monster40/tex/2_67.png" id="7_ncbrb"]
+[ext_resource type="Texture2D" uid="uid://37lancbpu0y3" path="res://assets/puppets/monster40/tex/2_68.png" id="8_byfw4"]
+[ext_resource type="Texture2D" uid="uid://bltbarkwa5e68" path="res://assets/puppets/monster40/tex/2_69.png" id="9_cli1f"]
+[ext_resource type="Texture2D" uid="uid://b225n1w48cf7d" path="res://assets/puppets/monster40/tex/2_70.png" id="10_mmefj"]
+[ext_resource type="Texture2D" uid="uid://bfji1wtxchsyx" path="res://assets/puppets/monster40/tex/2_71.png" id="11_1po2a"]
+[ext_resource type="Texture2D" uid="uid://bpg62mbqiao1d" path="res://assets/puppets/monster40/tex/2_72.png" id="12_suken"]
+[ext_resource type="Texture2D" uid="uid://cj2ti1o8tkc11" path="res://assets/puppets/monster40/tex/2_73.png" id="13_o4fna"]
+[ext_resource type="Texture2D" uid="uid://ckiwn8l27jpgp" path="res://assets/puppets/monster40/tex/2_75.png" id="14_ig0sr"]
+[ext_resource type="Texture2D" uid="uid://dajw8gonsmu3k" path="res://assets/puppets/monster40/tex/2_76.png" id="15_3x3h2"]
+[ext_resource type="Texture2D" uid="uid://b58cvpwu6tbpw" path="res://assets/puppets/monster40/tex/2_77.png" id="16_4lhoa"]
+[ext_resource type="Texture2D" uid="uid://kobkwuxkv5gb" path="res://assets/puppets/monster40/tex/2_78.png" id="17_tywqw"]
+[ext_resource type="Texture2D" uid="uid://lhihbek6nobh" path="res://assets/puppets/monster40/tex/2_81.png" id="18_rdokg"]
+[ext_resource type="Texture2D" uid="uid://di2ang88pgynx" path="res://assets/puppets/monster40/tex/2_82.png" id="19_ydg5p"]
+[ext_resource type="Texture2D" uid="uid://d30tba61arr8" path="res://assets/puppets/monster40/tex/2_19.png" id="20_oivuu"]
+[ext_resource type="Texture2D" uid="uid://lx2o8we5cvul" path="res://assets/puppets/monster40/tex/2_41.png" id="21_pjkmn"]
+[ext_resource type="Texture2D" uid="uid://ilvi7rptfts" path="res://assets/puppets/monster40/tex/2_42.png" id="22_chfmm"]
+[ext_resource type="Texture2D" uid="uid://cu2y1jfj4ue74" path="res://assets/puppets/monster40/tex/2_43.png" id="23_swjnf"]
+[ext_resource type="Texture2D" uid="uid://bnjt2oyeotg05" path="res://assets/puppets/monster40/tex/2_44.png" id="24_yuq4r"]
+[ext_resource type="Texture2D" uid="uid://ce7jbxv80abwc" path="res://assets/puppets/monster40/tex/2_45.png" id="25_6btg3"]
+[ext_resource type="Texture2D" uid="uid://s71k4pa24nj6" path="res://assets/puppets/monster40/tex/2_46.png" id="26_pnged"]
+[ext_resource type="Texture2D" uid="uid://bka315cw1glgf" path="res://assets/puppets/monster40/tex/2_21.png" id="27_eqtd6"]
+[ext_resource type="Texture2D" uid="uid://q6gjir81fd06" path="res://assets/puppets/monster40/tex/2_23.png" id="28_kef6f"]
+[ext_resource type="Texture2D" uid="uid://br7s0u4esq6q0" path="res://assets/puppets/monster40/tex/2_25.png" id="29_gtaxj"]
+[ext_resource type="Texture2D" uid="uid://b2jri5m2x7kah" path="res://assets/puppets/monster40/tex/2_27.png" id="30_4vb75"]
+[ext_resource type="Texture2D" uid="uid://dqf3p4i5oqvwf" path="res://assets/puppets/monster40/tex/2_29.png" id="31_6ky8e"]
+[ext_resource type="Texture2D" uid="uid://dcj3roc2a7vak" path="res://assets/puppets/monster40/tex/2_31.png" id="32_oqr1d"]
+[ext_resource type="Texture2D" uid="uid://dqqpl6xg523pk" path="res://assets/puppets/monster40/tex/2_33.png" id="33_2gkdg"]
+[ext_resource type="Texture2D" uid="uid://dvmtgo1tuvrct" path="res://assets/puppets/monster40/tex/2_35.png" id="34_6igo8"]
+[ext_resource type="Texture2D" uid="uid://du68s8j55fr7j" path="res://assets/puppets/monster40/tex/2_37.png" id="35_5u6r8"]
+[ext_resource type="Texture2D" uid="uid://detwr7fchk02y" path="res://assets/puppets/monster40/tex/2_39.png" id="36_p8yef"]
+[ext_resource type="Texture2D" uid="uid://dkrhh0etvyib0" path="res://assets/puppets/monster40/tex/2_49.png" id="37_miykf"]
+[ext_resource type="Texture2D" uid="uid://blblix6xjpfxw" path="res://assets/puppets/monster40/tex/2_50.png" id="38_vqt7c"]
+[ext_resource type="Texture2D" uid="uid://bv5jbqt78waxk" path="res://assets/puppets/monster40/tex/2_51.png" id="39_4wxvv"]
+[ext_resource type="Texture2D" uid="uid://cc87di6wadyi2" path="res://assets/puppets/monster40/tex/2_13.png" id="40_dt1t8"]
+[ext_resource type="Texture2D" uid="uid://wvboxe23xdx0" path="res://assets/puppets/monster40/tex/2_14.png" id="41_tdq16"]
+[ext_resource type="Texture2D" uid="uid://tvb01a4bw132" path="res://assets/puppets/monster40/tex/2_15.png" id="42_g1kl7"]
+[ext_resource type="Texture2D" uid="uid://ynpxje0xglwq" path="res://assets/puppets/monster40/tex/2_16.png" id="43_g076q"]
+[ext_resource type="Texture2D" uid="uid://bts48xevlidc7" path="res://assets/puppets/monster40/tex/2_53.png" id="46_q8baj"]
+[ext_resource type="Texture2D" uid="uid://dcyt4pru3ow75" path="res://assets/puppets/monster40/tex/2_54.png" id="47_u25al"]
+[ext_resource type="Texture2D" uid="uid://bhqr2fl2bhuqc" path="res://assets/puppets/monster40/tex/2_55.png" id="48_0rvcm"]
+[ext_resource type="Texture2D" uid="uid://wu8k6luucbq2" path="res://assets/puppets/monster40/tex/2_56.png" id="49_fk5tr"]
+[ext_resource type="Texture2D" uid="uid://b8xyyqcqntadm" path="res://assets/puppets/monster40/tex/2_57.png" id="50_r7rqg"]
+[ext_resource type="Texture2D" uid="uid://d4avmp37286w1" path="res://assets/puppets/monster40/tex/2_58.png" id="51_7b33p"]
+[ext_resource type="Texture2D" uid="uid://dg1abrhsr4q4t" path="res://assets/puppets/monster40/tex/2_2.png" id="53_7l7sk"]
+[ext_resource type="Texture2D" uid="uid://dtvnfdd24ptkr" path="res://assets/puppets/monster40/tex/2_3.png" id="54_mq1qa"]
+
+[sub_resource type="Animation" id="Animation_tdtba"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_i10st"]
 length = 1.0416666666666667
@@ -181,6 +193,7 @@ tracks/9/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_yiqog"]
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -212,10 +225,10 @@ tracks/2/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75, 0.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, true, true, true, true, true, true, true, true, true, false]
+"values": [true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -248,10 +261,10 @@ tracks/5/path = NodePath("Hitbox/Shape:position")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-41.6, -51.1), Vector2(-38.6, -44.15), Vector2(-39.1, -45.7), Vector2(-39.95, -47.6), Vector2(-40.9, -47.8), Vector2(-40.95, -47.8), Vector2(-74.4, 7.2), Vector2(-86.9, 10.3), Vector2(-86.9, 24.9), Vector2(-81.9, 23.8), Vector2(-44.6, -75.25)]
+"values": [Vector2(-41.6, -51.1), Vector2(-38.6, -44.15), Vector2(-39.1, -45.7), Vector2(-39.95, -47.6), Vector2(-40.9, -47.8), Vector2(-40.95, -47.8), Vector2(-74.4, 7.2), Vector2(-86.9, 10.3), Vector2(-86.9, 24.9), Vector2(-81.9, 23.8)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -260,10 +273,10 @@ tracks/6/path = NodePath("Hitbox/Shape:shape:size")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(106, 111), Vector2(112, 97.1), Vector2(113, 94), Vector2(118.1, 86.8), Vector2(120, 86.4), Vector2(120.1, 86.4), Vector2(196, 122), Vector2(230, 115.8), Vector2(230, 81), Vector2(220, 78.8), Vector2(115, 165.7)]
+"values": [Vector2(106, 111), Vector2(112, 97.1), Vector2(113, 94), Vector2(118.1, 86.8), Vector2(120, 86.4), Vector2(120.1, 86.4), Vector2(196, 122), Vector2(230, 115.8), Vector2(230, 81), Vector2(220, 78.8)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -272,10 +285,10 @@ tracks/7/path = NodePath("Hitbox/Shape:disabled")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.75),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false]
+"values": [false, true]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -990,6 +1003,7 @@ tracks/10/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_tdtba"),
 &"dead": SubResource("Animation_i10st"),
 &"hit1": SubResource("Animation_yiqog"),
 &"hit2": SubResource("Animation_2txal"),
