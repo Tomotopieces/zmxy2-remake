@@ -2,57 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_tcmg4"]
 [ext_resource type="Texture2D" uid="uid://n00bjnbh5ru4" path="res://assets/ui/forge_pack/tex/OtherMat_v10_562.png" id="2_d3q6t"]
-[ext_resource type="Texture2D" uid="uid://bs6tiecrd5yba" path="res://assets/ui/forge_pack/tex/OtherMat_v10_574.png" id="8_c4rio"]
-[ext_resource type="Texture2D" uid="uid://cwjr0wd1ruhfc" path="res://assets/ui/forge_pack/tex/OtherMat_v10_575.png" id="9_g387a"]
-[ext_resource type="Texture2D" uid="uid://fpnqawwpt17x" path="res://assets/ui/forge_pack/tex/OtherMat_v10_578.png" id="10_vgia5"]
-[ext_resource type="Texture2D" uid="uid://b6pxr1k4ixarj" path="res://assets/ui/forge_pack/tex/OtherMat_v10_579.png" id="11_3toxb"]
-[ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://scenes/ui/components/yellow_button.tscn" id="yellow_button"]
 [ext_resource type="Texture2D" uid="uid://dsx8qh8pwujqv" path="res://assets/ui/pad_icons/xbox_lb_outline.png" id="pad_lb"]
 [ext_resource type="Texture2D" uid="uid://5qnv7l32si02" path="res://assets/ui/pad_icons/xbox_rb_outline.png" id="pad_rb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_strengthbtnUp6"]
-texture = ExtResource("8_c4rio")
-expand_margin_left = -7.2
-expand_margin_top = -3.4
-expand_margin_right = -9.75
-expand_margin_bottom = -5.1
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_strengthbtnDown8"]
-texture = ExtResource("9_g387a")
-expand_margin_left = -7.2
-expand_margin_top = -5.4
-expand_margin_right = -9.75
-expand_margin_bottom = -3.1
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_strengthbtnOver7"]
-texture = ExtResource("9_g387a")
-expand_margin_left = -7.2
-expand_margin_top = -3.4
-expand_margin_right = -9.75
-expand_margin_bottom = -5.1
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mixturebtnUp9"]
-texture = ExtResource("10_vgia5")
-expand_margin_left = -11.95
-expand_margin_top = -9.05
-expand_margin_right = -8.05
-expand_margin_bottom = -0.45
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mixturebtnDown11"]
-texture = ExtResource("11_3toxb")
-expand_margin_left = -11.95
-expand_margin_top = -11.05
-expand_margin_right = -8.05
-expand_margin_bottom = 1.55
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mixturebtnOver10"]
-texture = ExtResource("11_3toxb")
-expand_margin_left = -11.95
-expand_margin_top = -9.05
-expand_margin_right = -8.05
-expand_margin_bottom = -0.45
+[ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://scenes/ui/components/yellow_button.tscn" id="yellow_button"]
+[ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://scenes/ui/components/set_btn.tscn" id="set_btn"]
 
 [node name="forge_pack" type="Control" unique_id=646844994]
 layout_mode = 3
@@ -72,33 +25,33 @@ centered = false
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 693.5
-offset_top = 550.69995
+offset_top = 542.69995
 offset_right = 828.5
-offset_bottom = 587.49994
+offset_bottom = 570.69995
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 23
 text = "1234567890"
 
-[node name="LbIcon" type="TextureRect" parent="."]
+[node name="LbIcon" type="TextureRect" parent="." unique_id=2086667780]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 524.70
+offset_left = 524.7
 offset_top = 108.65
-offset_right = 550.70
+offset_right = 550.7
 offset_bottom = 134.65
 mouse_filter = 2
 texture = ExtResource("pad_lb")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="RbIcon" type="TextureRect" parent="."]
+[node name="RbIcon" type="TextureRect" parent="." unique_id=194762545]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 767.70
+offset_left = 767.7
 offset_top = 108.65
-offset_right = 793.70
+offset_right = 793.7
 offset_bottom = 134.65
 mouse_filter = 2
 texture = ExtResource("pad_rb")
@@ -108,58 +61,46 @@ stretch_mode = 5
 [node name="BtnZhuangBei" parent="." unique_id=230767215 instance=ExtResource("yellow_button")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 554.10
+offset_left = 554.1
 offset_top = 109.65
-offset_right = 614.70
+offset_right = 614.7
 offset_bottom = 133.35
 text = "装 备"
 
 [node name="BtnDaoJu" parent="." unique_id=452979093 instance=ExtResource("yellow_button")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 629.80
+offset_left = 629.8
 offset_top = 109.65
-offset_right = 690.40
+offset_right = 690.4
 offset_bottom = 133.35
 text = "道 具"
 
 [node name="BtnShiZhuang" parent="." unique_id=1780234149 instance=ExtResource("yellow_button")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 703.80
+offset_left = 703.8
 offset_top = 109.65
-offset_right = 764.70
+offset_right = 764.7
 offset_bottom = 133.35
 text = "时 装"
 
-[node name="StrengthenTab" type="Button" parent="." unique_id=1874580160]
+[node name="StrengthenTab" parent="." unique_id=1874580160 instance=ExtResource("set_btn")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 188.8
-offset_top = 549.14996
-offset_right = 249.75
-offset_bottom = 579.14996
-focus_mode = 0
-mouse_default_cursor_shape = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_strengthbtnUp6")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_strengthbtnDown8")
-theme_override_styles/hover = SubResource("StyleBoxTexture_strengthbtnOver7")
-theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_strengthbtnDown8")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_strengthbtnUp6")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+offset_left = 175.0
+offset_top = 546.0
+offset_right = 263.0
+offset_bottom = 578.0
+theme_override_font_sizes/font_size = 20
+text = "强 化"
 
-[node name="FusionTab" type="Button" parent="." unique_id=168202555]
+[node name="FusionTab" parent="." unique_id=168202555 instance=ExtResource("set_btn")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 265.25
-offset_top = 543.5
-offset_right = 330.25
-offset_bottom = 574.5
-focus_mode = 0
-mouse_default_cursor_shape = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_mixturebtnUp9")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_mixturebtnDown11")
-theme_override_styles/hover = SubResource("StyleBoxTexture_mixturebtnOver10")
-theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mixturebtnDown11")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_mixturebtnUp9")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+offset_left = 253.0
+offset_top = 546.0
+offset_right = 341.0
+offset_bottom = 578.0
+theme_override_font_sizes/font_size = 20
+text = "熔 炼"

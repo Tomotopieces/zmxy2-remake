@@ -84,6 +84,8 @@ func _on_button(b: String) -> void:
 func _show_page(fusion: bool) -> void:
 	_return_all()
 	_fusion = fusion
+	for t in ["StrengthenTab", "FusionTab"]:   # the open page's text is orange, like the menu tabs
+		(_pack.piece(t) as Button).add_theme_color_override(&"font_color", TabMenu.SELECTED if (t == "FusionTab") == fusion else Color.WHITE)
 	if _page:
 		_page.queue_free()
 	_page = UiLayout.create("forge_fusion" if fusion else "forge_strength")
