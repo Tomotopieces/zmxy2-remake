@@ -7,6 +7,7 @@ extends Hero
 
 const STANCE := &"hit7-1"
 const STAB := &"hit7-2"
+var _stab_ready := false   ## 反伤架势: set by the stance animation's "allow_stab" key; from then on L fires the 飞刺
 const CANCELABLE := [&"hit1", &"hit2", &"hit3", &"hit4", &"hit5"]
 const STAB_ART_ANGLE := -PI / 2.0   ## the stab art points up: heading.angle() + PI / 2 turns it along a heading
 
@@ -62,12 +63,13 @@ func _cast_stance() -> bool:
 		return false
 	if state == State.ATTACK and attack_action == STANCE:
 		var a: AttackData = data.attacks[STAB]
-		if puppet.time() > float(data.kit.reflect.recast_after) and mp >= a.mp_cost:
+		if _stab_ready and mp >= a.mp_cost:
 			mp -= a.mp_cost
 			cooldown = a.cooldown
 			_begin(STAB)
 			return true
 		return false
+	_stab_ready = false
 	return _cast(&"hit7", STANCE)
 
 # ------------------------------------------------------------------ motion
@@ -136,6 +138,8 @@ func _on_hero_call(n: String, _args: Array) -> void:
 			invincible = maxf(invincible, float(data.kit.hit5.invincible))
 		"do_hit8":
 			_pull_monsters()
+		"allow_stab":
+			_stab_ready = true
 		"create_stab":
 			_create_stabs()
 

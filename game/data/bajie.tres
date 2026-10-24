@@ -156,8 +156,7 @@ kit = {
 "offset_y": -100.0
 },
 "reflect": {
-"mul": 2.0,
-"recast_after": 1.6666666666666667
+"mul": 2.0
 },
 "stab": {
 "count": 10.0,

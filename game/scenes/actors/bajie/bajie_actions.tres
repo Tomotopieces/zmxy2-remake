@@ -5076,6 +5076,20 @@ tracks/52/keys = {
 "method": &"ev_finished"
 }]
 }
+tracks/53/type = "method"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath(".")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0.95),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["allow_stab"],
+"method": &"ev_call"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_arhxy"]
 length = 0.375

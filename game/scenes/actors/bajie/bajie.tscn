@@ -175,7 +175,7 @@
 [ext_resource type="Texture2D" uid="uid://dtjt4aro3fvkc" path="res://assets/puppets/bajie/tex/Pig9_337.png" id="173_bigi2"]
 [ext_resource type="Texture2D" uid="uid://cwvxrnitxw1l8" path="res://assets/puppets/bajie/tex/Pig9_336.png" id="174_5midw"]
 [ext_resource type="Texture2D" uid="uid://dbnleligiuh1o" path="res://assets/puppets/bajie/tex/Pig9_331.png" id="175_ueuvi"]
-[ext_resource type="Texture2D" uid="uid://cd14nn1521x58" path="res://assets/puppets/bajie/tex/Pig9_332.png" id="176_0ruh4"]
+[ext_resource type="Texture2D" uid="uid://b1e4b76atc4fo" path="res://assets/puppets/bajie/tex/Pig9_335.png" id="176_61sw7"]
 [ext_resource type="Texture2D" uid="uid://paiu0cecoo0o" path="res://assets/puppets/bajie/tex/Pig9_340.png" id="177_cn1xo"]
 [ext_resource type="Texture2D" uid="uid://kffirkotgqya" path="res://assets/puppets/bajie/tex/Pig9_342.png" id="178_b6wk3"]
 [ext_resource type="Texture2D" uid="uid://bk0q7tf0wymt4" path="res://assets/puppets/bajie/tex/Pig9_348.png" id="179_d6r4x"]
@@ -183,7 +183,7 @@
 [ext_resource type="Texture2D" uid="uid://bqhgkgucu3ki1" path="res://assets/puppets/bajie/tex/Pig9_351.png" id="181_p6yhk"]
 [ext_resource type="Texture2D" uid="uid://dfvlfaflwncpt" path="res://assets/puppets/bajie/tex/Pig9_352.png" id="182_m6dra"]
 [ext_resource type="Texture2D" uid="uid://di216jno8k4oj" path="res://assets/puppets/bajie/tex/Pig9_353.png" id="183_exk8k"]
-[ext_resource type="AnimationLibrary" path="res://scenes/actors/bajie/bajie_actions.tres" id="184_v0828"]
+[ext_resource type="AnimationLibrary" uid="uid://5r4snfk5g710" path="res://scenes/actors/bajie/bajie_actions.tres" id="184_v0828"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n1rid"]
 shader = ExtResource("146_oaho5")
@@ -425,7 +425,7 @@ shader_parameter/extend = 19.857239
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pl54c"]
 resource_local_to_scene = true
-size = Vector2(103, 78)
+size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nbrob"]
 resource_local_to_scene = true
@@ -4473,45 +4473,52 @@ texture = ExtResource("169_kdhxu")
 centered = false
 
 [node name="Hit7And1Part6" type="Sprite2D" parent="Poses/Hit7And1" unique_id=108847193]
+visible = false
 position = Vector2(-69.75, -58.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("170_5ioxl")
 centered = false
 
 [node name="Hit7And1Part7" type="Sprite2D" parent="Poses/Hit7And1" unique_id=118478171]
+visible = false
 position = Vector2(-79.1, -71.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("171_qsw0x")
 centered = false
 
 [node name="Hit7And1Part8" type="Sprite2D" parent="Poses/Hit7And1" unique_id=1631304816]
+visible = false
 position = Vector2(-77.75, -74.4)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("172_tuuyl")
 centered = false
 
 [node name="Hit7And1Part9" type="Sprite2D" parent="Poses/Hit7And1" unique_id=1240596993]
+visible = false
 position = Vector2(-50.25, -54.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("173_bigi2")
 centered = false
 
 [node name="Hit7And1Part10" type="Sprite2D" parent="Poses/Hit7And1" unique_id=1071282445]
+visible = false
 position = Vector2(-56.3, -54.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("174_5midw")
 centered = false
 
 [node name="Hit7And1Part11" type="Sprite2D" parent="Poses/Hit7And1" unique_id=1713939642]
+visible = false
 position = Vector2(-79.1, -71.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("175_ueuvi")
 centered = false
 
 [node name="Hit7And1Part12" type="Sprite2D" parent="Poses/Hit7And1" unique_id=1624787725]
+visible = false
 position = Vector2(-61.65, -69.5)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("176_0ruh4")
+texture = ExtResource("176_61sw7")
 centered = false
 
 [node name="Hit7And2" type="Node2D" parent="Poses" unique_id=877314988]
@@ -5003,7 +5010,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=823498959]
-position = Vector2(6.7, 10.3)
+position = Vector2(-2.8, 13.3)
 shape = SubResource("RectangleShape2D_pl54c")
 disabled = true
 
