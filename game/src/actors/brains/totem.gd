@@ -6,14 +6,26 @@ extends MonsterBrain
 
 var _next := 0
 
+var _risen := false
+
+## It rises out of the ground first (its "rise" action: no hurt box until the last frame), then stands and starts.
 func setup() -> void:
-	m.puppet.play(&"wait")   # from its first frame (its walk pose would show for one frame)
+	if m.puppet.actions.has("rise"):
+		m.puppet.play(&"rise")
+		m.puppet.action_finished.connect(func(a): if a == &"rise": _start(), CONNECT_ONE_SHOT)
+	else:
+		_start()
+
+func _start() -> void:
+	_risen = true
+	m.puppet.play(&"wait")
 	Timers.start(m, float(param("first", param("every", 1.0))), func():
 		_act()
 		Timers.start(m, float(param("every", 1.0)), _act, true))
 
 func custom_animation() -> bool:
-	m.puppet.play(&"wait")
+	if _risen:
+		m.puppet.play(&"wait")
 	return true
 
 func think(_delta: float) -> void:

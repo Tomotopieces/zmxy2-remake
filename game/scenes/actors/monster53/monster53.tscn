@@ -1,28 +1,27 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://bwkktxnjf840s"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_geffr"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_fv6ld"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_140.png" id="3_0t2p7"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_170.png" id="4_egdrm"]
-[ext_resource type="AnimationLibrary" path="res://scenes/actors/monster53/monster53_actions.tres" id="5_xbf1t"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="2_fv6ld"]
+[ext_resource type="Texture2D" uid="uid://d06rs773e65f7" path="res://assets/shared/puppets/2_140.png" id="3_0t2p7"]
+[ext_resource type="Texture2D" uid="uid://bmbohqph6lcpj" path="res://assets/shared/puppets/2_170.png" id="4_egdrm"]
+[ext_resource type="AnimationLibrary" uid="uid://cfkax8opaygf8" path="res://scenes/actors/monster53/monster53_actions.tres" id="5_xbf1t"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vai1u"]
 shader = ExtResource("2_fv6ld")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(1.18086, 0.030859996, 0.030859996, 0, 0.060939983, 1.21094, 0.060939983, 0, 0.008199998, 0.008199998, 1.1582, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(-0.20441177, -0.20441177, -0.20441176, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5efui"]
@@ -30,21 +29,21 @@ resource_local_to_scene = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5q8n"]
 resource_local_to_scene = true
+size = Vector2(180, 250)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(180, 250)
 
-[node name="Monster53" type="CharacterBody2D"]
+[node name="Monster53" type="CharacterBody2D" unique_id=670354764]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=102102827]
 script = ExtResource("1_geffr")
-actions = PackedStringArray("walk", "wait", "dead")
+actions = PackedStringArray("walk", "wait", "dead", "rise")
 
 [node name="Poses" type="Node2D" parent="Puppet" unique_id=1259957038]
 
 [node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=805757804]
-visible = false
 
 [node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1935721958]
 material = SubResource("ShaderMaterial_vai1u")
@@ -52,7 +51,9 @@ position = Vector2(-155.65001, -103.6)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_0t2p7")
 centered = false
+offset = Vector2(131.5, 19.799988)
 region_enabled = true
+region_rect = Rect2(131.5, 19.799988, 372.4, 508.2)
 
 [node name="WalkPart2" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=2053416742]
 position = Vector2(-136.65, -162.15)
@@ -69,13 +70,37 @@ position = Vector2(-155.65001, -103.55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_0t2p7")
 centered = false
+offset = Vector2(131.5, 19.799988)
 region_enabled = true
+region_rect = Rect2(131.5, 19.799988, 372.4, 508.2)
 
 [node name="WaitPart2" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=584337678]
 position = Vector2(-136.65, -162.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_egdrm")
 centered = false
+
+[node name="Rise" type="Node2D" parent="Puppet/Poses"]
+visible = false
+
+[node name="RisePart1" type="Sprite2D" parent="Puppet/Poses/Rise"]
+material = SubResource("ShaderMaterial_vai1u")
+position = Vector2(-155.65001, -103.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_0t2p7")
+centered = false
+offset = Vector2(131.5, 19.799988)
+region_enabled = true
+region_rect = Rect2(131.5, 19.799988, 372.4, 0)
+visible = false
+
+[node name="RisePart2" type="Sprite2D" parent="Puppet/Poses/Rise"]
+position = Vector2(-136.65, -162.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_egdrm")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 548, 18)
 
 [node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=470220471]
 visible = false
@@ -86,9 +111,12 @@ position = Vector2(-155.65001, -103.6)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_0t2p7")
 centered = false
+offset = Vector2(131.5, 19.799988)
 region_enabled = true
+region_rect = Rect2(131.5, 19.799988, 372.4, 508.2)
 
 [node name="DeadPart2" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1982975648]
+visible = false
 centered = false
 region_enabled = true
 
@@ -113,13 +141,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=611921783]
+position = Vector2(1.4, 34.9)
 shape = SubResource("RectangleShape2D_m5q8n")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1280733535]
 callback_mode_process = 0
 libraries/ = ExtResource("5_xbf1t")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1356269203]
 position = Vector2(1.4, 34.9)
 shape = SubResource("RectangleShape2D_Body")

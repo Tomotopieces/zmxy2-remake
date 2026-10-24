@@ -39,7 +39,7 @@ script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=1079150881]
 script = ExtResource("1_3thfu")
-actions = PackedStringArray("walk", "wait", "dead")
+actions = PackedStringArray("walk", "wait", "dead", "rise")
 
 [node name="Poses" type="Node2D" parent="Puppet" unique_id=1142609393]
 
@@ -76,6 +76,28 @@ position = Vector2(-137.15, -170.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_k2oh5")
 centered = false
+
+[node name="Rise" type="Node2D" parent="Puppet/Poses"]
+visible = false
+
+[node name="RisePart1" type="Sprite2D" parent="Puppet/Poses/Rise"]
+material = SubResource("ShaderMaterial_bmbid")
+position = Vector2(-155.15001, -95.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_bp3mp")
+centered = false
+offset = Vector2(131.5, 19.799988)
+region_enabled = true
+region_rect = Rect2(131.5, 19.799988, 372.4, 0)
+visible = false
+
+[node name="RisePart2" type="Sprite2D" parent="Puppet/Poses/Rise"]
+position = Vector2(-137.15, -170.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_k2oh5")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 548, 18)
 
 [node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=755536003]
 visible = false

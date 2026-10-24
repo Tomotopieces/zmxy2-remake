@@ -3,9 +3,7 @@
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_wlu1x"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_a11v4"]
 [ext_resource type="Texture2D" path="res://assets/puppets/doorcalled/tex/2_87.png" id="3_yh3cn"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_140.png" id="4_1a3fw"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/2_96.png" id="5_ibx2v"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_170.png" id="6_4dxe3"]
 [ext_resource type="AnimationLibrary" path="res://scenes/actors/doorcalled/doorcalled_actions.tres" id="7_wbrxb"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ccuy5"]
@@ -280,23 +278,6 @@ shader_parameter/glow2_strength = null
 shader_parameter/solid = null
 shader_parameter/extend = 12.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_nqta2"]
-shader = ExtResource("2_a11v4")
-shader_parameter/matrix_on = true
-shader_parameter/color_matrix = Projection(1.18086, 0.030859996, 0.030859996, 0, 0.060939983, 1.21094, 0.060939983, 0, 0.008199998, 0.008199998, 1.1582, 0, 0, 0, 0, 1)
-shader_parameter/color_offset = Vector4(-0.20441177, -0.20441177, -0.20441176, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
-shader_parameter/extend = 0.0
-
 [node name="Doorcalled" type="Node2D" unique_id=2116951261]
 script = ExtResource("1_wlu1x")
 actions = PackedStringArray("default")
@@ -416,28 +397,12 @@ scale = Vector2(2.0735, 2.0735)
 texture = ExtResource("3_yh3cn")
 centered = false
 
-[node name="Part17" type="Sprite2D" parent="." unique_id=1576898863]
-offset = Vector2(131.5, 19.799988)
-material = SubResource("ShaderMaterial_nqta2")
-position = Vector2(-153.65001, -24.199997)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_1a3fw")
-centered = false
-region_enabled = true
-
 [node name="Part18" type="Sprite2D" parent="." unique_id=1438225956]
 offset = Vector2(0, 307.59998)
 region_rect = Rect2(0, 307.59998, 59.600006, 357.40002)
 position = Vector2(68.5, -363.84998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_ibx2v")
-centered = false
-region_enabled = true
-
-[node name="Part19" type="Sprite2D" parent="." unique_id=233284438]
-position = Vector2(-134.65, -17.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("6_4dxe3")
 centered = false
 region_enabled = true
 

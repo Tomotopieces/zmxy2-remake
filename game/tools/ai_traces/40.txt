@@ -34,21 +34,78 @@
 217 #0 MOVE/walk hp=6000/10000 dx=481
 371 #0 ATTACK/hit3 hp=4000/10000 dx=297
 430 #0 MOVE/hit3 hp=4000/10000 dx=297
+430 #1 appears id=53 hp=3000 x=535
+430 #1 MOVE/rise hp=3000/3000 dx=2
 431 #0 MOVE/walk hp=4000/10000 dx=296
-545 #1 appears id=53 hp=3000 x=535
-545 #1 MOVE/wait hp=3000/3000 dx=2
+503 #1 MOVE/wait hp=3000/3000 dx=2
 552 #0 ATTACK/hit3 hp=2000/10000 dx=152
 611 #0 MOVE/hit3 hp=2000/10000 dx=152
+611 #2 appears id=54 hp=3000 x=535
+611 #2 MOVE/rise hp=3000/3000 dx=2
 612 #0 MOVE/walk hp=2000/10000 dx=151
 614 #0 MOVE/wait hp=2000/10000 dx=149
 660 #0 ATTACK/hit2 hp=2000/10000 dx=149
+684 #2 MOVE/wait hp=3000/3000 dx=2
+684 #3 appears id=37 hp=1000 x=535
+684 #3 MOVE/walk hp=1000/1000 dx=2
+685 #3 MOVE/wait hp=1000/1000 dx=2
 709 #0 MOVE/hit2 hp=2000/10000 dx=149
 710 #0 MOVE/wait hp=2000/10000 dx=149
+716 #3 ATTACK/hit1 hp=1000/1000 dx=2
 720 #0 ATTACK/hit1 hp=2000/10000 dx=149
 721 #0 DEAD/dead hp=0/10000 dx=149
 721 #1 DEAD/dead hp=0/3000 dx=2
+721 #2 DEAD/dead hp=0/3000 dx=2
+775 #3 MOVE/hit1 hp=1000/1000 dx=2
+776 #3 MOVE/wait hp=1000/1000 dx=2
 798 #1 gone
+798 #2 gone
 826 #0 gone
+866 #3 ATTACK/hit1 hp=1000/1000 dx=2
+925 #3 MOVE/hit1 hp=1000/1000 dx=2
+926 #3 MOVE/wait hp=1000/1000 dx=2
+1107 #3 ATTACK/hit1 hp=1000/1000 dx=2
+1166 #3 MOVE/hit1 hp=1000/1000 dx=2
+1167 #3 MOVE/wait hp=1000/1000 dx=2
+1257 #3 ATTACK/hit1 hp=1000/1000 dx=2
+1316 #3 MOVE/hit1 hp=1000/1000 dx=2
+1317 #3 MOVE/wait hp=1000/1000 dx=2
+1407 #3 ATTACK/hit1 hp=1000/1000 dx=2
+1466 #3 MOVE/hit1 hp=1000/1000 dx=2
+1467 #3 MOVE/wait hp=1000/1000 dx=2
+1557 #3 ATTACK/hit1 hp=1000/1000 dx=2
+1616 #3 MOVE/hit1 hp=1000/1000 dx=2
+1617 #3 MOVE/wait hp=1000/1000 dx=2
+1798 #3 ATTACK/hit1 hp=1000/1000 dx=2
+1857 #3 MOVE/hit1 hp=1000/1000 dx=2
+1858 #3 MOVE/wait hp=1000/1000 dx=2
+2585 #3 ATTACK/hit1 hp=1000/1000 dx=2
+2644 #3 MOVE/hit1 hp=1000/1000 dx=2
+2645 #3 MOVE/wait hp=1000/1000 dx=2
+2826 #3 ATTACK/hit1 hp=1000/1000 dx=2
+2885 #3 MOVE/hit1 hp=1000/1000 dx=2
+2886 #3 MOVE/wait hp=1000/1000 dx=2
+3067 #3 ATTACK/hit1 hp=1000/1000 dx=2
+3126 #3 MOVE/hit1 hp=1000/1000 dx=2
+3127 #3 MOVE/wait hp=1000/1000 dx=2
+3217 #3 ATTACK/hit1 hp=1000/1000 dx=2
+3276 #3 MOVE/hit1 hp=1000/1000 dx=2
+3277 #3 MOVE/wait hp=1000/1000 dx=2
+3549 #3 ATTACK/hit1 hp=1000/1000 dx=2
+3608 #3 MOVE/hit1 hp=1000/1000 dx=2
+3609 #3 MOVE/wait hp=1000/1000 dx=2
+3699 #3 ATTACK/hit1 hp=1000/1000 dx=2
+3758 #3 MOVE/hit1 hp=1000/1000 dx=2
+3759 #3 MOVE/wait hp=1000/1000 dx=2
+3849 #3 ATTACK/hit1 hp=1000/1000 dx=2
+3908 #3 MOVE/hit1 hp=1000/1000 dx=2
+3909 #3 MOVE/wait hp=1000/1000 dx=2
+3999 #3 ATTACK/hit1 hp=1000/1000 dx=2
+4058 #3 MOVE/hit1 hp=1000/1000 dx=2
+4059 #3 MOVE/wait hp=1000/1000 dx=2
+4422 #3 ATTACK/hit1 hp=1000/1000 dx=2
+4481 #3 MOVE/hit1 hp=1000/1000 dx=2
+4482 #3 MOVE/wait hp=1000/1000 dx=2
 # 40 far
 0 #0 appears id=40 hp=10000 x=833
 0 #0 MOVE/walk hp=10000/10000 dx=650

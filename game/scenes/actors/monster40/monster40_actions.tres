@@ -52,21 +52,6 @@
 [ext_resource type="Texture2D" uid="uid://dg1abrhsr4q4t" path="res://assets/puppets/monster40/tex/2_2.png" id="53_7l7sk"]
 [ext_resource type="Texture2D" uid="uid://dtvnfdd24ptkr" path="res://assets/puppets/monster40/tex/2_3.png" id="54_mq1qa"]
 
-[sub_resource type="Animation" id="Animation_tdtba"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Hitbox/Shape:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
 [sub_resource type="Animation" id="Animation_i10st"]
 length = 1.0416666666666667
 tracks/0/type = "value"
@@ -225,10 +210,10 @@ tracks/2/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.8333333),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [true, false]
+"values": [true, true, true, true, true, true, true, true, true, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -261,10 +246,10 @@ tracks/5/path = NodePath("Hitbox/Shape:position")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-41.6, -51.1), Vector2(-38.6, -44.15), Vector2(-39.1, -45.7), Vector2(-39.95, -47.6), Vector2(-40.9, -47.8), Vector2(-40.95, -47.8), Vector2(-74.4, 7.2), Vector2(-86.9, 10.3), Vector2(-86.9, 24.9), Vector2(-81.9, 23.8)]
+"values": [Vector2(-41.6, -51.1), Vector2(-38.6, -44.15), Vector2(-39.1, -45.7), Vector2(-39.95, -47.6), Vector2(-40.9, -47.8), Vector2(-40.95, -47.8), Vector2(-74.4, 7.2), Vector2(-86.9, 10.3), Vector2(-86.9, 24.9), Vector2(-81.9, 23.8), Vector2(-44.6, -75.25)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -273,10 +258,10 @@ tracks/6/path = NodePath("Hitbox/Shape:shape:size")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333, 0.6666667, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(106, 111), Vector2(112, 97.1), Vector2(113, 94), Vector2(118.1, 86.8), Vector2(120, 86.4), Vector2(120.1, 86.4), Vector2(196, 122), Vector2(230, 115.8), Vector2(230, 81), Vector2(220, 78.8)]
+"values": [Vector2(106, 111), Vector2(112, 97.1), Vector2(113, 94), Vector2(118.1, 86.8), Vector2(120, 86.4), Vector2(120.1, 86.4), Vector2(196, 122), Vector2(230, 115.8), Vector2(230, 81), Vector2(220, 78.8), Vector2(115, 165.7)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -285,10 +270,10 @@ tracks/7/path = NodePath("Hitbox/Shape:disabled")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.75),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false, true]
+"values": [false]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -1003,7 +988,6 @@ tracks/10/keys = {
 
 [resource]
 _data = {
-&"RESET": SubResource("Animation_tdtba"),
 &"dead": SubResource("Animation_i10st"),
 &"hit1": SubResource("Animation_yiqog"),
 &"hit2": SubResource("Animation_2txal"),

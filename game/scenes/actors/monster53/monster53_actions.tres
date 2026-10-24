@@ -1,7 +1,4 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_140.png" id="1_kgmyl"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_170.png" id="2_3hh8r"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://cfkax8opaygf8"]
 
 [sub_resource type="Animation" id="Animation_hjkvw"]
 tracks/0/type = "value"
@@ -252,7 +249,7 @@ tracks/19/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_e5wp2"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -376,7 +373,7 @@ tracks/9/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_uyvjv"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -499,8 +496,84 @@ tracks/9/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_rise"]
+length = 1.2083334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Poses/Rise/RisePart1:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Poses/Rise/RisePart1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.25, 1.2083334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-155.65001, 150.55), Vector2(-155.65001, -103.55)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Poses/Rise/RisePart1:region_rect")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.25, 1.2083334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 508.2)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Poses/Rise/RisePart2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.2083334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-136.65, 153.90), Vector2(-136.65, -162.1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Poses/Rise/RisePart2:region_rect")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.2083334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 548, 18), Rect2(0, 0, 548, 650)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hurtbox/Shape:disabled")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.2083334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
 [resource]
 _data = {
+&"rise": SubResource("Animation_rise"),
 &"dead": SubResource("Animation_hjkvw"),
 &"wait": SubResource("Animation_e5wp2"),
 &"walk": SubResource("Animation_uyvjv")

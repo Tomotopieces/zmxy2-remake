@@ -1,9 +1,7 @@
 [gd_resource type="AnimationLibrary" format=3]
 
 [ext_resource type="Texture2D" path="res://assets/puppets/doorcalled/tex/2_87.png" id="1_jxjx3"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_140.png" id="2_u3vpc"]
 [ext_resource type="Texture2D" path="res://assets/shared/puppets/2_96.png" id="3_p1a6l"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/2_170.png" id="4_qvp03"]
 
 [sub_resource type="Animation" id="Animation_1f81y"]
 length = 1.9166666666666667
@@ -406,94 +404,34 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/imported = false
 tracks/33/enabled = true
-tracks/33/path = NodePath("Part17:visible")
+tracks/33/path = NodePath("Part18:visible")
 tracks/33/interp = 0
 tracks/33/loop_wrap = true
 tracks/33/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
-}
-tracks/34/type = "value"
-tracks/34/imported = false
-tracks/34/enabled = true
-tracks/34/path = NodePath("Part17:transform")
-tracks/34/interp = 0
-tracks/34/loop_wrap = true
-tracks/34/keys = {
-"times": PackedFloat32Array(0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [Transform2D(0.5, 0, 0, 0.5, -153.65001, -24.199997), Transform2D(0.5, 0, 0, 0.5, -153.65001, -35.1), Transform2D(0.5, 0, 0, 0.5, -153.65001, -45.949997), Transform2D(0.5, 0, 0, 0.5, -153.65001, -56.85), Transform2D(0.5, 0, 0, 0.5, -153.65001, -67.7), Transform2D(0.5, 0, 0, 0.5, -153.65001, -78.6), Transform2D(0.5, 0, 0, 0.5, -153.65001, -89.45), Transform2D(0.5, 0, 0, 0.5, -153.65001, -100.35), Transform2D(0.5, 0, 0, 0.5, -153.65001, -111.2), Transform2D(0.5, 0, 0, 0.5, -153.65001, -122.1), Transform2D(0.5, 0, 0, 0.5, -153.65001, -132.95), Transform2D(0.5, 0, 0, 0.5, -153.65001, -143.85), Transform2D(0.5, 0, 0, 0.5, -153.65001, -154.7), Transform2D(0.5, 0, 0, 0.5, -153.65001, -165.6), Transform2D(0.5, 0, 0, 0.5, -153.65001, -176.45), Transform2D(0.5, 0, 0, 0.5, -153.65001, -187.35), Transform2D(0.5, 0, 0, 0.5, -153.65001, -198.2), Transform2D(0.5, 0, 0, 0.5, -153.65001, -209.1), Transform2D(0.5, 0, 0, 0.5, -153.65001, -219.95), Transform2D(0.5, 0, 0, 0.5, -153.65001, -230.85), Transform2D(0.5, 0, 0, 0.5, -153.65001, -241.7), Transform2D(0.5, 0, 0, 0.5, -153.65001, -252.6), Transform2D(0.5, 0, 0, 0.5, -153.65001, -263.45), Transform2D(0.5, 0, 0, 0.5, -153.65001, -274.35)]
-}
-tracks/35/type = "value"
-tracks/35/imported = false
-tracks/35/enabled = true
-tracks/35/path = NodePath("Part17:region_rect")
-tracks/35/interp = 0
-tracks/35/loop_wrap = true
-tracks/35/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 0), Rect2(131.5, 19.799988, 372.4, 11.6), Rect2(131.5, 19.799988, 372.4, 33.4), Rect2(131.5, 19.799988, 372.4, 55.199997), Rect2(131.5, 19.799988, 372.4, 77), Rect2(131.5, 19.799988, 372.4, 98.6), Rect2(131.5, 19.799988, 372.4, 120.399994), Rect2(131.5, 19.799988, 372.4, 142.2), Rect2(131.5, 19.799988, 372.4, 164), Rect2(131.5, 19.799988, 372.4, 185.6), Rect2(131.5, 19.799988, 372.4, 207.4), Rect2(131.5, 19.799988, 372.4, 229.2), Rect2(131.5, 19.799988, 372.4, 251), Rect2(131.5, 19.799988, 372.4, 272.6), Rect2(131.5, 19.799988, 372.4, 294.4), Rect2(131.5, 19.799988, 372.4, 316.2), Rect2(131.5, 19.799988, 372.4, 338), Rect2(131.5, 19.799988, 372.4, 359.6), Rect2(131.5, 19.799988, 372.4, 381.4), Rect2(131.5, 19.799988, 372.4, 403.2), Rect2(131.5, 19.799988, 372.4, 425), Rect2(131.5, 19.799988, 372.4, 446.6), Rect2(131.5, 19.799988, 372.4, 468.4), Rect2(131.5, 19.799988, 372.4, 490.2), Rect2(131.5, 19.799988, 372.4, 508.2)]
-}
-tracks/36/type = "value"
-tracks/36/imported = false
-tracks/36/enabled = true
-tracks/36/path = NodePath("Part18:visible")
-tracks/36/interp = 0
-tracks/36/loop_wrap = true
-tracks/36/keys = {
 "times": PackedFloat32Array(0, 1, 1.0416666),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
 }
-tracks/37/type = "value"
-tracks/37/imported = false
-tracks/37/enabled = true
-tracks/37/path = NodePath("Part18:transform")
-tracks/37/interp = 0
-tracks/37/loop_wrap = true
-tracks/37/keys = {
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Part18:transform")
+tracks/34/interp = 0
+tracks/34/loop_wrap = true
+tracks/34/keys = {
 "times": PackedFloat32Array(1),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [Transform2D(0.5, 0, 0, 0.5, 68.5, -363.84998)]
 }
-tracks/38/type = "value"
-tracks/38/imported = false
-tracks/38/enabled = true
-tracks/38/path = NodePath("Part19:transform")
-tracks/38/interp = 0
-tracks/38/loop_wrap = true
-tracks/38/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [Transform2D(0.5, 0, 0, 0.5, -134.65, -17.5), Transform2D(0.5, 0, 0, 0.5, -134.65, -28.399994), Transform2D(0.5, 0, 0, 0.5, -134.65, -39.25), Transform2D(0.5, 0, 0, 0.5, -134.65, -50.15), Transform2D(0.5, 0, 0, 0.5, -134.65, -61), Transform2D(0.5, 0, 0, 0.5, -134.65, -71.9), Transform2D(0.5, 0, 0, 0.5, -134.65, -82.75), Transform2D(0.5, 0, 0, 0.5, -134.65, -93.65), Transform2D(0.5, 0, 0, 0.5, -134.65, -104.5), Transform2D(0.5, 0, 0, 0.5, -134.65, -115.4), Transform2D(0.5, 0, 0, 0.5, -134.65, -126.25), Transform2D(0.5, 0, 0, 0.5, -134.65, -137.15), Transform2D(0.5, 0, 0, 0.5, -134.65, -148), Transform2D(0.5, 0, 0, 0.5, -134.65, -158.9), Transform2D(0.5, 0, 0, 0.5, -134.65, -169.75), Transform2D(0.5, 0, 0, 0.5, -134.65, -180.65), Transform2D(0.5, 0, 0, 0.5, -134.65, -191.5), Transform2D(0.5, 0, 0, 0.5, -134.65, -202.4), Transform2D(0.5, 0, 0, 0.5, -134.65, -213.25), Transform2D(0.5, 0, 0, 0.5, -134.65, -224.15), Transform2D(0.5, 0, 0, 0.5, -134.65, -235), Transform2D(0.5, 0, 0, 0.5, -134.65, -245.9), Transform2D(0.5, 0, 0, 0.5, -134.65, -256.75), Transform2D(0.5, 0, 0, 0.5, -134.65, -267.65), Transform2D(0.5, 0, 0, 0.5, -134.65, -278.5), Transform2D(0.5, 0, 0, 0.5, -134.65, -289.4), Transform2D(0.5, 0, 0, 0.5, -134.65, -300.25), Transform2D(0.5, 0, 0, 0.5, -134.65, -311.15), Transform2D(0.5, 0, 0, 0.5, -134.65, -322), Transform2D(0.5, 0, 0, 0.5, -134.65, -332.9)]
-}
-tracks/39/type = "value"
-tracks/39/imported = false
-tracks/39/enabled = true
-tracks/39/path = NodePath("Part19:region_rect")
-tracks/39/interp = 0
-tracks/39/loop_wrap = true
-tracks/39/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [Rect2(0, 0, 548, 18), Rect2(0, 0, 548, 39.799988), Rect2(0, 0, 548, 61.400024), Rect2(0, 0, 548, 83.20001), Rect2(0, 0, 548, 105), Rect2(0, 0, 548, 126.79999), Rect2(0, 0, 548, 148.40002), Rect2(0, 0, 548, 170.20001), Rect2(0, 0, 548, 192), Rect2(0, 0, 548, 213.79999), Rect2(0, 0, 548, 235.40002), Rect2(0, 0, 548, 257.2), Rect2(0, 0, 548, 279), Rect2(0, 0, 548, 300.8), Rect2(0, 0, 548, 322.40002), Rect2(0, 0, 548, 344.2), Rect2(0, 0, 548, 366), Rect2(0, 0, 548, 387.8), Rect2(0, 0, 548, 409.40002), Rect2(0, 0, 548, 431.2), Rect2(0, 0, 548, 453), Rect2(0, 0, 548, 474.8), Rect2(0, 0, 548, 496.40002), Rect2(0, 0, 548, 518.2), Rect2(0, 0, 548, 540), Rect2(0, 0, 548, 561.8), Rect2(0, 0, 548, 583.4), Rect2(0, 0, 548, 605.2), Rect2(0, 0, 548, 627), Rect2(0, 0, 548, 648.8)]
-}
-tracks/40/type = "method"
-tracks/40/imported = false
-tracks/40/enabled = true
-tracks/40/path = NodePath(".")
-tracks/40/interp = 1
-tracks/40/loop_wrap = true
-tracks/40/keys = {
+tracks/35/type = "method"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath(".")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
 "times": PackedFloat32Array(1.9166666),
 "transitions": PackedFloat32Array(1),
 "values": [{
