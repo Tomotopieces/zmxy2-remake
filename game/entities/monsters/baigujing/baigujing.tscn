@@ -23,8 +23,8 @@
 [ext_resource type="Texture2D" uid="uid://bd7nvb8jpw6jw" path="res://entities/monsters/baigujing/tex/baigujing_hit3_part2.png" id="20_cdo81"]
 [ext_resource type="Texture2D" uid="uid://bouabvvyf3aqy" path="res://entities/monsters/baigujing/tex/baigujing_hit3_part3.png" id="21_4d86o"]
 [ext_resource type="Texture2D" uid="uid://cgnnij0jvmltb" path="res://entities/monsters/baigujing/tex/baigujing_hit3_part4.png" id="22_x5eqt"]
-[ext_resource type="Texture2D" uid="uid://c0kn6yn0pu47v" path="res://entities/monsters/baigujing/tex/baigujing_dead_part1.png" id="23_133yl"]
 [ext_resource type="Texture2D" uid="uid://dof3ey6ynlvir" path="res://entities/monsters/baigujing/tex/baigujing_dead_part2.png" id="24_dto77"]
+[ext_resource type="Texture2D" uid="uid://ki1wdc0jcnvv" path="res://entities/monsters/baigujing/tex/baigujing_dead_part1_5.png" id="25_5pg3j"]
 [ext_resource type="Texture2D" uid="uid://dkbik8mn7pm5q" path="res://entities/monsters/baigujing/tex/baigujing_dead_part12.png" id="25_12uvd"]
 [ext_resource type="Texture2D" uid="uid://b6d853rex52lu" path="res://entities/monsters/baigujing/tex/baigujing_dead_part13.png" id="26_jy8vw"]
 [ext_resource type="Texture2D" uid="uid://dk3ok4vkglkuk" path="res://entities/monsters/baigujing/tex/baigujing_dead_part22.png" id="27_1d7yt"]
@@ -390,7 +390,6 @@ texture = ExtResource("10_2mbgn")
 centered = false
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=2017410634]
-visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=596895334]
 position = Vector2(-8.5, 1.2)
@@ -538,9 +537,9 @@ visible = false
 
 [node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1102818149]
 visible = false
-position = Vector2(-30.250002, -41.35)
+position = Vector2(-39.300003, 21.45)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("23_133yl")
+texture = ExtResource("25_5pg3j")
 centered = false
 
 [node name="DeadPart2" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1917296799]
@@ -1069,7 +1068,6 @@ monitorable = false
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1617787986]
 position = Vector2(-137.8, 28.7)
 shape = SubResource("RectangleShape2D_sx5nk")
-disabled = true
 
 [node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=288213797]
 collision_layer = 0

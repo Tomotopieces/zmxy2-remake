@@ -1,21 +1,45 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bnoqt3ewrk3vo"]
 
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame.png" id="1_q2nah"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_4.png" id="2_sxb6n"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_5.png" id="3_gw0xu"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_6.png" id="4_cf8ev"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_7.png" id="5_3pshw"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_8.png" id="6_eao6n"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_2.png" id="7_kjwb0"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_3.png" id="8_x7da4"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_9.png" id="9_xc2b3"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_10.png" id="10_l54ff"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_11.png" id="11_fj74o"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_12.png" id="12_wpb80"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_13.png" id="13_k1um4"]
+[ext_resource type="Texture2D" uid="uid://dm21n63g7uuht" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_4.png" id="2_sxb6n"]
+[ext_resource type="Texture2D" uid="uid://cpx3rtdtc83ir" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_5.png" id="3_gw0xu"]
+[ext_resource type="Texture2D" uid="uid://dw20t4c2ntdmd" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_6.png" id="4_cf8ev"]
+[ext_resource type="Texture2D" uid="uid://bdelsfm44x8fs" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_7.png" id="5_3pshw"]
+[ext_resource type="Texture2D" uid="uid://pwgqfchm0xj6" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_8.png" id="6_eao6n"]
+[ext_resource type="Texture2D" uid="uid://bqef7q73nwkp" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_9.png" id="9_xc2b3"]
+[ext_resource type="Texture2D" uid="uid://cy8cf5a5d6kt4" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_10.png" id="10_l54ff"]
+[ext_resource type="Texture2D" uid="uid://cnjc7p3t4pbl3" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_11.png" id="11_fj74o"]
+[ext_resource type="Texture2D" uid="uid://2wvcyb5j0c0g" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_12.png" id="12_wpb80"]
+
+[sub_resource type="Animation" id="Animation_onp2f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:shape:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(64.5, 99)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/Shape:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(151.1, -8.1)]
+}
 
 [sub_resource type="Animation" id="Animation_fj04u"]
 length = 1.875
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -71,10 +95,10 @@ tracks/4/path = NodePath("Monster49Bullet3Part3:visible")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -83,10 +107,10 @@ tracks/5/path = NodePath("Monster49Bullet3Part3:transform")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.25, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 0.625, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1)]
+"values": [Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -132.9, -59.1), Transform2D(0.5, 0, 0, 0.5, -133.9, -59.1)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -611,10 +635,10 @@ tracks/49/path = NodePath("Hitbox/Shape:position")
 tracks/49/interp = 0
 tracks/49/loop_wrap = true
 tracks/49/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.375, 0.41666666, 0.45833334, 0.5833333, 0.625, 0.6666667, 0.7916667, 0.875, 0.9166667, 1, 1.0416666, 1.125, 1.1666666, 1.2083334, 1.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.375, 0.41666666, 0.45833334, 0.5833333, 0.625, 0.6666667, 0.7916667, 0.875, 0.9166667, 1, 1.0416666, 1.125, 1.1666666, 1.2083334, 1.375, 1.625),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-78.9, 6.75), Vector2(-48.4, -8.75), Vector2(-9.4, -8.75), Vector2(-11.75, -9.6), Vector2(-7.9, -8.3), Vector2(-39.9, -8.3), Vector2(-38.75, -8.1), Vector2(-42.65, -8.1), Vector2(-5.65, -8.1), Vector2(-7.9, -8.1), Vector2(-4.05, -8.1), Vector2(-2.9, -8.1), Vector2(-5.3, -8.1), Vector2(-8.8, -8.1), Vector2(-5.2, -8.1), Vector2(-5.15, -8.1), Vector2(0.75, -8.1), Vector2(1.95, -8.1), Vector2(-2.9, -8.1)]
+"values": [Vector2(-78.9, 6.75), Vector2(-48.4, -8.75), Vector2(-9.4, -8.75), Vector2(-11.75, -9.6), Vector2(-7.9, -8.3), Vector2(-39.9, -8.3), Vector2(-38.75, -8.1), Vector2(-42.65, -8.1), Vector2(-5.65, -8.1), Vector2(-7.9, -8.1), Vector2(-4.05, -8.1), Vector2(-2.9, -8.1), Vector2(-5.3, -8.1), Vector2(-8.8, -8.1), Vector2(-5.2, -8.1), Vector2(-5.15, -8.1), Vector2(0.75, -8.1), Vector2(1.95, -8.1), Vector2(-2.9, -8.1), Vector2(151.1, -8.1)]
 }
 tracks/50/type = "value"
 tracks/50/imported = false
@@ -623,10 +647,10 @@ tracks/50/path = NodePath("Hitbox/Shape:shape:size")
 tracks/50/interp = 0
 tracks/50/loop_wrap = true
 tracks/50/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.375, 0.41666666, 0.45833334, 0.5833333, 0.625, 0.6666667, 0.7916667, 0.875, 0.9166667, 1, 1.0416666, 1.125, 1.1666666, 1.2083334, 1.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.375, 0.41666666, 0.45833334, 0.5833333, 0.625, 0.6666667, 0.7916667, 0.875, 0.9166667, 1, 1.0416666, 1.125, 1.1666666, 1.2083334, 1.375, 1.625),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(43, 51.5), Vector2(119.6, 93.5), Vector2(197.6, 93.5), Vector2(202.3, 96), Vector2(210, 98.6), Vector2(274, 98.6), Vector2(276.3, 99), Vector2(284.1, 99), Vector2(358.1, 99), Vector2(362.8, 99), Vector2(370.5, 99), Vector2(372.8, 99), Vector2(377.6, 99), Vector2(384.6, 99), Vector2(391.8, 99), Vector2(391.9, 99), Vector2(380.1, 99), Vector2(382.5, 99), Vector2(372.8, 99)]
+"values": [Vector2(43, 51.5), Vector2(119.6, 93.5), Vector2(197.6, 93.5), Vector2(202.3, 96), Vector2(210, 98.6), Vector2(274, 98.6), Vector2(276.3, 99), Vector2(284.1, 99), Vector2(358.1, 99), Vector2(362.8, 99), Vector2(370.5, 99), Vector2(372.8, 99), Vector2(377.6, 99), Vector2(384.6, 99), Vector2(391.8, 99), Vector2(391.9, 99), Vector2(380.1, 99), Vector2(382.5, 99), Vector2(372.8, 99), Vector2(64.5, 99)]
 }
 tracks/51/type = "value"
 tracks/51/imported = false
@@ -709,5 +733,6 @@ tracks/54/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_onp2f"),
 &"default": SubResource("Animation_fj04u")
 }

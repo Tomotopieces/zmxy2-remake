@@ -1,127 +1,125 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://7cqjfwejr4e5"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_7j0ws"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_puvq2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part2.png" id="3_eqe3j"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part4.png" id="4_aiixi"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit1_part3.png" id="5_m7vdi"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part4.png" id="6_0ktfv"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part5.png" id="7_nhtit"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part7.png" id="8_p5r0o"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part7.png" id="9_afcc2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part3.png" id="10_r2pkm"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part9.png" id="11_8a2v1"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part10.png" id="12_u2783"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part11.png" id="13_ar6ww"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part8_2.png" id="14_fnbws"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part13.png" id="15_u7vu2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit2_part13.png" id="16_1pkxg"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part8.png" id="17_cj0ol"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part4.png" id="18_ed6x3"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part11.png" id="19_15s22"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit1_part13.png" id="20_ewgpm"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part12.png" id="21_r3e4v"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit2_part15.png" id="22_ueauj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part1.png" id="23_g7v8g"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part2.png" id="24_cjy7l"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit5_part4.png" id="25_8odu2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part7.png" id="26_2qanl"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part13.png" id="27_184qe"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit5_part10.png" id="28_e0sbs"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part10.png" id="29_e1u30"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part15_2.png" id="30_vffa5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part16.png" id="31_auaaj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part19.png" id="32_uc0bw"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part21.png" id="33_1dj5l"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part23.png" id="34_6mwy5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part28.png" id="35_d7dq8"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part30.png" id="36_wlckn"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit3_part31.png" id="37_n756s"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit6_part1.png" id="38_dhb7f"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part3_2.png" id="39_s8cux"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit9_part2.png" id="40_kple8"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit9_part1.png" id="41_xcvnv"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part5.png" id="42_khhb7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit6_part10.png" id="43_graof"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part7.png" id="44_wku8p"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part20_2.png" id="45_d454j"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part12.png" id="46_rhuf2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part17.png" id="47_yg24o"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit9_part14.png" id="48_ba2tj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit9_part9_2.png" id="49_om1x1"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit9_part13.png" id="50_s86lx"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part27.png" id="51_hudtf"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part29.png" id="52_57dav"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part30.png" id="53_k5f8j"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part31.png" id="54_n0yh5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part9.png" id="55_qgbk5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit4_part32.png" id="56_54mvk"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="57_wcfcf"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part1.png" id="58_w3411"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part2.png" id="59_mkv2c"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part3.png" id="60_6godt"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part5.png" id="61_xxn67"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part9.png" id="62_on1i5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit7_part16.png" id="63_6gosj"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit7_part19.png" id="64_3ujmo"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit5_part12.png" id="65_40tw5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part1_2.png" id="66_14wu4"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part2.png" id="67_0w2w5"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part3.png" id="68_urgxm"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part6_2.png" id="69_bp581"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part11_2.png" id="70_2w0jn"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part7.png" id="71_mkvtd"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part11.png" id="72_3b6lf"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit8_part13.png" id="73_pnbl2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part14.png" id="74_xb2aw"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part17_2.png" id="75_v5lpk"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part18.png" id="76_g04s8"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part1.png" id="77_wcnqr"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part3.png" id="78_a78nn"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part4.png" id="79_1dbw2"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part5.png" id="80_o8u1x"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_wait_part16.png" id="81_ktf75"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part7.png" id="82_alunw"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part8.png" id="83_dvg8h"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part16_3.png" id="84_fpww2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_walk_part27.png" id="85_0uq0e"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_walk_part13.png" id="86_66c54"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit8_part17_2.png" id="87_6s5pt"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part1.png" id="88_gyblj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part2.png" id="89_gfdwl"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part10.png" id="90_0v7w3"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_wait_part11.png" id="91_rlhih"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part20.png" id="92_pehr7"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hurt_part1.png" id="93_f6ye5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hurt_part3.png" id="94_erfic"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hurt_part5.png" id="95_vwx1b"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hurt_part7.png" id="96_bbr3o"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit2_part1.png" id="97_5xc8c"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit6_part4.png" id="98_glfai"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit6_part6.png" id="99_xcnqd"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit6_part7.png" id="100_8y6ui"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit4_part1.png" id="101_uvdr5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wukongguai/tex/wukongguai_hit4_part4.png" id="102_vp6eg"]
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_hit10_part6.png" id="103_gmb7p"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="2_puvq2"]
+[ext_resource type="Texture2D" uid="uid://bciklvoyl0oky" path="res://entities/heroes/wukong/tex/wukong_hit1_part2.png" id="3_eqe3j"]
+[ext_resource type="Texture2D" uid="uid://ckout2j0gxrri" path="res://entities/heroes/wukong/tex/wukong_hit1_part4.png" id="4_aiixi"]
+[ext_resource type="Texture2D" uid="uid://bamf7jcjdvjxt" path="res://entities/monsters/wukongguai/tex/wukongguai_hit1_part3.png" id="5_m7vdi"]
+[ext_resource type="Texture2D" uid="uid://cdq42mshkh5x0" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part4.png" id="6_0ktfv"]
+[ext_resource type="Texture2D" uid="uid://ctncavujurvc8" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part5.png" id="7_nhtit"]
+[ext_resource type="Texture2D" uid="uid://vtysam1do1hi" path="res://entities/heroes/wukong/tex/wukong_hit1_part7.png" id="8_p5r0o"]
+[ext_resource type="Texture2D" uid="uid://co8urd1vptdfs" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part7.png" id="9_afcc2"]
+[ext_resource type="Texture2D" uid="uid://bi2sjc11x58l0" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part3.png" id="10_r2pkm"]
+[ext_resource type="Texture2D" uid="uid://vvcd7tovfiby" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part9.png" id="11_8a2v1"]
+[ext_resource type="Texture2D" uid="uid://hmkt6g46loc3" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part10.png" id="12_u2783"]
+[ext_resource type="Texture2D" uid="uid://btdwpqwm1xx52" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part11.png" id="13_ar6ww"]
+[ext_resource type="Texture2D" uid="uid://bnms6duyck43d" path="res://entities/heroes/wukong/tex/wukong_hit1_part6.png" id="15_7qoqb"]
+[ext_resource type="Texture2D" uid="uid://cs4lhtuo54kw7" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part13.png" id="15_u7vu2"]
+[ext_resource type="Texture2D" uid="uid://degqyp0odwpd4" path="res://entities/heroes/wukong/tex/wukong_hit1_part8.png" id="17_cj0ol"]
+[ext_resource type="Texture2D" uid="uid://c0doi1ma5b4g8" path="res://entities/heroes/wukong/tex/wukong_hit1_part13_2.png" id="17_ifmtd"]
+[ext_resource type="Texture2D" uid="uid://dj5aidt7byvd4" path="res://entities/heroes/wukong/tex/wukong_hit8_part4.png" id="18_ed6x3"]
+[ext_resource type="Texture2D" uid="uid://bt006w23y78j5" path="res://entities/heroes/wukong/tex/wukong_hit1_part11.png" id="19_15s22"]
+[ext_resource type="Texture2D" uid="uid://dgvf4nuu1f75g" path="res://entities/heroes/wukong/tex/wukong_hit1_part13.png" id="20_ewgpm"]
+[ext_resource type="Texture2D" uid="uid://d1absdhhwrhai" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part12.png" id="21_r3e4v"]
+[ext_resource type="Texture2D" uid="uid://dt4enb3dsfis0" path="res://entities/heroes/wukong/tex/wukong_hit1_part14_4.png" id="23_6tb2f"]
+[ext_resource type="Texture2D" uid="uid://bb8d7i5rjjukm" path="res://entities/heroes/wukong/tex/wukong_hit3_part1.png" id="23_g7v8g"]
+[ext_resource type="Texture2D" uid="uid://ffytdfu74pi8" path="res://entities/heroes/wukong/tex/wukong_hit3_part2.png" id="24_cjy7l"]
+[ext_resource type="Texture2D" uid="uid://cdq2t41lqk6vc" path="res://entities/monsters/wukongguai/tex/wukongguai_hit5_part4.png" id="25_8odu2"]
+[ext_resource type="Texture2D" uid="uid://ehm30wjd6wc5" path="res://entities/heroes/wukong/tex/wukong_hit3_part7.png" id="26_2qanl"]
+[ext_resource type="Texture2D" uid="uid://cieo8xb5xibe1" path="res://entities/heroes/wukong/tex/wukong_hit3_part13.png" id="27_184qe"]
+[ext_resource type="Texture2D" uid="uid://xdorapi6qemc" path="res://entities/monsters/wukongguai/tex/wukongguai_hit5_part10.png" id="28_e0sbs"]
+[ext_resource type="Texture2D" uid="uid://dsqvwwbdihgmt" path="res://entities/heroes/wukong/tex/wukong_hit3_part10.png" id="29_e1u30"]
+[ext_resource type="Texture2D" uid="uid://b7wj5lmsmb3q" path="res://entities/heroes/wukong/tex/wukong_hit3_part15_2.png" id="30_vffa5"]
+[ext_resource type="Texture2D" uid="uid://de0t3b48u68pd" path="res://entities/heroes/wukong/tex/wukong_hit3_part16.png" id="31_auaaj"]
+[ext_resource type="Texture2D" uid="uid://b1ck15olmml5r" path="res://entities/heroes/wukong/tex/wukong_hit3_part19.png" id="32_uc0bw"]
+[ext_resource type="Texture2D" uid="uid://wi3jd32xhrfk" path="res://entities/heroes/wukong/tex/wukong_hit3_part21.png" id="33_1dj5l"]
+[ext_resource type="Texture2D" uid="uid://cheunxusuu5dt" path="res://entities/heroes/wukong/tex/wukong_hit3_part23.png" id="34_6mwy5"]
+[ext_resource type="Texture2D" uid="uid://byw55lkk1a7iu" path="res://entities/heroes/wukong/tex/wukong_hit3_part28.png" id="35_d7dq8"]
+[ext_resource type="Texture2D" uid="uid://b4yab7tem0020" path="res://entities/heroes/wukong/tex/wukong_hit3_part30.png" id="36_wlckn"]
+[ext_resource type="Texture2D" uid="uid://b4r4s0lsfbh0r" path="res://entities/heroes/wukong/tex/wukong_hit3_part31.png" id="37_n756s"]
+[ext_resource type="Texture2D" uid="uid://chdoepc6568xe" path="res://entities/monsters/wukongguai/tex/wukongguai_hit6_part1.png" id="38_dhb7f"]
+[ext_resource type="Texture2D" uid="uid://bqdwfthycrfqa" path="res://entities/heroes/wukong/tex/wukong_hit4_part3_2.png" id="39_s8cux"]
+[ext_resource type="Texture2D" uid="uid://b2sb4swhy0ybe" path="res://entities/heroes/wukong/tex/wukong_hit9_part2.png" id="40_kple8"]
+[ext_resource type="Texture2D" uid="uid://cchrknxa64o8f" path="res://entities/heroes/wukong/tex/wukong_hit9_part1.png" id="41_xcvnv"]
+[ext_resource type="Texture2D" uid="uid://j78tkhho3mft" path="res://entities/heroes/wukong/tex/wukong_hit4_part5.png" id="42_khhb7"]
+[ext_resource type="Texture2D" uid="uid://blei4lgs38apo" path="res://entities/monsters/wukongguai/tex/wukongguai_hit6_part10.png" id="43_graof"]
+[ext_resource type="Texture2D" uid="uid://vfv5ud5mhwo3" path="res://entities/heroes/wukong/tex/wukong_hit4_part7.png" id="44_wku8p"]
+[ext_resource type="Texture2D" uid="uid://b63by8r8qglyh" path="res://entities/heroes/wukong/tex/wukong_hit4_part20_2.png" id="45_d454j"]
+[ext_resource type="Texture2D" uid="uid://dkwcqw1kepv3t" path="res://entities/heroes/wukong/tex/wukong_hit4_part12.png" id="46_rhuf2"]
+[ext_resource type="Texture2D" uid="uid://18hmdoedch6r" path="res://entities/heroes/wukong/tex/wukong_hit4_part17.png" id="47_yg24o"]
+[ext_resource type="Texture2D" uid="uid://8o0ipdnf22ou" path="res://entities/heroes/wukong/tex/wukong_hit9_part14.png" id="48_ba2tj"]
+[ext_resource type="Texture2D" uid="uid://bsrcwrcgiqkit" path="res://entities/heroes/wukong/tex/wukong_hit9_part9_2.png" id="49_om1x1"]
+[ext_resource type="Texture2D" uid="uid://cjw1eibrbavln" path="res://entities/heroes/wukong/tex/wukong_hit9_part13.png" id="50_s86lx"]
+[ext_resource type="Texture2D" uid="uid://d3mg26ynvqc32" path="res://entities/heroes/wukong/tex/wukong_hit4_part27.png" id="51_hudtf"]
+[ext_resource type="Texture2D" uid="uid://ypmw2x06psf4" path="res://entities/heroes/wukong/tex/wukong_hit4_part29.png" id="52_57dav"]
+[ext_resource type="Texture2D" uid="uid://bkp1l3px51cod" path="res://entities/heroes/wukong/tex/wukong_hit4_part30.png" id="53_k5f8j"]
+[ext_resource type="Texture2D" uid="uid://b3nnwcbnfxmfx" path="res://entities/heroes/wukong/tex/wukong_hit4_part31.png" id="54_n0yh5"]
+[ext_resource type="Texture2D" uid="uid://c00bt0lxk2njt" path="res://entities/heroes/wukong/tex/wukong_hit4_part9.png" id="55_qgbk5"]
+[ext_resource type="Texture2D" uid="uid://cdgfd2nkrm1w5" path="res://entities/heroes/wukong/tex/wukong_hit4_part32.png" id="56_54mvk"]
+[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="57_wcfcf"]
+[ext_resource type="Texture2D" uid="uid://b22n53tm1nn2s" path="res://entities/heroes/wukong/tex/wukong_hit5_part1.png" id="58_w3411"]
+[ext_resource type="Texture2D" uid="uid://btabrlyt6b8cx" path="res://entities/heroes/wukong/tex/wukong_hit5_part2.png" id="59_mkv2c"]
+[ext_resource type="Texture2D" uid="uid://7uhxpmg80lc4" path="res://entities/heroes/wukong/tex/wukong_hit5_part3.png" id="60_6godt"]
+[ext_resource type="Texture2D" uid="uid://crg2fh6nla1hi" path="res://entities/heroes/wukong/tex/wukong_hit5_part5.png" id="61_xxn67"]
+[ext_resource type="Texture2D" uid="uid://dwichaknurqeq" path="res://entities/heroes/wukong/tex/wukong_hit5_part9.png" id="62_on1i5"]
+[ext_resource type="Texture2D" uid="uid://b7t8e44uar7l8" path="res://entities/monsters/wukongguai/tex/wukongguai_hit7_part16.png" id="63_6gosj"]
+[ext_resource type="Texture2D" uid="uid://c1l8qewu3ekt" path="res://entities/monsters/wukongguai/tex/wukongguai_hit7_part19.png" id="64_3ujmo"]
+[ext_resource type="Texture2D" uid="uid://l83ou1ynfssb" path="res://entities/heroes/wukong/tex/wukong_hit5_part12.png" id="65_40tw5"]
+[ext_resource type="Texture2D" uid="uid://bdqioaivjw88h" path="res://entities/heroes/wukong/tex/wukong_hit8_part1_2.png" id="66_14wu4"]
+[ext_resource type="Texture2D" uid="uid://cphaefofucgv7" path="res://entities/heroes/wukong/tex/wukong_hit8_part2.png" id="67_0w2w5"]
+[ext_resource type="Texture2D" uid="uid://c54gdc22vce4c" path="res://entities/heroes/wukong/tex/wukong_hit8_part3.png" id="68_urgxm"]
+[ext_resource type="Texture2D" uid="uid://cp4is7k10gpiq" path="res://entities/heroes/wukong/tex/wukong_hit8_part6_2.png" id="69_bp581"]
+[ext_resource type="Texture2D" uid="uid://beapr75nodsb7" path="res://entities/heroes/wukong/tex/wukong_hit8_part11_2.png" id="70_2w0jn"]
+[ext_resource type="Texture2D" uid="uid://3j4j3d5jjtn7" path="res://entities/heroes/wukong/tex/wukong_hit8_part7.png" id="71_mkvtd"]
+[ext_resource type="Texture2D" uid="uid://88is5hvi3i41" path="res://entities/heroes/wukong/tex/wukong_hit8_part11.png" id="72_3b6lf"]
+[ext_resource type="Texture2D" uid="uid://eb556jvjcsua" path="res://entities/heroes/wukong/tex/bag_wukong_hit8_part13.png" id="73_pnbl2"]
+[ext_resource type="Texture2D" uid="uid://beue05tsvsxv0" path="res://entities/heroes/wukong/tex/wukong_hit8_part14.png" id="74_xb2aw"]
+[ext_resource type="Texture2D" uid="uid://bdad00c868q2u" path="res://entities/heroes/wukong/tex/wukong_hit8_part18.png" id="76_g04s8"]
+[ext_resource type="Texture2D" uid="uid://b3pj5e58nrer8" path="res://entities/heroes/wukong/tex/wukong_walk_part1.png" id="77_wcnqr"]
+[ext_resource type="Texture2D" uid="uid://cw3ts4p4ytjnh" path="res://entities/heroes/wukong/tex/wukong_walk_part3.png" id="78_a78nn"]
+[ext_resource type="Texture2D" uid="uid://5s7rdh826o8r" path="res://entities/heroes/wukong/tex/wukong_walk_part4.png" id="79_1dbw2"]
+[ext_resource type="Texture2D" uid="uid://clbd33l2ho71f" path="res://entities/heroes/wukong/tex/wukong_walk_part5.png" id="80_o8u1x"]
+[ext_resource type="Texture2D" uid="uid://ouysc36u2k1u" path="res://entities/heroes/wukong/tex/wukong_wait_part16.png" id="81_ktf75"]
+[ext_resource type="Texture2D" uid="uid://gpblumb22ml4" path="res://entities/heroes/wukong/tex/wukong_walk_part7.png" id="82_alunw"]
+[ext_resource type="Texture2D" uid="uid://caflq1asn6edq" path="res://entities/heroes/wukong/tex/wukong_walk_part8.png" id="83_dvg8h"]
+[ext_resource type="Texture2D" uid="uid://ddy5tnsltu4si" path="res://entities/heroes/wukong/tex/wukong_walk_part16_3.png" id="84_fpww2"]
+[ext_resource type="Texture2D" uid="uid://dv65ao6gpbt07" path="res://entities/monsters/wukongguai/tex/wukongguai_walk_part27.png" id="85_0uq0e"]
+[ext_resource type="Texture2D" uid="uid://cm6jd56pneq4g" path="res://entities/heroes/wukong/tex/wukong_walk_part13.png" id="86_66c54"]
+[ext_resource type="Texture2D" uid="uid://c5wajlmjiol3g" path="res://entities/heroes/wukong/tex/wukong_hit8_part17_2.png" id="87_6s5pt"]
+[ext_resource type="Texture2D" uid="uid://bp8cqwf7b7adm" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part1.png" id="88_gyblj"]
+[ext_resource type="Texture2D" uid="uid://4xi8q6j0suk8" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part2.png" id="89_gfdwl"]
+[ext_resource type="Texture2D" uid="uid://bea458ry46cnm" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part10.png" id="90_0v7w3"]
+[ext_resource type="Texture2D" uid="uid://byr300k4w7eti" path="res://entities/heroes/wukong/tex/wukong_wait_part11.png" id="91_rlhih"]
+[ext_resource type="Texture2D" uid="uid://brbr6qur1gxvb" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part20.png" id="92_pehr7"]
+[ext_resource type="Texture2D" uid="uid://cm72oab1335a4" path="res://entities/heroes/wukong/tex/wukong_hurt_part1.png" id="93_f6ye5"]
+[ext_resource type="Texture2D" uid="uid://de1vchrxkujcu" path="res://entities/monsters/wukongguai/tex/wukongguai_hurt_part3.png" id="94_erfic"]
+[ext_resource type="Texture2D" uid="uid://c4c8558q8lpvg" path="res://entities/heroes/wukong/tex/wukong_hurt_part5.png" id="95_vwx1b"]
+[ext_resource type="Texture2D" uid="uid://ch50q60urlc3m" path="res://entities/heroes/wukong/tex/wukong_hurt_part7.png" id="96_bbr3o"]
+[ext_resource type="Texture2D" uid="uid://cuywlwyxkefks" path="res://entities/monsters/wukongguai/tex/wukongguai_hit2_part1.png" id="97_5xc8c"]
+[ext_resource type="Texture2D" uid="uid://vfva611c735j" path="res://entities/heroes/wukong/tex/wukong_hit6_part4.png" id="98_glfai"]
+[ext_resource type="Texture2D" uid="uid://ctc5ib5rafd28" path="res://entities/heroes/wukong/tex/wukong_hit6_part6.png" id="99_xcnqd"]
+[ext_resource type="Texture2D" uid="uid://dd1nespnvdp5m" path="res://entities/heroes/wukong/tex/wukong_hit6_part7.png" id="100_8y6ui"]
+[ext_resource type="Texture2D" uid="uid://cldmemk8au4w2" path="res://entities/monsters/wukongguai/tex/wukongguai_hit4_part1.png" id="101_uvdr5"]
+[ext_resource type="Texture2D" uid="uid://bvjs35a57ccei" path="res://entities/monsters/wukongguai/tex/wukongguai_hit4_part4.png" id="102_vp6eg"]
+[ext_resource type="Texture2D" uid="uid://c1tglt0h3lmwi" path="res://entities/heroes/wukong/tex/wukong_hit10_part6.png" id="103_gmb7p"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/wukongguai/wukongguai_actions.tres" id="104_72aje"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_khn5j"]
 shader = ExtResource("2_puvq2")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(0.4668965, 0.059048414, 0.9877739, 0, 1.3915999, 0.5901076, -0.036440313, 0, -0.8584963, 0.35084397, 0.048666462, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(0, 0, 0, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mj776"]
@@ -134,11 +132,11 @@ shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.6, 0, 1)
 shader_parameter/glow_blur = 4.0
 shader_parameter/glow_strength = 2.21875
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g7nn5"]
@@ -151,11 +149,11 @@ shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.6, 0, 1)
 shader_parameter/glow_blur = 10.0
 shader_parameter/glow_strength = 2.4765625
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 11.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pawqb"]
@@ -168,23 +166,25 @@ shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.6, 0, 1)
 shader_parameter/glow_blur = 10.0
 shader_parameter/glow_strength = 2.4765625
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 11.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2i3a"]
 resource_local_to_scene = true
+size = Vector2(40, 14.4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jyot"]
 resource_local_to_scene = true
+size = Vector2(40, 90)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(40, 90)
 
-[node name="Monster48" type="CharacterBody2D"]
+[node name="Monster48" type="CharacterBody2D" unique_id=350301350]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=1327823027]
@@ -201,9 +201,9 @@ markers = {
 [node name="Poses" type="Node2D" parent="Puppet" unique_id=1942741846]
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=290301601]
-visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=972319749]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-20.4, -22.45)
 scale = Vector2(0.5, 0.5)
@@ -211,6 +211,7 @@ texture = ExtResource("3_eqe3j")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=2125760818]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-26.2, -23.45)
 scale = Vector2(0.5, 0.5)
@@ -226,19 +227,22 @@ centered = false
 
 [node name="Hit1Part4" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=257559601]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.7, -7.199999)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-27.011002, -0.8958988)
+rotation = -0.36415702
+scale = Vector2(0.49977297, 0.49977297)
 texture = ExtResource("6_0ktfv")
 centered = false
 
 [node name="Hit1Part5" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=395243817]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-9, -14.950001)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-22.579502, -10.876801)
+rotation = -0.36415702
+scale = Vector2(0.49977297, 0.49977297)
 texture = ExtResource("7_nhtit")
 centered = false
 
 [node name="Hit1Part6" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1616985762]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-16.55, 18.75)
 scale = Vector2(0.5, 0.5)
@@ -282,56 +286,65 @@ centered = false
 
 [node name="Hit1Part11" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1780451820]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-67.2256, 9.858799)
-rotation = 0.05300336
-scale = Vector2(0.5002025, 0.5002025)
+position = Vector2(-86.0092, 11.8232)
+rotation = 0.045014616
+scale = Vector2(0.5000065, 0.5000065)
 texture = ExtResource("13_ar6ww")
 centered = false
 
 [node name="Hit1Part12" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=673386657]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-0.6000004, -14.85)
+position = Vector2(-9.5, -13.75)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("14_fnbws")
+texture = ExtResource("15_7qoqb")
 centered = false
 
 [node name="Hit1Part13" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=57268471]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-1.7283492, -14.98455)
-rotation = 0.26195496
-scale = Vector2(0.50005925, 0.50005925)
+position = Vector2(-10.25, -11.85)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_u7vu2")
 centered = false
 
 [node name="Hit1Part14" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1778188510]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-35.2, -49.25)
+position = Vector2(-42.35, -43.55)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("16_1pkxg")
+texture = ExtResource("17_ifmtd")
 centered = false
 
 [node name="Hit1Part15" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1696966637]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-22.266449, 20.25355)
-scale = Vector2(0.5395, 0.5395)
+position = Vector2(-22.830997, 23.3915)
+rotation = -0.009336797
+scale = Vector2(0.53552336, 0.5000202)
+skew = 0.00033700466
 texture = ExtResource("9_afcc2")
 centered = false
 
 [node name="Hit1Part16" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1702707117]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.75, 18.449999)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-19.0724, 20.8579)
+rotation = -0.043246772
+scale = Vector2(0.5319974, 0.51898795)
+skew = -0.00012052059
 texture = ExtResource("11_8a2v1")
 centered = false
 
 [node name="Hit1Part17" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1544169266]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.7, 18.4)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-19.02215, 20.80405)
+rotation = -0.043246772
+scale = Vector2(0.5319974, 0.51898795)
+skew = -0.00012052059
 texture = ExtResource("12_u2783")
 centered = false
 
 [node name="Hit1Part18" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=514128102]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-10.85, -6.9)
 scale = Vector2(0.5, 0.5)
@@ -339,6 +352,7 @@ texture = ExtResource("17_cj0ol")
 centered = false
 
 [node name="Hit1Part19" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1402778437]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-11.75, -8.9)
 scale = Vector2(0.5, 0.5)
@@ -346,6 +360,7 @@ texture = ExtResource("18_ed6x3")
 centered = false
 
 [node name="Hit1Part20" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1257823790]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-9.049999, 3.9500003)
 scale = Vector2(0.5, 0.5)
@@ -353,6 +368,7 @@ texture = ExtResource("10_r2pkm")
 centered = false
 
 [node name="Hit1Part21" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=981901787]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-52, 14.150001)
 scale = Vector2(0.5, 0.5)
@@ -360,6 +376,7 @@ texture = ExtResource("13_ar6ww")
 centered = false
 
 [node name="Hit1Part22" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=858809360]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(3.25, -8.35)
 scale = Vector2(0.5, 0.5)
@@ -367,6 +384,7 @@ texture = ExtResource("19_15s22")
 centered = false
 
 [node name="Hit1Part23" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1096905780]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(1.8500004, -9.549999)
 scale = Vector2(0.5, 0.5)
@@ -374,6 +392,7 @@ texture = ExtResource("15_u7vu2")
 centered = false
 
 [node name="Hit1Part24" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1730713519]
+visible = false
 material = SubResource("ShaderMaterial_khn5j")
 position = Vector2(-22.2, -49.25)
 scale = Vector2(0.5, 0.5)
@@ -382,16 +401,441 @@ centered = false
 
 [node name="Hit1Part25" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1067180542]
 material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(16.75, 0.1500001)
-scale = Vector2(0.5, 0.5)
+position = Vector2(6.78695, 0.29244995)
+rotation = 0.7853982
+scale = Vector2(0.4999245, 0.4999245)
 texture = ExtResource("21_r3e4v")
 centered = false
 
 [node name="Hit1Part26" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1459995061]
 material = SubResource("ShaderMaterial_mj776")
-position = Vector2(-55, 9.999999)
+position = Vector2(-108.649994, 11.349999)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("22_ueauj")
+texture = ExtResource("23_6tb2f")
+centered = false
+
+[node name="Hit2" type="Node2D" parent="Puppet/Poses" unique_id=333099240]
+visible = false
+
+[node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=165995939]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-25.849998, -24.949999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("97_5xc8c")
+centered = false
+
+[node name="Hit2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1895658742]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-9.58535, 0.014249802)
+rotation = 1.1496288
+scale = Vector2(0.50021243, 0.4997562)
+skew = -0.00040900707
+texture = ExtResource("10_r2pkm")
+centered = false
+
+[node name="Hit2Part3" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=490933276]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.867401, -9.2264)
+rotation = -0.29512247
+scale = Vector2(0.45726934, 0.5645883)
+skew = -0.25258744
+texture = ExtResource("6_0ktfv")
+centered = false
+
+[node name="Hit2Part4" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=720120556]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-14.68855, -18.7463)
+rotation = -0.29512247
+scale = Vector2(0.45726934, 0.5645883)
+skew = -0.25258744
+texture = ExtResource("7_nhtit")
+centered = false
+
+[node name="Hit2Part5" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=241780172]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-7.1559477, 19.00245)
+rotation = -0.13985355
+scale = Vector2(0.58824337, 0.58824337)
+texture = ExtResource("9_afcc2")
+centered = false
+
+[node name="Hit2Part6" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=672497648]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-82.9664, 7.1356)
+rotation = 0.00799983
+scale = Vector2(0.500016, 0.500016)
+texture = ExtResource("13_ar6ww")
+centered = false
+
+[node name="Hit2Part7" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1466593847]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-1.4719992, 17.3391)
+rotation = -0.1553293
+scale = Vector2(0.51064783, 0.5494456)
+skew = -0.29570198
+texture = ExtResource("11_8a2v1")
+centered = false
+
+[node name="Hit2Part8" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=57491800]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-1.4454479, 17.28165)
+rotation = -0.1553293
+scale = Vector2(0.51064783, 0.5494456)
+skew = -0.29570198
+texture = ExtResource("12_u2783")
+centered = false
+
+[node name="Hit2Part9" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=2123279469]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(2.000001, -16.449999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("98_glfai")
+centered = false
+
+[node name="Hit2Part10" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=719691037]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(3.4207506, -17.009249)
+rotation = -0.0049999584
+scale = Vector2(0.50000626, 0.50000626)
+texture = ExtResource("15_u7vu2")
+centered = false
+
+[node name="Hit2Part11" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1872355740]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-32.8, -46.35)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("99_xcnqd")
+centered = false
+
+[node name="Hit2Part12" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1618731369]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(18.31425, -2.2981505)
+rotation = 1.2920845
+scale = Vector2(0.49978647, 0.49978647)
+texture = ExtResource("21_r3e4v")
+centered = false
+
+[node name="Hit2Part13" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1263866519]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-157, -27.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("100_8y6ui")
+centered = false
+
+[node name="Hit3" type="Node2D" parent="Puppet/Poses" unique_id=417994489]
+visible = false
+
+[node name="Hit3Part1" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=414031794]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-24.050001, -15.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("66_14wu4")
+centered = false
+
+[node name="Hit3Part2" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=352338093]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.5, 21.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("67_0w2w5")
+centered = false
+
+[node name="Hit3Part3" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1435130280]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-2.5171013, -9.00055)
+rotation = 2.0966396
+scale = Vector2(0.5000572, 0.5000572)
+texture = ExtResource("10_r2pkm")
+centered = false
+
+[node name="Hit3Part4" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1798688665]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-24.95, -10.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("68_urgxm")
+centered = false
+
+[node name="Hit3Part5" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=390000616]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-78.2276, -37.7172)
+rotation = 0.36602542
+scale = Vector2(0.50013, 0.50013)
+texture = ExtResource("13_ar6ww")
+centered = false
+
+[node name="Hit3Part6" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=585219358]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(1.2906003, -1.0973)
+rotation = 1.8378373
+scale = Vector2(0.5002302, 0.5002302)
+texture = ExtResource("18_ed6x3")
+centered = false
+
+[node name="Hit3Part7" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1869690103]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-14.9, -23.7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("69_bp581")
+centered = false
+
+[node name="Hit3Part8" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1928941715]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-14.25, -23.7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("70_2w0jn")
+centered = false
+
+[node name="Hit3Part9" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=660937967]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.74625, 20.59105)
+rotation = -0.042647235
+scale = Vector2(0.62156516, 0.62156516)
+texture = ExtResource("9_afcc2")
+centered = false
+
+[node name="Hit3Part10" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=169911683]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.65, -23.7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("71_mkvtd")
+centered = false
+
+[node name="Hit3Part11" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=684421479]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-23.881948, -4.2431984)
+rotation = -0.36477035
+scale = Vector2(0.47794613, 0.5256998)
+skew = -0.09972799
+texture = ExtResource("6_0ktfv")
+centered = false
+
+[node name="Hit3Part12" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1850927546]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-20.654148, -14.152151)
+rotation = -0.36477035
+scale = Vector2(0.47794613, 0.5256998)
+skew = -0.09972799
+texture = ExtResource("7_nhtit")
+centered = false
+
+[node name="Hit3Part13" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=193055397]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.54625, 20.441048)
+rotation = -0.042647235
+scale = Vector2(0.62156516, 0.62156516)
+texture = ExtResource("9_afcc2")
+centered = false
+
+[node name="Hit3Part14" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=857399141]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-5.6225996, 3.27845)
+rotation = 2.6071796
+scale = Vector2(0.49967015, 0.49967015)
+texture = ExtResource("10_r2pkm")
+centered = false
+
+[node name="Hit3Part15" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=219523459]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-15.35, -24.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("72_3b6lf")
+centered = false
+
+[node name="Hit3Part16" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1505129988]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-18.09035, -8.557548)
+rotation = -0.20445703
+scale = Vector2(0.49991247, 0.49991247)
+texture = ExtResource("6_0ktfv")
+centered = false
+
+[node name="Hit3Part17" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1163562194]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-12.12645, -17.70735)
+rotation = -0.20445703
+scale = Vector2(0.49991247, 0.49991247)
+texture = ExtResource("7_nhtit")
+centered = false
+
+[node name="Hit3Part18" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1476791136]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-19.537748, 20.939249)
+rotation = -0.042527538
+scale = Vector2(0.58803165, 0.58803165)
+texture = ExtResource("9_afcc2")
+centered = false
+
+[node name="Hit3Part19" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=309388299]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-13.0439, 17.599998)
+scale = Vector2(0.5365, 0.5)
+texture = ExtResource("11_8a2v1")
+centered = false
+
+[node name="Hit3Part20" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=7533070]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-12.990399, 17.55)
+scale = Vector2(0.5365, 0.5)
+texture = ExtResource("12_u2783")
+centered = false
+
+[node name="Hit3Part21" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1920736511]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(5.25, -13.700001)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("73_pnbl2")
+centered = false
+
+[node name="Hit3Part22" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1511091636]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(52.3504, -32.142)
+rotation = 2.7235713
+scale = Vector2(0.500058, 0.500058)
+texture = ExtResource("13_ar6ww")
+centered = false
+
+[node name="Hit3Part23" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1409090511]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(2.0500002, -15.75)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("74_xb2aw")
+centered = false
+
+[node name="Hit3Part24" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=75801853]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(3.4960008, -14.621999)
+rotation = 0.2837941
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_u7vu2")
+centered = false
+
+[node name="Hit3Part25" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2130205597]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-28.95, -49.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("87_6s5pt")
+centered = false
+
+[node name="Hit3Part26" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=463597957]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(15.855299, -2.1112003)
+rotation = 0.7143665
+scale = Vector2(0.54797536, 0.54797536)
+texture = ExtResource("21_r3e4v")
+centered = false
+
+[node name="Hit3Part27" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=516743135]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(15.594198, 0.52164936)
+rotation = 0.5089597
+scale = Vector2(0.5479519, 0.5479519)
+texture = ExtResource("21_r3e4v")
+centered = false
+
+[node name="Hit3Part28" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=981365566]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-87.1, 22.05)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("76_g04s8")
+centered = false
+
+[node name="Hit4" type="Node2D" parent="Puppet/Poses" unique_id=451702499]
+visible = false
+
+[node name="Hit4Part1" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=253561932]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(34.3, -29.55)
+rotation = 3.1415927
+scale = Vector2(0.5, -0.5)
+texture = ExtResource("101_uvdr5")
+centered = false
+
+[node name="Hit4Part2" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=877007030]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-5.57845, -10.2658)
+rotation = 0.71983916
+scale = Vector2(0.51269317, 0.5123637)
+skew = -0.0007338524
+texture = ExtResource("10_r2pkm")
+centered = false
+
+[node name="Hit4Part3" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1446084469]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(44.460003, 24.249998)
+rotation = -2.3561945
+scale = Vector2(0.51265246, 0.51265246)
+texture = ExtResource("13_ar6ww")
+centered = false
+
+[node name="Hit4Part4" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=389411753]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(33.3, -32.95)
+rotation = 3.1415927
+scale = Vector2(0.5, -0.5)
+texture = ExtResource("102_vp6eg")
+centered = false
+
+[node name="Hit4Part5" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1024434147]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-19.8494, -9.8705)
+rotation = -0.46975574
+scale = Vector2(0.5125163, 0.5125163)
+texture = ExtResource("6_0ktfv")
+centered = false
+
+[node name="Hit4Part6" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=154219225]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-16.4093, -20.527)
+rotation = -0.46975574
+scale = Vector2(0.5125163, 0.5125163)
+texture = ExtResource("7_nhtit")
+centered = false
+
+[node name="Hit4Part7" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1851679872]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-1.6589489, -20.80785)
+rotation = -0.15665257
+scale = Vector2(0.51277894, 0.51277894)
+texture = ExtResource("15_u7vu2")
+centered = false
+
+[node name="Hit4Part8" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1011223595]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(15.25, -58.749996)
+rotation = 3.1415927
+scale = Vector2(0.5, -0.5)
+texture = ExtResource("103_gmb7p")
+centered = false
+
+[node name="Hit4Part9" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=437585759]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-13.515148, 17.39075)
+rotation = -0.22589628
+scale = Vector2(0.6228236, 0.6228236)
+texture = ExtResource("9_afcc2")
+centered = false
+
+[node name="Hit4Part10" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=2036723367]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-7.9144, 14.2132)
+rotation = -0.26152766
+scale = Vector2(0.55693805, 0.55693805)
+texture = ExtResource("11_8a2v1")
+centered = false
+
+[node name="Hit4Part11" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1153181851]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(-7.8748007, 14.1444)
+rotation = -0.26152766
+scale = Vector2(0.55693805, 0.55693805)
+texture = ExtResource("12_u2783")
+centered = false
+
+[node name="Hit4Part12" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=573968603]
+material = SubResource("ShaderMaterial_khn5j")
+position = Vector2(14.195899, -13.5854)
+rotation = -0.052685574
+scale = Vector2(0.51271147, 0.51271147)
+texture = ExtResource("21_r3e4v")
 centered = false
 
 [node name="Hit5" type="Node2D" parent="Puppet/Poses" unique_id=231758344]
@@ -1314,222 +1758,6 @@ skew = -5.38826e-05
 texture = ExtResource("57_wcfcf")
 centered = false
 
-[node name="Hit3" type="Node2D" parent="Puppet/Poses" unique_id=417994489]
-visible = false
-
-[node name="Hit3Part1" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=414031794]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-24.050001, -15.55)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("66_14wu4")
-centered = false
-
-[node name="Hit3Part2" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=352338093]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.5, 21.9)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("67_0w2w5")
-centered = false
-
-[node name="Hit3Part3" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1435130280]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-2.5171013, -9.00055)
-rotation = 2.0966396
-scale = Vector2(0.5000572, 0.5000572)
-texture = ExtResource("10_r2pkm")
-centered = false
-
-[node name="Hit3Part4" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1798688665]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-24.95, -10.85)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("68_urgxm")
-centered = false
-
-[node name="Hit3Part5" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=390000616]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-78.2276, -37.7172)
-rotation = 0.36602542
-scale = Vector2(0.50013, 0.50013)
-texture = ExtResource("13_ar6ww")
-centered = false
-
-[node name="Hit3Part6" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=585219358]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(1.2906003, -1.0973)
-rotation = 1.8378373
-scale = Vector2(0.5002302, 0.5002302)
-texture = ExtResource("18_ed6x3")
-centered = false
-
-[node name="Hit3Part7" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1869690103]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-14.9, -23.7)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("69_bp581")
-centered = false
-
-[node name="Hit3Part8" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1928941715]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-14.25, -23.7)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("70_2w0jn")
-centered = false
-
-[node name="Hit3Part9" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=660937967]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.74625, 20.59105)
-rotation = -0.042647235
-scale = Vector2(0.62156516, 0.62156516)
-texture = ExtResource("9_afcc2")
-centered = false
-
-[node name="Hit3Part10" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=169911683]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.65, -23.7)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("71_mkvtd")
-centered = false
-
-[node name="Hit3Part11" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=684421479]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-23.881948, -4.2431984)
-rotation = -0.36477035
-scale = Vector2(0.47794613, 0.5256998)
-skew = -0.09972799
-texture = ExtResource("6_0ktfv")
-centered = false
-
-[node name="Hit3Part12" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1850927546]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-20.654148, -14.152151)
-rotation = -0.36477035
-scale = Vector2(0.47794613, 0.5256998)
-skew = -0.09972799
-texture = ExtResource("7_nhtit")
-centered = false
-
-[node name="Hit3Part13" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=193055397]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.54625, 20.441048)
-rotation = -0.042647235
-scale = Vector2(0.62156516, 0.62156516)
-texture = ExtResource("9_afcc2")
-centered = false
-
-[node name="Hit3Part14" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=857399141]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-5.6225996, 3.27845)
-rotation = 2.6071796
-scale = Vector2(0.49967015, 0.49967015)
-texture = ExtResource("10_r2pkm")
-centered = false
-
-[node name="Hit3Part15" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=219523459]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-15.35, -24.25)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("72_3b6lf")
-centered = false
-
-[node name="Hit3Part16" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1505129988]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-18.09035, -8.557548)
-rotation = -0.20445703
-scale = Vector2(0.49991247, 0.49991247)
-texture = ExtResource("6_0ktfv")
-centered = false
-
-[node name="Hit3Part17" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1163562194]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-12.12645, -17.70735)
-rotation = -0.20445703
-scale = Vector2(0.49991247, 0.49991247)
-texture = ExtResource("7_nhtit")
-centered = false
-
-[node name="Hit3Part18" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1476791136]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-19.537748, 20.939249)
-rotation = -0.042527538
-scale = Vector2(0.58803165, 0.58803165)
-texture = ExtResource("9_afcc2")
-centered = false
-
-[node name="Hit3Part19" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=309388299]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-13.0439, 17.599998)
-scale = Vector2(0.5365, 0.5)
-texture = ExtResource("11_8a2v1")
-centered = false
-
-[node name="Hit3Part20" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=7533070]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-12.990399, 17.55)
-scale = Vector2(0.5365, 0.5)
-texture = ExtResource("12_u2783")
-centered = false
-
-[node name="Hit3Part21" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1920736511]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(5.25, -13.700001)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("73_pnbl2")
-centered = false
-
-[node name="Hit3Part22" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1511091636]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(52.3504, -32.142)
-rotation = 2.7235713
-scale = Vector2(0.500058, 0.500058)
-texture = ExtResource("13_ar6ww")
-centered = false
-
-[node name="Hit3Part23" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1409090511]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(2.0500002, -15.75)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("74_xb2aw")
-centered = false
-
-[node name="Hit3Part24" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=75801853]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(3.4960008, -14.621999)
-rotation = 0.2837941
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("15_u7vu2")
-centered = false
-
-[node name="Hit3Part25" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2130205597]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-28.95, -49.85)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("75_v5lpk")
-centered = false
-
-[node name="Hit3Part26" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=463597957]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(15.855299, -2.1112003)
-rotation = 0.7143665
-scale = Vector2(0.54797536, 0.54797536)
-texture = ExtResource("21_r3e4v")
-centered = false
-
-[node name="Hit3Part27" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=516743135]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(15.594198, 0.52164936)
-rotation = 0.5089597
-scale = Vector2(0.5479519, 0.5479519)
-texture = ExtResource("21_r3e4v")
-centered = false
-
-[node name="Hit3Part28" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=981365566]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-87.1, 22.05)
-scale = Vector2(0.55, 0.55)
-texture = ExtResource("76_g04s8")
-centered = false
-
 [node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=984308994]
 visible = false
 
@@ -2065,214 +2293,6 @@ scale = Vector2(0.50025296, 0.50025296)
 texture = ExtResource("21_r3e4v")
 centered = false
 
-[node name="Hit2" type="Node2D" parent="Puppet/Poses" unique_id=333099240]
-visible = false
-
-[node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=165995939]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-25.849998, -24.949999)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("97_5xc8c")
-centered = false
-
-[node name="Hit2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1895658742]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-9.58535, 0.014249802)
-rotation = 1.1496288
-scale = Vector2(0.50021243, 0.4997562)
-skew = -0.00040900707
-texture = ExtResource("10_r2pkm")
-centered = false
-
-[node name="Hit2Part3" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=490933276]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.867401, -9.2264)
-rotation = -0.29512247
-scale = Vector2(0.45726934, 0.5645883)
-skew = -0.25258744
-texture = ExtResource("6_0ktfv")
-centered = false
-
-[node name="Hit2Part4" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=720120556]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-14.68855, -18.7463)
-rotation = -0.29512247
-scale = Vector2(0.45726934, 0.5645883)
-skew = -0.25258744
-texture = ExtResource("7_nhtit")
-centered = false
-
-[node name="Hit2Part5" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=241780172]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-7.1559477, 19.00245)
-rotation = -0.13985355
-scale = Vector2(0.58824337, 0.58824337)
-texture = ExtResource("9_afcc2")
-centered = false
-
-[node name="Hit2Part6" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=672497648]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-82.9664, 7.1356)
-rotation = 0.00799983
-scale = Vector2(0.500016, 0.500016)
-texture = ExtResource("13_ar6ww")
-centered = false
-
-[node name="Hit2Part7" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1466593847]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-1.4719992, 17.3391)
-rotation = -0.1553293
-scale = Vector2(0.51064783, 0.5494456)
-skew = -0.29570198
-texture = ExtResource("11_8a2v1")
-centered = false
-
-[node name="Hit2Part8" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=57491800]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-1.4454479, 17.28165)
-rotation = -0.1553293
-scale = Vector2(0.51064783, 0.5494456)
-skew = -0.29570198
-texture = ExtResource("12_u2783")
-centered = false
-
-[node name="Hit2Part9" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=2123279469]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(2.000001, -16.449999)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("98_glfai")
-centered = false
-
-[node name="Hit2Part10" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=719691037]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(3.4207506, -17.009249)
-rotation = -0.0049999584
-scale = Vector2(0.50000626, 0.50000626)
-texture = ExtResource("15_u7vu2")
-centered = false
-
-[node name="Hit2Part11" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1872355740]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-32.8, -46.35)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("99_xcnqd")
-centered = false
-
-[node name="Hit2Part12" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1618731369]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(18.31425, -2.2981505)
-rotation = 1.2920845
-scale = Vector2(0.49978647, 0.49978647)
-texture = ExtResource("21_r3e4v")
-centered = false
-
-[node name="Hit2Part13" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1263866519]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-157, -27.9)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("100_8y6ui")
-centered = false
-
-[node name="Hit4" type="Node2D" parent="Puppet/Poses" unique_id=451702499]
-visible = false
-
-[node name="Hit4Part1" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=253561932]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(34.3, -29.55)
-rotation = 3.1415927
-scale = Vector2(0.5, -0.5)
-texture = ExtResource("101_uvdr5")
-centered = false
-
-[node name="Hit4Part2" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=877007030]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-5.57845, -10.2658)
-rotation = 0.71983916
-scale = Vector2(0.51269317, 0.5123637)
-skew = -0.0007338524
-texture = ExtResource("10_r2pkm")
-centered = false
-
-[node name="Hit4Part3" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1446084469]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(44.460003, 24.249998)
-rotation = -2.3561945
-scale = Vector2(0.51265246, 0.51265246)
-texture = ExtResource("13_ar6ww")
-centered = false
-
-[node name="Hit4Part4" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=389411753]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(33.3, -32.95)
-rotation = 3.1415927
-scale = Vector2(0.5, -0.5)
-texture = ExtResource("102_vp6eg")
-centered = false
-
-[node name="Hit4Part5" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1024434147]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-19.8494, -9.8705)
-rotation = -0.46975574
-scale = Vector2(0.5125163, 0.5125163)
-texture = ExtResource("6_0ktfv")
-centered = false
-
-[node name="Hit4Part6" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=154219225]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-16.4093, -20.527)
-rotation = -0.46975574
-scale = Vector2(0.5125163, 0.5125163)
-texture = ExtResource("7_nhtit")
-centered = false
-
-[node name="Hit4Part7" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1851679872]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-1.6589489, -20.80785)
-rotation = -0.15665257
-scale = Vector2(0.51277894, 0.51277894)
-texture = ExtResource("15_u7vu2")
-centered = false
-
-[node name="Hit4Part8" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1011223595]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(15.25, -58.749996)
-rotation = 3.1415927
-scale = Vector2(0.5, -0.5)
-texture = ExtResource("103_gmb7p")
-centered = false
-
-[node name="Hit4Part9" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=437585759]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-13.515148, 17.39075)
-rotation = -0.22589628
-scale = Vector2(0.6228236, 0.6228236)
-texture = ExtResource("9_afcc2")
-centered = false
-
-[node name="Hit4Part10" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=2036723367]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-7.9144, 14.2132)
-rotation = -0.26152766
-scale = Vector2(0.55693805, 0.55693805)
-texture = ExtResource("11_8a2v1")
-centered = false
-
-[node name="Hit4Part11" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1153181851]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(-7.8748007, 14.1444)
-rotation = -0.26152766
-scale = Vector2(0.55693805, 0.55693805)
-texture = ExtResource("12_u2783")
-centered = false
-
-[node name="Hit4Part12" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=573968603]
-material = SubResource("ShaderMaterial_khn5j")
-position = Vector2(14.195899, -13.5854)
-rotation = -0.052685574
-scale = Vector2(0.51271147, 0.51271147)
-texture = ExtResource("21_r3e4v")
-centered = false
-
 [node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=2005287570]
 visible = false
 
@@ -2382,8 +2402,8 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1621778472]
+position = Vector2(-66.8, 17.2)
 shape = SubResource("RectangleShape2D_d2i3a")
-disabled = true
 
 [node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=347452098]
 collision_layer = 0
@@ -2391,13 +2411,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1745040138]
+position = Vector2(0.4, 0.5)
 shape = SubResource("RectangleShape2D_1jyot")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=715834341]
 callback_mode_process = 0
 libraries/ = ExtResource("104_72aje")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=2006279989]
 position = Vector2(0.4, 0.5)
 shape = SubResource("RectangleShape2D_Body")

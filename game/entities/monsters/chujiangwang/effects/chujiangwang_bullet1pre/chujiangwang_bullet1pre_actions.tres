@@ -1,10 +1,9 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/monsters/chujiangwang/effects/chujiangwang_bullet1pre/tex/chujiangwang_bullet1pre_frame.png" id="1_3xmxn"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bpadlmxwkjb5v"]
 
 [sub_resource type="Animation" id="Animation_sfb35"]
 length = 1.25
 loop_mode = 1
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

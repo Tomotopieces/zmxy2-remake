@@ -1,9 +1,7 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/monsters/shirenyu/tex/shirenyu_puppet_sprite.png" id="1_xa3ug"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bqtp5pnc3ljti"]
 
 [sub_resource type="Animation" id="Animation_bv8ys"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false

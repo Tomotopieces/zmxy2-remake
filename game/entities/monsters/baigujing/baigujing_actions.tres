@@ -911,10 +911,10 @@ tracks/0/path = NodePath("Poses/Hit1/Hit1Part1:texture")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.25, 0.33333334),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("11_c1gkj"), ExtResource("11_c1gkj"), ExtResource("12_fcsxk"), ExtResource("12_fcsxk")]
+"values": [ExtResource("11_c1gkj"), ExtResource("12_fcsxk")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false

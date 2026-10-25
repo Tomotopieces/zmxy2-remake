@@ -1,29 +1,29 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://corkfy5iucd6d"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_ha4vd"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_omb4q"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhuanlunwang_2/tex/zhuanlunwang_2_bullet1_hit2_part2.png" id="3_s66p5"]
-[ext_resource type="AnimationLibrary" path="res://entities/monsters/zhuanlunwang_3/effects/zhuanlunwang_3_bullet1/zhuanlunwang_3_bullet1_actions.tres" id="4_e38ld"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="2_omb4q"]
+[ext_resource type="Texture2D" uid="uid://bx4acq0in57lv" path="res://entities/monsters/zhuanlunwang_2/tex/zhuanlunwang_2_bullet1_hit2_part2.png" id="3_s66p5"]
+[ext_resource type="AnimationLibrary" uid="uid://caix42tdj76m8" path="res://entities/monsters/zhuanlunwang_3/effects/zhuanlunwang_3_bullet1/zhuanlunwang_3_bullet1_actions.tres" id="4_e38ld"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kt8to"]
 shader = ExtResource("2_omb4q")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.4, 0, 1)
 shader_parameter/glow_blur = 26.0
 shader_parameter/glow_strength = 1.5
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 27.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_chx4g"]
-resource_local_to_scene = true
+[sub_resource type="CircleShape2D" id="CircleShape2D_6vkeg"]
+radius = 60.0
 
 [node name="Monster60Bullet1" type="Node2D" unique_id=674500925]
 script = ExtResource("1_ha4vd")
@@ -42,8 +42,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1641062292]
-shape = SubResource("RectangleShape2D_chx4g")
-disabled = true
+shape = SubResource("CircleShape2D_6vkeg")
 
 [node name="Anim" type="AnimationPlayer" parent="." unique_id=728514033]
 callback_mode_process = 0

@@ -1,76 +1,77 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://pgk2pon8f6qp"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_kjyg7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_walk_part1.png" id="2_cebh8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_walk_part2.png" id="3_qwhny"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_walk_part3.png" id="4_gqif8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit1_part1_10.png" id="5_died1"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit1_part2.png" id="6_dr2rj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="7_j3m2f"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part1.png" id="8_upe8y"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part2.png" id="9_5le4v"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part3.png" id="10_6u636"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="11_diyxk"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part4.png" id="12_hydw3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part5.png" id="13_sync7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part1.png" id="14_tas5e"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part2.png" id="15_qqigu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part3.png" id="16_heva0"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part5.png" id="17_7mwnq"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part7.png" id="18_rqtq8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hurt_part1.png" id="19_86i7n"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_wait_part1.png" id="20_ufxkh"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit3_part1.png" id="21_wcmil"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit3_part2.png" id="22_xaww7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_dead_part1.png" id="23_acjpl"]
+[ext_resource type="Texture2D" uid="uid://6g1lm2envq3i" path="res://entities/monsters/honghaier/tex/honghaier_walk_part1.png" id="2_cebh8"]
+[ext_resource type="Texture2D" uid="uid://ddmiqwho4ajhw" path="res://entities/monsters/honghaier/tex/honghaier_walk_part2.png" id="3_qwhny"]
+[ext_resource type="Texture2D" uid="uid://ddop5imtrjru" path="res://entities/monsters/honghaier/tex/honghaier_walk_part3.png" id="4_gqif8"]
+[ext_resource type="Texture2D" uid="uid://cks80fwf1vcrj" path="res://entities/monsters/honghaier/tex/honghaier_hit1_part2.png" id="6_dr2rj"]
+[ext_resource type="Texture2D" uid="uid://ft6hmvi7guog" path="res://entities/monsters/honghaier/tex/honghaier_hit1_part1_9.png" id="6_m2v7n"]
+[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="7_j3m2f"]
+[ext_resource type="Texture2D" uid="uid://dgwb4nb62divq" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part1.png" id="8_upe8y"]
+[ext_resource type="Texture2D" uid="uid://d04tkmktg6v0s" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part2.png" id="9_5le4v"]
+[ext_resource type="Texture2D" uid="uid://b6uee0731h3ka" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part3.png" id="10_6u636"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="11_diyxk"]
+[ext_resource type="Texture2D" uid="uid://kq0aiqik27lw" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part4.png" id="12_hydw3"]
+[ext_resource type="Texture2D" uid="uid://dgc5rfoo2xb3e" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part5.png" id="13_sync7"]
+[ext_resource type="Texture2D" uid="uid://diwko3qy2ltxf" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part1.png" id="14_tas5e"]
+[ext_resource type="Texture2D" uid="uid://cd70mal8rlc13" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part2.png" id="15_qqigu"]
+[ext_resource type="Texture2D" uid="uid://d2ncsyy48vexu" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part3.png" id="16_heva0"]
+[ext_resource type="Texture2D" uid="uid://j4g2uvnad0k" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part5.png" id="17_7mwnq"]
+[ext_resource type="Texture2D" uid="uid://cyumideam76tj" path="res://entities/monsters/honghaier/tex/honghaier_hit4_part7.png" id="18_rqtq8"]
+[ext_resource type="Texture2D" uid="uid://jujaqyi5qy6w" path="res://entities/monsters/honghaier/tex/honghaier_hurt_part1.png" id="19_86i7n"]
+[ext_resource type="Texture2D" uid="uid://t3jyhbmwrlk5" path="res://entities/monsters/honghaier/tex/honghaier_wait_part1.png" id="20_ufxkh"]
+[ext_resource type="Texture2D" uid="uid://bt2ykay4pm8f4" path="res://entities/monsters/honghaier/tex/honghaier_hit3_part1.png" id="21_wcmil"]
+[ext_resource type="Texture2D" uid="uid://bxy1eu4tl7bts" path="res://entities/monsters/honghaier/tex/honghaier_hit3_part2.png" id="22_xaww7"]
+[ext_resource type="Texture2D" uid="uid://xnwmcb47qscd" path="res://entities/monsters/honghaier/tex/honghaier_dead_part1.png" id="23_acjpl"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/honghaier/honghaier_actions.tres" id="24_ejsot"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ixn2x"]
 shader = ExtResource("11_diyxk")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(-2.2151587, 0.8628342, -0.41695285, 0, 1.956133, 0.54461545, 3.9239774, 0, 1.5390258, -0.12744963, -2.2270248, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(-0.06972549, -0.06972549, -0.06972548, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_surv6"]
 shader = ExtResource("11_diyxk")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 2.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 3.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ak0wt"]
 resource_local_to_scene = true
+size = Vector2(150, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rdotq"]
 resource_local_to_scene = true
+size = Vector2(40, 80)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(40, 80)
 
-[node name="Monster46" type="CharacterBody2D"]
+[node name="Monster46" type="CharacterBody2D" unique_id=1081096798]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=807817199]
@@ -106,19 +107,22 @@ visible = false
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=750351179]
 position = Vector2(-112.65, -63.1)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_died1")
+texture = ExtResource("6_m2v7n")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1303371933]
+visible = false
 modulate = Color(1, 1, 1, 0.379)
-position = Vector2(-172.7, -0.9499998)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-149.5389, 64.9888)
+rotation = -0.41355526
+scale = Vector2(0.500165, 0.500165)
 texture = ExtResource("6_dr2rj")
 centered = false
 
 [node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1912436278]
-position = Vector2(-172.70149, -4.2939997)
-scale = Vector2(8.3335, 0.153)
+visible = false
+position = Vector2(-122.601494, -4.7420006)
+scale = Vector2(8.3335, 0.204)
 texture = ExtResource("7_j3m2f")
 centered = false
 
@@ -255,6 +259,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1665447869]
+position = Vector2(-97.7, 10.7)
 shape = SubResource("RectangleShape2D_ak0wt")
 disabled = true
 
@@ -264,13 +269,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=935014037]
+position = Vector2(0.4, 3)
 shape = SubResource("RectangleShape2D_rdotq")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1154308115]
 callback_mode_process = 0
 libraries/ = ExtResource("24_ejsot")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1160212442]
 position = Vector2(0.4, 3)
 shape = SubResource("RectangleShape2D_Body")

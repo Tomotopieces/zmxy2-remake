@@ -1,88 +1,101 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://b1ftsf65nfda"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_0hinc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame.png" id="2_8fk20"]
-[ext_resource type="Texture2D" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame_2.png" id="3_rqukr"]
-[ext_resource type="Texture2D" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame_3.png" id="4_xecor"]
-[ext_resource type="AnimationLibrary" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/baigujing_bullet1_actions.tres" id="5_ls6a0"]
+[ext_resource type="Texture2D" uid="uid://dtwufehbdsxmd" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame_7.png" id="2_goy2w"]
+[ext_resource type="Texture2D" uid="uid://bupj7ti447x0s" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame_2.png" id="3_rqukr"]
+[ext_resource type="Texture2D" uid="uid://c7c0wtbjryobx" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/tex/baigujing_bullet1_frame_5.png" id="4_h01mp"]
+[ext_resource type="AnimationLibrary" uid="uid://qlluqc6nx1q8" path="res://entities/monsters/baigujing/effects/baigujing_bullet1/baigujing_bullet1_actions.tres" id="5_ls6a0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_itlw3"]
 resource_local_to_scene = true
+size = Vector2(74, 133.7)
 
 [node name="Monster45Bullet1" type="Node2D" unique_id=272632705]
 script = ExtResource("1_0hinc")
 actions = PackedStringArray("default")
 
 [node name="Monster45Bullet1Part1" type="Sprite2D" parent="." unique_id=788465941]
-position = Vector2(-113.75, -80.524796)
+visible = false
+position = Vector2(-97.75, -56.467346)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("2_8fk20")
+texture = ExtResource("2_goy2w")
 centered = false
 
 [node name="Monster45Bullet1Part2" type="Sprite2D" parent="." unique_id=393055957]
+visible = false
 position = Vector2(-115.75, -87.55965)
 scale = Vector2(0.5, 0.2895)
 texture = ExtResource("3_rqukr")
 centered = false
 
 [node name="Monster45Bullet1Part3" type="Sprite2D" parent="." unique_id=1018610216]
-position = Vector2(-118.25, -109.6485)
+visible = false
+position = Vector2(-117.25, -135.90616)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("4_xecor")
+texture = ExtResource("4_h01mp")
 centered = false
 
 [node name="Monster45Bullet1Part4" type="Sprite2D" parent="." unique_id=1574738017]
-position = Vector2(-201.75, -80.524796)
+visible = false
+position = Vector2(-185.75, -56.467346)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("2_8fk20")
+texture = ExtResource("2_goy2w")
 centered = false
 
 [node name="Monster45Bullet1Part5" type="Sprite2D" parent="." unique_id=1014669637]
+visible = false
 position = Vector2(-203.75, -87.55965)
 scale = Vector2(0.5, 0.2895)
 texture = ExtResource("3_rqukr")
 centered = false
 
 [node name="Monster45Bullet1Part6" type="Sprite2D" parent="." unique_id=233138575]
-position = Vector2(-206.25, -109.6485)
+visible = false
+position = Vector2(-205.25, -135.90616)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("4_xecor")
+texture = ExtResource("4_h01mp")
 centered = false
 
 [node name="Monster45Bullet1Part7" type="Sprite2D" parent="." unique_id=1208478639]
-position = Vector2(-292.3, -80.524796)
+visible = false
+position = Vector2(-276.3, -56.467346)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("2_8fk20")
+texture = ExtResource("2_goy2w")
 centered = false
 
 [node name="Monster45Bullet1Part8" type="Sprite2D" parent="." unique_id=1748407190]
+visible = false
 position = Vector2(-294.3, -87.55965)
 scale = Vector2(0.5, 0.2895)
 texture = ExtResource("3_rqukr")
 centered = false
 
 [node name="Monster45Bullet1Part9" type="Sprite2D" parent="." unique_id=1420659681]
-position = Vector2(-296.8, -109.6485)
+visible = false
+position = Vector2(-295.8, -135.90616)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("4_xecor")
+texture = ExtResource("4_h01mp")
 centered = false
 
 [node name="Monster45Bullet1Part10" type="Sprite2D" parent="." unique_id=720121200]
-position = Vector2(-385.35, -80.524796)
+visible = false
+position = Vector2(-369.35, -56.467346)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("2_8fk20")
+texture = ExtResource("2_goy2w")
 centered = false
 
 [node name="Monster45Bullet1Part11" type="Sprite2D" parent="." unique_id=2035011999]
+visible = false
 position = Vector2(-387.35, -87.55965)
 scale = Vector2(0.5, 0.2895)
 texture = ExtResource("3_rqukr")
 centered = false
 
 [node name="Monster45Bullet1Part12" type="Sprite2D" parent="." unique_id=610053294]
-position = Vector2(-389.85, -109.6485)
+visible = false
+position = Vector2(-388.85, -135.90616)
 scale = Vector2(0.5, 0.2895)
-texture = ExtResource("4_xecor")
+texture = ExtResource("4_h01mp")
 centered = false
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=426645549]
@@ -91,6 +104,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1803693333]
+position = Vector2(-351.3, -69.05)
 shape = SubResource("RectangleShape2D_itlw3")
 disabled = true
 
