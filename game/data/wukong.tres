@@ -1,102 +1,7 @@
-[gd_resource type="Resource" script_class="HeroData" format=3]
+[gd_resource type="Resource" script_class="HeroData" format=3 uid="uid://dbm36qr0gujk3"]
 
-[ext_resource type="Script" path="res://src/data/attack_data.gd" id="1_3d1ni"]
-[ext_resource type="Script" path="res://src/data/hero_data.gd" id="2_p888s"]
-
-[sub_resource type="Resource" id="Resource_iaxpd"]
-script = ExtResource("1_3d1ni")
-rumble = 0.15
-knockback = Vector2(12, -88.18163)
-
-[sub_resource type="Resource" id="Resource_xs3uw"]
-script = ExtResource("1_3d1ni")
-rumble = 0.15
-knockback = Vector2(12, -88.18163)
-
-[sub_resource type="Resource" id="Resource_dnye2"]
-script = ExtResource("1_3d1ni")
-rumble = 0.15
-knockback = Vector2(12, -88.18163)
-
-[sub_resource type="Resource" id="Resource_cgyak"]
-script = ExtResource("1_3d1ni")
-rumble = 0.15
-knockback = Vector2(12, -88.18163)
-
-[sub_resource type="Resource" id="Resource_d7h51"]
-script = ExtResource("1_3d1ni")
-hitstop = 0.09
-shake = 0.35
-rumble = 0.35
-knockback = Vector2(600, -113.841995)
-
-[sub_resource type="Resource" id="Resource_jmd7p"]
-script = ExtResource("1_3d1ni")
-hitstop = 0.09
-shake = 0.35
-rumble = 0.35
-power_mul = 0.5
-kind = 1
-knockback = Vector2(840, -65.72671)
-mp_cost = 20
-dash_speed = 360.0
-rage_dash_speed = 720.0
-
-[sub_resource type="Resource" id="Resource_f7phe"]
-script = ExtResource("1_3d1ni")
-rumble = 0.2
-power_mul = 0.0
-flat = 100
-kind = 1
-knockback = Vector2(0, -65.72671)
-mp_cost = 30
-cooldown = 0.5
-dash_speed = 1080.0
-invincible = 0.5
-
-[sub_resource type="Resource" id="Resource_5hy8o"]
-script = ExtResource("1_3d1ni")
-hitstop = 0.09
-hitstop_once = true
-shake = 0.35
-rumble = 0.35
-power_mul = 2.0
-kind = 1
-knockback = Vector2(48, -545.96704)
-mp_cost = 10
-cooldown = 0.875
-
-[sub_resource type="Resource" id="Resource_axbui"]
-script = ExtResource("1_3d1ni")
-rumble = 0.2
-power_mul = 1.2
-kind = 1
-knockback = Vector2(480, -65.72671)
-push_from_center = true
-mp_cost = 40
-cooldown = 0.8333333333333334
-
-[sub_resource type="Resource" id="Resource_idc1j"]
-script = ExtResource("1_3d1ni")
-rumble = 0.2
-knockback = Vector2(48, -88.18163)
-max_hits = 100
-
-[sub_resource type="Resource" id="Resource_viqao"]
-script = ExtResource("1_3d1ni")
-hitstop = 0.15
-hitstop_once = true
-rumble = 0.8
-power_mul = 3.0
-kind = 1
-knockback = Vector2(960, -377.5712)
-max_hits = 100
-
-[sub_resource type="Resource" id="Resource_ea4i2"]
-script = ExtResource("1_3d1ni")
-kind = 1
-knockback = Vector2(960, 600)
-max_hits = 100
+[ext_resource type="Script" uid="uid://bnsw1c110nbq8" path="res://src/data/attack_data.gd" id="1_3d1ni"]
+[ext_resource type="Script" uid="uid://dp7soe336pj72" path="res://src/data/hero_data.gd" id="2_p888s"]
 
 [sub_resource type="Resource" id="Resource_63nf5"]
 script = ExtResource("1_3d1ni")
@@ -104,13 +9,13 @@ kind = 1
 knockback = Vector2(48, -65.72671)
 max_hits = 1
 
-[sub_resource type="Resource" id="Resource_6ovck"]
+[sub_resource type="Resource" id="Resource_2n2fp"]
 script = ExtResource("1_3d1ni")
 kind = 1
 knockback = Vector2(48, -65.72671)
 max_hits = 99
 
-[sub_resource type="Resource" id="Resource_2n2fp"]
+[sub_resource type="Resource" id="Resource_6ovck"]
 script = ExtResource("1_3d1ni")
 kind = 1
 knockback = Vector2(48, -65.72671)
@@ -150,6 +55,11 @@ script = ExtResource("1_3d1ni")
 knockback = Vector2(48, -65.72671)
 max_hits = 99
 
+[sub_resource type="Resource" id="Resource_iaxpd"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(12, -88.18163)
+rumble = 0.15
+
 [sub_resource type="Resource" id="Resource_t0wti"]
 script = ExtResource("1_3d1ni")
 kind = 2
@@ -164,6 +74,98 @@ extra = {
 "slam_cooldown": 0.5416666666666666,
 "slam_scale": 2.0
 }
+
+[sub_resource type="Resource" id="Resource_idc1j"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(48, -88.18163)
+max_hits = 100
+rumble = 0.2
+
+[sub_resource type="Resource" id="Resource_viqao"]
+script = ExtResource("1_3d1ni")
+power_mul = 3.0
+kind = 1
+knockback = Vector2(960, -377.5712)
+max_hits = 100
+hitstop = 0.15
+hitstop_once = true
+rumble = 0.8
+
+[sub_resource type="Resource" id="Resource_ea4i2"]
+script = ExtResource("1_3d1ni")
+kind = 1
+knockback = Vector2(960, 600)
+max_hits = 100
+
+[sub_resource type="Resource" id="Resource_xs3uw"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(12, -88.18163)
+rumble = 0.15
+
+[sub_resource type="Resource" id="Resource_dnye2"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(12, -88.18163)
+rumble = 0.15
+
+[sub_resource type="Resource" id="Resource_cgyak"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(12, -88.18163)
+rumble = 0.15
+
+[sub_resource type="Resource" id="Resource_d7h51"]
+script = ExtResource("1_3d1ni")
+knockback = Vector2(600, -113.841995)
+hitstop = 0.09
+shake = 0.35
+rumble = 0.35
+
+[sub_resource type="Resource" id="Resource_jmd7p"]
+script = ExtResource("1_3d1ni")
+power_mul = 0.5
+kind = 1
+knockback = Vector2(840, -65.72671)
+hitstop = 0.03
+shake = 0.25
+rumble = 0.25
+mp_cost = 20
+dash_speed = 360.0
+rage_dash_speed = 720.0
+
+[sub_resource type="Resource" id="Resource_f7phe"]
+script = ExtResource("1_3d1ni")
+power_mul = 0.0
+flat = 100
+kind = 1
+knockback = Vector2(0, -65.72671)
+rumble = 0.2
+mp_cost = 30
+cooldown = 0.5
+dash_speed = 1080.0
+invincible = 0.5
+
+[sub_resource type="Resource" id="Resource_5hy8o"]
+script = ExtResource("1_3d1ni")
+power_mul = 2.0
+kind = 1
+knockback = Vector2(48, -545.96704)
+hitstop = 0.09
+hitstop_once = true
+shake = 0.35
+rumble = 0.35
+mp_cost = 10
+cooldown = 0.875
+
+[sub_resource type="Resource" id="Resource_axbui"]
+script = ExtResource("1_3d1ni")
+power_mul = 1.2
+kind = 1
+knockback = Vector2(480, -65.72671)
+push_from_center = true
+hitstop = 0.03
+shake = 0.25
+rumble = 0.25
+mp_cost = 40
+cooldown = 0.8333333333333334
 
 [resource]
 script = ExtResource("2_p888s")
@@ -247,7 +249,7 @@ treasures = {
 "stab_spacing": 25.0,
 "stab_speed": 24.0,
 "stab_spread": 80.0,
-"stab_turn": 0.09999999999999999,
+"stab_turn": 0.1,
 "stabs": 8.0,
 "wood_mul": [1.5, 2.0]
 },

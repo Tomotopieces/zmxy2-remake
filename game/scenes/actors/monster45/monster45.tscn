@@ -1,336 +1,338 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://db27uj0kmlxvl"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_j3lc1"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_31.png" id="2_10aoi"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_36.png" id="3_1d1pn"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_38.png" id="4_32xdk"]
-[ext_resource type="Script" path="res://src/puppet/equip_slot.gd" id="5_3k0lg"]
+[ext_resource type="Texture2D" uid="uid://ic21jy6t46v8" path="res://assets/puppets/monster45/tex/5_31.png" id="2_10aoi"]
+[ext_resource type="Texture2D" uid="uid://d3n687qor531y" path="res://assets/puppets/monster45/tex/5_36.png" id="3_1d1pn"]
+[ext_resource type="Texture2D" uid="uid://2dri20fhn3ff" path="res://assets/puppets/monster45/tex/5_38.png" id="4_32xdk"]
+[ext_resource type="Script" uid="uid://3fsn1fuqxid0" path="res://src/puppet/equip_slot.gd" id="5_3k0lg"]
 [ext_resource type="PackedScene" path="res://assets/puppets/monster45/slots/slot34_2.tscn" id="6_1axe7"]
 [ext_resource type="PackedScene" path="res://assets/puppets/monster45/slots/slot34_3.tscn" id="7_s4ptf"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_39.png" id="8_hb50i"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_37.png" id="9_21q5x"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_35.png" id="10_2mbgn"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_44.png" id="11_21d8t"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_45.png" id="12_w6wco"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="13_ao7o6"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_51.png" id="14_gd2x4"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_88.png" id="15_y5h1o"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_91.png" id="16_d1cmj"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_98.png" id="17_ct8ue"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_99.png" id="18_4hybk"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_106.png" id="19_ly70f"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_107.png" id="20_cdo81"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_110.png" id="21_4d86o"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_112.png" id="22_x5eqt"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_121.png" id="23_133yl"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_117.png" id="24_dto77"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_32.png" id="25_12uvd"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_33.png" id="26_jy8vw"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_119.png" id="27_1d7yt"]
-[ext_resource type="Texture2D" path="res://assets/puppets/monster45/tex/5_125.png" id="28_x6v41"]
+[ext_resource type="Texture2D" uid="uid://21aovbr2d8aa" path="res://assets/puppets/monster45/tex/5_39.png" id="8_hb50i"]
+[ext_resource type="Texture2D" uid="uid://difc70x3n2ym1" path="res://assets/puppets/monster45/tex/5_37.png" id="9_21q5x"]
+[ext_resource type="Texture2D" uid="uid://b0y10irejj3hv" path="res://assets/puppets/monster45/tex/5_35.png" id="10_2mbgn"]
+[ext_resource type="Texture2D" uid="uid://bp1iefl1ip8xy" path="res://assets/puppets/monster45/tex/5_44.png" id="11_21d8t"]
+[ext_resource type="Texture2D" uid="uid://cacntarbe24wd" path="res://assets/puppets/monster45/tex/5_48.png" id="12_1d1pn"]
+[ext_resource type="Texture2D" uid="uid://daypl5rqnaa81" path="res://assets/puppets/monster45/tex/5_85.png" id="13_32xdk"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="13_ao7o6"]
+[ext_resource type="Texture2D" uid="uid://bj3vnm4mo5fgt" path="res://assets/puppets/monster45/tex/5_83.png" id="15_3k0lg"]
+[ext_resource type="Texture2D" uid="uid://bb5cqm4sj42yy" path="res://assets/puppets/monster45/tex/5_88.png" id="15_y5h1o"]
+[ext_resource type="Texture2D" uid="uid://cblqdu22hrpjh" path="res://assets/puppets/monster45/tex/5_91.png" id="16_d1cmj"]
+[ext_resource type="Texture2D" uid="uid://shig1u7lgxga" path="res://assets/puppets/monster45/tex/5_98.png" id="17_ct8ue"]
+[ext_resource type="Texture2D" uid="uid://cypkq040k7hgm" path="res://assets/puppets/monster45/tex/5_99.png" id="18_4hybk"]
+[ext_resource type="Texture2D" uid="uid://dcr2ujtm72hdv" path="res://assets/puppets/monster45/tex/5_106.png" id="19_ly70f"]
+[ext_resource type="Texture2D" uid="uid://bd7nvb8jpw6jw" path="res://assets/puppets/monster45/tex/5_107.png" id="20_cdo81"]
+[ext_resource type="Texture2D" uid="uid://bouabvvyf3aqy" path="res://assets/puppets/monster45/tex/5_110.png" id="21_4d86o"]
+[ext_resource type="Texture2D" uid="uid://cgnnij0jvmltb" path="res://assets/puppets/monster45/tex/5_112.png" id="22_x5eqt"]
+[ext_resource type="Texture2D" uid="uid://c0kn6yn0pu47v" path="res://assets/puppets/monster45/tex/5_121.png" id="23_133yl"]
+[ext_resource type="Texture2D" uid="uid://dof3ey6ynlvir" path="res://assets/puppets/monster45/tex/5_117.png" id="24_dto77"]
+[ext_resource type="Texture2D" uid="uid://dkbik8mn7pm5q" path="res://assets/puppets/monster45/tex/5_32.png" id="25_12uvd"]
+[ext_resource type="Texture2D" uid="uid://b6d853rex52lu" path="res://assets/puppets/monster45/tex/5_33.png" id="26_jy8vw"]
+[ext_resource type="Texture2D" uid="uid://dk3ok4vkglkuk" path="res://assets/puppets/monster45/tex/5_119.png" id="27_1d7yt"]
+[ext_resource type="Texture2D" uid="uid://dngteh62qkd71" path="res://assets/puppets/monster45/tex/5_125.png" id="28_x6v41"]
 [ext_resource type="AnimationLibrary" path="res://scenes/actors/monster45/monster45_actions.tres" id="29_smdjn"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_amg0m"]
 shader = ExtResource("13_ao7o6")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(0.08343069, 0.33295208, -0.5919533, 0, -0.07082099, 0.8840236, 1.3513453, 0, 0.9873902, -0.21697575, 0.24060795, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(0, 0, 0, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_880nh"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 1.25
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 2.25
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_apta0"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 2.5
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 3.5
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jallo"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.75
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.75
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_naq7t"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 5.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 6.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ocni"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 4.400009
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.400009
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0sfcr"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.8000183
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.8000183
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s36j8"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.1999817
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.1999817
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w5ckt"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 2.5999908
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 3.5999908
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tcgfx"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 2.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 3.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ljehj"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 2.75
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 3.75
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f1a5k"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.5
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.5
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3blhv"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 4.25
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.25
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vyicb"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 4.0000153
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.0000153
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l46ce"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 3.0000305
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.0000305
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvdix"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 1.9999695
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 2.9999695
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gbibu"]
 shader = ExtResource("13_ao7o6")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 0.9999847412109376
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 1.9999847
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sx5nk"]
 resource_local_to_scene = true
+size = Vector2(249.6, 213.2)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h886a"]
 resource_local_to_scene = true
+size = Vector2(40, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(40, 120)
 
-[node name="Monster45" type="CharacterBody2D"]
+[node name="Monster45" type="CharacterBody2D" unique_id=1859839094]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=421588373]
@@ -388,16 +390,17 @@ texture = ExtResource("10_2mbgn")
 centered = false
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=2017410634]
-visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=596895334]
-position = Vector2(-13.7, -4.05)
+position = Vector2(-8.5, 1.2)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("11_21d8t")
+texture = ExtResource("12_1d1pn")
 centered = false
 
 [node name="Hit1Slot1" type="Node2D" parent="Puppet/Poses/Hit1" unique_id=162090107]
-position = Vector2(45.45, -9.5)
+position = Vector2(35.75, -9.5)
+rotation = -0.08712825
+scale = Vector2(0.99979246, 0.99979246)
 script = ExtResource("5_3k0lg")
 kind = "form"
 variants = {
@@ -406,17 +409,17 @@ variants = {
 }
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=226914739]
-position = Vector2(-37.5, -70.25)
+position = Vector2(-112.65, -62.55)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_w6wco")
+texture = ExtResource("13_32xdk")
 centered = false
 
 [node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1494817104]
 material = SubResource("ShaderMaterial_amg0m")
-position = Vector2(-156.3516, 77.648796)
+position = Vector2(-267.80002, 139.4634)
 rotation = -1.5527983
 scale = Vector2(0.500081, 0.500081)
-texture = ExtResource("14_gd2x4")
+texture = ExtResource("15_3k0lg")
 centered = false
 
 [node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=865832835]
@@ -533,6 +536,7 @@ centered = false
 visible = false
 
 [node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1102818149]
+visible = false
 position = Vector2(-30.250002, -41.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("23_133yl")
@@ -545,6 +549,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart3" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=372858868]
+visible = false
 modulate = Color(1.0009804, 1.0009804, 1.0009804, 1)
 material = SubResource("ShaderMaterial_880nh")
 position = Vector2(-4.6000004, -8.55)
@@ -553,6 +558,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart4" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1996886406]
+visible = false
 modulate = Color(1.0019608, 1.0019608, 1.0019608, 1)
 material = SubResource("ShaderMaterial_apta0")
 position = Vector2(-4.6000004, -8.55)
@@ -561,6 +567,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart5" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=2053642613]
+visible = false
 modulate = Color(0.9990196, 0.9990196, 0.9990196, 1)
 material = SubResource("ShaderMaterial_jallo")
 position = Vector2(-4.6000004, -8.55)
@@ -569,6 +576,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart6" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=731562326]
+visible = false
 material = SubResource("ShaderMaterial_naq7t")
 position = Vector2(-4.6000004, -8.55)
 scale = Vector2(0.5, 0.5)
@@ -576,6 +584,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart7" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=901244398]
+visible = false
 modulate = Color(0.999, 0.999, 0.999, 0.852)
 material = SubResource("ShaderMaterial_3ocni")
 position = Vector2(-4.6000004, -8.55)
@@ -584,6 +593,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart8" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1353642815]
+visible = false
 modulate = Color(0.998, 0.998, 0.998, 0.699)
 material = SubResource("ShaderMaterial_0sfcr")
 position = Vector2(-4.6000004, -8.55)
@@ -592,6 +602,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart9" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1353891919]
+visible = false
 modulate = Color(1.002, 1.002, 1.002, 0.551)
 material = SubResource("ShaderMaterial_s36j8")
 position = Vector2(-4.6000004, -8.55)
@@ -600,6 +611,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart10" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=728020696]
+visible = false
 modulate = Color(1.001, 1.001, 1.001, 0.398)
 material = SubResource("ShaderMaterial_w5ckt")
 position = Vector2(-4.6000004, -8.55)
@@ -608,6 +620,7 @@ texture = ExtResource("24_dto77")
 centered = false
 
 [node name="DeadPart11" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1891558341]
+visible = false
 modulate = Color(1, 1, 1, 0.25)
 material = SubResource("ShaderMaterial_tcgfx")
 position = Vector2(-4.6000004, -8.55)
@@ -623,6 +636,7 @@ texture = ExtResource("25_12uvd")
 centered = false
 
 [node name="DeadPart13" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=716452546]
+visible = false
 modulate = Color(1.0009804, 1.0009804, 1.0009804, 1)
 material = SubResource("ShaderMaterial_880nh")
 position = Vector2(-4.17865, -79.84194)
@@ -632,6 +646,7 @@ texture = ExtResource("26_jy8vw")
 centered = false
 
 [node name="DeadPart14" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=386073891]
+visible = false
 modulate = Color(1.0019608, 1.0019608, 1.0019608, 1)
 material = SubResource("ShaderMaterial_apta0")
 position = Vector2(1.390152, -48.636353)
@@ -641,6 +656,7 @@ texture = ExtResource("25_12uvd")
 centered = false
 
 [node name="DeadPart15" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1715015597]
+visible = false
 modulate = Color(0.9990196, 0.9990196, 0.9990196, 1)
 material = SubResource("ShaderMaterial_jallo")
 position = Vector2(-4.17865, -79.84194)
@@ -650,6 +666,7 @@ texture = ExtResource("26_jy8vw")
 centered = false
 
 [node name="DeadPart16" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=242558332]
+visible = false
 material = SubResource("ShaderMaterial_naq7t")
 position = Vector2(1.390152, -48.636353)
 rotation = 0.0009999997
@@ -658,6 +675,7 @@ texture = ExtResource("25_12uvd")
 centered = false
 
 [node name="DeadPart17" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=784603648]
+visible = false
 modulate = Color(0.999, 0.999, 0.999, 0.852)
 material = SubResource("ShaderMaterial_3ocni")
 position = Vector2(-4.17865, -79.84194)
@@ -667,6 +685,7 @@ texture = ExtResource("26_jy8vw")
 centered = false
 
 [node name="DeadPart18" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1980767007]
+visible = false
 modulate = Color(0.998, 0.998, 0.998, 0.699)
 material = SubResource("ShaderMaterial_0sfcr")
 position = Vector2(1.390152, -48.636353)
@@ -676,6 +695,7 @@ texture = ExtResource("25_12uvd")
 centered = false
 
 [node name="DeadPart19" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=59568033]
+visible = false
 modulate = Color(1.002, 1.002, 1.002, 0.551)
 material = SubResource("ShaderMaterial_s36j8")
 position = Vector2(-4.17865, -79.84194)
@@ -685,6 +705,7 @@ texture = ExtResource("26_jy8vw")
 centered = false
 
 [node name="DeadPart20" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=725203640]
+visible = false
 modulate = Color(1.001, 1.001, 1.001, 0.398)
 material = SubResource("ShaderMaterial_w5ckt")
 position = Vector2(1.390152, -48.636353)
@@ -694,6 +715,7 @@ texture = ExtResource("25_12uvd")
 centered = false
 
 [node name="DeadPart21" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=641893996]
+visible = false
 modulate = Color(1, 1, 1, 0.25)
 material = SubResource("ShaderMaterial_tcgfx")
 position = Vector2(-4.17865, -79.84194)
@@ -709,6 +731,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart23" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=265381461]
+visible = false
 modulate = Color(1.0009804, 1.0009804, 1.0009804, 1)
 material = SubResource("ShaderMaterial_880nh")
 position = Vector2(-92.1, -65.950005)
@@ -717,6 +740,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart24" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=20380730]
+visible = false
 modulate = Color(1.0019608, 1.0019608, 1.0019608, 1)
 material = SubResource("ShaderMaterial_apta0")
 position = Vector2(-92.1, -65.950005)
@@ -725,6 +749,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart25" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=297385769]
+visible = false
 modulate = Color(0.9990196, 0.9990196, 0.9990196, 1)
 material = SubResource("ShaderMaterial_jallo")
 position = Vector2(-92.1, -65.950005)
@@ -733,6 +758,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart26" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=34261933]
+visible = false
 material = SubResource("ShaderMaterial_naq7t")
 position = Vector2(-92.1, -65.950005)
 scale = Vector2(0.5, 0.5)
@@ -740,6 +766,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart27" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1528256363]
+visible = false
 modulate = Color(0.999, 0.999, 0.999, 0.852)
 material = SubResource("ShaderMaterial_3ocni")
 position = Vector2(-92.1, -65.950005)
@@ -748,6 +775,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart28" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=852207423]
+visible = false
 modulate = Color(0.998, 0.998, 0.998, 0.699)
 material = SubResource("ShaderMaterial_0sfcr")
 position = Vector2(-92.1, -65.950005)
@@ -756,6 +784,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart29" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1180591024]
+visible = false
 modulate = Color(1.002, 1.002, 1.002, 0.551)
 material = SubResource("ShaderMaterial_s36j8")
 position = Vector2(-92.1, -65.950005)
@@ -764,6 +793,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart30" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1751293034]
+visible = false
 modulate = Color(1.001, 1.001, 1.001, 0.398)
 material = SubResource("ShaderMaterial_w5ckt")
 position = Vector2(-92.1, -65.950005)
@@ -772,6 +802,7 @@ texture = ExtResource("27_1d7yt")
 centered = false
 
 [node name="DeadPart31" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=476719866]
+visible = false
 modulate = Color(1, 1, 1, 0.25)
 material = SubResource("ShaderMaterial_tcgfx")
 position = Vector2(-92.1, -65.950005)
@@ -1035,8 +1066,8 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1617787986]
+position = Vector2(-137.8, 28.7)
 shape = SubResource("RectangleShape2D_sx5nk")
-disabled = true
 
 [node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=288213797]
 collision_layer = 0
@@ -1044,13 +1075,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=25584217]
+position = Vector2(0.4, 10)
 shape = SubResource("RectangleShape2D_h886a")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=918424619]
 callback_mode_process = 0
 libraries/ = ExtResource("29_smdjn")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1182336678]
 position = Vector2(0.4, 10)
 shape = SubResource("RectangleShape2D_Body")

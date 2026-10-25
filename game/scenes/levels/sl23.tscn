@@ -17,17 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://cigsb2nmrvr67" path="res://assets/levels/sl23/tex/2_601.png" id="17_scv6m"]
 [ext_resource type="Texture2D" uid="uid://pfophv0x2uh7" path="res://assets/levels/sl23/tex/2_600.png" id="18_engah"]
 [ext_resource type="Texture2D" uid="uid://c4nb6ae0sliyu" path="res://assets/shared/levels/zmxy2_game_298.png" id="20_aa3fm"]
+[ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="x3yaaik"]
+[ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xfclk5n"]
+[ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xgznhln"]
 [ext_resource type="PackedScene" path="res://scenes/objects/xingtian_door.tscn" id="xingtian_door"]
-
-[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="x3yaaik"]
-
-[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xgznhln"]
-
-[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xfclk5n"]
-
 [ext_resource type="PackedScene" path="res://scenes/actors/exit_door/exit_door.tscn" id="xu941ql"]
-
-[ext_resource type="Texture2D" path="res://assets/shared/levels/2_1.png" id="xyzrh30"]
+[ext_resource type="Texture2D" uid="uid://bvrv3jjp8d51w" path="res://assets/shared/levels/2_1.png" id="xyzrh30"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
 size = Vector2(5500.04, 20)
@@ -464,9 +459,9 @@ region_rect = Rect2(0, 0, 206, 465)
 [node name="2_581_Tiles" type="TextureRect" parent="Art/Near3" unique_id=1143429160]
 texture_filter = 1
 texture_repeat = 2
-offset_top = 395.75
+offset_top = 412.0
 offset_right = 5343.05
-offset_bottom = 564.75
+offset_bottom = 497.0
 texture = ExtResource("15_do1o7")
 expand_mode = 1
 stretch_mode = 1
@@ -485,212 +480,180 @@ expand_mode = 1
 stretch_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Background" type="CanvasLayer" parent="."]
+[node name="Background" type="CanvasLayer" parent="." unique_id=2002089337]
 layer = -2
 
-[node name="Sky" type="Sprite2D" parent="Background"]
+[node name="Sky" type="Sprite2D" parent="Background" unique_id=2004557393]
 texture = ExtResource("xyzrh30")
 centered = false
 
-[node name="Layout" type="Node2D" parent="."]
+[node name="Layout" type="Node2D" parent="." unique_id=960823323]
 script = ExtResource("x3yaaik")
 size = Vector2(5634.45, 589)
 
-[node name="Walls" type="Node2D" parent="Layout"]
+[node name="Walls" type="Node2D" parent="Layout" unique_id=1370020076]
 
-[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Ground" type="StaticBody2D" parent="Layout/Walls" unique_id=392023984]
 collision_mask = 0
 
-[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=1658372288]
 position = Vector2(2723.35, 509.05)
 shape = SubResource("RectangleShape2D_L1")
 
-[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=2127958481]
 position = Vector2(5333.9, 89)
 shape = SubResource("RectangleShape2D_L2")
 
-[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=1286155763]
 position = Vector2(-14.4, 211.4)
 rotation = 1.571
 shape = SubResource("RectangleShape2D_L3")
 
-[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=274303096]
 position = Vector2(2694, -128.6)
 shape = SubResource("RectangleShape2D_L4")
 
-[node name="Stops" type="Node2D" parent="Layout"]
+[node name="Stops" type="Node2D" parent="Layout" unique_id=1395006979]
 
-[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop1" type="Marker2D" parent="Layout/Stops" unique_id=1741045971]
 position = Vector2(1322.75, 162.05)
 script = ExtResource("xgznhln")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=232183676]
 position = Vector2(-1095.7, 176.4)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 2
-interval = 1
 total = 3
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=257447554]
 position = Vector2(-79.45, 168.4)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 2
-interval = 1
 total = 3
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=1999144907]
 position = Vector2(-1159.65, 212.35)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=1768793016]
 position = Vector2(-13.25, 204.35)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Stop2" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop2" type="Marker2D" parent="Layout/Stops" unique_id=969030323]
 position = Vector2(2181, 155.35)
 script = ExtResource("xgznhln")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=479957978]
 position = Vector2(-780, 212.1)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 2
-interval = 1
 total = 4
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=687839619]
 position = Vector2(36.15, 219.05)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 2
-interval = 1
 total = 4
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=462744088]
 position = Vector2(-843.95, 248.05)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=1195749290]
 position = Vector2(102.35, 255)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Stop3" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop3" type="Marker2D" parent="Layout/Stops" unique_id=1137283246]
 position = Vector2(3157.3, 136.15)
 script = ExtResource("xgznhln")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=1706965729]
 position = Vector2(-1013.75, 202.85)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 2
-interval = 1
 total = 4
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=937020800]
 position = Vector2(-49.15, 238.85)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 2
-interval = 1
 total = 4
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=1055913437]
 position = Vector2(-1041.4, 238.85)
 script = ExtResource("xfclk5n")
 monster = 33
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=745908997]
 position = Vector2(-76.85, 202.85)
 script = ExtResource("xfclk5n")
 monster = 34
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Stop4" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop4" type="Marker2D" parent="Layout/Stops" unique_id=866965295]
 position = Vector2(4225.5, 173.15)
 script = ExtResource("xgznhln")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=1175576839]
 position = Vector2(-1021.85, 172.8)
 script = ExtResource("xfclk5n")
 monster = 37
-delay = 2
-interval = 1
 total = 5
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=1186757353]
 position = Vector2(-1.65, 179.75)
 script = ExtResource("xfclk5n")
 monster = 36
-delay = 2
-interval = 1
 total = 5
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=65059877]
 position = Vector2(-1049.5, 208.8)
 script = ExtResource("xfclk5n")
 monster = 33
-delay = 6
-interval = 1
+delay = 6.0
 total = 5
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=1320736391]
 position = Vector2(-57.05, 172.8)
 script = ExtResource("xfclk5n")
 monster = 34
-delay = 6
-interval = 1
+delay = 6.0
 total = 5
 
-[node name="Stop5" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop5" type="Marker2D" parent="Layout/Stops" unique_id=831793135]
 position = Vector2(5225.25, 184.65)
 script = ExtResource("xgznhln")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop5"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop5" unique_id=724167094]
 position = Vector2(-91.3, 168.25)
 script = ExtResource("xfclk5n")
 monster = 40
-delay = 2
-interval = 1
-total = 1
 
-[node name="ExitDoor" parent="Layout" instance=ExtResource("xu941ql")]
+[node name="ExitDoor" parent="Layout" unique_id=1940450421 instance=ExtResource("xu941ql")]
 visible = false
 z_index = -6
 position = Vector2(5079.55, 448.7)
 
-[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor" unique_id=686655029]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone" unique_id=993580974]
 position = Vector2(-0.25, -27.425)
 shape = SubResource("RectangleShape2D_L5")
