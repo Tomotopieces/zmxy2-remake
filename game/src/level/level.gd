@@ -347,7 +347,7 @@ func _warm_puppets() -> void:
 				if a.projectile != "":
 					bodies[a.projectile] = true
 	var names: Array = WARM_COMMON.duplicate()
-	var all := DirAccess.get_directories_at("res://scenes/actors")
+	var all := Puppet.all_names()
 	for b in bodies:
 		for r in all:
 			if r == b or r.begins_with(b):

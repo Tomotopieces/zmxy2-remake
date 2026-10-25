@@ -12,7 +12,11 @@ signal buffs_changed
 
 const SLOTS := 6
 const ROLES := ["wukong", "tangseng", "bajie"]   ## HeroData files in res://data, in HUD / shop page order
-const HERO_DATA := "res://data/%s.tres"
+const HERO_DATA := "res://entities/heroes/%s/%s.tres"   ## (heroes not moved yet: res://data/<role>.tres)
+
+static func hero_data_path(r: String) -> String:
+	var p := HERO_DATA % [r, r]
+	return p if ResourceLoader.exists(p) else "res://data/%s.tres" % r
 
 ## Heroes the account has unlocked (all but 猪八戒 from the start; he comes with the first 红孩儿 kill). Not part of a save slot.
 var unlocked := {"wukong": true, "tangseng": true, "bajie": false}
@@ -44,7 +48,7 @@ var hhe_seen := false                ## 红孩儿 comic shown (first visit to 6-
 var slot := -1                       ## save slot of this game (-1 = never saved)
 
 func _ready() -> void:
-	if not ResourceLoader.exists(HERO_DATA % "wukong"):
+	if not ResourceLoader.exists(hero_data_path("wukong")):
 		return   # running a bake tool before data exists
 	SaveGame.read_account(self)
 	new_game()
@@ -452,7 +456,7 @@ func load_from(i: int) -> bool:
 ## A fresh game as hero r (a role id of ROLES).
 func new_game(r := "wukong") -> void:
 	role = r
-	hero_data = load(HERO_DATA % role)
+	hero_data = load(hero_data_path(role))
 	level = 1
 	exp = 0
 	souls = 0

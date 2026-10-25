@@ -10,7 +10,8 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 | `game/` | the Godot project. `src/`: `actors` (hero, monster, `brains/` = per-monster AI, `heroes/`, `treasures/`), `combat` (hit, projectile, fx), `core` (game_state, layers, rng, save, forge, controls), `data` (resources), `items`, `level` (level, stage_lighting, shaders, `stages/` stage scripts, `objects/` mechanism scripts), `puppet` (`Puppet`: the script of every actor scene), `screens`, `ui` |
 | `game/src/core/layers.gd` | screen size (940x590) and z-order constants (`Layers.Z_*`): never use a raw `z_index` number |
 | `game/scenes/levels/<stage>.tscn` | the scenery of every stage (see "Stage scenes") |
-| `game/scenes/actors/<name>/<name>.tscn` | every animated body: heroes, monsters, effects, bullets, items (see "Actor scenes") |
+| `game/entities/heroes/<role>/` | everything of one hero in one folder (moving here one by one; 悟空 so far): `<role>.tscn` + `<role>_actions.tres` (the actor scene), `<role>.tres` (HeroData: numbers, moves), `tex/`, `slots/` (equipment variants), `effects/<name>/` (its own effect scenes and their `tex/`) |
+| `game/scenes/actors/<name>/<name>.tscn` | the animated bodies not moved to `entities/` yet: heroes, monsters, effects, bullets, items (see "Actor scenes") |
 | `game/scenes/objects/*.tscn` | stage mechanisms as scenes with a script on the root (`baigu_door`, `boat`, `aurora_gate`, `river_water`, `xingtian_door`, `hub_door`, `hub_statue`) |
 | `game/scenes/ui/<name>.tscn` | UI layouts (see "UI scenes"); `scenes/main.tscn` is the title screen |
 | `game/assets/` | textures and sounds: `puppets/<name>/` (`tex/`, `slots/` = equipment variants of the actor scenes), `levels/<stage>/tex/`, `ui/`, `items/`, `sounds/`, `shared/` (textures several things use) |
@@ -47,7 +48,7 @@ Every stage's scenery is an editor scene `scenes/levels/<stage>.tscn` that the u
 - Textures: `assets/levels/<stage>/tex/<lib>_<id>.png`; shared ones in `assets/shared/levels/`.
 
 ## Actor scenes
-Every animated body is a **hand-edited** scene `scenes/actors/<name>/<name>.tscn`.
+Every animated body is a **hand-edited** scene `<name>.tscn`: in its entity folder under `entities/` (found by file name: a scene named like its folder) or in `scenes/actors/<name>/`. Move files with `node tools/move_entity.js <from> <to> ...` (paths relative to `game/`): it carries the `.import`/`.uid` files and rewrites every `res://` path; code that builds paths (`Puppet._path`, `GameState.hero_data_path`) looks in `entities/` first.
 - Heroes, monsters and potions: the root is the logic body itself (`CharacterBody2D` with `hero.gd` / `hero_bajie.gd` / `hero_tangseng.gd` / `monster.gd` / `potion.gd`), with the art `Puppet` and the body collider `Body` as children; `Hero.create()` / `Monster.create(data)` / `Potion.spawn()` instantiate the scene. `Puppet.create(name)` returns just the art (glows, shadows, previews).
 - Effects, bullets, mechanisms: the root is the `Puppet` (`src/puppet/puppet.gd`); `Puppet.create(name)` instantiates it.
 - Inside a `Puppet`: `Poses/<Action>` = the parts of one action (only the playing one is visible; a scene with one action has no `Poses`, its parts sit under the root); `EquipSlot` parts change with the equipment (variants in `assets/puppets/<name>/slots/`).

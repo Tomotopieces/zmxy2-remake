@@ -296,8 +296,33 @@ func hurt_rect() -> Rect2:
 static var _scenes := {}
 static var _loading := {}   ## puppet name -> path being loaded in the background
 
+## Where puppet scenes live: an entity folder (res://entities/..., found by file name, e.g.
+## entities/heroes/wukong/wukong.tscn or entities/heroes/wukong/effects/wukong_hit10_1/wukong_hit10_1.tscn), or the
+## older layout scenes/actors/<name>/<name>.tscn.
+const ENTITIES := "res://entities"
+static var _index := {}   ## puppet name -> scene path under ENTITIES
+
 static func _path(puppet_name: String) -> String:
-	return "res://scenes/actors/%s/%s.tscn" % [puppet_name, puppet_name]
+	if _index.is_empty():
+		_index_dir(ENTITIES)
+	return _index.get(puppet_name, "res://scenes/actors/%s/%s.tscn" % [puppet_name, puppet_name])
+
+static func _index_dir(dir: String) -> void:
+	for f in ResourceLoader.list_directory(dir):
+		if f.ends_with("/"):
+			_index_dir(dir.path_join(f.trim_suffix("/")))
+		elif f == dir.get_file() + ".tscn":   # a puppet is the scene named like its folder (not slots/*.tscn parts)
+			_index[f.get_basename()] = dir.path_join(f)
+
+## Every puppet name there is (both layouts).
+static func all_names() -> Array:
+	if _index.is_empty():
+		_index_dir(ENTITIES)
+	var names := _index.keys()
+	for d in ResourceLoader.list_directory("res://scenes/actors"):
+		if d.ends_with("/"):
+			names.append(d.trim_suffix("/"))
+	return names
 
 ## Container name of an action ("hit10" -> "Hit10", "hit2-1" -> "Hit2And1").
 static func pose_name(a: String) -> String:
