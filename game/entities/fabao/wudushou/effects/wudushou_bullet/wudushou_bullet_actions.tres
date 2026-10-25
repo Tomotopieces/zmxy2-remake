@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://entities/shared/qinguangwang_bullet1_frame.png" id="1_fpujv"]
+[ext_resource type="Texture2D" path="res://entities/monsters/qinguangwang/effects/qinguangwang_bullet1/tex/qinguangwang_bullet1_frame_2.png" id="1_fpujv"]
 
 [sub_resource type="Animation" id="Animation_1i07x"]
 length = 0.041666666666666664

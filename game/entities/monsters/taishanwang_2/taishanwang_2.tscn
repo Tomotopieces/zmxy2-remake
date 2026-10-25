@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hurt_part1.png" id="6_ja3h1"]
 [ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part2.png" id="7_cvc3n"]
 [ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part3.png" id="8_1v4hd"]
-[ext_resource type="Texture2D" path="res://entities/shared/taishanwang_1_hit1_part4_2.png" id="9_dymvq"]
+[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="9_dymvq"]
 [ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="10_pgyno"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/taishanwang_2/taishanwang_2_actions.tres" id="11_5dsu8"]
 

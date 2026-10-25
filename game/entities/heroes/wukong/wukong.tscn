@@ -81,7 +81,7 @@
 [ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="79_6srnn"]
 [ext_resource type="Texture2D" uid="uid://dt4enb3dsfis0" path="res://entities/heroes/wukong/tex/wukong_hit1_part14_4.png" id="80_gtsgf"]
 [ext_resource type="Texture2D" uid="uid://2shotdo345jc" path="res://entities/heroes/wukong/tex/wukong_hit2_part15.png" id="80_nyyvw"]
-[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/shared/bajie_hit1_part13.png" id="81_e76jk"]
+[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="81_e76jk"]
 [ext_resource type="Texture2D" uid="uid://bb8d7i5rjjukm" path="res://entities/heroes/wukong/tex/wukong_hit3_part1.png" id="82_p1wce"]
 [ext_resource type="Texture2D" uid="uid://ffytdfu74pi8" path="res://entities/heroes/wukong/tex/wukong_hit3_part2.png" id="83_hnyb3"]
 [ext_resource type="Texture2D" uid="uid://jcymd3kjw0yn" path="res://entities/heroes/wukong/tex/wukong_hit3_part4.png" id="84_wq7le"]

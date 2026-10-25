@@ -16,7 +16,7 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 | `game/ui/<name>/` | a UI layout `<name>.tscn` (see "UI scenes"), its script and `tex/`; `ui/components/` reusable parts (stat, slot, buttons, gradients), `ui/shared/` shared pictures; `game/main.tscn` is the title screen |
 | `game/src/` | shared code: `actors` (Actor, Hero, Monster, Fabao, `brains/` = MonsterBrain + shared templates), `combat`, `core` (game_state, layers, rng, save, forge, controls), `data` (resource classes), `items`, `level` (Level, StageLighting, shaders, `layout/`), `puppet`, `screens` / `ui` (shared screen code) |
 | `game/src/core/layers.gd` | screen size (940x590) and z-order constants (`Layers.Z_*`): never use a raw `z_index` number |
-| `game/entities/shared/` | actor pictures several entities use (a picture one entity uses — counting a copy like 悟空怪 or a UI preview of it — is in that entity's `tex/`) |
+| (no shared actor folder) | a picture belongs to whoever it was drawn for — `<owner>_…` in that owner's `tex/`; a boss that borrows another's move (平等王) or a copy of a hero (悟空怪 / 唐僧怪, which use the hero's own pictures) references it there |
 | `game/assets/` | `items/<id>_fall.png` (item pictures: the drop picture, or `<id>_icon.png` = the original framed one when there is none), `fonts/`, `sounds/` |
 | `game/data/` | global tables: `equipment.tres` (every item; ids = full pinyin of the name), `drops.tres`, `stages.json` — edit them directly |
 | `.pi/skills/zmxy2-entity-migration/` | how to move / rename files and ids in this layout without breaking references (`tools/move_entity.js`), and the naming rules |

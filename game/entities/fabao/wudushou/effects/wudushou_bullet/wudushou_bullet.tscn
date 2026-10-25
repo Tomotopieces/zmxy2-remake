@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_ketih"]
-[ext_resource type="Texture2D" path="res://entities/shared/qinguangwang_bullet1_frame.png" id="2_8vt5u"]
+[ext_resource type="Texture2D" path="res://entities/monsters/qinguangwang/effects/qinguangwang_bullet1/tex/qinguangwang_bullet1_frame_2.png" id="2_8vt5u"]
 [ext_resource type="AnimationLibrary" path="res://entities/fabao/wudushou/effects/wudushou_bullet/wudushou_bullet_actions.tres" id="3_2baov"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h00ga"]

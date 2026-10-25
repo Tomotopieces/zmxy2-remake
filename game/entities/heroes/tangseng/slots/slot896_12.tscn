@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/shared/tangseng_frame_5.png" id="1_nea32"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_5_2.png" id="1_nea32"]
 
 [node name="ClothEx12" type="Node2D" unique_id=1701712862]
 

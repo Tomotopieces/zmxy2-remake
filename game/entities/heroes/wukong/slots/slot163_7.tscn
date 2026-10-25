@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/shared/tangseng_frame_3.png" id="1_3tahc"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_3_2.png" id="1_3tahc"]
 
 [node name="Slot1637" type="Node2D" unique_id=2034825352]
 

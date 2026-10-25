@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/tangsengguai/tex/tangsengguai_frame_2.png" id="1_orpuj"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_12.png" id="1_orpuj"]
 
 [node name="Slot5391" type="Node2D" unique_id=1938304862]
 

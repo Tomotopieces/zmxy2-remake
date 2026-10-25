@@ -95,7 +95,7 @@
 [ext_resource type="Texture2D" uid="uid://5yoeqovoallv" path="res://entities/heroes/bajie/tex/bajie_hit1_part9.png" id="91_pjho0"]
 [ext_resource type="Texture2D" uid="uid://dhqj46te8v4de" path="res://entities/heroes/bajie/tex/bajie_hit1_part10_3.png" id="92_g25b2"]
 [ext_resource type="Texture2D" uid="uid://cu8ogrpdhm7g8" path="res://entities/heroes/bajie/tex/bajie_hit1_part11_3.png" id="93_a8p25"]
-[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/shared/bajie_hit1_part13.png" id="94_et1un"]
+[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="94_et1un"]
 [ext_resource type="Texture2D" uid="uid://2glbulaaowav" path="res://entities/heroes/bajie/tex/bajie_hit2_part1.png" id="95_q8wwy"]
 [ext_resource type="Texture2D" uid="uid://2d3y5ey3vooq" path="res://entities/heroes/bajie/tex/bajie_hit2_part2.png" id="96_1nwgo"]
 [ext_resource type="Texture2D" uid="uid://d2whwdb41swbb" path="res://entities/heroes/bajie/tex/bajie_hit2_part3.png" id="97_8rp4o"]

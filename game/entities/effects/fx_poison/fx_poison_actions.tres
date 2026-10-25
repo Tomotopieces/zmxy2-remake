@@ -1,14 +1,14 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame.png" id="1_awtgv"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_2.png" id="2_ncjfd"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_3.png" id="3_u42gq"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_4.png" id="4_v7dhv"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_5.png" id="5_ovxcf"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_6.png" id="6_fu7q3"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_7.png" id="7_ks5pi"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_8.png" id="8_vjbsa"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame_9.png" id="9_hdsmx"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="1_awtgv"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_2.png" id="2_ncjfd"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_3.png" id="3_u42gq"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_4.png" id="4_v7dhv"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_5.png" id="5_ovxcf"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_6.png" id="6_fu7q3"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_7.png" id="7_ks5pi"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_8.png" id="8_vjbsa"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_9.png" id="9_hdsmx"]
 
 [sub_resource type="Animation" id="Animation_uqpd1"]
 length = 0.6666666666666666

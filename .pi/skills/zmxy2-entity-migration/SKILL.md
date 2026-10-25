@@ -16,7 +16,7 @@ game/entities/<kind>/<name>/      kind = heroes / fabao / monsters / effects / .
 ├── slots/                             装备部件
 └── effects/<effect>/                  只属于它的特效场景（各带 tex/）
 ```
-归属按**谁在用**判断，不看名字：只有一个使用者的东西放进使用者的目录（悟空的 `fx_hit7_fire` → `entities/heroes/wukong/effects/`，背包的光 → `ui/backpack/effects/`，只有 3-1 用的着色器 → `entities/objects/river_water/`）；角色的副本（悟空怪、唐僧怪）和界面里的预览（背包、商城、法宝面板）算作同一个使用者。真正被几个使用者共用的：贴图放 `entities/shared/`、`stages/shared/`、`ui/shared/`，特效放 `entities/effects/`，代码放 `src/`。用 `bash tools/find_refs.sh <文件>` 查使用者；代码里拼名字的（`Puppet.create("gogo")`、`"fx_" + ...`）find_refs 查不到，要 grep 字符串。
+归属按**画给谁的**判断：贴图放进它名字前缀所属的那个东西的目录（`taishanwang_1_hit1_part4` → 泰山王）。别人借用的情况都算特例，不进共用目录，直接引用原主的文件：平等王借用其他 Boss 的招式，悟空怪 / 唐僧怪借用悟空 / 唐僧的部件（和主角相同的图直接引用主角的文件，不另存一份；用 `magick compare -metric RMSE` 比对，≤0.02 视为同一张）。只有一个使用者的特效放进使用者的 `effects/`（悟空的 `fx_hit7_fire`、背包的光 → `ui/backpack/effects/`），状态特效按施加者（石化 → 白骨精）。实体没有共用贴图目录；关卡和界面仍有 `stages/shared/`、`ui/shared/`，只放真正被几个关卡/界面共用的图；共用特效在 `entities/effects/`，共用代码在 `src/`。用 `bash tools/find_refs.sh <文件>` 查使用者；代码里拼名字的（`Puppet.create("gogo")`）要另外 grep。
 
 ## 工具
 

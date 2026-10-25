@@ -5,7 +5,7 @@
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="3_pafe0"]
 [ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_2.png" id="4_va8gl"]
 [ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_3.png" id="5_u1kb8"]
-[ext_resource type="Texture2D" path="res://entities/shared/fx_poison_frame.png" id="6_pmm0d"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="6_pmm0d"]
 [ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_4.png" id="7_t5i0l"]
 [ext_resource type="AnimationLibrary" path="res://ui/hud/effects/fx_rage_transform/fx_rage_transform_actions.tres" id="9_tfr2s"]
 

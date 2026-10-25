@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_1afua"]
-[ext_resource type="Texture2D" path="res://entities/shared/exit_door_open_part3.png" id="2_b444r"]
+[ext_resource type="Texture2D" path="res://entities/objects/exit_door/tex/exit_door_open_part3.png" id="2_b444r"]
 [ext_resource type="Texture2D" path="res://entities/objects/exit_door/tex/exit_door_frame.png" id="3_41uiq"]
 [ext_resource type="AnimationLibrary" path="res://entities/objects/exit_door/exit_door_actions.tres" id="4_d6gff"]
 

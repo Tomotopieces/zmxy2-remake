@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_fhih6"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_vmcs0"]
-[ext_resource type="Texture2D" path="res://entities/shared/honghaier_hit2_part4.png" id="3_pj0mf"]
+[ext_resource type="Texture2D" path="res://entities/monsters/honghaier/tex/honghaier_hit2_part4.png" id="3_pj0mf"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/pingdengwang/effects/pingdengwang_bullet1/pingdengwang_bullet1_actions.tres" id="4_h6wbm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_chlob"]
