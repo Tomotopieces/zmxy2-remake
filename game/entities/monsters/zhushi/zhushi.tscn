@@ -1,0 +1,55 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_d8fg7"]
+[ext_resource type="Texture2D" path="res://entities/monsters/zhushi/tex/zhushi_puppet_sprite.png" id="2_snvk3"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/zhushi/zhushi_actions.tres" id="3_pmji4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fww8i"]
+resource_local_to_scene = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sutgx"]
+resource_local_to_scene = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
+size = Vector2(50, 300)
+
+[node name="Monster71" type="CharacterBody2D"]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=376830823]
+script = ExtResource("1_d8fg7")
+actions = PackedStringArray("default")
+
+[node name="Sprite" type="Sprite2D" parent="Puppet" unique_id=1839587501]
+position = Vector2(-31, -150)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_snvk3")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=1993089008]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1478115450]
+shape = SubResource("RectangleShape2D_fww8i")
+disabled = true
+
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=1707288889]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1580579863]
+shape = SubResource("RectangleShape2D_sutgx")
+disabled = true
+
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1883076859]
+callback_mode_process = 0
+libraries/ = ExtResource("3_pmji4")
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2(0.4, 0)
+shape = SubResource("RectangleShape2D_Body")

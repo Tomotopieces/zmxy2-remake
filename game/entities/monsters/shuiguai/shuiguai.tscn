@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://ekyw51m4gxgx"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_7dqva"]
+[ext_resource type="Texture2D" uid="uid://d2vrgqlpgq5qx" path="res://entities/monsters/shuiguai/tex/shuiguai_walk_part1.png" id="2_w2eyc"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="4_extcd"]
+[ext_resource type="Texture2D" uid="uid://ltb3jcgf7ks6" path="res://entities/monsters/shuiguai/tex/shuiguai_hit1_part1_5.png" id="4_w2eyc"]
+[ext_resource type="Texture2D" uid="uid://cwsa4w8uxednf" path="res://entities/monsters/shuiguai/tex/shuiguai_hit1_part2.png" id="5_2a4xk"]
+[ext_resource type="Texture2D" uid="uid://1ubolhtu1l05" path="res://entities/monsters/shuiguai/tex/shuiguai_hurt_part1.png" id="6_xyvxb"]
+[ext_resource type="Texture2D" uid="uid://c28wcqiwe4l1u" path="res://entities/monsters/shuiguai/tex/shuiguai_wait_part1.png" id="7_iqw7s"]
+[ext_resource type="Texture2D" uid="uid://cjq16leualsc4" path="res://entities/monsters/shuiguai/tex/shuiguai_dead_part1.png" id="8_bytts"]
+[ext_resource type="AnimationLibrary" uid="uid://c45w2731hbn73" path="res://entities/monsters/shuiguai/shuiguai_actions.tres" id="9_x81sf"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g2o2n"]
+shader = ExtResource("4_extcd")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 9.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 10.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vtxen"]
+resource_local_to_scene = true
+size = Vector2(84.5, 103)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mis6v"]
+resource_local_to_scene = true
+size = Vector2(40, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
+size = Vector2(40, 80)
+
+[node name="Monster41" type="CharacterBody2D" unique_id=856935708]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=1160797994]
+script = ExtResource("1_7dqva")
+actions = PackedStringArray("walk", "hit1", "hurt", "wait", "dead")
+
+[node name="Poses" type="Node2D" parent="Puppet" unique_id=1066421895]
+
+[node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=542670432]
+visible = false
+
+[node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=127274988]
+position = Vector2(-55.9, -48.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_w2eyc")
+centered = false
+
+[node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=34400107]
+visible = false
+
+[node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=444050400]
+position = Vector2(-62.9, -65.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_w2eyc")
+centered = false
+
+[node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=244153526]
+visible = false
+modulate = Color(1, 1, 1, 0.27)
+material = SubResource("ShaderMaterial_g2o2n")
+position = Vector2(-150.95001, -55.8)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2a4xk")
+centered = false
+
+[node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=1720953957]
+visible = false
+
+[node name="HurtPart1" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1770316362]
+position = Vector2(-62.25, -54.05)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_xyvxb")
+centered = false
+
+[node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=1947724562]
+visible = false
+
+[node name="WaitPart1" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1083274346]
+position = Vector2(-47, -48)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_iqw7s")
+centered = false
+
+[node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=235419368]
+visible = false
+
+[node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=983244798]
+position = Vector2(-50.05, -51.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_bytts")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=1947224121]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=93776611]
+position = Vector2(-71.15, -4.3)
+shape = SubResource("RectangleShape2D_vtxen")
+
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=1963780309]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=700017508]
+position = Vector2(0.1, 1.9)
+shape = SubResource("RectangleShape2D_mis6v")
+
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1587594585]
+callback_mode_process = 0
+libraries/ = ExtResource("9_x81sf")
+
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1958027767]
+position = Vector2(0.1, 1.9)
+shape = SubResource("RectangleShape2D_Body")

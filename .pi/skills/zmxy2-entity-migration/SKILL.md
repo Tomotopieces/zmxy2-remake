@@ -46,7 +46,7 @@ game/entities/<kind>/<name>/      kind = heroes / fabao / monsters / effects / .
 
 ## 命名
 
-- 怪物目录 = 怪物名字的全拼（`shouyeren`、`qinguangwang_kuilei`），同一个 Boss 的几个形态加序号（`zhuanlunwang_1`…`_3`、`taishanwang_1`…`_4`）；没有名字的暂时叫 `monster<id>`，由用户定名。代码用 `MonsterData.folder(id)` 按数据里的 `id` 找目录，不要拼 `monster%d`。
+- 怪物目录 = 怪物名字的全拼（`shouyeren`、`qinguangwang_kuilei`），同一个 Boss 的几个形态加序号（`zhuanlunwang_1`…`_3`、`taishanwang_1`…`_4`）；新怪物没有名字时先问用户定名，不要自己起。代码用 `MonsterData.folder(id)` 按数据里的 `id` 找目录，不要拼 `monster%d`。
 - 关卡目录 = 关卡名的全拼（`guicheng`、`luoxuandiyu_wuguanwang`），编号到目录的对照只在 `Level.STAGES`。
 - 法宝一律叫 `fabao`（不用 treasure / sutra）：`entities/fabao/<id>/`、`ui/fabao/`、类型 `&"fabao"`。
 - 场景节点名用 PascalCase 的可读词：根节点 = 场景名，装备变体 = `<部位><id>`（`Wing2`），关卡里的图 = `<图层>Piece<n>`，界面里的图 = 图片名去掉界面前缀，其余部件 = `<父节点>Part<n>`。`node tools/rename_nodes.js` 按这套规则改名并改写场景和动画里的节点路径；代码里按名字找的节点（`$Name`、`%Name`、`"Name"`）不会被改。

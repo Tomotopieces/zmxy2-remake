@@ -12,6 +12,7 @@ knockback = Vector2(144, -137.8695)
 [resource]
 script = ExtResource("2_brv2w")
 id = 31
+display_name = "僵尸"
 puppet = "jiangshi"
 speed = 72.0
 hp = 150
