@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_qbfmo"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_uqwc0"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/orb_blue_frame.png" id="3_otdvj"]
+[ext_resource type="Texture2D" path="res://entities/shared/orb_blue_frame.png" id="3_otdvj"]
 [ext_resource type="AnimationLibrary" path="res://entities/items/orb_green/orb_green_actions.tres" id="4_7u335"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2kvmh"]

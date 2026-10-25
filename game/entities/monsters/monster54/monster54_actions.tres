@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster53_walk_part1.png" id="1_4x5ej"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster53_walk_part1.png" id="1_4x5ej"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster54/tex/monster54_walk_part2.png" id="2_hcc8f"]
 
 [sub_resource type="Animation" id="Animation_12ba7"]

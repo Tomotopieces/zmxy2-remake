@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part1.png" id="1_kh7ux"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part4.png" id="2_jg24p"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster65_dead_part5.png" id="3_rcdj7"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster65_dead_part5.png" id="3_rcdj7"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part2.png" id="4_ea0mf"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part3.png" id="5_00qbv"]
 

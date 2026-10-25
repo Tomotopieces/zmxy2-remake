@@ -296,14 +296,19 @@ func hurt_rect() -> Rect2:
 static var _scenes := {}
 static var _loading := {}   ## puppet name -> path being loaded in the background
 
-## Where puppet scenes live: an entity folder (res://entities/..., found by file name, e.g.
-## entities/heroes/wukong/wukong.tscn or entities/heroes/wukong/effects/wukong_hit10_1/wukong_hit10_1.tscn).
-const ENTITIES := "res://entities"
-static var _index := {}   ## puppet name -> scene path under ENTITIES
+## Where puppet scenes live: the folder of whoever uses them, found by file name (a scene named like its folder), e.g.
+## entities/heroes/wukong/wukong.tscn, entities/heroes/wukong/effects/fx_hit7_fire/fx_hit7_fire.tscn,
+## ui/hud/effects/gogo/gogo.tscn. Shared effects are in entities/effects/.
+const ROOTS := ["res://entities", "res://ui"]
+static var _index := {}   ## puppet name -> scene path
+
+static func _build_index() -> void:
+	for r in ROOTS:
+		_index_dir(r)
 
 static func _path(puppet_name: String) -> String:
 	if _index.is_empty():
-		_index_dir(ENTITIES)
+		_build_index()
 	return _index.get(puppet_name, "")
 
 static func _index_dir(dir: String) -> void:
@@ -316,7 +321,7 @@ static func _index_dir(dir: String) -> void:
 ## Every puppet name there is.
 static func all_names() -> Array:
 	if _index.is_empty():
-		_index_dir(ENTITIES)
+		_build_index()
 	return _index.keys()
 
 ## Container name of an action ("hit10" -> "Hit10", "hit2-1" -> "Hit2And1").

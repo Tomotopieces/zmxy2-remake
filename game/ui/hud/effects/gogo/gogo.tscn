@@ -1,0 +1,26 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_hx3f2"]
+[ext_resource type="Texture2D" path="res://ui/hud/effects/gogo/tex/gogo_frame.png" id="2_ij883"]
+[ext_resource type="Texture2D" path="res://ui/hud/effects/gogo/tex/gogo_frame_2.png" id="3_dipyc"]
+[ext_resource type="AnimationLibrary" path="res://ui/hud/effects/gogo/gogo_actions.tres" id="4_mhvge"]
+
+[node name="Gogo" type="Node2D" unique_id=1524620073]
+script = ExtResource("1_hx3f2")
+actions = PackedStringArray("default")
+
+[node name="Part1" type="Sprite2D" parent="." unique_id=1063994906]
+position = Vector2(-106.2, -45.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ij883")
+centered = false
+
+[node name="Part2" type="Sprite2D" parent="." unique_id=964391290]
+position = Vector2(-43.35, -9.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_dipyc")
+centered = false
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1268648309]
+callback_mode_process = 0
+libraries/ = ExtResource("4_mhvge")

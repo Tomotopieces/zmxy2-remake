@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://r8dcyh4ndvsw" path="res://stages/shared/sl31_near_46.png" id="15_p40b2"]
 [ext_resource type="Texture2D" uid="uid://baf3hkvmgktjl" path="res://stages/shared/sl31_wildfire_51.png" id="16_8ga6a"]
 [ext_resource type="Texture2D" uid="uid://ccp1kdvh7lbkh" path="res://stages/shared/sl31_wildfire_52.png" id="17_45nt3"]
-[ext_resource type="Texture2D" uid="uid://pm2lh4w3c2kx" path="res://stages/shared/sl31_wildfire2_72.png" id="18_xuvwy"]
+[ext_resource type="Texture2D" uid="uid://pm2lh4w3c2kx" path="res://stages/sl31/tex/sl31_wildfire2_72.png" id="18_xuvwy"]
 [ext_resource type="Texture2D" uid="uid://dhraw7mn4bfkn" path="res://stages/sl31/tex/sl31_near_99.png" id="19_dqnod"]
 [ext_resource type="Texture2D" uid="uid://bnbaxe2lw80o1" path="res://stages/shared/sl31_sky.png" id="20_435hn"]
 [ext_resource type="PackedScene" path="res://entities/objects/aurora_gate/aurora_gate.tscn" id="aurora_obj"]

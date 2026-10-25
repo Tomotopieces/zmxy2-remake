@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_bajie_frame_10.png" id="1_bp26j"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bag_bajie_frame_10.png" id="1_bp26j"]
 
 [node name="Slot61_3" type="Node2D" unique_id=700226535]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" path="res://stages/shared/sl11_sky.png" id="1_jve1w"]
-[ext_resource type="Texture2D" path="res://stages/shared/sl01_ground.png" id="2_1x2j1"]
+[ext_resource type="Texture2D" path="res://stages/sl01/tex/sl01_ground.png" id="2_1x2j1"]
 
 [ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="xy31ro1"]
 

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_hdyok"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_fhube"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_bullet1_frame.png" id="3_wuayn"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_bullet1_frame_2.png" id="4_rpyed"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet1_frame.png" id="3_wuayn"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet1_frame_2.png" id="4_rpyed"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster49/effects/monster49bullet1/monster49bullet1_actions.tres" id="5_ygete"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p8drv"]

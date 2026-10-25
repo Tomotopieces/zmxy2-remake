@@ -1,9 +1,9 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_monster_hurt2_hit4_part10.png" id="1_s68qb"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_monster_hurt2_hit4_part10_2.png" id="2_fl2kp"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_monster_hurt2_hit4_part10_3.png" id="3_h414w"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_monster_hurt2_hit4_part10_4.png" id="4_ysfvf"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_monster_hurt2_hit4_part10.png" id="1_s68qb"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_monster_hurt2_hit4_part10_2.png" id="2_fl2kp"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_monster_hurt2_hit4_part10_3.png" id="3_h414w"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_monster_hurt2_hit4_part10_4.png" id="4_ysfvf"]
 
 [sub_resource type="Animation" id="Animation_c1uu8"]
 length = 0.2916666666666667

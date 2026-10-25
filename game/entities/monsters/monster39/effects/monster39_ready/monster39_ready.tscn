@@ -1,11 +1,11 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_qv64a"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part1.png" id="2_ub7yi"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part3.png" id="3_0y3jm"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part4.png" id="4_qbyi2"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part6.png" id="5_yebi6"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part9.png" id="6_fkaoi"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/tex/monster39_ready_ready_part1.png" id="2_ub7yi"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/tex/monster39_ready_ready_part3.png" id="3_0y3jm"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/tex/monster39_ready_ready_part4.png" id="4_qbyi2"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/tex/monster39_ready_ready_part6.png" id="5_yebi6"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/tex/monster39_ready_ready_part9.png" id="6_fkaoi"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster39/effects/monster39_ready/monster39_ready_actions.tres" id="7_agxjx"]
 
 [node name="Monster39Ready" type="Node2D" unique_id=926213961]

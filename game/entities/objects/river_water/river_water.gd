@@ -1,7 +1,7 @@
 @tool
 class_name RiverWater
 extends Node2D
-## The water of 3-1 (the 忘川河 the boat sails on): a rectangle of `src/level/water.gdshader`, no pictures.
+## The water of 3-1 (the 忘川河 the boat sails on): a rectangle of `water.gdshader`, no pictures.
 ## A scene of its own (entities/objects/river_water/river_water.tscn) placed in the stage scene (Objects/RiverWater) at the water line:
 ## the numbers are exports, pushed to the one child rect (`Surface`) and to its shader.
 

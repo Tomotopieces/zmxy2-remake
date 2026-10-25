@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_bq6xm"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_wait_part1.png" id="2_638rj"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx_add.gdshader" id="3_yi7g7"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster65_dead_part5.png" id="4_8uivj"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster65_dead_part5.png" id="4_8uivj"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part3.png" id="5_8dysg"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part4.png" id="6_rvxxw"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part5.png" id="7_uydic"]

@@ -1,8 +1,8 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" path="res://entities/objects/xingtian_door/xingtian_door.gd" id="1_afgux"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/xingtian_door_open_part1.png" id="2_mlujg"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_boss_dead_hit3_part10.png" id="3_x13qf"]
+[ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1_3.png" id="2_mlujg"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_boss_dead_hit3_part10.png" id="3_x13qf"]
 [ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1.png" id="4_xyhbo"]
 [ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1_2.png" id="5_4guip"]
 

@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://48xwn2wgfwim"]
 
 [ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_pa08k"]
-[ext_resource type="Texture2D" uid="uid://oa5gkifex70r" path="res://ui/backpack/tex/backpack_background.png" id="2_2ysyl"]
 [ext_resource type="Texture2D" uid="uid://dgcs4sqa0ggc0" path="res://ui/backpack/tex/backpack_background_2.png" id="3_rcy87"]
 [ext_resource type="Texture2D" uid="uid://j383egt46o73" path="res://ui/backpack/tex/backpack_piece_2.png" id="4_10tr8"]
 [ext_resource type="Texture2D" uid="uid://bc2eakhl0f7cl" path="res://ui/backpack/tex/backpack_level_4.png" id="15_pvytj"]
@@ -47,30 +46,30 @@
 [ext_resource type="PackedScene" uid="uid://cc8hr3t5hdisi" path="res://ui/components/currency.tscn" id="54_gye66"]
 [ext_resource type="PackedScene" uid="uid://bn7cu4s02f7m0" path="res://ui/components/stat.tscn" id="59_2ysyl"]
 [ext_resource type="Texture2D" uid="uid://dqql6slotbkfw" path="res://ui/backpack/tex/backpack_piece.png" id="65_834wd"]
-[ext_resource type="Texture2D" uid="uid://bp8cqwf7b7adm" path="res://assets/shared/mixed/bag_wukong_wait_part1.png" id="67_glt67"]
-[ext_resource type="Texture2D" uid="uid://bi2sjc11x58l0" path="res://assets/shared/mixed/bag_wukong_hit1_part3.png" id="68_ps1pl"]
+[ext_resource type="Texture2D" uid="uid://bp8cqwf7b7adm" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part1.png" id="67_glt67"]
+[ext_resource type="Texture2D" uid="uid://bi2sjc11x58l0" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part3.png" id="68_ps1pl"]
 [ext_resource type="Texture2D" uid="uid://dbgamihdmp82y" path="res://ui/shared/backpack_portrait_wukong.png" id="69_fakcu"]
-[ext_resource type="Texture2D" uid="uid://dhg22clkqnj4i" path="res://assets/shared/mixed/bag_wukong_body.png" id="70_7r654"]
-[ext_resource type="Texture2D" uid="uid://eb556jvjcsua" path="res://assets/shared/mixed/bag_wukong_hit8_part13.png" id="71_nj0sk"]
-[ext_resource type="Texture2D" uid="uid://cie5fdnf2mb3r" path="res://assets/shared/mixed/bag_wukong_body_2.png" id="72_q6qr3"]
-[ext_resource type="Texture2D" uid="uid://d1absdhhwrhai" path="res://assets/shared/mixed/bag_wukong_hit1_part12.png" id="73_fxs0b"]
-[ext_resource type="Texture2D" uid="uid://brbr6qur1gxvb" path="res://assets/shared/mixed/bag_wukong_wait_part20.png" id="74_q50m2"]
-[ext_resource type="Texture2D" uid="uid://0r68cvcdj5n4" path="res://assets/shared/mixed/bag_tangseng_wait_part1.png" id="75_janby"]
-[ext_resource type="Texture2D" uid="uid://cm6ttuhfldg7t" path="res://assets/shared/mixed/bag_tangseng_body.png" id="76_jw00y"]
-[ext_resource type="Texture2D" uid="uid://d0bbmatb7dlpt" path="res://assets/shared/mixed/bag_tangseng_wait_part3.png" id="77_hbkx0"]
-[ext_resource type="Texture2D" uid="uid://b3tq0a45jdu0x" path="res://assets/shared/mixed/bag_tangseng_wait_part6.png" id="78_s332c"]
+[ext_resource type="Texture2D" uid="uid://dhg22clkqnj4i" path="res://entities/heroes/wukong/tex/bag_wukong_body.png" id="70_7r654"]
+[ext_resource type="Texture2D" uid="uid://eb556jvjcsua" path="res://entities/heroes/wukong/tex/bag_wukong_hit8_part13.png" id="71_nj0sk"]
+[ext_resource type="Texture2D" uid="uid://cie5fdnf2mb3r" path="res://entities/heroes/wukong/tex/bag_wukong_body_2.png" id="72_q6qr3"]
+[ext_resource type="Texture2D" uid="uid://d1absdhhwrhai" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part12.png" id="73_fxs0b"]
+[ext_resource type="Texture2D" uid="uid://brbr6qur1gxvb" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part20.png" id="74_q50m2"]
+[ext_resource type="Texture2D" uid="uid://0r68cvcdj5n4" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part1.png" id="75_janby"]
+[ext_resource type="Texture2D" uid="uid://cm6ttuhfldg7t" path="res://entities/heroes/tangseng/tex/bag_tangseng_body.png" id="76_jw00y"]
+[ext_resource type="Texture2D" uid="uid://d0bbmatb7dlpt" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part3_4.png" id="77_hbkx0"]
+[ext_resource type="Texture2D" uid="uid://b3tq0a45jdu0x" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part6.png" id="78_s332c"]
 [ext_resource type="Texture2D" uid="uid://clgydveamqu1k" path="res://ui/shared/backpack_portrait_bajie.png" id="79_wbl1s"]
-[ext_resource type="Texture2D" uid="uid://dmgkahauef4hy" path="res://assets/shared/mixed/bag_bajie_body.png" id="80_wp2m0"]
-[ext_resource type="Texture2D" uid="uid://dyrcgyd0ly34p" path="res://assets/shared/mixed/bag_bajie_wait_part9.png" id="81_n1o2a"]
+[ext_resource type="Texture2D" uid="uid://dmgkahauef4hy" path="res://entities/heroes/bajie/tex/bag_bajie_body.png" id="80_wp2m0"]
+[ext_resource type="Texture2D" uid="uid://dyrcgyd0ly34p" path="res://entities/heroes/bajie/tex/bag_bajie_wait_part9.png" id="81_n1o2a"]
 [ext_resource type="Texture2D" uid="uid://co6gehv1xfujq" path="res://ui/shared/backpack_portrait_bajie_2.png" id="82_3nogg"]
 [ext_resource type="PackedScene" uid="uid://bhb50stuk56mg" path="res://ui/components/equipment_slot.tscn" id="82_gye66"]
-[ext_resource type="PackedScene" uid="uid://vt17isp8tb0t" path="res://entities/effects/bag_glow/bag_glow.tscn" id="bag_glow"]
+[ext_resource type="PackedScene" uid="uid://vt17isp8tb0t" path="res://ui/backpack/effects/bag_glow/bag_glow.tscn" id="bag_glow"]
+[ext_resource type="Texture2D" uid="uid://dsx8qh8pwujqv" path="res://ui/pad_icons/xbox_lb_outline.png" id="pad_lb"]
+[ext_resource type="Texture2D" uid="uid://5qnv7l32si02" path="res://ui/pad_icons/xbox_rb_outline.png" id="pad_rb"]
 [ext_resource type="PackedScene" uid="uid://bjfpq7vfs33b3" path="res://ui/components/slot.tscn" id="slot"]
 [ext_resource type="Script" uid="uid://ebbwujfc1ue1" path="res://src/ui/icon_set.gd" id="xejnmbv"]
 [ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://ui/components/yellow_button.tscn" id="yellow_button"]
 [ext_resource type="Texture2D" uid="uid://b5oktqg3cye6a" path="res://ui/components/gradients/yellow_gradient.tres" id="yellow_orange_gradient"]
-[ext_resource type="Texture2D" uid="uid://dsx8qh8pwujqv" path="res://ui/pad_icons/xbox_lb_outline.png" id="pad_lb"]
-[ext_resource type="Texture2D" uid="uid://5qnv7l32si02" path="res://ui/pad_icons/xbox_rb_outline.png" id="pad_rb"]
 
 [node name="backpack" type="Control" unique_id=1004764809]
 layout_mode = 3
@@ -79,11 +78,6 @@ mouse_filter = 2
 script = ExtResource("1_pa08k")
 
 [node name="Art" type="Node2D" parent="." unique_id=954676256]
-
-[node name="backpack_v5_1" type="Sprite2D" parent="Art" unique_id=1610745174]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_2ysyl")
-centered = false
 
 [node name="backpack_v5_3" type="Sprite2D" parent="Art" unique_id=222627014]
 position = Vector2(96, 46)
@@ -97,9 +91,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_10tr8")
 centered = false
 
-[node name="Art2" type="Node2D" parent="." unique_id=945568241]
-
-[node name="LbIcon" type="TextureRect" parent="."]
+[node name="LbIcon" type="TextureRect" parent="." unique_id=2110230672]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 511.0
@@ -111,7 +103,7 @@ texture = ExtResource("pad_lb")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="RbIcon" type="TextureRect" parent="."]
+[node name="RbIcon" type="TextureRect" parent="." unique_id=645372469]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 754.0
@@ -178,8 +170,6 @@ offset_right = 661.0
 offset_bottom = 443.0
 caption = "功勋 "
 width = 80
-
-[node name="Art5" type="Node2D" parent="." unique_id=726557618]
 
 [node name="StatRows" type="Control" parent="." unique_id=1161073590]
 anchors_preset = 0

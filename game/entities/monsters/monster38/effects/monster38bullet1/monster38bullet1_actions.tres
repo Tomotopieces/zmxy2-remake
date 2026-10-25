@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" format=3 uid="uid://1a77wuygwukm"]
 
-[ext_resource type="Texture2D" uid="uid://bvbaayjbd8g7d" path="res://assets/shared/puppets/monster38bullet1_frame.png" id="1_k2vvv"]
+[ext_resource type="Texture2D" uid="uid://bvbaayjbd8g7d" path="res://entities/shared/monster38bullet1_frame.png" id="1_k2vvv"]
 [ext_resource type="Texture2D" uid="uid://by63n3kucks5w" path="res://entities/monsters/monster38/effects/monster38bullet1/tex/monster38bullet1_frame.png" id="2_o2fin"]
 
 [sub_resource type="Animation" id="Animation_a1qa3"]

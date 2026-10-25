@@ -16,7 +16,7 @@ game/entities/<kind>/<name>/      kind = heroes / treasures / monsters / effects
 ├── slots/                             装备部件
 └── effects/<effect>/                  只属于它的特效场景（各带 tex/）
 ```
-几个实体共用的贴图留在 `assets/shared/`，通用代码留在 `src/`。
+归属按**谁在用**判断，不看名字：只有一个使用者的东西放进使用者的目录（悟空的 `fx_hit7_fire` → `entities/heroes/wukong/effects/`，背包的光 → `ui/backpack/effects/`，只有 3-1 用的着色器 → `entities/objects/river_water/`）；角色的副本（悟空怪、唐僧怪）和界面里的预览（背包、商城、法宝面板）算作同一个使用者。真正被几个使用者共用的：贴图放 `entities/shared/`、`stages/shared/`、`ui/shared/`，特效放 `entities/effects/`，代码放 `src/`。用 `bash tools/find_refs.sh <文件>` 查使用者；代码里拼名字的（`Puppet.create("gogo")`、`"fx_" + ...`）find_refs 查不到，要 grep 字符串。
 
 ## 工具
 

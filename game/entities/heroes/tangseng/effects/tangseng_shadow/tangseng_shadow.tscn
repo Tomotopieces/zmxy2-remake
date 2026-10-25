@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tex/tangseng_shadow_walk_part1.png" id="2_hw7vt"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tex/tangseng_shadow_hit3_part1.png" id="3_hm0vc"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="4_5edwb"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_shadow_hit3_part2.png" id="5_2alvv"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_shadow_hit3_part2.png" id="5_2alvv"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tex/tangseng_shadow_hit3_part3.png" id="6_xa1wb"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tex/tangseng_shadow_hit3_part4.png" id="7_wqmrg"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx_add.gdshader" id="8_t5sax"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_cure_hit5_part1.png" id="9_1i8av"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_cure_hit5_part1.png" id="9_1i8av"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tex/tangseng_shadow_hit5_part2.png" id="10_8gml7"]
 [ext_resource type="AnimationLibrary" path="res://entities/heroes/tangseng/effects/tangseng_shadow/tangseng_shadow_actions.tres" id="11_oagnq"]
 

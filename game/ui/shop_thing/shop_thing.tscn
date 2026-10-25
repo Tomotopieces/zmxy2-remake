@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://px3igcyowj00"]
 
 [ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_gkni2"]
-[ext_resource type="Texture2D" uid="uid://dljndas05u0vq" path="res://ui/shared/shop_thing_piece.png" id="2_08w05"]
-[ext_resource type="Texture2D" uid="uid://c7tllepcai0d0" path="res://ui/shared/shop_thing_background.png" id="3_t7u03"]
-[ext_resource type="Texture2D" uid="uid://bt2jxuyd702ar" path="res://ui/shared/shop_thing_btn_more.png" id="6_0xht8"]
+[ext_resource type="Texture2D" uid="uid://dljndas05u0vq" path="res://ui/shop_thing/tex/shop_thing_piece.png" id="2_08w05"]
+[ext_resource type="Texture2D" uid="uid://c7tllepcai0d0" path="res://ui/shop_thing/tex/shop_thing_background.png" id="3_t7u03"]
+[ext_resource type="Texture2D" uid="uid://bt2jxuyd702ar" path="res://ui/shop_thing/tex/shop_thing_btn_more_2.png" id="6_0xht8"]
 [ext_resource type="Texture2D" uid="uid://clmnmhw5uj8bo" path="res://ui/shop_thing/tex/shop_thing_btn_more.png" id="7_cssvq"]
-[ext_resource type="Texture2D" uid="uid://7sehuraxct61" path="res://ui/shared/shop_thing_btn_less.png" id="8_7rybb"]
+[ext_resource type="Texture2D" uid="uid://7sehuraxct61" path="res://ui/shop_thing/tex/shop_thing_btn_less_2.png" id="8_7rybb"]
 [ext_resource type="Texture2D" uid="uid://dwkx6uipj2nah" path="res://ui/shop_thing/tex/shop_thing_btn_less.png" id="9_vi6cb"]
 [ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://ui/components/yellow_button.tscn" id="yellow_button"]
 

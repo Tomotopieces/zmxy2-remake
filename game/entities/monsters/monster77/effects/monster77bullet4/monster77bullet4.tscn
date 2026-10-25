@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_4raaj"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster73_hit1_part4_2.png" id="2_ekhes"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster73_hit1_part4_2.png" id="2_ekhes"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster77/effects/monster77bullet4/monster77bullet4_actions.tres" id="3_gu8o2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cho64"]

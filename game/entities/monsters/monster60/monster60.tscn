@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_cgb2a"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster60/tex/monster60_wait_part1.png" id="2_em3e5"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="3_jfejc"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster51bullet1_hit2_part2.png" id="4_akxvu"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster51bullet1_hit2_part2.png" id="4_akxvu"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster60/tex/monster60_wait_part10.png" id="5_l57dy"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster60/tex/monster60_wait_part11.png" id="6_rs7g1"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster60/monster60_actions.tres" id="7_pwfcj"]

@@ -11,15 +11,16 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 | `game/entities/heroes/<role>/` | `<role>.tscn` + `<role>_actions.tres` (actor scene), `<role>.tres` (HeroData: numbers, moves), `hero_<role>.gd` (唐僧 / 八戒), `tex/`, `slots/` (equipment variants), `bag_<role>/` (the bag portrait), `effects/<name>/` (its own effects, bullets) |
 | `game/entities/monsters/monster<id>/` | `monster<id>.tscn` + `_actions.tres`, `monster<id>.tres` (MonsterData; `monster<id>_<stage>.tres` = a stage's own numbers), `brain_<id>.gd` (its AI, if not a shared template), `tex/`, `effects/<name>/` (its bullets and effects) |
 | `game/entities/treasures/<id>/` | a 法宝: `fabao_<id>.tscn`, `treasure_<id>.gd`, `effects/` |
-| `game/entities/{objects,items,effects}/<name>/` | stage mechanisms (scene with its script on the root), pickups (`potion_*`, `orb_*`), shared effects |
+| `game/entities/{objects,items,effects}/<name>/` | stage mechanisms (scene with its script on the root), pickups (`potion_*`, `orb_*`), effects several things use (hit sparks, level-up, status effects, the tomb); an effect only one hero / monster / screen uses is in its `effects/` (`ui/hud/effects/gogo`) |
 | `game/stages/<stage>/` | `<stage>.tscn` (scenery + playing field, see "Stage scenes"), `lighting.json` (its look), `<stage>.gd` (its special rules, if any), `tex/`; `stages/shared/` = pictures several stages use |
 | `game/ui/<name>/` | a UI layout `<name>.tscn` (see "UI scenes"), its script and `tex/`; `ui/components/` reusable parts (stat, slot, buttons, gradients), `ui/shared/` shared pictures; `game/main.tscn` is the title screen |
 | `game/src/` | shared code: `actors` (Actor, Hero, Monster, Treasure, `brains/` = MonsterBrain + shared templates), `combat`, `core` (game_state, layers, rng, save, forge, controls), `data` (resource classes), `items`, `level` (Level, StageLighting, shaders, `layout/`), `puppet`, `screens` / `ui` (shared screen code) |
 | `game/src/core/layers.gd` | screen size (940x590) and z-order constants (`Layers.Z_*`): never use a raw `z_index` number |
-| `game/assets/` | `items/<id>_fall.png` (item pictures: the drop picture, or `<id>_icon.png` = the original framed one when there is none), `fonts/`, `sounds/`, `shared/` (actor pictures several entities use) |
+| `game/entities/shared/` | actor pictures several entities use (a picture one entity uses — counting a copy like 悟空怪 or a UI preview of it — is in that entity's `tex/`) |
+| `game/assets/` | `items/<id>_fall.png` (item pictures: the drop picture, or `<id>_icon.png` = the original framed one when there is none), `fonts/`, `sounds/` |
 | `game/data/` | global tables: `equipment.tres` (every item; ids = full pinyin of the name), `drops.tres`, `stages.json` — edit them directly |
 | `.pi/skills/zmxy2-entity-migration/` | how to move / rename files and ids in this layout without breaking references (`tools/move_entity.js`), and the naming rules |
-| `tools/extract/*.js` | texture housekeeping: `dedupe.js`, `organize_shared.js`, `fix_scene_uids.js`. Pictures are named `<owner>_<use>.png` (`wukong_hit1_part3`, `tab_menu_background`) |
+| `tools/extract/fix_scene_uids.js` | `--fix` refreshes stale texture uids in scenes ("missing dependency"). Pictures are named `<owner>_<use>.png` (`wukong_hit1_part3`, `tab_menu_background`) |
 | `.claude/skills/stage-rework/` | how to rework a stage's scene and design its look |
 
 ## Run / test / export
@@ -38,7 +39,7 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 
 ## Data
 - The scenes (stages, actors, UI, objects) and `game/data/` are hand-edited and are the source of truth: there are no generators for them any more.
-- `tools/extract/dedupe.js` stores identical PNGs once (`organize_shared.js` names/places them); `fix_scene_uids.js --fix` refreshes stale texture uids ("missing dependency"). Never scrub the 4399 logo embedded inside a texture.
+- Never scrub the 4399 logo embedded inside a texture.
 
 ## Stage scenes
 Every stage's scenery is an editor scene `stages/<stage>/<stage>.tscn` that the user arranges by hand (`git status` shows his uncommitted edits — never overwrite them). The playing field is its `Layout` node; the look comes from `stages/<stage>/lighting.json`.

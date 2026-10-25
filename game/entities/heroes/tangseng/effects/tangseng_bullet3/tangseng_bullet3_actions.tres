@@ -1,14 +1,14 @@
 [gd_resource type="AnimationLibrary" format=3 uid="uid://c6gyuy0shd8xj"]
 
-[ext_resource type="Texture2D" uid="uid://dm21n63g7uuht" path="res://assets/shared/puppets/tangseng_bullet3_frame_4.png" id="2_a3lla"]
-[ext_resource type="Texture2D" uid="uid://cpx3rtdtc83ir" path="res://assets/shared/puppets/tangseng_bullet3_frame_5.png" id="3_4we7t"]
-[ext_resource type="Texture2D" uid="uid://dw20t4c2ntdmd" path="res://assets/shared/puppets/tangseng_bullet3_frame_6.png" id="4_5sid8"]
-[ext_resource type="Texture2D" uid="uid://bdelsfm44x8fs" path="res://assets/shared/puppets/tangseng_bullet3_frame_7.png" id="5_4iy8c"]
-[ext_resource type="Texture2D" uid="uid://pwgqfchm0xj6" path="res://assets/shared/puppets/tangseng_bullet3_frame_8.png" id="6_7v4x8"]
-[ext_resource type="Texture2D" uid="uid://bqef7q73nwkp" path="res://assets/shared/puppets/tangseng_bullet3_frame_9.png" id="9_r5vph"]
-[ext_resource type="Texture2D" uid="uid://cy8cf5a5d6kt4" path="res://assets/shared/puppets/tangseng_bullet3_frame_10.png" id="10_6dneu"]
-[ext_resource type="Texture2D" uid="uid://cnjc7p3t4pbl3" path="res://assets/shared/puppets/tangseng_bullet3_frame_11.png" id="11_s7yc2"]
-[ext_resource type="Texture2D" uid="uid://2wvcyb5j0c0g" path="res://assets/shared/puppets/tangseng_bullet3_frame_12.png" id="12_ix5ao"]
+[ext_resource type="Texture2D" uid="uid://dm21n63g7uuht" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_4.png" id="2_a3lla"]
+[ext_resource type="Texture2D" uid="uid://cpx3rtdtc83ir" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_5.png" id="3_4we7t"]
+[ext_resource type="Texture2D" uid="uid://dw20t4c2ntdmd" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_6.png" id="4_5sid8"]
+[ext_resource type="Texture2D" uid="uid://bdelsfm44x8fs" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_7.png" id="5_4iy8c"]
+[ext_resource type="Texture2D" uid="uid://pwgqfchm0xj6" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_8.png" id="6_7v4x8"]
+[ext_resource type="Texture2D" uid="uid://bqef7q73nwkp" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_9.png" id="9_r5vph"]
+[ext_resource type="Texture2D" uid="uid://cy8cf5a5d6kt4" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_10.png" id="10_6dneu"]
+[ext_resource type="Texture2D" uid="uid://cnjc7p3t4pbl3" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_11.png" id="11_s7yc2"]
+[ext_resource type="Texture2D" uid="uid://2wvcyb5j0c0g" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_12.png" id="12_ix5ao"]
 
 [sub_resource type="Animation" id="Animation_5ajon"]
 length = 1.875

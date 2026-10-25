@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="1_kef1o"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_bajie_frame_21.png" id="2_xhacv"]
+[ext_resource type="Texture2D" path="res://entities/shared/bag_bajie_frame_21.png" id="2_xhacv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_41wiq"]
 shader = ExtResource("1_kef1o")

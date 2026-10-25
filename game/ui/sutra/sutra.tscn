@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cyaxbtakglafn" path="res://ui/sutra/tex/sutra_di_sha_hu_lu.png" id="12_gukha"]
 [ext_resource type="Texture2D" uid="uid://chmid5lpy8nk1" path="res://ui/sutra/tex/sutra_bai_shuang_jing.png" id="13_2dc1u"]
 [ext_resource type="Texture2D" uid="uid://cyn2yt7jh32o3" path="res://ui/sutra/tex/sutra_bai_shuang_jing_2.png" id="14_q1p6m"]
-[ext_resource type="Texture2D" uid="uid://cad72sa4xs80k" path="res://assets/shared/mixed/wudushou_walk_part1.png" id="15_8hb55"]
+[ext_resource type="Texture2D" uid="uid://cad72sa4xs80k" path="res://entities/treasures/wudushou/tex/wudushou_walk_part1_8.png" id="15_8hb55"]
 [ext_resource type="Texture2D" uid="uid://dlchftejb6xlm" path="res://ui/sutra/tex/sutra_tian_sha_gu_jian_3.png" id="16_ccmh2"]
 [ext_resource type="Texture2D" uid="uid://c6gab18q6je4t" path="res://ui/sutra/tex/sutra_luo_sha_yao_san_2.png" id="17_ikso4"]
 [ext_resource type="Texture2D" uid="uid://bcuxcvq8qlnpy" path="res://ui/sutra/tex/sutra_xue_hai_mo_tong_2.png" id="18_1ib0h"]

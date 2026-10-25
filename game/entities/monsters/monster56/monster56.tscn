@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" path="res://entities/monsters/monster56/tex/monster56_dead_part1_10.png" id="19_6r0l3"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster56/tex/monster56_run_part1.png" id="20_kiuvl"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster56/tex/monster56_run_part2.png" id="21_dllmc"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bajie_hit1_part13.png" id="22_xa4v4"]
+[ext_resource type="Texture2D" path="res://entities/shared/bajie_hit1_part13.png" id="22_xa4v4"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster56/monster56_actions.tres" id="23_o8q52"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r87s4"]

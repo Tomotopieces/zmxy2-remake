@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_tangseng_frame.png" id="1_ebo4d"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_frame.png" id="1_ebo4d"]
 
 [node name="Slot301_3" type="Node2D" unique_id=1450068088]
 

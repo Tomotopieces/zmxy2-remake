@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_ea0mb"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_boss_dead_hit3_part10.png" id="2_26qp5"]
+[ext_resource type="Texture2D" path="res://entities/shared/fx_boss_dead_hit3_part10.png" id="2_26qp5"]
 [ext_resource type="AnimationLibrary" path="res://entities/effects/fx_boss_dead/fx_boss_dead_actions.tres" id="3_ibsvc"]
 
 [node name="FxBossDead" type="Node2D" unique_id=2082491121]

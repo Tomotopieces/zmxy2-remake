@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_wukong_frame_20.png" id="1_tu6xv"]
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_frame_20.png" id="1_tu6xv"]
 
 [node name="Slot244_2" type="Node2D" unique_id=468709091]
 

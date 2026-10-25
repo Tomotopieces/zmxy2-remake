@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster51bullet1_hit2_part2.png" id="1_3y6kh"]
+[ext_resource type="Texture2D" path="res://entities/shared/monster51bullet1_hit2_part2.png" id="1_3y6kh"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster59/tex/monster59_hurt_part2.png" id="2_x1b0d"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster59/tex/monster59_dead_part2.png" id="3_dj3a5"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster59/tex/monster59_dead_part2_2.png" id="4_dxgyj"]

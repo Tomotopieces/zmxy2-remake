@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/mixed/bag_wukong_body_2.png" id="1_4vwgc"]
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_body_2.png" id="1_4vwgc"]
 
 [node name="Slot225_1" type="Node2D" unique_id=195399357]
 

@@ -1,9 +1,9 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_tangseng_frame_11.png" id="1_ynt0p"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_frame_11.png" id="1_ynt0p"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_yngbq"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_tangseng_frame_12.png" id="3_6otgp"]
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_tangseng_frame_13.png" id="4_t31vo"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_frame_12.png" id="3_6otgp"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_frame_13.png" id="4_t31vo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t5doj"]
 shader = ExtResource("2_yngbq")
