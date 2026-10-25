@@ -24,7 +24,7 @@ knockback_decay = 0.004722366482869657
 gravity = 864.0
 move_while_attacking = PackedStringArray("hit1")
 equip_chance = 0.22499999999999998
-equip_drops = PackedStringArray("ptxzf", "ptxzg", "ptjs", "ptsmz", "ptmlf", "ptsf")
+equip_drops = PackedStringArray("putong_xingzhepao", "putong_xingzhegun", "putong_jiasha", "putong_songmuzhang", "putong_molanfu", "putong_shifu")
 attacks = {
 &"hit1": SubResource("Resource_3tkyq")
 }

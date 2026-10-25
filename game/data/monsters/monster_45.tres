@@ -52,7 +52,7 @@ brain = {
 "far_skill": "hit3",
 "forms": [{
 "def": 0.0,
-"drops": ["bsxj", "bszj", "bsyz"],
+"drops": ["baishuangxiongjia", "baishuangzhongjia", "baishuangyaozhang"],
 "equip_chance": 0.135,
 "hit2_knockback": [288.0, -48.0],
 "hp": 10000.0,
@@ -61,7 +61,7 @@ brain = {
 "stone_rate": 0.0
 }, {
 "def": 40.0,
-"drops": ["bsxj", "bszj", "bsyz"],
+"drops": ["baishuangxiongjia", "baishuangzhongjia", "baishuangyaozhang"],
 "equip_chance": 0.27,
 "hit2_knockback": [360.0, -144.0],
 "hp": 20000.0,
@@ -70,7 +70,7 @@ brain = {
 "stone_rate": 0.0
 }, {
 "def": 80.0,
-"drops": ["csgs"],
+"drops": ["cangshengguashi"],
 "equip_chance": 0.15,
 "hit2_knockback": [480.0, -240.0],
 "hp": 40000.0,

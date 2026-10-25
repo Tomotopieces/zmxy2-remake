@@ -224,9 +224,7 @@ func _refresh() -> void:
 		_page.set_text("SoulCost", str(Forge.fusion_cost(r)) if d else "")
 		_page.set_text("SuccessRate", "%d%%" % roundi(Forge.fusion_chance(r) * 100) if d else "")
 		if d and _produce == null:
-			var pv := TextureRect.new()
-			pv.texture = d.icon
-			pv.position = (_page.piece("Preview") as Node2D).position
+			var pv := ItemIcon.create(Item.new(d.id), CELL).place((_page.piece("Preview") as Node2D).position)
 			pv.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			_slot_icons.add_child(pv)
 	else:

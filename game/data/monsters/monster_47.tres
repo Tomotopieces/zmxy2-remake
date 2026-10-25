@@ -43,7 +43,7 @@ wander_rest = 1.25
 knockback_decay = 0.004722366482869657
 gravity = 864.0
 equip_chance = 0.22499999999999998
-equip_drops = PackedStringArray("lczh", "xhxh")
+equip_drops = PackedStringArray("luochazhihuan", "xuehaixiehuang")
 attacks = {
 &"hit1": SubResource("Resource_dvoff"),
 &"hit2": SubResource("Resource_c7skp"),

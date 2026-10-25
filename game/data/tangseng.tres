@@ -208,7 +208,7 @@ attacks = {
 }
 treasures = {
 "_doc": "Magic treasures (export/magicWeapon, Role1.getRealPower). The treasure floats behind the hero and retargets every follow_frames with a tween of follow_tween_frames. Damage: base + per_level*L +- spread/2; 木 element multiplies by wood_mul range, otherwise by mul range.",
-"bsj": {
+"baishuangjing": {
 "drain": 15.0,
 "max_speed": 360.0,
 "mul": [0.9, 1.1],
@@ -223,7 +223,7 @@ treasures = {
 "wood_mul": [1.5, 2.0],
 "y_offset": -30.0
 },
-"dshl": {
+"dishahulu": {
 "fire_damage": 300.0,
 "fire_per_level": 50.0,
 "fire_spread": 20.0,
@@ -232,7 +232,7 @@ treasures = {
 "follow": 0.5,
 "follow_offset": [-60.0, -50.0],
 "follow_tween": 1.0,
-"lsys": {
+"luochayaosan": {
 "_stab": "stabs speed up as v = stab_speed + stab_jerk * t^2 (original: +0.05*n px/frame each frame n)",
 "damage": 10.0,
 "mul": [0.9, 1.1],
@@ -252,7 +252,7 @@ treasures = {
 "stabs": 8.0,
 "wood_mul": [1.5, 2.0]
 },
-"tsgj": {
+"tianshagujian": {
 "damage": 400.0,
 "decel": 288.0,
 "life": 8.0,
@@ -266,7 +266,7 @@ treasures = {
 "stand_life": 6.0,
 "wood_mul": [1.5, 2.0]
 },
-"wds": {
+"wudushou": {
 "auto": 3.0,
 "bullet_accel": 576.0,
 "bullet_distance": 1500.0,
@@ -296,7 +296,7 @@ treasures = {
 }],
 "wood_mul": [1.2, 1.5]
 },
-"xhmt": {
+"xuehaimotong": {
 "attacks_base": 3.0,
 "attacks_per_levels": 3.0,
 "bullet_offsets": [[0.0, -15.0], [0.0, 0.0], [0.0, 10.0]],

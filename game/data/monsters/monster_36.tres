@@ -24,7 +24,7 @@ wander_rest = 1.25
 knockback_decay = 0.004722366482869657
 gravity = 864.0
 equip_chance = 0.045
-equip_drops = PackedStringArray("gtb")
+equip_drops = PackedStringArray("gutengbang")
 attacks = {
 &"hit1": SubResource("Resource_p0ec0")
 }

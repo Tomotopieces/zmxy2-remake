@@ -8,9 +8,9 @@ signal to_menu
 signal play(stage: Vector2i)   ## retry / next stage
 
 ## 3 debug: one of each Wukong weapon / armour tier plus accessories.
-const TEST_GEAR := ["ptxzg", "gtq", "tsyj", "gwj", "ryjgb", "ptxzf", "dsyj", "bsxj", "xhmj", "dszk", "dslj", "tsgl", "lzp",
-	"csgs", "wkmrz", "wkwdg", "wkbsz", "wkzyf", "xtzy", "ttzy", "sbbl", "jxbuff", "hhbuff", "wpqhs1", "wpqhs1", "yll", "bsz",
-	"dslj", "dsqz", "dsyj"]
+const TEST_GEAR := ["putong_xingzhegun", "gutengqiang", "tianshayueji", "guiwangjian", "qingtianzhu", "putong_xingzhepao", "dishayuanjia", "baishuangxiongjia", "xuehaimojia", "dashengzhankai", "dishalingjie", "tianshagulian", "laozhepao",
+	"cangshengguashi", "wukonghuangtouzhuang", "wukongxizhuang", "wukonghongtouzhuang", "wukongzhuangyuanfu", "xingtianzhiyi", "tiantingzhiyi", "shuangbeibaolv", "wangudeshuiniu", "huihuang", "qianghuashi_1", "qianghuashi_1", "yanluoling", "bishuizhu",
+	"dishalingjie", "dishaquanzhang", "dishayuanjia"]
 const TEST_SOULS := 50000
 const TEST_MERIT := 5000
 const HUD_SCENE := preload("res://scenes/screens/hud.tscn")

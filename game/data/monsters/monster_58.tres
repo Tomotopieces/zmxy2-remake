@@ -49,7 +49,7 @@ knockback_decay = 0.004722366482869657
 gravity = 864.0
 equip_chance = 0.22499999999999998
 stone_rate = 0.1
-equip_drops = PackedStringArray("zljs", "jhcz", "ryjgb", "jcdp", "tpzy", "dszk")
+equip_drops = PackedStringArray("jinlanjiasha", "lunhuizhang", "qingtianzhu", "jiuchidingpa", "tianpengzhanyi", "dashengzhankai")
 attacks = {
 &"hit1": SubResource("Resource_kr6ce"),
 &"hit2-2": SubResource("Resource_aojmp"),

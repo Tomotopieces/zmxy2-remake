@@ -20,7 +20,7 @@ const STATS := [["hp", "生命", false], ["mp", "魔法", false], ["atk", "攻�
 	["crit", "暴击", true], ["miss", "闪避", true], ["hp_regen", "回血", false], ["mp_regen", "回魔", false],
 	["lifesteal", "吸血", true], ["mdef", "魔抗", true], ["deephit", "重击", true]]
 ## materials whose stats only matter for fusion (贪 / 嗔 / 痴) show none, as in the original
-const NO_STATS := ["t", "c", "ch"]
+const NO_STATS := ["tan", "chen", "chi"]
 
 var _box: Panel
 var _rows: Control

@@ -1,7 +1,7 @@
 extends StageScript
 ## 3-1 (StageListener31): the boat ride. The boat (scenes/objects/boat.tscn, Objects/Boat of the stage scene) sails by itself;
 ## soldiers jump out of the water onto it and fish leap over it; when it reaches the far pier the exit opens. An aurora
-## (scenes/objects/aurora_gate.tscn, Objects/AuroraGate) hangs over the water: a hero carrying the 避水珠 (bsz) who touches
+## (scenes/objects/aurora_gate.tscn, Objects/AuroraGate) hangs over the water: a hero carrying the 避水珠 (bishuizhu) who touches
 ## it dives to 楚江王 (8-1).
 ## (Fix of the original: fish from both sides leap toward the boat; they all flew the same way.)
 

@@ -1,6 +1,6 @@
 extends StageScript
 ## 3-3 (StageListener33): five pearls along the way break after a few hits (each new attack counts once) and may
-## drop the 避水珠 (bsz). When 孟婆 appears, a hidden wall shuts the player into her arena.
+## drop the 避水珠 (bishuizhu). When 孟婆 appears, a hidden wall shuts the player into her arena.
 
 
 var pearls: Array[HitTarget] = []   ## one per pearl; meta "hp" = hits left
@@ -26,7 +26,7 @@ func _on_pearl_hit(_h: Hit, pearl: Puppet, target: HitTarget) -> void:
 	target.enabled = false
 	var cfg: Dictionary = param("pearls", {})
 	if Rng.randf() < float(cfg.get("drop_chance", 0.2)):
-		GroundItem.spawn(String(cfg.get("drop", "bsz")), pearl.position)
+		GroundItem.spawn(String(cfg.get("drop", "bishuizhu")), pearl.position)
 	var tw := pearl.create_tween()
 	tw.tween_property(pearl, "modulate:a", 0.0, float(cfg.get("fade", 1.0)))
 	tw.tween_callback(pearl.queue_free)

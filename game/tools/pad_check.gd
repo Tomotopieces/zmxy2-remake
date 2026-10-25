@@ -86,7 +86,7 @@ func _ready() -> void:
 	# an item menu: B closes the menu only; selling keeps the highlight on that cell when the next item moves in
 	ps._menu.close()
 	await get_tree().create_timer(0.3).timeout
-	for id in ["ptxzf", "ptxzf", "ptxzf"]:
+	for id in ["putong_xingzhepao", "putong_xingzhepao", "putong_xingzhepao"]:
 		var e := EquipmentCatalog.find(id)
 		if e:
 			GameState.add_to_bag(e.roll())

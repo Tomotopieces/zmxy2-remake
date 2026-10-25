@@ -31,7 +31,7 @@ wander_rest = 1.25
 knockback_decay = 0.004722366482869657
 gravity = 864.0
 equip_chance = 0.22499999999999998
-equip_drops = PackedStringArray("mzyj")
+equip_drops = PackedStringArray("chanzhiyinji")
 attacks = {
 &"hit1": SubResource("Resource_bhm7d"),
 &"hit2": SubResource("Resource_jhlob")

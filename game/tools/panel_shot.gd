@@ -12,7 +12,7 @@ func _ready() -> void:
 	add_child(main)
 	await get_tree().create_timer(0.5).timeout
 	# a worn treasure, the way the console / tests hand one out (the 法宝 tab needs one)
-	var it := GameState.make_item("dshl")
+	var it := GameState.make_item("dishahulu")
 	GameState.add_to_bag(it)
 	GameState.wear(GameState.bag.find(it))
 	main.open_menu(&"bag")

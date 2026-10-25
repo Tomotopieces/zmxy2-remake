@@ -147,12 +147,7 @@ func _dashes(rect: Rect2, color: Color) -> Control:
 	return c
 
 func _icon(id: String, pos: Vector2, size: float) -> TextureRect:
-	var t := TextureRect.new()
-	t.texture = EquipmentCatalog.find(id).icon
-	t.position = pos
-	t.size = Vector2(size, size)
-	t.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	t.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	var t := ItemIcon.create(Item.new(id), size).place(pos)
 	t.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	return t
 

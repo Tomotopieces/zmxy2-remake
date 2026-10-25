@@ -63,7 +63,7 @@ brain = {
 "far_cd_rand": 4.166666666666667,
 "hard": {
 "def": 72.0,
-"drops": ["jgj"],
+"drops": ["jingangjia"],
 "hp": 50000.0,
 "powers": {
 "hit1": 118.0,

@@ -16,6 +16,6 @@ wander_rest = 1.25
 knockback_decay = 0.004722366482869657
 gravity = 864.0
 equip_chance = 1.5
-equip_drops = PackedStringArray("jxbuff")
+equip_drops = PackedStringArray("wangudeshuiniu")
 brain_type = "static_prop"
 immovable = true

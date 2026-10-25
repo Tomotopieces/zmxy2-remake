@@ -18,8 +18,8 @@ const SLOTS := [&"weapon", &"cloth", &"accessory", &"treasure", &"fashion", &"wi
 @export var stone := 0           ## strengthening stone level (0 = not a stone)
 @export var charm := &""         ## luck / keep (strengthening charms)
 @export_multiline var desc := ""
-@export var icon: Texture2D
-@export var ground_icon: Texture2D
+@export var icon: Texture2D          ## the drop picture (assets/items/<id>_fall.png), or the original framed one
+@export var framed := false          ## icon is the original framed picture (<id>_icon.png): the item has no drop picture
 @export var ground_size := Vector2(40, 40)   ## pickup / landing box of the dropped item
 
 

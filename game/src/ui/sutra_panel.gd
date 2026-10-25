@@ -55,7 +55,7 @@ func _refresh() -> void:
 	_stat("StatFbhl", str(int(st.get("mp", 0))))
 	_stat("CurrencyFblh", "%d/%s" % [GameState.souls, str(cost) if cost > 0 else "满级"])
 	(_ui.piece("CurrencyFblhProgress") as Range).value = 1.0 if cost == 0 else float(GameState.souls) / (cost + 1)
-	if it.id == "wds":
+	if it.id == "wudushou":
 		# the spell and the passive each have an icon and a text under it
 		var spell: Array = SPELLS[[int(it.spell), it.strong]]
 		_show_only(_ui.piece("SpellIcon"), spell[0])

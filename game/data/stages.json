@@ -149,7 +149,7 @@
 	"sl33": {
 		"hidden_wall_boss": 47.0,
 		"pearls": {
-			"drop": "bsz",
+			"drop": "bishuizhu",
 			"drop_chance": 0.2,
 			"fade": 1.0,
 			"hp": 5.0,

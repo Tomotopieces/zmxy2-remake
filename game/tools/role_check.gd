@@ -9,10 +9,10 @@ func _ready() -> void:
 	var keep_unlock: bool = GameState.unlocked.bajie
 	GameState.new_game("tangseng")
 	_check("tangseng stats", GameState.hero_data.max_hp(1) == 50 and GameState.hero_data.max_mp(1) == 100 and GameState.hero_data.defense(20) == 19)
-	_check("tangseng wears 唐僧 gear only", GameState.can_wear(GameState.make_item("ptsmz")) and not GameState.can_wear(GameState.make_item("ptxzg")))
+	_check("tangseng wears 唐僧 gear only", GameState.can_wear(GameState.make_item("putong_songmuzhang")) and not GameState.can_wear(GameState.make_item("putong_xingzhegun")))
 	GameState.new_game("bajie")
 	_check("bajie stats", GameState.hero_data.max_hp(20) == 1430 and GameState.hero_data.max_mp(20) == 320 and GameState.hero_data.defense(20) == 23)
-	_check("bajie wears 八戒 gear only", GameState.can_wear(GameState.make_item("ssc")) and not GameState.can_wear(GameState.make_item("ptxzg")))
+	_check("bajie wears 八戒 gear only", GameState.can_wear(GameState.make_item("sanshengchui")) and not GameState.can_wear(GameState.make_item("putong_xingzhegun")))
 	GameState.level = 9
 	_check("save", GameState.save_to(5))
 	GameState.new_game("wukong")

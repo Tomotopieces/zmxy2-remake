@@ -3,7 +3,7 @@ extends Node
 ##   godot --headless --path game res://tools/treasure_check.tscn
 ##   godot --path game res://tools/treasure_check.tscn -- --out=<dir>     (a screenshot of each skill)
 
-const IDS := ["dshl", "tsgj", "bsj", "lsys", "xhmt", "wds"]
+const IDS := ["dishahulu", "tianshagujian", "baishuangjing", "luochayaosan", "xuehaimotong", "wudushou"]
 const MONSTER := 31
 
 var _out := ""
@@ -72,7 +72,7 @@ func _ready() -> void:
 	main._menu.queue_free()
 	# 罗刹妖伞 poison: (50 + 15 x lv) x roll, rolled per tick; 木 multiplies the whole of it by 1.5..2
 	for wood in [false, true]:
-		var u := Forge.new_treasure("lsys")
+		var u := Forge.new_treasure("luochayaosan")
 		u.lv = 4
 		u.elem = ["mu"] if wood else ["jin"]
 		var t := Treasure.create(main.level.hero, u)
@@ -85,7 +85,7 @@ func _ready() -> void:
 			hi = maxf(hi, v)
 		var base := 50.0 + 15.0 * 4
 		var r: Array = [1.5, 2.0] if wood else [0.9, 1.1]
-		_check("lsys poison %s %d..%d" % ["木" if wood else "金", lo, hi], lo >= floorf(base * r[0]) - 1 and hi <= base * r[1] and hi > lo)
+		_check("luochayaosan poison %s %d..%d" % ["木" if wood else "金", lo, hi], lo >= floorf(base * r[0]) - 1 and hi <= base * r[1] and hi > lo)
 		t.free()
 	print("TREASURE CHECK %s" % ("OK" if _fails == 0 else "FAILED (%d)" % _fails))
 	get_tree().quit(1 if _fails else 0)

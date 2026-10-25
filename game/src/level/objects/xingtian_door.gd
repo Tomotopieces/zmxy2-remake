@@ -1,13 +1,13 @@
 class_name XingtianDoor
 extends Node2D
-## 刑天门 of 2-2 / 2-3 / 11-1 (the original StageListener22/23/111): only a hero carrying the 阎罗令 (yll) can use it.
+## 刑天门 of 2-2 / 2-3 / 11-1 (the original StageListener22/23/111): only a hero carrying the 阎罗令 (yanluoling) can use it.
 ## Touching its box for `touch_time` seconds (the time is not reset when stepping away) opens it: the closed door is
 ## hidden, the open one shown and its "open" animation plays. Once it has swung open, walking into the doorway uses up
 ## the key and leads to 刑天 (7-1).
 ## A scene of its own (scenes/objects/xingtian_door.tscn) placed in the stage scene
 ## (Objects/XingtianDoor): the numbers are exports.
 
-@export var key := "yll"                                            ## the item the hero must carry
+@export var key := "yanluoling"                                            ## the item the hero must carry
 @export var can_open := true                                        ## false: the door is only the closed picture and never opens
 @export var destination := Vector2i(7, 1)                           ## stage entered
 @export var touch_time := 1.0                                       ## seconds in TouchZone to open it (EnterZone: the doorway once open)

@@ -199,7 +199,7 @@ func use_item(index: int) -> String:
 func _use_special(kind: String) -> String:
 	if kind == "wds_power":
 		var t: Item = worn[&"treasure"]
-		if Item.id_of(t) != "wds":
+		if Item.id_of(t) != "wudushou":
 			return "您没有装备五毒兽"
 		if t.strong:
 			return "五毒兽技能已经强化"
