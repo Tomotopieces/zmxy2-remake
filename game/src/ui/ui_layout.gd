@@ -1,13 +1,13 @@
 class_name UiLayout
 extends Control
-## A screen's layout: the hand-arranged editor scene scenes/ui/<name>.tscn. The nodes the code reaches are scene-unique
+## A screen's layout: the hand-arranged editor scene ui/<name>/<name>.tscn. The nodes the code reaches are scene-unique
 ## names (%Name, "Access as Unique Name" in the editor): they can be moved anywhere in the scene, renaming one is what
 ## breaks its link. Every scene-unique button reports its click as button_pressed(<its node name>).
 
 signal button_pressed(button_name: String)
 
 static func create(ui_name: String) -> UiLayout:
-	return load("res://scenes/ui/%s.tscn" % ui_name).instantiate()
+	return load("res://ui/%s/%s.tscn" % [ui_name, ui_name]).instantiate()
 
 func _ready() -> void:
 	# the scene this layout is: its own file, or (main.tscn's title) the scene it is part of

@@ -1,6 +1,7 @@
 class_name MonsterData
 extends Resource
-## Monster tuning (data/monsters/monster_<id>.tres). Units: px, seconds.
+## Monster tuning (entities/monsters/monster<id>/monster<id>.tres; a stage's own numbers in monster<id>_<stage>.tres).
+## Units: px, seconds.
 
 @export var id := 0
 @export var display_name := ""
@@ -42,3 +43,7 @@ extends Resource
 @export var behind := false            ## drawn right above the background, behind every character (MainGame.createMonster)
 @export var is_prop := false           ## scenery that can be hit: no damage numbers, HP bar, exp or combo
 @export var immovable := false         ## not pulled / pushed (totems, props)
+
+## The data file of monster `id` ("" stage = the base numbers, else the stage's own: monster<id>_<stage>.tres).
+static func path(id: int, stage := "") -> String:
+	return "res://entities/monsters/monster%d/monster%d%s.tres" % [id, id, "" if stage == "" else "_" + stage]

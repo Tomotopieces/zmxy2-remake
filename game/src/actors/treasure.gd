@@ -2,9 +2,7 @@ class_name Treasure
 extends Node2D
 ## Worn magic treasure (BaseMagicWeapon): floats behind the hero and is used with H for MP (30 + 10 x level).
 ## It can be used in any state; while its skill runs (`using`) it cannot be used again (no other cooldown).
-## Each treasure is a subclass in src/actors/treasures/treasure_<id>.gd; numbers in HeroData.treasures.
-
-const DIR := "res://src/actors/treasures/"
+## Each treasure is a subclass in entities/treasures/<id>/treasure_<id>.gd; numbers in HeroData.treasures.
 
 var hero: Hero
 var item: Item             ## the worn item (lv, growth, elem ...)
@@ -24,7 +22,7 @@ var facing := -1:
 var _move: Tween
 
 static func create(h: Hero, it: Item) -> Treasure:
-	var path := DIR + "treasure_%s.gd" % it.id
+	var path := "res://entities/treasures/%s/treasure_%s.gd" % [it.id, it.id]
 	var t: Treasure = load(path).new() if ResourceLoader.exists(path) else Treasure.new()
 	t.hero = h
 	t.item = it
@@ -34,7 +32,7 @@ static func create(h: Hero, it: Item) -> Treasure:
 
 func _ready() -> void:
 	z_index = Layers.Z_TREASURE
-	puppet = Puppet.create("fabao_" + id)
+	puppet = Puppet.create(id)   # entities/treasures/<id>/<id>.tscn
 	add_child(puppet)
 	puppet.event.connect(_on_puppet_event)
 	puppet.action_finished.connect(_on_action_finished)

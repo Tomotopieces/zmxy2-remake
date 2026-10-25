@@ -13,7 +13,7 @@ const TEST_GEAR := ["putong_xingzhegun", "gutengqiang", "tianshayueji", "guiwang
 	"dishalingjie", "dishaquanzhang", "dishayuanjia"]
 const TEST_SOULS := 50000
 const TEST_MERIT := 5000
-const HUD_SCENE := preload("res://scenes/screens/hud.tscn")
+const HUD_SCENE := preload("res://ui/hud/hud.tscn")
 const RESULT_DELAY := 1.0   ## wait before the fail / ending screens (original: 1 s)
 const CLEAR_FADE := 0.5     ## stage clear: fade to white (the original fades to white for 1 s)
 

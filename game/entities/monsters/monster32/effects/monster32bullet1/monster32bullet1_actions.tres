@@ -1,0 +1,87 @@
+[gd_resource type="AnimationLibrary" format=3 uid="uid://gn7fx5lvnxv8"]
+
+[ext_resource type="Texture2D" uid="uid://dvoegk1wkqequ" path="res://entities/monsters/monster32/effects/monster32bullet1/tex/monster32bullet1_frame.png" id="1_m2eey"]
+[ext_resource type="Texture2D" uid="uid://certdc11cn1m1" path="res://entities/monsters/monster32/effects/monster32bullet1/tex/monster32bullet1_frame_2.png" id="2_2saj3"]
+[ext_resource type="Texture2D" uid="uid://bh1xmts8g0t8o" path="res://entities/monsters/monster32/effects/monster32bullet1/tex/monster32bullet1_frame_3.png" id="3_frx0f"]
+[ext_resource type="Texture2D" uid="uid://cmdtidijiw0ug" path="res://entities/monsters/monster32/effects/monster32bullet1/tex/monster32bullet1_frame_4.png" id="4_ku82c"]
+
+[sub_resource type="Animation" id="Animation_am86x"]
+length = 0.25
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Part1:transform")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -0.6, -5.2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Part2:texture")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_2saj3"), ExtResource("3_frx0f"), ExtResource("4_ku82c")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Part2:transform")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -16.05, -25.3), Transform2D(0.5, 0, 0, 0.5, -15.25, -25.75), Transform2D(0.5, 0, 0, 0.5, -17.3, -32.95)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Hitbox/Shape:position")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.25, -0.15)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/Shape:shape:size")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(32.5, 51.1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hitbox/Shape:disabled")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_am86x")
+}

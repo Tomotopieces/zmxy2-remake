@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/shared/puppets/Role_v6_160.png" id="1_3tahc"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_frame_3.png" id="1_3tahc"]
 
 [node name="Slot163_7" type="Node2D" unique_id=2034825352]
 

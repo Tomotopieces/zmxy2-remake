@@ -4,7 +4,7 @@ extends Marker2D
 ## Where a stop's monsters appear (MonsterAppearPoint), a child of its CameraStop: after `delay` s one monster every
 ## `interval` s until `total`, while fewer than Layers.MAX_MONSTERS are alive. `boss` makes it a boss (HP bar).
 
-@export var monster := 30   ## data/monsters/monster_<id>.tres (or monster_<id>_<stage>.tres)
+@export var monster := 30   ## entities/monsters/monster<id>/monster<id>.tres (or monster<id>_<stage>.tres)
 @export var delay := 2.0
 @export var interval := 1.0
 @export var total := 1

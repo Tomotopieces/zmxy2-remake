@@ -1,6 +1,6 @@
 class_name StageLighting
 extends Node
-## The look of a stage at night, from data/lighting/<stage>.json (a stage without a file is drawn as the original did):
+## The look of a stage at night, from stages/<stage>/lighting.json (a stage without a file is drawn as the original did):
 ##  - the scenery and the floor are dimmed (not the actors, pickups or numbers) and the far background a little less; the
 ##    decoration gets a rim of backlight on the edges facing the moon and fades to dark towards the floor;
 ##  - bodies are lit from above by the moon, shaded below and rimmed on their upper-left edges (Puppet.set_light), and cast a
@@ -62,14 +62,14 @@ var _dice := RandomNumberGenerator.new()   ## the weather has its own dice: game
 
 ## Starts the stage's lighting when it has a data file.
 static func attach(lv: Level) -> StageLighting:
-	var path := "res://data/lighting/%s.json" % lv.level_name
+	var path := "res://stages/%s/lighting.json" % lv.level_name
 	if not ResourceLoader.exists(path):
 		return null
 	var s := StageLighting.new()
 	s._cfg = JSON.parse_string(FileAccess.get_file_as_string(path))
 	var use: String = s._cfg.get("use", "")
 	if use != "":   # this stage is the other one's look with a few entries replaced
-		var base_path := "res://data/lighting/%s.json" % use
+		var base_path := "res://stages/%s/lighting.json" % use
 		var base: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(base_path)) if ResourceLoader.exists(base_path) else {}
 		for k in s._cfg:
 			if k == "use":
@@ -129,7 +129,7 @@ func _exit_tree() -> void:
 
 ## The art's own material: backlight rim; the decoration (not the floor) also fades to dark at its feet.
 func _light_scenery(scene: Dictionary) -> void:
-	# one material per layer: the children of "Art" (the depth layers of a hand-made scene, scenes/levels/<stage>.tscn: "Far",
+	# one material per layer: the children of "Art" (the depth layers of a hand-made scene, stages/<stage>/<stage>.tscn: "Far",
 	# "Near", ...) each get the settings of their name under "layers" of the lighting file; the floor has its own
 	var layers: Dictionary = _cfg.get("layers", {})
 	var groups := {"Ground": [_lv.world.get_node("Ground"), {"fade": 0.0}]}

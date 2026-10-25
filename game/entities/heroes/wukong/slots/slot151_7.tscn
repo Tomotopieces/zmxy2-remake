@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/Role_v6_145.png" id="1_mlaf7"]
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_frame_11.png" id="1_mlaf7"]
 
 [node name="Slot151_7" type="Node2D" unique_id=458801314]
 

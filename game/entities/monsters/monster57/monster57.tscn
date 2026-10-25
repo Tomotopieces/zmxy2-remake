@@ -1,0 +1,55 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_51j4a"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster57/tex/monster57_puppet_sprite.png" id="2_r2b2q"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/monster57/monster57_actions.tres" id="3_722ac"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7mug"]
+resource_local_to_scene = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxcb3"]
+resource_local_to_scene = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
+size = Vector2(100, 90)
+
+[node name="Monster57" type="CharacterBody2D"]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=168671252]
+script = ExtResource("1_51j4a")
+actions = PackedStringArray("wait")
+
+[node name="Sprite" type="Sprite2D" parent="Puppet" unique_id=458133407]
+position = Vector2(-34, -31)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_r2b2q")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=540850539]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=791257234]
+shape = SubResource("RectangleShape2D_k7mug")
+disabled = true
+
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=1947677767]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1726782723]
+shape = SubResource("RectangleShape2D_xxcb3")
+disabled = true
+
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1557150786]
+callback_mode_process = 0
+libraries/ = ExtResource("3_722ac")
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2(0.3, 0)
+shape = SubResource("RectangleShape2D_Body")

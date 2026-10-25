@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_j3kij"]
+[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_g43an"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_bullet1_frame.png" id="3_aoes6"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_bullet1_frame_2.png" id="4_1tosq"]
+[ext_resource type="AnimationLibrary" path="res://entities/heroes/tangseng/effects/tangseng_bullet1/tangseng_bullet1_actions.tres" id="5_p4iwa"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hev2p"]
+shader = ExtResource("2_g43an")
+shader_parameter/matrix_on = null
+shader_parameter/color_matrix = null
+shader_parameter/color_offset = null
+shader_parameter/blur = 2.0
+shader_parameter/glow_on = true
+shader_parameter/glow_color = Color(0, 0.8, 1, 1)
+shader_parameter/glow_blur = 12.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = null
+shader_parameter/glow2_color = null
+shader_parameter/glow2_blur = null
+shader_parameter/glow2_strength = null
+shader_parameter/solid = null
+shader_parameter/extend = 13.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s34jb"]
+resource_local_to_scene = true
+
+[node name="TangsengBullet1" type="Node2D" unique_id=1936407026]
+script = ExtResource("1_j3kij")
+actions = PackedStringArray("default")
+
+[node name="Part1" type="Sprite2D" parent="." unique_id=2046079732]
+material = SubResource("ShaderMaterial_hev2p")
+position = Vector2(-55.8, -14.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_aoes6")
+centered = false
+
+[node name="Part2" type="Sprite2D" parent="." unique_id=433694977]
+position = Vector2(-50, -15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_1tosq")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1856563467]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=962278507]
+shape = SubResource("RectangleShape2D_s34jb")
+disabled = true
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1670520434]
+callback_mode_process = 0
+libraries/ = ExtResource("5_p4iwa")

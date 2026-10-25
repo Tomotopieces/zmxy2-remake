@@ -1,6 +1,6 @@
 class_name Level
 extends Node2D
-## One stage: its scene scenes/levels/<name>.tscn - art, mechanisms and the playing field (Layout: walls, camera stops
+## One stage: its scene stages/<name>/<name>.tscn - art, mechanisms and the playing field (Layout: walls, camera stops
 ## with their monster spawns, the exit door).
 ## Camera: a side-scroller that follows the hero inside a dead zone, held between the current bounds (a room locks the
 ## screen on its stop until its spawns are cleared), eased towards its target every frame.
@@ -36,7 +36,7 @@ var door: Node2D                 ## exit portal (hidden until the stage is clear
 var door_zone: Area2D             ## where up enters the exit portal (its EnterZone)
 var walls: Array[AnimatableBody2D] = []   ## the scene's moving / switchable walls (Layout/Walls: platforms, hidden walls)
 var params := {}                 ## this stage's script numbers (data/stages.json)
-var script_node: StageScript     ## this stage's special rules (src/level/stages/<level_name>.gd), if any
+var script_node: StageScript     ## this stage's special rules (stages/<level_name>/<level_name>.gd), if any
 var fixed_camera := false        ## single-screen boss rooms (5-1, 6-1, 7-1, stage 10)
 
 ## Debug boss arena (console): one single-screen room (the ground and sky of stage 1) holding the monster set in arena_boss.
@@ -74,6 +74,10 @@ static func music_for(s: Vector2i) -> String:
 static func scene_name(s: Vector2i) -> String:
 	return "sl%d%d" % [s.x, s.y]
 
+## stages/<name>/<name>.tscn: the stage's scene (its art, lighting.json and script sit next to it).
+static func scene_path(level_name: String) -> String:
+	return "res://stages/%s/%s.tscn" % [level_name, level_name]
+
 func _ready() -> void:
 	current = self
 	level_name = scene_name(stage)
@@ -100,7 +104,7 @@ func _ready() -> void:
 		# boss rooms: the first stop is touched after a delay, wherever the camera is
 		get_tree().create_timer(float(params.auto_touch), false).timeout.connect(_touch_stop)
 	StageLighting.attach(self)
-	var sp := "res://src/level/stages/%s.gd" % level_name
+	var sp := "res://stages/%s/%s.gd" % [level_name, level_name]
 	if ResourceLoader.exists(sp):
 		script_node = load(sp).new()
 		script_node.level = self
@@ -270,7 +274,7 @@ func freeze(seconds: float) -> void:
 ## The stage's scene: "Background/Sky", "Art" (behind the actors), "Ground" (the floor art), "Layout" (the playing field),
 ## optionally "Objects" (mechanisms); "Guides" (reference lines for the editor) is dropped.
 func _scenery_scene() -> Node:
-	var s: Node = load("res://scenes/levels/%s.tscn" % level_name).instantiate()
+	var s: Node = load(scene_path(level_name)).instantiate()
 	var guides := s.get_node_or_null("Guides")
 	if guides != null:
 		s.remove_child(guides)
@@ -335,8 +339,8 @@ func _build() -> void:
 
 ## Common effects plus every puppet of this stage's monsters (body, projectiles, and puppets named after the body:
 ## bullets, effects, form clips) load in the background while the stage starts.
-const WARM_COMMON := ["fx_monster_hurt1", "fx_monster_hurt2", "fx_hero_hurt", "orb_Red", "orb_Green", "orb_Blue",
-	"orb_While", "potion_BigHP", "potion_SmallHP", "potion_SmallMP", "gogo", "fx_levelup"]
+const WARM_COMMON := ["fx_monster_hurt1", "fx_monster_hurt2", "fx_hero_hurt", "orb_red", "orb_green", "orb_blue",
+	"orb_white", "potion_big_hp", "potion_small_hp", "potion_small_mp", "gogo", "fx_levelup"]
 
 func _warm_puppets() -> void:
 	var bodies := {}
@@ -355,7 +359,7 @@ func _warm_puppets() -> void:
 	Puppet.warm(names)
 
 func monster_data(id: int) -> MonsterData:
-	for p in ["res://data/monsters/monster_%d_%s.tres" % [id, level_name], "res://data/monsters/monster_%d.tres" % id]:
+	for p in [MonsterData.path(id, level_name), MonsterData.path(id)]:
 		if ResourceLoader.exists(p):
 			return load(p)
 	return null

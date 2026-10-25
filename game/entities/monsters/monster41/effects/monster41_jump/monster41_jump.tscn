@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_hncov"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster41/effects/monster41_jump/tex/monster41_jump_frame.png" id="2_ggfs1"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/monster41/effects/monster41_jump/monster41_jump_actions.tres" id="3_68int"]
+
+[node name="Monster41Jump" type="Node2D" unique_id=837438202]
+script = ExtResource("1_hncov")
+actions = PackedStringArray("default")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1696214920]
+position = Vector2(-36, -46.399998)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ggfs1")
+centered = false
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1549891956]
+callback_mode_process = 0
+libraries/ = ExtResource("3_68int")

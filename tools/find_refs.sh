@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Who uses a resource? Like the editor's "View Owners": lists every scene / resource / script / data file that refers to
 # the given res:// file by path or by its uid (from the .import / .uid file next to it).
-#   bash tools/find_refs.sh game/assets/shared/ui/OtherMat_v10_236.png [more files...]
+#   bash tools/find_refs.sh game/ui/shared/tab_menu_background.png [more files...]
 cd "$(dirname "$0")/../game" || exit 1
 for f in "$@"; do
   p="${f#game/}"; p="${p#res://}"

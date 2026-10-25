@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_7mdva"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_stun/tex/fx_stun_frame.png" id="2_3gxmu"]
+[ext_resource type="AnimationLibrary" path="res://entities/effects/fx_stun/fx_stun_actions.tres" id="3_mmvdr"]
+
+[node name="FxStun" type="Node2D" unique_id=185350872]
+script = ExtResource("1_7mdva")
+actions = PackedStringArray("default")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1442397341]
+position = Vector2(-45.782, -51.007)
+scale = Vector2(0.2495, 0.2495)
+texture = ExtResource("2_3gxmu")
+centered = false
+region_enabled = true
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=207755617]
+callback_mode_process = 0
+libraries/ = ExtResource("3_mmvdr")

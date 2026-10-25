@@ -1,0 +1,126 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://stages/sl51/tex/sl51_piece.png" id="1_kqb3g"]
+[ext_resource type="Texture2D" path="res://stages/shared/sl111_sky.png" id="1_y1gr7"]
+[ext_resource type="Texture2D" path="res://stages/sl13/tex/sl13_tile.png" id="2_kqb3g"]
+
+[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="xvc2019"]
+
+[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xk0no99"]
+
+[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xnyirrn"]
+
+[ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xenhghz"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
+size = Vector2(20.01, 1000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
+size = Vector2(699.95, 23.3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
+size = Vector2(1200.01, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
+size = Vector2(1200.01, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
+size = Vector2(167, 163.45)
+
+[node name="Scenery" type="Node2D" unique_id=1018630056]
+
+[node name="Guides" type="Node2D" parent="." unique_id=1089831433]
+
+[node name="Floor" type="Line2D" parent="Guides" unique_id=1918009588]
+points = PackedVector2Array(-200, 497, 1288.15, 497)
+width = 2.0
+default_color = Color(1, 0.3, 0.2, 0.8)
+
+[node name="FirstScreen" type="Line2D" parent="Guides" unique_id=1058160045]
+points = PackedVector2Array(0, 0, 940, 0, 940, 590, 0, 590, 0, 0)
+width = 2.0
+default_color = Color(0.3, 1, 0.4, 0.8)
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=1018797503]
+layer = -2
+
+[node name="Sky" type="Sprite2D" parent="Background" unique_id=1463630568]
+texture = ExtResource("1_y1gr7")
+centered = false
+
+[node name="Art" type="Node2D" parent="." unique_id=1023717304]
+z_index = -10
+
+[node name="5_v7_137_00" type="Sprite2D" parent="Art" unique_id=451610905]
+texture = ExtResource("1_kqb3g")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 940, 590)
+
+[node name="Ground" type="Node2D" parent="." unique_id=1107201217]
+z_index = -7
+
+[node name="Tile" type="TextureRect" parent="Ground" unique_id=614009163]
+texture_filter = 1
+texture_repeat = 2
+offset_top = 490.15
+offset_right = 944.0
+offset_bottom = 588.15
+texture = ExtResource("2_kqb3g")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Layout" type="Node2D" parent="."]
+script = ExtResource("xvc2019")
+size = Vector2(1088.15, 701.15)
+
+[node name="Walls" type="Node2D" parent="Layout"]
+
+[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
+collision_mask = 0
+
+[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(1078.15, 201.15)
+shape = SubResource("RectangleShape2D_L1")
+
+[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(-138.4, 211.4)
+rotation = 1.571
+shape = SubResource("RectangleShape2D_L2")
+
+[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(471.05, -128.6)
+shape = SubResource("RectangleShape2D_L3")
+
+[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(471.05, 511)
+shape = SubResource("RectangleShape2D_L4")
+
+[node name="Stops" type="Node2D" parent="Layout"]
+
+[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+position = Vector2(882.3, 221.3)
+script = ExtResource("xk0no99")
+back = 1150
+
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1"]
+position = Vector2(-62.9, 98.25)
+script = ExtResource("xnyirrn")
+monster = 45
+delay = 2
+interval = 1
+total = 1
+
+[node name="ExitDoor" parent="Layout" instance=ExtResource("xenhghz")]
+visible = false
+z_index = -6
+position = Vector2(766.75, 445.15)
+
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+collision_layer = 0
+collision_mask = 16
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+position = Vector2(-0.25, -27.425)
+shape = SubResource("RectangleShape2D_L5")

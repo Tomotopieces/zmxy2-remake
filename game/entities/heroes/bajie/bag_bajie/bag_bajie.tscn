@@ -1,0 +1,235 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_nm681"]
+[ext_resource type="Script" path="res://src/puppet/equip_slot.gd" id="2_tx70d"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot158_2.tscn" id="3_h41fr"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot158_3.tscn" id="4_s7u4n"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame.png" id="5_nbexv"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_1.tscn" id="6_easwt"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_2.tscn" id="7_0wrc0"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_3.tscn" id="8_76rsi"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_4.tscn" id="9_sfkc0"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_5.tscn" id="10_p14ah"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot374_6.tscn" id="11_v1f6o"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_bajie_wait_part8.png" id="12_l7gf2"]
+[ext_resource type="Texture2D" path="res://assets/shared/mixed/bag_bajie_wait_part9.png" id="13_ecfsg"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_3.tscn" id="14_i1wgb"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_4.tscn" id="15_u4rfa"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_5.tscn" id="16_3jtsh"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_6.tscn" id="17_d1abs"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_7.tscn" id="18_x7yr6"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_8.tscn" id="19_jprga"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_9.tscn" id="20_0ytji"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot384_11.tscn" id="21_lveeh"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_3.tscn" id="22_0ndy4"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_4.tscn" id="23_m6itl"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_5.tscn" id="24_7eqki"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_6.tscn" id="25_tvgg5"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_7.tscn" id="26_edrdg"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_8.tscn" id="27_ebnkc"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_9.tscn" id="28_8eupu"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot393_11.tscn" id="29_xur4f"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/bag_bajie_wait_part10.png" id="30_qe2nu"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_2.tscn" id="31_45rfi"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_3.tscn" id="32_jjk2r"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_4.tscn" id="33_db5wy"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_5.tscn" id="34_qtxbj"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_6.tscn" id="35_pxqg0"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_7.tscn" id="36_fy7er"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_8.tscn" id="37_ubgwr"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_9.tscn" id="38_jaluc"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_10.tscn" id="39_rc6kv"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_11.tscn" id="40_1luxm"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot405_12.tscn" id="41_bq4ui"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_2.tscn" id="42_bd5ns"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_3.tscn" id="43_6p8j8"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_4.tscn" id="44_8ylkc"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_5.tscn" id="45_fcy7d"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_6.tscn" id="46_xjt0m"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_7.tscn" id="47_o5qh4"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_10.tscn" id="48_c2jqe"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot414_12.tscn" id="49_3iyr5"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame_26.png" id="50_t0hoy"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_5.tscn" id="51_4ph0y"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_6.tscn" id="52_0jdpf"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_7.tscn" id="53_oeygh"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_9.tscn" id="54_5j420"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_10.tscn" id="55_y2r38"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot422_12.tscn" id="56_2pp5t"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_2.tscn" id="57_bxot2"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_3.tscn" id="58_qknmc"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_4.tscn" id="59_ktiwc"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_5.tscn" id="60_dpuj1"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_6.tscn" id="61_d7vw5"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_7.tscn" id="62_o4foa"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_8.tscn" id="63_d2v2e"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_9.tscn" id="64_x7e7n"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_10.tscn" id="65_mk68b"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_11.tscn" id="66_vqtse"]
+[ext_resource type="PackedScene" path="res://entities/heroes/bajie/bag_bajie/slots/slot434_12.tscn" id="67_4y5rj"]
+[ext_resource type="AnimationLibrary" path="res://entities/heroes/bajie/bag_bajie/bag_bajie_actions.tres" id="68_pu1xq"]
+
+[node name="BagBajie" type="Node2D" unique_id=1927368187]
+script = ExtResource("1_nm681")
+actions = PackedStringArray("default")
+
+[node name="Slot1" type="Node2D" parent="." unique_id=1875715062]
+position = Vector2(-17.75, -73.25)
+rotation = -0.100166164
+scale = Vector2(1.0000125, 1.0000125)
+script = ExtResource("2_tx70d")
+kind = "wing"
+variants = {
+2: ExtResource("3_h41fr"),
+3: ExtResource("4_s7u4n")
+}
+
+[node name="Part1" type="Sprite2D" parent="." unique_id=1047094452]
+position = Vector2(-25.25, -0.050000012)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_nbexv")
+centered = false
+
+[node name="Slot2" type="Node2D" parent="." unique_id=40382004]
+position = Vector2(0, -11.55)
+rotation = -0.016998364
+scale = Vector2(1.0001445, 1.0001445)
+script = ExtResource("2_tx70d")
+kind = "weapon"
+variants = {
+1: ExtResource("6_easwt"),
+2: ExtResource("7_0wrc0"),
+3: ExtResource("8_76rsi"),
+4: ExtResource("9_sfkc0"),
+5: ExtResource("10_p14ah"),
+6: ExtResource("11_v1f6o")
+}
+
+[node name="Part2" type="Sprite2D" parent="." unique_id=1491407902]
+position = Vector2(-20.4, -8.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_l7gf2")
+centered = false
+
+[node name="Part3" type="Sprite2D" parent="." unique_id=436756045]
+position = Vector2(-20.4, -10.099999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_ecfsg")
+centered = false
+
+[node name="Slot3" type="Node2D" parent="." unique_id=1568990598]
+position = Vector2(11.65, 38.55)
+rotation = -0.09152586
+scale = Vector2(0.94093835, 0.97722566)
+skew = 0.113016844
+script = ExtResource("2_tx70d")
+variants = {
+3: ExtResource("14_i1wgb"),
+4: ExtResource("15_u4rfa"),
+5: ExtResource("16_3jtsh"),
+6: ExtResource("17_d1abs"),
+7: ExtResource("18_x7yr6"),
+8: ExtResource("19_jprga"),
+9: ExtResource("20_0ytji"),
+11: ExtResource("21_lveeh")
+}
+
+[node name="Slot4" type="Node2D" parent="." unique_id=2099736099]
+position = Vector2(-8.75, 38)
+scale = Vector2(1, 0.857336)
+skew = -0.027997375
+script = ExtResource("2_tx70d")
+variants = {
+3: ExtResource("22_0ndy4"),
+4: ExtResource("23_m6itl"),
+5: ExtResource("24_7eqki"),
+6: ExtResource("25_tvgg5"),
+7: ExtResource("26_edrdg"),
+8: ExtResource("27_ebnkc"),
+9: ExtResource("28_8eupu"),
+11: ExtResource("29_xur4f")
+}
+
+[node name="Part4" type="Sprite2D" parent="." unique_id=85100314]
+position = Vector2(-11.65, -9.7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_qe2nu")
+centered = false
+
+[node name="Slot5" type="Node2D" parent="." unique_id=1215535564]
+position = Vector2(0.05, 7.75)
+scale = Vector2(1, 1.0011997)
+skew = -0.048960924
+script = ExtResource("2_tx70d")
+variants = {
+2: ExtResource("31_45rfi"),
+3: ExtResource("32_jjk2r"),
+4: ExtResource("33_db5wy"),
+5: ExtResource("34_qtxbj"),
+6: ExtResource("35_pxqg0"),
+7: ExtResource("36_fy7er"),
+8: ExtResource("37_ubgwr"),
+9: ExtResource("38_jaluc"),
+10: ExtResource("39_rc6kv"),
+11: ExtResource("40_1luxm"),
+12: ExtResource("41_bq4ui")
+}
+
+[node name="Slot6" type="Node2D" parent="." unique_id=1138400158]
+position = Vector2(0.75, 35.1)
+scale = Vector2(1, 1.0007997)
+skew = 0.039978623
+script = ExtResource("2_tx70d")
+variants = {
+2: ExtResource("42_bd5ns"),
+3: ExtResource("43_6p8j8"),
+4: ExtResource("44_8ylkc"),
+5: ExtResource("45_fcy7d"),
+6: ExtResource("46_xjt0m"),
+7: ExtResource("47_o5qh4"),
+10: ExtResource("48_c2jqe"),
+12: ExtResource("49_3iyr5")
+}
+
+[node name="Part5" type="Sprite2D" parent="." unique_id=1192027465]
+position = Vector2(-33.1, -53.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("50_t0hoy")
+centered = false
+
+[node name="Slot7" type="Node2D" parent="." unique_id=744681216]
+position = Vector2(-4.4, -14.6)
+rotation = 0.020996913
+scale = Vector2(1.0002204, 1.0002204)
+script = ExtResource("2_tx70d")
+variants = {
+5: ExtResource("51_4ph0y"),
+6: ExtResource("52_0jdpf"),
+7: ExtResource("53_oeygh"),
+9: ExtResource("54_5j420"),
+10: ExtResource("55_y2r38"),
+12: ExtResource("56_2pp5t")
+}
+
+[node name="Slot8" type="Node2D" parent="." unique_id=382519336]
+position = Vector2(17.35, -0.85)
+rotation = 0.030990075
+scale = Vector2(1.0004804, 1.0004804)
+script = ExtResource("2_tx70d")
+variants = {
+2: ExtResource("57_bxot2"),
+3: ExtResource("58_qknmc"),
+4: ExtResource("59_ktiwc"),
+5: ExtResource("60_dpuj1"),
+6: ExtResource("61_d7vw5"),
+7: ExtResource("62_o4foa"),
+8: ExtResource("63_d2v2e"),
+9: ExtResource("64_x7e7n"),
+10: ExtResource("65_mk68b"),
+11: ExtResource("66_vqtse"),
+12: ExtResource("67_4y5rj")
+}
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1962480427]
+callback_mode_process = 0
+libraries/ = ExtResource("68_pu1xq")

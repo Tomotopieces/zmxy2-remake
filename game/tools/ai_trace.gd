@@ -80,7 +80,7 @@ func _first_diff(a: String, b: String) -> String:
 func _run(id: int, band: String) -> String:
 	GameState.new_game("wukong")
 	Rng.seed_with(SEED + id)
-	Level.arena_boss = load("res://data/monsters/monster_%d.tres" % id)
+	Level.arena_boss = load(MonsterData.path(id))
 	var ps := PlayScreen.create(Level.ARENA)
 	add_child(ps)
 	_lines = PackedStringArray()

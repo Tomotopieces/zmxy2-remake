@@ -1,6 +1,6 @@
 class_name Puppet
 extends Node2D
-## An animated body (characters, effects, bullets, items): the hand-editable scene scenes/actors/<name>/<name>.tscn.
+## An animated body (characters, effects, bullets, items): the hand-editable scene entities/<kind>/<name>/<name>.tscn.
 ##
 ## Children:
 ##   Poses/<Action>/...   Sprite2D parts (and EquipSlot nodes) of each action; only the playing action is visible.
@@ -297,15 +297,14 @@ static var _scenes := {}
 static var _loading := {}   ## puppet name -> path being loaded in the background
 
 ## Where puppet scenes live: an entity folder (res://entities/..., found by file name, e.g.
-## entities/heroes/wukong/wukong.tscn or entities/heroes/wukong/effects/wukong_hit10_1/wukong_hit10_1.tscn), or the
-## older layout scenes/actors/<name>/<name>.tscn.
+## entities/heroes/wukong/wukong.tscn or entities/heroes/wukong/effects/wukong_hit10_1/wukong_hit10_1.tscn).
 const ENTITIES := "res://entities"
 static var _index := {}   ## puppet name -> scene path under ENTITIES
 
 static func _path(puppet_name: String) -> String:
 	if _index.is_empty():
 		_index_dir(ENTITIES)
-	return _index.get(puppet_name, "res://scenes/actors/%s/%s.tscn" % [puppet_name, puppet_name])
+	return _index.get(puppet_name, "")
 
 static func _index_dir(dir: String) -> void:
 	for f in ResourceLoader.list_directory(dir):
@@ -314,15 +313,11 @@ static func _index_dir(dir: String) -> void:
 		elif f == dir.get_file() + ".tscn":   # a puppet is the scene named like its folder (not slots/*.tscn parts)
 			_index[f.get_basename()] = dir.path_join(f)
 
-## Every puppet name there is (both layouts).
+## Every puppet name there is.
 static func all_names() -> Array:
 	if _index.is_empty():
 		_index_dir(ENTITIES)
-	var names := _index.keys()
-	for d in ResourceLoader.list_directory("res://scenes/actors"):
-		if d.ends_with("/"):
-			names.append(d.trim_suffix("/"))
-	return names
+	return _index.keys()
 
 ## Container name of an action ("hit10" -> "Hit10", "hit2-1" -> "Hit2And1").
 static func pose_name(a: String) -> String:

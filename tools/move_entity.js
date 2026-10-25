@@ -8,9 +8,11 @@ const fs = require('fs');
 const path = require('path');
 
 const GAME = path.join(__dirname, '..', 'game');
-const args = process.argv.slice(2);
+// --list <file.json>: [[from, to], ...] instead of arguments (a long list does not fit a command line)
+let args = process.argv.slice(2);
+if (args[0] === '--list') args = [].concat(...JSON.parse(fs.readFileSync(args[1], 'utf8')));
 if (args.length === 0 || args.length % 2) {
-  console.error('usage: node tools/move_entity.js <from> <to> [<from> <to> ...]');
+  console.error('usage: node tools/move_entity.js <from> <to> [<from> <to> ...] | --list <pairs.json>');
   process.exit(1);
 }
 const pairs = [];
@@ -19,19 +21,27 @@ for (let i = 0; i < args.length; i += 2) pairs.push([args[i].replace(/\/+$/, '')
 // 1. move
 for (const [from, to] of pairs) {
   const src = path.join(GAME, from), dst = path.join(GAME, to);
+  // already moved (a run stopped half way): only the paths are left to rewrite
+  if (!fs.existsSync(src) && fs.existsSync(dst)) continue;
   if (!fs.existsSync(src)) throw new Error('missing ' + from);
-  if (fs.existsSync(dst)) throw new Error('exists ' + to);
+  // a change of case only (Windows: the same file) goes through a temporary name
+  const caseOnly = from.toLowerCase() === to.toLowerCase();
+  if (fs.existsSync(dst) && !caseOnly) throw new Error('exists ' + to);
   fs.mkdirSync(path.dirname(dst), { recursive: true });
-  fs.renameSync(src, dst);
-  for (const s of ['.import', '.uid']) if (fs.existsSync(src + s)) fs.renameSync(src + s, dst + s);
+  const step = (a, b) => { if (caseOnly) { fs.renameSync(a, a + '.~mv'); a += '.~mv'; } fs.renameSync(a, b); };
+  step(src, dst);
+  for (const s of ['.import', '.uid']) if (fs.existsSync(src + s)) step(src + s, dst + s);
   // a folder emptied by the move goes too (git does not keep empty folders)
   let d = path.dirname(src);
   while (d !== GAME && fs.readdirSync(d).length === 0) { fs.rmdirSync(d); d = path.dirname(d); }
-  console.log('moved', from, '->', to);
+  if (pairs.length < 40) console.log('moved', from, '->', to);
 }
 
-// 2. rewrite res:// paths (longest first: a nested move must not be hit by its parent's rule)
-const rules = pairs.map(([f, t]) => ['res://' + f, 'res://' + t]).sort((a, b) => b[0].length - a[0].length);
+// 2. rewrite res:// paths: one pass, longest prefix first (a nested move must not be hit by its parent's rule); the old
+// prefix must be followed by "/", a quote, space, ")" or the end, never a longer sibling name (wukong vs wukong_hit10)
+const rules = new Map(pairs.map(([f, t]) => ['res://' + f, 'res://' + t]));
+const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const RE = new RegExp('(' + [...rules.keys()].sort((x, y) => y.length - x.length).map(esc).join('|') + ')(?=[/"\'\\s)]|$)', 'g');
 const EXT = new Set(['.tscn', '.tres', '.gd', '.gdshader', '.import', '.json', '.cfg', '.godot', '.md']);
 const SKIP = new Set(['.godot', 'addons']);
 let files = 0, hits = 0;
@@ -43,12 +53,8 @@ let files = 0, hits = 0;
     if (!EXT.has(path.extname(e.name))) continue;
     const s = fs.readFileSync(p, 'utf8');
     if (!s.includes('res://')) continue;
-    let out = s, n = 0;
-    for (const [f, t] of rules) {
-      // the old prefix followed by "/" , a quote or the end of the path: never a longer sibling name (wukong_hit10)
-      const re = new RegExp(f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?=[/"\'\\s)]|$)', 'g');
-      out = out.replace(re, () => { n++; return t; });
-    }
+    let n = 0;
+    const out = s.replace(RE, (m) => { n++; return rules.get(m); });
     if (n) { fs.writeFileSync(p, out); files++; hits += n; }
   }
 })(GAME);

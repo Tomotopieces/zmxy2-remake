@@ -1,0 +1,56 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame.png" id="1_awtgv"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_2.png" id="2_ncjfd"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_3.png" id="3_u42gq"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_4.png" id="4_v7dhv"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_5.png" id="5_ovxcf"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_6.png" id="6_fu7q3"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_7.png" id="7_ks5pi"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_8.png" id="8_vjbsa"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/fx_poison_frame_9.png" id="9_hdsmx"]
+
+[sub_resource type="Animation" id="Animation_uqpd1"]
+length = 0.6666666666666666
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Part1:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_awtgv"), ExtResource("2_ncjfd"), ExtResource("3_u42gq"), ExtResource("4_v7dhv"), ExtResource("5_ovxcf"), ExtResource("6_fu7q3"), ExtResource("7_ks5pi"), ExtResource("8_vjbsa")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Part1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.29025, -39.228752), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.84105, -41.65465), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.8742, -42.7486), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.06715, -43.556953), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.085, -44.146), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.7297, -41.6861), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.41905, -43.125153), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.32935, -44.22505)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Part2:transform")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -9.8, -11.25)]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_uqpd1")
+}

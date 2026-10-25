@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_4vmx7"]
+[ext_resource type="Texture2D" path="res://entities/treasures/tianshagujian/effects/fabao_sword_platform/tex/fabao_sword_platform_frame.png" id="2_qmq5b"]
+[ext_resource type="AnimationLibrary" path="res://entities/treasures/tianshagujian/effects/fabao_sword_platform/fabao_sword_platform_actions.tres" id="3_vpo6y"]
+
+[node name="FabaoSwordPlatform" type="Node2D" unique_id=368270435]
+script = ExtResource("1_4vmx7")
+actions = PackedStringArray("default")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=374168988]
+position = Vector2(-56.85, -13.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_qmq5b")
+centered = false
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1242794697]
+callback_mode_process = 0
+libraries/ = ExtResource("3_vpo6y")

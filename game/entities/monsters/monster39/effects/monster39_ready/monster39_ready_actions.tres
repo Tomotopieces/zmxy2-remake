@@ -1,0 +1,103 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part1.png" id="1_7q3e3"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/effects/monster39_ready/tex/monster39_ready_frame.png" id="2_r4yli"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/effects/monster39_ready/tex/monster39_ready_frame_2.png" id="3_xcy5h"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part6.png" id="4_g682y"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster39/effects/monster39_ready/tex/monster39_ready_frame_3.png" id="5_tskwx"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part9.png" id="6_sg3td"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part3.png" id="7_wjg7u"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/monster39_ready_ready_part4.png" id="8_48bj4"]
+
+[sub_resource type="Animation" id="Animation_y0iav"]
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Part1:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_7q3e3"), ExtResource("2_r4yli"), ExtResource("3_xcy5h")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Part1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -38.6, -5.1000004), Transform2D(0.5, 0, 0, 0.5, -35.65, -1.7999992), Transform2D(0.5, 0, 0, 0.5, -32.35, -9.549999)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Part2:transform")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -18.1, -55.75)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Part3:transform")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -64.8, 15.550001), Transform2D(0.4995, -0.0235, 0.0235, 0.4995, -64.5965, 18.893501)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Part4:texture")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("4_g682y"), ExtResource("5_tskwx")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Part4:transform")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -23.2, 7.1000004), Transform2D(0.5, 0, 0, 0.5, -21.35, 7.1499996)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Part5:transform")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -25.75, -68.85)]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_y0iav")
+}

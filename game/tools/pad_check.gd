@@ -27,7 +27,7 @@ func _nav() -> PadFocus:
 func _focus() -> Control:
 	return get_viewport().gui_get_focus_owner()
 func _ready() -> void:
-	_main = load("res://scenes/main.tscn").instantiate()
+	_main = load("res://main.tscn").instantiate()
 	add_child(_main)
 	await get_tree().create_timer(0.5).timeout
 	var nav := _nav()

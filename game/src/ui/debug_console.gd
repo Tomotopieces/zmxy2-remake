@@ -208,13 +208,11 @@ func _rebuild_stages() -> void:
 func _boss_list() -> Array[MonsterData]:
 	if _bosses.is_empty():
 		var ids: Array[int] = []
-		for f in DirAccess.get_files_at("res://data/monsters"):
-			var base := f.get_basename()
-			if f.get_extension() == "tres" and base.begins_with("monster_") and base.count("_") == 1:
-				ids.append(int(base.get_slice("_", 1)))
+		for d in ResourceLoader.list_directory("res://entities/monsters"):
+			ids.append(int(d.trim_prefix("monster").trim_suffix("/")))
 		ids.sort()
 		for id in ids:
-			var md: MonsterData = load("res://data/monsters/monster_%d.tres" % id)
+			var md: MonsterData = load(MonsterData.path(id))
 			if md != null and md.is_boss:
 				_bosses.append(md)
 	return _bosses

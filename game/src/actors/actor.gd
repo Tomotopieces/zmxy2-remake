@@ -37,7 +37,7 @@ var facing := -1:
 		if puppet:
 			puppet.scale.x = -facing
 
-## Wires the scene's own nodes (scenes/actors/<name>/<name>.tscn, README "Actor scenes"): the art "Puppet" and the
+## Wires the scene's own nodes (entities/<kind>/<name>/<name>.tscn, README "Actor scenes"): the art "Puppet" and the
 ## body collider "Body".
 func setup_puppet() -> void:
 	puppet = $Puppet

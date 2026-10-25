@@ -1,0 +1,23 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_r2s48"]
+[ext_resource type="Texture2D" path="res://assets/shared/puppets/tangseng_cure_hit5_part1.png" id="2_y7kf8"]
+[ext_resource type="AnimationLibrary" path="res://entities/heroes/tangseng/effects/tangseng_cure/tangseng_cure_actions.tres" id="3_sfy6k"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ssqt1"]
+blend_mode = 1
+
+[node name="TangsengCure" type="Node2D" unique_id=846843037]
+script = ExtResource("1_r2s48")
+actions = PackedStringArray("default")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2125659154]
+material = SubResource("CanvasItemMaterial_ssqt1")
+position = Vector2(-245.5, -163)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_y7kf8")
+centered = false
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1573426774]
+callback_mode_process = 0
+libraries/ = ExtResource("3_sfy6k")

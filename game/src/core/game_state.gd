@@ -11,12 +11,11 @@ signal equipment_changed
 signal buffs_changed
 
 const SLOTS := 6
-const ROLES := ["wukong", "tangseng", "bajie"]   ## HeroData files in res://data, in HUD / shop page order
-const HERO_DATA := "res://entities/heroes/%s/%s.tres"   ## (heroes not moved yet: res://data/<role>.tres)
+const ROLES := ["wukong", "tangseng", "bajie"]   ## in HUD / shop page order
 
+## A hero's HeroData: entities/heroes/<role>/<role>.tres.
 static func hero_data_path(r: String) -> String:
-	var p := HERO_DATA % [r, r]
-	return p if ResourceLoader.exists(p) else "res://data/%s.tres" % r
+	return "res://entities/heroes/%s/%s.tres" % [r, r]
 
 ## Heroes the account has unlocked (all but 猪八戒 from the start; he comes with the first 红孩儿 kill). Not part of a save slot.
 var unlocked := {"wukong": true, "tangseng": true, "bajie": false}

@@ -1,0 +1,147 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_0xjyc"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_btn_strengthen.png" id="2_gq8pi"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_btn_strengthen_2.png" id="3_oxgis"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_piece.png" id="4_wyyvx"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_stone2.png" id="5_m1b0b"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_equipment.png" id="6_gj7vy"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_guarantee.png" id="7_1s4gm"]
+[ext_resource type="Texture2D" path="res://ui/forge_strength/tex/forge_strength_luck.png" id="8_qowbd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qhbtnUp0"]
+texture = ExtResource("2_gq8pi")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qhbtnOver1"]
+texture = ExtResource("3_oxgis")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qhbtnDown2"]
+texture = ExtResource("3_oxgis")
+expand_margin_left = 0
+expand_margin_top = -2
+expand_margin_right = 0
+expand_margin_bottom = 2
+
+[node name="forge_strength" type="Control" unique_id=1324375966]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_0xjyc")
+
+[node name="BtnStrengthen" type="Button" parent="." unique_id=823571443]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 206.4
+offset_top = 438.5
+offset_right = 400.4
+offset_bottom = 507.5
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_qhbtnUp0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qhbtnOver1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qhbtnDown2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_qhbtnDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_qhbtnUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="SoulCost" type="Label" parent="." unique_id=143081341]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 308.95
+offset_top = 410.49
+offset_right = 381.95
+offset_bottom = 436.84
+theme_override_font_sizes/font_size = 19
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+
+[node name="SuccessRate" type="Label" parent="." unique_id=1222821799]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 449.95
+offset_top = 410.5
+offset_right = 522.95
+offset_bottom = 440.9
+theme_override_font_sizes/font_size = 19
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+
+[node name="Art" type="Node2D" parent="." unique_id=822817439]
+
+[node name="OtherMat_v10_717" type="Sprite2D" parent="Art" unique_id=835856609]
+position = Vector2(217.4, 405.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_wyyvx")
+centered = false
+
+[node name="Stone2" type="Node2D" parent="." unique_id=1979732292]
+unique_name_in_owner = true
+position = Vector2(423.55, 227.05)
+
+[node name="OtherMat_v10_719" type="Sprite2D" parent="Stone2" unique_id=1598624605]
+position = Vector2(-16.5, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_m1b0b")
+centered = false
+
+[node name="Stone3" type="Node2D" parent="." unique_id=339326596]
+unique_name_in_owner = true
+position = Vector2(315.1, 331.75)
+
+[node name="OtherMat_v10_719" type="Sprite2D" parent="Stone3" unique_id=1210389108]
+position = Vector2(-16.5, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_m1b0b")
+centered = false
+
+[node name="Equipment" type="Node2D" parent="." unique_id=1968620818]
+unique_name_in_owner = true
+position = Vector2(315.1, 229.05)
+
+[node name="OtherMat_v10_722" type="Sprite2D" parent="Equipment" unique_id=1197083873]
+position = Vector2(-16.5, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_gj7vy")
+centered = false
+
+[node name="Stone1" type="Node2D" parent="." unique_id=667439585]
+unique_name_in_owner = true
+position = Vector2(316.1, 124.05)
+
+[node name="OtherMat_v10_719" type="Sprite2D" parent="Stone1" unique_id=1458669078]
+position = Vector2(-16.5, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_m1b0b")
+centered = false
+
+[node name="Guarantee" type="Node2D" parent="." unique_id=1574592444]
+unique_name_in_owner = true
+position = Vector2(202.55, 293.05)
+
+[node name="OtherMat_v10_725" type="Sprite2D" parent="Guarantee" unique_id=994680220]
+position = Vector2(-17.5, -18)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_1s4gm")
+centered = false
+
+[node name="Luck" type="Node2D" parent="." unique_id=541312735]
+unique_name_in_owner = true
+position = Vector2(201.55, 185.05)
+
+[node name="OtherMat_v10_728" type="Sprite2D" parent="Luck" unique_id=368701778]
+position = Vector2(-16.5, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_qowbd")
+centered = false

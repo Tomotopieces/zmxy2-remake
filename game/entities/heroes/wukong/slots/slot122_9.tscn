@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/Role_v6_120.png" id="1_yoyvo"]
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_frame_2.png" id="1_yoyvo"]
 
 [node name="Slot122_9" type="Node2D" unique_id=389749423]
 
