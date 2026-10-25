@@ -51,7 +51,7 @@ expand_margin_top = 0
 expand_margin_right = 0
 expand_margin_bottom = 0
 
-[node name="game_win" type="Control" unique_id=726004482]
+[node name="GameWin" type="Control" unique_id=726004482]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -59,7 +59,7 @@ script = ExtResource("1_36grx")
 
 [node name="Art" type="Node2D" parent="." unique_id=1846685702]
 
-[node name="OtherMat_v10_741" type="Sprite2D" parent="Art" unique_id=305433841]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=305433841]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_puku0")
 centered = false

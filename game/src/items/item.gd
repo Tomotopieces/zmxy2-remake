@@ -7,9 +7,9 @@ var id := ""
 var stats := {}            ## stat name -> rolled value
 var plus := 0              ## strengthening level
 var n := 1                 ## stack size (道具 page)
-var lv := 0                ## magic treasure level (0 = not a treasure)
-var growth := 0.0          ## treasure growth rate
-var elem: Array = []       ## treasure five-element ids
+var lv := 0                ## magic fabao level (0 = not a fabao)
+var growth := 0.0          ## fabao growth rate
+var elem: Array = []       ## fabao five-element ids
 var spell := 0             ## 五毒兽: which of its two spells
 var strong := false        ## 五毒兽: skill strengthened with a 五毒丹
 
@@ -19,7 +19,7 @@ func _init(item_id := "") -> void:
 func data() -> EquipmentData:
 	return EquipmentCatalog.find(id)
 
-func is_treasure() -> bool:
+func is_fabao() -> bool:
 	return lv > 0
 
 ## Id of a slot content that may be empty.

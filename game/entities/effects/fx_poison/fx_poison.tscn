@@ -27,7 +27,7 @@ shader_parameter/extend = 0.0
 script = ExtResource("1_dsr3v")
 actions = PackedStringArray("default")
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=277159829]
+[node name="FxPoisonPart1" type="Sprite2D" parent="." unique_id=277159829]
 modulate = Color(1, 1, 1, 0.559)
 material = SubResource("ShaderMaterial_mn8iw")
 position = Vector2(-20.29025, -39.228752)
@@ -36,7 +36,7 @@ scale = Vector2(0.28062874, 0.28062874)
 texture = ExtResource("3_6847f")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=764792359]
+[node name="FxPoisonPart2" type="Sprite2D" parent="." unique_id=764792359]
 position = Vector2(-9.8, -11.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_4fige")

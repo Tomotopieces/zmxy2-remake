@@ -7,7 +7,7 @@ extends CanvasLayer
 signal open_bag
 signal open_menu
 signal open_skills
-signal open_treasure
+signal open_fabao
 
 @onready var _ui: UiLayout = $RoleInfo
 @onready var _buffs: Control = $Buffs
@@ -72,7 +72,7 @@ func _on_button(b: String) -> void:
 		"BtnBag": open_bag.emit()
 		"BtnSettings": open_menu.emit()
 		"BtnSkills": open_skills.emit()
-		"BtnTreasure": open_treasure.emit()
+		"BtnFabao": open_fabao.emit()
 
 ## Notice in the original style (Toast).
 func toast(text: String) -> void:

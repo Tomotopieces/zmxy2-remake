@@ -39,7 +39,7 @@ func _ready() -> void:
 					break
 			Input.action_release("move_right"); Input.action_release("move_left")
 			print("%s %s: ended x=%d (end %d)" % [lv.level_name, "right" if pass_dir == 1 else "left", h.global_position.x, end_x])
-			if pass_dir == 1 and h.global_position.x < end_x - 200.0 and lv.level_name not in ["sl91"]:
+			if pass_dir == 1 and h.global_position.x < end_x - 200.0 and lv.level_name not in ["qixihuodong"]:
 				ok = false
 		print("%s  %s" % ["ok  " if ok else "FAIL", lv.level_name])
 		if not ok: fails += 1

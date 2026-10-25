@@ -189,15 +189,15 @@ rage_drain_interval = 0.16666666666666666
 combo_cooldowns = PackedFloat32Array(0.75, 0.75, 0.75, 0.75, 0.75)
 air_cooldown = 0.75
 attacks = {
-&"fabao_cucurbit": SubResource("Resource_n8o8y"),
-&"fabao_pearl": SubResource("Resource_6nqyv"),
-&"fabao_sword": SubResource("Resource_wmucq"),
-&"fabao_umbrella": SubResource("Resource_7sqke"),
-&"fabao_wudu_hit1": SubResource("Resource_hx3qk"),
-&"fabao_wudu_hit2_1": SubResource("Resource_8a1g3"),
-&"fabao_wudu_hit2_2": SubResource("Resource_qbqte"),
-&"fabao_wudu_hit2_3": SubResource("Resource_atsm1"),
-&"fabao_wudu_hit2_4": SubResource("Resource_vcent"),
+&"dishahulu": SubResource("Resource_n8o8y"),
+&"xuehaimotong": SubResource("Resource_6nqyv"),
+&"tianshagujian": SubResource("Resource_wmucq"),
+&"luochayaosan": SubResource("Resource_7sqke"),
+&"wudushou_hit1": SubResource("Resource_hx3qk"),
+&"wudushou_hit2_1": SubResource("Resource_8a1g3"),
+&"wudushou_hit2_2": SubResource("Resource_qbqte"),
+&"wudushou_hit2_3": SubResource("Resource_atsm1"),
+&"wudushou_hit2_4": SubResource("Resource_vcent"),
 &"hit1": SubResource("Resource_gwg82"),
 &"hit2": SubResource("Resource_cdmwo"),
 &"hit3": SubResource("Resource_sd5ry"),
@@ -206,8 +206,8 @@ attacks = {
 &"hit5": SubResource("Resource_yr2f7"),
 &"shadow": SubResource("Resource_vtdi2")
 }
-treasures = {
-"_doc": "Magic treasures (export/magicWeapon, Role1.getRealPower). The treasure floats behind the hero and retargets every follow_frames with a tween of follow_tween_frames. Damage: base + per_level*L +- spread/2; 木 element multiplies by wood_mul range, otherwise by mul range.",
+fabao = {
+"_doc": "Magic fabao (export/magicWeapon, Role1.getRealPower). The fabao floats behind the hero and retargets every follow_frames with a tween of follow_tween_frames. Damage: base + per_level*L +- spread/2; 木 element multiplies by wood_mul range, otherwise by mul range.",
 "baishuangjing": {
 "drain": 15.0,
 "max_speed": 360.0,
@@ -276,21 +276,21 @@ treasures = {
 "side": 40.0,
 "skip_monsters": [70.0],
 "spells": [{
-"big": "fabao_wudu_thunder_big",
-"big_attack": "fabao_wudu_hit2_2",
+"big": "wudushou_thunder_big",
+"big_attack": "wudushou_hit2_2",
 "big_power": 0.3,
 "big_screen": [480.0, 235.0],
-"small": "fabao_wudu_thunder",
-"small_attack": "fabao_wudu_hit2_1",
+"small": "wudushou_thunder",
+"small_attack": "wudushou_hit2_1",
 "small_offset": [20.0, 0.0],
 "small_power": 0.25
 }, {
-"big": "fabao_wudu_fire_big",
-"big_attack": "fabao_wudu_hit2_4",
+"big": "wudushou_fire_big",
+"big_attack": "wudushou_hit2_4",
 "big_power": 0.6,
 "big_screen": [480.0, 500.0],
-"small": "fabao_wudu_fire",
-"small_attack": "fabao_wudu_hit2_3",
+"small": "wudushou_fire",
+"small_attack": "wudushou_hit2_3",
 "small_offset": [40.0, -40.0],
 "small_power": 0.3
 }],

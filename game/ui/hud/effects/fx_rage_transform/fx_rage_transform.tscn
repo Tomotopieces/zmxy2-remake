@@ -211,13 +211,13 @@ markers = {
 "bg": Vector2(-49.5, -0.3)
 }
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=1126141758]
+[node name="FxRageTransformFrame" type="Sprite2D" parent="." unique_id=1126141758]
 position = Vector2(-637.05, -397)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_yaxfp")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=1442414742]
+[node name="FxRageTransformFrame2" type="Sprite2D" parent="." unique_id=1442414742]
 modulate = Color(1, 1, 1, 0.129)
 material = SubResource("ShaderMaterial_r4trb")
 position = Vector2(-820.8, -46.25)
@@ -225,14 +225,14 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_va8gl")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=1688865710]
+[node name="FxRageTransformFrame3" type="Sprite2D" parent="." unique_id=1688865710]
 material = SubResource("ShaderMaterial_djp3h")
 position = Vector2(665.5, -6.206)
 scale = Vector2(0.5, 0.32)
 texture = ExtResource("5_u1kb8")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="." unique_id=1235474723]
+[node name="FxPoisonFrame" type="Sprite2D" parent="." unique_id=1235474723]
 modulate = Color(1, 1, 1, 0.559)
 material = SubResource("ShaderMaterial_x3jop")
 position = Vector2(-144.22995, -147.29251)
@@ -242,7 +242,7 @@ skew = 0.0002527237
 texture = ExtResource("6_pmm0d")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="." unique_id=51362709]
+[node name="FxRageTransformFrame4" type="Sprite2D" parent="." unique_id=51362709]
 modulate = Color(1, 1, 1, 0.09)
 material = SubResource("ShaderMaterial_71cox")
 position = Vector2(-637.03204, -116.48386)
@@ -252,41 +252,41 @@ centered = false
 
 [node name="Wukong" type="Node2D" parent="."]
 
-[node name="Part1" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong1" type="Sprite2D" parent="Wukong"]
 visible = false
 transform = Transform2D(0.2778, 0, 0, 0.2778, -800.60732, -71.79096)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong12" type="Sprite2D" parent="Wukong"]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong2")
 transform = Transform2D(0.31225, 0, 0, 0.31225, -733.45515, -81.9642)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong13" type="Sprite2D" parent="Wukong"]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong3")
 transform = Transform2D(0.34665, 0, 0, 0.34665, -666.23651, -92.12028)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong14" type="Sprite2D" parent="Wukong"]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong4")
 transform = Transform2D(0.3811, 0, 0, 0.3811, -599.08434, -102.24352)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong15" type="Sprite2D" parent="Wukong"]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong5")
 transform = Transform2D(0.41555, 0, 0, 0.41555, -531.93217, -112.41676)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong16" type="Sprite2D" parent="Wukong"]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong6")
 transform = Transform2D(0.45, 0, 0, 0.45, -464.78, -122.59)
@@ -295,41 +295,41 @@ centered = false
 
 [node name="Tangseng" type="Node2D" parent="."]
 
-[node name="Part1" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng1" type="Sprite2D" parent="Tangseng"]
 visible = false
 transform = Transform2D(-0.27955, 0, 0, 0.27955, -641.09813, -78.84888)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng12" type="Sprite2D" parent="Tangseng"]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng2")
 transform = Transform2D(-0.321, 0, 0, 0.321, -525.2906, -92.6556)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng13" type="Sprite2D" parent="Tangseng"]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng3")
 transform = Transform2D(-0.3624, 0, 0, 0.3624, -409.54864, -106.34464)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng14" type="Sprite2D" parent="Tangseng"]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng4")
 transform = Transform2D(-0.40385, 0, 0, 0.40385, -293.79111, -120.10136)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng15" type="Sprite2D" parent="Tangseng"]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng5")
 transform = Transform2D(-0.4453, 0, 0, 0.4453, -177.93358, -133.75808)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng16" type="Sprite2D" parent="Tangseng"]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng6")
 transform = Transform2D(-0.48675, 0, 0, 0.48675, -62.22605, -147.5148)
@@ -338,41 +338,41 @@ centered = false
 
 [node name="Bajie" type="Node2D" parent="."]
 
-[node name="Part1" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie1" type="Sprite2D" parent="Bajie"]
 visible = false
 transform = Transform2D(0.5, 0, 0, 0.5, -879.35, -98.8)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie12" type="Sprite2D" parent="Bajie"]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie2")
 transform = Transform2D(0.53975, 0, 0, 0.53975, -807.3804, -108.927425)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie13" type="Sprite2D" parent="Bajie"]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie3")
 transform = Transform2D(0.5795, 0, 0, 0.5795, -735.4608, -119.00485)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie14" type="Sprite2D" parent="Bajie"]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie4")
 transform = Transform2D(0.6193, 0, 0, 0.6193, -663.50432, -129.14319)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie15" type="Sprite2D" parent="Bajie"]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie5")
 transform = Transform2D(0.65905, 0, 0, 0.65905, -591.58472, -139.220615)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie16" type="Sprite2D" parent="Bajie"]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie6")
 transform = Transform2D(0.6988, 0, 0, 0.6988, -519.66512, -149.34804)

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cqmoqnvo013a4" path="res://ui/set_menu/tex/set_menu_background.png" id="2_dkv3n"]
 [ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="5_mav51"]
 
-[node name="set_menu" type="Control" unique_id=1936660815]
+[node name="SetMenu" type="Control" unique_id=1936660815]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -12,7 +12,7 @@ script = ExtResource("1_hsykp")
 
 [node name="Art" type="Node2D" parent="." unique_id=1914546074]
 
-[node name="OtherMat_v10_155" type="Sprite2D" parent="Art" unique_id=2036714208]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=2036714208]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_dkv3n")
 centered = false

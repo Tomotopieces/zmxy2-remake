@@ -66,7 +66,7 @@ expand_margin_bottom = 11.5
 region_rect = Rect2(74, 0, 478, 1201)
 modulate_color = Color(1.3, 1.15, 1, 1)
 
-[node name="select_role" type="Control" unique_id=332687142]
+[node name="SelectRole" type="Control" unique_id=332687142]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -142,7 +142,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2(48, 0, 472, 1232)
 
-[node name="OtherMat_v10_498" type="Sprite2D" parent="UnavailableHero" unique_id=1896990697]
+[node name="Frame" type="Sprite2D" parent="UnavailableHero" unique_id=1896990697]
 position = Vector2(705, 0)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_2oa6x")

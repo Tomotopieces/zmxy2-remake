@@ -7,7 +7,7 @@ extends TextureRect
 
 const MARGIN := 0.12        ## share of the cell left free on each side, so no picture reaches the frame
 ## Only equipment shows its quality as a glow (道具 and 时装 do not).
-const GLOW_TYPES := [&"weapon", &"cloth", &"accessory", &"treasure", &"wing"]
+const GLOW_TYPES := [&"weapon", &"cloth", &"accessory", &"fabao", &"wing"]
 const ICON_FRAME := Rect2(2, 3, 48, 48)   ## the frame inside an original framed icon (52 x 55 px)
 const GLOW_REACH := 6.0     ## px of the halo (the hero's breathes between 15 and 6)
 const GLOW_STRENGTH := 1.5  ## as the hero's

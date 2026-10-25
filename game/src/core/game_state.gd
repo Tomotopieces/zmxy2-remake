@@ -32,7 +32,7 @@ var attack := 0          ## rolled once per level (original: 10 + rand(0..4) + 5
 var skills := {}                     ## learned active skills (action -> true), bought in the skill shop
 var passives := [0, 0, 0, 0, 0]      ## passive skill levels (hp, mp, crit, hp_regen, mp_regen)
 var bag: Array[Item] = []                                        ## carried items
-var worn := {&"weapon": null, &"cloth": null, &"accessory": null, &"treasure": null, &"fashion": null, &"wing": null}   ## slot -> Item (null = empty)
+var worn := {&"weapon": null, &"cloth": null, &"accessory": null, &"fabao": null, &"fashion": null, &"wing": null}   ## slot -> Item (null = empty)
 var buffs := {}                      ## timed buff -> seconds of stage time left (used items)
 var merit := 0                       ## 功勋: shop currency
 var merit_day := ""                  ## date of the last 功勋 reward (it is limited per day)
@@ -197,7 +197,7 @@ func use_item(index: int) -> String:
 ## 五毒丹: permanently strengthens the worn 五毒兽's active skill. Returns the refusal notice, "" when used.
 func _use_special(kind: String) -> String:
 	if kind == "wds_power":
-		var t: Item = worn[&"treasure"]
+		var t: Item = worn[&"fabao"]
 		if Item.id_of(t) != "wudushou":
 			return "您没有装备五毒兽"
 		if t.strong:
@@ -299,8 +299,8 @@ func make_item(id: String) -> Item:
 	var d := EquipmentCatalog.find(id)
 	if d == null:
 		return null
-	if d.type == &"treasure":
-		return Forge.new_treasure(id)
+	if d.type == &"fabao":
+		return Forge.new_fabao(id)
 	# an item that only exists as a sum of its materials (地藏金戒) has no stats of its own: hand out one made of fresh materials
 	for r: Dictionary in EquipmentCatalog.get_catalog().fusion.recipes:
 		if r.out == id and r.kind == "sum":

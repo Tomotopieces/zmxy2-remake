@@ -81,7 +81,7 @@ texture = ExtResource("13_iuwpo")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnnextPageOver13"]
 texture = ExtResource("14_y0qbn")
 
-[node name="shop" type="Control" unique_id=1610453023]
+[node name="Shop" type="Control" unique_id=1610453023]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -89,7 +89,7 @@ script = ExtResource("1_l5pj5")
 
 [node name="Art" type="Node2D" parent="." unique_id=345853335]
 
-[node name="backpack_v5_626" type="Sprite2D" parent="Art" unique_id=1027227770]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=1027227770]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_cgbiw")
 centered = false
@@ -144,7 +144,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
 
 [node name="Art2" type="Node2D" parent="." unique_id=861224701]
 
-[node name="backpack_v5_646" type="Sprite2D" parent="Art2" unique_id=2116938594]
+[node name="Piece1" type="Sprite2D" parent="Art2" unique_id=2116938594]
 position = Vector2(428, 135)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_c6b8j")
@@ -198,7 +198,7 @@ vertical_alignment = 1
 
 [node name="Art3" type="Node2D" parent="." unique_id=1913673427]
 
-[node name="backpack_v5_659" type="Sprite2D" parent="Art3" unique_id=1723639504]
+[node name="Piece2" type="Sprite2D" parent="Art3" unique_id=1723639504]
 position = Vector2(118.95, 133)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_gbf4j")
@@ -293,52 +293,52 @@ position = Vector2(255.2, 282)
 
 [node name="Wukong" type="Node2D" parent="Person" unique_id=1673944294]
 
-[node name="backpack_v5_694" type="Sprite2D" parent="Person/Wukong" unique_id=1226461800]
+[node name="BagWukongWaitPart1" type="Sprite2D" parent="Person/Wukong" unique_id=1226461800]
 position = Vector2(-26.4, -9.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("35_owbao")
 centered = false
 
-[node name="backpack_v5_695" type="Sprite2D" parent="Person/Wukong" unique_id=321675469]
+[node name="BagWukongHit1Part3" type="Sprite2D" parent="Person/Wukong" unique_id=321675469]
 position = Vector2(-7.9520016, 4.4615)
 rotation = 2.6510458
 scale = Vector2(0.4988236, 0.4988236)
 texture = ExtResource("36_6qsi8")
 centered = false
 
-[node name="backpack_v5_162" type="Sprite2D" parent="Person/Wukong" unique_id=451099848]
+[node name="BackpackPortraitWukong" type="Sprite2D" parent="Person/Wukong" unique_id=451099848]
 position = Vector2(-19.550001, 25.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("37_ongk7")
 centered = false
 
-[node name="backpack_v5_703" type="Sprite2D" parent="Person/Wukong" unique_id=1939641384]
+[node name="BagWukongBody" type="Sprite2D" parent="Person/Wukong" unique_id=1939641384]
 position = Vector2(-16.800001, -22.650002)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("38_qx4t0")
 centered = false
 
-[node name="backpack_v5_216" type="Sprite2D" parent="Person/Wukong" unique_id=1401791791]
+[node name="BagWukongHit8Part13" type="Sprite2D" parent="Person/Wukong" unique_id=1401791791]
 position = Vector2(3.8000002, -12.1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("39_x6d2s")
 centered = false
 
-[node name="backpack_v5_720" type="Sprite2D" parent="Person/Wukong" unique_id=255999174]
+[node name="BagWukongBody2" type="Sprite2D" parent="Person/Wukong" unique_id=255999174]
 position = Vector2(47.9855, -29.663498)
 rotation = 2.740643
 scale = Vector2(0.49962485, 0.49962485)
 texture = ExtResource("40_aoc0n")
 centered = false
 
-[node name="backpack_v5_726" type="Sprite2D" parent="Person/Wukong" unique_id=1530734200]
+[node name="BagWukongHit1Part12" type="Sprite2D" parent="Person/Wukong" unique_id=1530734200]
 position = Vector2(14.321499, 2.1520004)
 rotation = 0.5450997
 scale = Vector2(0.549659, 0.549659)
 texture = ExtResource("41_3p5xc")
 centered = false
 
-[node name="backpack_v5_731" type="Sprite2D" parent="Person/Wukong" unique_id=1936673089]
+[node name="BagWukongWaitPart20" type="Sprite2D" parent="Person/Wukong" unique_id=1936673089]
 position = Vector2(-30.4, -48.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("42_frdpc")
@@ -347,25 +347,25 @@ centered = false
 [node name="Tangseng" type="Node2D" parent="Person" unique_id=296761828]
 visible = false
 
-[node name="backpack_v5_291" type="Sprite2D" parent="Person/Tangseng" unique_id=1643031810]
+[node name="BagTangsengWaitPart1" type="Sprite2D" parent="Person/Tangseng" unique_id=1643031810]
 position = Vector2(-17.900002, -14.349999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("43_d5w6u")
 centered = false
 
-[node name="backpack_v5_776" type="Sprite2D" parent="Person/Tangseng" unique_id=583913680]
+[node name="BagTangsengBody" type="Sprite2D" parent="Person/Tangseng" unique_id=583913680]
 position = Vector2(-42.399998, 4.050001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("44_8d560")
 centered = false
 
-[node name="backpack_v5_785" type="Sprite2D" parent="Person/Tangseng" unique_id=1742560786]
+[node name="BagTangsengWaitPart34" type="Sprite2D" parent="Person/Tangseng" unique_id=1742560786]
 position = Vector2(-20.1, -22.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("45_86akt")
 centered = false
 
-[node name="backpack_v5_801" type="Sprite2D" parent="Person/Tangseng" unique_id=2066145054]
+[node name="BagTangsengWaitPart6" type="Sprite2D" parent="Person/Tangseng" unique_id=2066145054]
 position = Vector2(-27.050001, -46.55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("46_5nic7")
@@ -374,26 +374,26 @@ centered = false
 [node name="Bajie" type="Node2D" parent="Person" unique_id=1280014214]
 visible = false
 
-[node name="backpack_v5_367" type="Sprite2D" parent="Person/Bajie" unique_id=686404398]
+[node name="BackpackPortraitBajie" type="Sprite2D" parent="Person/Bajie" unique_id=686404398]
 position = Vector2(-27.75, -3.4)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("47_8ha52")
 centered = false
 
-[node name="backpack_v5_809" type="Sprite2D" parent="Person/Bajie" unique_id=722681109]
+[node name="BagBajieBody" type="Sprite2D" parent="Person/Bajie" unique_id=722681109]
 position = Vector2(-45.869, -42.494003)
 rotation = -0.019997334
 scale = Vector2(0.50009996, 0.50009996)
 texture = ExtResource("48_s1viv")
 centered = false
 
-[node name="backpack_v5_375" type="Sprite2D" parent="Person/Bajie" unique_id=230944512]
+[node name="BagBajieWaitPart9" type="Sprite2D" parent="Person/Bajie" unique_id=230944512]
 position = Vector2(-22.9, -13.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("49_taw4v")
 centered = false
 
-[node name="backpack_v5_415" type="Sprite2D" parent="Person/Bajie" unique_id=700482023]
+[node name="BackpackPortraitBajie2" type="Sprite2D" parent="Person/Bajie" unique_id=700482023]
 position = Vector2(-35.6, -56.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("50_jrabd")

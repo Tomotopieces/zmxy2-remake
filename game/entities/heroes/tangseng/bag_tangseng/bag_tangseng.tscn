@@ -78,7 +78,7 @@ variants = {
 3: ExtResource("4_0o8cd")
 }
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=1143121525]
+[node name="BagTangsengPart1" type="Sprite2D" parent="." unique_id=1143121525]
 position = Vector2(-9.05, -13.849999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_suwa7")
@@ -98,7 +98,7 @@ variants = {
 8: ExtResource("12_breyi")
 }
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=473059653]
+[node name="BagTangsengPart2" type="Sprite2D" parent="." unique_id=473059653]
 position = Vector2(-11.25, -21.55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_pqwsd")
@@ -204,7 +204,7 @@ variants = {
 12: ExtResource("51_1h1x4")
 }
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=1472668586]
+[node name="BagTangsengPart3" type="Sprite2D" parent="." unique_id=1472668586]
 position = Vector2(-18.2, -46.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("52_f1w5y")

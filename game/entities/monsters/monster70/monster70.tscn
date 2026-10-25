@@ -26,13 +26,13 @@ markers = {
 "pointMc": Vector2(0, -0.1)
 }
 
-[node name="Part1" type="Sprite2D" parent="Puppet" unique_id=125561850]
+[node name="PuppetPart1" type="Sprite2D" parent="Puppet" unique_id=125561850]
 position = Vector2(-65.45, -68)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_tmru7")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="Puppet" unique_id=1310295953]
+[node name="PuppetPart2" type="Sprite2D" parent="Puppet" unique_id=1310295953]
 position = Vector2(-68.45, -29)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_obqr4")

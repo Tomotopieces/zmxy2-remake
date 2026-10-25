@@ -56,7 +56,7 @@ expand_margin_top = 8.05
 expand_margin_right = 22
 expand_margin_bottom = 10.95
 
-[node name="forge_fusion" type="Control" unique_id=874144660]
+[node name="ForgeFusion" type="Control" unique_id=874144660]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -64,7 +64,7 @@ script = ExtResource("1_kbcfi")
 
 [node name="Art" type="Node2D" parent="." unique_id=1463845050]
 
-[node name="OtherMat_v10_191" type="Sprite2D" parent="Art" unique_id=928853585]
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=928853585]
 position = Vector2(208.55, 381)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_uux5r")
@@ -104,7 +104,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
 
 [node name="Art2" type="Node2D" parent="." unique_id=397676254]
 
-[node name="OtherMat_v10_202" type="Sprite2D" parent="Art2" unique_id=1063900805]
+[node name="Piece2" type="Sprite2D" parent="Art2" unique_id=1063900805]
 position = Vector2(296.05, 197.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_uo2gf")
@@ -114,7 +114,7 @@ centered = false
 unique_name_in_owner = true
 position = Vector2(155.6, 383)
 
-[node name="OtherMat_v10_204" type="Sprite2D" parent="Preview" unique_id=859589870]
+[node name="Preview" type="Sprite2D" parent="Preview" unique_id=859589870]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_ybtk6")
 centered = false
@@ -145,7 +145,7 @@ theme_override_constants/outline_size = 2
 
 [node name="Art3" type="Node2D" parent="." unique_id=1353046923]
 
-[node name="OtherMat_v10_209" type="Sprite2D" parent="Art3" unique_id=2027820294]
+[node name="Piece3" type="Sprite2D" parent="Art3" unique_id=2027820294]
 position = Vector2(384.95, 379)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_dy8fb")
@@ -167,7 +167,7 @@ theme_override_constants/outline_size = 2
 unique_name_in_owner = true
 position = Vector2(303.55, 296.5)
 
-[node name="OtherMat_v10_212" type="Sprite2D" parent="Product" unique_id=657732360]
+[node name="Product" type="Sprite2D" parent="Product" unique_id=657732360]
 position = Vector2(-26.5, -27.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_bjkmw")
@@ -177,7 +177,7 @@ centered = false
 unique_name_in_owner = true
 position = Vector2(413.05, 197.55)
 
-[node name="OtherMat_v10_215" type="Sprite2D" parent="Material3" unique_id=960558388]
+[node name="Material3" type="Sprite2D" parent="Material3" unique_id=960558388]
 position = Vector2(-18, -17.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_s0gkm")
@@ -187,7 +187,7 @@ centered = false
 unique_name_in_owner = true
 position = Vector2(304.05, 117.55)
 
-[node name="OtherMat_v10_215" type="Sprite2D" parent="Material2" unique_id=272014189]
+[node name="Material3" type="Sprite2D" parent="Material2" unique_id=272014189]
 position = Vector2(-18, -17.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_s0gkm")
@@ -197,7 +197,7 @@ centered = false
 unique_name_in_owner = true
 position = Vector2(188.05, 197.55)
 
-[node name="OtherMat_v10_215" type="Sprite2D" parent="Material1" unique_id=1802304107]
+[node name="Material3" type="Sprite2D" parent="Material1" unique_id=1802304107]
 position = Vector2(-18, -17.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_s0gkm")

@@ -92,19 +92,19 @@ variants = {
 3: ExtResource("4_roylw")
 }
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=1138109887]
+[node name="BagWukongPart1" type="Sprite2D" parent="." unique_id=1138109887]
 position = Vector2(-27.05, -9.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_8quw7")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=23893505]
+[node name="BagWukongPart2" type="Sprite2D" parent="." unique_id=23893505]
 position = Vector2(-27.05, -7.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_5xb1f")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=88224985]
+[node name="BagWukongPart3" type="Sprite2D" parent="." unique_id=88224985]
 position = Vector2(-8.5796, 4.62675)
 rotation = 2.6466353
 scale = Vector2(0.50000626, 0.49976894)
@@ -112,7 +112,7 @@ skew = 0.0008803606
 texture = ExtResource("7_icj8y")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="." unique_id=1233650860]
+[node name="BagWukongPart4" type="Sprite2D" parent="." unique_id=1233650860]
 position = Vector2(-20.2, 25.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_o36dw")
@@ -132,13 +132,13 @@ variants = {
 12: ExtResource("14_7k1mp")
 }
 
-[node name="Part5" type="Sprite2D" parent="." unique_id=633032524]
+[node name="BagWukongPart5" type="Sprite2D" parent="." unique_id=633032524]
 position = Vector2(-17.45, -22.3)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_2dxmh")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="." unique_id=1122557556]
+[node name="BagWukongPart6" type="Sprite2D" parent="." unique_id=1122557556]
 position = Vector2(-17.45, -22.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("16_sf4pn")
@@ -216,13 +216,13 @@ variants = {
 12: ExtResource("50_q0370")
 }
 
-[node name="Part7" type="Sprite2D" parent="." unique_id=911651604]
+[node name="BagWukongPart7" type="Sprite2D" parent="." unique_id=911651604]
 position = Vector2(3.15, -11.900001)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("51_8o0j5")
 centered = false
 
-[node name="Part8" type="Sprite2D" parent="." unique_id=1913298185]
+[node name="BagWukongPart8" type="Sprite2D" parent="." unique_id=1913298185]
 position = Vector2(13.6737995, 3.5812988)
 rotation = 0.5444858
 scale = Vector2(0.54828554, 0.54828554)
@@ -257,7 +257,7 @@ variants = {
 8: ExtResource("59_enlv2")
 }
 
-[node name="Part9" type="Sprite2D" parent="." unique_id=2098944731]
+[node name="BagWukongPart9" type="Sprite2D" parent="." unique_id=2098944731]
 position = Vector2(13.6737995, 3.5812988)
 rotation = 0.5444858
 scale = Vector2(0.54828554, 0.54828554)
@@ -292,7 +292,7 @@ variants = {
 8: ExtResource("59_enlv2")
 }
 
-[node name="Part10" type="Sprite2D" parent="." unique_id=1993591022]
+[node name="BagWukongPart10" type="Sprite2D" parent="." unique_id=1993591022]
 position = Vector2(13.6737995, 3.5812988)
 rotation = 0.5444858
 scale = Vector2(0.54828554, 0.54828554)
@@ -327,7 +327,7 @@ variants = {
 8: ExtResource("59_enlv2")
 }
 
-[node name="Part11" type="Sprite2D" parent="." unique_id=1266053302]
+[node name="BagWukongPart11" type="Sprite2D" parent="." unique_id=1266053302]
 position = Vector2(13.6737995, 3.5812988)
 rotation = 0.5444858
 scale = Vector2(0.54828554, 0.54828554)
@@ -362,7 +362,7 @@ variants = {
 8: ExtResource("59_enlv2")
 }
 
-[node name="Part12" type="Sprite2D" parent="." unique_id=485970095]
+[node name="BagWukongPart12" type="Sprite2D" parent="." unique_id=485970095]
 position = Vector2(13.6737995, 2.381299)
 rotation = 0.5444858
 scale = Vector2(0.54828554, 0.54828554)
@@ -399,7 +399,7 @@ variants = {
 12: ExtResource("69_rgww3")
 }
 
-[node name="Part13" type="Sprite2D" parent="." unique_id=588340647]
+[node name="BagWukongPart13" type="Sprite2D" parent="." unique_id=588340647]
 position = Vector2(-31.05, -48.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("70_0bqmh")

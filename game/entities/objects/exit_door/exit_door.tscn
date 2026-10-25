@@ -12,13 +12,13 @@ markers = {
 "isTransferDoor": Vector2(-1, -1)
 }
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=790448787]
+[node name="ExitDoorPart1" type="Sprite2D" parent="." unique_id=790448787]
 position = Vector2(-83.75, -109.149994)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_b444r")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=566163723]
+[node name="ExitDoorPart2" type="Sprite2D" parent="." unique_id=566163723]
 position = Vector2(-12, -9.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_41uiq")

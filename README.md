@@ -1,7 +1,7 @@
 # zmxy2-remake — 造梦西游2：十殿阎罗篇 Godot 重制版
 
 Godot 4.7 (Forward+, 2D MSAA) remake of the Flash game 《造梦西游2》. The original's numbers and behaviour are kept; everything is rebuilt natively.
-Playable: 孙悟空 / 唐僧 / 猪八戒 (八戒 unlocks with the first 红孩儿 kill). Stages are named `sl<area><level>`: `sl11` = 1-1 … `sl33`, `sl41`; hidden stages `sl51` (5-1 白骨精) … `sl111`; `sl01` = debug arena.
+Playable: 孙悟空 / 唐僧 / 猪八戒 (八戒 unlocks with the first 红孩儿 kill). Stage folders are the pinyin of the stage's name (`guicheng` = 1-1 鬼城 … `zhuanlundian` = 4-1, hidden `baigumijing` … `guoqinghuodong`, `leitai` = debug arena); `Level.STAGES` maps stage numbers to them.
 Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tools/trash.sh <path>`), never `rm`.
 
 ## Layout
@@ -9,12 +9,12 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 |---|---|
 | `game/` | the Godot project, one folder per thing: everything of a hero, monster, stage or UI screen (scene, animations, numbers, pictures, its own script and effects) sits together. Shared code is in `src/` |
 | `game/entities/heroes/<role>/` | `<role>.tscn` + `<role>_actions.tres` (actor scene), `<role>.tres` (HeroData: numbers, moves), `hero_<role>.gd` (唐僧 / 八戒), `tex/`, `slots/` (equipment variants), `bag_<role>/` (the bag portrait), `effects/<name>/` (its own effects, bullets) |
-| `game/entities/monsters/monster<id>/` | `monster<id>.tscn` + `_actions.tres`, `monster<id>.tres` (MonsterData; `monster<id>_<stage>.tres` = a stage's own numbers), `brain_<id>.gd` (its AI, if not a shared template), `tex/`, `effects/<name>/` (its bullets and effects) |
-| `game/entities/treasures/<id>/` | a 法宝: `fabao_<id>.tscn`, `treasure_<id>.gd`, `effects/` |
+| `game/entities/monsters/<name>/` | folder = the pinyin of the monster's name (`shouyeren`; forms numbered: `zhuanlunwang_1`; nameless ones still `monster<id>`): `<name>.tscn` + `_actions.tres`, `<name>.tres` (MonsterData with its `id`; `<name>_<stage>.tres` = a stage's own numbers), `<name>_brain.gd` (its AI, if not a shared template), `tex/`, `effects/<name>/` (its bullets and effects). `MonsterData.folder(id)` finds the folder |
+| `game/entities/fabao/<id>/` | a 法宝: `<id>.tscn`, `fabao_<id>.gd`, `effects/` |
 | `game/entities/{objects,items,effects}/<name>/` | stage mechanisms (scene with its script on the root), pickups (`potion_*`, `orb_*`), effects several things use (hit sparks, level-up, status effects, the tomb); an effect only one hero / monster / screen uses is in its `effects/` (`ui/hud/effects/gogo`) |
 | `game/stages/<stage>/` | `<stage>.tscn` (scenery + playing field, see "Stage scenes"), `lighting.json` (its look), `<stage>.gd` (its special rules, if any), `tex/`; `stages/shared/` = pictures several stages use |
 | `game/ui/<name>/` | a UI layout `<name>.tscn` (see "UI scenes"), its script and `tex/`; `ui/components/` reusable parts (stat, slot, buttons, gradients), `ui/shared/` shared pictures; `game/main.tscn` is the title screen |
-| `game/src/` | shared code: `actors` (Actor, Hero, Monster, Treasure, `brains/` = MonsterBrain + shared templates), `combat`, `core` (game_state, layers, rng, save, forge, controls), `data` (resource classes), `items`, `level` (Level, StageLighting, shaders, `layout/`), `puppet`, `screens` / `ui` (shared screen code) |
+| `game/src/` | shared code: `actors` (Actor, Hero, Monster, Fabao, `brains/` = MonsterBrain + shared templates), `combat`, `core` (game_state, layers, rng, save, forge, controls), `data` (resource classes), `items`, `level` (Level, StageLighting, shaders, `layout/`), `puppet`, `screens` / `ui` (shared screen code) |
 | `game/src/core/layers.gd` | screen size (940x590) and z-order constants (`Layers.Z_*`): never use a raw `z_index` number |
 | `game/entities/shared/` | actor pictures several entities use (a picture one entity uses — counting a copy like 悟空怪 or a UI preview of it — is in that entity's `tex/`) |
 | `game/assets/` | `items/<id>_fall.png` (item pictures: the drop picture, or `<id>_icon.png` = the original framed one when there is none), `fonts/`, `sounds/` |
@@ -24,10 +24,10 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 | `.claude/skills/stage-rework/` | how to rework a stage's scene and design its look |
 
 ## Run / test / export
-- Run: open `game/` in Godot 4.7 (F5). Debug builds: `~` console (items, teleport, boss fight), keys 1 refill / 2 hit boxes / 3 test gear / 4 kill all / 5 restart / 6 invincible / 7 invulnerable monsters glow yellow (temporary). F11 fullscreen. In a stage: C bag, V skills, B treasure, Esc / Tab settings — one menu (`TabMenu`, ui/tab_menu/tab_menu.tscn) with tabs 背包 / 技能 / 法宝 / 设置; the pad switches tabs with LT / RT.
+- Run: open `game/` in Godot 4.7 (F5). Debug builds: `~` console (items, teleport, boss fight), keys 1 refill / 2 hit boxes / 3 test gear / 4 kill all / 5 restart / 6 invincible / 7 invulnerable monsters glow yellow (temporary). F11 fullscreen. In a stage: C bag, V skills, B fabao, Esc / Tab settings — one menu (`TabMenu`, ui/tab_menu/tab_menu.tscn) with tabs 背包 / 技能 / 法宝 / 设置; the pad switches tabs with LT / RT.
 - Web build: `bash tools/export_web.sh` (preset "Web", single-threaded, saves in the browser's IndexedDB). It uses the loading shell `game/web_shell/shell.html` (the original loading picture and bar) and splits the pack into content-defined chunks (`tools/web_chunks.js` → `web/chunks/*.bin` + `web/pck.json`) and writes `web/sw.js`, a service worker that rebuilds `index.pck` from the chunks in the browser cache: an update downloads only the chunks that changed (a script edit is ~1 MB); test with `node tools/serve_web.js` → http://localhost:8060/. `web/` is committed (pck / wasm via LFS) and is published to GitHub Pages by `.github/workflows/pages.yml` on every push that changes it. The web export templates are in the 4.7.2 template bundle.
 - Panels fade in/out with `UiFade` (`src/ui/ui_fade.gd`); screen changes (title → role select → map → stage) go through `ScreenFade` in `main.gd`.
-- Checks (headless, exit code = result): `bash tools/run_checks.sh [filter]` — camera/walk/pad/role/bag/forge/treasure/smoke tests, `stage_test` (door12, hub), frame-exact AI traces of every monster (`ai_trace`, baselines `game/tools/ai_traces/`; regenerate with `-- --ids=…` after an intended AI change) and `loot_check`. Art work needs only targeted checks.
+- Checks (headless, exit code = result): `bash tools/run_checks.sh [filter]` — camera/walk/pad/role/bag/forge/fabao/smoke tests, `stage_test` (door12, hub), frame-exact AI traces of every monster (`ai_trace`, baselines `game/tools/ai_traces/`; regenerate with `-- --ids=…` after an intended AI change) and `loot_check`. Art work needs only targeted checks.
 - Who uses a file (the editor's View Owners): `bash tools/find_refs.sh <file>...` (by res:// path and uid); run it before deleting a replaced texture or scene.
 - Screenshots: `godot --path game --position 6000,6000 res://tools/light_shot.tscn -- <area,level> <out.png> <camera x> [monster ids] [wait s] [strike s]` (stage with its lighting); also `game/tools/{ui_shot,panel_shot,stage_shot,puppet_shot,puppet_strip,seam_check,skill_shot,fx_gallery}`.
 - Skill timelines: `godot --headless --path game res://tools/skill_probe.tscn -- <keys> [air] [role=<name>]` logs the hero's state every physics tick (compare before / after a change to the hero code).
@@ -48,7 +48,7 @@ Every stage's scenery is an editor scene `stages/<stage>/<stage>.tscn` that the 
 - The layering is the user's job: never decide depth for him. A piece moved to a layer has x = scroll_scale × original x.
 - Every bitmap placement of the original is its own `Sprite2D` (named `<bitmap>_<n>`, painting order); nothing is merged. A row of one picture laid edge to edge (floor, haze) is ONE `TextureRect`: repeat on, stretch Tile, texture filter Nearest.
 - Mechanisms are scenes of their own with a script on the root and `@export` parameters, instanced under `Objects` at their real world position (no parallax), built from plain Sprite2D + AnimationPlayer — **never a Puppet** (parts are hidden in the editor). `Level` moves `Objects` into the world; the stage script (`stages/<stage>/<stage>.gd`) finds them there.
-- 5-1 (and boss rooms) have one painting + a floor: 2 nodes. 2-2 (`sl22`) was ONE baked 4700x522 JPEG in the original; it was rebuilt from the loose bitmaps of 2-3; only the boss end (x ≥ 3745) stays a crop of the baked bitmap.
+- 5-1 (and boss rooms) have one painting + a floor: 2 nodes. 2-2 (`panguandian`) was ONE baked 4700x522 JPEG in the original; it was rebuilt from the loose bitmaps of 2-3; only the boss end (x ≥ 3745) stays a crop of the baked bitmap.
 - Textures: `stages/<stage>/tex/<stage>_<layer>_<n>.png`; shared ones in `stages/shared/`.
 
 ## Actor scenes
@@ -69,8 +69,8 @@ The 背包 / 法宝 attribute rows are instances of `ui/components/stat.tscn` (`
 Rim light / moon exist because 1-1…1-3 have a moon — they are not a general setting; a new stage's style is designed from scratch (what lights this place?). Draw order: far/sky −2, moon −1, world 0, mist 1, grade 2, HUD 3.
 
 ## Game-systems notes
-- Monster AI: one `MonsterBrain` per monster (`entities/monsters/monster<id>/brain_<id>.gd`, templates `src/actors/brains/boss_b.gd` / `boss_d.gd`), parameters in `MonsterData.brain`. Hits: Hitbox/Hurtbox Area2D pairs keyed by the animation, de-duplicated per swing by serial (`combat/hit_dealer.gd`).
-- Activities (中秋 / 七夕 / 国庆) have a panel with on/off switches; 贪/嗔/痴 stacking, forge (`core/forge.gd`), treasures (`entities/treasures/`), skill/shop screens are in `ui/`.
+- Monster AI: one `MonsterBrain` per monster (`entities/monsters/<name>/<name>_brain.gd`, templates `src/actors/brains/boss_b.gd` / `boss_d.gd`), parameters in `MonsterData.brain`. Hits: Hitbox/Hurtbox Area2D pairs keyed by the animation, de-duplicated per swing by serial (`combat/hit_dealer.gd`).
+- Activities (中秋 / 七夕 / 国庆) have a panel with on/off switches; 贪/嗔/痴 stacking, forge (`core/forge.gd`), fabao (`entities/fabao/`), skill/shop screens are in `ui/`.
 - Docs of the original's analysis were removed from the tree; they live in git history (`git log --diff-filter=D --name-only -- docs`).
 
 ## Branches

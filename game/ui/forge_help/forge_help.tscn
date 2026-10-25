@@ -28,7 +28,7 @@ expand_margin_top = 0
 expand_margin_right = 0
 expand_margin_bottom = 0
 
-[node name="forge_help" type="Control" unique_id=1454957409]
+[node name="ForgeHelp" type="Control" unique_id=1454957409]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -36,7 +36,7 @@ script = ExtResource("1_hdjx1")
 
 [node name="Art" type="Node2D" parent="." unique_id=1494860309]
 
-[node name="OtherMat_v10_186" type="Sprite2D" parent="Art" unique_id=85535072]
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=85535072]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_drxj5")
 centered = false

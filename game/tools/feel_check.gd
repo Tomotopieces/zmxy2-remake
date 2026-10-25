@@ -100,7 +100,7 @@ func _ready() -> void:
 
 	# 5. hit-stop: a monster in front, hit5 freezes attacker and target; camera shake decays
 	h.facing = 1
-	var md: MonsterData = load("res://entities/monsters/monster30/monster30.tres").duplicate()
+	var md: MonsterData = load(MonsterData.path(30)).duplicate()
 	md.hp = 99999
 	var m := Monster.create(md)
 	m.global_position = h.global_position + Vector2(60, 0)

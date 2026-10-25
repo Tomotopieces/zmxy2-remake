@@ -9,13 +9,13 @@
 script = ExtResource("1_hx3f2")
 actions = PackedStringArray("default")
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=1063994906]
+[node name="GogoFrame" type="Sprite2D" parent="." unique_id=1063994906]
 position = Vector2(-106.2, -45.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_ij883")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=964391290]
+[node name="GogoFrame2" type="Sprite2D" parent="." unique_id=964391290]
 position = Vector2(-43.35, -9.55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_dipyc")

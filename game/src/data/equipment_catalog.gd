@@ -21,7 +21,7 @@ const PATH := "res://data/equipment.tres"
 @export var unique: PackedStringArray  ## items the hero can only own one of
 @export var strengthen := {}           ## {types, chance: {stone level -> [chance at +0..]}, luck_mul, drop_from}
 @export var fusion := {}               ## {cost, stone_chance, recipes: [{out, mats, kind}]}
-@export var treasures := {}            ## {max_level, cost_mul, mp_base, mp_per_level, elements, defs}
+@export var fabao := {}            ## {max_level, cost_mul, mp_base, mp_per_level, elements, defs}
 @export var shop := {}                 ## {pages, prices, per_page, merit}
 @export var revive := {}               ## {item, invincible, ratio, max_y}
 

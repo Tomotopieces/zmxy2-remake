@@ -52,14 +52,14 @@ size = Vector2(372.8, 99)
 script = ExtResource("1_d84is")
 actions = PackedStringArray("default")
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=332441879]
+[node name="TangsengBullet3Part1" type="Sprite2D" parent="." unique_id=332441879]
 visible = false
 position = Vector2(-130.95, -62.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_bvoig")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=1785572340]
+[node name="TangsengBullet3Part2" type="Sprite2D" parent="." unique_id=1785572340]
 visible = false
 modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
 material = SubResource("ShaderMaterial_lu5y5")
@@ -68,7 +68,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_lms2g")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=3486126]
+[node name="TangsengBullet3Part3" type="Sprite2D" parent="." unique_id=3486126]
 modulate = Color(1, 1, 1, 0)
 material = SubResource("ShaderMaterial_r0vhu")
 position = Vector2(-133.9, -59.1)
@@ -76,7 +76,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_37f7o")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="." unique_id=92185828]
+[node name="TangsengBullet3Part4" type="Sprite2D" parent="." unique_id=92185828]
 visible = false
 modulate = Color(1, 1, 1, 0.59)
 position = Vector2(-133.04999, -36.35)
@@ -84,14 +84,14 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_d84is")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="." unique_id=1584002046]
+[node name="TangsengBullet3Part5" type="Sprite2D" parent="." unique_id=1584002046]
 visible = false
 position = Vector2(15.850002, -59.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_bvoig")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="." unique_id=1407774047]
+[node name="TangsengBullet3Part6" type="Sprite2D" parent="." unique_id=1407774047]
 visible = false
 modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
 material = SubResource("ShaderMaterial_lu5y5")
@@ -100,7 +100,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_lms2g")
 centered = false
 
-[node name="Part7" type="Sprite2D" parent="." unique_id=2017908891]
+[node name="TangsengBullet3Part7" type="Sprite2D" parent="." unique_id=2017908891]
 modulate = Color(1, 1, 1, 0)
 material = SubResource("ShaderMaterial_r0vhu")
 position = Vector2(12.900002, -56.1)
@@ -108,7 +108,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_37f7o")
 centered = false
 
-[node name="Part8" type="Sprite2D" parent="." unique_id=1465592279]
+[node name="TangsengBullet3Part8" type="Sprite2D" parent="." unique_id=1465592279]
 visible = false
 modulate = Color(1, 1, 1, 0.59)
 position = Vector2(12.75, -33.35)
@@ -116,21 +116,21 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_d84is")
 centered = false
 
-[node name="Part9" type="Sprite2D" parent="." unique_id=1394271974]
+[node name="TangsengBullet3Part9" type="Sprite2D" parent="." unique_id=1394271974]
 visible = false
 position = Vector2(-59.6, -27.8)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_bvoig")
 centered = false
 
-[node name="Part10" type="Sprite2D" parent="." unique_id=611867408]
+[node name="TangsengBullet3Part10" type="Sprite2D" parent="." unique_id=611867408]
 visible = false
 position = Vector2(-207.40001, -59.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_bvoig")
 centered = false
 
-[node name="Part11" type="Sprite2D" parent="." unique_id=1387497915]
+[node name="TangsengBullet3Part11" type="Sprite2D" parent="." unique_id=1387497915]
 visible = false
 modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
 material = SubResource("ShaderMaterial_lu5y5")
@@ -139,7 +139,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_lms2g")
 centered = false
 
-[node name="Part12" type="Sprite2D" parent="." unique_id=773228380]
+[node name="TangsengBullet3Part12" type="Sprite2D" parent="." unique_id=773228380]
 modulate = Color(1, 1, 1, 0)
 material = SubResource("ShaderMaterial_r0vhu")
 position = Vector2(-210.35, -56.1)
@@ -147,7 +147,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_37f7o")
 centered = false
 
-[node name="Part13" type="Sprite2D" parent="." unique_id=433033803]
+[node name="TangsengBullet3Part13" type="Sprite2D" parent="." unique_id=433033803]
 visible = false
 modulate = Color(1, 1, 1, 0.59)
 position = Vector2(-210.5, -33.35)
@@ -155,21 +155,21 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_d84is")
 centered = false
 
-[node name="Part14" type="Sprite2D" parent="." unique_id=2015528627]
+[node name="TangsengBullet3Part14" type="Sprite2D" parent="." unique_id=2015528627]
 visible = false
 position = Vector2(-59.25, -27.3)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_ve4qu")
 centered = false
 
-[node name="Part15" type="Sprite2D" parent="." unique_id=1075227676]
+[node name="TangsengBullet3Part15" type="Sprite2D" parent="." unique_id=1075227676]
 visible = false
 position = Vector2(99.899994, -59.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_bvoig")
 centered = false
 
-[node name="Part16" type="Sprite2D" parent="." unique_id=270481643]
+[node name="TangsengBullet3Part16" type="Sprite2D" parent="." unique_id=270481643]
 visible = false
 modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
 material = SubResource("ShaderMaterial_lu5y5")
@@ -178,7 +178,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_lms2g")
 centered = false
 
-[node name="Part17" type="Sprite2D" parent="." unique_id=993844239]
+[node name="TangsengBullet3Part17" type="Sprite2D" parent="." unique_id=993844239]
 modulate = Color(1, 1, 1, 0)
 material = SubResource("ShaderMaterial_r0vhu")
 position = Vector2(96.95, -56.1)
@@ -186,7 +186,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_37f7o")
 centered = false
 
-[node name="Part18" type="Sprite2D" parent="." unique_id=1495728395]
+[node name="TangsengBullet3Part18" type="Sprite2D" parent="." unique_id=1495728395]
 visible = false
 modulate = Color(1, 1, 1, 0.59)
 position = Vector2(96.799995, -33.35)

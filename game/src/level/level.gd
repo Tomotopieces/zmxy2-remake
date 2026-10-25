@@ -19,7 +19,7 @@ signal transfer(to: Vector2i)    ## hidden stage entrance used: go straight ther
 static var current: Level
 
 @export var stage := Vector2i(1, 1)
-var level_name := "sl11"
+var level_name := "guicheng"
 @export var scroll_trigger := Layers.VIEW.x * 2.0 / 3.0   ## hero screen x that pushes the camera
 @export var back_trigger := 188.0
 @export var edge_margin := 20.0
@@ -71,8 +71,19 @@ var _combo_t := 0.0
 static func music_for(s: Vector2i) -> String:
 	return "bg%d" % (1 if s == ARENA else s.x if s.x <= 7 else 4)
 
+## Stage number -> its folder under stages/ (the pinyin of the stage's name).
+const STAGES := {
+	Vector2i(0, 1): "leitai", Vector2i(1, 1): "guicheng", Vector2i(1, 2): "wuchangxiang", Vector2i(1, 3): "guimenguan",
+	Vector2i(2, 1): "jieyinyuan", Vector2i(2, 2): "panguandian", Vector2i(2, 3): "yanluodian",
+	Vector2i(3, 1): "wangchuanhe", Vector2i(3, 2): "naiheqiao", Vector2i(3, 3): "wangxiangtai", Vector2i(4, 1): "zhuanlundian",
+	Vector2i(5, 1): "baigumijing", Vector2i(6, 1): "niumogu", Vector2i(7, 1): "shibacengdiyu", Vector2i(8, 1): "huodadiyu",
+	Vector2i(9, 1): "qixihuodong", Vector2i(10, 1): "luoxuandiyu_dating", Vector2i(10, 2): "luoxuandiyu_wuguanwang",
+	Vector2i(10, 3): "luoxuandiyu_bianchengwang", Vector2i(10, 4): "luoxuandiyu_taishanwang",
+	Vector2i(10, 5): "luoxuandiyu_dushiwang", Vector2i(10, 6): "luoxuandiyu_pingdengwang", Vector2i(11, 1): "guoqinghuodong",
+}
+
 static func scene_name(s: Vector2i) -> String:
-	return "sl%d%d" % [s.x, s.y]
+	return STAGES.get(s, "")
 
 ## stages/<name>/<name>.tscn: the stage's scene (its art, lighting.json and script sit next to it).
 static func scene_path(level_name: String) -> String:

@@ -2,10 +2,10 @@
 # Runs the headless logic checks (game/tools/*_check, *_test) and exits non-zero if any fails.
 #   bash tools/run_checks.sh            all checks
 #   bash tools/run_checks.sh forge      only those whose name contains "forge"
-# A check fails on a line starting with FAIL, a script/parse error, or a timeout. The randomised treasure check gets one retry.
+# A check fails on a line starting with FAIL, a script/parse error, or a timeout. The randomised fabao check gets one retry.
 GODOT="${GODOT:-/c/Program Files/Godot/Godot_v4.7.2-stable_win64_console.exe}"
 cd "$(dirname "$0")/../game" || exit 2
-CHECKS=("camera_check" "walk_check" "pad_check" "role_check" "smoke_test" "bag_check" "forge_check" "treasure_check" "stage_test -- hub" "stage_test -- door12" "stage_test -- door12_tangseng" "stage_test -- pearls" "stage_test -- pearls_tangseng" "ai_trace -- --check" "loot_check" "feel_check")
+CHECKS=("camera_check" "walk_check" "pad_check" "role_check" "smoke_test" "bag_check" "forge_check" "fabao_check" "stage_test -- hub" "stage_test -- door12" "stage_test -- door12_tangseng" "stage_test -- pearls" "stage_test -- pearls_tangseng" "ai_trace -- --check" "loot_check" "feel_check")
 failed=0
 run() {
   local scene="${1%% *}" rest="${1#"$scene"}" out
@@ -21,6 +21,6 @@ run() {
 }
 for c in "${CHECKS[@]}"; do
   [ -n "$1" ] && [[ "$c" != *"$1"* ]] && continue
-  if run "$c" || { [[ "$c" == treasure_check* ]] && run "$c"; }; then echo "PASS  $c"; else echo "FAIL  $c"; failed=1; fi
+  if run "$c" || { [[ "$c" == fabao_check* ]] && run "$c"; }; then echo "PASS  $c"; else echo "FAIL  $c"; failed=1; fi
 done
 exit $failed

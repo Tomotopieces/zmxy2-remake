@@ -44,7 +44,7 @@ func _ready() -> void:
 		elif a == "--check":
 			check = true
 	if ids.is_empty():
-		for i in range(30, 82):
+		for i in MonsterData.ids():
 			ids.append(i)
 	var failed := 0
 	for id in ids:

@@ -315,7 +315,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("p1_1_1_f5:visible")
+tracks/0/path = NodePath("Wing3Part1:visible")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -327,7 +327,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("p1_1_1_f5:transform")
+tracks/1/path = NodePath("Wing3Part1:transform")
 tracks/1/interp = 0
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -339,7 +339,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("p1_3_1_f5:visible")
+tracks/2/path = NodePath("Wing3Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -351,7 +351,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("p1_3_1_f5:transform")
+tracks/3/path = NodePath("Wing3Part2:transform")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -363,7 +363,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("p1_1_1_f6:visible")
+tracks/4/path = NodePath("Wing3Part3:visible")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -375,7 +375,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("p1_1_1_f6:transform")
+tracks/5/path = NodePath("Wing3Part3:transform")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -387,7 +387,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("p1_3_1_f6:visible")
+tracks/6/path = NodePath("Wing3Part4:visible")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -399,7 +399,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("p1_3_1_f6:transform")
+tracks/7/path = NodePath("Wing3Part4:transform")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -411,7 +411,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("p1_1_1_f7:visible")
+tracks/8/path = NodePath("Wing3Part5:visible")
 tracks/8/interp = 0
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -423,7 +423,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("p1_1_1_f7:transform")
+tracks/9/path = NodePath("Wing3Part5:transform")
 tracks/9/interp = 0
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -435,7 +435,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("p1_3_1_f7:visible")
+tracks/10/path = NodePath("Wing3Part6:visible")
 tracks/10/interp = 0
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -447,7 +447,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("p1_3_1_f7:transform")
+tracks/11/path = NodePath("Wing3Part6:transform")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -459,7 +459,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("p1_1_1_f8:visible")
+tracks/12/path = NodePath("Wing3Part7:visible")
 tracks/12/interp = 0
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -471,7 +471,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("p1_1_1_f8:transform")
+tracks/13/path = NodePath("Wing3Part7:transform")
 tracks/13/interp = 0
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -483,7 +483,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("p1_3_1_f8:visible")
+tracks/14/path = NodePath("Wing3Part8:visible")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -495,7 +495,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("p1_3_1_f8:transform")
+tracks/15/path = NodePath("Wing3Part8:transform")
 tracks/15/interp = 0
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -507,7 +507,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("p1_1_1_f9:visible")
+tracks/16/path = NodePath("Wing3Part9:visible")
 tracks/16/interp = 0
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -519,7 +519,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("p1_1_1_f9:transform")
+tracks/17/path = NodePath("Wing3Part9:transform")
 tracks/17/interp = 0
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -531,7 +531,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("p1_3_1_f9:visible")
+tracks/18/path = NodePath("Wing3Part10:visible")
 tracks/18/interp = 0
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -543,7 +543,7 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("p1_3_1_f9:transform")
+tracks/19/path = NodePath("Wing3Part10:transform")
 tracks/19/interp = 0
 tracks/19/loop_wrap = true
 tracks/19/keys = {
@@ -555,7 +555,7 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("p1_1_1_f10:visible")
+tracks/20/path = NodePath("Wing3Part11:visible")
 tracks/20/interp = 0
 tracks/20/loop_wrap = true
 tracks/20/keys = {
@@ -567,7 +567,7 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("p1_1_1_f10:transform")
+tracks/21/path = NodePath("Wing3Part11:transform")
 tracks/21/interp = 0
 tracks/21/loop_wrap = true
 tracks/21/keys = {
@@ -579,7 +579,7 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("p1_3_1_f10:visible")
+tracks/22/path = NodePath("Wing3Part12:visible")
 tracks/22/interp = 0
 tracks/22/loop_wrap = true
 tracks/22/keys = {
@@ -591,7 +591,7 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("p1_3_1_f10:transform")
+tracks/23/path = NodePath("Wing3Part12:transform")
 tracks/23/interp = 0
 tracks/23/loop_wrap = true
 tracks/23/keys = {
@@ -603,7 +603,7 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("p1_1_1_f11:visible")
+tracks/24/path = NodePath("Wing3Part13:visible")
 tracks/24/interp = 0
 tracks/24/loop_wrap = true
 tracks/24/keys = {
@@ -615,7 +615,7 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("p1_1_1_f11:transform")
+tracks/25/path = NodePath("Wing3Part13:transform")
 tracks/25/interp = 0
 tracks/25/loop_wrap = true
 tracks/25/keys = {
@@ -627,7 +627,7 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("p1_3_1_f11:visible")
+tracks/26/path = NodePath("Wing3Part14:visible")
 tracks/26/interp = 0
 tracks/26/loop_wrap = true
 tracks/26/keys = {
@@ -639,7 +639,7 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/imported = false
 tracks/27/enabled = true
-tracks/27/path = NodePath("p1_3_1_f11:transform")
+tracks/27/path = NodePath("Wing3Part14:transform")
 tracks/27/interp = 0
 tracks/27/loop_wrap = true
 tracks/27/keys = {
@@ -651,7 +651,7 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/imported = false
 tracks/28/enabled = true
-tracks/28/path = NodePath("p1_1_1_f12:visible")
+tracks/28/path = NodePath("Wing3Part15:visible")
 tracks/28/interp = 0
 tracks/28/loop_wrap = true
 tracks/28/keys = {
@@ -663,7 +663,7 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/imported = false
 tracks/29/enabled = true
-tracks/29/path = NodePath("p1_1_1_f12:transform")
+tracks/29/path = NodePath("Wing3Part15:transform")
 tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = {
@@ -675,7 +675,7 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/imported = false
 tracks/30/enabled = true
-tracks/30/path = NodePath("p1_3_1_f12:visible")
+tracks/30/path = NodePath("Wing3Part16:visible")
 tracks/30/interp = 0
 tracks/30/loop_wrap = true
 tracks/30/keys = {
@@ -687,7 +687,7 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/imported = false
 tracks/31/enabled = true
-tracks/31/path = NodePath("p1_3_1_f12:transform")
+tracks/31/path = NodePath("Wing3Part16:transform")
 tracks/31/interp = 0
 tracks/31/loop_wrap = true
 tracks/31/keys = {
@@ -699,7 +699,7 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/imported = false
 tracks/32/enabled = true
-tracks/32/path = NodePath("p1_1_1_f13:visible")
+tracks/32/path = NodePath("Wing3Part17:visible")
 tracks/32/interp = 0
 tracks/32/loop_wrap = true
 tracks/32/keys = {
@@ -711,7 +711,7 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/imported = false
 tracks/33/enabled = true
-tracks/33/path = NodePath("p1_1_1_f13:transform")
+tracks/33/path = NodePath("Wing3Part17:transform")
 tracks/33/interp = 0
 tracks/33/loop_wrap = true
 tracks/33/keys = {
@@ -723,7 +723,7 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/imported = false
 tracks/34/enabled = true
-tracks/34/path = NodePath("p1_3_1_f13:visible")
+tracks/34/path = NodePath("Wing3Part18:visible")
 tracks/34/interp = 0
 tracks/34/loop_wrap = true
 tracks/34/keys = {
@@ -735,7 +735,7 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/imported = false
 tracks/35/enabled = true
-tracks/35/path = NodePath("p1_3_1_f13:transform")
+tracks/35/path = NodePath("Wing3Part18:transform")
 tracks/35/interp = 0
 tracks/35/loop_wrap = true
 tracks/35/keys = {
@@ -747,7 +747,7 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/imported = false
 tracks/36/enabled = true
-tracks/36/path = NodePath("p1_1_1_f14:visible")
+tracks/36/path = NodePath("Wing3Part19:visible")
 tracks/36/interp = 0
 tracks/36/loop_wrap = true
 tracks/36/keys = {
@@ -759,7 +759,7 @@ tracks/36/keys = {
 tracks/37/type = "value"
 tracks/37/imported = false
 tracks/37/enabled = true
-tracks/37/path = NodePath("p1_1_1_f14:transform")
+tracks/37/path = NodePath("Wing3Part19:transform")
 tracks/37/interp = 0
 tracks/37/loop_wrap = true
 tracks/37/keys = {
@@ -771,7 +771,7 @@ tracks/37/keys = {
 tracks/38/type = "value"
 tracks/38/imported = false
 tracks/38/enabled = true
-tracks/38/path = NodePath("p1_3_1_f14:visible")
+tracks/38/path = NodePath("Wing3Part20:visible")
 tracks/38/interp = 0
 tracks/38/loop_wrap = true
 tracks/38/keys = {
@@ -783,7 +783,7 @@ tracks/38/keys = {
 tracks/39/type = "value"
 tracks/39/imported = false
 tracks/39/enabled = true
-tracks/39/path = NodePath("p1_3_1_f14:transform")
+tracks/39/path = NodePath("Wing3Part20:transform")
 tracks/39/interp = 0
 tracks/39/loop_wrap = true
 tracks/39/keys = {
@@ -795,7 +795,7 @@ tracks/39/keys = {
 tracks/40/type = "value"
 tracks/40/imported = false
 tracks/40/enabled = true
-tracks/40/path = NodePath("p1_3_1_f15:visible")
+tracks/40/path = NodePath("Wing3Part21:visible")
 tracks/40/interp = 0
 tracks/40/loop_wrap = true
 tracks/40/keys = {
@@ -807,7 +807,7 @@ tracks/40/keys = {
 tracks/41/type = "value"
 tracks/41/imported = false
 tracks/41/enabled = true
-tracks/41/path = NodePath("p1_3_1_f15:transform")
+tracks/41/path = NodePath("Wing3Part21:transform")
 tracks/41/interp = 0
 tracks/41/loop_wrap = true
 tracks/41/keys = {
@@ -819,7 +819,7 @@ tracks/41/keys = {
 tracks/42/type = "value"
 tracks/42/imported = false
 tracks/42/enabled = true
-tracks/42/path = NodePath("p1_3_1_f16:visible")
+tracks/42/path = NodePath("Wing3Part22:visible")
 tracks/42/interp = 0
 tracks/42/loop_wrap = true
 tracks/42/keys = {
@@ -831,7 +831,7 @@ tracks/42/keys = {
 tracks/43/type = "value"
 tracks/43/imported = false
 tracks/43/enabled = true
-tracks/43/path = NodePath("p1_3_1_f16:transform")
+tracks/43/path = NodePath("Wing3Part22:transform")
 tracks/43/interp = 0
 tracks/43/loop_wrap = true
 tracks/43/keys = {
@@ -843,7 +843,7 @@ tracks/43/keys = {
 tracks/44/type = "value"
 tracks/44/imported = false
 tracks/44/enabled = true
-tracks/44/path = NodePath("p1_3_1_f17:visible")
+tracks/44/path = NodePath("Wing3Part23:visible")
 tracks/44/interp = 0
 tracks/44/loop_wrap = true
 tracks/44/keys = {
@@ -855,7 +855,7 @@ tracks/44/keys = {
 tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("p1_3_1_f17:transform")
+tracks/45/path = NodePath("Wing3Part23:transform")
 tracks/45/interp = 0
 tracks/45/loop_wrap = true
 tracks/45/keys = {
@@ -867,7 +867,7 @@ tracks/45/keys = {
 tracks/46/type = "value"
 tracks/46/imported = false
 tracks/46/enabled = true
-tracks/46/path = NodePath("p1_3_1_f18:visible")
+tracks/46/path = NodePath("Wing3Part24:visible")
 tracks/46/interp = 0
 tracks/46/loop_wrap = true
 tracks/46/keys = {
@@ -879,7 +879,7 @@ tracks/46/keys = {
 tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("p1_3_1_f18:transform")
+tracks/47/path = NodePath("Wing3Part24:transform")
 tracks/47/interp = 0
 tracks/47/loop_wrap = true
 tracks/47/keys = {
@@ -891,7 +891,7 @@ tracks/47/keys = {
 tracks/48/type = "value"
 tracks/48/imported = false
 tracks/48/enabled = true
-tracks/48/path = NodePath("p1_3_1_f19:visible")
+tracks/48/path = NodePath("Wing3Part25:visible")
 tracks/48/interp = 0
 tracks/48/loop_wrap = true
 tracks/48/keys = {
@@ -903,7 +903,7 @@ tracks/48/keys = {
 tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("p1_3_1_f19:transform")
+tracks/49/path = NodePath("Wing3Part25:transform")
 tracks/49/interp = 0
 tracks/49/loop_wrap = true
 tracks/49/keys = {
@@ -915,7 +915,7 @@ tracks/49/keys = {
 tracks/50/type = "value"
 tracks/50/imported = false
 tracks/50/enabled = true
-tracks/50/path = NodePath("p1_3_1_f20:visible")
+tracks/50/path = NodePath("Wing3Part26:visible")
 tracks/50/interp = 0
 tracks/50/loop_wrap = true
 tracks/50/keys = {
@@ -927,7 +927,7 @@ tracks/50/keys = {
 tracks/51/type = "value"
 tracks/51/imported = false
 tracks/51/enabled = true
-tracks/51/path = NodePath("p1_3_1_f20:transform")
+tracks/51/path = NodePath("Wing3Part26:transform")
 tracks/51/interp = 0
 tracks/51/loop_wrap = true
 tracks/51/keys = {
@@ -939,7 +939,7 @@ tracks/51/keys = {
 tracks/52/type = "value"
 tracks/52/imported = false
 tracks/52/enabled = true
-tracks/52/path = NodePath("p1_3_1_f21:visible")
+tracks/52/path = NodePath("Wing3Part27:visible")
 tracks/52/interp = 0
 tracks/52/loop_wrap = true
 tracks/52/keys = {
@@ -951,7 +951,7 @@ tracks/52/keys = {
 tracks/53/type = "value"
 tracks/53/imported = false
 tracks/53/enabled = true
-tracks/53/path = NodePath("p1_3_1_f21:transform")
+tracks/53/path = NodePath("Wing3Part27:transform")
 tracks/53/interp = 0
 tracks/53/loop_wrap = true
 tracks/53/keys = {
@@ -963,7 +963,7 @@ tracks/53/keys = {
 tracks/54/type = "value"
 tracks/54/imported = false
 tracks/54/enabled = true
-tracks/54/path = NodePath("p1_3_1_f22:visible")
+tracks/54/path = NodePath("Wing3Part28:visible")
 tracks/54/interp = 0
 tracks/54/loop_wrap = true
 tracks/54/keys = {
@@ -975,7 +975,7 @@ tracks/54/keys = {
 tracks/55/type = "value"
 tracks/55/imported = false
 tracks/55/enabled = true
-tracks/55/path = NodePath("p1_3_1_f22:transform")
+tracks/55/path = NodePath("Wing3Part28:transform")
 tracks/55/interp = 0
 tracks/55/loop_wrap = true
 tracks/55/keys = {
@@ -987,7 +987,7 @@ tracks/55/keys = {
 tracks/56/type = "value"
 tracks/56/imported = false
 tracks/56/enabled = true
-tracks/56/path = NodePath("p1_3_1_f23:visible")
+tracks/56/path = NodePath("Wing3Part29:visible")
 tracks/56/interp = 0
 tracks/56/loop_wrap = true
 tracks/56/keys = {
@@ -999,7 +999,7 @@ tracks/56/keys = {
 tracks/57/type = "value"
 tracks/57/imported = false
 tracks/57/enabled = true
-tracks/57/path = NodePath("p1_3_1_f23:transform")
+tracks/57/path = NodePath("Wing3Part29:transform")
 tracks/57/interp = 0
 tracks/57/loop_wrap = true
 tracks/57/keys = {
@@ -1014,9 +1014,9 @@ _data = {
 &"loop": SubResource("Animation_31tcl")
 }
 
-[node name="Slot116_3" type="Node2D" unique_id=1889556373]
+[node name="Wing3" type="Node2D" unique_id=1889556373]
 
-[node name="p1_1_1_f5" type="Sprite2D" parent="." unique_id=1587436452]
+[node name="Wing3Part1" type="Sprite2D" parent="." unique_id=1587436452]
 material = SubResource("ShaderMaterial_gv25s")
 position = Vector2(-20.97, 28.348)
 rotation = -0.40097558
@@ -1025,7 +1025,7 @@ skew = 0.0005135536
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f5" type="Sprite2D" parent="." unique_id=50731555]
+[node name="Wing3Part2" type="Sprite2D" parent="." unique_id=50731555]
 material = SubResource("ShaderMaterial_gv25s")
 position = Vector2(18.611, 13.461)
 rotation = -0.004656544
@@ -1034,7 +1034,7 @@ skew = -0.00034344196
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f6" type="Sprite2D" parent="." unique_id=1793463942]
+[node name="Wing3Part3" type="Sprite2D" parent="." unique_id=1793463942]
 material = SubResource("ShaderMaterial_iv617")
 position = Vector2(-20.072, 27.944)
 rotation = -0.38913304
@@ -1043,7 +1043,7 @@ skew = 0.0037565231
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f6" type="Sprite2D" parent="." unique_id=322466296]
+[node name="Wing3Part4" type="Sprite2D" parent="." unique_id=322466296]
 material = SubResource("ShaderMaterial_iv617")
 position = Vector2(16.662, 13.571)
 rotation = -0.018559355
@@ -1052,7 +1052,7 @@ skew = -0.012719631
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f7" type="Sprite2D" parent="." unique_id=1174584090]
+[node name="Wing3Part5" type="Sprite2D" parent="." unique_id=1174584090]
 material = SubResource("ShaderMaterial_7y62j")
 position = Vector2(-19.075, 27.289)
 rotation = -0.38098258
@@ -1061,7 +1061,7 @@ skew = 0.012735605
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f7" type="Sprite2D" parent="." unique_id=1205570252]
+[node name="Wing3Part6" type="Sprite2D" parent="." unique_id=1205570252]
 material = SubResource("ShaderMaterial_7y62j")
 position = Vector2(14.462, 13.731)
 rotation = -0.032358643
@@ -1070,7 +1070,7 @@ skew = -0.030216217
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f8" type="Sprite2D" parent="." unique_id=71427530]
+[node name="Wing3Part7" type="Sprite2D" parent="." unique_id=71427530]
 material = SubResource("ShaderMaterial_705w4")
 position = Vector2(-18.277, 26.835)
 rotation = -0.367723
@@ -1079,7 +1079,7 @@ skew = 0.013319612
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f8" type="Sprite2D" parent="." unique_id=2037228249]
+[node name="Wing3Part8" type="Sprite2D" parent="." unique_id=2037228249]
 material = SubResource("ShaderMaterial_705w4")
 position = Vector2(12.263, 13.941)
 rotation = -0.048349388
@@ -1088,7 +1088,7 @@ skew = -0.044349074
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f9" type="Sprite2D" parent="." unique_id=1609134700]
+[node name="Wing3Part9" type="Sprite2D" parent="." unique_id=1609134700]
 material = SubResource("ShaderMaterial_fpdln")
 position = Vector2(-17.28, 26.23)
 rotation = -0.35862237
@@ -1097,7 +1097,7 @@ skew = 0.020775795
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f9" type="Sprite2D" parent="." unique_id=1972035510]
+[node name="Wing3Part10" type="Sprite2D" parent="." unique_id=1972035510]
 material = SubResource("ShaderMaterial_fpdln")
 position = Vector2(10.015, 14.252)
 rotation = -0.06198944
@@ -1106,7 +1106,7 @@ skew = -0.060815215
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f10" type="Sprite2D" parent="." unique_id=159413653]
+[node name="Wing3Part11" type="Sprite2D" parent="." unique_id=159413653]
 material = SubResource("ShaderMaterial_gp67v")
 position = Vector2(-16.532, 25.777)
 rotation = -0.3500637
@@ -1115,7 +1115,7 @@ skew = 0.025961995
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f10" type="Sprite2D" parent="." unique_id=1455638779]
+[node name="Wing3Part12" type="Sprite2D" parent="." unique_id=1455638779]
 material = SubResource("ShaderMaterial_gp67v")
 position = Vector2(8.066, 14.461)
 rotation = -0.078963906
@@ -1124,7 +1124,7 @@ skew = -0.07035875
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f11" type="Sprite2D" parent="." unique_id=1934335728]
+[node name="Wing3Part13" type="Sprite2D" parent="." unique_id=1934335728]
 material = SubResource("ShaderMaterial_g2wdl")
 position = Vector2(-15.584, 25.222)
 rotation = -0.34116945
@@ -1133,7 +1133,7 @@ skew = 0.034669876
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f11" type="Sprite2D" parent="." unique_id=96118535]
+[node name="Wing3Part14" type="Sprite2D" parent="." unique_id=96118535]
 material = SubResource("ShaderMaterial_g2wdl")
 position = Vector2(5.917, 14.871)
 rotation = -0.09354767
@@ -1142,7 +1142,7 @@ skew = -0.08619404
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f12" type="Sprite2D" parent="." unique_id=1802530316]
+[node name="Wing3Part15" type="Sprite2D" parent="." unique_id=1802530316]
 material = SubResource("ShaderMaterial_yjg80")
 position = Vector2(-14.736, 24.768)
 rotation = -0.328446
@@ -1151,7 +1151,7 @@ skew = 0.0355711
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f12" type="Sprite2D" parent="." unique_id=758602502]
+[node name="Wing3Part16" type="Sprite2D" parent="." unique_id=758602502]
 material = SubResource("ShaderMaterial_yjg80")
 position = Vector2(3.72, 15.331)
 rotation = -0.11028133
@@ -1160,7 +1160,7 @@ skew = -0.10011327
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f13" type="Sprite2D" parent="." unique_id=472228589]
+[node name="Wing3Part17" type="Sprite2D" parent="." unique_id=472228589]
 material = SubResource("ShaderMaterial_bydqh")
 position = Vector2(-13.739, 24.214)
 rotation = -0.3197936
@@ -1169,7 +1169,7 @@ skew = 0.042847395
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f13" type="Sprite2D" parent="." unique_id=1860537872]
+[node name="Wing3Part18" type="Sprite2D" parent="." unique_id=1860537872]
 material = SubResource("ShaderMaterial_bydqh")
 position = Vector2(1.572, 15.892)
 rotation = -0.123513825
@@ -1178,7 +1178,7 @@ skew = -0.11660755
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_1_1_f14" type="Sprite2D" parent="." unique_id=1000126481]
+[node name="Wing3Part19" type="Sprite2D" parent="." unique_id=1000126481]
 position = Vector2(-13.14, 24.011)
 rotation = -0.3112492
 scale = Vector2(0.4065332, 0.40704423)
@@ -1186,7 +1186,7 @@ skew = 0.047798276
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f14" type="Sprite2D" parent="." unique_id=1042854048]
+[node name="Wing3Part20" type="Sprite2D" parent="." unique_id=1042854048]
 position = Vector2(-0.476, 16.401)
 rotation = -0.14125991
 scale = Vector2(0.44392172, 0.40007406)
@@ -1194,7 +1194,7 @@ skew = -0.12948632
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f15" type="Sprite2D" parent="." unique_id=954179746]
+[node name="Wing3Part21" type="Sprite2D" parent="." unique_id=954179746]
 material = SubResource("ShaderMaterial_qi6gc")
 position = Vector2(1.672, 15.891)
 rotation = -0.123513825
@@ -1203,7 +1203,7 @@ skew = -0.11660755
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f16" type="Sprite2D" parent="." unique_id=1245073975]
+[node name="Wing3Part22" type="Sprite2D" parent="." unique_id=1245073975]
 material = SubResource("ShaderMaterial_ai7ig")
 position = Vector2(3.77, 15.331)
 rotation = -0.11028133
@@ -1212,7 +1212,7 @@ skew = -0.10011327
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f17" type="Sprite2D" parent="." unique_id=344388244]
+[node name="Wing3Part23" type="Sprite2D" parent="." unique_id=344388244]
 material = SubResource("ShaderMaterial_6wk5g")
 position = Vector2(5.967, 14.871)
 rotation = -0.09354767
@@ -1221,7 +1221,7 @@ skew = -0.08619404
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f18" type="Sprite2D" parent="." unique_id=69843358]
+[node name="Wing3Part24" type="Sprite2D" parent="." unique_id=69843358]
 material = SubResource("ShaderMaterial_quy6n")
 position = Vector2(8.166, 14.511)
 rotation = -0.078963906
@@ -1230,7 +1230,7 @@ skew = -0.07035875
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f19" type="Sprite2D" parent="." unique_id=1426447368]
+[node name="Wing3Part25" type="Sprite2D" parent="." unique_id=1426447368]
 material = SubResource("ShaderMaterial_ird4s")
 position = Vector2(10.164, 14.151)
 rotation = -0.06198944
@@ -1239,7 +1239,7 @@ skew = -0.060815215
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f20" type="Sprite2D" parent="." unique_id=1884773853]
+[node name="Wing3Part26" type="Sprite2D" parent="." unique_id=1884773853]
 material = SubResource("ShaderMaterial_ly0kt")
 position = Vector2(12.313, 13.891)
 rotation = -0.048349388
@@ -1248,7 +1248,7 @@ skew = -0.044349074
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f21" type="Sprite2D" parent="." unique_id=1527467933]
+[node name="Wing3Part27" type="Sprite2D" parent="." unique_id=1527467933]
 material = SubResource("ShaderMaterial_4cvah")
 position = Vector2(14.562, 13.68)
 rotation = -0.032358643
@@ -1257,7 +1257,7 @@ skew = -0.030216217
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f22" type="Sprite2D" parent="." unique_id=672190709]
+[node name="Wing3Part28" type="Sprite2D" parent="." unique_id=672190709]
 material = SubResource("ShaderMaterial_1ihs1")
 position = Vector2(16.761, 13.52)
 rotation = -0.018559355
@@ -1266,7 +1266,7 @@ skew = -0.012719631
 texture = ExtResource("2_55yjx")
 centered = false
 
-[node name="p1_3_1_f23" type="Sprite2D" parent="." unique_id=1649721022]
+[node name="Wing3Part29" type="Sprite2D" parent="." unique_id=1649721022]
 material = SubResource("ShaderMaterial_mp6xd")
 position = Vector2(18.611, 13.461)
 rotation = -0.004656544

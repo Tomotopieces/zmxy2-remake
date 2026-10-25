@@ -20,7 +20,7 @@ func _ready() -> void:
 		for s in args[0].split(","):
 			ids.append(int(s))
 	else:
-		for i in range(30, 82):
+		for i in MonsterData.ids():
 			var md := load(MonsterData.path(i)) as MonsterData
 			if md != null and md.is_boss and i != 79:   # (79 stands for 劈天斧 / 风神盾: the arena picks one of them)
 				ids.append(i)

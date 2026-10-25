@@ -1327,7 +1327,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"dishahulu"
 display_name = "地煞葫芦"
-type = &"treasure"
+type = &"fabao"
 quality = "精良"
 value = 80
 color = Color(0, 0, 1, 1)
@@ -1339,7 +1339,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"tianshagujian"
 display_name = "天煞古剑"
-type = &"treasure"
+type = &"fabao"
 quality = "史诗"
 value = 160
 color = Color(0.4, 0, 0.6, 1)
@@ -1351,7 +1351,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"baishuangjing"
 display_name = "白霜镜"
-type = &"treasure"
+type = &"fabao"
 quality = "史诗"
 value = 160
 color = Color(0.4, 0, 0.6, 1)
@@ -1363,7 +1363,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"luochayaosan"
 display_name = "罗刹妖伞"
-type = &"treasure"
+type = &"fabao"
 quality = "史诗"
 value = 160
 color = Color(0.4, 0, 0.6, 1)
@@ -1375,7 +1375,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"xuehaimotong"
 display_name = "血海魔童"
-type = &"treasure"
+type = &"fabao"
 quality = "史诗"
 value = 160
 color = Color(0.4, 0, 0.6, 1)
@@ -1387,7 +1387,7 @@ ground_size = Vector2(52, 55)
 script = ExtResource("3_wi3ie")
 id = &"wudushou"
 display_name = "五毒兽"
-type = &"treasure"
+type = &"fabao"
 quality = "传说"
 value = 320
 color = Color(1, 0.4, 0, 1)
@@ -2022,24 +2022,24 @@ stone_drop = {
 "always": [79.0, 80.0],
 "item": "qianghuashi_1",
 "level_caps": {
-"sl11": 4.0,
-"sl111": -1.0,
-"sl12": 7.0,
-"sl13": 10.0,
-"sl21": 13.0,
-"sl22": 16.0,
-"sl23": 19.0,
-"sl31": 22.0,
-"sl32": 25.0,
-"sl33": 28.0,
-"sl41": -1.0,
-"sl51": 27.0,
-"sl61": 27.0,
-"sl71": -1.0
+"guicheng": 4.0,
+"guoqinghuodong": -1.0,
+"wuchangxiang": 7.0,
+"guimenguan": 10.0,
+"jieyinyuan": 13.0,
+"panguandian": 16.0,
+"yanluodian": 19.0,
+"wangchuanhe": 22.0,
+"naiheqiao": 25.0,
+"wangxiangtai": 28.0,
+"zhuanlundian": -1.0,
+"baigumijing": 27.0,
+"niumogu": 27.0,
+"shibacengdiyu": -1.0
 }
 }
 tabs = {
-"equip": ["weapon", "cloth", "accessory", "treasure"],
+"equip": ["weapon", "cloth", "accessory", "fabao"],
 "item": ["item"],
 "look": ["fashion", "wing"]
 }
@@ -2058,23 +2058,23 @@ strengthen = {
 fusion = {
 "cost": 1000.0,
 "recipes": [{
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["dishalingjie", "dishayuanjia", "dishaquanzhang"],
 "out": "dishahulu"
 }, {
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["tianshagulian", "tianshayupao", "tianshayueji"],
 "out": "tianshagujian"
 }, {
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["baishuangxiongjia", "baishuangzhongjia", "baishuangyaozhang"],
 "out": "baishuangjing"
 }, {
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["luochaguiyi", "luochaliandao", "luochazhihuan"],
 "out": "luochayaosan"
 }, {
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["xuehaiyaoke", "xuehaixiehuang", "xuehaimojia"],
 "out": "xuehaimotong"
 }, {
@@ -2142,13 +2142,13 @@ fusion = {
 "mats": ["xiezhiyinji", "zhuzhiyinji", "gongzhiyinji"],
 "out": "duchongyinji"
 }, {
-"kind": "treasure",
+"kind": "fabao",
 "mats": ["chanzhiyinji", "shezhiyinji", "duchongyinji"],
 "out": "wudushou"
 }],
 "stone_chance": 0.75
 }
-treasures = {
+fabao = {
 "cost_mul": 1000.0,
 "defs": {
 "baishuangjing": {

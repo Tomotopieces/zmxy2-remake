@@ -34,7 +34,7 @@ func _see_through(a: Image, b: Image) -> Array:
 	return out
 
 var _out := ""
-var _only: PackedStringArray = []   ## --only=sl21,sl31: just these stages
+var _only: PackedStringArray = []   ## --only=jieyinyuan,wangchuanhe: just these stages
 
 func _ready() -> void:
 	var scale := 1.0

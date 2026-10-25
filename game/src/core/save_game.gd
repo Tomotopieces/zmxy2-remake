@@ -121,6 +121,10 @@ static func _migrate(d: Dictionary) -> Dictionary:
 			for k in w:
 				if w[k] is Dictionary and w[k].get("id") is String:
 					w[k].id = V1_IDS.get(w[k].id, w[k].id)
+	var worn = d.get("worn", {})
+	if worn is Dictionary and worn.has("treasure"):   # the 法宝 slot was called "treasure" before
+		worn["fabao"] = worn["treasure"]
+		worn.erase("treasure")
 	d["version"] = VERSION
 	return d
 

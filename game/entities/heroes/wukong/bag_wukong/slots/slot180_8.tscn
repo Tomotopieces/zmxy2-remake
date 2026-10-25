@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" path="res://entities/heroes/wukong/bag_wukong/tex/bag_wukong_frame_12.png" id="1_kj0vu"]
 
-[node name="Slot180_8" type="Node2D" unique_id=1737062691]
+[node name="Slot1808" type="Node2D" unique_id=1737062691]
 
-[node name="p1" type="Sprite2D" parent="." unique_id=969989534]
+[node name="Slot1808Part1" type="Sprite2D" parent="." unique_id=969989534]
 position = Vector2(-2.3, -0.85)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_kj0vu")

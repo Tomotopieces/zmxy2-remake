@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://deiqdm1htfa7w"]
 
 [ext_resource type="Script" uid="uid://btyl3m2ymk8rf" path="res://entities/objects/boat/boat.gd" id="1_idnnu"]
-[ext_resource type="Texture2D" uid="uid://bcfwtgdyiuudr" path="res://stages/sl31/tex/boat.png" id="2_idnnu"]
-[ext_resource type="Texture2D" uid="uid://bgqmkllfy6rpt" path="res://stages/sl31/tex/sl31_frame.png" id="3_0ierj"]
-[ext_resource type="Texture2D" uid="uid://dpmgc1g7brc8c" path="res://stages/sl31/tex/sl31_frame_2.png" id="4_dyvtx"]
-[ext_resource type="Texture2D" uid="uid://b438u8b2iiasv" path="res://stages/sl31/tex/sl31_frame_3.png" id="5_3rye3"]
-[ext_resource type="Texture2D" uid="uid://btfnusolbaoir" path="res://stages/sl31/tex/sl31_frame_4.png" id="6_wgf2t"]
-[ext_resource type="Texture2D" uid="uid://dchr7mer6myca" path="res://stages/sl31/tex/sl31_frame_5.png" id="7_su1or"]
+[ext_resource type="Texture2D" uid="uid://bcfwtgdyiuudr" path="res://stages/wangchuanhe/tex/boat.png" id="2_idnnu"]
+[ext_resource type="Texture2D" uid="uid://bgqmkllfy6rpt" path="res://stages/wangchuanhe/tex/wangchuanhe_frame.png" id="3_0ierj"]
+[ext_resource type="Texture2D" uid="uid://dpmgc1g7brc8c" path="res://stages/wangchuanhe/tex/wangchuanhe_frame_2.png" id="4_dyvtx"]
+[ext_resource type="Texture2D" uid="uid://b438u8b2iiasv" path="res://stages/wangchuanhe/tex/wangchuanhe_frame_3.png" id="5_3rye3"]
+[ext_resource type="Texture2D" uid="uid://btfnusolbaoir" path="res://stages/wangchuanhe/tex/wangchuanhe_frame_4.png" id="6_wgf2t"]
+[ext_resource type="Texture2D" uid="uid://dchr7mer6myca" path="res://stages/wangchuanhe/tex/wangchuanhe_frame_5.png" id="7_su1or"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1f44i"]
 size = Vector2(380, 20)

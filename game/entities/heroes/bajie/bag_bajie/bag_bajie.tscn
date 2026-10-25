@@ -84,7 +84,7 @@ variants = {
 3: ExtResource("4_s7u4n")
 }
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=1047094452]
+[node name="BagBajiePart1" type="Sprite2D" parent="." unique_id=1047094452]
 position = Vector2(-25.25, -0.050000012)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_nbexv")
@@ -105,13 +105,13 @@ variants = {
 6: ExtResource("11_v1f6o")
 }
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=1491407902]
+[node name="BagBajiePart2" type="Sprite2D" parent="." unique_id=1491407902]
 position = Vector2(-20.4, -8.95)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_l7gf2")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=436756045]
+[node name="BagBajiePart3" type="Sprite2D" parent="." unique_id=436756045]
 position = Vector2(-20.4, -10.099999)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_ecfsg")
@@ -150,7 +150,7 @@ variants = {
 11: ExtResource("29_xur4f")
 }
 
-[node name="Part4" type="Sprite2D" parent="." unique_id=85100314]
+[node name="BagBajiePart4" type="Sprite2D" parent="." unique_id=85100314]
 position = Vector2(-11.65, -9.7)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("30_qe2nu")
@@ -191,7 +191,7 @@ variants = {
 12: ExtResource("49_3iyr5")
 }
 
-[node name="Part5" type="Sprite2D" parent="." unique_id=1192027465]
+[node name="BagBajiePart5" type="Sprite2D" parent="." unique_id=1192027465]
 position = Vector2(-33.1, -53.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("50_t0hoy")

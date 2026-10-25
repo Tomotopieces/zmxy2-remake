@@ -10,7 +10,7 @@ const CELL := 50.0
 const CELL_GAP := 7.0
 const SLOT_SCENE := "res://ui/components/slot.tscn"   ## the 25 bag cells are scene instances of it
 const MENU_OFFSET := Vector2(25, 25)
-const SLOT_NODES := {&"weapon": "WeaponSlot", &"cloth": "ClothSlot", &"accessory": "AccessorySlot", &"treasure": "TreasureSlot",
+const SLOT_NODES := {&"weapon": "WeaponSlot", &"cloth": "ClothSlot", &"accessory": "AccessorySlot", &"fabao": "FabaoSlot",
 	&"fashion": "FashionSlot", &"wing": "WingSlot"}
 const TABS := {"BtnZhuangBei": "equip", "BtnDaoJu": "item", "BtnShiZhuang": "look"}   ## page button -> bag page
 

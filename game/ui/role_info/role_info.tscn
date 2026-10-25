@@ -36,8 +36,8 @@
 [ext_resource type="Texture2D" uid="uid://d4i1jkxtiyd68" path="res://ui/role_info/tex/role_info_btn_settings_2.png" id="34_juerk"]
 [ext_resource type="Texture2D" uid="uid://dfclg1ss3wvxg" path="res://ui/role_info/tex/role_info_btn_skills.png" id="35_ox3ab"]
 [ext_resource type="Texture2D" uid="uid://4vhws62f47f" path="res://ui/role_info/tex/role_info_btn_skills_2.png" id="36_iw216"]
-[ext_resource type="Texture2D" uid="uid://b2ylmei4cs3rh" path="res://ui/role_info/tex/role_info_btn_treasure.png" id="37_agm2j"]
-[ext_resource type="Texture2D" uid="uid://dokgl11sovtrh" path="res://ui/role_info/tex/role_info_btn_treasure_2.png" id="38_2fcip"]
+[ext_resource type="Texture2D" uid="uid://b2ylmei4cs3rh" path="res://ui/role_info/tex/role_info_btn_fabao.png" id="37_agm2j"]
+[ext_resource type="Texture2D" uid="uid://dokgl11sovtrh" path="res://ui/role_info/tex/role_info_btn_fabao_2.png" id="38_2fcip"]
 
 [ext_resource type="Script" path="res://src/ui/icon_set.gd" id="xp1rl17"]
 
@@ -127,7 +127,7 @@ expand_margin_top = 0
 expand_margin_right = 0
 expand_margin_bottom = 0
 
-[node name="role_info" type="Control" unique_id=582367390]
+[node name="RoleInfo" type="Control" unique_id=582367390]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -137,7 +137,7 @@ script = ExtResource("1_l0nv2")
 unique_name_in_owner = true
 position = Vector2(1, 2)
 
-[node name="OtherMat_v10_245" type="Sprite2D" parent="Background" unique_id=386913883]
+[node name="Background" type="Sprite2D" parent="Background" unique_id=386913883]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_li4bb")
 centered = false
@@ -148,7 +148,7 @@ position = Vector2(53.75, 35.9)
 
 [node name="Wukong" type="Node2D" parent="Portrait" unique_id=242818043]
 
-[node name="OtherMat_v10_247" type="Sprite2D" parent="Portrait/Wukong" unique_id=2130333592]
+[node name="Wukong" type="Sprite2D" parent="Portrait/Wukong" unique_id=2130333592]
 position = Vector2(-37.2, -34.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_8hb5v")
@@ -157,7 +157,7 @@ centered = false
 [node name="Tangseng" type="Node2D" parent="Portrait" unique_id=1897666311]
 visible = false
 
-[node name="OtherMat_v10_248" type="Sprite2D" parent="Portrait/Tangseng" unique_id=946056272]
+[node name="Tangseng" type="Sprite2D" parent="Portrait/Tangseng" unique_id=946056272]
 position = Vector2(-34.7, -34.2)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_t77i7")
@@ -166,7 +166,7 @@ centered = false
 [node name="Bajie" type="Node2D" parent="Portrait" unique_id=1689516550]
 visible = false
 
-[node name="OtherMat_v10_250" type="Sprite2D" parent="Portrait/Bajie" unique_id=1332936263]
+[node name="Bajie" type="Sprite2D" parent="Portrait/Bajie" unique_id=1332936263]
 position = Vector2(-39.7, -44.35)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_8cujn")
@@ -174,7 +174,7 @@ centered = false
 
 [node name="Art" type="Node2D" parent="." unique_id=2101054265]
 
-[node name="OtherMat_v10_255" type="Sprite2D" parent="Art" unique_id=1575911440]
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=1575911440]
 position = Vector2(6.9, 475.45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_1xp7h")
@@ -231,7 +231,7 @@ position = Vector2(100, 559.55)
 
 [node name="Art" type="Node2D" parent="RageBar" unique_id=698313208]
 
-[node name="OtherMat_v10_290" type="Sprite2D" parent="RageBar/Art" unique_id=1976423443]
+[node name="RageBar" type="Sprite2D" parent="RageBar/Art" unique_id=1976423443]
 position = Vector2(0, -13.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("23_ki2fs")
@@ -254,7 +254,7 @@ position = Vector2(39.9, 503.15)
 
 [node name="Off" type="Node2D" parent="RageLogo" unique_id=887591235]
 
-[node name="OtherMat_v10_296" type="Sprite2D" parent="RageLogo/Off" unique_id=555338661]
+[node name="Off" type="Sprite2D" parent="RageLogo/Off" unique_id=555338661]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_avouy")
 centered = false
@@ -262,7 +262,7 @@ centered = false
 [node name="On" type="Node2D" parent="RageLogo" unique_id=1730985525]
 visible = false
 
-[node name="OtherMat_v10_298" type="Sprite2D" parent="RageLogo/On" unique_id=1677754689]
+[node name="On" type="Sprite2D" parent="RageLogo/On" unique_id=1677754689]
 position = Vector2(-2.75, -4.25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("26_7baeu")
@@ -369,7 +369,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 position = Vector2(101.45, 41.65)
 
-[node name="OtherMat_v10_317" type="Sprite2D" parent="Lettering" unique_id=509181973]
+[node name="Lettering" type="Sprite2D" parent="Lettering" unique_id=509181973]
 position = Vector2(-8.449997, -23.849998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("30_wr426")
@@ -423,7 +423,7 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnstudyDown8
 theme_override_styles/disabled = SubResource("StyleBoxTexture_btnstudyUp6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
 
-[node name="BtnTreasure" type="Button" parent="." unique_id=2068475411]
+[node name="BtnFabao" type="Button" parent="." unique_id=2068475411]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 78.0

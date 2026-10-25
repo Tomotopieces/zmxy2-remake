@@ -1,16 +1,16 @@
 class_name TabMenu
 extends CanvasLayer
 ## The in-game menu (ui/tab_menu/tab_menu.tscn): one background with a tab bar on top — 背包 | 技能 | 法宝 | 设置 and 返回 —
-## and the chosen tab's page under it (Backpack, SkillShop, SutraPanel, PauseMenu). The pad switches tabs with LT / RT;
+## and the chosen tab's page under it (Backpack, SkillShop, FabaoPanel, PauseMenu). The pad switches tabs with LT / RT;
 ## C / V / B open (or, on their own tab, close) a tab, Esc / Start / the pad's B close the menu. 法宝 is greyed out and
-## skipped without a worn treasure. Pauses the game while open.
+## skipped without a worn fabao. Pauses the game while open.
 
 signal to_map
 signal to_menu
 
-const TABS: Array[StringName] = [&"bag", &"skill", &"treasure", &"settings"]
-const BUTTONS := {&"bag": "BtnBag", &"skill": "BtnSkill", &"treasure": "BtnTreasure", &"settings": "BtnSettings"}
-const KEYS := {&"open_bag": &"bag", &"open_skills": &"skill", &"open_treasure": &"treasure"}
+const TABS: Array[StringName] = [&"bag", &"skill", &"fabao", &"settings"]
+const BUTTONS := {&"bag": "BtnBag", &"skill": "BtnSkill", &"fabao": "BtnFabao", &"settings": "BtnSettings"}
+const KEYS := {&"open_bag": &"bag", &"open_skills": &"skill", &"open_fabao": &"fabao"}
 const SELECTED := Color(1, 0.6, 0)   ## the open tab's text: the orange of a hovered set_btn
 const TRIGGER := 0.6                 ## LT / RT count as pressed past this
 
@@ -59,7 +59,7 @@ func _process(_dt: float) -> void:
 		_ui.piece(icon).visible = _tabs.size() > 1 and PadFocus.pad_last   # pad hints only while the pad is used
 
 func available(t: StringName) -> bool:
-	return t in _tabs and (t != &"treasure" or GameState.worn[&"treasure"] != null)
+	return t in _tabs and (t != &"fabao" or GameState.worn[&"fabao"] != null)
 
 func show_tab(t: StringName) -> void:
 	if page:
@@ -68,7 +68,7 @@ func show_tab(t: StringName) -> void:
 	match t:
 		&"bag": page = Backpack.new()
 		&"skill": page = SkillShop.new()
-		&"treasure": page = SutraPanel.new()
+		&"fabao": page = FabaoPanel.new()
 		&"settings":
 			var p := PauseMenu.new()
 			p.in_stage = not on_map

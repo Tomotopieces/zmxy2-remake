@@ -1,5 +1,5 @@
 extends Node
-## Screenshots the real bag, treasure and shop panels (the ones the game opens) into <out_dir>:
+## Screenshots the real bag, fabao and shop panels (the ones the game opens) into <out_dir>:
 ##   godot --path game --position 6000,6000 res://tools/panel_shot.tscn -- <out_dir> [role]
 ## A scene (not -s) so the autoloads (GameState, Snd) and the default theme exist, exactly as in the game.
 func _ready() -> void:
@@ -11,16 +11,16 @@ func _ready() -> void:
 	var main: PlayScreen = PlayScreen.create(Vector2i(1, 1))
 	add_child(main)
 	await get_tree().create_timer(0.5).timeout
-	# a worn treasure, the way the console / tests hand one out (the 法宝 tab needs one)
+	# a worn fabao, the way the console / tests hand one out (the 法宝 tab needs one)
 	var it := GameState.make_item("dishahulu")
 	GameState.add_to_bag(it)
 	GameState.wear(GameState.bag.find(it))
 	main.open_menu(&"bag")
 	await get_tree().create_timer(0.5).timeout
 	await _shot(out + "/B_backpack.png")
-	main._menu.show_tab(&"treasure")
+	main._menu.show_tab(&"fabao")
 	await get_tree().create_timer(0.5).timeout
-	await _shot(out + "/B_sutra.png")
+	await _shot(out + "/B_fabao.png")
 	main.queue_free()
 	var shop := ShopScreen.new()
 	add_child(shop)

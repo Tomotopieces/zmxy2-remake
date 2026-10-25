@@ -76,7 +76,7 @@ texture = ExtResource("13_7ipjt")
 [sub_resource type="StyleBoxTexture" id="Slot6Hover"]
 texture = ExtResource("14_pffwd")
 
-[node name="save_slots" type="Control" unique_id=34313135]
+[node name="SaveSlots" type="Control" unique_id=34313135]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -84,7 +84,7 @@ script = ExtResource("1_unw5w")
 
 [node name="Art" type="Node2D" parent="." unique_id=1523768598]
 
-[node name="Common_v7_502" type="Sprite2D" parent="Art" unique_id=976147088]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=976147088]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_dgjw0")
 centered = false

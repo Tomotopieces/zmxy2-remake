@@ -65,7 +65,7 @@ extends Resource
 
 @export var attacks: Dictionary = {}     ## action name -> AttackData
 
-@export var treasures := {}   ## magic treasure behaviour numbers
+@export var fabao := {}   ## magic fabao behaviour numbers
 
 @export_group("Learning")
 @export var learn_active: PackedStringArray      ## skill actions in shop order

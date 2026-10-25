@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/bag_tangseng/tex/bag_tangseng_frame_22.png" id="1_on2cu"]
 
-[node name="Slot349_8" type="Node2D" unique_id=925792871]
+[node name="Slot3498" type="Node2D" unique_id=925792871]
 
-[node name="p2" type="Sprite2D" parent="." unique_id=203802416]
+[node name="Slot3498Part1" type="Sprite2D" parent="." unique_id=203802416]
 position = Vector2(-10.6, -19.2)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_on2cu")

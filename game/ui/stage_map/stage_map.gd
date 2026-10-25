@@ -102,18 +102,18 @@ func _on_button(b: String) -> void:
 			a.play.connect(func(s: Vector2i): play.emit(s))
 			_open(a)
 
-## The menu (背包 / 技能 / 法宝 / 设置), as in a stage; 法宝 without a worn treasure only says so.
+## The menu (背包 / 技能 / 法宝 / 设置), as in a stage; 法宝 without a worn fabao only says so.
 func open_menu(tab: StringName) -> void:
 	if _popup:
 		return
-	if tab == &"treasure" and GameState.worn[&"treasure"] == null:
+	if tab == &"fabao" and GameState.worn[&"fabao"] == null:
 		Toast.show_on(self, "请先装备法宝")
 		return
 	var m := TabMenu.create(tab, true)
 	m.to_menu.connect(func(): to_menu.emit())
 	_open(m)
 
-const MENU_KEYS := {&"open_bag": &"bag", &"open_skills": &"skill", &"open_treasure": &"treasure", &"pause": &"settings"}
+const MENU_KEYS := {&"open_bag": &"bag", &"open_skills": &"skill", &"open_fabao": &"fabao", &"pause": &"settings"}
 
 func _unhandled_input(e: InputEvent) -> void:
 	for action in MENU_KEYS:

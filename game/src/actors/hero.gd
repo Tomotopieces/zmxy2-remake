@@ -56,7 +56,7 @@ var debuffs := HeroDebuffs.new()   ## status effects set by monsters
 var _poison := [0.0, 1.0, 0.0]   ## power, tick (s), elapsed
 var held_by: Node = null   ## grabbed (setStatic + setLostKeyboard by a monster): no input, no own movement
 var _lock_glow := false   ## the anti-lock protection runs
-var treasure: Treasure  ## worn magic treasure following the hero (H)
+var fabao: Fabao  ## worn magic fabao following the hero (H)
 var controls_locked := false   ## stage over: no more input
 
 ## The hero of the current game (GameState.role): its scene, whose root carries its script.
@@ -75,7 +75,7 @@ func _ready() -> void:
 	refill()
 	GameState.leveled_up.connect(_on_level_up)
 	GameState.equipment_changed.connect(_on_equipment_changed)
-	_sync_treasure.call_deferred()
+	_sync_fabao.call_deferred()
 
 func _apply_appearance() -> void:
 	var look := GameState.appearance()
@@ -89,7 +89,7 @@ func _apply_appearance() -> void:
 ## in full when the gear goes on again.
 func _on_equipment_changed() -> void:
 	_apply_appearance()
-	_sync_treasure()
+	_sync_fabao()
 	var old_hp := max_hp
 	var old_mp := max_mp
 	max_hp = GameState.max_hp()
@@ -102,17 +102,17 @@ func _on_equipment_changed() -> void:
 	hp = mini(hp, max_hp)
 	mp = mini(mp, max_mp)
 
-## The treasure companion matches the worn treasure (a new one when it changes or levels up).
-func _sync_treasure() -> void:
-	var it: Item = GameState.worn[&"treasure"]
-	if is_instance_valid(treasure) and treasure.item == it and it != null:
+## The fabao companion matches the worn fabao (a new one when it changes or levels up).
+func _sync_fabao() -> void:
+	var it: Item = GameState.worn[&"fabao"]
+	if is_instance_valid(fabao) and fabao.item == it and it != null:
 		return
-	if is_instance_valid(treasure):
-		treasure.queue_free()
-	treasure = null
+	if is_instance_valid(fabao):
+		fabao.queue_free()
+	fabao = null
 	if it != null and is_inside_tree() and world:
-		treasure = Treasure.create(self, it)
-		world.add_object(treasure)
+		fabao = Fabao.create(self, it)
+		world.add_object(fabao)
 
 func refill() -> void:
 	max_hp = GameState.max_hp()
@@ -156,7 +156,7 @@ func _physics_process(delta: float) -> void:
 		_dir = 0
 		running = false
 	if has_debuff(&"net"):
-		# BaseHero.move(): caught in the net the hero neither walks nor falls; attacks and treasures still work
+		# BaseHero.move(): caught in the net the hero neither walks nor falls; attacks and fabao still work
 		velocity = Vector2.ZERO
 	else:
 		if not _no_gravity:
@@ -204,8 +204,8 @@ func _read_input() -> void:
 	_read_attack_input()
 	if Input.is_action_just_pressed("rage"):
 		_try_transform()
-	if Input.is_action_just_pressed("treasure") and is_instance_valid(treasure):
-		treasure.use()
+	if Input.is_action_just_pressed("fabao") and is_instance_valid(fabao):
+		fabao.use()
 
 # ------------------------------------------------------------------ input buffer
 
@@ -709,7 +709,7 @@ func restore_mp(amount: int) -> void:
 	mp = mini(mp + amount, max_mp)
 
 ## RoleInfo.addWs: rage = round(damage / power of the last move * 2); when that rounds to 0, damage / 8.
-## (Treasure hits count too: the divisor is the hero's last move, not the treasure's own damage.)
+## (Fabao hits count too: the divisor is the hero's last move, not the fabao's own damage.)
 func rage_for_damage(dmg: int) -> float:
 	var a := _last_attack_data
 	var power := float(a.flat) if a != null and a.flat > 0 else float(GameState.attack_power()) * (a.power_mul if a != null and a.power_mul > 0.0 else 1.0)

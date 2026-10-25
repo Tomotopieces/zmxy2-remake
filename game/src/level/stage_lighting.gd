@@ -50,7 +50,7 @@ var _motes: CPUParticles2D   ## the motes' emitter: it follows the view, the mot
 var _glows: Array = []      ## [glow Sprite2D, its entry of "glows", phase] - lights hung on pictures of the scene
 var _lamps: Array[Sprite2D] = []   ## the hall's lamps: additive glows that waver (one per "lamps" entry)
 var _t := 0.0
-var _treasure_puppet: Puppet
+var _fabao_puppet: Puppet
 var _sky: CanvasLayer           ## behind the world: the moon's light and the lightning bolt
 var _flash: ColorRect
 var _rain_mat: ShaderMaterial
@@ -648,12 +648,12 @@ func _physics_process(delta: float) -> void:
 			continue
 		seen[a.get_instance_id()] = true
 		_update_actor(a)
-	var tr: Treasure = _lv.hero.treasure
-	if is_instance_valid(tr) and tr.puppet != null and tr.puppet != _treasure_puppet:
-		_treasure_puppet = tr.puppet   # the hero's magic treasure: a mild even tint and the backlight rim (it floats, so no gradient)
+	var tr: Fabao = _lv.hero.fabao
+	if is_instance_valid(tr) and tr.puppet != null and tr.puppet != _fabao_puppet:
+		_fabao_puppet = tr.puppet   # the hero's magic fabao: a mild even tint and the backlight rim (it floats, so no gradient)
 		var b: Dictionary = _cfg.body
 		var mid := _color(b.shade).lerp(_color(b.lit), 0.5)
-		_treasure_puppet.set_light(mid, mid, float(b.height), float(b.rim_strength), float(b.rim_width))
+		_fabao_puppet.set_light(mid, mid, float(b.height), float(b.rim_strength), float(b.rim_width))
 	for id in _lit.keys():
 		if not seen.has(id):
 			_lit.erase(id)

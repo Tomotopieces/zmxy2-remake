@@ -59,7 +59,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 22
 text = "技能"
 
-[node name="BtnTreasure" parent="Tabs" instance=ExtResource("set_btn")]
+[node name="BtnFabao" parent="Tabs" instance=ExtResource("set_btn")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(76, 32)
 layout_mode = 2

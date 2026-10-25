@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" path="res://ui/shop_confirm/tex/shop_confirm_background.png" id="2_s6huv"]
 [ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://ui/components/yellow_button.tscn" id="yellow_button"]
 
-[node name="shop_confirm" type="Control" unique_id=319509519]
+[node name="ShopConfirm" type="Control" unique_id=319509519]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -17,7 +17,7 @@ offset_bottom = 590.0
 
 [node name="Art" type="Node2D" parent="." unique_id=366613652]
 
-[node name="backpack_v5_583" type="Sprite2D" parent="Art" unique_id=703315418]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=703315418]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_s6huv")
 centered = false

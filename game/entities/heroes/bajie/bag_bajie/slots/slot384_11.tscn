@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame_7.png" id="1_1qncq"]
 
-[node name="Slot384_11" type="Node2D" unique_id=1792801691]
+[node name="Slot38411" type="Node2D" unique_id=1792801691]
 
-[node name="p1" type="Sprite2D" parent="." unique_id=2045784517]
+[node name="Slot38411Part1" type="Sprite2D" parent="." unique_id=2045784517]
 position = Vector2(-23.65, -16.75)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_1qncq")

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="set_btn"]
 [ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://ui/components/yellow_button.tscn" id="yellow_button"]
 
-[node name="forge_pack" type="Control" unique_id=646844994]
+[node name="ForgePack" type="Control" unique_id=646844994]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -15,7 +15,7 @@ script = ExtResource("1_tcmg4")
 
 [node name="Art" type="Node2D" parent="." unique_id=1074061141]
 
-[node name="OtherMat_v10_562" type="Sprite2D" parent="Art" unique_id=88804093]
+[node name="Background" type="Sprite2D" parent="Art" unique_id=88804093]
 position = Vector2(80, 53.65)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_d3q6t")

@@ -30,14 +30,14 @@ resource_local_to_scene = true
 script = ExtResource("1_uha0e")
 actions = PackedStringArray("default")
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=871802656]
+[node name="TangsengBullet2Part1" type="Sprite2D" parent="." unique_id=871802656]
 material = SubResource("ShaderMaterial_kdq6w")
 position = Vector2(-53.749996, -30.4)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_q4hhw")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=1217533331]
+[node name="TangsengBullet2Part2" type="Sprite2D" parent="." unique_id=1217533331]
 position = Vector2(-44.85, -19.494999)
 scale = Vector2(0.45, 0.6665)
 texture = ExtResource("4_wss34")

@@ -179,70 +179,70 @@ shader_parameter/extend = 7.0
 script = ExtResource("1_pi8to")
 actions = PackedStringArray("default")
 
-[node name="Part1" type="Sprite2D" parent="." unique_id=138802432]
+[node name="OrbWhilePart1" type="Sprite2D" parent="." unique_id=138802432]
 material = SubResource("ShaderMaterial_a0unu")
 position = Vector2(-4.7, -5.825)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part2" type="Sprite2D" parent="." unique_id=1812755930]
+[node name="OrbWhilePart2" type="Sprite2D" parent="." unique_id=1812755930]
 material = SubResource("ShaderMaterial_vbov0")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part3" type="Sprite2D" parent="." unique_id=1269100331]
+[node name="OrbWhilePart3" type="Sprite2D" parent="." unique_id=1269100331]
 material = SubResource("ShaderMaterial_qcf1a")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part4" type="Sprite2D" parent="." unique_id=1789978588]
+[node name="OrbWhilePart4" type="Sprite2D" parent="." unique_id=1789978588]
 material = SubResource("ShaderMaterial_ad647")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part5" type="Sprite2D" parent="." unique_id=1926887356]
+[node name="OrbWhilePart5" type="Sprite2D" parent="." unique_id=1926887356]
 material = SubResource("ShaderMaterial_6bame")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part6" type="Sprite2D" parent="." unique_id=244515318]
+[node name="OrbWhilePart6" type="Sprite2D" parent="." unique_id=244515318]
 material = SubResource("ShaderMaterial_2aa61")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part7" type="Sprite2D" parent="." unique_id=640798304]
+[node name="OrbWhilePart7" type="Sprite2D" parent="." unique_id=640798304]
 material = SubResource("ShaderMaterial_ry7ns")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part8" type="Sprite2D" parent="." unique_id=292418777]
+[node name="OrbWhilePart8" type="Sprite2D" parent="." unique_id=292418777]
 material = SubResource("ShaderMaterial_wnwgm")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part9" type="Sprite2D" parent="." unique_id=340963210]
+[node name="OrbWhilePart9" type="Sprite2D" parent="." unique_id=340963210]
 material = SubResource("ShaderMaterial_mx7pb")
 position = Vector2(-4.65, -5.7749996)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_35sce")
 centered = false
 
-[node name="Part10" type="Sprite2D" parent="." unique_id=1428567053]
+[node name="OrbWhilePart10" type="Sprite2D" parent="." unique_id=1428567053]
 material = SubResource("ShaderMaterial_pbspe")
 position = Vector2(-4.7, -5.825)
 scale = Vector2(0.75, 0.75)

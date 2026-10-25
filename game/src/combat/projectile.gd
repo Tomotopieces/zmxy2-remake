@@ -13,7 +13,7 @@ var accel := Vector2.ZERO     ## px/s^2 added to velocity (arcs)
 var life := 0.0               ## > 0: removed after this many seconds
 var mover: Callable           ## custom motion: mover.call(projectile, delta); replaces velocity motion
 var on_hit: Callable          ## on_hit.call(target) after a hit lands
-var damage_fn: Callable       ## fixed damage roll (magic treasures): no crit or rage bonus
+var damage_fn: Callable       ## fixed damage roll (magic fabao): no crit or rage bonus
 var new_hit_limit := -1       ## >= 0: only this many "new hit" animation events count (a skill whose last rounds only exist in rage)
 var _new_hits := 0
 var push_dir := 0              ## != 0: always knock targets this way (±1) instead of away from the bullet

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_k3cxs"]
 [ext_resource type="Texture2D" path="res://ui/pack_cell/tex/pack_cell_piece.png" id="2_i73mu"]
 
-[node name="pack_cell" type="Control" unique_id=1002880187]
+[node name="PackCell" type="Control" unique_id=1002880187]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
@@ -11,7 +11,7 @@ script = ExtResource("1_k3cxs")
 
 [node name="Art" type="Node2D" parent="." unique_id=744516976]
 
-[node name="backpack_v5_596" type="Sprite2D" parent="Art" unique_id=218681175]
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=218681175]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_i73mu")
 centered = false

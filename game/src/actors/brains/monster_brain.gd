@@ -18,7 +18,8 @@ static var _scripts := {}   ## monster id -> brain script (or null = the base br
 
 static func _script_for(data: MonsterData) -> Script:
 	if not _scripts.has(data.id):
-		var path := "res://entities/monsters/monster%d/brain_%d.gd" % [data.id, data.id]
+		var f := MonsterData.folder(data.id)
+		var path := MonsterData.DIR.path_join(f).path_join(f + "_brain.gd")   # its own AI, next to its data
 		if not ResourceLoader.exists(path) and data.brain_type != "":
 			path = DIR + "%s.gd" % data.brain_type
 		_scripts[data.id] = load(path) if ResourceLoader.exists(path) else null

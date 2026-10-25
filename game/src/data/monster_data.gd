@@ -44,6 +44,27 @@ extends Resource
 @export var is_prop := false           ## scenery that can be hit: no damage numbers, HP bar, exp or combo
 @export var immovable := false         ## not pulled / pushed (totems, props)
 
-## The data file of monster `id` ("" stage = the base numbers, else the stage's own: monster<id>_<stage>.tres).
+const DIR := "res://entities/monsters"
+static var _folders := {}   ## monster id -> its folder name (the pinyin of its name: shouyeren), from the data files
+
+## The folder of monster `id` under entities/monsters ("" if there is none).
+static func folder(id: int) -> String:
+	if _folders.is_empty():
+		for d in ResourceLoader.list_directory(DIR):
+			var f := d.trim_suffix("/")
+			var md := load(DIR.path_join(f).path_join(f + ".tres")) as MonsterData
+			if md:
+				_folders[md.id] = f
+	return _folders.get(id, "")
+
+## The data file of monster `id` ("" stage = the base numbers, else the stage's own: <folder>_<stage>.tres).
 static func path(id: int, stage := "") -> String:
-	return "res://entities/monsters/monster%d/monster%d%s.tres" % [id, id, "" if stage == "" else "_" + stage]
+	var f := folder(id)
+	return DIR.path_join(f).path_join(f + ("" if stage == "" else "_" + stage) + ".tres")
+
+## Every monster id there is.
+static func ids() -> Array:
+	folder(0)
+	var a := _folders.keys()
+	a.sort()
+	return a

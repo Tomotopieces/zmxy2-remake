@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/monsters/tangsengguai/tex/tangsengguai_frame.png" id="1_wt771"]
+
+[node name="Slot5051" type="Node2D" unique_id=560837809]
+
+[node name="Slot5051Part1" type="Sprite2D" parent="." unique_id=70313634]
+position = Vector2(-17.95, -25.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_wt771")
+centered = false

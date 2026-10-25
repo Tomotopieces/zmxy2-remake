@@ -52,7 +52,7 @@ func _ready() -> void:
 	hud.open_bag.connect(open_menu.bind(&"bag"))
 	hud.open_menu.connect(open_pause)
 	hud.open_skills.connect(open_menu.bind(&"skill"))
-	hud.open_treasure.connect(open_menu.bind(&"treasure"))
+	hud.open_fabao.connect(open_menu.bind(&"fabao"))
 	level = Level.new()
 	level.stage = stage
 	level.process_mode = Node.PROCESS_MODE_PAUSABLE
@@ -132,11 +132,11 @@ func _on_ending() -> void:
 	c.finished.connect(func(): to_map.emit())
 	add_child(c)
 
-## The in-game menu (背包 / 技能 / 法宝 / 设置) on one of its tabs; 法宝 without a worn treasure only says so.
+## The in-game menu (背包 / 技能 / 法宝 / 设置) on one of its tabs; 法宝 without a worn fabao only says so.
 func open_menu(tab: StringName) -> void:
 	if _over or _menu or get_tree().paused:
 		return
-	if tab == &"treasure" and GameState.worn[&"treasure"] == null:
+	if tab == &"fabao" and GameState.worn[&"fabao"] == null:
 		Toast.show_on(hud, "请先装备法宝")
 		return
 	_menu = TabMenu.create(tab)
@@ -168,8 +168,8 @@ func _unhandled_input(e: InputEvent) -> void:
 		open_pause()
 	elif e.is_action_pressed("open_skills"):
 		open_menu(&"skill")
-	elif e.is_action_pressed("open_treasure"):
-		open_menu(&"treasure")
+	elif e.is_action_pressed("open_fabao"):
+		open_menu(&"fabao")
 	elif OS.is_debug_build() and e.is_action_pressed("debug_give_items"):
 		for id in _test_gear():
 			GameState.add_to_bag(EquipmentCatalog.find(id).roll())
