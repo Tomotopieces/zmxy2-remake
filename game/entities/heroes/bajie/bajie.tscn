@@ -148,7 +148,7 @@
 [ext_resource type="Texture2D" uid="uid://d1vtvvohxvsqu" path="res://entities/heroes/bajie/tex/bajie_hit4_part8.png" id="144_tenqe"]
 [ext_resource type="Texture2D" uid="uid://bet2exvx75ftv" path="res://entities/heroes/bajie/tex/bajie_hit4_part9.png" id="145_d7vq3"]
 [ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="146_oaho5"]
-[ext_resource type="Texture2D" uid="uid://brk7858yelp5u" path="res://entities/shared/fx_monster_hurt2_hit4_part10.png" id="147_4x30c"]
+[ext_resource type="Texture2D" uid="uid://brk7858yelp5u" path="res://entities/effects/fx_monster_hurt2/tex/fx_monster_hurt2_hit4_part10.png" id="147_4x30c"]
 [ext_resource type="Texture2D" uid="uid://dd774np6axe2r" path="res://entities/heroes/bajie/tex/bajie_hit4_part12.png" id="148_c8kjc"]
 [ext_resource type="Texture2D" uid="uid://dgq3tv6xxi3hr" path="res://entities/heroes/bajie/tex/bajie_hit4_part13.png" id="149_aqaft"]
 [ext_resource type="Texture2D" uid="uid://biu2ancydogd" path="res://entities/heroes/bajie/tex/bajie_hit5_part1.png" id="150_yb84h"]

@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="1_biulx"]
-[ext_resource type="Texture2D" path="res://entities/shared/monster51bullet1_hit2_part2.png" id="2_qkl8g"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster51/tex/monster51bullet1_hit2_part2.png" id="2_qkl8g"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_py4th"]
 shader = ExtResource("1_biulx")

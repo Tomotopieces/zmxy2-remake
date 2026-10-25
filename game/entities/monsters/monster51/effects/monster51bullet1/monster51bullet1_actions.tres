@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" format=3 uid="uid://rfrxqkq81hdp"]
 
-[ext_resource type="Texture2D" uid="uid://bx4acq0in57lv" path="res://entities/shared/monster51bullet1_hit2_part2.png" id="1_dic3u"]
+[ext_resource type="Texture2D" uid="uid://bx4acq0in57lv" path="res://entities/monsters/monster51/tex/monster51bullet1_hit2_part2.png" id="1_dic3u"]
 
 [sub_resource type="Animation" id="Animation_j451a"]
 length = 1.2166667

@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://b6d853rex52lu" path="res://entities/monsters/monster45/tex/monster45_dead_part13.png" id="26_jy8vw"]
 [ext_resource type="Texture2D" uid="uid://dk3ok4vkglkuk" path="res://entities/monsters/monster45/tex/monster45_dead_part22.png" id="27_1d7yt"]
 [ext_resource type="Texture2D" uid="uid://dngteh62qkd71" path="res://entities/monsters/monster45/tex/monster45_reburn_part1.png" id="28_x6v41"]
-[ext_resource type="AnimationLibrary" path="res://entities/monsters/monster45/monster45_actions.tres" id="29_smdjn"]
+[ext_resource type="AnimationLibrary" uid="uid://dxfxchm4rbdv8" path="res://entities/monsters/monster45/monster45_actions.tres" id="29_smdjn"]
 [ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_amg0m"]
@@ -390,6 +390,7 @@ texture = ExtResource("10_2mbgn")
 centered = false
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=2017410634]
+visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=596895334]
 position = Vector2(-8.5, 1.2)
@@ -1068,6 +1069,7 @@ monitorable = false
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1617787986]
 position = Vector2(-137.8, 28.7)
 shape = SubResource("RectangleShape2D_sx5nk")
+disabled = true
 
 [node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=288213797]
 collision_layer = 0

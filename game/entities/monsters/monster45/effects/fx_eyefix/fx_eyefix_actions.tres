@@ -1,0 +1,40 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame_3.png" id="1_oumd4"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame_4.png" id="2_e2ukl"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame_5.png" id="3_f8ais"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame_6.png" id="4_5i700"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame.png" id="5_btfd2"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster45/effects/fx_eyefix/tex/fx_eyefix_frame_2.png" id="6_yhutb"]
+
+[sub_resource type="Animation" id="Animation_yvw3q"]
+length = 0.4583333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_oumd4"), ExtResource("2_e2ukl"), ExtResource("3_f8ais"), ExtResource("4_5i700"), ExtResource("5_btfd2"), ExtResource("6_yhutb")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -46.3, -20.4), Transform2D(0.5, 0, 0, 0.5, -46.5, -20.9), Transform2D(0.5, 0, 0, 0.5, -46.5, -26), Transform2D(0.5, 0, 0, 0.5, -46.5, -25.95), Transform2D(0.5, 0, 0, 0.5, -46.5, -25.95), Transform2D(0.5, 0, 0, 0.5, -47.5, -26)]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_yvw3q")
+}

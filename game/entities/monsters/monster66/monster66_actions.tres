@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part4_5.png" id="7_j8lae"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part4_6.png" id="8_75cx0"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster66/tex/monster66_dead_part5.png" id="9_pexhm"]
-[ext_resource type="Texture2D" path="res://entities/shared/monster65_dead_part5.png" id="10_6dkcb"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part5.png" id="10_6dkcb"]
 
 [sub_resource type="Animation" id="Animation_bcqhe"]
 length = 3.2916666666666665

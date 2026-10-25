@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part3.png" id="4_g37sd"]
 [ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part4.png" id="5_f8kxd"]
 [ext_resource type="Shader" path="res://src/puppet/sprite_fx_add.gdshader" id="6_46lot"]
-[ext_resource type="Texture2D" path="res://entities/shared/monster65_dead_part5.png" id="7_crn7d"]
+[ext_resource type="Texture2D" path="res://entities/monsters/monster65/tex/monster65_dead_part5.png" id="7_crn7d"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/monster65/monster65_actions.tres" id="8_c2lml"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wuyot"]
