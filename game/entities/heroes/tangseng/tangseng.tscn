@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://ben3a68jh30fa"]
 
-[ext_resource type="Script" path="res://entities/heroes/tangseng/hero_tangseng.gd" id="actor_logic"]
-
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_du3dg"]
 [ext_resource type="Script" uid="uid://3fsn1fuqxid0" path="res://src/puppet/equip_slot.gd" id="2_77546"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot116_2.tscn" id="3_i5oji"]
@@ -172,6 +170,7 @@
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1212_2.tscn" id="168_0b8xg"]
 [ext_resource type="Texture2D" uid="uid://bu13ygy3kwjm8" path="res://entities/heroes/tangseng/tex/tangseng_hurt_part4.png" id="169_feq11"]
 [ext_resource type="AnimationLibrary" uid="uid://b2e3xhn1wbxqm" path="res://entities/heroes/tangseng/tangseng_actions.tres" id="170_taced"]
+[ext_resource type="Script" uid="uid://dl1t1qx1kreh" path="res://entities/heroes/tangseng/hero_tangseng.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_858ag"]
 shader = ExtResource("106_jvg4u")
@@ -217,7 +216,7 @@ size = Vector2(45, 90)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(45, 90)
 
-[node name="Tangseng" type="CharacterBody2D"]
+[node name="Tangseng" type="CharacterBody2D" unique_id=959069044]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=480453121]
@@ -3007,6 +3006,6 @@ shape = SubResource("RectangleShape2D_s8snb")
 callback_mode_process = 0
 libraries/ = ExtResource("170_taced")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1872972342]
 position = Vector2(0.5, -4.2)
 shape = SubResource("RectangleShape2D_Body")

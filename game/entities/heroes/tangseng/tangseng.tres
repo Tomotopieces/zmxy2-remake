@@ -1,65 +1,7 @@
-[gd_resource type="Resource" script_class="HeroData" format=3]
+[gd_resource type="Resource" script_class="HeroData" format=3 uid="uid://dsx3p6k3bcd03"]
 
-[ext_resource type="Script" path="res://src/data/attack_data.gd" id="1_a48e7"]
-[ext_resource type="Script" path="res://src/data/hero_data.gd" id="2_2ue17"]
-
-[sub_resource type="Resource" id="Resource_gwg82"]
-script = ExtResource("1_a48e7")
-rumble = 0.1
-knockback = Vector2(96, -185.9032)
-rehit_interval = 0.125
-projectile = "tangseng_bullet1"
-speed = 192.0
-distance = 300.0
-max_hits = 1
-
-[sub_resource type="Resource" id="Resource_cdmwo"]
-script = ExtResource("1_a48e7")
-hitstop = 0.09
-hitstop_once = true
-shake = 0.45
-rumble = 0.4
-power_mul = 0.2
-kind = 1
-knockback = Vector2(480, -137.8695)
-rehit_interval = 0.125
-max_hits = 200
-mp_cost = 20
-projectile = "tangseng_bullet2"
-speed = 360.0
-distance = 600.0
-
-[sub_resource type="Resource" id="Resource_sd5ry"]
-script = ExtResource("1_a48e7")
-rumble = 0.2
-power_mul = 0.8
-kind = 1
-knockback = Vector2(144, -185.9032)
-max_hits = 200
-mp_cost = 40
-
-[sub_resource type="Resource" id="Resource_j4lqd"]
-script = ExtResource("1_a48e7")
-power_mul = 0.0
-kind = 1
-mp_cost = 100
-
-[sub_resource type="Resource" id="Resource_xfwrr"]
-script = ExtResource("1_a48e7")
-hitstop = 0.15
-hitstop_once = true
-shake = 0.7
-rumble = 0.7
-power_mul = 8.0
-kind = 1
-knockback = Vector2(600, -137.8695)
-max_hits = 200
-
-[sub_resource type="Resource" id="Resource_yr2f7"]
-script = ExtResource("1_a48e7")
-power_mul = 0.0
-kind = 1
-mp_cost = 60
+[ext_resource type="Script" uid="uid://bnsw1c110nbq8" path="res://src/data/attack_data.gd" id="1_a48e7"]
+[ext_resource type="Script" uid="uid://dp7soe336pj72" path="res://src/data/hero_data.gd" id="2_2ue17"]
 
 [sub_resource type="Resource" id="Resource_n8o8y"]
 script = ExtResource("1_a48e7")
@@ -67,13 +9,13 @@ kind = 1
 knockback = Vector2(48, -65.72671)
 max_hits = 1
 
-[sub_resource type="Resource" id="Resource_wmucq"]
+[sub_resource type="Resource" id="Resource_6nqyv"]
 script = ExtResource("1_a48e7")
 kind = 1
 knockback = Vector2(48, -65.72671)
 max_hits = 99
 
-[sub_resource type="Resource" id="Resource_6nqyv"]
+[sub_resource type="Resource" id="Resource_wmucq"]
 script = ExtResource("1_a48e7")
 kind = 1
 knockback = Vector2(48, -65.72671)
@@ -112,6 +54,65 @@ max_hits = 99
 script = ExtResource("1_a48e7")
 knockback = Vector2(48, -65.72671)
 max_hits = 99
+
+[sub_resource type="Resource" id="Resource_gwg82"]
+script = ExtResource("1_a48e7")
+knockback = Vector2(96, -185.9032)
+rehit_interval = 0.125
+max_hits = 1
+rumble = 0.1
+projectile = "tangseng_bullet1"
+speed = 192.0
+distance = 300.0
+
+[sub_resource type="Resource" id="Resource_cdmwo"]
+script = ExtResource("1_a48e7")
+power_mul = 0.2
+kind = 1
+knockback = Vector2(480, -137.8695)
+rehit_interval = 0.125
+max_hits = 200
+hitstop = 0.03
+shake = 0.25
+rumble = 0.25
+mp_cost = 20
+projectile = "tangseng_bullet2"
+speed = 360.0
+distance = 600.0
+
+[sub_resource type="Resource" id="Resource_sd5ry"]
+script = ExtResource("1_a48e7")
+power_mul = 0.8
+kind = 1
+knockback = Vector2(144, -185.9032)
+max_hits = 200
+hitstop = 0.04
+shake = 0.25
+rumble = 0.25
+mp_cost = 40
+
+[sub_resource type="Resource" id="Resource_j4lqd"]
+script = ExtResource("1_a48e7")
+power_mul = 0.0
+kind = 1
+mp_cost = 100
+
+[sub_resource type="Resource" id="Resource_xfwrr"]
+script = ExtResource("1_a48e7")
+power_mul = 8.0
+kind = 1
+knockback = Vector2(600, -137.8695)
+max_hits = 200
+hitstop = 0.15
+hitstop_once = true
+shake = 0.7
+rumble = 0.7
+
+[sub_resource type="Resource" id="Resource_yr2f7"]
+script = ExtResource("1_a48e7")
+power_mul = 0.0
+kind = 1
+mp_cost = 60
 
 [sub_resource type="Resource" id="Resource_vtdi2"]
 script = ExtResource("1_a48e7")
@@ -190,21 +191,21 @@ combo_cooldowns = PackedFloat32Array(0.75, 0.75, 0.75, 0.75, 0.75)
 air_cooldown = 0.75
 attacks = {
 &"dishahulu": SubResource("Resource_n8o8y"),
-&"xuehaimotong": SubResource("Resource_6nqyv"),
-&"tianshagujian": SubResource("Resource_wmucq"),
-&"luochayaosan": SubResource("Resource_7sqke"),
-&"wudushou_hit1": SubResource("Resource_hx3qk"),
-&"wudushou_hit2_1": SubResource("Resource_8a1g3"),
-&"wudushou_hit2_2": SubResource("Resource_qbqte"),
-&"wudushou_hit2_3": SubResource("Resource_atsm1"),
-&"wudushou_hit2_4": SubResource("Resource_vcent"),
 &"hit1": SubResource("Resource_gwg82"),
 &"hit2": SubResource("Resource_cdmwo"),
 &"hit3": SubResource("Resource_sd5ry"),
 &"hit4": SubResource("Resource_j4lqd"),
 &"hit4_1": SubResource("Resource_xfwrr"),
 &"hit5": SubResource("Resource_yr2f7"),
-&"shadow": SubResource("Resource_vtdi2")
+&"luochayaosan": SubResource("Resource_7sqke"),
+&"shadow": SubResource("Resource_vtdi2"),
+&"tianshagujian": SubResource("Resource_wmucq"),
+&"wudushou_hit1": SubResource("Resource_hx3qk"),
+&"wudushou_hit2_1": SubResource("Resource_8a1g3"),
+&"wudushou_hit2_2": SubResource("Resource_qbqte"),
+&"wudushou_hit2_3": SubResource("Resource_atsm1"),
+&"wudushou_hit2_4": SubResource("Resource_vcent"),
+&"xuehaimotong": SubResource("Resource_6nqyv")
 }
 fabao = {
 "_doc": "Magic fabao (export/magicWeapon, Role1.getRealPower). The fabao floats behind the hero and retargets every follow_frames with a tween of follow_tween_frames. Damage: base + per_level*L +- spread/2; 木 element multiplies by wood_mul range, otherwise by mul range.",
@@ -248,7 +249,7 @@ fabao = {
 "stab_spacing": 25.0,
 "stab_speed": 24.0,
 "stab_spread": 80.0,
-"stab_turn": 0.09999999999999999,
+"stab_turn": 0.1,
 "stabs": 8.0,
 "wood_mul": [1.5, 2.0]
 },

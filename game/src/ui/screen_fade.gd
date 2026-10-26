@@ -38,7 +38,7 @@ func play(swap: Callable) -> void:
 func busy() -> bool:
 	return _busy
 
-func _input(e: InputEvent) -> void:
+func _input(_e: InputEvent) -> void:
 	if _busy:
 		get_viewport().set_input_as_handled()
 

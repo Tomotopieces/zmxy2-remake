@@ -54,7 +54,6 @@ var _fabao_puppet: Puppet
 var _sky: CanvasLayer           ## behind the world: the moon's light and the lightning bolt
 var _flash: ColorRect
 var _rain_mat: ShaderMaterial
-var _flash_mat: ShaderMaterial
 var _bolt: Node2D
 var _strike_at := 0.0           ## time of the next lightning
 var _strike_t := -1.0           ## seconds since the current one began (-1 = none)

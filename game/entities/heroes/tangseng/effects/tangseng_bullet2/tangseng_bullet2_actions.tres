@@ -1,10 +1,7 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet2_frame.png" id="1_iejde"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_bullet1_frame_2.png" id="2_mdp8w"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://ty07qsp3v41t"]
 
 [sub_resource type="Animation" id="Animation_jk553"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false

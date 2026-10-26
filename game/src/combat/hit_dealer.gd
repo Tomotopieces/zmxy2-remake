@@ -6,7 +6,6 @@ extends RefCounted
 var serial := 0
 var feel_serial := -1   ## the round whose hit feedback (shake, rumble) already played
 var hits := 0
-static var _seen := {}
 var _log := {}    ## target instance id -> [serial, cooldown left]
 
 func new_serial() -> void:

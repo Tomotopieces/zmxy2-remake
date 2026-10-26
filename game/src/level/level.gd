@@ -298,6 +298,7 @@ func _build() -> void:
 	size = layout.size
 	# the sky picture: its Background layer (-2) goes into the level as it is
 	var bg := scenery.get_node("Background")
+	bg.owner = null   # it leaves the scenery scene (otherwise Godot warns about an inconsistent owner)
 	scenery.remove_child(bg)
 	add_child(bg)
 	_far = bg.get_node("Sky")
@@ -310,6 +311,7 @@ func _build() -> void:
 	for part in ["Objects", "Art", "Ground", "Layout"]:
 		var n := scenery.get_node_or_null(part)
 		if n != null:
+			n.owner = null
 			scenery.remove_child(n)
 			world.add_child(n)
 	scenery.free()

@@ -185,14 +185,6 @@ combo_cooldowns = PackedFloat32Array(0.33333334, 0.33333334, 0.33333334, 0.625, 
 air_cooldown = 0.625
 attacks = {
 &"dishahulu": SubResource("Resource_63nf5"),
-&"xuehaimotong": SubResource("Resource_2n2fp"),
-&"tianshagujian": SubResource("Resource_6ovck"),
-&"luochayaosan": SubResource("Resource_tsw8f"),
-&"wudushou_hit1": SubResource("Resource_gce04"),
-&"wudushou_hit2_1": SubResource("Resource_mhj3t"),
-&"wudushou_hit2_2": SubResource("Resource_gipvh"),
-&"wudushou_hit2_3": SubResource("Resource_0rjg5"),
-&"wudushou_hit2_4": SubResource("Resource_uoh4v"),
 &"hit1": SubResource("Resource_iaxpd"),
 &"hit10": SubResource("Resource_t0wti"),
 &"hit10_1": SubResource("Resource_idc1j"),
@@ -205,7 +197,15 @@ attacks = {
 &"hit6": SubResource("Resource_jmd7p"),
 &"hit7": SubResource("Resource_f7phe"),
 &"hit8": SubResource("Resource_5hy8o"),
-&"hit9": SubResource("Resource_axbui")
+&"hit9": SubResource("Resource_axbui"),
+&"luochayaosan": SubResource("Resource_tsw8f"),
+&"tianshagujian": SubResource("Resource_6ovck"),
+&"wudushou_hit1": SubResource("Resource_gce04"),
+&"wudushou_hit2_1": SubResource("Resource_mhj3t"),
+&"wudushou_hit2_2": SubResource("Resource_gipvh"),
+&"wudushou_hit2_3": SubResource("Resource_0rjg5"),
+&"wudushou_hit2_4": SubResource("Resource_uoh4v"),
+&"xuehaimotong": SubResource("Resource_2n2fp")
 }
 fabao = {
 "_doc": "Magic fabao (export/magicWeapon, Role1.getRealPower). The fabao floats behind the hero and retargets every follow_frames with a tween of follow_tween_frames. Damage: base + per_level*L +- spread/2; 木 element multiplies by wood_mul range, otherwise by mul range.",

@@ -42,7 +42,6 @@ var _buffered := &""
 var _buffered_at := -100.0
 var _buffered_up := false   ## W was held with the attack press
 var _dir := 0
-var _held := {-1: false, 1: false}
 var _pressed_at := {-1: -100.0, 1: -100.0}
 var _last_attack_at := -100.0
 var _no_gravity := false

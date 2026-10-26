@@ -417,7 +417,7 @@ func on_stage_cleared(s: Vector2i) -> void:
 	progress = Vector2i(s.x + 1, 1) if s.y == 3 else Vector2i(s.x, s.y + 1)
 
 ## Next stage on the main path after s (stages 1..3 have three levels).
-static func next_stage(s: Vector2i) -> Vector2i:
+func next_stage(s: Vector2i) -> Vector2i:
 	return Vector2i(s.x + 1, 1) if s.y >= 3 else Vector2i(s.x, s.y + 1)
 
 # ------------------------------------------------------------------ save slots (SaveGame)

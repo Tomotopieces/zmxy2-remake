@@ -21,7 +21,6 @@ var _tip: ItemTip
 var _menu: UiLayout
 var _menu_index := -1
 var _tab := "BtnZhuangBei"
-var _cell_ui: Dictionary
 
 func _ready() -> void:
 	var catcher := Control.new()   # a click outside the item menu closes it

@@ -186,4 +186,3 @@ static func buy(id: String, n: int) -> String:
 	GameState.merit -= cost
 	GameState.profile_changed.emit()
 	return "购买成功"
-

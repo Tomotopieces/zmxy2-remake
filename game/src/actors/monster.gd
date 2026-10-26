@@ -249,7 +249,11 @@ func _status_icon(puppet_name: String, y: float, loop: bool) -> Puppet:
 	r.position = Vector2(0, y)
 	add_child(r)
 	r.play(r.actions[0])
-	r.action_finished.connect(func(a): r.play(a, true) if loop else r.queue_free())
+	r.action_finished.connect(func(a):
+		if loop:
+			r.play(a, true)
+		else:
+			r.queue_free())
 	return r
 
 func _tick_poison(delta: float) -> void:

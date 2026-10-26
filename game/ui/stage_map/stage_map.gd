@@ -123,7 +123,7 @@ func _unhandled_input(e: InputEvent) -> void:
 			open_menu(MENU_KEYS[action])
 			return
 
-func _saved(slot: int) -> void:
+func _saved(_slot: int) -> void:
 	Toast.show_on(self, "存档成功")
 
 func _open(n: Node) -> void:
