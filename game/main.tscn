@@ -56,13 +56,28 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_eefm1")
 centered = false
 
+[node name="Settings" parent="Title/Menu" instance=ExtResource("set_btn")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 750.65
+offset_top = 301.0
+offset_right = 854.65
+offset_bottom = 333.0
+text = "设置"
+
+[node name="Underline" type="Sprite2D" parent="Title/Menu/Settings"]
+position = Vector2(-74, 24.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_eefm1")
+centered = false
+
 [node name="GameHelp" parent="Title/Menu" unique_id=47683120 instance=ExtResource("set_btn")]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 751.0
-offset_top = 300.0
+offset_top = 347.0
 offset_right = 855.0
-offset_bottom = 340.0
+offset_bottom = 387.0
 text = "游戏帮助"
 
 [node name="Underline" type="Sprite2D" parent="Title/Menu/GameHelp" unique_id=1405325834]
@@ -88,9 +103,9 @@ horizontal_alignment = 2
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 751.0
-offset_top = 405.0
+offset_top = 452.0
 offset_right = 855.0
-offset_bottom = 437.0
+offset_bottom = 484.0
 text = "退出游戏"
 
 [node name="Underline" type="Sprite2D" parent="Title/Menu/QuitGame" unique_id=201948348]

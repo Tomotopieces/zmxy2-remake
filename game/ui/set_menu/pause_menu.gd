@@ -11,6 +11,7 @@ const VOLUME_STEPS := 20   ## 5 % a step
 const BUSES := {"MusicVolume": &"Music", "SfxVolume": &"SFX", "AmbienceVolume": &"Ambience"}
 
 var in_stage := true   ## false on the map: no 继续游戏 / 返回地图
+var on_title := false  ## the title's 设置: no 游戏帮助 / 返回标题界面 either (the title has its own 游戏帮助)
 var _ui: UiLayout
 
 func _ready() -> void:
@@ -18,6 +19,8 @@ func _ready() -> void:
 	add_child(_ui)
 	for b in ["BtnContinue", "BtnBackToMap"]:
 		_ui.piece(b).visible = in_stage
+	for b in ["BtnHelp", "BtnBackToTitle"]:
+		_ui.piece(b).visible = not on_title
 	for s in BUSES:
 		var g: GaugeSlider = _ui.piece(s)
 		g.steps = VOLUME_STEPS

@@ -18,10 +18,18 @@ var tab: StringName
 var page: Control
 var _tabs: Array[StringName]
 var on_map := false   ## opened on the stage map: 设置 has no 继续游戏 / 返回地图
+var on_title := false ## opened on the title (only 设置, without 继续游戏 / 返回地图 / 游戏帮助 / 返回标题界面)
 var _ui: UiLayout
 var _trigger := {JOY_AXIS_TRIGGER_LEFT: false, JOY_AXIS_TRIGGER_RIGHT: false}
 
 ## `map`: opened on the stage map.
+## The title's 设置: only the settings tab.
+static func title_settings() -> TabMenu:
+	var m := create(&"settings", true)
+	m._tabs = [&"settings"]
+	m.on_title = true
+	return m
+
 static func create(first: StringName, map := false) -> TabMenu:
 	var m := TabMenu.new()
 	m.tab = first
@@ -71,6 +79,7 @@ func show_tab(t: StringName) -> void:
 		&"settings":
 			var p := PauseMenu.new()
 			p.in_stage = not on_map
+			p.on_title = on_title
 			p.to_map.connect(to_map.emit)
 			p.to_menu.connect(to_menu.emit)
 			page = p
