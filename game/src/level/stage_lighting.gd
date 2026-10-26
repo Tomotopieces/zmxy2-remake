@@ -702,6 +702,9 @@ func _update_actor(a: Actor) -> void:
 		for sp: Sprite2D in shadow_puppet.find_children("*", "Sprite2D", true, false):
 			# a glowing effect part (additive light, e.g. the leech's revival flash on its black frame) casts no shadow
 			sp.material = NO_SHADOW if _is_light(sp.material) or sp.has_meta(&"no_shadow") else e.mat
+			# an equipment slot hands its own (lit) material down to its sprites (EquipSlot: use_parent_material),
+			# which would win over the shadow's: those parts (唐僧怪's robe) were drawn in colour on the floor
+			sp.use_parent_material = false
 			if sp.material == NO_SHADOW:
 				sp.set_meta(&"no_shadow", true)
 	var high := clampf(1.0 - (floor_y - feet_y) / 280.0, 0.25, 1.0)
