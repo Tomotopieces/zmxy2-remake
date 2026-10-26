@@ -1,8 +1,9 @@
 class_name ScreenFade
 extends CanvasLayer
-## Screen transition: the screen goes black at once, the swap runs under it, the new screen fades in.
+## Screen transition: the old screen fades to black (OUT_TIME), the swap runs under it, the new screen fades in.
 ## Input is blocked for the whole transition; runs while paused and ignores bullet time.
 
+const OUT_TIME := 0.1
 const IN_TIME := 0.15
 
 var _rect := ColorRect.new()
@@ -23,7 +24,9 @@ func play(swap: Callable) -> void:
 		return
 	_busy = true
 	_rect.mouse_filter = Control.MOUSE_FILTER_STOP
-	_rect.modulate.a = 1.0
+	var out := _tween()
+	out.tween_property(_rect, "modulate:a", 1.0, OUT_TIME)
+	await out.finished
 	await RenderingServer.frame_post_draw   # the black frame is on screen before the swap
 	swap.call()
 	# building the new screen can take a long frame (a stage: ~0.7 s); a tween started in it would spend that whole

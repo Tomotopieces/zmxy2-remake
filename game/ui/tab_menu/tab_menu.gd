@@ -62,8 +62,7 @@ func available(t: StringName) -> bool:
 	return t in _tabs and (t != &"fabao" or GameState.worn[&"fabao"] != null)
 
 func show_tab(t: StringName) -> void:
-	if page:
-		page.queue_free()
+	var old := page
 	tab = t
 	match t:
 		&"bag": page = Backpack.new()
@@ -78,6 +77,29 @@ func show_tab(t: StringName) -> void:
 	page.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_ui.piece("Page").add_child(page)
 	_sync_tabs()
+	if old:
+		_cross_fade(old, page)
+
+## Switching tabs: the old page fades out, then the new one fades in (the menu background stays).
+## The old page takes no input or pad focus while it goes.
+func _cross_fade(old: Control, new: Control) -> void:
+	old.process_mode = Node.PROCESS_MODE_DISABLED
+	for c: Control in old.find_children("*", "Control", true, false):
+		c.focus_mode = Control.FOCUS_NONE
+		c.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	new.modulate.a = 0.0
+	await get_tree().process_frame   # building the new page is a long frame: the fade would be spent in it
+	await get_tree().process_frame
+	if not is_instance_valid(old) or not is_instance_valid(new):
+		if is_instance_valid(old):
+			old.queue_free()
+		if is_instance_valid(new):
+			new.modulate.a = 1.0
+		return
+	var tw := create_tween().set_ignore_time_scale().set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tw.tween_property(old, "modulate:a", 0.0, UiFade.OUT_TIME)
+	tw.tween_callback(old.queue_free)
+	tw.tween_property(new, "modulate:a", 1.0, UiFade.IN_TIME)
 
 ## The next / previous tab that can be opened.
 func step(d: int) -> void:
