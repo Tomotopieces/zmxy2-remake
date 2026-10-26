@@ -17,16 +17,18 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 GAME = ROOT / "game"
 FONTS = GAME / "assets" / "fonts"
 BACKUP = ROOT / "tools" / "dl" / "fonts_full"
-SCAN = ["scenes", "src", "data", "assets"]
+# every folder of the project except the editor plugin and the dev tools (they are not exported)
+SKIP = {"addons", "tools", ".godot"}
 EXT = {".tscn", ".tres", ".gd", ".json", ".cfg", ".txt", ".godot"}
 EXTRA = "".join(chr(c) for c in range(0x20, 0x7F)) + "，。、；：？！“”‘’（）《》【】—…·～％＋－×÷０１２３４５６７８９"
 
 
 def charset() -> str:
     chars = set(EXTRA)
-    files = [GAME / "project.godot"]
-    for d in SCAN:
-        files += [p for p in (GAME / d).rglob("*") if p.suffix in EXT and p.is_file()]
+    files = [p for p in GAME.rglob("*") if p.suffix in EXT and p.is_file()
+             and not SKIP.intersection(p.relative_to(GAME).parts[:1])]
+    if not any(p.suffix == ".tscn" for p in files):
+        sys.exit("no scenes found: the project layout changed, fix the scan")
     for p in files:
         try:
             chars.update(p.read_text(encoding="utf-8"))
