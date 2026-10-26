@@ -28,6 +28,7 @@
 [ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xs53dc6"]
 
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xc2rmwa"]
+[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
 size = Vector2(115.35, 1000)
@@ -602,30 +603,22 @@ size = Vector2(4976, 652)
 
 [node name="Walls" type="Node2D" parent="Layout"]
 
-[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+script = ExtResource("stage_boundary")
+rect = Rect2(-0.7, -111.6, 4732.67, 763.6)
+open_bottom = true
+
+[node name="Terrain" type="StaticBody2D" parent="Layout/Walls"]
 collision_mask = 0
 
-[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(4789.65, 152)
-shape = SubResource("RectangleShape2D_L1")
-
-[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(-12.35, 238.4)
-rotation = 1.571
-shape = SubResource("RectangleShape2D_L2")
-
-[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(2476, -121.6)
-shape = SubResource("RectangleShape2D_L3")
-
-[node name="Ramp4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Ramp4" type="CollisionShape2D" parent="Layout/Walls/Terrain"]
 shape = SubResource("ConvexPolygonShape2D_L4")
 
-[node name="Floor5" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor5" type="CollisionShape2D" parent="Layout/Walls/Terrain"]
 position = Vector2(2621.15, 325.7)
 shape = SubResource("RectangleShape2D_L5")
 
-[node name="Floor6" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+[node name="Floor6" type="CollisionShape2D" parent="Layout/Walls/Terrain"]
 position = Vector2(108.05, 519.8)
 shape = SubResource("RectangleShape2D_L6")
 

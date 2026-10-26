@@ -1,16 +1,12 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://fuonrko7fvsx"]
 
-[ext_resource type="Texture2D" path="res://stages/niumogu/tex/niumogu_near_00.png" id="1_ukycm"]
-[ext_resource type="Texture2D" path="res://stages/shared/guoqinghuodong_sky.png" id="2_qytm5"]
-[ext_resource type="Texture2D" path="res://stages/niumogu/tex/niumogu_ground_01.png" id="3_qtyer"]
-
-[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="xvywtjn"]
-
-[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xyvgvuo"]
-
-[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="x0u9eui"]
-
+[ext_resource type="Texture2D" uid="uid://cuxgxpmwjbmgf" path="res://stages/niumogu/tex/niumogu_near_00.png" id="1_ukycm"]
+[ext_resource type="Texture2D" uid="uid://dkwpeca6l8db6" path="res://stages/niumogu/tex/niumogu_ground_01.png" id="3_qtyer"]
+[ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="x0u9eui"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xj5mvcs"]
+[ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xvywtjn"]
+[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
+[ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xyvgvuo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
 size = Vector2(20.01, 1000)
@@ -53,7 +49,6 @@ scroll_scale = Vector2(0.9, 1)
 [node name="Near" type="Parallax2D" parent="Art" unique_id=1780626701]
 
 [node name="NearPiece1" type="Sprite2D" parent="Art/Near" unique_id=490850105]
-position = Vector2(0, -3)
 texture = ExtResource("1_ukycm")
 centered = false
 region_enabled = true
@@ -63,7 +58,7 @@ region_rect = Rect2(0, 0, 940, 590)
 layer = -2
 
 [node name="Sky" type="Sprite2D" parent="Background" unique_id=2093597371]
-texture = ExtResource("2_qytm5")
+texture = ExtResource("1_ukycm")
 centered = false
 
 [node name="Ground" type="Node2D" parent="." unique_id=711583513]
@@ -76,57 +71,37 @@ centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 1896, 95)
 
-[node name="Layout" type="Node2D" parent="."]
+[node name="Layout" type="Node2D" parent="." unique_id=1075279123]
 script = ExtResource("xvywtjn")
 size = Vector2(1470.05, 701.15)
 
-[node name="Walls" type="Node2D" parent="Layout"]
+[node name="Walls" type="Node2D" parent="Layout" unique_id=1520351027]
 
-[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
-collision_mask = 0
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+script = ExtResource("stage_boundary")
+rect = Rect2(-124.75, -118.6, 1186.9, 619.6)
 
-[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(1072.15, 201.15)
-shape = SubResource("RectangleShape2D_L1")
+[node name="Stops" type="Node2D" parent="Layout" unique_id=194431982]
 
-[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(-136.4, 199.4)
-rotation = 1.571
-shape = SubResource("RectangleShape2D_L2")
-
-[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(471.05, -128.6)
-shape = SubResource("RectangleShape2D_L3")
-
-[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(471.05, 511)
-shape = SubResource("RectangleShape2D_L4")
-
-[node name="Stops" type="Node2D" parent="Layout"]
-
-[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop1" type="Marker2D" parent="Layout/Stops" unique_id=1697539643]
 position = Vector2(882.3, 221.3)
 script = ExtResource("xyvgvuo")
-back = 1150
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=1438874804]
 position = Vector2(-48.85, 98.25)
 script = ExtResource("x0u9eui")
 monster = 46
-delay = 2
-interval = 1
-total = 1
 
-[node name="ExitDoor" parent="Layout" instance=ExtResource("xj5mvcs")]
+[node name="ExitDoor" parent="Layout" unique_id=1580763303 instance=ExtResource("xj5mvcs")]
 visible = false
 z_index = -6
 position = Vector2(774.75, 445.15)
 
-[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor" unique_id=60994956]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone" unique_id=1134704772]
 position = Vector2(-0.25, -27.425)
 shape = SubResource("RectangleShape2D_L5")

@@ -1,6 +1,5 @@
 [gd_resource type="AnimationLibrary" format=3 uid="uid://gn7fx5lvnxv8"]
 
-[ext_resource type="Texture2D" uid="uid://dvoegk1wkqequ" path="res://entities/monsters/shouyeren/effects/shouyeren_bullet1/tex/shouyeren_bullet1_frame.png" id="1_m2eey"]
 [ext_resource type="Texture2D" uid="uid://certdc11cn1m1" path="res://entities/monsters/shouyeren/effects/shouyeren_bullet1/tex/shouyeren_bullet1_frame_2.png" id="2_2saj3"]
 [ext_resource type="Texture2D" uid="uid://bh1xmts8g0t8o" path="res://entities/monsters/shouyeren/effects/shouyeren_bullet1/tex/shouyeren_bullet1_frame_3.png" id="3_frx0f"]
 [ext_resource type="Texture2D" uid="uid://cmdtidijiw0ug" path="res://entities/monsters/shouyeren/effects/shouyeren_bullet1/tex/shouyeren_bullet1_frame_4.png" id="4_ku82c"]

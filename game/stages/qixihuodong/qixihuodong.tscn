@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xc5xwaq"]
 
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xgt6ei1"]
+[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
 size = Vector2(20.01, 1000)
@@ -66,25 +67,9 @@ size = Vector2(1847.75, 651.05)
 
 [node name="Walls" type="Node2D" parent="Layout"]
 
-[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
-collision_mask = 0
-
-[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(1809.95, 79.45)
-shape = SubResource("RectangleShape2D_L1")
-
-[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(-20.6, 63.1)
-rotation = 1.571
-shape = SubResource("RectangleShape2D_L2")
-
-[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(887.1, -380.65)
-shape = SubResource("RectangleShape2D_L3")
-
-[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
-position = Vector2(897.1, 511)
-shape = SubResource("RectangleShape2D_L4")
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+script = ExtResource("stage_boundary")
+rect = Rect2(-8.95, -370.65, 1808.9, 871.65)
 
 [node name="Stops" type="Node2D" parent="Layout"]
 

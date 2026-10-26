@@ -21,6 +21,7 @@
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xbuersw"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xkost3d"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xpktkfp"]
+[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xuw7sj1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
@@ -306,26 +307,9 @@ size = Vector2(5096.35, 625.85)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=325584070]
 
-[node name="Ground" type="StaticBody2D" parent="Layout/Walls" unique_id=1597629839]
-collision_mask = 0
-
-[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=1340303567]
-position = Vector2(2503.35, 487.05)
-shape = SubResource("RectangleShape2D_L1")
-
-[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=1254700259]
-position = Vector2(4737.95, 138.95)
-rotation = 1.571
-shape = SubResource("RectangleShape2D_L2")
-
-[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=885632407]
-position = Vector2(-6.35, 181.4)
-rotation = 1.571
-shape = SubResource("RectangleShape2D_L3")
-
-[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground" unique_id=1572150445]
-position = Vector2(2482, -26.65)
-shape = SubResource("RectangleShape2D_L4")
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+script = ExtResource("stage_boundary")
+rect = Rect2(5.3, -16.65, 4722.65, 493.7)
 
 [node name="HiddenWall1" type="AnimatableBody2D" parent="Layout/Walls" unique_id=1405007057]
 z_index = -8

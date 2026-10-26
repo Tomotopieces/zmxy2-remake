@@ -36,7 +36,7 @@
 0 #0 appears id=79 hp=3000 x=833
 0 #0 MOVE/walk hp=3000/3000 dx=650
 1 #0 MOVE/wait hp=2400/3000 dx=650
-31 #0 MOVE/walk hp=2400/3000 dx=652
+31 #0 MOVE/walk hp=2400/3000 dx=651
 182 #0 MOVE/wait hp=1800/3000 dx=819
 225 #0 MOVE/walk hp=1800/3000 dx=817
 379 #0 MOVE/wait hp=1200/3000 dx=511
