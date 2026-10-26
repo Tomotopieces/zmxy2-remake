@@ -9,10 +9,18 @@ const OUT_TIME := 0.1
 ## Call at the end of the panel's _ready().
 static func fade_in(panel: CanvasLayer) -> void:
 	Snd.ui()
-	var tw := _tween(panel)
-	for c in _items(panel):
+	var items := _items(panel)
+	for c in items:
 		c.modulate.a = 0.0
-		tw.tween_property(c, "modulate:a", 1.0, IN_TIME)
+	# the frame that built the panel is often long; a tween started in it would spend that frame at once and skip the fade
+	await panel.get_tree().process_frame
+	await panel.get_tree().process_frame
+	if not is_instance_valid(panel):
+		return
+	var tw := _tween(panel)
+	for c in items:
+		if is_instance_valid(c):
+			tw.tween_property(c, "modulate:a", 1.0, IN_TIME)
 
 ## Use instead of queue_free(): the panel stops taking input, fades out, then is freed.
 static func close(panel: CanvasLayer) -> void:

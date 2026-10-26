@@ -26,7 +26,11 @@ func play(swap: Callable) -> void:
 	_rect.modulate.a = 1.0
 	await RenderingServer.frame_post_draw   # the black frame is on screen before the swap
 	swap.call()
-	await get_tree().process_frame   # let the new screen build before it is revealed
+	# building the new screen can take a long frame (a stage: ~0.7 s); a tween started in it would spend that whole
+	# frame at once and skip the fade, so it starts once a normal frame has gone by
+	await get_tree().process_frame
+	await get_tree().process_frame
+	await get_tree().process_frame
 	var tw := _tween()
 	tw.tween_property(_rect, "modulate:a", 0.0, IN_TIME)
 	await tw.finished
