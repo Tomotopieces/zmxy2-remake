@@ -1,0 +1,35 @@
+[gd_resource type="AnimationLibrary" format=3 uid="uid://b8nafs1fj5gv2"]
+
+[sub_resource type="Animation" id="Animation_tbp66"]
+length = 0.4166666666666667
+loop_mode = 1
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:transform")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -43.5, -42.6), Transform2D(0.382, 0.3215, -0.3215, 0.382, -5.842201, -60.5169), Transform2D(0.085, 0.4925, -0.4925, 0.085, 34.565998, -50.0895), Transform2D(-0.2485, 0.433, -0.433, -0.2485, 58.5111, -16.498802), Transform2D(-0.4695, 0.171, -0.171, -0.4695, 55.4157, 25.1244), Transform2D(-0.4695, -0.171, 0.171, -0.4695, 26.277302, 54.878403), Transform2D(-0.2485, -0.433, 0.433, -0.2485, -15.272097, 58.8432), Transform2D(0.085, -0.4925, 0.4925, 0.085, -49.356, 35.6055), Transform2D(0.382, -0.3215, 0.3215, 0.382, -60.6258, -4.575897), Transform2D(0.5, 0, 0, 0.5, -43.5, -42.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/Shape:disabled")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_tbp66")
+}

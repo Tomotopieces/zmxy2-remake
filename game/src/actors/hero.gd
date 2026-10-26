@@ -1,12 +1,11 @@
 class_name Hero
 extends Actor
 ## A playable hero. This base class is Wukong: input, movement, 5-hit combo, skills (hit6-hit10), rage transform,
-## getting hit. 唐僧 and 八戒 extend it (src/actors/heroes/) and override the hooks marked "virtual".
+## getting hit. 唐僧 and 八戒 extend it (entities/heroes/<role>/hero_<role>.gd) and override the hooks marked "virtual".
 ## Numbers come from HeroData (data/<hero>.tres, px / seconds).
 
 enum State { MOVE, ATTACK, HURT, DEAD }
 
-const HERO_DIR := "res://src/actors/heroes/hero_%s.gd"
 const COMBO := [&"hit1", &"hit2", &"hit3", &"hit4", &"hit5"]
 const CANCEL_INTO_HIT8 := [&"hit1", &"hit2", &"hit3", &"hit4"]
 const HIT7_HOLD := 99.0   ## 烈焰闪: "until the dash stops" (cleared by its stop event, or when the move ends)
@@ -57,27 +56,26 @@ var debuffs := HeroDebuffs.new()   ## status effects set by monsters
 var _poison := [0.0, 1.0, 0.0]   ## power, tick (s), elapsed
 var held_by: Node = null   ## grabbed (setStatic + setLostKeyboard by a monster): no input, no own movement
 var _lock_glow := false   ## the anti-lock protection runs
-var treasure: Treasure  ## worn magic treasure following the hero (H)
+var fabao: Fabao  ## worn magic fabao following the hero (H)
 var controls_locked := false   ## stage over: no more input
 
-## The hero of the current game (GameState.role): its own script when it has one.
+## The hero of the current game (GameState.role): its scene, whose root carries its script.
 static func create() -> Hero:
-	var path: String = HERO_DIR % GameState.role
-	return load(path).new() if ResourceLoader.exists(path) else Hero.new()
+	return Puppet.instance(GameState.hero_data.puppet) as Hero
 
 func _ready() -> void:
 	data = GameState.hero_data
 	gravity = data.gravity
 	collision_layer = LAYER_HERO
 	collision_mask = LAYER_WORLD | LAYER_ONEWAY
-	setup_puppet(data.puppet)
+	setup_puppet()
 	add_child(debuffs)
 	_apply_appearance()
 	facing = 1
 	refill()
 	GameState.leveled_up.connect(_on_level_up)
 	GameState.equipment_changed.connect(_on_equipment_changed)
-	_sync_treasure.call_deferred()
+	_sync_fabao.call_deferred()
 
 func _apply_appearance() -> void:
 	var look := GameState.appearance()
@@ -91,7 +89,7 @@ func _apply_appearance() -> void:
 ## in full when the gear goes on again.
 func _on_equipment_changed() -> void:
 	_apply_appearance()
-	_sync_treasure()
+	_sync_fabao()
 	var old_hp := max_hp
 	var old_mp := max_mp
 	max_hp = GameState.max_hp()
@@ -104,17 +102,17 @@ func _on_equipment_changed() -> void:
 	hp = mini(hp, max_hp)
 	mp = mini(mp, max_mp)
 
-## The treasure companion matches the worn treasure (a new one when it changes or levels up).
-func _sync_treasure() -> void:
-	var it: Item = GameState.worn[&"treasure"]
-	if is_instance_valid(treasure) and treasure.item == it and it != null:
+## The fabao companion matches the worn fabao (a new one when it changes or levels up).
+func _sync_fabao() -> void:
+	var it: Item = GameState.worn[&"fabao"]
+	if is_instance_valid(fabao) and fabao.item == it and it != null:
 		return
-	if is_instance_valid(treasure):
-		treasure.queue_free()
-	treasure = null
+	if is_instance_valid(fabao):
+		fabao.queue_free()
+	fabao = null
 	if it != null and is_inside_tree() and world:
-		treasure = Treasure.create(self, it)
-		world.add_object(treasure)
+		fabao = Fabao.create(self, it)
+		world.add_object(fabao)
 
 func refill() -> void:
 	max_hp = GameState.max_hp()
@@ -158,7 +156,7 @@ func _physics_process(delta: float) -> void:
 		_dir = 0
 		running = false
 	if has_debuff(&"net"):
-		# BaseHero.move(): caught in the net the hero neither walks nor falls; attacks and treasures still work
+		# BaseHero.move(): caught in the net the hero neither walks nor falls; attacks and fabao still work
 		velocity = Vector2.ZERO
 	else:
 		if not _no_gravity:
@@ -206,8 +204,8 @@ func _read_input() -> void:
 	_read_attack_input()
 	if Input.is_action_just_pressed("rage"):
 		_try_transform()
-	if Input.is_action_just_pressed("treasure") and is_instance_valid(treasure):
-		treasure.use()
+	if Input.is_action_just_pressed("fabao") and is_instance_valid(fabao):
+		fabao.use()
 
 # ------------------------------------------------------------------ input buffer
 
@@ -612,7 +610,8 @@ func take_hit(h: Hit) -> bool:
 	_after_damage(h, dmg)
 	if (transformed and data.super_armor_in_rage) or _super_armor():
 		return true   # super armor: damage only, no knockback or hit stun (Role1.beAttackDoing)
-	velocity = Vector2(h.attack.knockback.x * h.direction, h.attack.knockback.y)
+	if not (transformed and not data.knockback_in_rage):
+		velocity = Vector2(h.attack.knockback.x * h.direction, h.attack.knockback.y)
 	if state == State.HURT:
 		puppet.play(&"hurt", true)
 	else:
@@ -710,7 +709,7 @@ func restore_mp(amount: int) -> void:
 	mp = mini(mp + amount, max_mp)
 
 ## RoleInfo.addWs: rage = round(damage / power of the last move * 2); when that rounds to 0, damage / 8.
-## (Treasure hits count too: the divisor is the hero's last move, not the treasure's own damage.)
+## (Fabao hits count too: the divisor is the hero's last move, not the fabao's own damage.)
 func rage_for_damage(dmg: int) -> float:
 	var a := _last_attack_data
 	var power := float(a.flat) if a != null and a.flat > 0 else float(GameState.attack_power()) * (a.power_mul if a != null and a.power_mul > 0.0 else 1.0)
@@ -821,8 +820,7 @@ func _update_tint(delta: float) -> void:
 
 func _make_glow() -> void:
 	_glow_mat = SpriteFx.glow_material(Color.WHITE, GLOW_BLUR.x, GLOW_STRENGTH, true)
-	_glow_puppet = Puppet.create(data.puppet)
-	_glow_puppet.get_node("Body").free()   # (a picture only)
+	_glow_puppet = Puppet.create(data.puppet)   # (a picture only)
 	add_child(_glow_puppet)
 	move_child(_glow_puppet, puppet.get_index())   # behind the body
 	_glow_puppet.play(puppet.action, true)

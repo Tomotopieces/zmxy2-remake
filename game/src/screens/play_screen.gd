@@ -8,12 +8,12 @@ signal to_menu
 signal play(stage: Vector2i)   ## retry / next stage
 
 ## 3 debug: one of each Wukong weapon / armour tier plus accessories.
-const TEST_GEAR := ["ptxzg", "gtq", "tsyj", "gwj", "ryjgb", "ptxzf", "dsyj", "bsxj", "xhmj", "dszk", "dslj", "tsgl", "lzp",
-	"csgs", "wkmrz", "wkwdg", "wkbsz", "wkzyf", "xtzy", "ttzy", "sbbl", "jxbuff", "hhbuff", "wpqhs1", "wpqhs1", "yll", "bsz",
-	"dslj", "dsqz", "dsyj"]
+const TEST_GEAR := ["putong_xingzhegun", "gutengqiang", "tianshayueji", "guiwangjian", "qingtianzhu", "putong_xingzhepao", "dishayuanjia", "baishuangxiongjia", "xuehaimojia", "dashengzhankai", "dishalingjie", "tianshagulian", "laozhepao",
+	"cangshengguashi", "wukonghuangtouzhuang", "wukongxizhuang", "wukonghongtouzhuang", "wukongzhuangyuanfu", "xingtianzhiyi", "tiantingzhiyi", "shuangbeibaolv", "wangudeshuiniu", "huihuang", "qianghuashi_1", "qianghuashi_1", "yanluoling", "bishuizhu",
+	"dishalingjie", "dishaquanzhang", "dishayuanjia"]
 const TEST_SOULS := 50000
 const TEST_MERIT := 5000
-const HUD_SCENE := preload("res://scenes/screens/hud.tscn")
+const HUD_SCENE := preload("res://ui/hud/hud.tscn")
 const RESULT_DELAY := 1.0   ## wait before the fail / ending screens (original: 1 s)
 const CLEAR_FADE := 0.5     ## stage clear: fade to white (the original fades to white for 1 s)
 
@@ -52,7 +52,7 @@ func _ready() -> void:
 	hud.open_bag.connect(open_menu.bind(&"bag"))
 	hud.open_menu.connect(open_pause)
 	hud.open_skills.connect(open_menu.bind(&"skill"))
-	hud.open_treasure.connect(open_menu.bind(&"treasure"))
+	hud.open_fabao.connect(open_menu.bind(&"fabao"))
 	level = Level.new()
 	level.stage = stage
 	level.process_mode = Node.PROCESS_MODE_PAUSABLE
@@ -132,11 +132,11 @@ func _on_ending() -> void:
 	c.finished.connect(func(): to_map.emit())
 	add_child(c)
 
-## The in-game menu (背包 / 技能 / 法宝 / 设置) on one of its tabs; 法宝 without a worn treasure only says so.
+## The in-game menu (背包 / 技能 / 法宝 / 设置) on one of its tabs; 法宝 without a worn fabao only says so.
 func open_menu(tab: StringName) -> void:
 	if _over or _menu or get_tree().paused:
 		return
-	if tab == &"treasure" and GameState.worn[&"treasure"] == null:
+	if tab == &"fabao" and GameState.worn[&"fabao"] == null:
 		Toast.show_on(hud, "请先装备法宝")
 		return
 	_menu = TabMenu.create(tab)
@@ -168,8 +168,8 @@ func _unhandled_input(e: InputEvent) -> void:
 		open_pause()
 	elif e.is_action_pressed("open_skills"):
 		open_menu(&"skill")
-	elif e.is_action_pressed("open_treasure"):
-		open_menu(&"treasure")
+	elif e.is_action_pressed("open_fabao"):
+		open_menu(&"fabao")
 	elif OS.is_debug_build() and e.is_action_pressed("debug_give_items"):
 		for id in _test_gear():
 			GameState.add_to_bag(EquipmentCatalog.find(id).roll())

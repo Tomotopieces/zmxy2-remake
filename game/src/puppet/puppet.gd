@@ -1,6 +1,6 @@
 class_name Puppet
 extends Node2D
-## An animated body (characters, effects, bullets, items): the hand-editable scene scenes/actors/<name>/<name>.tscn.
+## An animated body (characters, effects, bullets, items): the hand-editable scene entities/<kind>/<name>/<name>.tscn.
 ##
 ## Children:
 ##   Poses/<Action>/...   Sprite2D parts (and EquipSlot nodes) of each action; only the playing action is visible.
@@ -89,8 +89,14 @@ static func _tint_debug_shape(box: Area2D, c: Color) -> void:
 	if box != null and box.get_child_count() > 0 and box.get_child(0) is CollisionShape2D:
 		(box.get_child(0) as CollisionShape2D).debug_color = c
 
+## Deferred like the keys (_emit): a key on the very last frame is queued first, so it is handled before whoever
+## listens to the end plays the next action (which would drop it).
 func _on_anim_finished(n: StringName) -> void:
-	action_finished.emit(n)
+	_finished_late.call_deferred(n, _play_count)
+
+func _finished_late(n: StringName, count: int) -> void:
+	if count == _play_count:
+		action_finished.emit(n)
 
 ## Play an action from its start (restart=false keeps playing when already in it). Its keys at time 0 fire right away.
 func play(a: StringName, restart := false) -> void:
@@ -290,8 +296,33 @@ func hurt_rect() -> Rect2:
 static var _scenes := {}
 static var _loading := {}   ## puppet name -> path being loaded in the background
 
+## Where puppet scenes live: the folder of whoever uses them, found by file name (a scene named like its folder), e.g.
+## entities/heroes/wukong/wukong.tscn, entities/heroes/wukong/effects/fx_hit7_fire/fx_hit7_fire.tscn,
+## ui/hud/effects/gogo/gogo.tscn. Shared effects are in entities/effects/.
+const ROOTS := ["res://entities", "res://ui"]
+static var _index := {}   ## puppet name -> scene path
+
+static func _build_index() -> void:
+	for r in ROOTS:
+		_index_dir(r)
+
 static func _path(puppet_name: String) -> String:
-	return "res://scenes/actors/%s/%s.tscn" % [puppet_name, puppet_name]
+	if _index.is_empty():
+		_build_index()
+	return _index.get(puppet_name, "")
+
+static func _index_dir(dir: String) -> void:
+	for f in ResourceLoader.list_directory(dir):
+		if f.ends_with("/"):
+			_index_dir(dir.path_join(f.trim_suffix("/")))
+		elif f == dir.get_file() + ".tscn":   # a puppet is the scene named like its folder (not slots/*.tscn parts)
+			_index[f.get_basename()] = dir.path_join(f)
+
+## Every puppet name there is.
+static func all_names() -> Array:
+	if _index.is_empty():
+		_build_index()
+	return _index.keys()
 
 ## Container name of an action ("hit10" -> "Hit10", "hit2-1" -> "Hit2And1").
 static func pose_name(a: String) -> String:
@@ -316,5 +347,17 @@ static func warm(names: Array) -> void:
 		if ResourceLoader.load_threaded_request(_path(n)) == OK:
 			_loading[n] = _path(n)
 
+## The art alone. A character / potion scene has its logic body as the root with the art as its "Puppet" child: that
+## child is taken out (for pictures of a character: glows, shadows, previews).
 static func create(puppet_name: String) -> Puppet:
+	var n := scene(puppet_name).instantiate()
+	if n is Puppet:
+		return n
+	var p := n.get_node("Puppet") as Puppet
+	n.remove_child(p)
+	n.free()
+	return p
+
+## A whole scene: for a character, its logic body (Hero / Monster / Potion) with the art and body collider inside.
+static func instance(puppet_name: String) -> Node:
 	return scene(puppet_name).instantiate()

@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://fsdkfw2t82j6"]
+
+[ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_tcmg4"]
+[ext_resource type="Texture2D" uid="uid://n00bjnbh5ru4" path="res://ui/forge_pack/tex/forge_pack_background.png" id="2_d3q6t"]
+[ext_resource type="Texture2D" uid="uid://dsx8qh8pwujqv" path="res://ui/pad_icons/xbox_lb_outline.png" id="pad_lb"]
+[ext_resource type="Texture2D" uid="uid://5qnv7l32si02" path="res://ui/pad_icons/xbox_rb_outline.png" id="pad_rb"]
+[ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="set_btn"]
+[ext_resource type="PackedScene" uid="uid://bqe4kf3igvsji" path="res://ui/components/yellow_button.tscn" id="yellow_button"]
+
+[node name="ForgePack" type="Control" unique_id=646844994]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_tcmg4")
+
+[node name="Art" type="Node2D" parent="." unique_id=1074061141]
+
+[node name="Background" type="Sprite2D" parent="Art" unique_id=88804093]
+position = Vector2(80, 53.65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_d3q6t")
+centered = false
+
+[node name="Souls" type="Label" parent="." unique_id=1899312030]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 693.5
+offset_top = 542.69995
+offset_right = 828.5
+offset_bottom = 570.69995
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 23
+text = "1234567890"
+
+[node name="LbIcon" type="TextureRect" parent="." unique_id=2086667780]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 524.7
+offset_top = 108.65
+offset_right = 550.7
+offset_bottom = 134.65
+mouse_filter = 2
+texture = ExtResource("pad_lb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RbIcon" type="TextureRect" parent="." unique_id=194762545]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 767.7
+offset_top = 108.65
+offset_right = 793.7
+offset_bottom = 134.65
+mouse_filter = 2
+texture = ExtResource("pad_rb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BtnZhuangBei" parent="." unique_id=230767215 instance=ExtResource("yellow_button")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 554.1
+offset_top = 109.65
+offset_right = 614.7
+offset_bottom = 133.35
+text = "装 备"
+
+[node name="BtnDaoJu" parent="." unique_id=452979093 instance=ExtResource("yellow_button")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 629.8
+offset_top = 109.65
+offset_right = 690.4
+offset_bottom = 133.35
+text = "道 具"
+
+[node name="BtnShiZhuang" parent="." unique_id=1780234149 instance=ExtResource("yellow_button")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 703.8
+offset_top = 109.65
+offset_right = 764.7
+offset_bottom = 133.35
+text = "时 装"
+
+[node name="StrengthenTab" parent="." unique_id=1874580160 instance=ExtResource("set_btn")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 175.0
+offset_top = 546.0
+offset_right = 279.0
+offset_bottom = 578.0
+theme_override_font_sizes/font_size = 20
+text = "强化"
+
+[node name="FusionTab" parent="." unique_id=168202555 instance=ExtResource("set_btn")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 253.0
+offset_top = 546.0
+offset_right = 341.0
+offset_bottom = 578.0
+theme_override_font_sizes/font_size = 20
+text = "熔炼"

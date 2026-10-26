@@ -34,7 +34,7 @@ func _see_through(a: Image, b: Image) -> Array:
 	return out
 
 var _out := ""
-var _only: PackedStringArray = []   ## --only=sl21,sl31: just these stages
+var _only: PackedStringArray = []   ## --only=jieyinyuan,wangchuanhe: just these stages
 
 func _ready() -> void:
 	var scale := 1.0
@@ -52,7 +52,7 @@ func _ready() -> void:
 	for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]:
 		for y in ([1, 2, 3] if x <= 3 else ([1, 2, 3, 4, 5, 6] if x == 10 else [1])):
 			var s := Vector2i(x, y)
-			if not ResourceLoader.exists("res://scenes/levels/%s.tscn" % Level.scene_name(s)):
+			if not ResourceLoader.exists(Level.scene_path(Level.scene_name(s))):
 				continue
 			if not _only.is_empty() and not Level.scene_name(s) in _only:
 				continue

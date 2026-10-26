@@ -1,0 +1,288 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://entities/objects/xingtian_door/xingtian_door.gd" id="1_afgux"]
+[ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1_3.png" id="2_mlujg"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_boss_dead/tex/fx_boss_dead_hit3_part10.png" id="3_x13qf"]
+[ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1.png" id="4_xyhbo"]
+[ext_resource type="Texture2D" path="res://entities/objects/xingtian_door/tex/xingtian_door_open_part1_2.png" id="5_4guip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_TouchZone"]
+size = Vector2(156, 354)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_EnterZone"]
+size = Vector2(296, 173)
+
+[sub_resource type="Animation" id="Animation_5kwfn"]
+length = 0.08333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Closed/ClosedPart1:transform")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -286.5, -210.5)]
+}
+
+[sub_resource type="Animation" id="Animation_afgux"]
+length = 1.2083333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Open/OpenPart1:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.20833333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_mlujg"), ExtResource("4_xyhbo"), ExtResource("5_4guip")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Open/OpenPart1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -286.5, -210.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Open/OpenPart2:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.20833333, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, true, true, true, true, true, true, true, true, true, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Open/OpenPart2:transform")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.20833333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.428, 0, 0, 0.452, -84.25403, -146.17699)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Open/OpenPart2:region_rect")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.20833333, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384), Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384), Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Open/OpenPart3:visible")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.20833333, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, true, true, true, true, true, true, true, true, true, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Open/OpenPart3:transform")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.20833333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.428, 0, 0, 0.452, -84.1, -146.17699)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Open/OpenPart3:region_rect")
+tracks/7/interp = 0
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.20833333, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(1536, 0, 384, 384), Rect2(0, 384, 384, 384), Rect2(384, 384, 384, 384), Rect2(768, 384, 384, 384), Rect2(1152, 384, 384, 384), Rect2(1536, 384, 384, 384), Rect2(1536, 0, 384, 384), Rect2(0, 384, 384, 384), Rect2(384, 384, 384, 384), Rect2(768, 384, 384, 384), Rect2(1152, 384, 384, 384), Rect2(1536, 384, 384, 384)]
+}
+
+[sub_resource type="Animation" id="Animation_mlujg"]
+length = 1.0000000000000002
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Open/OpenPart1:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_4guip")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Open/OpenPart1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -286.5, -210.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Open/OpenPart2:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.973643e-08, 0.08333329, 0.16666667, 0.25000003, 0.33333328, 0.41666666, 0.50000006, 0.5833333, 0.6666667, 0.75000006, 0.83333343, 0.9166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, true, true, true, true, true, true, true, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Open/OpenPart2:transform")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.428, 0, 0, 0.452, -84.25403, -146.17699)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Open/OpenPart2:region_rect")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.973643e-08, 0.08333329, 0.16666667, 0.25000003, 0.33333328, 0.41666666, 0.50000006, 0.5833333, 0.6666667, 0.75000006, 0.83333343, 0.9166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384), Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384), Rect2(0, 0, 384, 384), Rect2(384, 0, 384, 384), Rect2(768, 0, 384, 384), Rect2(1152, 0, 384, 384)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Open/OpenPart3:visible")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(3.973643e-08, 0.08333329, 0.16666667, 0.25000003, 0.33333328, 0.41666666, 0.50000006, 0.5833333, 0.6666667, 0.75000006, 0.83333343, 0.9166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, true, true, true, true, true, true, true, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Open/OpenPart3:transform")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.428, 0, 0, 0.452, -84.1, -146.17699)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Open/OpenPart3:region_rect")
+tracks/7/interp = 0
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(3.973643e-08, 0.08333329, 0.16666667, 0.25000003, 0.33333328, 0.41666666, 0.50000006, 0.5833333, 0.6666667, 0.75000006, 0.83333343, 0.9166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(1536, 0, 384, 384), Rect2(0, 384, 384, 384), Rect2(384, 384, 384, 384), Rect2(768, 384, 384, 384), Rect2(1152, 384, 384, 384), Rect2(1536, 384, 384, 384), Rect2(1536, 0, 384, 384), Rect2(0, 384, 384, 384), Rect2(384, 384, 384, 384), Rect2(768, 384, 384, 384), Rect2(1152, 384, 384, 384), Rect2(1536, 384, 384, 384)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x13qf"]
+_data = {
+&"closed": SubResource("Animation_5kwfn"),
+&"open": SubResource("Animation_afgux"),
+&"open_loop": SubResource("Animation_mlujg")
+}
+
+[node name="XingtianDoor" type="Node2D" unique_id=1390935713]
+script = ExtResource("1_afgux")
+
+[node name="Closed" type="Node2D" parent="." unique_id=1430259020]
+
+[node name="ClosedPart1" type="Sprite2D" parent="Closed" unique_id=225740108]
+position = Vector2(-286.5, -210.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_mlujg")
+centered = false
+
+[node name="Open" type="Node2D" parent="." unique_id=2141184824]
+
+[node name="OpenPart1" type="Sprite2D" parent="Open" unique_id=312381006]
+position = Vector2(-286.5, -210.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_mlujg")
+centered = false
+
+[node name="OpenPart2" type="Sprite2D" parent="Open" unique_id=1507829667]
+position = Vector2(-84.25403, -146.17699)
+scale = Vector2(0.428, 0.452)
+texture = ExtResource("3_x13qf")
+centered = false
+region_enabled = true
+
+[node name="OpenPart3" type="Sprite2D" parent="Open" unique_id=1073401751]
+position = Vector2(-84.1, -146.17699)
+scale = Vector2(0.428, 0.452)
+texture = ExtResource("3_x13qf")
+centered = false
+region_enabled = true
+
+[node name="TouchZone" type="Area2D" parent="." unique_id=2019700856]
+collision_layer = 0
+collision_mask = 16
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="TouchZone" unique_id=402575959]
+position = Vector2(-8, 34.4)
+shape = SubResource("RectangleShape2D_TouchZone")
+
+[node name="EnterZone" type="Area2D" parent="." unique_id=1002641324]
+collision_layer = 0
+collision_mask = 16
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="EnterZone" unique_id=262038731]
+position = Vector2(0, -100)
+shape = SubResource("RectangleShape2D_EnterZone")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1327606379]
+libraries/ = SubResource("AnimationLibrary_x13qf")

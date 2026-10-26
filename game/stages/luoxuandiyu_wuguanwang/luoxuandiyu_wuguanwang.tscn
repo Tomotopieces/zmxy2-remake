@@ -1,0 +1,137 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://stages/luoxuandiyu_wuguanwang/tex/luoxuandiyu_wuguanwang_near_00.png" id="1_fm1jv"]
+[ext_resource type="Texture2D" path="res://stages/shared/luoxuandiyu_dating_sky.png" id="2_vdp8d"]
+[ext_resource type="Texture2D" path="res://stages/luoxuandiyu_wuguanwang/tex/luoxuandiyu_wuguanwang_ground_01.png" id="3_63ryj"]
+
+[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="x9mxwv6"]
+
+[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xpcrypw"]
+
+[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xkb6rh1"]
+
+[ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xi5scdz"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
+size = Vector2(20.01, 1000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
+size = Vector2(899.96, 23.3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
+size = Vector2(1150.02, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
+size = Vector2(1150.05, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
+size = Vector2(167, 163.45)
+
+[node name="Scenery" type="Node2D" unique_id=331624786]
+
+[node name="Guides" type="Node2D" parent="." unique_id=1302189294]
+
+[node name="Floor" type="Line2D" parent="Guides" unique_id=1127476213]
+points = PackedVector2Array(-200, 497, 1956.2, 497)
+width = 2.0
+default_color = Color(1, 0.3, 0.2, 0.8)
+
+[node name="FirstScreen" type="Line2D" parent="Guides" unique_id=223594047]
+points = PackedVector2Array(0, 0, 940, 0, 940, 590, 0, 590, 0, 0)
+width = 2.0
+default_color = Color(0.3, 1, 0.4, 0.8)
+
+[node name="Art" type="Node2D" parent="." unique_id=1980257267]
+z_index = -10
+
+[node name="Far" type="Parallax2D" parent="Art" unique_id=1388910327]
+scroll_scale = Vector2(0.8, 1)
+
+[node name="Middle" type="Parallax2D" parent="Art" unique_id=550739565]
+scroll_scale = Vector2(0.9, 1)
+
+[node name="Near" type="Parallax2D" parent="Art" unique_id=972149373]
+
+[node name="NearPiece1" type="Sprite2D" parent="Art/Near" unique_id=1660663714]
+position = Vector2(-38, 0)
+texture = ExtResource("1_fm1jv")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 590)
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=2073546732]
+layer = -2
+
+[node name="Sky" type="Sprite2D" parent="Background" unique_id=406600728]
+texture = ExtResource("2_vdp8d")
+centered = false
+
+[node name="Ground" type="Node2D" parent="." unique_id=2091109592]
+z_index = -7
+
+[node name="GroundPiece1" type="Sprite2D" parent="Ground" unique_id=1500659496]
+position = Vector2(-31.85, 491.9)
+texture = ExtResource("3_63ryj")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 94)
+
+[node name="Layout" type="Node2D" parent="."]
+script = ExtResource("x9mxwv6")
+size = Vector2(1756.2, 585.9)
+
+[node name="Walls" type="Node2D" parent="Layout"]
+
+[node name="Ground" type="StaticBody2D" parent="Layout/Walls"]
+collision_mask = 0
+
+[node name="Floor1" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(1034, 79.45)
+shape = SubResource("RectangleShape2D_L1")
+
+[node name="Floor2" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(-98.6, 63.1)
+rotation = 1.571
+shape = SubResource("RectangleShape2D_L2")
+
+[node name="Floor3" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(467.25, -375.65)
+shape = SubResource("RectangleShape2D_L3")
+
+[node name="Floor4" type="CollisionShape2D" parent="Layout/Walls/Ground"]
+position = Vector2(465.75, 506)
+shape = SubResource("RectangleShape2D_L4")
+
+[node name="Stops" type="Node2D" parent="Layout"]
+
+[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+position = Vector2(890.3, 205.3)
+script = ExtResource("xpcrypw")
+back = 1150
+
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1"]
+position = Vector2(-118.8, 121.25)
+script = ExtResource("xkb6rh1")
+monster = 67
+delay = 2
+interval = 1
+total = 1
+
+[node name="Stop2" type="Marker2D" parent="Layout/Stops"]
+position = Vector2(1716.35, 162.05)
+script = ExtResource("xpcrypw")
+back = 1150
+
+[node name="ExitDoor" parent="Layout" instance=ExtResource("xi5scdz")]
+visible = false
+z_index = -6
+position = Vector2(779, 445.15)
+
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+collision_layer = 0
+collision_mask = 16
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+position = Vector2(-0.25, -27.425)
+shape = SubResource("RectangleShape2D_L5")

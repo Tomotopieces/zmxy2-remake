@@ -1,6 +1,6 @@
 class_name Forge
 extends RefCounted
-## Rules of the 炼丹炉 (strengthening, fusion), magic treasure growth and the shop, on plain item dictionaries.
+## Rules of the 炼丹炉 (strengthening, fusion), magic fabao growth and the shop, on plain item dictionaries.
 ## Numbers come from the equipment catalogue (data/equipment.tres, `rules`).
 
 const ELEMENT_NAMES := {"jin": "金", "mu": "木", "shui": "水", "huo": "火", "tu": "土"}
@@ -85,8 +85,8 @@ static func produce(recipe: Dictionary, mats: Array) -> Item:
 					if v != 0.0:
 						s[k] = float(s.get(k, 0.0)) + v
 			out.stats = s
-		"average", "treasure":
-			var tdef: Dictionary = _cat().treasures.defs.get(recipe.out, {})
+		"average", "fabao":
+			var tdef: Dictionary = _cat().fabao.defs.get(recipe.out, {})
 			if tdef.has("fixed"):
 				for k in tdef.fixed:
 					out.stats[k] = float(tdef.fixed[k])
@@ -96,23 +96,23 @@ static func produce(recipe: Dictionary, mats: Array) -> Item:
 					for m in mats:
 						sum += float(int(_total(m, k)))
 					out.stats[k] = float(int(sum / 3.0))
-			if recipe.kind == "treasure":
-				_init_treasure(out, tdef)
+			if recipe.kind == "fabao":
+				_init_fabao(out, tdef)
 	return out
 
-## A bare treasure as the console / tests hand out (no materials): level 1, rolled growth and elements, a 五毒兽 with its
+## A bare fabao as the console / tests hand out (no materials): level 1, rolled growth and elements, a 五毒兽 with its
 ## fixed stats; the others start with no stats (a fused one carries its materials' average).
-static func new_treasure(id: String) -> Item:
+static func new_fabao(id: String) -> Item:
 	var out := EquipmentCatalog.find(id).roll()
-	var tdef: Dictionary = _cat().treasures.defs.get(id, {})
+	var tdef: Dictionary = _cat().fabao.defs.get(id, {})
 	for k in tdef.get("fixed", {}):
 		out.stats[k] = float(tdef.fixed[k])
-	_init_treasure(out, tdef)
+	_init_fabao(out, tdef)
 	return out
 
 ## A new 法宝: level 1, random growth rate (one decimal) and elements; 五毒兽 also rolls a passive and its spell.
-static func _init_treasure(item: Item, tdef: Dictionary) -> void:
-	var t: Dictionary = _cat().treasures
+static func _init_fabao(item: Item, tdef: Dictionary) -> void:
+	var t: Dictionary = _cat().fabao
 	item.lv = 1
 	var g: Array = tdef.growth
 	item.growth = snappedf(Rng.stepped(g[0], g[1], 0.1), 0.1)   # one decimal, every step equally likely
@@ -130,10 +130,10 @@ static func _init_treasure(item: Item, tdef: Dictionary) -> void:
 		item.spell = Rng.randi() % 2
 		item.strong = false
 
-# ------------------------------------------------------------------ treasures
+# ------------------------------------------------------------------ fabao
 
-static func is_treasure(item: Item) -> bool:
-	return item.is_treasure()
+static func is_fabao(item: Item) -> bool:
+	return item.is_fabao()
 
 static func element_text(item: Item) -> String:
 	return " ".join(item.elem.map(func(e): return ELEMENT_NAMES.get(e, e)))
@@ -143,18 +143,18 @@ static func has_element(item: Item, e: String) -> bool:
 
 ## Souls to go from the current level to the next (0 at the top level).
 static func upgrade_cost(item: Item) -> int:
-	var t: Dictionary = _cat().treasures
+	var t: Dictionary = _cat().fabao
 	var lv := item.lv
 	return 0 if lv >= int(t.max_level) else lv * lv * int(t.cost_mul)
 
-## MP one use of the treasure's skill costs.
+## MP one use of the fabao's skill costs.
 static func skill_cost(item: Item) -> int:
-	var t: Dictionary = _cat().treasures
+	var t: Dictionary = _cat().fabao
 	return int(t.mp_base) + int(t.mp_per_level) * item.lv
 
 ## Level up (the caller pays): each stat grows by floor(up x growth), plus the full value for its element.
 static func upgrade(item: Item) -> void:
-	var t: Dictionary = _cat().treasures
+	var t: Dictionary = _cat().fabao
 	var up: Dictionary = t.defs[item.id].up
 	item.lv += 1
 	for e in t.element_stat:

@@ -1,7 +1,7 @@
 extends Node
 ## Game root: switches between title, stage map and play screens.
 
-const STAGE_MAP := preload("res://scenes/screens/stage_map.tscn")
+const STAGE_MAP := preload("res://ui/stage_map/stage_map_screen.tscn")
 
 var _screen: Node
 var _fade := ScreenFade.new()

@@ -1,9 +1,9 @@
 class_name Level
 extends Node2D
-## One stage: its scene scenes/levels/<name>.tscn - art, mechanisms and the playing field (Layout: walls, camera stops
+## One stage: its scene stages/<name>/<name>.tscn - art, mechanisms and the playing field (Layout: walls, camera stops
 ## with their monster spawns, the exit door).
-## Camera follows the original side-scroller rules (ViewControllor): push-scroll at 2/3 screen,
-## lock at stop points until their spawns are cleared, then auto-scroll to the next one.
+## Camera: a side-scroller that follows the hero inside a dead zone, held between the current bounds (a room locks the
+## screen on its stop until its spawns are cleared), eased towards its target every frame.
 
 signal stage_cleared
 signal hero_died
@@ -19,12 +19,9 @@ signal transfer(to: Vector2i)    ## hidden stage entrance used: go straight ther
 static var current: Level
 
 @export var stage := Vector2i(1, 1)
-var level_name := "sl11"
+var level_name := "guicheng"
 @export var scroll_trigger := Layers.VIEW.x * 2.0 / 3.0   ## hero screen x that pushes the camera
 @export var back_trigger := 188.0
-@export var auto_trigger := 450.0
-@export var auto_speed_add := 240.0      ## px/s added to the hero speed while auto-scrolling
-@export var auto_speed_max := 720.0
 @export var edge_margin := 20.0
 
 var hero: Hero
@@ -35,12 +32,11 @@ var size := Vector2.ZERO
 var stops: Array = []        ## [{x, back, spawners: [MonsterSpawn], done}] (the scene's Layout/Stops)
 var stop_index := 0
 var locked := false
-var auto_scroll := false
 var door: Node2D                 ## exit portal (hidden until the stage is cleared); null in hub / ending stages
 var door_zone: Area2D             ## where up enters the exit portal (its EnterZone)
 var walls: Array[AnimatableBody2D] = []   ## the scene's moving / switchable walls (Layout/Walls: platforms, hidden walls)
 var params := {}                 ## this stage's script numbers (data/stages.json)
-var script_node: StageScript     ## this stage's special rules (src/level/stages/<level_name>.gd), if any
+var script_node: StageScript     ## this stage's special rules (stages/<level_name>/<level_name>.gd), if any
 var fixed_camera := false        ## single-screen boss rooms (5-1, 6-1, 7-1, stage 10)
 
 ## Debug boss arena (console): one single-screen room (the ground and sky of stage 1) holding the monster set in arena_boss.
@@ -52,8 +48,6 @@ var _far_width := 0.0
 var _far_x0 := 0.0         ## where the sky picture stands before the stage scrolls it
 var _room_view := 0.0        ## where the camera stood when the current room locked
 var _room_back := 0.0        ## how far back from there the hero may scroll
-var _drag_right := 0.0
-var _right_cap := 0.0        ## the right edge the camera may show now (it grows at CAMERA_MAX_SPEED at most)
 var _end_x := 0.0     ## right edge the camera may show: the last stop (the art may end before the scene bounds)
 var _trauma := 0.0      ## camera shake: 0..1, decays linearly; the offset grows with its square
 var _shake_t := 0.0
@@ -77,8 +71,23 @@ var _combo_t := 0.0
 static func music_for(s: Vector2i) -> String:
 	return "bg%d" % (1 if s == ARENA else s.x if s.x <= 7 else 4)
 
+## Stage number -> its folder under stages/ (the pinyin of the stage's name).
+const STAGES := {
+	Vector2i(0, 1): "leitai", Vector2i(1, 1): "guicheng", Vector2i(1, 2): "wuchangxiang", Vector2i(1, 3): "guimenguan",
+	Vector2i(2, 1): "jieyinyuan", Vector2i(2, 2): "panguandian", Vector2i(2, 3): "yanluodian",
+	Vector2i(3, 1): "wangchuanhe", Vector2i(3, 2): "naiheqiao", Vector2i(3, 3): "wangxiangtai", Vector2i(4, 1): "zhuanlundian",
+	Vector2i(5, 1): "baigumijing", Vector2i(6, 1): "niumogu", Vector2i(7, 1): "shibacengdiyu", Vector2i(8, 1): "huodadiyu",
+	Vector2i(9, 1): "qixihuodong", Vector2i(10, 1): "luoxuandiyu_dating", Vector2i(10, 2): "luoxuandiyu_wuguanwang",
+	Vector2i(10, 3): "luoxuandiyu_bianchengwang", Vector2i(10, 4): "luoxuandiyu_taishanwang",
+	Vector2i(10, 5): "luoxuandiyu_dushiwang", Vector2i(10, 6): "luoxuandiyu_pingdengwang", Vector2i(11, 1): "guoqinghuodong",
+}
+
 static func scene_name(s: Vector2i) -> String:
-	return "sl%d%d" % [s.x, s.y]
+	return STAGES.get(s, "")
+
+## stages/<name>/<name>.tscn: the stage's scene (its art, lighting.json and script sit next to it).
+static func scene_path(level_name: String) -> String:
+	return "res://stages/%s/%s.tscn" % [level_name, level_name]
 
 func _ready() -> void:
 	current = self
@@ -106,7 +115,7 @@ func _ready() -> void:
 		# boss rooms: the first stop is touched after a delay, wherever the camera is
 		get_tree().create_timer(float(params.auto_touch), false).timeout.connect(_touch_stop)
 	StageLighting.attach(self)
-	var sp := "res://src/level/stages/%s.gd" % level_name
+	var sp := "res://stages/%s/%s.gd" % [level_name, level_name]
 	if ResourceLoader.exists(sp):
 		script_node = load(sp).new()
 		script_node.level = self
@@ -276,7 +285,7 @@ func freeze(seconds: float) -> void:
 ## The stage's scene: "Background/Sky", "Art" (behind the actors), "Ground" (the floor art), "Layout" (the playing field),
 ## optionally "Objects" (mechanisms); "Guides" (reference lines for the editor) is dropped.
 func _scenery_scene() -> Node:
-	var s: Node = load("res://scenes/levels/%s.tscn" % level_name).instantiate()
+	var s: Node = load(scene_path(level_name)).instantiate()
 	var guides := s.get_node_or_null("Guides")
 	if guides != null:
 		s.remove_child(guides)
@@ -341,8 +350,8 @@ func _build() -> void:
 
 ## Common effects plus every puppet of this stage's monsters (body, projectiles, and puppets named after the body:
 ## bullets, effects, form clips) load in the background while the stage starts.
-const WARM_COMMON := ["fx_monster_hurt1", "fx_monster_hurt2", "fx_hero_hurt", "orb_Red", "orb_Green", "orb_Blue",
-	"orb_While", "potion_BigHP", "potion_SmallHP", "potion_SmallMP", "gogo", "fx_levelup"]
+const WARM_COMMON := ["fx_monster_hurt1", "fx_monster_hurt2", "fx_hero_hurt", "orb_red", "orb_green", "orb_blue",
+	"orb_white", "potion_big_hp", "potion_small_hp", "potion_small_mp", "gogo", "fx_levelup"]
 
 func _warm_puppets() -> void:
 	var bodies := {}
@@ -353,7 +362,7 @@ func _warm_puppets() -> void:
 				if a.projectile != "":
 					bodies[a.projectile] = true
 	var names: Array = WARM_COMMON.duplicate()
-	var all := DirAccess.get_directories_at("res://scenes/actors")
+	var all := Puppet.all_names()
 	for b in bodies:
 		for r in all:
 			if r == b or r.begins_with(b):
@@ -361,7 +370,7 @@ func _warm_puppets() -> void:
 	Puppet.warm(names)
 
 func monster_data(id: int) -> MonsterData:
-	for p in ["res://data/monsters/monster_%d_%s.tres" % [id, level_name], "res://data/monsters/monster_%d.tres" % id]:
+	for p in [MonsterData.path(id, level_name), MonsterData.path(id)]:
 		if ResourceLoader.exists(p):
 			return load(p)
 	return null
@@ -509,83 +518,75 @@ func boss_destroyed(m: Monster) -> void:
 	open_door()
 
 # ------------------------------------------------------------------ camera
-## The camera is a Camera2D riding on the hero. What the original wants from it:
-##  - the hero walks freely in a dead zone: past 2/3 of the screen the camera follows right, near the left edge it follows
-##    back (Camera2D drag margins);
-##  - a room closes the screen on its stop: the camera cannot show anything right of the stop until the room is cleared
-##    (limit_right), and the hero can only go back a set distance from where the room closed (limit_left);
-##  - once a room is cleared the way on opens (GOGO) and the camera simply follows the hero again;
-##  - the last room's right edge is the stage's end;
-##  - it does not snap to its target: it eases towards it (Camera2D position smoothing, an exponential lerp), so starts and
-##    stops of the hero and the room opening / closing move the view softly. The limits still hold at every frame.
+## Every frame: where the screen should be (target), then the screen follows it on a critically damped spring
+## (SmoothDamp): it speeds up and slows down softly - no sudden start when the target jumps (a room opening).
+##  - target: the hero inside a dead zone - past scroll_trigger the screen follows right, inside back_trigger it follows
+##    back - kept between the current bounds;
+##  - bounds: the stage, and while a room is locked its stop on the right and the allowed way back on the left;
+##  - when the bounds change (a room locks or opens) the target moves and the screen simply eases over to it.
+## view_x is the screen's left edge (what is on screen); the shake is an offset on top of it.
+const CAMERA_SMOOTH_TIME := 0.25   ## about how long the screen takes to catch up with its target (s; lower = tighter)
+const CAMERA_MAX_SPEED := 720.0    ## px/s (the hero runs at about 400)
+const HERO_HALF := 22.0         ## the dead-zone lines are measured to the hero's edges, its origin is its middle
+
+var _target_x := 0.0
+var _view_speed := 0.0
 
 func _make_camera() -> void:
 	camera = Camera2D.new()
 	camera.process_callback = Camera2D.CAMERA2D_PROCESS_PHYSICS
-	camera.drag_horizontal_enabled = true
-	camera.drag_vertical_enabled = false
-	var half := Layers.VIEW.x / 2.0
-	var hurt_half := 22.0   # the hero's origin is its middle; the lines are measured to its edges
-	_drag_right = (scroll_trigger + hurt_half - half) / half
-	camera.drag_right_margin = _drag_right
-	camera.drag_left_margin = (half - back_trigger - hurt_half) / half
-	camera.limit_top = 0
-	camera.limit_bottom = int(Layers.VIEW.y)
-	camera.limit_smoothed = false
-	camera.position_smoothing_enabled = true   # the camera eases towards where it wants to be (lerp), instead of snapping to the hero
-	camera.position_smoothing_speed = CAMERA_SMOOTHING
-	# the stage opens on its first screen: no glide in from wherever the hero was placed
-	_right_cap = minf(Layers.VIEW.x, size.x)
-	camera.limit_left = 0
-	camera.limit_right = int(_right_cap)
-	hero.add_child(camera)
+	camera.anchor_mode = Camera2D.ANCHOR_MODE_FIXED_TOP_LEFT   # its position is the screen's top-left corner = view_x
+	add_child(camera)   # (the level, not the world: it goes on moving and shaking through a hit-stop)
 	camera.make_current()
-	camera.force_update_scroll()
-	camera.reset_smoothing()
+	view_x = 0.0   # the stage opens on its first screen
+	_target_x = 0.0
+	_view_speed = 0.0
+	camera.position = Vector2.ZERO
 
 func _lock_room() -> void:
 	locked = true
-	auto_scroll = false
 	_room_view = view_x
 	_room_back = float(stops[stop_index].back) - Layers.VIEW.x
 
-## The camera never moves faster than this (the original follows at the hero's own speed): when a room opens the
-## screen glides on instead of jumping to the hero.
-const CAMERA_MAX_SPEED := 720.0
-const CAMERA_SMOOTHING := 4.0   ## how fast the camera eases to its target (per second; higher = tighter)
+## The current bounds of the screen's left edge.
+func _camera_bounds() -> Vector2:
+	var right_edge := _end_x   # the next stop (cleared rooms open the way to the one after), at last the stage end
+	if stop_index < stops.size():
+		right_edge = float(stops[stop_index].x)
+	var hi := maxf(minf(right_edge, size.x) - Layers.VIEW.x, 0.0)
+	var lo := clampf(_room_view - _room_back, 0.0, hi) if locked else 0.0
+	return Vector2(lo, hi)
 
 func _update_camera(delta: float) -> void:
 	if fixed_camera:
-		camera.limit_left = 0
-		camera.limit_right = int(Layers.VIEW.x)
-		camera.offset = _shake_offset(delta)
 		view_x = 0.0
-		return
-	view_x = camera.get_screen_center_position().x - Layers.VIEW.x / 2.0
-	var view_right := view_x + Layers.VIEW.x
-	var target_right := size.x
-	if stop_index < stops.size():
-		target_right = float(stops[stop_index].x)
-	elif not stops.is_empty():
-		target_right = float(stops[-1].x)
-	target_right = minf(target_right, size.x)
-	var speed_cap := CAMERA_MAX_SPEED
-	var left_edge := 0.0
-	if locked:
-		left_edge = maxf(0.0, _room_view - _room_back)
-	if auto_scroll and not locked:
-		if hero.global_position.x - view_x > Layers.VIEW.x / 2.0 + 2.0:
-			# the auto camera: no dead zone to the right, so the screen runs on until the hero is in the middle,
-			# at hero speed + 240 px/s
-			speed_cap = minf(absf(hero.velocity.x) + auto_speed_add, auto_speed_max)
-			camera.drag_right_margin = 0.0
-		else:
-			auto_scroll = false   # the hero is level with the middle again: the auto camera is over for good
-	if not auto_scroll:
-		camera.drag_right_margin = _drag_right
-	_right_cap = minf(target_right, maxf(_right_cap, view_right) + speed_cap * delta)
-	camera.limit_right = ceili(_right_cap)
-	camera.limit_left = mini(floori(left_edge), camera.limit_right - int(Layers.VIEW.x))
+		_target_x = 0.0
+	else:
+		var hx := hero.global_position.x
+		if hx + HERO_HALF > _target_x + scroll_trigger:
+			_target_x = hx + HERO_HALF - scroll_trigger
+		elif hx - HERO_HALF < _target_x + back_trigger:
+			_target_x = hx - HERO_HALF - back_trigger
+		var b := _camera_bounds()
+		_target_x = clampf(_target_x, b.x, b.y)
+		view_x = _smooth_damp(view_x, _target_x, delta)
+	camera.position = Vector2(view_x, 0.0)
 	camera.offset = _shake_offset(delta)
 	if _end_x > Layers.VIEW.x:
 		_far.position.x = _far_x0 - view_x * (_far_width - Layers.VIEW.x) / (_end_x - Layers.VIEW.x)
+
+## Critically damped spring towards target (Game Programming Gems 4, 1.10 - Unity's SmoothDamp), speed capped.
+func _smooth_damp(x: float, target: float, delta: float) -> float:
+	var omega := 2.0 / CAMERA_SMOOTH_TIME
+	var k := omega * delta
+	var e := 1.0 / (1.0 + k + 0.48 * k * k + 0.235 * k * k * k)
+	var max_d := CAMERA_MAX_SPEED * CAMERA_SMOOTH_TIME
+	var d := clampf(x - target, -max_d, max_d)
+	var t := x - d
+	var temp := (_view_speed + omega * d) * delta
+	_view_speed = (_view_speed - omega * temp) * e
+	var out := t + (d + temp) * e
+	if (target - x > 0.0) == (out > target):   # never overshoots
+		out = target
+		_view_speed = 0.0
+	return out

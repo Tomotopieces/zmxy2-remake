@@ -3,11 +3,11 @@ extends Resource
 ## One equipment / item definition (my/AllEquipment.as). Stats roll between min and max when it drops.
 
 const STATS := [&"hp", &"mp", &"atk", &"def", &"crit", &"miss", &"hp_regen", &"mp_regen", &"lifesteal", &"mdef", &"deephit"]
-const SLOTS := [&"weapon", &"cloth", &"accessory", &"treasure", &"fashion", &"wing"]   ## types the hero can wear
+const SLOTS := [&"weapon", &"cloth", &"accessory", &"fabao", &"fashion", &"wing"]   ## types the hero can wear
 
 @export var id := &""
 @export var display_name := ""
-@export var type := &""          ## weapon / cloth / accessory / item / fashion / wing / treasure
+@export var type := &""          ## weapon / cloth / accessory / item / fashion / wing / fabao
 @export var user := ""           ## required character ("" = anyone)
 @export var show := 1            ## appearance variant on the puppet
 @export var quality := ""
@@ -18,8 +18,8 @@ const SLOTS := [&"weapon", &"cloth", &"accessory", &"treasure", &"fashion", &"wi
 @export var stone := 0           ## strengthening stone level (0 = not a stone)
 @export var charm := &""         ## luck / keep (strengthening charms)
 @export_multiline var desc := ""
-@export var icon: Texture2D
-@export var ground_icon: Texture2D
+@export var icon: Texture2D          ## the drop picture (assets/items/<id>_fall.png), or the original framed one
+@export var framed := false          ## icon is the original framed picture (<id>_icon.png): the item has no drop picture
 @export var ground_size := Vector2(40, 40)   ## pickup / landing box of the dropped item
 
 

@@ -1,5 +1,5 @@
 {
-	"sl101": {
+	"luoxuandiyu_dating": {
 		"fixed_camera": true,
 		"hub": {
 			"door_open": 0.666666666666667,
@@ -30,30 +30,30 @@
 			]
 		}
 	},
-	"sl102": {
+	"luoxuandiyu_wuguanwang": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl103": {
+	"luoxuandiyu_bianchengwang": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl104": {
+	"luoxuandiyu_taishanwang": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl105": {
+	"luoxuandiyu_dushiwang": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl106": {
+	"luoxuandiyu_pingdengwang": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl111": {
+	"guoqinghuodong": {
 		"save_on_enter": true
 	},
-	"sl22": {
+	"panguandian": {
 		"panguan": {
 			"boss": 39.0,
 			"fade": 1.0,
@@ -89,8 +89,8 @@
 			]
 		}
 	},
-	"sl23": {},
-	"sl31": {
+	"yanluodian": {},
+	"wangchuanhe": {
 		"fish": {
 			"attack": {
 				"flat": 90.0,
@@ -146,10 +146,10 @@
 			"to_dy": -60.0
 		}
 	},
-	"sl33": {
+	"wangxiangtai": {
 		"hidden_wall_boss": 47.0,
 		"pearls": {
-			"drop": "bsz",
+			"drop": "bishuizhu",
 			"drop_chance": 0.2,
 			"fade": 1.0,
 			"hp": 5.0,
@@ -177,9 +177,9 @@
 			]
 		}
 	},
-	"sl41": {
+	"zhuanlundian": {
 		"final_platforms": {
-			"art_texture": "res://assets/shared/mixed/zmxy2_game_353.png",
+			"art_texture": "res://stages/zhuanlundian/tex/fly_floor.png",
 			"positions": [
 				[
 					1200.0,
@@ -194,19 +194,19 @@
 			"wrap": 1400.0
 		}
 	},
-	"sl51": {
+	"baigumijing": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl61": {
+	"niumogu": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl71": {
+	"shibacengdiyu": {
 		"auto_touch": 4.0,
 		"fixed_camera": true
 	},
-	"sl91": {
+	"qixihuodong": {
 		"fb": true,
 		"save_on_enter": true
 	}

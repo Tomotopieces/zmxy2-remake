@@ -6,7 +6,7 @@ description: Rework a stage of the 造梦西游2 Godot remake - its hand-edited 
 # Stage rework (1-1 鬼城, 1-2 无常巷, 1-3 鬼门关 are the reference results)
 
 Read the "Stage scenes" section of the root `README.md` first (structure, conventions). Every stage already has its scene
-`game/scenes/levels/<stage>.tscn`, arranged by the user by hand: there is no generator any more. `git status` shows his uncommitted
+`game/stages/<stage>/<stage>.tscn`, arranged by the user by hand: there is no generator any more. `git status` shows his uncommitted
 edits - edit the file as text, keep them, and commit them together with your work.
 
 ## A. The stage scene
@@ -18,7 +18,7 @@ edits - edit the file as text, keep them, and commit them together with your wor
 4. **Overlays**: leave the 4399 logo that is *embedded* in a texture alone - never scrub it. Bitmaps that are *only* the logo (83x36, alpha 0.17) and the
    grey "fake mist" strips along the ground were dropped from the scenes; never put a dropped piece back on your own, and never decide anything
    else for the user.
-5. **Mechanisms** (doors, switches...): a scene `scenes/objects/<name>.tscn` with a script on the root (`src/level/objects/<name>.gd`, `@export`
+5. **Mechanisms** (doors, switches...): a scene `entities/objects/<name>/<name>.tscn` with a script on the root (`entities/objects/<name>/<name>.gd`, `@export`
    parameters, a `Guides` node for editor-only boxes), instanced under `Objects/<Name>` at its **real world position** (from `game/data/stages.json`
    or the original's stage listener - NOT from level.json `doors`, which can be wrong). Built from plain Sprite2D nodes with a normal AnimationPlayer
    for what really animates; never a Puppet (its parts are hidden until it plays). Its textures live next to the stage (`assets/levels/<stage>/tex`).
@@ -28,7 +28,7 @@ edits - edit the file as text, keep them, and commit them together with your wor
 Some stages are not pieces at all: 5-1 白骨精 is ONE finished 940x590 painting plus a floor strip. Do not try to cut it up; design the look for a
 painted backdrop: light dimming/tint, no rim light or feet fade on it (`rim:0, fade:0` for its layer), mist/rain around it.
 
-## B. Look design (data/lighting/<stage>.json -> src/level/stage_lighting.gd)
+## B. Look design (stages/<stage>/lighting.json -> src/level/stage_lighting.gd)
 
 Methodology - decide the **mood in one sentence** per stage first, then express it with a fixed set of knobs, always in this order:
 1. **Value structure**: dim scenery/ground/far (`scene.art/ground/far` multipliers, far a little lighter = aerial perspective), dim actors less (`body.shade/lit`),

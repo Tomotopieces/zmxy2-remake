@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame.png" id="1_2kwyh"]
+
+[node name="Slot10272" type="Node2D" unique_id=2114745294]
+
+[node name="Slot10272Part1" type="Sprite2D" parent="." unique_id=168974473]
+position = Vector2(-27.35, -30.099998)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_2kwyh")
+centered = false

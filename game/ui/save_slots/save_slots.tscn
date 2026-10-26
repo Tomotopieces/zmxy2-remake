@@ -1,0 +1,334 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_unw5w"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_background.png" id="2_dgjw0"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot1.png" id="3_ntvyo"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot1_2.png" id="4_8h6kf"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot2.png" id="5_2m10p"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot2_2.png" id="6_ejige"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot3.png" id="7_apiqw"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot3_2.png" id="8_mydoj"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot4.png" id="9_tevew"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot4_2.png" id="10_05i8q"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot5.png" id="11_5m7vv"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot5_2.png" id="12_fwagj"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot6.png" id="13_7ipjt"]
+[ext_resource type="Texture2D" path="res://ui/save_slots/tex/save_slots_slot6_2.png" id="14_pffwd"]
+[ext_resource type="Texture2D" path="res://ui/shared/forge_help_btn_close.png" id="15_tvhb3"]
+[ext_resource type="Texture2D" path="res://ui/shared/forge_help_btn_close_2.png" id="16_wrs4k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxUp0"]
+texture = ExtResource("15_tvhb3")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxOver1"]
+texture = ExtResource("16_wrs4k")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxDown2"]
+texture = ExtResource("15_tvhb3")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="Slot1Normal"]
+texture = ExtResource("3_ntvyo")
+
+[sub_resource type="StyleBoxTexture" id="Slot1Hover"]
+texture = ExtResource("4_8h6kf")
+
+[sub_resource type="StyleBoxTexture" id="Slot2Normal"]
+texture = ExtResource("5_2m10p")
+
+[sub_resource type="StyleBoxTexture" id="Slot2Hover"]
+texture = ExtResource("6_ejige")
+
+[sub_resource type="StyleBoxTexture" id="Slot3Normal"]
+texture = ExtResource("7_apiqw")
+
+[sub_resource type="StyleBoxTexture" id="Slot3Hover"]
+texture = ExtResource("8_mydoj")
+
+[sub_resource type="StyleBoxTexture" id="Slot4Normal"]
+texture = ExtResource("9_tevew")
+
+[sub_resource type="StyleBoxTexture" id="Slot4Hover"]
+texture = ExtResource("10_05i8q")
+
+[sub_resource type="StyleBoxTexture" id="Slot5Normal"]
+texture = ExtResource("11_5m7vv")
+
+[sub_resource type="StyleBoxTexture" id="Slot5Hover"]
+texture = ExtResource("12_fwagj")
+
+[sub_resource type="StyleBoxTexture" id="Slot6Normal"]
+texture = ExtResource("13_7ipjt")
+
+[sub_resource type="StyleBoxTexture" id="Slot6Hover"]
+texture = ExtResource("14_pffwd")
+
+[node name="SaveSlots" type="Control" unique_id=34313135]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_unw5w")
+
+[node name="Art" type="Node2D" parent="." unique_id=1523768598]
+
+[node name="Background" type="Sprite2D" parent="Art" unique_id=976147088]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_dgjw0")
+centered = false
+
+[node name="Slot1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 209
+offset_top = 224.05
+offset_right = 468
+offset_bottom = 310.05
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot1Normal")
+theme_override_styles/hover = SubResource("Slot1Hover")
+theme_override_styles/pressed = SubResource("Slot1Hover")
+theme_override_styles/hover_pressed = SubResource("Slot1Hover")
+theme_override_styles/disabled = SubResource("Slot1Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot1"]
+offset_left = 56.0
+offset_top = 25.300001
+offset_right = 247.95
+offset_bottom = 52.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot1"]
+offset_left = 56.0
+offset_top = 53.600002
+offset_right = 248.95
+offset_bottom = 75.25
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Slot2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465
+offset_top = 224.05
+offset_right = 724
+offset_bottom = 310.05
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot2Normal")
+theme_override_styles/hover = SubResource("Slot2Hover")
+theme_override_styles/pressed = SubResource("Slot2Hover")
+theme_override_styles/hover_pressed = SubResource("Slot2Hover")
+theme_override_styles/disabled = SubResource("Slot2Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot2"]
+offset_left = 60.0
+offset_top = 22.300001
+offset_right = 248.0
+offset_bottom = 49.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot2"]
+offset_left = 60.0
+offset_top = 52.5
+offset_right = 247.0
+offset_bottom = 74.15
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Slot3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 209
+offset_top = 303
+offset_right = 468
+offset_bottom = 389
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot3Normal")
+theme_override_styles/hover = SubResource("Slot3Hover")
+theme_override_styles/pressed = SubResource("Slot3Hover")
+theme_override_styles/hover_pressed = SubResource("Slot3Hover")
+theme_override_styles/disabled = SubResource("Slot3Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot3"]
+offset_left = 60.0
+offset_top = 24.300001
+offset_right = 248.95
+offset_bottom = 51.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot3"]
+offset_left = 60.0
+offset_top = 53.4
+offset_right = 248.95
+offset_bottom = 75.05
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Slot4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465
+offset_top = 303
+offset_right = 724
+offset_bottom = 389
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot4Normal")
+theme_override_styles/hover = SubResource("Slot4Hover")
+theme_override_styles/pressed = SubResource("Slot4Hover")
+theme_override_styles/hover_pressed = SubResource("Slot4Hover")
+theme_override_styles/disabled = SubResource("Slot4Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot4"]
+offset_left = 61.0
+offset_top = 25.300001
+offset_right = 248.0
+offset_bottom = 52.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot4"]
+offset_left = 61.0
+offset_top = 53.4
+offset_right = 248.0
+offset_bottom = 75.05
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Slot5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 209
+offset_top = 381
+offset_right = 468
+offset_bottom = 467
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot5Normal")
+theme_override_styles/hover = SubResource("Slot5Hover")
+theme_override_styles/pressed = SubResource("Slot5Hover")
+theme_override_styles/hover_pressed = SubResource("Slot5Hover")
+theme_override_styles/disabled = SubResource("Slot5Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot5"]
+offset_left = 62.0
+offset_top = 24.300001
+offset_right = 248.95
+offset_bottom = 51.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot5"]
+offset_left = 62.0
+offset_top = 53.4
+offset_right = 248.95
+offset_bottom = 75.05
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Slot6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465
+offset_top = 381
+offset_right = 724
+offset_bottom = 467
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("Slot6Normal")
+theme_override_styles/hover = SubResource("Slot6Hover")
+theme_override_styles/pressed = SubResource("Slot6Hover")
+theme_override_styles/hover_pressed = SubResource("Slot6Hover")
+theme_override_styles/disabled = SubResource("Slot6Normal")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+unique_name_in_owner = true
+
+[node name="Title" type="Label" parent="Slot6"]
+offset_left = 60.0
+offset_top = 24.300001
+offset_right = 249.0
+offset_bottom = 51.850002
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="Time" type="Label" parent="Slot6"]
+offset_left = 60.0
+offset_top = 53.4
+offset_right = 250.0
+offset_bottom = 75.05
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+mouse_filter = 2
+
+[node name="BtnClose" type="Button" parent="." unique_id=465868294]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 718.45
+offset_top = 113.05
+offset_right = 758.45
+offset_bottom = 153.05
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnxUp0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnxOver1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnxDown2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnxDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnxUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")

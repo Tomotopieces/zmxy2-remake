@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/bag_tangseng/tex/bag_tangseng_frame_31.png" id="1_c4wxc"]
+
+[node name="Slot3587" type="Node2D" unique_id=48614292]
+
+[node name="Slot3587Part1" type="Sprite2D" parent="." unique_id=435519738]
+position = Vector2(-33.2, -23.4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_c4wxc")
+centered = false

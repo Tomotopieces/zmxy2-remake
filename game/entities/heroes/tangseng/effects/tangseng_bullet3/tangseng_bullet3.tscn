@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://b32en4175qs1l"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_d84is"]
+[ext_resource type="Texture2D" uid="uid://bvikasr34wh1g" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame.png" id="2_bvoig"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="3_m2uuc"]
+[ext_resource type="Texture2D" uid="uid://bgyvd0mhhjt3m" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_2.png" id="4_lms2g"]
+[ext_resource type="Texture2D" uid="uid://2bx03lkqqd3w" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_3.png" id="5_37f7o"]
+[ext_resource type="Texture2D" uid="uid://pwgqfchm0xj6" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_8.png" id="6_d84is"]
+[ext_resource type="Texture2D" uid="uid://2wvcyb5j0c0g" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_12.png" id="7_bvoig"]
+[ext_resource type="Texture2D" uid="uid://b2tyu16crybg7" path="res://entities/heroes/tangseng/tex/tangseng_bullet3_frame_13.png" id="8_ve4qu"]
+[ext_resource type="AnimationLibrary" path="res://entities/heroes/tangseng/effects/tangseng_bullet3/tangseng_bullet3_actions.tres" id="9_adtej"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lu5y5"]
+shader = ExtResource("3_m2uuc")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = true
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 31.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 32.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r0vhu"]
+shader = ExtResource("3_m2uuc")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = true
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 17.0
+shader_parameter/glow_strength = 2.1875
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 18.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smgtx"]
+resource_local_to_scene = true
+size = Vector2(372.8, 99)
+
+[node name="TangsengBullet3" type="Node2D" unique_id=757553333]
+script = ExtResource("1_d84is")
+actions = PackedStringArray("default")
+
+[node name="TangsengBullet3Part1" type="Sprite2D" parent="." unique_id=332441879]
+visible = false
+position = Vector2(-130.95, -62.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bvoig")
+centered = false
+
+[node name="TangsengBullet3Part2" type="Sprite2D" parent="." unique_id=1785572340]
+visible = false
+modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
+material = SubResource("ShaderMaterial_lu5y5")
+position = Vector2(-132.25, -59.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_lms2g")
+centered = false
+
+[node name="TangsengBullet3Part3" type="Sprite2D" parent="." unique_id=3486126]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_r0vhu")
+position = Vector2(-133.9, -59.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_37f7o")
+centered = false
+
+[node name="TangsengBullet3Part4" type="Sprite2D" parent="." unique_id=92185828]
+visible = false
+modulate = Color(1, 1, 1, 0.59)
+position = Vector2(-133.04999, -36.35)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d84is")
+centered = false
+
+[node name="TangsengBullet3Part5" type="Sprite2D" parent="." unique_id=1584002046]
+visible = false
+position = Vector2(15.850002, -59.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bvoig")
+centered = false
+
+[node name="TangsengBullet3Part6" type="Sprite2D" parent="." unique_id=1407774047]
+visible = false
+modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
+material = SubResource("ShaderMaterial_lu5y5")
+position = Vector2(14.550003, -56.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_lms2g")
+centered = false
+
+[node name="TangsengBullet3Part7" type="Sprite2D" parent="." unique_id=2017908891]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_r0vhu")
+position = Vector2(12.900002, -56.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_37f7o")
+centered = false
+
+[node name="TangsengBullet3Part8" type="Sprite2D" parent="." unique_id=1465592279]
+visible = false
+modulate = Color(1, 1, 1, 0.59)
+position = Vector2(12.75, -33.35)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d84is")
+centered = false
+
+[node name="TangsengBullet3Part9" type="Sprite2D" parent="." unique_id=1394271974]
+visible = false
+position = Vector2(-59.6, -27.8)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_bvoig")
+centered = false
+
+[node name="TangsengBullet3Part10" type="Sprite2D" parent="." unique_id=611867408]
+visible = false
+position = Vector2(-207.40001, -59.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bvoig")
+centered = false
+
+[node name="TangsengBullet3Part11" type="Sprite2D" parent="." unique_id=1387497915]
+visible = false
+modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
+material = SubResource("ShaderMaterial_lu5y5")
+position = Vector2(-208.70001, -56.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_lms2g")
+centered = false
+
+[node name="TangsengBullet3Part12" type="Sprite2D" parent="." unique_id=773228380]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_r0vhu")
+position = Vector2(-210.35, -56.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_37f7o")
+centered = false
+
+[node name="TangsengBullet3Part13" type="Sprite2D" parent="." unique_id=433033803]
+visible = false
+modulate = Color(1, 1, 1, 0.59)
+position = Vector2(-210.5, -33.35)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d84is")
+centered = false
+
+[node name="TangsengBullet3Part14" type="Sprite2D" parent="." unique_id=2015528627]
+visible = false
+position = Vector2(-59.25, -27.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_ve4qu")
+centered = false
+
+[node name="TangsengBullet3Part15" type="Sprite2D" parent="." unique_id=1075227676]
+visible = false
+position = Vector2(99.899994, -59.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bvoig")
+centered = false
+
+[node name="TangsengBullet3Part16" type="Sprite2D" parent="." unique_id=270481643]
+visible = false
+modulate = Color(0.9984118, 0.9984118, 0.9984118, 1)
+material = SubResource("ShaderMaterial_lu5y5")
+position = Vector2(98.6, -56.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_lms2g")
+centered = false
+
+[node name="TangsengBullet3Part17" type="Sprite2D" parent="." unique_id=993844239]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_r0vhu")
+position = Vector2(96.95, -56.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_37f7o")
+centered = false
+
+[node name="TangsengBullet3Part18" type="Sprite2D" parent="." unique_id=1495728395]
+visible = false
+modulate = Color(1, 1, 1, 0.59)
+position = Vector2(96.799995, -33.35)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d84is")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=358867795]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=37743165]
+position = Vector2(-2.9, -8.1)
+shape = SubResource("RectangleShape2D_smgtx")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1665287898]
+callback_mode_process = 0
+libraries/ = ExtResource("9_adtej")

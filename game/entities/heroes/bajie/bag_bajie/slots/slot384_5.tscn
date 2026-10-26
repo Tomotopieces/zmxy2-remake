@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame_3.png" id="1_jwyer"]
+
+[node name="Slot3845" type="Node2D" unique_id=728423563]
+
+[node name="Slot3845Part1" type="Sprite2D" parent="." unique_id=343354850]
+position = Vector2(-16.2, -7.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jwyer")
+centered = false

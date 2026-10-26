@@ -1,6 +1,7 @@
 class_name MonsterData
 extends Resource
-## Monster tuning (data/monsters/monster_<id>.tres). Units: px, seconds.
+## Monster tuning (entities/monsters/monster<id>/monster<id>.tres; a stage's own numbers in monster<id>_<stage>.tres).
+## Units: px, seconds.
 
 @export var id := 0
 @export var display_name := ""
@@ -42,3 +43,28 @@ extends Resource
 @export var behind := false            ## drawn right above the background, behind every character (MainGame.createMonster)
 @export var is_prop := false           ## scenery that can be hit: no damage numbers, HP bar, exp or combo
 @export var immovable := false         ## not pulled / pushed (totems, props)
+
+const DIR := "res://entities/monsters"
+static var _folders := {}   ## monster id -> its folder name (the pinyin of its name: shouyeren), from the data files
+
+## The folder of monster `id` under entities/monsters ("" if there is none).
+static func folder(id: int) -> String:
+	if _folders.is_empty():
+		for d in ResourceLoader.list_directory(DIR):
+			var f := d.trim_suffix("/")
+			var md := load(DIR.path_join(f).path_join(f + ".tres")) as MonsterData
+			if md:
+				_folders[md.id] = f
+	return _folders.get(id, "")
+
+## The data file of monster `id` ("" stage = the base numbers, else the stage's own: <folder>_<stage>.tres).
+static func path(id: int, stage := "") -> String:
+	var f := folder(id)
+	return DIR.path_join(f).path_join(f + ("" if stage == "" else "_" + stage) + ".tres")
+
+## Every monster id there is.
+static func ids() -> Array:
+	folder(0)
+	var a := _folders.keys()
+	a.sort()
+	return a

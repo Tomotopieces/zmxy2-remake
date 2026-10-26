@@ -1,0 +1,149 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_36grx"]
+[ext_resource type="Texture2D" path="res://ui/game_win/tex/game_win_background.png" id="2_puku0"]
+[ext_resource type="Texture2D" path="res://ui/shared/game_fail_btn_back_to_map.png" id="3_4fimg"]
+[ext_resource type="Texture2D" path="res://ui/shared/game_fail_btn_back_to_map_2.png" id="4_rtx3q"]
+[ext_resource type="Texture2D" path="res://ui/game_win/tex/game_win_btn_next_stage.png" id="5_weuqy"]
+[ext_resource type="Texture2D" path="res://ui/game_win/tex/game_win_btn_next_stage_2.png" id="6_bfpqc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_backTochooseButtonUp0"]
+texture = ExtResource("3_4fimg")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_backTochooseButtonOver1"]
+texture = ExtResource("4_rtx3q")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_backTochooseButtonDown2"]
+texture = ExtResource("3_4fimg")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nextStageButtonUp3"]
+texture = ExtResource("5_weuqy")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nextStageButtonOver4"]
+texture = ExtResource("6_bfpqc")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nextStageButtonDown5"]
+texture = ExtResource("5_weuqy")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[node name="GameWin" type="Control" unique_id=726004482]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_36grx")
+
+[node name="Art" type="Node2D" parent="." unique_id=1846685702]
+
+[node name="Background" type="Sprite2D" parent="Art" unique_id=305433841]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_puku0")
+centered = false
+
+[node name="TotalScore" type="Label" parent="." unique_id=1736344815]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 727.2
+offset_top = 401.5
+offset_right = 861.95
+offset_bottom = 452.7
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 2
+
+[node name="BestCombo" type="Label" parent="." unique_id=237883658]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 767.1
+offset_top = 338.0
+offset_right = 861.94995
+offset_bottom = 389.2
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 2
+
+[node name="State" type="Label" parent="." unique_id=1323020497]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 743.1
+offset_top = 275.94998
+offset_right = 861.94995
+offset_bottom = 327.15
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 2
+
+[node name="UsedTime" type="Label" parent="." unique_id=1181515382]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 743.1
+offset_top = 213.95
+offset_right = 861.94995
+offset_bottom = 265.15
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 2
+
+[node name="BtnBackToMap" type="Button" parent="." unique_id=579340015]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 268.45
+offset_top = 388.0
+offset_right = 389.45
+offset_bottom = 419.0
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_backTochooseButtonUp0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_backTochooseButtonOver1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_backTochooseButtonDown2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_backTochooseButtonDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_backTochooseButtonUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnNextStage" type="Button" parent="." unique_id=1352710961]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 120.55
+offset_top = 386.1
+offset_right = 211.55
+offset_bottom = 417.1
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_nextStageButtonUp3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nextStageButtonOver4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nextStageButtonDown5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_nextStageButtonDown5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nextStageButtonUp3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")

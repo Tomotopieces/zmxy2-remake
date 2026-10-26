@@ -1,0 +1,606 @@
+[gd_scene format=3 uid="uid://be1j42i4nv6yr"]
+
+[ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_t4b3n"]
+[ext_resource type="Texture2D" uid="uid://dvu2s1piop8xh" path="res://ui/stage_map/tex/stage_map_background.png" id="2_jiotv"]
+[ext_resource type="Texture2D" uid="uid://kr5gj7purrjn" path="res://ui/stage_map/tex/stage_map_arena_picture.png" id="3_wf5ah"]
+[ext_resource type="Texture2D" uid="uid://dkm0h66he2uty" path="res://ui/stage_map/tex/stage_map_piece.png" id="4_os0pt"]
+[ext_resource type="Texture2D" uid="uid://ds1uflwjdj57i" path="res://ui/stage_map/tex/stage_map_stage1_level3_picture.png" id="5_a2i71"]
+[ext_resource type="Texture2D" uid="uid://x8o2wnsr367v" path="res://ui/stage_map/tex/stage_map_hover_picture.png" id="6_8kpol"]
+[ext_resource type="Texture2D" uid="uid://cm0casbn0sofe" path="res://ui/stage_map/tex/stage_map_stage1_level2_picture.png" id="7_e1dbj"]
+[ext_resource type="Texture2D" uid="uid://cwhdxvso1tdto" path="res://ui/stage_map/tex/stage_map_hover_picture_2.png" id="8_le46m"]
+[ext_resource type="Texture2D" uid="uid://ntc67top0vjk" path="res://ui/stage_map/tex/stage_map_stage1_level1_picture.png" id="9_gq6vy"]
+[ext_resource type="Texture2D" uid="uid://ci5opyexkk37t" path="res://ui/stage_map/tex/stage_map_hover_picture_3.png" id="10_m7hq2"]
+[ext_resource type="Texture2D" uid="uid://d1wmpfsn6ttyn" path="res://ui/stage_map/tex/stage_map_stage2_level2_picture.png" id="11_ygjv0"]
+[ext_resource type="Texture2D" uid="uid://cf8x2u3ibdiq5" path="res://ui/stage_map/tex/stage_map_hover_picture_4.png" id="12_5j2aj"]
+[ext_resource type="Texture2D" uid="uid://dm57k35vj8xpw" path="res://ui/stage_map/tex/stage_map_stage3_level1_picture.png" id="13_232lh"]
+[ext_resource type="Texture2D" uid="uid://ch2rw4yp47g64" path="res://ui/stage_map/tex/stage_map_hover_picture_5.png" id="14_w78ks"]
+[ext_resource type="Texture2D" uid="uid://oi6nguq50tbf" path="res://ui/stage_map/tex/stage_map_stage2_level3_picture.png" id="15_6xyjl"]
+[ext_resource type="Texture2D" uid="uid://bg6hrv1iw25dq" path="res://ui/stage_map/tex/stage_map_hover_picture_6.png" id="16_f83og"]
+[ext_resource type="Texture2D" uid="uid://b1b8pa7jp20sj" path="res://ui/stage_map/tex/stage_map_stage2_level1_picture.png" id="17_b1hmc"]
+[ext_resource type="Texture2D" uid="uid://cpwymhdwoolxf" path="res://ui/stage_map/tex/stage_map_hover_picture_7.png" id="18_cmcup"]
+[ext_resource type="Texture2D" uid="uid://c1hnd1ls5eyk" path="res://ui/stage_map/tex/stage_map_stage3_level2_picture.png" id="19_st8s4"]
+[ext_resource type="Texture2D" uid="uid://b82aqv6esdj1a" path="res://ui/stage_map/tex/stage_map_hover_picture_8.png" id="20_ylp2l"]
+[ext_resource type="Texture2D" uid="uid://ctf7joucck2qs" path="res://ui/stage_map/tex/stage_map_stage3_level3_picture.png" id="21_qowwy"]
+[ext_resource type="Texture2D" uid="uid://bbhpsyydxkdh6" path="res://ui/stage_map/tex/stage_map_hover_picture_9.png" id="22_yx0kx"]
+[ext_resource type="Texture2D" uid="uid://d0jt25ihi26jj" path="res://ui/stage_map/tex/stage_map_stage4_level1_picture.png" id="23_shbly"]
+[ext_resource type="Texture2D" uid="uid://dtb5d8eijhfi7" path="res://ui/stage_map/tex/stage_map_hover_picture_10.png" id="24_uwfy6"]
+[ext_resource type="Texture2D" uid="uid://dmixfdp8likq7" path="res://ui/stage_map/tex/stage_map_btn_shop.png" id="25_bc3g4"]
+[ext_resource type="Texture2D" uid="uid://cei41y0emel2w" path="res://ui/stage_map/tex/stage_map_btn_shop_2.png" id="26_v58p6"]
+[ext_resource type="Texture2D" uid="uid://dblknh72d5l3c" path="res://ui/stage_map/tex/stage_map_btn_save.png" id="27_dwtl4"]
+[ext_resource type="Texture2D" uid="uid://l64aoa641alg" path="res://ui/stage_map/tex/stage_map_btn_save_2.png" id="28_je3jb"]
+[ext_resource type="Texture2D" uid="uid://b5dsi4ws6b6lq" path="res://ui/stage_map/tex/stage_map_btn_forge.png" id="29_3exjk"]
+[ext_resource type="Texture2D" uid="uid://5uco37rwu6r0" path="res://ui/stage_map/tex/stage_map_btn_forge_2.png" id="30_1eqrx"]
+[ext_resource type="Texture2D" uid="uid://bxiovohkk8s7q" path="res://ui/stage_map/tex/stage_map_btn_skills.png" id="31_kdab4"]
+[ext_resource type="Texture2D" uid="uid://d4a0xx42b8tbg" path="res://ui/stage_map/tex/stage_map_btn_skills_2.png" id="32_d323h"]
+[ext_resource type="Texture2D" uid="uid://c4nrl0qno70g6" path="res://ui/stage_map/tex/stage_map_btn_activity.png" id="35_7dwo2"]
+[ext_resource type="Texture2D" uid="uid://bifxtww4wuifp" path="res://ui/stage_map/tex/stage_map_btn_activity_2.png" id="36_ln7ge"]
+[ext_resource type="Texture2D" uid="uid://d0q2jeldapxev" path="res://ui/stage_map/tex/stage_map_btn_back.png" id="37_1l261"]
+[ext_resource type="Texture2D" uid="uid://ijd5k3lnyw01" path="res://ui/stage_map/tex/stage_map_btn_back_2.png" id="38_n6pbw"]
+[ext_resource type="Texture2D" uid="uid://cv2jobe6cb6c4" path="res://ui/stage_map/tex/stage_map_niu_mo_gu_picture.png" id="39_nhmnu"]
+[ext_resource type="Texture2D" uid="uid://diahwmv86lx6u" path="res://ui/stage_map/tex/stage_map_hover_picture_11.png" id="40_gjmkr"]
+[ext_resource type="Texture2D" uid="uid://b3qwrm31wm4ap" path="res://ui/stage_map/tex/stage_map_luo_xuan_di_yu_picture.png" id="41_rfg6k"]
+[ext_resource type="Texture2D" uid="uid://bufh1eywg46yd" path="res://ui/stage_map/tex/stage_map_hover_picture_12.png" id="42_qo3vw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_scgmUp0"]
+texture = ExtResource("25_bc3g4")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_scgmOver1"]
+texture = ExtResource("26_v58p6")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_scgmDown2"]
+texture = ExtResource("25_bc3g4")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_savebtnUp3"]
+texture = ExtResource("27_dwtl4")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_savebtnOver4"]
+texture = ExtResource("28_je3jb")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_savebtnDown5"]
+texture = ExtResource("27_dwtl4")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ldlUp6"]
+texture = ExtResource("29_3exjk")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ldlOver7"]
+texture = ExtResource("30_1eqrx")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ldlDown8"]
+texture = ExtResource("29_3exjk")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_showBuySkillUp9"]
+texture = ExtResource("31_kdab4")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_showBuySkillOver10"]
+texture = ExtResource("32_d323h")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_showBuySkillDown11"]
+texture = ExtResource("31_kdab4")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_huodongbtnUp12"]
+texture = ExtResource("35_7dwo2")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_huodongbtnOver13"]
+texture = ExtResource("36_ln7ge")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_huodongbtnDown14"]
+texture = ExtResource("35_7dwo2")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbackUp15"]
+texture = ExtResource("37_1l261")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbackOver16"]
+texture = ExtResource("38_n6pbw")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbackDown17"]
+texture = ExtResource("37_1l261")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[node name="StageMap" type="Control" unique_id=1550913345]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_t4b3n")
+
+[node name="Art" type="Node2D" parent="." unique_id=812913198]
+
+[node name="Background" type="Sprite2D" parent="Art" unique_id=590146212]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_jiotv")
+centered = false
+
+[node name="Arena" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -155.6
+offset_top = 415.9
+offset_right = -73.6
+offset_bottom = 474.9
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Arena"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_wf5ah")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Arena"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_wf5ah")
+centered = false
+
+[node name="Stage1Level3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 832.6
+offset_top = 127.45
+offset_right = 927.6
+offset_bottom = 231.45
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage1Level3"]
+position = Vector2(4.1, 24.05)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_a2i71")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage1Level3"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_8kpol")
+centered = false
+
+[node name="Stage1Level2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 527.7
+offset_top = 18.9
+offset_right = 618.7
+offset_bottom = 142.9
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage1Level2"]
+position = Vector2(5.1, 22.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_e1dbj")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage1Level2"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_le46m")
+centered = false
+
+[node name="Stage1Level1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 724.2
+offset_top = 46.8
+offset_right = 812.2
+offset_bottom = 123.8
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage1Level1"]
+position = Vector2(6.75, 7.2)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_gq6vy")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage1Level1"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_m7hq2")
+centered = false
+
+[node name="Stage2Level2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 480.65
+offset_top = 403.65
+offset_right = 570.65
+offset_bottom = 476.65
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage2Level2"]
+position = Vector2(13.45, 12.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_ygjv0")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage2Level2"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_5j2aj")
+centered = false
+
+[node name="Stage3Level1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 321.15
+offset_top = 401.35
+offset_right = 429.15
+offset_bottom = 490.35
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage3Level1"]
+position = Vector2(11.65, 30.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_232lh")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage3Level1"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_w78ks")
+centered = false
+
+[node name="Stage2Level3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 210.3
+offset_top = 375.1
+offset_right = 298.3
+offset_bottom = 507.1
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage2Level3"]
+position = Vector2(20.15, 36.65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_6xyjl")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage2Level3"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_f83og")
+centered = false
+
+[node name="Stage2Level1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 772.55
+offset_top = 304.35
+offset_right = 926.55
+offset_bottom = 460.35
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage2Level1"]
+position = Vector2(23.4, 20.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_b1hmc")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage2Level1"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_cmcup")
+centered = false
+
+[node name="Stage3Level2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 330.8
+offset_top = 193.45
+offset_right = 451.8
+offset_bottom = 280.45
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage3Level2"]
+position = Vector2(24.55, 26.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("19_st8s4")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage3Level2"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20_ylp2l")
+centered = false
+
+[node name="Stage3Level3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 235.4
+offset_top = 118.55
+offset_right = 330.4
+offset_bottom = 191.55
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage3Level3"]
+position = Vector2(11.75, 12.2)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_qowwy")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage3Level3"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_yx0kx")
+centered = false
+
+[node name="Stage4Level1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.35
+offset_top = 82.45
+offset_right = 168.35
+offset_bottom = 165.7
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="Stage4Level1"]
+position = Vector2(8.25, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("23_shbly")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="Stage4Level1"]
+visible = false
+position = Vector2(0, 1.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("24_uwfy6")
+centered = false
+
+[node name="SaveCountdown" type="Label" parent="." unique_id=177413750]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 547.1
+offset_top = 560.98004
+offset_right = 603.1
+offset_bottom = 590.63007
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 23
+horizontal_alignment = 1
+
+[node name="BtnShop" type="Button" parent="." unique_id=1708021140]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 544.1
+offset_top = 506.95
+offset_right = 603.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_scgmUp0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_scgmOver1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_scgmDown2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_scgmDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_scgmUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnSave" type="Button" parent="." unique_id=348871336]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 607.1
+offset_top = 506.95
+offset_right = 666.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_savebtnUp3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_savebtnOver4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_savebtnDown5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_savebtnDown5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_savebtnUp3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnForge" type="Button" parent="." unique_id=1052171528]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 671.1
+offset_top = 506.95
+offset_right = 730.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_ldlUp6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ldlOver7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ldlDown8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ldlDown8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ldlUp6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnSkills" type="Button" parent="." unique_id=1989928311]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 734.1
+offset_top = 506.95
+offset_right = 793.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_showBuySkillUp9")
+theme_override_styles/hover = SubResource("StyleBoxTexture_showBuySkillOver10")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_showBuySkillDown11")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_showBuySkillDown11")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_showBuySkillUp9")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnActivity" type="Button" parent="." unique_id=1388381567]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 799.1
+offset_top = 506.95
+offset_right = 858.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_huodongbtnUp12")
+theme_override_styles/hover = SubResource("StyleBoxTexture_huodongbtnOver13")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_huodongbtnDown14")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_huodongbtnDown14")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_huodongbtnUp12")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnBack" type="Button" parent="." unique_id=974179273]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 861.1
+offset_top = 506.95
+offset_right = 920.1
+offset_bottom = 567.95
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnbackUp15")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnbackOver16")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnbackDown17")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnbackDown17")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnbackUp15")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="NiuMoGu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 831.8
+offset_top = 8.85
+offset_right = 936.8
+offset_bottom = 109.85
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="NiuMoGu"]
+position = Vector2(18.3, 1.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("39_nhmnu")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="NiuMoGu"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("40_gjmkr")
+centered = false
+
+[node name="LuoXuanDiYu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 72.95
+offset_top = 312.5
+offset_right = 225.95
+offset_bottom = 421.5
+mouse_default_cursor_shape = 2
+focus_mode = 0
+flat = true
+unique_name_in_owner = true
+
+[node name="Picture" type="Sprite2D" parent="LuoXuanDiYu"]
+position = Vector2(15, 21.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("41_rfg6k")
+centered = false
+
+[node name="HoverPicture" type="Sprite2D" parent="LuoXuanDiYu"]
+visible = false
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("42_qo3vw")
+centered = false

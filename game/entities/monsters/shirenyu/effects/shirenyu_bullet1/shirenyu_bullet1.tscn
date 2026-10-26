@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bejsbnxebc0g8"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_f6mo6"]
+[ext_resource type="Texture2D" uid="uid://c86wtf2f4o45w" path="res://entities/monsters/shirenyu/effects/shirenyu_bullet1/tex/shirenyu_bullet1_frame_3.png" id="2_tugkk"]
+[ext_resource type="Texture2D" uid="uid://cq80a01swdqif" path="res://entities/monsters/shirenyu/effects/shirenyu_bullet1/tex/shirenyu_bullet1_frame_4.png" id="3_ebaqw"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/shirenyu/effects/shirenyu_bullet1/shirenyu_bullet1_actions.tres" id="4_smrfo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4a1g"]
+resource_local_to_scene = true
+size = Vector2(57, 46)
+
+[node name="Monster57Bullet1" type="Node2D" unique_id=1200805288]
+script = ExtResource("1_f6mo6")
+actions = PackedStringArray("default")
+
+[node name="Monster57Bullet1Part1" type="Sprite2D" parent="." unique_id=1780089536]
+visible = false
+position = Vector2(-25.149998, 3.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tugkk")
+centered = false
+
+[node name="Monster57Bullet1Part2" type="Sprite2D" parent="." unique_id=1712060026]
+position = Vector2(-20.0899, 30.7137)
+rotation = -1.7509184
+scale = Vector2(0.49958232, 0.49958232)
+texture = ExtResource("3_ebaqw")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=559954152]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=998544369]
+position = Vector2(8.499999, -4)
+shape = SubResource("RectangleShape2D_n4a1g")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1689299627]
+callback_mode_process = 0
+libraries/ = ExtResource("4_smrfo")

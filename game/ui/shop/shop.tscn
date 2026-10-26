@@ -1,0 +1,400 @@
+[gd_scene format=3 uid="uid://bwcmhju33pm6x"]
+
+[ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_l5pj5"]
+[ext_resource type="Texture2D" uid="uid://boyb8phjxkac4" path="res://ui/shop/tex/shop_background.png" id="2_cgbiw"]
+[ext_resource type="Texture2D" uid="uid://bxrqbgctb3igs" path="res://ui/shop/tex/shop_btn_item_tab.png" id="3_oej5v"]
+[ext_resource type="Texture2D" uid="uid://c7l1h1csxacov" path="res://ui/shop/tex/shop_btn_item_tab_2.png" id="4_hrs4c"]
+[ext_resource type="Texture2D" uid="uid://dtmopj73cncwo" path="res://ui/shop/tex/shop_btn_equip_tab.png" id="5_nlq5l"]
+[ext_resource type="Texture2D" uid="uid://edjk5j8bk6n0" path="res://ui/shop/tex/shop_btn_equip_tab_2.png" id="6_djd2b"]
+[ext_resource type="Texture2D" uid="uid://bd2w5fbnxfy61" path="res://ui/shop/tex/shop_btn_fashion_tab.png" id="7_u2qkx"]
+[ext_resource type="Texture2D" uid="uid://cyrxuvpgkclet" path="res://ui/shop/tex/shop_piece.png" id="10_c6b8j"]
+[ext_resource type="Texture2D" uid="uid://d0ustgrae5jhs" path="res://ui/shop/tex/shop_btn_prev_page.png" id="11_k5pd3"]
+[ext_resource type="Texture2D" uid="uid://cihmyescn7pd6" path="res://ui/shop/tex/shop_btn_prev_page_2.png" id="12_el608"]
+[ext_resource type="Texture2D" uid="uid://bb53a36dupyu3" path="res://ui/shop/tex/shop_btn_next_page.png" id="13_iuwpo"]
+[ext_resource type="Texture2D" uid="uid://bafugqeduspc4" path="res://ui/shop/tex/shop_btn_next_page_2.png" id="14_y0qbn"]
+[ext_resource type="Texture2D" uid="uid://bgs6hpl7ms0o0" path="res://ui/shop/tex/shop_piece_2.png" id="15_gbf4j"]
+[ext_resource type="Texture2D" uid="uid://bp8cqwf7b7adm" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part1.png" id="35_owbao"]
+[ext_resource type="Texture2D" uid="uid://bi2sjc11x58l0" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part3.png" id="36_6qsi8"]
+[ext_resource type="Texture2D" uid="uid://dbgamihdmp82y" path="res://ui/backpack/tex/backpack_portrait_wukong.png" id="37_ongk7"]
+[ext_resource type="Texture2D" uid="uid://dhg22clkqnj4i" path="res://entities/heroes/wukong/tex/bag_wukong_body.png" id="38_qx4t0"]
+[ext_resource type="Texture2D" uid="uid://eb556jvjcsua" path="res://entities/heroes/wukong/tex/bag_wukong_hit8_part13.png" id="39_x6d2s"]
+[ext_resource type="Texture2D" uid="uid://cie5fdnf2mb3r" path="res://entities/heroes/wukong/tex/bag_wukong_body_2.png" id="40_aoc0n"]
+[ext_resource type="Texture2D" uid="uid://d1absdhhwrhai" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part12.png" id="41_3p5xc"]
+[ext_resource type="Texture2D" uid="uid://brbr6qur1gxvb" path="res://entities/heroes/wukong/tex/bag_wukong_wait_part20.png" id="42_frdpc"]
+[ext_resource type="Texture2D" uid="uid://0r68cvcdj5n4" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part1.png" id="43_d5w6u"]
+[ext_resource type="Texture2D" uid="uid://cm6ttuhfldg7t" path="res://entities/heroes/tangseng/tex/bag_tangseng_body.png" id="44_8d560"]
+[ext_resource type="Texture2D" uid="uid://d0bbmatb7dlpt" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part3_4.png" id="45_86akt"]
+[ext_resource type="Texture2D" uid="uid://b3tq0a45jdu0x" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part6.png" id="46_5nic7"]
+[ext_resource type="Texture2D" uid="uid://clgydveamqu1k" path="res://ui/backpack/tex/backpack_portrait_bajie.png" id="47_8ha52"]
+[ext_resource type="Texture2D" uid="uid://dmgkahauef4hy" path="res://entities/heroes/bajie/tex/bag_bajie_body.png" id="48_s1viv"]
+[ext_resource type="Texture2D" uid="uid://dyrcgyd0ly34p" path="res://entities/heroes/bajie/tex/bag_bajie_wait_part9.png" id="49_taw4v"]
+[ext_resource type="Texture2D" uid="uid://co6gehv1xfujq" path="res://ui/backpack/tex/backpack_portrait_bajie_2.png" id="50_jrabd"]
+[ext_resource type="PackedScene" uid="uid://vt17isp8tb0t" path="res://ui/backpack/effects/bag_glow/bag_glow.tscn" id="bag_glow"]
+[ext_resource type="Texture2D" uid="uid://bsrtp6xopcud5" path="res://ui/shop/tex/shop_btn_fashion_tab_2.png" id="gx_over"]
+[ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="set_btn"]
+[ext_resource type="PackedScene" uid="uid://px3igcyowj00" path="res://ui/shop_thing/shop_thing.tscn" id="shop_thing"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuydjUp0"]
+texture = ExtResource("3_oej5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuydjDown2"]
+texture = ExtResource("3_oej5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuydjOver1"]
+texture = ExtResource("4_hrs4c")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuyzbUp3"]
+texture = ExtResource("5_nlq5l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuyzbDown5"]
+texture = ExtResource("5_nlq5l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuyzbOver4"]
+texture = ExtResource("6_djd2b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuygxUp6"]
+texture = ExtResource("7_u2qkx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuygxDown8"]
+texture = ExtResource("7_u2qkx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnbuygxOver7"]
+texture = ExtResource("gx_over")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnupPageUp9"]
+texture = ExtResource("11_k5pd3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnupPageDown11"]
+texture = ExtResource("11_k5pd3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnupPageOver10"]
+texture = ExtResource("12_el608")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnnextPageUp12"]
+texture = ExtResource("13_iuwpo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnnextPageDown14"]
+texture = ExtResource("13_iuwpo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnnextPageOver13"]
+texture = ExtResource("14_y0qbn")
+
+[node name="Shop" type="Control" unique_id=1610453023]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_l5pj5")
+
+[node name="Art" type="Node2D" parent="." unique_id=345853335]
+
+[node name="Background" type="Sprite2D" parent="Art" unique_id=1027227770]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_cgbiw")
+centered = false
+
+[node name="BtnItemTab" type="Button" parent="." unique_id=1776812416]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 522.8
+offset_top = 107.0
+offset_right = 595.8
+offset_bottom = 140.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnbuydjUp0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnbuydjDown2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnbuydjOver1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnbuydjDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnbuydjUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnEquipTab" type="Button" parent="." unique_id=1550465553]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 444.8
+offset_top = 107.0
+offset_right = 517.8
+offset_bottom = 140.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnbuyzbUp3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnbuyzbDown5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnbuyzbOver4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnbuyzbDown5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnbuyzbUp3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnFashionTab" type="Button" parent="." unique_id=482888185]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 599.6
+offset_top = 107.0
+offset_right = 672.6
+offset_bottom = 140.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnbuygxUp6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnbuygxDown8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnbuygxOver7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnbuygxDown8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnbuygxUp6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="Art2" type="Node2D" parent="." unique_id=861224701]
+
+[node name="Piece1" type="Sprite2D" parent="Art2" unique_id=2116938594]
+position = Vector2(428, 135)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_c6b8j")
+centered = false
+
+[node name="BtnPrevPage" type="Button" parent="." unique_id=2119847547]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 671.6
+offset_top = 452.85
+offset_right = 702.6
+offset_bottom = 483.85
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnupPageUp9")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnupPageDown11")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnupPageOver10")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnupPageDown11")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnupPageUp9")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="BtnNextPage" type="Button" parent="." unique_id=499535925]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 752.55
+offset_top = 452.85
+offset_right = 783.55
+offset_bottom = 483.85
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnnextPageUp12")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnnextPageDown14")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnnextPageOver13")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnnextPageDown14")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnnextPageUp12")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")
+
+[node name="PageText" type="Label" parent="." unique_id=1474148429]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 700.95
+offset_top = 452.05
+offset_right = 750.95
+offset_bottom = 487.25
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Art3" type="Node2D" parent="." unique_id=1913673427]
+
+[node name="Piece2" type="Sprite2D" parent="Art3" unique_id=1723639504]
+position = Vector2(118.95, 133)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_gbf4j")
+centered = false
+
+[node name="Money" type="Label" parent="." unique_id=371360817]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 193.9
+offset_top = 380.4
+offset_right = 276.0
+offset_bottom = 415.6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="Merit" type="Label" parent="." unique_id=1803992400]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 193.9
+offset_top = 425.07
+offset_right = 274.05
+offset_bottom = 454.97
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="Thing6" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 627.8
+offset_top = 339.95
+offset_right = 627.8
+offset_bottom = 339.95
+
+[node name="Thing5" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 439.8
+offset_top = 338.95
+offset_right = 439.8
+offset_bottom = 338.95
+
+[node name="Thing4" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 626.8
+offset_top = 242.95
+offset_right = 626.8
+offset_bottom = 242.95
+
+[node name="Thing3" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 439.8
+offset_top = 243.95
+offset_right = 439.8
+offset_bottom = 243.95
+
+[node name="Thing2" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 626.8
+offset_top = 146.95
+offset_right = 626.8
+offset_bottom = 146.95
+
+[node name="Thing1" parent="." instance=ExtResource("shop_thing")]
+unique_name_in_owner = true
+offset_left = 439.8
+offset_top = 146.95
+offset_right = 439.8
+offset_bottom = 146.95
+[node name="BtnBack" parent="." unique_id=246183202 instance=ExtResource("set_btn")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 836.0
+offset_top = 8.0
+offset_right = 940.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 20
+text = "返 回"
+
+[node name="Art5" type="Node2D" parent="." unique_id=1547711047]
+
+[node name="Art" type="Node2D" parent="Art5" unique_id=728887503]
+
+[node name="SpotLight" parent="Art5/Art" unique_id=1644770074 instance=ExtResource("bag_glow")]
+unique_name_in_owner = true
+position = Vector2(256.58, 271.73)
+
+[node name="Person" type="Node2D" parent="." unique_id=966996136]
+unique_name_in_owner = true
+position = Vector2(255.2, 282)
+
+[node name="Wukong" type="Node2D" parent="Person" unique_id=1673944294]
+
+[node name="BagWukongWaitPart1" type="Sprite2D" parent="Person/Wukong" unique_id=1226461800]
+position = Vector2(-26.4, -9.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_owbao")
+centered = false
+
+[node name="BagWukongHit1Part3" type="Sprite2D" parent="Person/Wukong" unique_id=321675469]
+position = Vector2(-7.9520016, 4.4615)
+rotation = 2.6510458
+scale = Vector2(0.4988236, 0.4988236)
+texture = ExtResource("36_6qsi8")
+centered = false
+
+[node name="BackpackPortraitWukong" type="Sprite2D" parent="Person/Wukong" unique_id=451099848]
+position = Vector2(-19.550001, 25.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("37_ongk7")
+centered = false
+
+[node name="BagWukongBody" type="Sprite2D" parent="Person/Wukong" unique_id=1939641384]
+position = Vector2(-16.800001, -22.650002)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_qx4t0")
+centered = false
+
+[node name="BagWukongHit8Part13" type="Sprite2D" parent="Person/Wukong" unique_id=1401791791]
+position = Vector2(3.8000002, -12.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("39_x6d2s")
+centered = false
+
+[node name="BagWukongBody2" type="Sprite2D" parent="Person/Wukong" unique_id=255999174]
+position = Vector2(47.9855, -29.663498)
+rotation = 2.740643
+scale = Vector2(0.49962485, 0.49962485)
+texture = ExtResource("40_aoc0n")
+centered = false
+
+[node name="BagWukongHit1Part12" type="Sprite2D" parent="Person/Wukong" unique_id=1530734200]
+position = Vector2(14.321499, 2.1520004)
+rotation = 0.5450997
+scale = Vector2(0.549659, 0.549659)
+texture = ExtResource("41_3p5xc")
+centered = false
+
+[node name="BagWukongWaitPart20" type="Sprite2D" parent="Person/Wukong" unique_id=1936673089]
+position = Vector2(-30.4, -48.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("42_frdpc")
+centered = false
+
+[node name="Tangseng" type="Node2D" parent="Person" unique_id=296761828]
+visible = false
+
+[node name="BagTangsengWaitPart1" type="Sprite2D" parent="Person/Tangseng" unique_id=1643031810]
+position = Vector2(-17.900002, -14.349999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("43_d5w6u")
+centered = false
+
+[node name="BagTangsengBody" type="Sprite2D" parent="Person/Tangseng" unique_id=583913680]
+position = Vector2(-42.399998, 4.050001)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("44_8d560")
+centered = false
+
+[node name="BagTangsengWaitPart34" type="Sprite2D" parent="Person/Tangseng" unique_id=1742560786]
+position = Vector2(-20.1, -22.05)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("45_86akt")
+centered = false
+
+[node name="BagTangsengWaitPart6" type="Sprite2D" parent="Person/Tangseng" unique_id=2066145054]
+position = Vector2(-27.050001, -46.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("46_5nic7")
+centered = false
+
+[node name="Bajie" type="Node2D" parent="Person" unique_id=1280014214]
+visible = false
+
+[node name="BackpackPortraitBajie" type="Sprite2D" parent="Person/Bajie" unique_id=686404398]
+position = Vector2(-27.75, -3.4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("47_8ha52")
+centered = false
+
+[node name="BagBajieBody" type="Sprite2D" parent="Person/Bajie" unique_id=722681109]
+position = Vector2(-45.869, -42.494003)
+rotation = -0.019997334
+scale = Vector2(0.50009996, 0.50009996)
+texture = ExtResource("48_s1viv")
+centered = false
+
+[node name="BagBajieWaitPart9" type="Sprite2D" parent="Person/Bajie" unique_id=230944512]
+position = Vector2(-22.9, -13.45)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("49_taw4v")
+centered = false
+
+[node name="BackpackPortraitBajie2" type="Sprite2D" parent="Person/Bajie" unique_id=700482023]
+position = Vector2(-35.6, -56.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("50_jrabd")
+centered = false

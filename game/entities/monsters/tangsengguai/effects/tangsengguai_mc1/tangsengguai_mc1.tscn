@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_8kle4"]
+[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="2_ep40w"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit4_part8.png" id="3_bc0o0"]
+[ext_resource type="Texture2D" path="res://entities/monsters/tangsengguai/effects/tangsengguai_mc1/tex/tangsengguai_mc1_frame.png" id="4_iti5r"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit4_part10.png" id="5_kw7lg"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/tangsengguai/effects/tangsengguai_mc1/tangsengguai_mc1_actions.tres" id="6_tulji"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j54jv"]
+shader = ExtResource("2_ep40w")
+shader_parameter/matrix_on = null
+shader_parameter/color_matrix = null
+shader_parameter/color_offset = null
+shader_parameter/blur = 3.0
+shader_parameter/glow_on = true
+shader_parameter/glow_color = Color(0, 0.8, 1, 1)
+shader_parameter/glow_blur = 13.0
+shader_parameter/glow_strength = 1.6679688
+shader_parameter/glow2_on = null
+shader_parameter/glow2_color = null
+shader_parameter/glow2_blur = null
+shader_parameter/glow2_strength = null
+shader_parameter/solid = null
+shader_parameter/extend = 14.0
+
+[node name="Monster49Mc1" type="Node2D" unique_id=1155393652]
+script = ExtResource("1_8kle4")
+actions = PackedStringArray("default")
+markers = {
+"roundMc": Vector2(1, 11.65)
+}
+
+[node name="Monster49Mc1Part1" type="Sprite2D" parent="." unique_id=1785501799]
+material = SubResource("ShaderMaterial_j54jv")
+position = Vector2(-73.7, -1.8765993)
+scale = Vector2(0.5, 0.094)
+texture = ExtResource("3_bc0o0")
+centered = false
+
+[node name="Monster49Mc1Part2" type="Sprite2D" parent="." unique_id=826774565]
+material = SubResource("ShaderMaterial_j54jv")
+position = Vector2(-34.649998, 4.6952)
+scale = Vector2(0.5, 0.094)
+texture = ExtResource("4_iti5r")
+centered = false
+
+[node name="Monster49Mc1Part3" type="Sprite2D" parent="." unique_id=739385593]
+material = SubResource("ShaderMaterial_j54jv")
+position = Vector2(-81.85, -25.210798)
+scale = Vector2(0.5, 0.094)
+texture = ExtResource("5_kw7lg")
+centered = false
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=665117040]
+callback_mode_process = 0
+libraries/ = ExtResource("6_tulji")

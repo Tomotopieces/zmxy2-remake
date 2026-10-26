@@ -2,7 +2,7 @@ class_name MonsterBrain
 extends RefCounted
 ## Decision making of a monster. This base class is the plain BaseMonster AI:
 ## wander, spot the hero (sight / range), chase, attack on a fixed check interval with a chance roll.
-## Per-monster scripts live next to this file as brain_<id>.gd or a shared template (MonsterData.brain_type);
+## Per-monster scripts live in the monster's folder as entities/monsters/monster<id>/brain_<id>.gd, or a shared template next to this file (MonsterData.brain_type);
 ## their tuning comes from MonsterData.brain (frames already converted to seconds by the bake).
 
 const DIR := "res://src/actors/brains/"
@@ -18,7 +18,8 @@ static var _scripts := {}   ## monster id -> brain script (or null = the base br
 
 static func _script_for(data: MonsterData) -> Script:
 	if not _scripts.has(data.id):
-		var path := DIR + "brain_%d.gd" % data.id
+		var f := MonsterData.folder(data.id)
+		var path := MonsterData.DIR.path_join(f).path_join(f + "_brain.gd")   # its own AI, next to its data
 		if not ResourceLoader.exists(path) and data.brain_type != "":
 			path = DIR + "%s.gd" % data.brain_type
 		_scripts[data.id] = load(path) if ResourceLoader.exists(path) else null
@@ -68,7 +69,7 @@ func on_hit_hero(_hero: Hero, _action: StringName) -> void:
 func modify_damage(_h: Hit, dmg: int) -> int:
 	return dmg
 
-## Damage of this monster's attack (function Object() { [native code] } "power").
+## Damage of this monster's attack (constructor "power").
 func outgoing_damage(a: AttackData) -> int:
 	return a.flat if a and a.flat > 0 else 1
 

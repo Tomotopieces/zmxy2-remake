@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_hdjx1"]
+[ext_resource type="Texture2D" path="res://ui/forge_help/tex/forge_help_piece.png" id="2_drxj5"]
+[ext_resource type="Texture2D" path="res://ui/shared/forge_help_btn_close.png" id="3_qj8y1"]
+[ext_resource type="Texture2D" path="res://ui/shared/forge_help_btn_close_2.png" id="4_4wwkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btnfocus"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxUp0"]
+texture = ExtResource("3_qj8y1")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxOver1"]
+texture = ExtResource("4_4wwkf")
+expand_margin_left = 0
+expand_margin_top = 2
+expand_margin_right = 0
+expand_margin_bottom = -2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btnxDown2"]
+texture = ExtResource("3_qj8y1")
+expand_margin_left = 0
+expand_margin_top = 0
+expand_margin_right = 0
+expand_margin_bottom = 0
+
+[node name="ForgeHelp" type="Control" unique_id=1454957409]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_hdjx1")
+
+[node name="Art" type="Node2D" parent="." unique_id=1494860309]
+
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=85535072]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_drxj5")
+centered = false
+
+[node name="BtnClose" type="Button" parent="." unique_id=281468946]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 372.45
+offset_top = 14.0
+offset_right = 412.45
+offset_bottom = 54.0
+mouse_default_cursor_shape = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_btnxUp0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btnxOver1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btnxDown2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_btnxDown2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btnxUp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btnfocus")

@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://cqlcvbd3up0pb"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_vql0u"]
+[ext_resource type="Texture2D" uid="uid://c54ojvrkcgxtm" path="res://entities/monsters/chujiangwang/tex/chujiangwang_walk_part1.png" id="2_4kk2g"]
+[ext_resource type="Texture2D" uid="uid://dygihx25iismk" path="res://entities/monsters/chujiangwang/tex/chujiangwang_walk_part2.png" id="3_c6q7s"]
+[ext_resource type="Texture2D" uid="uid://kaoa6gregtnd" path="res://entities/monsters/chujiangwang/tex/chujiangwang_wait_part1.png" id="4_oy40v"]
+[ext_resource type="Texture2D" uid="uid://dger2incsght1" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hurt_part1.png" id="5_qbsex"]
+[ext_resource type="Texture2D" uid="uid://du6nsxle0o7s" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit1_part1.png" id="6_tm0qc"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="8_pltxv"]
+[ext_resource type="Texture2D" uid="uid://1ey1k1s6rcfj" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit1_part2_7.png" id="8_wonqo"]
+[ext_resource type="Texture2D" uid="uid://cgcm4elbiqq6r" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit1_part4.png" id="10_4xsuf"]
+[ext_resource type="Texture2D" uid="uid://ypagrwlndl3k" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit1_part3_3.png" id="10_h3moo"]
+[ext_resource type="Texture2D" uid="uid://q6ym6drj756e" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit2_part1.png" id="11_vkkkd"]
+[ext_resource type="Texture2D" uid="uid://2868spgyxc7f" path="res://entities/monsters/chujiangwang/tex/chujiangwang_hit3_part1.png" id="12_xmyva"]
+[ext_resource type="Texture2D" uid="uid://dstkyem6yiaia" path="res://entities/monsters/chujiangwang/tex/chujiangwang_dead_part1.png" id="13_hv374"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/chujiangwang/chujiangwang_actions.tres" id="14_h3k27"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dmitf"]
+shader = ExtResource("8_pltxv")
+shader_parameter/matrix_on = true
+shader_parameter/color_matrix = Projection(-0.574, 0.426, 0.42599994, 0, 1.4299998, 0.42999995, 1.4300001, 0, 0.14400007, 0.14399996, -0.85599995, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krryx"]
+resource_local_to_scene = true
+size = Vector2(194.8, 112.7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n680"]
+resource_local_to_scene = true
+size = Vector2(50, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
+size = Vector2(50, 120)
+
+[node name="Monster61" type="CharacterBody2D" unique_id=64755518]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=541332137]
+script = ExtResource("1_vql0u")
+actions = PackedStringArray("walk", "wait", "hurt", "hit1", "hit2", "hit3", "dead")
+
+[node name="Poses" type="Node2D" parent="Puppet" unique_id=985900220]
+
+[node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=1768403174]
+visible = false
+
+[node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1615216887]
+position = Vector2(-112.2, -81.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_4kk2g")
+centered = false
+
+[node name="WalkPart2" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1759075707]
+position = Vector2(-106.65, -83.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_c6q7s")
+centered = false
+
+[node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=757835732]
+visible = false
+
+[node name="WaitPart1" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=939515923]
+position = Vector2(-103.5, -83.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_oy40v")
+centered = false
+
+[node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=2059357130]
+visible = false
+
+[node name="HurtPart1" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1864874281]
+position = Vector2(-47.05, -108.2)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_qbsex")
+centered = false
+
+[node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=893291141]
+visible = false
+
+[node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1387771924]
+position = Vector2(-111.9, -69.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_tm0qc")
+centered = false
+
+[node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=726205859]
+visible = false
+position = Vector2(-68.3, -72.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_wonqo")
+centered = false
+
+[node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=753842809]
+visible = false
+material = SubResource("ShaderMaterial_dmitf")
+position = Vector2(-188.85, -80.45)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_h3moo")
+centered = false
+
+[node name="Hit1Part4" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=627178201]
+material = SubResource("ShaderMaterial_dmitf")
+position = Vector2(-243.39699, -49.600998)
+scale = Vector2(1.1735, 1.1735)
+texture = ExtResource("10_4xsuf")
+centered = false
+
+[node name="Hit2" type="Node2D" parent="Puppet/Poses" unique_id=1364486694]
+visible = false
+
+[node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=521984492]
+position = Vector2(-138.65, -81.4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_vkkkd")
+centered = false
+
+[node name="Hit3" type="Node2D" parent="Puppet/Poses" unique_id=1896586019]
+visible = false
+
+[node name="Hit3Part1" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=355920672]
+position = Vector2(-113.5, -84.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_xmyva")
+centered = false
+
+[node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=861184030]
+visible = false
+
+[node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=637089874]
+position = Vector2(-48.8, -106.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_hv374")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=488939347]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=787269496]
+position = Vector2(-123.7, 29.05)
+shape = SubResource("RectangleShape2D_krryx")
+
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=2145304271]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=896081006]
+position = Vector2(0.4, 2)
+shape = SubResource("RectangleShape2D_7n680")
+
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=111080955]
+callback_mode_process = 0
+libraries/ = ExtResource("14_h3k27")
+
+[node name="Body" type="CollisionShape2D" parent="." unique_id=809937683]
+position = Vector2(0.4, 2)
+shape = SubResource("RectangleShape2D_Body")

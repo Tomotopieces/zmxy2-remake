@@ -1,0 +1,56 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="1_wphu3"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_2.png" id="2_u48a1"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_3.png" id="3_44hcx"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_4.png" id="4_t3rii"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_5.png" id="5_85yu2"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_6.png" id="6_6olsi"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_7.png" id="7_4dr5i"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_8.png" id="8_rpyei"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_9.png" id="9_pak6g"]
+
+[sub_resource type="Animation" id="Animation_ocpvm"]
+length = 0.6666666666666666
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FxPoisonHeadPart1:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_wphu3"), ExtResource("2_u48a1"), ExtResource("3_44hcx"), ExtResource("4_t3rii"), ExtResource("5_85yu2"), ExtResource("6_6olsi"), ExtResource("7_4dr5i"), ExtResource("8_rpyei")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FxPoisonHeadPart1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.29025, -39.228752), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.84105, -41.65465), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.8742, -42.7486), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.06715, -43.556953), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.085, -44.146), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.7297, -41.6861), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -21.41905, -43.125153), Transform2D(0.2805, -0.0085, 0.0085, 0.2805, -20.32935, -44.22505)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FxPoisonHeadPart2:transform")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -9.8, -11.25)]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_ocpvm")
+}

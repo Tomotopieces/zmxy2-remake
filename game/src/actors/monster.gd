@@ -23,7 +23,7 @@ var _hp_bar: Node2D
 var _vanishing := false
 
 static func create(d: MonsterData) -> Monster:
-	var m := Monster.new()
+	var m := Puppet.instance(d.puppet) as Monster
 	m.data = d
 	return m
 
@@ -33,7 +33,7 @@ func _ready() -> void:
 	z_index = Layers.Z_MECHANISM if data.behind else Layers.Z_MONSTER
 	collision_mask = LAYER_WORLD | LAYER_ONEWAY
 	brain = MonsterBrain.create(self)   # before the puppet: its first action already emits events
-	setup_puppet(data.puppet)
+	setup_puppet()
 	max_hp = data.hp
 	hp = max_hp
 	facing = -1
@@ -57,8 +57,7 @@ func _update_debug_glow() -> void:
 		return
 	if _debug_glow == null:
 		_debug_glow_mat = SpriteFx.glow_material(Color(1, 0.9, 0), 8.0, 1.5, true)
-		_debug_glow = Puppet.create(data.puppet)
-		_debug_glow.get_node("Body").free()   # (a picture only)
+		_debug_glow = Puppet.create(data.puppet)   # (a picture only)
 		add_child(_debug_glow)
 		move_child(_debug_glow, puppet.get_index())   # behind the body
 		_debug_glow.play(puppet.action, true)

@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_frame_24.png" id="1_njm1y"]
+
+[node name="Weapon8" type="Node2D" unique_id=2101977775]
+
+[node name="Weapon8Part1" type="Sprite2D" parent="." unique_id=1772697839]
+position = Vector2(-80.4, -15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_njm1y")
+centered = false

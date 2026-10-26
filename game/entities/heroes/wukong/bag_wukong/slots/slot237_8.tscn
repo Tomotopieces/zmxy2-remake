@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/bag_wukong/tex/bag_wukong_frame_30.png" id="1_x5p7d"]
+
+[node name="Slot2378" type="Node2D" unique_id=1597798901]
+
+[node name="Slot2378Part1" type="Sprite2D" parent="." unique_id=1929534571]
+position = Vector2(-8.85, -8.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_x5p7d")
+centered = false

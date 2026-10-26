@@ -13,14 +13,14 @@ const DESC_WIDTH := 135.0
 const UNDERLINE := 80.0
 const STAT_COLOR := Color("#ff9933")
 const VALUE_COLOR := Color("#ff9933")
-const TYPE_NAMES := {&"weapon": "武器", &"cloth": "防具", &"accessory": "饰 品", &"treasure": "法 宝",
+const TYPE_NAMES := {&"weapon": "武器", &"cloth": "防具", &"accessory": "饰 品", &"fabao": "法 宝",
 	&"fashion": "时装", &"wing": "翅 膀", &"item": "道具"}
 ## stat -> [label, percent]
 const STATS := [["hp", "生命", false], ["mp", "魔法", false], ["atk", "攻击", false], ["def", "防御", false],
 	["crit", "暴击", true], ["miss", "闪避", true], ["hp_regen", "回血", false], ["mp_regen", "回魔", false],
 	["lifesteal", "吸血", true], ["mdef", "魔抗", true], ["deephit", "重击", true]]
 ## materials whose stats only matter for fusion (贪 / 嗔 / 痴) show none, as in the original
-const NO_STATS := ["t", "c", "ch"]
+const NO_STATS := ["tan", "chen", "chi"]
 
 var _box: Panel
 var _rows: Control
@@ -71,7 +71,7 @@ func _build(item: Item) -> void:
 	elif d.charm == &"keep":
 		type_name = "神恩符"
 	_pair("类型", type_name + ("·" + d.user if d.user != "" else ""), Color.WHITE)
-	if Forge.is_treasure(item):
+	if Forge.is_fabao(item):
 		_pair("等级", "Lv.%d" % item.lv, Color.WHITE)
 		_pair("成长率", "%.1f" % item.growth, Color.WHITE)
 		_pair("五行", Forge.element_text(item), Color.WHITE)

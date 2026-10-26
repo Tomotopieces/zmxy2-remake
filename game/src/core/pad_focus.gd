@@ -127,10 +127,17 @@ func _fence(scope: Node) -> void:
 	for l: CanvasLayer in get_tree().get_nodes_in_group(GROUP):
 		for c in l.get_children():
 			if c is Control:
-				var on: bool = scope == l and not popup
-				(c as Control).focus_behavior_recursive = Control.FOCUS_BEHAVIOR_ENABLED if on else Control.FOCUS_BEHAVIOR_DISABLED
+				var on: bool = (scope == l and not popup) or c == scope
+				_set_focus_behavior(c, on)
 	if popup:
-		(scope as Control).focus_behavior_recursive = Control.FOCUS_BEHAVIOR_ENABLED   # (overrides its disabled ancestors)
+		_set_focus_behavior(scope, true)   # (overrides its disabled ancestors)
+
+## Only on a change: switching a popup off and back on every frame took the focus away from a button being held
+## down, which drops its click (a press longer than one frame never registered).
+static func _set_focus_behavior(c: Control, on: bool) -> void:
+	var want := Control.FOCUS_BEHAVIOR_ENABLED if on else Control.FOCUS_BEHAVIOR_DISABLED
+	if c.focus_behavior_recursive != want:
+		c.focus_behavior_recursive = want
 
 func _in_popup(c: Control) -> bool:
 	for p: Control in get_tree().get_nodes_in_group(MODAL):

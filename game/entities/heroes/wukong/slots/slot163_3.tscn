@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part9.png" id="1_vafeq"]
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/bag_wukong_hit1_part10.png" id="2_alyil"]
+
+[node name="Slot1633" type="Node2D" unique_id=797998443]
+
+[node name="Slot1633Part1" type="Sprite2D" parent="." unique_id=483113675]
+position = Vector2(-14.3, -2.7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_vafeq")
+centered = false
+
+[node name="Slot1633Part2" type="Sprite2D" parent="." unique_id=606739314]
+position = Vector2(-14.25, -2.75)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_alyil")
+centered = false

@@ -17,7 +17,7 @@ static func spawn(id: String, pos: Vector2) -> GroundItem:
 	g.item = d.roll()
 	g._keep = EquipmentCatalog.get_catalog().boss_loot.has(id)
 	g._sprite = Sprite2D.new()
-	g._sprite.texture = d.ground_icon
+	g._sprite.texture = d.icon
 	g.add_child(g._sprite)
 	var cs := CollisionShape2D.new()
 	var shape := RectangleShape2D.new()

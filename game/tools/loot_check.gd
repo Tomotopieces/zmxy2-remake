@@ -20,8 +20,8 @@ func _ready() -> void:
 		for s in args[0].split(","):
 			ids.append(int(s))
 	else:
-		for i in range(30, 82):
-			var md := load("res://data/monsters/monster_%d.tres" % i) as MonsterData
+		for i in MonsterData.ids():
+			var md := load(MonsterData.path(i)) as MonsterData
 			if md != null and md.is_boss and i != 79:   # (79 stands for 劈天斧 / 风神盾: the arena picks one of them)
 				ids.append(i)
 	var failed := 0
@@ -36,7 +36,7 @@ func _ready() -> void:
 func _fight(id: int) -> String:
 	GameState.new_game("wukong")
 	Rng.seed_with(id)
-	var md := load("res://data/monsters/monster_%d.tres" % id) as MonsterData
+	var md := load(MonsterData.path(id)) as MonsterData
 	Level.arena_boss = md
 	var ps := PlayScreen.create(Level.ARENA)
 	add_child(ps)

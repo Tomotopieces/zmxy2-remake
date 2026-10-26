@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bdmxsillnhkux"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_7swi4"]
+[ext_resource type="Texture2D" uid="uid://cbedk4kotikiu" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet1/tex/songdiwang_bullet1_frame.png" id="2_wn8j6"]
+[ext_resource type="AnimationLibrary" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet1/songdiwang_bullet1_actions.tres" id="3_vl6bf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v2c6"]
+resource_local_to_scene = true
+size = Vector2(33.1, 99)
+
+[node name="Monster64Bullet1" type="Node2D" unique_id=285268788]
+script = ExtResource("1_7swi4")
+actions = PackedStringArray("default")
+
+[node name="Monster64Bullet1Part1" type="Sprite2D" parent="." unique_id=2022640990]
+visible = false
+position = Vector2(-1497.98, -606.82)
+scale = Vector2(0.8675, 0.8675)
+texture = ExtResource("2_wn8j6")
+centered = false
+offset = Vector2(1536, 384)
+region_enabled = true
+region_rect = Rect2(1536, 384, 384, 384)
+
+[node name="Monster64Bullet1Part2" type="Sprite2D" parent="." unique_id=1616835981]
+position = Vector2(-1379.275, -736.702)
+scale = Vector2(1.028, 1.028)
+texture = ExtResource("2_wn8j6")
+centered = false
+offset = Vector2(1152, 384)
+region_enabled = true
+region_rect = Rect2(1152, 384, 384, 384)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1261750392]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1314920080]
+position = Vector2(-0.55, -7.5)
+shape = SubResource("RectangleShape2D_3v2c6")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1893997908]
+callback_mode_process = 0
+libraries/ = ExtResource("3_vl6bf")

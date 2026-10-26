@@ -16,9 +16,9 @@ func _ready() -> void:
 	await get_tree().create_timer(0.5).timeout
 	for id in main.TEST_GEAR:
 		GameState.add_to_bag(GameState.make_item(id))
-	_check("stones stack", GameState.count_of("wpqhs1") == 2 and GameState.tab_items("item").size() == 6)
-	_check("unique charm", not GameState.add_to_bag(GameState.make_item("csgs")))
-	for id in ["tsyj", "bsxj", "csgs", "wkzyf", "xtzy"]:
+	_check("stones stack", GameState.count_of("qianghuashi_1") == 2 and GameState.tab_items("item").size() == 6)
+	_check("unique charm", not GameState.add_to_bag(GameState.make_item("cangshengguashi")))
+	for id in ["tianshayueji", "baishuangxiongjia", "cangshengguashi", "wukongzhuangyuanfu", "xingtianzhiyi"]:
 		_check("wear " + id, GameState.wear(_find(id)))
 	var look := GameState.appearance()
 	_check("fashion look", look.cloth == 10 and look.wing == 2)
@@ -26,17 +26,17 @@ func _ready() -> void:
 	print("worn atk=%d def=%d hp=%d look=%s bag=%d" % [GameState.attack_power(), GameState.defense(), GameState.max_hp(), look, GameState.bag.size()])
 	# buffs
 	var hp0 := GameState.max_hp()
-	GameState.use_item(_find("jxbuff"))
-	GameState.use_item(_find("sbbl"))
-	GameState.use_item(_find("hhbuff"))
+	GameState.use_item(_find("wangudeshuiniu"))
+	GameState.use_item(_find("shuangbeibaolv"))
+	GameState.use_item(_find("huihuang"))
 	_check("hp buff", GameState.max_hp() == int(hp0 * 1.5))
 	_check("drop buff", is_equal_approx(GameState.drop_mul(), 2.4))
 	_check("mp regen buff", GameState.mp_regen() == 10)
 	_check("items used up", GameState.tab_items("item").size() == 3)
-	_check("unusable item", GameState.use_item(_find("yll")) == "" and GameState.has_item("yll"))
+	_check("unusable item", GameState.use_item(_find("yanluoling")) == "" and GameState.has_item("yanluoling"))
 	# save / load keeps buffs and worn slots
 	var saved: Dictionary = GameState._to_dict()
-	_check("save has buffs", saved.buffs.size() == 3 and saved.worn.fashion.id == "wkzyf")
+	_check("save has buffs", saved.buffs.size() == 3 and saved.worn.fashion.id == "wukongzhuangyuanfu")
 	await get_tree().create_timer(0.3).timeout
 	_shot("bag_game")
 	# revive

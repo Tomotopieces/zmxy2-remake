@@ -1,0 +1,221 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bag_bajie_wait_part8.png" id="1_g8t3w"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bag_bajie_wait_part9.png" id="2_cbgm0"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bag_bajie_wait_part10.png" id="3_0qk2p"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame_26.png" id="4_1qh0w"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame_38.png" id="5_23h7l"]
+[ext_resource type="Texture2D" path="res://entities/heroes/bajie/bag_bajie/tex/bag_bajie_frame.png" id="6_onwcs"]
+
+[sub_resource type="Animation" id="Animation_4hwbv"]
+length = 1.7916666666666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Slot1:transform")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -72.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -73.75), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.25), Transform2D(0.995, -0.1, 0.1, 0.995, -17.75, -74.75)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BagBajiePart1:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.45000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.85), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, 0.35000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.45000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.85), Transform2D(0.5, 0, 0, 0.5, -25.25, 0.35000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.45000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.85), Transform2D(0.5, 0, 0, 0.5, -25.25, 0.35000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.45000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.85), Transform2D(0.5, 0, 0, 0.5, -25.25, 0.35000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.050000012), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.45000002), Transform2D(0.5, 0, 0, 0.5, -25.25, -0.85)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Slot2:transform")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.95), Transform2D(1, -0.017, 0.017, 1, 0, -12.35), Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.15), Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.95), Transform2D(1, -0.017, 0.017, 1, 0, -12.35), Transform2D(1, -0.017, 0.017, 1, 0, -11.15), Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.95), Transform2D(1, -0.017, 0.017, 1, 0, -12.35), Transform2D(1, -0.017, 0.017, 1, 0, -11.15), Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.95), Transform2D(1, -0.017, 0.017, 1, 0, -12.35), Transform2D(1, -0.017, 0.017, 1, 0, -11.15), Transform2D(1, -0.017, 0.017, 1, 0, -11.55), Transform2D(1, -0.017, 0.017, 1, 0, -11.95), Transform2D(1, -0.017, 0.017, 1, 0, -12.35)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BagBajiePart2:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.375, 0.45833334, 0.75, 0.8333333, 1.125, 1.2083334, 1.5, 1.5833334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BagBajiePart2:transform")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.375),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -20.4, -8.95)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BagBajiePart3:visible")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BagBajiePart3:transform")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.45833334, 0.5416667, 0.625, 0.8333333, 0.9166667, 1, 1.2083334, 1.2916666, 1.375, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.5), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.9), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.5), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.9), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.5), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.9), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.5), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.9), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.099999), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.5), Transform2D(0.5, 0, 0, 0.5, -20.4, -10.9)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Slot3:transform")
+tracks/7/interp = 0
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.937, -0.086, -0.021, 0.977, 11.65, 38.55)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Slot4:transform")
+tracks/8/interp = 0
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(1, 0, 0.024, 0.857, -8.75, 38)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BagBajiePart4:visible")
+tracks/9/interp = 0
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.375, 0.45833334, 0.75, 0.8333333, 1.125, 1.2083334, 1.5, 1.5833334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true, false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("BagBajiePart4:transform")
+tracks/10/interp = 0
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.375),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -11.65, -9.7)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Slot5:transform")
+tracks/11/interp = 0
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 7.45), Transform2D(1, 0, 0.049, 1, 0.05, 7.15), Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 8.05), Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 7.45), Transform2D(1, 0, 0.049, 1, 0.05, 7.15), Transform2D(1, 0, 0.049, 1, 0.05, 8.05), Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 7.45), Transform2D(1, 0, 0.049, 1, 0.05, 7.15), Transform2D(1, 0, 0.049, 1, 0.05, 8.05), Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 7.45), Transform2D(1, 0, 0.049, 1, 0.05, 7.15), Transform2D(1, 0, 0.049, 1, 0.05, 8.05), Transform2D(1, 0, 0.049, 1, 0.05, 7.75), Transform2D(1, 0, 0.049, 1, 0.05, 7.45), Transform2D(1, 0, 0.049, 1, 0.05, 7.15)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Slot6:transform")
+tracks/12/interp = 0
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 34.8), Transform2D(1, 0, -0.04, 1, 0.75, 34.5), Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 35.4), Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 34.8), Transform2D(1, 0, -0.04, 1, 0.75, 34.5), Transform2D(1, 0, -0.04, 1, 0.75, 35.4), Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 34.8), Transform2D(1, 0, -0.04, 1, 0.75, 34.5), Transform2D(1, 0, -0.04, 1, 0.75, 35.4), Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 34.8), Transform2D(1, 0, -0.04, 1, 0.75, 34.5), Transform2D(1, 0, -0.04, 1, 0.75, 35.4), Transform2D(1, 0, -0.04, 1, 0.75, 35.1), Transform2D(1, 0, -0.04, 1, 0.75, 34.8), Transform2D(1, 0, -0.04, 1, 0.75, 34.5)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BagBajiePart5:texture")
+tracks/13/interp = 0
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("5_23h7l"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("5_23h7l"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("5_23h7l"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("5_23h7l"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w"), ExtResource("4_1qh0w")]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("BagBajiePart5:transform")
+tracks/14/interp = 0
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.55), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.95), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -52.75), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.55), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.95), Transform2D(0.5, 0, 0, 0.5, -33.1, -52.75), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.55), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.95), Transform2D(0.5, 0, 0, 0.5, -33.1, -52.75), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.55), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.95), Transform2D(0.5, 0, 0, 0.5, -33.1, -52.75), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.15), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.55), Transform2D(0.5, 0, 0, 0.5, -33.1, -53.95)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Slot7:transform")
+tracks/15/interp = 0
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.9), Transform2D(1, 0.021, -0.021, 1, -4.4, -15.35), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.3), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.9), Transform2D(1, 0.021, -0.021, 1, -4.4, -15.35), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.3), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.9), Transform2D(1, 0.021, -0.021, 1, -4.4, -15.35), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.3), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.9), Transform2D(1, 0.021, -0.021, 1, -4.4, -15.35), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.3), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.6), Transform2D(1, 0.021, -0.021, 1, -4.4, -14.9), Transform2D(1, 0.021, -0.021, 1, -4.4, -15.35)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Slot8:transform")
+tracks/16/interp = 0
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.29166666, 0.375, 0.45833334, 0.5416667, 0.625, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.2083334, 1.2916666, 1.375, 1.5, 1.5833334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.15), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.45), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.55), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.15), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.45), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.55), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.15), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.45), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.55), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.15), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.45), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.55), Transform2D(1, 0.031, -0.031, 1, 17.35, -0.85), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.15), Transform2D(1, 0.031, -0.031, 1, 17.35, -1.45)]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_4hwbv")
+}

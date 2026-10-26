@@ -1,0 +1,35 @@
+[gd_resource type="AnimationLibrary" format=3 uid="uid://caix42tdj76m8"]
+
+[sub_resource type="Animation" id="Animation_tjm65"]
+length = 0.625
+loop_mode = 1
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:transform")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.2585, 0, 0, 0.2585, -59.4033, -59.4033), Transform2D(0.2325, 0.1115, -0.1115, 0.2325, -27.8058, -79.0512), Transform2D(0.161, 0.2015, -0.2015, 0.161, 9.3069, -83.3025), Transform2D(0.057, 0.2515, -0.2515, 0.057, 44.696106, -70.8933), Transform2D(-0.057, 0.2515, -0.2515, -0.057, 70.8933, -44.696106), Transform2D(-0.161, 0.2015, -0.2015, -0.161, 83.3025, -9.3069), Transform2D(-0.2325, 0.1115, -0.1115, -0.2325, 79.0512, 27.8058), Transform2D(-0.2585, 0, 0, -0.2585, 59.4033, 59.4033), Transform2D(-0.2325, -0.1115, 0.1115, -0.2325, 27.8058, 79.0512), Transform2D(-0.161, -0.2015, 0.2015, -0.161, -9.3069, 83.3025), Transform2D(-0.057, -0.2515, 0.2515, -0.057, -44.696106, 70.8933), Transform2D(0.057, -0.2515, 0.2515, 0.057, -70.8933, 44.696106), Transform2D(0.161, -0.2015, 0.2015, 0.161, -83.3025, 9.3069), Transform2D(0.2325, -0.1115, 0.1115, 0.2325, -79.0512, -27.8058), Transform2D(0.2585, 0, 0, 0.2585, -59.4033, -59.4033)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/Shape:disabled")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_tjm65")
+}

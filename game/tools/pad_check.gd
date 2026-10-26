@@ -27,7 +27,7 @@ func _nav() -> PadFocus:
 func _focus() -> Control:
 	return get_viewport().gui_get_focus_owner()
 func _ready() -> void:
-	_main = load("res://scenes/main.tscn").instantiate()
+	_main = load("res://main.tscn").instantiate()
 	add_child(_main)
 	await get_tree().create_timer(0.5).timeout
 	var nav := _nav()
@@ -72,11 +72,11 @@ func _ready() -> void:
 	_check("backpack takes the pad", nav._scope() != null)
 	await _btn(JOY_BUTTON_DPAD_DOWN)
 	_check("backpack highlight", _focus() != null and ps._menu.page.is_ancestor_of(_focus()))
-	# LT / RT switch tabs (法宝 is skipped without a worn treasure)
+	# LT / RT switch tabs (法宝 is skipped without a worn fabao)
 	await _trigger(JOY_AXIS_TRIGGER_RIGHT)
 	_check("RT: 技能 tab", ps._menu.tab == &"skill")
 	await _trigger(JOY_AXIS_TRIGGER_RIGHT)
-	_check("RT skips 法宝 without a treasure: 设置", ps._menu.tab == &"settings")
+	_check("RT skips 法宝 without a fabao: 设置", ps._menu.tab == &"settings")
 	await _trigger(JOY_AXIS_TRIGGER_RIGHT)
 	_check("RT wraps to 背包", ps._menu.tab == &"bag")
 	await _trigger(JOY_AXIS_TRIGGER_LEFT)
@@ -86,7 +86,7 @@ func _ready() -> void:
 	# an item menu: B closes the menu only; selling keeps the highlight on that cell when the next item moves in
 	ps._menu.close()
 	await get_tree().create_timer(0.3).timeout
-	for id in ["ptxzf", "ptxzf", "ptxzf"]:
+	for id in ["putong_xingzhepao", "putong_xingzhepao", "putong_xingzhepao"]:
 		var e := EquipmentCatalog.find(id)
 		if e:
 			GameState.add_to_bag(e.roll())

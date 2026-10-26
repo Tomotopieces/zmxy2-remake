@@ -11,8 +11,11 @@ signal equipment_changed
 signal buffs_changed
 
 const SLOTS := 6
-const ROLES := ["wukong", "tangseng", "bajie"]   ## HeroData files in res://data, in HUD / shop page order
-const HERO_DATA := "res://data/%s.tres"
+const ROLES := ["wukong", "tangseng", "bajie"]   ## in HUD / shop page order
+
+## A hero's HeroData: entities/heroes/<role>/<role>.tres.
+static func hero_data_path(r: String) -> String:
+	return "res://entities/heroes/%s/%s.tres" % [r, r]
 
 ## Heroes the account has unlocked (all but 猪八戒 from the start; he comes with the first 红孩儿 kill). Not part of a save slot.
 var unlocked := {"wukong": true, "tangseng": true, "bajie": false}
@@ -29,7 +32,7 @@ var attack := 0          ## rolled once per level (original: 10 + rand(0..4) + 5
 var skills := {}                     ## learned active skills (action -> true), bought in the skill shop
 var passives := [0, 0, 0, 0, 0]      ## passive skill levels (hp, mp, crit, hp_regen, mp_regen)
 var bag: Array[Item] = []                                        ## carried items
-var worn := {&"weapon": null, &"cloth": null, &"accessory": null, &"treasure": null, &"fashion": null, &"wing": null}   ## slot -> Item (null = empty)
+var worn := {&"weapon": null, &"cloth": null, &"accessory": null, &"fabao": null, &"fashion": null, &"wing": null}   ## slot -> Item (null = empty)
 var buffs := {}                      ## timed buff -> seconds of stage time left (used items)
 var merit := 0                       ## 功勋: shop currency
 var merit_day := ""                  ## date of the last 功勋 reward (it is limited per day)
@@ -44,7 +47,7 @@ var hhe_seen := false                ## 红孩儿 comic shown (first visit to 6-
 var slot := -1                       ## save slot of this game (-1 = never saved)
 
 func _ready() -> void:
-	if not ResourceLoader.exists(HERO_DATA % "wukong"):
+	if not ResourceLoader.exists(hero_data_path("wukong")):
 		return   # running a bake tool before data exists
 	SaveGame.read_account(self)
 	new_game()
@@ -194,8 +197,8 @@ func use_item(index: int) -> String:
 ## 五毒丹: permanently strengthens the worn 五毒兽's active skill. Returns the refusal notice, "" when used.
 func _use_special(kind: String) -> String:
 	if kind == "wds_power":
-		var t: Item = worn[&"treasure"]
-		if Item.id_of(t) != "wds":
+		var t: Item = worn[&"fabao"]
+		if Item.id_of(t) != "wudushou":
 			return "您没有装备五毒兽"
 		if t.strong:
 			return "五毒兽技能已经强化"
@@ -296,8 +299,8 @@ func make_item(id: String) -> Item:
 	var d := EquipmentCatalog.find(id)
 	if d == null:
 		return null
-	if d.type == &"treasure":
-		return Forge.new_treasure(id)
+	if d.type == &"fabao":
+		return Forge.new_fabao(id)
 	# an item that only exists as a sum of its materials (地藏金戒) has no stats of its own: hand out one made of fresh materials
 	for r: Dictionary in EquipmentCatalog.get_catalog().fusion.recipes:
 		if r.out == id and r.kind == "sum":
@@ -452,7 +455,7 @@ func load_from(i: int) -> bool:
 ## A fresh game as hero r (a role id of ROLES).
 func new_game(r := "wukong") -> void:
 	role = r
-	hero_data = load(HERO_DATA % role)
+	hero_data = load(hero_data_path(role))
 	level = 1
 	exp = 0
 	souls = 0

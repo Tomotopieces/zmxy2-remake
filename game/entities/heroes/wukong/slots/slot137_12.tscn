@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_frame_9.png" id="1_cr11m"]
+
+[node name="Slot13712" type="Node2D" unique_id=2113659097]
+
+[node name="Slot13712Part1" type="Sprite2D" parent="." unique_id=839813395]
+position = Vector2(-18.15, -10.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_cr11m")
+centered = false

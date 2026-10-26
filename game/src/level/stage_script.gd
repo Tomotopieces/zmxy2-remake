@@ -1,6 +1,6 @@
 class_name StageScript
 extends Node
-## Special rules of one stage (the original StageListenerXY). Lives at src/level/stages/<level name>.gd,
+## Special rules of one stage (the original StageListenerXY). Lives at stages/<level name>/<level name>.gd,
 ## is added as a child of its Level and gets the stage's numbers from data/stages.json as `p`.
 
 var level: Level

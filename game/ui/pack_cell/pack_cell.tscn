@@ -1,0 +1,30 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/ui_layout.gd" id="1_k3cxs"]
+[ext_resource type="Texture2D" path="res://ui/pack_cell/tex/pack_cell_piece.png" id="2_i73mu"]
+
+[node name="PackCell" type="Control" unique_id=1002880187]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_k3cxs")
+
+[node name="Art" type="Node2D" parent="." unique_id=744516976]
+
+[node name="Piece1" type="Sprite2D" parent="Art" unique_id=218681175]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_i73mu")
+centered = false
+
+[node name="Count" type="Label" parent="." unique_id=880512287]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 26.0
+offset_top = 27.5
+offset_right = 49.95
+offset_bottom = 53.1
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 0.6, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 2

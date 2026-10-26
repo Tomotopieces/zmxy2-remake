@@ -1,0 +1,106 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame.png" id="1_yl8qb"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_2.png" id="2_y8m1y"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_3.png" id="3_4asj0"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_4.png" id="4_kj0jp"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_5.png" id="5_4hlqq"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_6.png" id="6_io0ia"]
+[ext_resource type="Texture2D" path="res://entities/fabao/xuehaimotong/effects/xuehaimotong_bullet2/tex/xuehaimotong_bullet2_frame_7.png" id="7_hwovf"]
+
+[sub_resource type="Animation" id="Animation_x87kn"]
+length = 0.2916666666666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_yl8qb"), ExtResource("2_y8m1y"), ExtResource("3_4asj0"), ExtResource("4_kj0jp"), ExtResource("5_4hlqq"), ExtResource("6_io0ia"), ExtResource("7_hwovf")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(-0.016, -0.5485, 0.2515, -0.007, -92.88275, 28.26915), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -92.91286, 46.2205), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -92.67876, 49.0685), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -96.097755, 45.7602), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -91.255455, 44.36285), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -94.63765, 42.3161), Transform2D(-0.016, -0.5485, 0.2515, -0.007, -96.37669, 19.80285)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hitbox/Shape:position")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(-57.9, 4.45), Vector2(-58.05, 3.6), Vector2(-58.45, 3.9), Vector2(-60.2, 3.2), Vector2(-60.2, 9.15), Vector2(-69.25, -2.8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Hitbox/Shape:shape:size")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(73.8, 83.7), Vector2(73.5, 83.2), Vector2(72.7, 82.6), Vector2(69.2, 81.2), Vector2(69.2, 69.3), Vector2(51.1, 45.4)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/Shape:disabled")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["destroy"],
+"method": &"ev_call"
+}]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"ev_finished"
+}]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_x87kn")
+}

@@ -10,6 +10,7 @@ extends Resource
 @export var sound_prefix := "Role1"
 @export var puppet := "wukong"
 @export var super_armor_in_rage := true      ## no hit stun / knockback while transformed
+@export var knockback_in_rage := true        ## without super armor: knocked back too in 无双 (八戒: stun only)
 @export var damage_taken_mul_in_rage := 1.0
 @export var lock_glow := Color.RED           ## anti-lock protection glow
 
@@ -64,7 +65,7 @@ extends Resource
 
 @export var attacks: Dictionary = {}     ## action name -> AttackData
 
-@export var treasures := {}   ## magic treasure behaviour numbers
+@export var fabao := {}   ## magic fabao behaviour numbers
 
 @export_group("Learning")
 @export var learn_active: PackedStringArray      ## skill actions in shop order

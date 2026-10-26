@@ -7,7 +7,7 @@ extends TextureRect
 
 const MARGIN := 0.12        ## share of the cell left free on each side, so no picture reaches the frame
 ## Only equipment shows its quality as a glow (道具 and 时装 do not).
-const GLOW_TYPES := [&"weapon", &"cloth", &"accessory", &"treasure", &"wing"]
+const GLOW_TYPES := [&"weapon", &"cloth", &"accessory", &"fabao", &"wing"]
 const ICON_FRAME := Rect2(2, 3, 48, 48)   ## the frame inside an original framed icon (52 x 55 px)
 const GLOW_REACH := 6.0     ## px of the halo (the hero's breathes between 15 and 6)
 const GLOW_STRENGTH := 1.5  ## as the hero's
@@ -16,7 +16,7 @@ static func create(item: Item, cell: float) -> ItemIcon:
 	var d := GameState.item_data(item)
 	var t := ItemIcon.new()
 	t.size = Vector2(cell, cell)
-	var framed := d.ground_icon == null or d.ground_icon == d.icon
+	var framed := d.framed
 	var m := 0.0 if framed else cell * MARGIN
 	if framed:
 		var at := AtlasTexture.new()   # just the frame, so it lies exactly on the cell
@@ -24,7 +24,7 @@ static func create(item: Item, cell: float) -> ItemIcon:
 		at.region = ICON_FRAME
 		t.texture = at
 	else:
-		t.texture = d.ground_icon
+		t.texture = d.icon
 	t.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	t.stretch_mode = TextureRect.STRETCH_SCALE if framed else TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	# the picture is drawn inside the margin: shrink the rect, then move it back to the cell's middle

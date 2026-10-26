@@ -3,7 +3,7 @@ extends RefCounted
 ## Save slots (<saves>/slot_N.json) of the GameState profile: serialising, atomic writes with a .bak, versioning and
 ## validated loading. GameState keeps the one-line entry points (save_to, load_from, slot_info, autosave).
 
-const VERSION := 1
+const VERSION := 2
 
 ## Saves live in a "saves" folder next to the exe (editor and web: user://saves, the browser's IndexedDB).
 static func dir() -> String:
@@ -79,8 +79,52 @@ static func read(i: int) -> Dictionary:
 		push_warning("save: %s is not readable" % path)
 	return {}
 
-## Brings an older save up to VERSION (version 0 = written before the field existed; same layout).
+## Item ids before version 2 (pinyin initials) -> the current ids (full pinyin of the name).
+const V1_IDS := {
+	"ptxzf": "putong_xingzhepao", "ptxzg": "putong_xingzhegun", "ptjs": "putong_jiasha",
+	"ptsmz": "putong_songmuzhang", "ptsf": "putong_shifu", "ptmlf": "putong_molanfu", "dslj": "dishalingjie",
+	"dsyj": "dishayuanjia", "dsqz": "dishaquanzhang", "tsgl": "tianshagulian", "tsyp": "tianshayupao",
+	"tsyj": "tianshayueji", "xhyk": "xuehaiyaoke", "xhxh": "xuehaixiehuang", "xhmj": "xuehaimojia",
+	"zljs": "jinlanjiasha", "jhcz": "lunhuizhang", "dszk": "dashengzhankai", "ryjgb": "qingtianzhu",
+	"qssp": "qianshengsuipian", "jssp": "jinshengsuipian", "lssp": "laishengsuipian", "ssc": "sanshengchui",
+	"fygwj": "fengyinguiwangjian", "yzfw": "yangzhifuwen", "yinzfw": "yinzhifuwen", "gwj": "guiwangjian",
+	"hshb": "hongsehuaban", "lshb": "lvsehuaban", "zshb": "zisehuaban", "qcp": "qicaipao", "jgj": "jingangjia",
+	"lcgy": "luochaguiyi", "gtq": "gutengqiang", "lzp": "laozhepao", "gtb": "gutengbang", "lcld": "luochaliandao",
+	"bsxj": "baishuangxiongjia", "bszj": "baishuangzhongjia", "bsyz": "baishuangyaozhang",
+	"csgs": "cangshengguashi", "lczh": "luochazhihuan", "jcdp": "jiuchidingpa", "tpzy": "tianpengzhanyi",
+	"yll": "yanluoling", "t": "tan", "c": "chen", "ch": "chi", "dzj": "dicangjie", "dzjj": "dicangjinjie",
+	"bsz": "bishuizhu", "jxbuff": "wangudeshuiniu", "xique": "xingyundexique", "szyj": "shezhiyinji",
+	"xzyj": "xiezhiyinji", "zzyj": "zhuzhiyinji", "mzyj": "chanzhiyinji", "gzyj": "gongzhiyinji",
+	"dcyj": "duchongyinji", "xyb": "xiaoyuebing", "jxdyb": "meiguiyuebing", "jmdyb": "lanmeiyuebing",
+	"jgjdyb": "lvjuyuebing", "jfydyb": "jianguoyuebing", "jbldyb": "mangguoyuebing", "myz": "mingyuezhang",
+	"nyd": "ningyuedao", "syc": "shangyuechui", "xtzy": "xingtianzhiyi", "dshl": "dishahulu",
+	"tsgj": "tianshagujian", "bsj": "baishuangjing", "lsys": "luochayaosan", "xhmt": "xuehaimotong",
+	"wds": "wudushou", "wpqhs1": "qianghuashi_1", "wpqhs2": "qianghuashi_2", "wpqhs3": "qianghuashi_3",
+	"wpqhs4": "qianghuashi_4", "wpqhs5": "qianghuashi_5", "wpxyf": "xingyunfu", "wpbdf": "baodifu",
+	"sbbl": "shuangbeibaolv", "wdd": "wududan", "wkmrz": "wukonghuangtouzhuang",
+	"tsmrz": "tangsenghuangtouzhuang", "bjmrz": "bajiehuangtouzhuang", "wkbsz": "wukonghongtouzhuang",
+	"tsbsz": "tangsenghongtouzhuang", "bjbsz": "bajiehongtouzhuang", "jwkzyf": "jue_wukongzhuangyuanfu",
+	"jtszyf": "jue_tangsengzhuangyuanfu", "jbjzyf": "jue_bajiezhuangyuanfu", "jwkwdg": "jue_wukongxizhuang",
+	"jtswdg": "jue_tangsengxizhuang", "jbjwdg": "jue_bajiexizhuang", "wkwdg": "wukongxizhuang",
+	"tswdg": "tangsengxizhuang", "bjwdg": "bajiexizhuang", "wkzyf": "wukongzhuangyuanfu",
+	"tszyf": "tangsengzhuangyuanfu", "bjzyf": "bajiezhuangyuanfu", "hhbuff": "huihuang", "ttzy": "tiantingzhiyi"
+}
+
+## Brings an older save up to VERSION (version 0 = written before the field existed; same layout as 1).
 static func _migrate(d: Dictionary) -> Dictionary:
+	if int(d.get("version", 0)) < 2:
+		for it in d.get("bag", []) if d.get("bag") is Array else []:
+			if it is Dictionary and it.get("id") is String:
+				it.id = V1_IDS.get(it.id, it.id)
+		var w = d.get("worn", {})
+		if w is Dictionary:
+			for k in w:
+				if w[k] is Dictionary and w[k].get("id") is String:
+					w[k].id = V1_IDS.get(w[k].id, w[k].id)
+	var worn = d.get("worn", {})
+	if worn is Dictionary and worn.has("treasure"):   # the 法宝 slot was called "treasure" before
+		worn["fabao"] = worn["treasure"]
+		worn.erase("treasure")
 	d["version"] = VERSION
 	return d
 

@@ -1,0 +1,1682 @@
+[gd_scene format=3 uid="uid://b7d7uowjps28g"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_dfrik"]
+[ext_resource type="Texture2D" uid="uid://cftyafo2f5432" path="res://entities/monsters/xingtian/tex/xingtian_walk_part1_2.png" id="2_gdwqn"]
+[ext_resource type="Texture2D" uid="uid://bek5hfmf22cib" path="res://entities/monsters/xingtian/tex/xingtian_walk_part2.png" id="3_etmmc"]
+[ext_resource type="Texture2D" uid="uid://b1fbouqb56oqr" path="res://entities/monsters/xingtian/tex/xingtian_walk_part3.png" id="4_g2xxo"]
+[ext_resource type="Texture2D" uid="uid://bugmwy3x2sa8i" path="res://entities/monsters/xingtian/tex/xingtian_walk_part4_4.png" id="5_qkyov"]
+[ext_resource type="Texture2D" uid="uid://dndss562ao4s" path="res://entities/monsters/xingtian/tex/xingtian_walk_part7_3.png" id="6_230md"]
+[ext_resource type="Texture2D" uid="uid://cajarxk5mutx" path="res://entities/monsters/xingtian/tex/xingtian_walk_part9.png" id="7_4oajx"]
+[ext_resource type="Texture2D" uid="uid://clcve7lfisc0n" path="res://entities/monsters/xingtian/tex/xingtian_wait_part1.png" id="8_15fpc"]
+[ext_resource type="Texture2D" uid="uid://dd24wdju378bh" path="res://entities/monsters/xingtian/tex/xingtian_wait_part3.png" id="9_4dmbt"]
+[ext_resource type="Texture2D" uid="uid://nsm0vderk2h" path="res://entities/monsters/xingtian/tex/xingtian_wait_part5.png" id="10_qc6be"]
+[ext_resource type="Texture2D" uid="uid://dvb6pnkxer2h8" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part1.png" id="11_kf1gi"]
+[ext_resource type="Texture2D" uid="uid://vioawrloayq" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part4_2.png" id="13_qq2vq"]
+[ext_resource type="Texture2D" uid="uid://c8b426si2f08d" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part9_3.png" id="14_umlkc"]
+[ext_resource type="Texture2D" uid="uid://ch3syimlsvwxf" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part12_2.png" id="16_evsvd"]
+[ext_resource type="Texture2D" uid="uid://dlqketbel3icv" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part10.png" id="17_k0cbb"]
+[ext_resource type="Texture2D" uid="uid://burcj0ib6fjcs" path="res://entities/monsters/xingtian/tex/xingtian_hit1_part15_16.png" id="18_c075r"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="19_8moxt"]
+[ext_resource type="Texture2D" uid="uid://dofhgw8vphy7w" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part10_2.png" id="21_6wgal"]
+[ext_resource type="Texture2D" uid="uid://clppwpou7y4je" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part1.png" id="21_jrlk7"]
+[ext_resource type="Texture2D" uid="uid://hmmonx6atqaw" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part3.png" id="22_2oxqd"]
+[ext_resource type="Texture2D" uid="uid://logiswihx01a" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part11.png" id="24_5wym6"]
+[ext_resource type="Texture2D" uid="uid://c4n73b40hcnmx" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part12.png" id="25_2lt25"]
+[ext_resource type="Texture2D" uid="uid://be8eytylg8t84" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part14.png" id="26_y7ogw"]
+[ext_resource type="Texture2D" uid="uid://cwckipqrj04ut" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part17.png" id="27_anu6g"]
+[ext_resource type="Texture2D" uid="uid://3rags2gr1n1m" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and1_part19.png" id="28_k5ixv"]
+[ext_resource type="Texture2D" uid="uid://des70xhpygl2v" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part1.png" id="29_b5mtc"]
+[ext_resource type="Texture2D" uid="uid://bkev3yb2c42w0" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part11.png" id="30_632ei"]
+[ext_resource type="Texture2D" uid="uid://hgvnp7wkvjg6" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part21.png" id="31_knak1"]
+[ext_resource type="Texture2D" uid="uid://dwa8sqro8uo05" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part46.png" id="32_ruxm7"]
+[ext_resource type="Texture2D" uid="uid://bpqoa8571nfv3" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part48.png" id="33_8wnwq"]
+[ext_resource type="Texture2D" uid="uid://dv6puykbrgic1" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part50.png" id="34_kwdd2"]
+[ext_resource type="Texture2D" uid="uid://jw88y47hiy1g" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part53.png" id="35_da1vu"]
+[ext_resource type="Texture2D" uid="uid://4j0h32ffocim" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part58.png" id="36_hfl2r"]
+[ext_resource type="Texture2D" uid="uid://8f7mfy2j5ror" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part60.png" id="37_74i4b"]
+[ext_resource type="Texture2D" uid="uid://bm56iqwwbqs84" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part62.png" id="38_7enfk"]
+[ext_resource type="Texture2D" uid="uid://crabd27qlunh1" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part80.png" id="45_gw74i"]
+[ext_resource type="Texture2D" uid="uid://ray125yjhm23" path="res://entities/monsters/xingtian/tex/xingtian_hurt_part1.png" id="46_mnrvl"]
+[ext_resource type="Texture2D" uid="uid://cxw2kb4i1cwjt" path="res://entities/monsters/xingtian/tex/xingtian_hurt_part3.png" id="47_thy8b"]
+[ext_resource type="Texture2D" uid="uid://52bodee1ed02" path="res://entities/monsters/xingtian/tex/xingtian_hurt_part5.png" id="48_xc3nl"]
+[ext_resource type="Texture2D" uid="uid://dcplrisaddpgy" path="res://entities/monsters/xingtian/tex/xingtian_hurt_part10.png" id="49_6vcjs"]
+[ext_resource type="Texture2D" uid="uid://bp1e7ti2vv04h" path="res://entities/monsters/xingtian/tex/xingtian_hit3_part1.png" id="50_p2q5h"]
+[ext_resource type="Texture2D" uid="uid://2nwvck6kso8h" path="res://entities/monsters/xingtian/tex/xingtian_hit3_part3.png" id="51_whyu5"]
+[ext_resource type="Texture2D" uid="uid://celo8aaqvesj0" path="res://entities/monsters/xingtian/tex/xingtian_hit3_part5.png" id="52_tvciq"]
+[ext_resource type="Texture2D" uid="uid://ckcksx3ve0yrt" path="res://entities/effects/fx_boss_dead/tex/fx_boss_dead_hit3_part10.png" id="53_61kbk"]
+[ext_resource type="Texture2D" uid="uid://1uifwmpfedhh" path="res://entities/monsters/xingtian/tex/xingtian_hit4_part1.png" id="54_52118"]
+[ext_resource type="Texture2D" uid="uid://fw8baxxnl1ww" path="res://entities/monsters/xingtian/tex/xingtian_hit4_part2.png" id="55_7wfmq"]
+[ext_resource type="Texture2D" uid="uid://b4y1dkoch7kk1" path="res://entities/monsters/xingtian/tex/xingtian_hit4_part7.png" id="56_clnm3"]
+[ext_resource type="Texture2D" uid="uid://cc72l3whee04h" path="res://entities/monsters/xingtian/tex/xingtian_hit4_part9.png" id="57_h5i8i"]
+[ext_resource type="AnimationLibrary" uid="uid://cv76g3ouah4mi" path="res://entities/monsters/xingtian/xingtian_actions.tres" id="58_n6uis"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_llro4"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 3.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 4.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a2w0d"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 245.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 246.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_67fmb"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 185.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 186.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j43wj"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 125.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 126.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_34urw"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 65.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 66.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n3qdp"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 5.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 6.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6idt"]
+shader = ExtResource("19_8moxt")
+shader_parameter/matrix_on = true
+shader_parameter/color_matrix = Projection(0.063299194, 0.27129918, 0.27129918, 0, 0.65820473, 0.45020476, 0.65820485, 0, 0.07849601, 0.07849599, -0.12950398, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(-0.26392156, -0.26392156, -0.2639216, 0)
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61ik7"]
+resource_local_to_scene = true
+size = Vector2(283, 185)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmc7j"]
+resource_local_to_scene = true
+size = Vector2(100, 200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
+size = Vector2(100, 200)
+
+[node name="Monster58" type="CharacterBody2D" unique_id=347539902]
+script = ExtResource("actor_logic")
+
+[node name="Puppet" type="Node2D" parent="." unique_id=1751271731]
+script = ExtResource("1_dfrik")
+actions = PackedStringArray("walk", "wait", "hit1", "hit2-1", "hit2-2", "hurt", "hit3", "hit4", "dead")
+
+[node name="Poses" type="Node2D" parent="Puppet" unique_id=547366364]
+
+[node name="Walk" type="Node2D" parent="Puppet/Poses" unique_id=560276794]
+visible = false
+
+[node name="WalkPart1" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1942910349]
+position = Vector2(-55.9, -78.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gdwqn")
+centered = false
+
+[node name="WalkPart2" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1483474987]
+position = Vector2(-76.65, -78.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_etmmc")
+centered = false
+
+[node name="WalkPart3" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=814620236]
+position = Vector2(45.466652, 39.7888)
+rotation = 2.9898505
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WalkPart4" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1661396825]
+position = Vector2(-62.550003, -117.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_qkyov")
+centered = false
+
+[node name="WalkPart5" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=820745912]
+position = Vector2(43.83975, 53.492348)
+rotation = -3.0318153
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WalkPart6" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=734558851]
+position = Vector2(47.608402, 64.9774)
+rotation = 2.9895494
+scale = Vector2(0.2508944, 0.2508944)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WalkPart7" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=172308670]
+position = Vector2(-47.65, -50.95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_230md")
+centered = false
+
+[node name="WalkPart8" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=460442428]
+position = Vector2(47.2875, 83.7407)
+rotation = 2.5704136
+scale = Vector2(0.37919125, 0.37919125)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WalkPart9" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=1228429822]
+position = Vector2(-10.049999, 24)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_4oajx")
+centered = false
+
+[node name="WalkPart10" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=797030847]
+position = Vector2(81.939896, 27.975048)
+rotation = 2.83194
+scale = Vector2(0.37902668, 0.37902668)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WalkPart11" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=170785892]
+position = Vector2(98.5029, 36.93575)
+rotation = 2.3086114
+scale = Vector2(0.37908477, 0.37908477)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=1300112237]
+visible = false
+
+[node name="WaitPart1" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=622226634]
+position = Vector2(-69.35, -74.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_15fpc")
+centered = false
+
+[node name="WaitPart2" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=835569461]
+position = Vector2(46.466652, 43.7888)
+rotation = 2.9898505
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WaitPart3" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=857350221]
+position = Vector2(-61.550003, -113.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_4dmbt")
+centered = false
+
+[node name="WaitPart4" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1930063145]
+position = Vector2(113.987595, 89.2883)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WaitPart5" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1779562523]
+position = Vector2(45.9, 51)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_qc6be")
+centered = false
+
+[node name="WaitPart6" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=94996467]
+position = Vector2(111.6876, 16.6383)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WaitPart7" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=468353465]
+position = Vector2(106.66605, 44.318947)
+rotation = -3.03181
+scale = Vector2(0.37878025, 0.37878025)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WaitPart8" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1918840385]
+position = Vector2(44.83975, 57.492348)
+rotation = -3.0318153
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="WaitPart9" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=1975604447]
+position = Vector2(48.608402, 68.9774)
+rotation = 2.9895494
+scale = Vector2(0.2508944, 0.2508944)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=1559463617]
+visible = false
+
+[node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=203159191]
+visible = false
+position = Vector2(-63.5, -74.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_kf1gi")
+centered = false
+
+[node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=937640965]
+position = Vector2(-73.35, -74.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_15fpc")
+centered = false
+
+[node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1903921237]
+position = Vector2(42.466652, 43.7888)
+rotation = 2.9898505
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part4" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1054183420]
+visible = false
+position = Vector2(-60.949997, -113.75)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_qq2vq")
+centered = false
+
+[node name="Hit1Part5" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=263481412]
+position = Vector2(-65.55, -113.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_4dmbt")
+centered = false
+
+[node name="Hit1Part6" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=750141434]
+position = Vector2(109.987595, 89.2883)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part7" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=999933021]
+position = Vector2(41.9, 51)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_qc6be")
+centered = false
+
+[node name="Hit1Part8" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1843502835]
+position = Vector2(107.6876, 16.6383)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part9" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1695584463]
+visible = false
+position = Vector2(69.5, -6.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_umlkc")
+centered = false
+
+[node name="Hit1Part10" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=146909201]
+visible = false
+position = Vector2(-45.699997, -51.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_k0cbb")
+centered = false
+
+[node name="Hit1Part11" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1858831470]
+position = Vector2(102.66605, 44.318947)
+rotation = -3.03181
+scale = Vector2(0.37878028, 0.37878028)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part12" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=437718458]
+visible = false
+position = Vector2(-6.950001, 27.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_evsvd")
+centered = false
+
+[node name="Hit1Part13" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=358303218]
+position = Vector2(40.83975, 57.492348)
+rotation = -3.0318153
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part14" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=2102347995]
+position = Vector2(44.608402, 68.9774)
+rotation = 2.9895494
+scale = Vector2(0.2508944, 0.2508944)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit1Part15" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=263565269]
+visible = false
+material = SubResource("ShaderMaterial_llro4")
+position = Vector2(-290.55002, -5.0999985)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_c075r")
+centered = false
+
+[node name="Hit2And1" type="Node2D" parent="Puppet/Poses" unique_id=791991142]
+visible = false
+
+[node name="Hit2And1Part1" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=211102845]
+visible = false
+position = Vector2(-70.35, -82.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_jrlk7")
+centered = false
+
+[node name="Hit2And1Part2" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=41427075]
+visible = false
+position = Vector2(45.466652, 36.3888)
+rotation = 2.9898505
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part3" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=335704863]
+visible = false
+position = Vector2(-62.550003, -120.55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_2oxqd")
+centered = false
+
+[node name="Hit2And1Part4" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=974773461]
+visible = false
+position = Vector2(112.987595, 81.888306)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part5" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1563913827]
+visible = false
+position = Vector2(44.9, 43.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_qc6be")
+centered = false
+
+[node name="Hit2And1Part6" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1376991086]
+visible = false
+position = Vector2(110.6876, 9.2383)
+rotation = 2.46644
+scale = Vector2(0.37918994, 0.37918994)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part7" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1897836516]
+visible = false
+position = Vector2(105.66605, 36.91895)
+rotation = -3.03181
+scale = Vector2(0.37878028, 0.37878028)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part8" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=915928333]
+visible = false
+position = Vector2(43.83975, 50.09235)
+rotation = -3.0318153
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part9" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=320929940]
+visible = false
+position = Vector2(47.608402, 61.5774)
+rotation = 2.9895494
+scale = Vector2(0.2508944, 0.2508944)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part10" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=908551390]
+visible = false
+position = Vector2(-122.3632, 23.826405)
+scale = Vector2(0.348, 0.348)
+texture = ExtResource("21_6wgal")
+centered = false
+
+[node name="Hit2And1Part11" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=416851463]
+visible = false
+position = Vector2(-111.7144, 33.431202)
+scale = Vector2(0.348, 0.348)
+texture = ExtResource("24_5wym6")
+centered = false
+
+[node name="Hit2And1Part12" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1882293650]
+visible = false
+position = Vector2(-54.2, -102)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("25_2lt25")
+centered = false
+
+[node name="Hit2And1Part13" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=657687999]
+visible = false
+position = Vector2(50.340702, 18.554298)
+rotation = -3.097796
+scale = Vector2(0.2512409, 0.2512409)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part14" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=965295658]
+visible = false
+position = Vector2(-41.7, -108.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("26_y7ogw")
+centered = false
+
+[node name="Hit2And1Part15" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1601762024]
+visible = false
+position = Vector2(46.23035, 31.656351)
+rotation = -2.8362134
+scale = Vector2(0.2511185, 0.2511185)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part16" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=2055397395]
+visible = false
+position = Vector2(47.7407, 43.9043)
+rotation = -3.097796
+scale = Vector2(0.2512409, 0.2512409)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part17" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=687661006]
+visible = false
+position = Vector2(-56.350002, -145.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("27_anu6g")
+centered = false
+
+[node name="Hit2And1Part18" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1506710777]
+visible = false
+position = Vector2(158.5126, 34.72865)
+rotation = 2.0303118
+scale = Vector2(0.37879318, 0.37879318)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part19" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1379053757]
+visible = false
+position = Vector2(86.899994, 10.100002)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("28_k5ixv")
+centered = false
+
+[node name="Hit2And1Part20" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1490173596]
+visible = false
+position = Vector2(125.81261, -30.17135)
+rotation = 2.0303118
+scale = Vector2(0.37879318, 0.37879318)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And1Part21" type="Sprite2D" parent="Puppet/Poses/Hit2And1" unique_id=1253755362]
+visible = false
+position = Vector2(132.9437, -2.9695501)
+rotation = 2.815253
+scale = Vector2(0.37900296, 0.37900296)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2" type="Node2D" parent="Puppet/Poses" unique_id=1343571906]
+visible = false
+
+[node name="Hit2And2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1855500523]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-62.999996, -506.59998)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_b5mtc")
+centered = false
+
+[node name="Hit2And2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=852970190]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-62.999996, -376.3)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_b5mtc")
+centered = false
+
+[node name="Hit2And2Part3" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1267384747]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-62.999996, -246)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_b5mtc")
+centered = false
+
+[node name="Hit2And2Part4" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=186082796]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-62.999996, -115.7)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_b5mtc")
+centered = false
+
+[node name="Hit2And2Part5" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1285646870]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-62.999996, 14.599998)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_b5mtc")
+centered = false
+
+[node name="Hit2And2Part6" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=872775075]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(55.6888, -611.31665)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part7" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=2088514339]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(55.6888, -481.01663)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part8" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1987015744]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(55.6888, -350.71664)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part9" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1966994409]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(55.6888, -220.41664)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part10" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1247098780]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(55.6888, -90.11665)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part11" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1224537244]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-113.05, -503.3)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_632ei")
+centered = false
+
+[node name="Hit2And2Part12" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=228753286]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-113.05, -373)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_632ei")
+centered = false
+
+[node name="Hit2And2Part13" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1437262156]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-113.05, -242.7)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_632ei")
+centered = false
+
+[node name="Hit2And2Part14" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1323360363]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-113.05, -112.399994)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_632ei")
+centered = false
+
+[node name="Hit2And2Part15" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=2135067870]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-113.05, 17.900002)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_632ei")
+centered = false
+
+[node name="Hit2And2Part16" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=158166827]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-5.9422503, -736.038)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part17" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=684839163]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-5.9422503, -605.73804)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part18" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=838256816]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-5.9422503, -475.43802)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part19" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1938947346]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-5.9422503, -345.138)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part20" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=55409832]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-5.9422503, -214.838)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part21" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1216922399]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-5.500001, -673.5)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_knak1")
+centered = false
+
+[node name="Hit2And2Part22" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=548606721]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-5.500001, -543.2)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_knak1")
+centered = false
+
+[node name="Hit2And2Part23" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1953114900]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-5.500001, -412.9)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_knak1")
+centered = false
+
+[node name="Hit2And2Part24" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1439915882]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-5.500001, -282.6)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_knak1")
+centered = false
+
+[node name="Hit2And2Part25" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=986700737]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-5.500001, -152.3)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_knak1")
+centered = false
+
+[node name="Hit2And2Part26" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1941404924]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-38.04225, -670.838)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part27" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1205642820]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-38.04225, -540.538)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part28" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1336536392]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-38.04225, -410.238)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part29" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=960996809]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-38.04225, -279.93802)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part30" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=539928600]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-38.04225, -149.638)
+rotation = -0.18575314
+scale = Vector2(0.3790201, 0.3790201)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part31" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=628471713]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(-20.596699, -692.9092)
+rotation = 0.59861714
+scale = Vector2(0.37888157, 0.37888157)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part32" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=547979029]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(-20.596699, -562.60913)
+rotation = 0.59861714
+scale = Vector2(0.37888157, 0.37888157)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part33" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=2034030426]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(-20.596699, -432.30914)
+rotation = 0.59861714
+scale = Vector2(0.37888157, 0.37888157)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part34" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1173260807]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(-20.596699, -302.00916)
+rotation = 0.59861714
+scale = Vector2(0.37888157, 0.37888157)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part35" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1433533548]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(-20.596699, -171.70915)
+rotation = 0.59861714
+scale = Vector2(0.37888157, 0.37888157)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part36" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1426483139]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(69.39235, -609.68976)
+rotation = 1.6805737
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part37" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=362058459]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(69.39235, -479.38974)
+rotation = 1.6805737
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part38" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=341847402]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(69.39235, -349.08975)
+rotation = 1.6805737
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part39" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1153921018]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(69.39235, -218.78975)
+rotation = 1.6805737
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part40" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=851160543]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(69.39235, -88.48975)
+rotation = 1.6805737
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part41" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=2059449315]
+visible = false
+material = SubResource("ShaderMaterial_a2w0d")
+position = Vector2(80.877396, -613.4667)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.2508944)
+skew = -0.00030124187
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part42" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=828005698]
+visible = false
+material = SubResource("ShaderMaterial_67fmb")
+position = Vector2(80.877396, -483.16666)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.2508944)
+skew = -0.00030124187
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part43" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=721548914]
+visible = false
+material = SubResource("ShaderMaterial_j43wj")
+position = Vector2(80.877396, -352.86664)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.2508944)
+skew = -0.00030124187
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part44" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=549188851]
+visible = false
+material = SubResource("ShaderMaterial_34urw")
+position = Vector2(80.877396, -222.56665)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.2508944)
+skew = -0.00030124187
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part45" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=770436859]
+visible = false
+material = SubResource("ShaderMaterial_n3qdp")
+position = Vector2(80.877396, -92.266655)
+rotation = 1.4190543
+scale = Vector2(0.25138864, 0.2508944)
+skew = -0.00030124187
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part46" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=742506037]
+visible = false
+position = Vector2(-64.45, -29.8)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_ruxm7")
+centered = false
+
+[node name="Hit2And2Part47" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=71834986]
+visible = false
+position = Vector2(44.74955, 69.730896)
+rotation = -1.528988
+scale = Vector2(0.2512195, -0.2512195)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part48" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=964951148]
+visible = false
+position = Vector2(-139.95001, -11.599999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("33_8wnwq")
+centered = false
+
+[node name="Hit2And2Part49" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=79309033]
+visible = false
+position = Vector2(-151.0371, -11.29885)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part50" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=636663695]
+visible = false
+position = Vector2(-129.5, 4.2000046)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_kwdd2")
+centered = false
+
+[node name="Hit2And2Part51" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=389484826]
+visible = false
+position = Vector2(-77.937096, -25.24885)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part52" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=95998762]
+visible = false
+position = Vector2(-104.3685, -12.7293005)
+rotation = 1.2325864
+scale = Vector2(0.46112254, -0.37857264)
+skew = -0.0165416
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part53" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=377197713]
+visible = false
+position = Vector2(-140.1, -7.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_da1vu")
+centered = false
+
+[node name="Hit2And2Part54" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1657117053]
+visible = false
+position = Vector2(-151.0371, 61.001152)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part55" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1539208002]
+visible = false
+position = Vector2(-129.5, 76.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_kwdd2")
+centered = false
+
+[node name="Hit2And2Part56" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1133626971]
+visible = false
+position = Vector2(-77.937096, 47.051147)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part57" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=438562282]
+visible = false
+position = Vector2(-104.3685, 59.5707)
+rotation = 1.2325864
+scale = Vector2(0.46112254, -0.37857264)
+skew = -0.0165416
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part58" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=765491972]
+visible = false
+position = Vector2(-69.9, -7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("36_hfl2r")
+centered = false
+
+[node name="Hit2And2Part59" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1388253089]
+visible = false
+position = Vector2(58.13525, 66.8499)
+rotation = -1.7896813
+scale = Vector2(0.25098854, -0.25098854)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part60" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1525392301]
+visible = false
+position = Vector2(36.15, -12.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("37_74i4b")
+centered = false
+
+[node name="Hit2And2Part61" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1052758187]
+visible = false
+position = Vector2(69.89955, 69.1809)
+rotation = -1.528988
+scale = Vector2(0.2512195, -0.2512195)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part62" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1536541176]
+visible = false
+position = Vector2(-69.25, -48.8)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_7enfk")
+centered = false
+
+[node name="Hit2And2Part63" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1461051911]
+position = Vector2(-77.35, -11)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_ruxm7")
+centered = false
+
+[node name="Hit2And2Part64" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1410872234]
+position = Vector2(31.849548, 88.5309)
+rotation = -1.528988
+scale = Vector2(0.2512195, -0.2512195)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part65" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=444134001]
+position = Vector2(-152.85, 7.2000003)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("33_8wnwq")
+centered = false
+
+[node name="Hit2And2Part66" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1452059351]
+position = Vector2(-163.9371, 7.50115)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part67" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=270627211]
+position = Vector2(-142.4, 23)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_kwdd2")
+centered = false
+
+[node name="Hit2And2Part68" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=365988027]
+position = Vector2(-90.8371, -6.4488497)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part69" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1036069016]
+position = Vector2(-117.2685, 6.0706997)
+rotation = 1.2325864
+scale = Vector2(0.46112254, -0.37857264)
+skew = -0.0165416
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part70" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=397108330]
+position = Vector2(-153, 11.299999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_da1vu")
+centered = false
+
+[node name="Hit2And2Part71" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=706881008]
+position = Vector2(-163.9371, 79.801155)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part72" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=2118834699]
+position = Vector2(-142.4, 95.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_kwdd2")
+centered = false
+
+[node name="Hit2And2Part73" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1049557851]
+position = Vector2(-90.8371, 65.85115)
+rotation = 1.9137412
+scale = Vector2(0.42526373, -0.41862932)
+skew = 0.19501662
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part74" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1780490750]
+position = Vector2(-117.2685, 78.370705)
+rotation = 1.2325864
+scale = Vector2(0.46112254, -0.37857264)
+skew = -0.0165416
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part75" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=140866262]
+position = Vector2(-82.8, 11.799999)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("36_hfl2r")
+centered = false
+
+[node name="Hit2And2Part76" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=529696871]
+position = Vector2(45.23525, 85.6499)
+rotation = -1.7896813
+scale = Vector2(0.25098854, -0.25098854)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part77" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1093691880]
+position = Vector2(23.25, 5.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("37_74i4b")
+centered = false
+
+[node name="Hit2And2Part78" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=6015767]
+position = Vector2(56.99955, 87.980896)
+rotation = -1.528988
+scale = Vector2(0.2512195, -0.2512195)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit2And2Part79" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1079863771]
+position = Vector2(-82.15, -30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_7enfk")
+centered = false
+
+[node name="Hit2And2Part80" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1954438061]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(-281.15, -410.93402)
+scale = Vector2(0.8135, 0.8135)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hit2And2Part81" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1582004854]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(-1.8, -250.624)
+scale = Vector2(0.5735, 0.5735)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hit2And2Part82" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=1980088555]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(-164.65, -429.198)
+scale = Vector2(0.847, 0.847)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hit2And2Part83" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=218808118]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(-164.65, -429.198)
+scale = Vector2(0.847, 0.847)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hit2And2Part84" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=196430860]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(93.65, -214.862)
+scale = Vector2(0.518, 0.518)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hit2And2Part85" type="Sprite2D" parent="Puppet/Poses/Hit2And2" unique_id=234420957]
+visible = false
+material = SubResource("ShaderMaterial_c6idt")
+position = Vector2(-317.65, -205.862)
+scale = Vector2(0.518, 0.518)
+texture = ExtResource("45_gw74i")
+centered = false
+offset = Vector2(0, 384)
+region_enabled = true
+region_rect = Rect2(0, 384, 384, 384)
+
+[node name="Hurt" type="Node2D" parent="Puppet/Poses" unique_id=1027477857]
+visible = false
+
+[node name="HurtPart1" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=291367647]
+position = Vector2(-108.9, -88.399994)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("46_mnrvl")
+centered = false
+
+[node name="HurtPart2" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=279727536]
+position = Vector2(33.533302, 38.888203)
+rotation = -3.0058856
+scale = Vector2(0.25131056, 0.25131056)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart3" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1671868988]
+position = Vector2(-71.35, -139.45)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("47_thy8b")
+centered = false
+
+[node name="HurtPart4" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1981501092]
+position = Vector2(139.26549, 81.75715)
+rotation = 2.3011613
+scale = Vector2(0.3792298, 0.3792298)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart5" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1032756075]
+position = Vector2(69.05, 49.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("48_xc3nl")
+centered = false
+
+[node name="HurtPart6" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1896177137]
+position = Vector2(125.0655, 10.507149)
+rotation = 2.3011613
+scale = Vector2(0.3792298, 0.3792298)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart7" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1225007470]
+position = Vector2(124.67405, 38.6333)
+rotation = 3.0861673
+scale = Vector2(0.37908214, 0.37908214)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart8" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=448601724]
+position = Vector2(28.046751, 51.586952)
+rotation = -2.7429736
+scale = Vector2(0.25119415, 0.25119415)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart9" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=1523585539]
+position = Vector2(28.4333, 63.638203)
+rotation = -3.0058856
+scale = Vector2(0.25131056, 0.25131056)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="HurtPart10" type="Sprite2D" parent="Puppet/Poses/Hurt" unique_id=407831753]
+position = Vector2(-56.5, -45.45)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("49_6vcjs")
+centered = false
+
+[node name="Hit3" type="Node2D" parent="Puppet/Poses" unique_id=315408312]
+visible = false
+
+[node name="Hit3Part1" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=391983208]
+position = Vector2(-82.4, -79.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("50_p2q5h")
+centered = false
+
+[node name="Hit3Part2" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=868287548]
+position = Vector2(35.45245, 33.3304)
+rotation = 3.0857625
+scale = Vector2(0.2508909, 0.2508909)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part3" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=672522197]
+position = Vector2(-66.5, -132.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("51_whyu5")
+centered = false
+
+[node name="Hit3Part4" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1906526736]
+position = Vector2(98.26975, 85.11525)
+rotation = 2.5627306
+scale = Vector2(0.37929207, 0.37929207)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part5" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2074397589]
+position = Vector2(32.3, 41.1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("52_tvciq")
+centered = false
+
+[node name="Hit3Part6" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1303345226]
+position = Vector2(102.96975, 12.61525)
+rotation = 2.5627306
+scale = Vector2(0.37929207, 0.37929207)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part7" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=704706925]
+position = Vector2(95.3545, 39.63755)
+rotation = -2.9356592
+scale = Vector2(0.37900826, 0.37900826)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part8" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=1671415981]
+position = Vector2(32.484802, 46.808548)
+rotation = -2.9352236
+scale = Vector2(0.25133294, 0.25133294)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part9" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=928444532]
+position = Vector2(35.102448, 58.6304)
+rotation = 3.0857625
+scale = Vector2(0.2508909, 0.2508909)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit3Part10" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2023810861]
+position = Vector2(-87.423004, -83.22699)
+scale = Vector2(0.2435, 0.452)
+texture = ExtResource("53_61kbk")
+centered = false
+region_enabled = true
+
+[node name="Hit3Part11" type="Sprite2D" parent="Puppet/Poses/Hit3" unique_id=2078104175]
+position = Vector2(-466.116, -79.576996)
+scale = Vector2(0.2435, 0.452)
+texture = ExtResource("53_61kbk")
+centered = false
+region_enabled = true
+
+[node name="Hit4" type="Node2D" parent="Puppet/Poses" unique_id=1692399525]
+visible = false
+
+[node name="Hit4Part1" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=2106690715]
+position = Vector2(-224.2725, -110.02095)
+rotation = -0.044015594
+scale = Vector2(0.4999843, 0.4999843)
+texture = ExtResource("54_52118")
+centered = false
+
+[node name="Hit4Part2" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=199405447]
+modulate = Color(1, 1, 1, 0.621)
+position = Vector2(-292.2178, -57.3319)
+rotation = -0.044015594
+scale = Vector2(0.4999843, 0.4999843)
+texture = ExtResource("55_7wfmq")
+centered = false
+
+[node name="Hit4Part3" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=2047931743]
+position = Vector2(-233.05334, -100.031746)
+rotation = -0.11728403
+scale = Vector2(0.49993443, 0.49993443)
+texture = ExtResource("54_52118")
+centered = false
+
+[node name="Hit4Part4" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1930627480]
+modulate = Color(1, 1, 1, 0.621)
+position = Vector2(-296.9637, -42.538097)
+rotation = -0.11728403
+scale = Vector2(0.49993443, 0.49993443)
+texture = ExtResource("55_7wfmq")
+centered = false
+
+[node name="Hit4Part5" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=415878125]
+position = Vector2(-240.99104, -62.621746)
+rotation = -0.15150942
+scale = Vector2(0.5002305, 0.5002305)
+texture = ExtResource("54_52118")
+centered = false
+
+[node name="Hit4Part6" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1704381725]
+modulate = Color(1, 1, 1, 0.621)
+position = Vector2(-302.8441, -2.8743)
+rotation = -0.15150942
+scale = Vector2(0.5002305, 0.5002305)
+texture = ExtResource("55_7wfmq")
+centered = false
+
+[node name="Hit4Part7" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=547188431]
+position = Vector2(-58.6, -74.9)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("56_clnm3")
+centered = false
+
+[node name="Hit4Part8" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=1534921204]
+position = Vector2(45.466652, 43.7888)
+rotation = 2.9898505
+scale = Vector2(0.25138864, 0.25138864)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit4Part9" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=825059526]
+position = Vector2(-62.549995, -113.15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("57_h5i8i")
+centered = false
+
+[node name="Hit4Part10" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=556853006]
+position = Vector2(43.83975, 57.492348)
+rotation = -3.0318153
+scale = Vector2(0.25101095, 0.25101095)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit4Part11" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=179556920]
+position = Vector2(47.608402, 68.9774)
+rotation = 2.9895494
+scale = Vector2(0.2508944, 0.2508944)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="Hit4Part12" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=906889338]
+position = Vector2(-76.58475, -152.70393)
+rotation = 0.15150942
+scale = Vector2(0.5002305, 0.5002305)
+texture = ExtResource("54_52118")
+centered = false
+
+[node name="Hit4Part13" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=526940064]
+modulate = Color(1, 1, 1, 0.621)
+position = Vector2(-153.41531, -114.206894)
+rotation = 0.15150942
+scale = Vector2(0.5002305, 0.5002305)
+texture = ExtResource("55_7wfmq")
+centered = false
+
+[node name="Hit4Part14" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=432243814]
+position = Vector2(-111.761444, -33.57924)
+rotation = -0.24861766
+scale = Vector2(0.49986923, 0.4999925)
+skew = -0.00096929073
+texture = ExtResource("54_52118")
+centered = false
+
+[node name="Hit4Part15" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=269149700]
+modulate = Color(1, 1, 1, 0.621)
+position = Vector2(-167.51149, 31.8787)
+rotation = -0.24861766
+scale = Vector2(0.49986923, 0.4999925)
+skew = -0.00096929073
+texture = ExtResource("55_7wfmq")
+centered = false
+
+[node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=1885256298]
+visible = false
+
+[node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=323901865]
+position = Vector2(-108.700005, -88.549995)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("46_mnrvl")
+centered = false
+
+[node name="DeadPart2" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=2141942357]
+position = Vector2(33.7333, 38.7382)
+rotation = -3.0058856
+scale = Vector2(0.25131056, 0.25131056)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart3" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1315784855]
+position = Vector2(-71.15, -139.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("47_thy8b")
+centered = false
+
+[node name="DeadPart4" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1626234538]
+position = Vector2(139.4655, 81.60715)
+rotation = 2.3011613
+scale = Vector2(0.3792298, 0.3792298)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart5" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=966096087]
+position = Vector2(69.25, 48.949997)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("48_xc3nl")
+centered = false
+
+[node name="DeadPart6" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=809555992]
+position = Vector2(125.2655, 10.357149)
+rotation = 2.3011613
+scale = Vector2(0.3792298, 0.3792298)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart7" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=983135734]
+position = Vector2(124.874054, 38.4833)
+rotation = 3.0861673
+scale = Vector2(0.37908214, 0.37908214)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart8" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1306884166]
+position = Vector2(28.24675, 51.43695)
+rotation = -2.7429736
+scale = Vector2(0.25119415, 0.25119415)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart9" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1375892009]
+position = Vector2(28.633299, 63.4882)
+rotation = -3.0058856
+scale = Vector2(0.25131056, 0.25131056)
+texture = ExtResource("4_g2xxo")
+centered = false
+
+[node name="DeadPart10" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1214148533]
+position = Vector2(-56.300003, -45.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("49_6vcjs")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="Puppet" unique_id=1706592649]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1625664166]
+position = Vector2(-30.500004, 67.5)
+shape = SubResource("RectangleShape2D_61ik7")
+disabled = true
+
+[node name="Hurtbox" type="Area2D" parent="Puppet" unique_id=88656455]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1808608460]
+position = Vector2(0.3, 1)
+shape = SubResource("RectangleShape2D_gmc7j")
+
+[node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1970253692]
+callback_mode_process = 0
+libraries/ = ExtResource("58_n6uis")
+
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1612021629]
+position = Vector2(0.3, 1)
+shape = SubResource("RectangleShape2D_Body")

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://c202fucs5hq4g"]
+
+[ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_bywd6"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="2_auv86"]
+[ext_resource type="Texture2D" uid="uid://30hl77smhgef" path="res://entities/monsters/wuguanwang/tex/wuguanwang_hit1_part2.png" id="3_83hg0"]
+[ext_resource type="AnimationLibrary" uid="uid://dupnfvlekfbb7" path="res://entities/monsters/pingdengwang/effects/pingdengwang_bullet2/pingdengwang_bullet2_actions.tres" id="4_rlg77"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wrlmr"]
+shader = ExtResource("2_auv86")
+shader_parameter/matrix_on = true
+shader_parameter/color_matrix = Projection(0.38050616, 0.24371396, -0.5849221, 0, -0.24667287, 0.9691282, 1.0274664, 0, 0.8661667, -0.21284215, 0.55745566, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jlg8f"]
+resource_local_to_scene = true
+size = Vector2(105.1, 180)
+
+[node name="Monster77Bullet2" type="Node2D" unique_id=690825677]
+script = ExtResource("1_bywd6")
+actions = PackedStringArray("default")
+
+[node name="Monster77Bullet2Part1" type="Sprite2D" parent="." unique_id=1893508516]
+modulate = Color(1, 1, 1, 0.371)
+material = SubResource("ShaderMaterial_wrlmr")
+position = Vector2(-509.85, 54.4)
+rotation = -1.5707964
+scale = Vector2(0.3845, 0.3845)
+texture = ExtResource("3_83hg0")
+centered = false
+
+[node name="Monster77Bullet2Part2" type="Sprite2D" parent="." unique_id=1758355668]
+modulate = Color(1, 1, 1, 0.371)
+material = SubResource("ShaderMaterial_wrlmr")
+position = Vector2(-479.408, -198.491)
+rotation = -1.1914963
+scale = Vector2(0.38485387, 0.38485387)
+texture = ExtResource("3_83hg0")
+centered = false
+
+[node name="Monster77Bullet2Part3" type="Sprite2D" parent="." unique_id=1110366151]
+modulate = Color(1, 1, 1, 0.371)
+material = SubResource("ShaderMaterial_wrlmr")
+position = Vector2(-479.408, 206.191)
+rotation = 1.1914963
+scale = Vector2(0.38485387, -0.38485387)
+texture = ExtResource("3_83hg0")
+centered = false
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1666910149]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=1777224401]
+shape = SubResource("RectangleShape2D_jlg8f")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=472802367]
+callback_mode_process = 0
+libraries/ = ExtResource("4_rlg77")

@@ -5,10 +5,10 @@ extends CanvasLayer
 ##  - teleport: jump to any stage (its boss room included);
 ##  - boss fight: fight one boss alone in a single-screen arena (the ground and sky of stage 1, no scenery).
 
-const TYPES := [["全部", ""], ["武器", "weapon"], ["防具", "cloth"], ["饰品", "accessory"], ["法宝", "treasure"],
+const TYPES := [["全部", ""], ["武器", "weapon"], ["防具", "cloth"], ["饰品", "accessory"], ["法宝", "fabao"],
 	["翅膀", "wing"], ["时装", "fashion"], ["道具", "item"]]
-const TYPE_ORDER := ["weapon", "cloth", "accessory", "treasure", "wing", "fashion", "item"]
-const TYPE_NAMES := {"weapon": "武器", "cloth": "防具", "accessory": "饰品", "treasure": "法宝", "wing": "翅膀", "fashion": "时装", "item": "道具"}
+const TYPE_ORDER := ["weapon", "cloth", "accessory", "fabao", "wing", "fashion", "item"]
+const TYPE_NAMES := {"weapon": "武器", "cloth": "防具", "accessory": "饰品", "fabao": "法宝", "wing": "翅膀", "fashion": "时装", "item": "道具"}
 const PANEL := Rect2(120, 40, 700, 510)
 enum Mode { ITEMS, TELEPORT, BOSS }
 const MODES := [["物品", Mode.ITEMS], ["传送", Mode.TELEPORT], ["Boss 战", Mode.BOSS]]
@@ -207,14 +207,8 @@ func _rebuild_stages() -> void:
 ## Every monster that is a boss in some room, in id order.
 func _boss_list() -> Array[MonsterData]:
 	if _bosses.is_empty():
-		var ids: Array[int] = []
-		for f in DirAccess.get_files_at("res://data/monsters"):
-			var base := f.get_basename()
-			if f.get_extension() == "tres" and base.begins_with("monster_") and base.count("_") == 1:
-				ids.append(int(base.get_slice("_", 1)))
-		ids.sort()
-		for id in ids:
-			var md: MonsterData = load("res://data/monsters/monster_%d.tres" % id)
+		for id in MonsterData.ids():
+			var md: MonsterData = load(MonsterData.path(id))
 			if md != null and md.is_boss:
 				_bosses.append(md)
 	return _bosses

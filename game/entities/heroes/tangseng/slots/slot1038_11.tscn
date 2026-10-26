@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_10.png" id="1_420b3"]
+
+[node name="ClothEx11" type="Node2D" unique_id=1476409676]
+
+[node name="ClothEx11Part1" type="Sprite2D" parent="." unique_id=1359703449]
+position = Vector2(-15.25, -14.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_420b3")
+centered = false

@@ -1,0 +1,52 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[ext_resource type="Texture2D" path="res://entities/effects/fx_monster_hurt1/tex/fx_monster_hurt1_frame.png" id="1_wyiix"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_monster_hurt1/tex/fx_monster_hurt1_frame_2.png" id="2_ixmpg"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_monster_hurt1/tex/fx_monster_hurt1_frame_3.png" id="3_r74dw"]
+[ext_resource type="Texture2D" path="res://entities/effects/fx_monster_hurt1/tex/fx_monster_hurt1_frame_4.png" id="4_auwfv"]
+
+[sub_resource type="Animation" id="Animation_dbefa"]
+length = 0.2916666666666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_wyiix"), ExtResource("2_ixmpg"), ExtResource("3_r74dw"), ExtResource("4_auwfv")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:transform")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Transform2D(0.5, 0, 0, 0.5, -79.5, -47.35), Transform2D(0.5, 0, 0, 0.5, -87.8, -55.4), Transform2D(0.5, 0, 0, 0.5, -78.45, -47.9), Transform2D(0.5, 0, 0, 0.5, -43.5, 2.85)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.29166666),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"ev_finished"
+}]
+}
+
+[resource]
+_data = {
+&"default": SubResource("Animation_dbefa")
+}

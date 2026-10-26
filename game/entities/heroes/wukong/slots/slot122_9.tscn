@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/wukong/tex/wukong_frame_2.png" id="1_yoyvo"]
+
+[node name="Slot1229" type="Node2D" unique_id=389749423]
+
+[node name="Slot1229Part1" type="Sprite2D" parent="." unique_id=738603097]
+position = Vector2(0, -3.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_yoyvo")
+centered = false
