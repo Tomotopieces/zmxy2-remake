@@ -696,11 +696,6 @@ func _update_actor(a: Actor) -> void:
 	var floor_y: float = e.floor_y
 	holder.global_transform = Transform2D(Vector2(1.0, 0.0), Vector2(-float(sh.shear), -float(sh.squash)), Vector2(a.global_position.x, floor_y)).translated_local(Vector2(0.0, -feet_off))
 	shadow_puppet.mirror(puppet)
-	# a pose that lifts the body off the ground inside its animation (唐僧怪's hovering hit3) leaves the actor on the
-	# floor: its shadow would mirror the raised body further down below the floor. Drop the copy onto the floor instead.
-	var hover := maxf(feet_off - _pose_bottom(a, puppet), 0.0)
-	if hover > HOVER_MIN:
-		shadow_puppet.position.y += hover
 	var sig := "%s|%s" % [puppet.action, puppet.equipment]
 	if e.sig != sig:
 		e.sig = sig
@@ -709,22 +704,9 @@ func _update_actor(a: Actor) -> void:
 			sp.material = NO_SHADOW if _is_light(sp.material) or sp.has_meta(&"no_shadow") else e.mat
 			if sp.material == NO_SHADOW:
 				sp.set_meta(&"no_shadow", true)
-	var high := clampf(1.0 - (floor_y - feet_y + (hover if hover > HOVER_MIN else 0.0)) / 280.0, 0.25, 1.0)
+	var high := clampf(1.0 - (floor_y - feet_y) / 280.0, 0.25, 1.0)
 	(e.mat as ShaderMaterial).set_shader_parameter("shadow_color", Color(0.02, 0.03, 0.08, float(sh.alpha) * high * fade))
 	(e.mat as ShaderMaterial).set_shader_parameter("blur", float(sh.blur))
-
-const HOVER_MIN := 6.0   ## a pose this far above the feet counts as hovering (walk bobs stay below it)
-
-## The lowest point of the actor's visible pose, in the actor's space (y down).
-static func _pose_bottom(a: Actor, puppet: Puppet) -> float:
-	var inv := a.global_transform.affine_inverse()
-	var bottom := -INF
-	for sp: Sprite2D in puppet.find_children("*", "Sprite2D", true, false):
-		if sp.texture == null or not sp.is_visible_in_tree() or sp.material == NO_SHADOW:
-			continue
-		var r := (inv * sp.global_transform) * sp.get_rect()
-		bottom = maxf(bottom, r.end.y)
-	return bottom if bottom > -INF else 0.0
 
 ## The motes' emitter goes with the view (the motes it lets go stay in the world); bubbles' emission swings to and fro.
 func _follow_motes(mo: CPUParticles2D, vr: Rect2) -> void:
