@@ -2,29 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://d3oiq0fc3tv4l" path="res://stages/luoxuandiyu_wuguanwang/tex/luoxuandiyu_wuguanwang_near_00.png" id="1_fm1jv"]
 [ext_resource type="Texture2D" uid="uid://7vhbwdixjaby" path="res://stages/luoxuandiyu_wuguanwang/tex/luoxuandiyu_wuguanwang_ground_01.png" id="3_63ryj"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="x9mxwv6"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xi5scdz"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xkb6rh1"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xpcrypw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(20.01, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(899.96, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(1150.02, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(1150.05, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(980, 861.65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
-size = Vector2(1110.95, 861.65)
 
 [node name="Scenery" type="Node2D" unique_id=331624786]
 
@@ -69,7 +57,7 @@ centered = false
 z_index = -7
 
 [node name="GroundPiece1" type="Sprite2D" parent="Ground" unique_id=1500659496]
-position = Vector2(0, 491.9)
+position = Vector2(-20, 491.9)
 texture = ExtResource("3_63ryj")
 centered = false
 region_enabled = true
@@ -81,11 +69,12 @@ size = Vector2(1756.2, 585.9)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=1295265503]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=2030502735]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
-position = Vector2(468.53, 65.18)
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=1647906028]
+position = Vector2(470, 65.18)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true
 debug_color = Color(1, 0.55, 0, 0.12)

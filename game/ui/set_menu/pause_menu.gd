@@ -1,10 +1,14 @@
 class_name PauseMenu
 extends Control
-## 设置, a page of the TabMenu (ui/set_menu/set_menu.tscn): continue, sound / screen shake / pad rumble switches, back to
-## map, help, back to the title.
+## 设置, a page of the TabMenu (ui/set_menu/set_menu.tscn): continue, the music / sound / ambience volumes and the
+## screen shake / pad rumble levels (GaugeSlider: volumes in 5 % steps, shake and rumble 关 / 弱 / 中 / 强), help, back
+## to the map, back to the title.
 
 signal to_map
 signal to_menu
+
+const VOLUME_STEPS := 20   ## 5 % a step
+const BUSES := {"MusicVolume": &"Music", "SfxVolume": &"SFX", "AmbienceVolume": &"Ambience"}
 
 var in_stage := true   ## false on the map: no 继续游戏 / 返回地图
 var _ui: UiLayout
@@ -14,9 +18,31 @@ func _ready() -> void:
 	add_child(_ui)
 	for b in ["BtnContinue", "BtnBackToMap"]:
 		_ui.piece(b).visible = in_stage
-	_sync()
-	Snd.volume_changed.connect(func(_v, _m): _sync())   # M key while the menu is open
+	for s in BUSES:
+		var g: GaugeSlider = _ui.piece(s)
+		g.steps = VOLUME_STEPS
+		g.value = roundi(_bus_volume(BUSES[s]) * VOLUME_STEPS)
+		g.value_changed.connect(func(v: int): Snd.set_bus_volume(BUSES[s], float(v) / VOLUME_STEPS))
+	var shake: GaugeSlider = _ui.piece("ScreenShake")
+	shake.value = Feel.screen_shake
+	shake.value_changed.connect(func(v: int):
+		Feel.screen_shake = v
+		Feel.save_settings()
+		if Level.current:
+			Level.current.add_trauma(0.4))   # a sample of the new strength
+	var rumble: GaugeSlider = _ui.piece("PadRumble")
+	rumble.value = Feel.pad_rumble
+	rumble.value_changed.connect(func(v: int):
+		Feel.pad_rumble = v
+		Feel.save_settings()
+		Feel.rumble(0.5, 0.15))
 	_ui.button_pressed.connect(_on_button)
+
+static func _bus_volume(bus: StringName) -> float:
+	match bus:
+		&"Music": return Snd.music_volume
+		&"SFX": return Snd.sfx_volume
+	return Snd.ambience_volume
 
 func _on_button(b: String) -> void:
 	match b:
@@ -24,23 +50,3 @@ func _on_button(b: String) -> void:
 		"BtnBackToMap": to_map.emit()
 		"BtnBackToTitle": to_menu.emit()
 		"BtnHelp": add_child(HelpPanel.new())
-		"BtnGameSound": Snd.set_muted(not Snd.muted)
-		"BtnScreenShake":
-			Feel.screen_shake = not Feel.screen_shake
-			Feel.save_settings()
-		"BtnControllerShake":
-			Feel.pad_rumble = not Feel.pad_rumble
-			Feel.save_settings()
-			if Feel.pad_rumble:
-				Feel.rumble(0.5, 0.15)
-	_sync()
-
-## The three switches show their state in their own text.
-func _sync() -> void:
-	_switch("BtnGameSound", "游戏声音", not Snd.muted)
-	_switch("BtnScreenShake", "画面震动", Feel.screen_shake)
-	_switch("BtnControllerShake", "手柄震动", Feel.pad_rumble)
-
-func _switch(button: String, caption: String, on: bool) -> void:
-	_ui.set_text(button, "%s：%s" % [caption, "开" if on else "关"])
-

@@ -16,30 +16,18 @@
 [ext_resource type="Texture2D" uid="uid://d2pyv70vhkv0" path="res://stages/shared/panguandian_near3_13.png" id="p_2_593"]
 [ext_resource type="Texture2D" uid="uid://5hq85qsap0si" path="res://stages/shared/panguandian_near_tiles_2.png" id="p_2_594"]
 [ext_resource type="Texture2D" uid="uid://ce50xtej84j4r" path="res://stages/shared/panguandian_near3.png" id="p_2_602"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xh3qi4f"]
 [ext_resource type="PackedScene" path="res://entities/objects/xingtian_door/xingtian_door.tscn" id="xingtian_door"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xj2noet"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xl2l10j"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xs87dwq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(5000, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(115.35, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(699.95, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(5000, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(4595, 633.65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
-size = Vector2(4616.63, 633.65)
 
 [node name="Scenery2" type="Node2D" unique_id=1453884680]
 
@@ -457,8 +445,9 @@ z_index = -7
 [node name="Tile" type="TextureRect" parent="Ground" unique_id=699838535]
 texture_filter = 1
 texture_repeat = 2
+offset_left = -20.0
 offset_top = 496.0
-offset_right = 5343.0
+offset_right = 5323.0
 offset_bottom = 590.0
 texture = ExtResource("3_d2dgr")
 expand_mode = 1
@@ -478,11 +467,12 @@ size = Vector2(5608.5, 591.05)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=1367045755]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=1581613713]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
-position = Vector2(2299.57, 184.23)
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=88453541]
+position = Vector2(2277.5, 184.23)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true
 debug_color = Color(1, 0.55, 0, 0.12)

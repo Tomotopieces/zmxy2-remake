@@ -6,7 +6,7 @@ extends StaticBody2D
 ## Solid walls are built just outside its left, right and top edges and, unless `open_bottom` (a stage with pits or
 ## water to fall into), its bottom. `Area` itself never collides.
 
-const THICK := 200.0   ## walls reach this far outside the area, so nothing tunnels through them
+const THICK := 50.0   ## walls reach this far outside the area, so nothing tunnels through them
 
 @export var open_bottom := false:
 	set(v):

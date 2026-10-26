@@ -11,6 +11,7 @@ const STEP := 0.1
 var master := 0.3        ## linear 0..1, low by default
 var music_volume := 0.6
 var sfx_volume := 1.0
+var ambience_volume := 1.0   ## the stage ambience (rain, river...): its own bus "Ambience"
 var muted := false
 
 var _music: AudioStreamPlayer   ## the tune playing (or fading in); the one it replaced fades out on its own player
@@ -31,7 +32,7 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	_music = _music_player()
 	_amb = AudioStreamPlayer.new()
-	_amb.bus = "SFX"
+	_amb.bus = "Ambience"
 	add_child(_amb)
 	_load_settings()
 	Feel.load_settings()
@@ -160,7 +161,7 @@ func _fade(p: AudioStreamPlayer, to: float) -> Tween:
 	p.set_meta(&"fade", tw)
 	return tw
 
-## A quiet looping background sound of the stage (rain, river, fire...; "" = none). Plays on the SFX bus.
+## A quiet looping background sound of the stage (rain, river, fire...; "" = none). Plays on the Ambience bus.
 func ambience(sound: String, volume_db := -18.0) -> void:
 	var s := _stream(sound)
 	if s == null:
@@ -182,6 +183,16 @@ func set_master(v: float) -> void:
 	_apply()
 	_save_settings()
 
+## Volume of one bus, 0..1 (设置 page sliders).
+func set_bus_volume(bus: StringName, v: float) -> void:
+	v = clampf(snappedf(v, 0.01), 0.0, 1.0)
+	match bus:
+		&"Music": music_volume = v
+		&"SFX": sfx_volume = v
+		&"Ambience": ambience_volume = v
+	_apply()
+	_save_settings()
+
 func set_muted(v: bool) -> void:
 	muted = v
 	_apply()
@@ -196,6 +207,7 @@ func _apply() -> void:
 	AudioServer.set_bus_mute(0, muted or master <= 0.0 or WebHost.hidden)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(music_volume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"), linear_to_db(sfx_volume))
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Ambience"), linear_to_db(ambience_volume))
 	volume_changed.emit(master, muted)
 
 func _load_settings() -> void:
@@ -204,6 +216,7 @@ func _load_settings() -> void:
 		master = _volume(cf.get_value("audio", "master", master), master)
 		music_volume = _volume(cf.get_value("audio", "music", music_volume), music_volume)
 		sfx_volume = _volume(cf.get_value("audio", "sfx", sfx_volume), sfx_volume)
+		ambience_volume = _volume(cf.get_value("audio", "ambience", ambience_volume), ambience_volume)
 		muted = cf.get_value("audio", "muted", muted) == true
 
 static func _volume(v: Variant, fallback: float) -> float:
@@ -215,6 +228,7 @@ func _save_settings() -> void:
 	cf.set_value("audio", "master", master)
 	cf.set_value("audio", "music", music_volume)
 	cf.set_value("audio", "sfx", sfx_volume)
+	cf.set_value("audio", "ambience", ambience_volume)
 	cf.set_value("audio", "muted", muted)
 	if cf.save(SETTINGS) != OK:
 		push_warning("settings could not be saved")

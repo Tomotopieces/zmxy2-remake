@@ -2,29 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://cuxgxpmwjbmgf" path="res://stages/niumogu/tex/niumogu_near_00.png" id="1_ukycm"]
 [ext_resource type="Texture2D" uid="uid://dkwpeca6l8db6" path="res://stages/niumogu/tex/niumogu_ground_01.png" id="3_qtyer"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="x0u9eui"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xj5mvcs"]
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xvywtjn"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xyvgvuo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(20.01, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(699.95, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(1200.01, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(1200.01, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(980, 619.6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
-size = Vector2(1186.9, 619.6)
 
 [node name="Scenery" type="Node2D" unique_id=540679976]
 
@@ -80,11 +68,12 @@ size = Vector2(1470.05, 701.15)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=1520351027]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=1998412995]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
-position = Vector2(468.7, 191.2)
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=486190105]
+position = Vector2(470, 191.2)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true
 debug_color = Color(1, 0.55, 0, 0.12)

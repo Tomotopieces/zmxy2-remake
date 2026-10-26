@@ -2,29 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://ccnou33t7ptox" path="res://stages/baigumijing/tex/baigumijing_piece.png" id="1_kqb3g"]
 [ext_resource type="Texture2D" uid="uid://mua8kr2wpq5n" path="res://stages/guimenguan/tex/guimenguan_tile.png" id="2_kqb3g"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xenhghz"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xk0no99"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xnyirrn"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xvc2019"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(20.01, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(699.95, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(1200.01, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(1200.01, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
-size = Vector2(167, 163.45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
 size = Vector2(1194.9, 619.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
+size = Vector2(167, 163.45)
 
 [node name="Scenery" type="Node2D" unique_id=1018630056]
 
@@ -62,8 +50,9 @@ z_index = -7
 [node name="Tile" type="TextureRect" parent="Ground" unique_id=614009163]
 texture_filter = 1
 texture_repeat = 2
+offset_left = -20.0
 offset_top = 490.15
-offset_right = 944.0
+offset_right = 964.0
 offset_bottom = 588.15
 texture = ExtResource("2_kqb3g")
 expand_mode = 1
@@ -75,10 +64,11 @@ size = Vector2(1088.15, 701.15)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=11285240]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=46178087]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=743776248]
 position = Vector2(470.7, 191.2)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true

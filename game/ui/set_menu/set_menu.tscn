@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://d1vw2bko5kwyu"]
 
 [ext_resource type="Script" uid="uid://ddmuwy06fmabu" path="res://src/ui/ui_layout.gd" id="1_hsykp"]
-[ext_resource type="Texture2D" uid="uid://cqmoqnvo013a4" path="res://ui/set_menu/tex/set_menu_background.png" id="2_dkv3n"]
+[ext_resource type="Texture2D" uid="uid://dl7iep1bu8pbf" path="res://ui/fabao/tex/2.png" id="2_rfyxl"]
 [ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="5_mav51"]
+[ext_resource type="PackedScene" path="res://ui/components/gauge_slider.tscn" id="gauge"]
 
 [node name="SetMenu" type="Control" unique_id=1936660815]
 layout_mode = 3
@@ -13,16 +14,17 @@ script = ExtResource("1_hsykp")
 [node name="Art" type="Node2D" parent="." unique_id=1914546074]
 
 [node name="Background" type="Sprite2D" parent="Art" unique_id=2036714208]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_dkv3n")
+position = Vector2(177.18863, 58.999958)
+scale = Vector2(0.7759092, 0.99790376)
+texture = ExtResource("2_rfyxl")
 centered = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=91808366]
 layout_mode = 0
-offset_left = 393.0
-offset_top = 123.0
-offset_right = 549.0
-offset_bottom = 421.0
+offset_left = 207.0
+offset_top = 96.0
+offset_right = 707.0
+offset_bottom = 500.0
 pivot_offset_ratio = Vector2(0.5, 0.5)
 mouse_filter = 2
 theme_override_constants/separation = 6
@@ -30,35 +32,52 @@ theme_override_constants/separation = 6
 [node name="BtnContinue" parent="VBoxContainer" unique_id=1077589236 instance=ExtResource("5_mav51")]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 4
 text = "继续游戏"
 
-[node name="BtnGameSound" parent="VBoxContainer" unique_id=1017656085 instance=ExtResource("5_mav51")]
+[node name="MusicVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "游戏声音：开"
+caption = "音乐"
 
-[node name="BtnScreenShake" parent="VBoxContainer" unique_id=1771928406 instance=ExtResource("5_mav51")]
+[node name="SfxVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "画面震动：开"
+caption = "音效"
 
-[node name="BtnControllerShake" parent="VBoxContainer" unique_id=1366698965 instance=ExtResource("5_mav51")]
+[node name="AmbienceVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "手柄震动：开"
+caption = "环境音"
 
-[node name="BtnBackToMap" parent="VBoxContainer" unique_id=244647597 instance=ExtResource("5_mav51")]
+[node name="ScreenShake" parent="VBoxContainer" instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "返回地图"
+caption = "画面震动"
+steps = 3
+labels = PackedStringArray("关", "弱", "中", "强")
+
+[node name="PadRumble" parent="VBoxContainer" instance=ExtResource("gauge")]
+unique_name_in_owner = true
+layout_mode = 2
+caption = "手柄震动"
+steps = 3
+labels = PackedStringArray("关", "弱", "中", "强")
 
 [node name="BtnHelp" parent="VBoxContainer" unique_id=725303521 instance=ExtResource("5_mav51")]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 4
 text = "操作说明"
+
+[node name="BtnBackToMap" parent="VBoxContainer" unique_id=244647597 instance=ExtResource("5_mav51")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "返回地图"
 
 [node name="BtnBackToTitle" parent="VBoxContainer" unique_id=1836558054 instance=ExtResource("5_mav51")]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 4
 text = "返回标题界面"
-

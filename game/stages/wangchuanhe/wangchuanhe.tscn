@@ -22,25 +22,14 @@
 [ext_resource type="Texture2D" uid="uid://bnbaxe2lw80o1" path="res://stages/shared/wangchuanhe_sky.png" id="20_435hn"]
 [ext_resource type="PackedScene" path="res://entities/objects/aurora_gate/aurora_gate.tscn" id="aurora_obj"]
 [ext_resource type="PackedScene" uid="uid://deiqdm1htfa7w" path="res://entities/objects/boat/boat.tscn" id="boat_obj"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="PackedScene" path="res://entities/objects/river_water/river_water.tscn" id="water_obj"]
-
-[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="xlkwi5w"]
-
-[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xhunpm7"]
-
-[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xgy93jq"]
-
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="x2mzr9q"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
+[ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xhunpm7"]
+[ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xlkwi5w"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(5000, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(800, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(800, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(4650, 780)
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_L4"]
 points = PackedVector2Array(4300.358, 510.95, 4335.708, 475.6, 4335.708, 535.6, 4300.358, 570.95)
@@ -50,9 +39,6 @@ size = Vector2(320.01, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L6"]
 size = Vector2(167, 163.45)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
-size = Vector2(4656.45, 780)
 
 [node name="Scenery" type="Node2D" unique_id=1695339481]
 
@@ -764,49 +750,49 @@ position = Vector2(1000, 600)
 [node name="Boat" parent="Objects" unique_id=127088362 instance=ExtResource("boat_obj")]
 position = Vector2(272.35, 495)
 
-[node name="Layout" type="Node2D" parent="."]
+[node name="Layout" type="Node2D" parent="." unique_id=1071341286]
 script = ExtResource("xlkwi5w")
 size = Vector2(4992.95, 753.96)
 
-[node name="Walls" type="Node2D" parent="Layout"]
+[node name="Walls" type="Node2D" parent="Layout" unique_id=434408473]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=1397555505]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 open_bottom = true
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
-position = Vector2(2328.23, 363.95)
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=111398574]
+position = Vector2(2305.0024, 363.95)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true
 debug_color = Color(1, 0.55, 0, 0.12)
 
-[node name="Terrain" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Terrain" type="StaticBody2D" parent="Layout/Walls" unique_id=1678516622]
 collision_mask = 0
 
-[node name="Ramp4" type="CollisionShape2D" parent="Layout/Walls/Terrain"]
+[node name="Ramp4" type="CollisionShape2D" parent="Layout/Walls/Terrain" unique_id=1865499568]
 shape = SubResource("ConvexPolygonShape2D_L4")
 
-[node name="Floor5" type="CollisionShape2D" parent="Layout/Walls/Terrain"]
+[node name="Floor5" type="CollisionShape2D" parent="Layout/Walls/Terrain" unique_id=589261170]
 position = Vector2(4495.45, 485.6)
 shape = SubResource("RectangleShape2D_L5")
 
-[node name="Stops" type="Node2D" parent="Layout"]
+[node name="Stops" type="Node2D" parent="Layout" unique_id=1897365048]
 
-[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop1" type="Marker2D" parent="Layout/Stops" unique_id=56732910]
 position = Vector2(4610, 338.05)
 script = ExtResource("xhunpm7")
-back = 1150
 
-[node name="ExitDoor" parent="Layout" instance=ExtResource("x2mzr9q")]
+[node name="ExitDoor" parent="Layout" unique_id=520795028 instance=ExtResource("x2mzr9q")]
 visible = false
 z_index = -6
 position = Vector2(4503.05, 424.7)
 
-[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor" unique_id=69098788]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone" unique_id=2086370631]
 position = Vector2(-0.25, -27.425)
 shape = SubResource("RectangleShape2D_L6")

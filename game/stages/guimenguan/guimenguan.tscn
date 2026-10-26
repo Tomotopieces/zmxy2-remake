@@ -1,59 +1,43 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://dekuhbu6pa7av"]
 
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_sky.png" id="1_1nat4"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_house1.png" id="1_i5r61"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_fog.png" id="2_1nat4"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_22.png" id="3_t31yo"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_52.png" id="4_hfeo5"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_36.png" id="5_33pvn"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_47.png" id="6_fat1j"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_25.png" id="7_788xo"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_49.png" id="8_j1n3l"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_50.png" id="9_ek0p7"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_53.png" id="10_138xl"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_54.png" id="11_lqrwm"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_34.png" id="12_i3gyp"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_29.png" id="13_uv5bf"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_57.png" id="14_ou7l3"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_31.png" id="15_yyjun"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_43.png" id="16_oitf6"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_41.png" id="17_b46a8"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_46.png" id="18_jbwxk"]
-[ext_resource type="Texture2D" path="res://stages/shared/wuchangxiang_middle_45.png" id="19_4wdnl"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_49.png" id="20_3qmb6"]
-[ext_resource type="Texture2D" path="res://stages/shared/guicheng_middle_30.png" id="21_6xxeg"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_69.png" id="22_1ifh2"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_73.png" id="23_alq8o"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_near_20.png" id="24_6bx7x"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_middle_67.png" id="25_358wg"]
-[ext_resource type="Texture2D" path="res://stages/guimenguan/tex/guimenguan_tile.png" id="26_xabia"]
-
-[ext_resource type="Script" path="res://src/level/layout/stage_layout.gd" id="x31mpcj"]
-
-[ext_resource type="Script" path="res://src/level/layout/camera_stop.gd" id="xl1l6qf"]
-
-[ext_resource type="Script" path="res://src/level/layout/monster_spawn.gd" id="xqxbj4r"]
-
+[ext_resource type="Texture2D" uid="uid://cr7kl4w1fjo1h" path="res://stages/guimenguan/tex/guimenguan_sky.png" id="1_1nat4"]
+[ext_resource type="Texture2D" uid="uid://csoetum1vavcu" path="res://stages/shared/guicheng_house1.png" id="1_i5r61"]
+[ext_resource type="Texture2D" uid="uid://b2td2s7ngm71q" path="res://stages/guimenguan/tex/guimenguan_fog.png" id="2_1nat4"]
+[ext_resource type="Texture2D" uid="uid://clp53pbl5lvkf" path="res://stages/shared/guicheng_middle_22.png" id="3_t31yo"]
+[ext_resource type="Texture2D" uid="uid://dirwv4y5plry3" path="res://stages/shared/guicheng_middle_52.png" id="4_hfeo5"]
+[ext_resource type="Texture2D" uid="uid://bls4rd2depfm4" path="res://stages/shared/guicheng_middle_36.png" id="5_33pvn"]
+[ext_resource type="Texture2D" uid="uid://bcuhp4siknxxq" path="res://stages/guimenguan/tex/guimenguan_middle_47.png" id="6_fat1j"]
+[ext_resource type="Texture2D" uid="uid://cn3puh3vdml7x" path="res://stages/shared/guicheng_middle_25.png" id="7_788xo"]
+[ext_resource type="Texture2D" uid="uid://c7o2jjag6gv7d" path="res://stages/guimenguan/tex/guimenguan_middle_49.png" id="8_j1n3l"]
+[ext_resource type="Texture2D" uid="uid://cpeyu3oyxja8k" path="res://stages/guimenguan/tex/guimenguan_middle_50.png" id="9_ek0p7"]
+[ext_resource type="Texture2D" uid="uid://dyfktfws867ba" path="res://stages/guimenguan/tex/guimenguan_middle_53.png" id="10_138xl"]
+[ext_resource type="Texture2D" uid="uid://csbt2gkm4wfhk" path="res://stages/guimenguan/tex/guimenguan_middle_54.png" id="11_lqrwm"]
+[ext_resource type="Texture2D" uid="uid://biumgljovj6wu" path="res://stages/shared/guicheng_middle_34.png" id="12_i3gyp"]
+[ext_resource type="Texture2D" uid="uid://bcvnbi4tx5fbg" path="res://stages/shared/guicheng_middle_29.png" id="13_uv5bf"]
+[ext_resource type="Texture2D" uid="uid://xtogt8dqicpq" path="res://stages/guimenguan/tex/guimenguan_middle_57.png" id="14_ou7l3"]
+[ext_resource type="Texture2D" uid="uid://7yxihhxfrbaa" path="res://stages/shared/guicheng_middle_31.png" id="15_yyjun"]
+[ext_resource type="Texture2D" uid="uid://ecv5u4vdddlv" path="res://stages/shared/guicheng_middle_43.png" id="16_oitf6"]
+[ext_resource type="Texture2D" uid="uid://lbuyi17mjwpo" path="res://stages/shared/guicheng_middle_41.png" id="17_b46a8"]
+[ext_resource type="Texture2D" uid="uid://ddshtec2gg2jy" path="res://stages/shared/guicheng_middle_46.png" id="18_jbwxk"]
+[ext_resource type="Texture2D" uid="uid://036ii54r2i1k" path="res://stages/shared/wuchangxiang_middle_45.png" id="19_4wdnl"]
+[ext_resource type="Texture2D" uid="uid://c3pxucl1g44xr" path="res://stages/shared/guicheng_middle_49.png" id="20_3qmb6"]
+[ext_resource type="Texture2D" uid="uid://7ajj0e4haixq" path="res://stages/shared/guicheng_middle_30.png" id="21_6xxeg"]
+[ext_resource type="Texture2D" uid="uid://c2rmuxn1fvxn2" path="res://stages/guimenguan/tex/guimenguan_middle_69.png" id="22_1ifh2"]
+[ext_resource type="Texture2D" uid="uid://jx1c7ae4qy4n" path="res://stages/guimenguan/tex/guimenguan_middle_73.png" id="23_alq8o"]
+[ext_resource type="Texture2D" uid="uid://boubj021u6d5e" path="res://stages/guimenguan/tex/guimenguan_near_20.png" id="24_6bx7x"]
+[ext_resource type="Texture2D" uid="uid://b4vqeq640d4vj" path="res://stages/guimenguan/tex/guimenguan_middle_67.png" id="25_358wg"]
+[ext_resource type="Texture2D" uid="uid://mua8kr2wpq5n" path="res://stages/guimenguan/tex/guimenguan_tile.png" id="26_xabia"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
+[ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="x31mpcj"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="xgipd66"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
+[ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xl1l6qf"]
+[ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="xqxbj4r"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(5000, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(115.35, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(699.95, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(5000, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(4752, 631.65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
-size = Vector2(4748.67, 631.65)
 
 [node name="Scenery" type="Node2D" unique_id=1491261449]
 
@@ -549,186 +533,166 @@ z_index = -7
 [node name="Tile" type="TextureRect" parent="Ground" unique_id=1673700970]
 texture_filter = 1
 texture_repeat = 2
-offset_left = -32.0
+offset_left = -20.0
 offset_top = 493.15
-offset_right = 6462.4
+offset_right = 6474.4
 offset_bottom = 591.15
 texture = ExtResource("26_xabia")
 expand_mode = 1
 stretch_mode = 1
 
-[node name="Layout" type="Node2D" parent="."]
+[node name="Layout" type="Node2D" parent="." unique_id=1078981156]
 script = ExtResource("x31mpcj")
 size = Vector2(6462.4, 591.15)
 
-[node name="Walls" type="Node2D" parent="Layout"]
+[node name="Walls" type="Node2D" parent="Layout" unique_id=658648114]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=273479168]
+collision_mask = 0
 script = ExtResource("stage_boundary")
 
-[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
-position = Vector2(2377.64, 185.23)
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=660695432]
+position = Vector2(2356, 185.23)
 shape = SubResource("RectangleShape2D_boundary")
 disabled = true
 debug_color = Color(1, 0.55, 0, 0.12)
 
-[node name="Stops" type="Node2D" parent="Layout"]
+[node name="Stops" type="Node2D" parent="Layout" unique_id=334330758]
 
-[node name="Stop1" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop1" type="Marker2D" parent="Layout/Stops" unique_id=1232899714]
 position = Vector2(1093.1, 196.05)
 script = ExtResource("xl1l6qf")
-back = 1450
+back = 1450.0
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop1" unique_id=201346079]
 position = Vector2(79.35, 199.95)
 script = ExtResource("xqxbj4r")
 monster = 31
-delay = 2
-interval = 1
 total = 4
 
-[node name="Stop2" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop2" type="Marker2D" parent="Layout/Stops" unique_id=1251251906]
 position = Vector2(1839.35, 189.35)
 script = ExtResource("xl1l6qf")
-back = 1450
+back = 1450.0
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=562015045]
 position = Vector2(-794.9, 206.65)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 2
-interval = 1
 total = 5
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=934268684]
 position = Vector2(61.05, 219.45)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 2
-interval = 1
 total = 3
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=633957959]
 position = Vector2(94.7, 104.25)
 script = ExtResource("xqxbj4r")
 monster = 31
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop2"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop2" unique_id=1845229570]
 position = Vector2(-814.9, 70.5)
 script = ExtResource("xqxbj4r")
 monster = 31
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Stop3" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop3" type="Marker2D" parent="Layout/Stops" unique_id=2053628127]
 position = Vector2(2843.6, 170.15)
 script = ExtResource("xl1l6qf")
-back = 1450
+back = 1450.0
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=679206967]
 position = Vector2(-474.35, 251.45)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 2
-interval = 1
 total = 5
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=1433262414]
 position = Vector2(-1067.6, 195.45)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 8
-interval = 1
+delay = 8.0
 total = 3
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=608356664]
 position = Vector2(82.45, 238.65)
 script = ExtResource("xqxbj4r")
 monster = 31
-delay = 8
-interval = 1
+delay = 8.0
 total = 4
 
-[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop3"]
+[node name="Spawn4" type="Marker2D" parent="Layout/Stops/Stop3" unique_id=64152040]
 position = Vector2(-474.35, 24.4)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 4
-interval = 1
+delay = 4.0
 total = 2
 
-[node name="Stop4" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop4" type="Marker2D" parent="Layout/Stops" unique_id=1959369227]
 position = Vector2(3571.75, 239.15)
 script = ExtResource("xl1l6qf")
-back = 1450
+back = 1450.0
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=177849402]
 position = Vector2(-37.7, 198.45)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 2
-interval = 1
 total = 4
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=877833625]
 position = Vector2(103.1, 54.45)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop4"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop4" unique_id=694291996]
 position = Vector2(-812.1, 41.65)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 6
-interval = 1
+delay = 6.0
 total = 3
 
-[node name="Stop5" type="Marker2D" parent="Layout/Stops"]
+[node name="Stop5" type="Marker2D" parent="Layout/Stops" unique_id=2083438987]
 position = Vector2(4287.4, 258.7)
 script = ExtResource("xl1l6qf")
-back = 1450
+back = 1450.0
 
-[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop5"]
+[node name="Spawn1" type="Marker2D" parent="Layout/Stops/Stop5" unique_id=1441302098]
 position = Vector2(41, 150.1)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 1
-interval = 1
+delay = 1.0
 total = 3
 
-[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop5"]
+[node name="Spawn2" type="Marker2D" parent="Layout/Stops/Stop5" unique_id=1818115193]
 position = Vector2(-823.75, 73.15)
 script = ExtResource("xqxbj4r")
 monster = 32
-delay = 1
-interval = 1
+delay = 1.0
 total = 3
 
-[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop5"]
+[node name="Spawn3" type="Marker2D" parent="Layout/Stops/Stop5" unique_id=174611247]
 position = Vector2(-106.9, 73.15)
 script = ExtResource("xqxbj4r")
 monster = 52
-delay = 1
-interval = 1
-total = 1
+delay = 1.0
 
-[node name="ExitDoor" parent="Layout" instance=ExtResource("xgipd66")]
+[node name="ExitDoor" parent="Layout" unique_id=2081549914 instance=ExtResource("xgipd66")]
 visible = false
 z_index = -6
 position = Vector2(4155.05, 453.15)
 
-[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor"]
+[node name="EnterZone" type="Area2D" parent="Layout/ExitDoor" unique_id=1965568915]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone"]
+[node name="Shape" type="CollisionShape2D" parent="Layout/ExitDoor/EnterZone" unique_id=501316021]
 position = Vector2(-0.25, -27.425)
 shape = SubResource("RectangleShape2D_L5")

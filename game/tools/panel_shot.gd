@@ -1,5 +1,5 @@
 extends Node
-## Screenshots the real bag, fabao and shop panels (the ones the game opens) into <out_dir>:
+## Screenshots the real bag, fabao, settings and shop panels (the ones the game opens) into <out_dir>:
 ##   godot --path game --position 6000,6000 res://tools/panel_shot.tscn -- <out_dir> [role]
 ## A scene (not -s) so the autoloads (GameState, Snd) and the default theme exist, exactly as in the game.
 func _ready() -> void:
@@ -21,6 +21,9 @@ func _ready() -> void:
 	main._menu.show_tab(&"fabao")
 	await get_tree().create_timer(0.5).timeout
 	await _shot(out + "/B_fabao.png")
+	main._menu.show_tab(&"settings")
+	await get_tree().create_timer(0.5).timeout
+	await _shot(out + "/B_settings.png")
 	main.queue_free()
 	var shop := ShopScreen.new()
 	add_child(shop)

@@ -240,11 +240,11 @@ func _shake_offset(delta: float) -> Vector2:
 	if _trauma <= 0.0:
 		return Vector2.ZERO
 	_trauma = maxf(_trauma - SHAKE_DECAY * delta, 0.0)
-	if not Feel.screen_shake:
+	if Feel.screen_shake == 0:
 		return Vector2.ZERO
 	_shake_t += delta * SHAKE_FREQ
 	var k := SHAKE_MAX * _trauma * _trauma * 2.0   # (the noise stays within about ±0.5): 0.35 -> ~3 px, 0.5 -> 6, 0.75 -> 13
-	return Vector2(_shake_noise.get_noise_2d(_shake_t, 0.0), _shake_noise.get_noise_2d(0.0, _shake_t)) * k
+	return Vector2(_shake_noise.get_noise_2d(_shake_t, 0.0), _shake_noise.get_noise_2d(0.0, _shake_t)) * k * Feel.LEVEL_SCALE[Feel.screen_shake]
 
 ## Hit-stop: the whole fight (World: actors, bullets, effects) stands still for a moment - the "weight" of a blow.
 ## The level itself goes on (camera shake, HUD, stage effects), and so do menus: the stop counts down in this node's
