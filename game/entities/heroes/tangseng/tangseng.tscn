@@ -18,6 +18,9 @@
 [ext_resource type="Texture2D" uid="uid://crcoqbmebrox0" path="res://entities/heroes/tangseng/tex/tangseng_wait_part4_2.png" id="16_fdobc"]
 [ext_resource type="Texture2D" uid="uid://dgfe002hjl1m3" path="res://entities/heroes/tangseng/tex/tangseng_wait_part5.png" id="17_buiqv"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot951_2.tscn" id="18_nl3bj"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot951_2_look2.tscn" id="look2_xtn9n"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot951_2_look3.tscn" id="look3_ijkuf"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot951_2_look4.tscn" id="look4_4c9e4"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot907_3.tscn" id="19_vxoov"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot907_4.tscn" id="20_w7ll7"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot907_5.tscn" id="21_clj82"]
@@ -82,6 +85,9 @@
 [ext_resource type="Texture2D" uid="uid://cns71p170jjwk" path="res://entities/heroes/tangseng/tex/tangseng_walk_part5.png" id="80_pimdd"]
 [ext_resource type="Texture2D" uid="uid://biosn24vy8teg" path="res://entities/heroes/tangseng/tex/tangseng_walk_part6.png" id="81_y7l4h"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1013_2.tscn" id="82_6w8vg"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1013_2_look2.tscn" id="look2_60msr"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1013_2_look3.tscn" id="look3_gbj80"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1013_2_look4.tscn" id="look4_2mpdn"]
 [ext_resource type="Texture2D" uid="uid://cijc6u3arhqj7" path="res://entities/heroes/tangseng/tex/tangseng_walk_part7.png" id="83_58jby"]
 [ext_resource type="Texture2D" uid="uid://ih6ylunn4nvh" path="res://entities/heroes/tangseng/tex/tangseng_walk_part8.png" id="84_5jfds"]
 [ext_resource type="Texture2D" uid="uid://dp1o66524l5lw" path="res://entities/heroes/tangseng/tex/tangseng_walk_part9.png" id="85_klrga"]
@@ -100,6 +106,7 @@
 [ext_resource type="Texture2D" uid="uid://kym7eyjb417t" path="res://entities/heroes/tangseng/tex/tangseng_run_part2.png" id="98_xje0y"]
 [ext_resource type="Texture2D" uid="uid://drasw208q6p8y" path="res://entities/heroes/tangseng/tex/tangseng_hit1_part1.png" id="99_du3dg"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1050_2.tscn" id="100_yhhpv"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1050_2_look2.tscn" id="look2_3gbsx"]
 [ext_resource type="Texture2D" uid="uid://covh4icwghqlx" path="res://entities/heroes/tangseng/tex/tangseng_hit1_part2.png" id="101_77546"]
 [ext_resource type="Texture2D" uid="uid://bpist6kwl8kop" path="res://entities/heroes/tangseng/tex/tangseng_hit1_part3.png" id="102_hl0uo"]
 [ext_resource type="Texture2D" uid="uid://b3f13loydhl3c" path="res://entities/heroes/tangseng/tex/tangseng_hit1_part4.png" id="103_mnc1e"]
@@ -112,6 +119,9 @@
 [ext_resource type="Texture2D" uid="uid://cof7kp8hmxu2h" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part4.png" id="110_a7p0g"]
 [ext_resource type="Texture2D" uid="uid://cyobtyyviu7as" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part5.png" id="111_a2fwa"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1069_2.tscn" id="112_p5ji6"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1069_2_look2.tscn" id="look2_zarda"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1069_2_look3.tscn" id="look3_p8nea"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1069_2_look4.tscn" id="look4_lv4qq"]
 [ext_resource type="Texture2D" uid="uid://bckgnxo60gg65" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part6_2.png" id="113_kv4yi"]
 [ext_resource type="Texture2D" uid="uid://dollxpdf4k3c7" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part7.png" id="114_bd55w"]
 [ext_resource type="Texture2D" uid="uid://c5q7qe4upkt56" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part8.png" id="115_k31mh"]
@@ -136,6 +146,9 @@
 [ext_resource type="Texture2D" uid="uid://dtmy86tq6g4o3" path="res://entities/heroes/tangseng/tex/tangseng_hit4_part11.png" id="134_awht2"]
 [ext_resource type="Texture2D" uid="uid://rxog0vl7dy8c" path="res://entities/heroes/tangseng/tex/tangseng_hit5_part1.png" id="135_f5ph0"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1134_2.tscn" id="136_ymor3"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1134_2_look2.tscn" id="look2_vcsfa"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1134_2_look3.tscn" id="look3_9k8hb"]
+[ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1134_2_look4.tscn" id="look4_hex41"]
 [ext_resource type="Texture2D" uid="uid://cp3af8g3mhsya" path="res://entities/heroes/tangseng/tex/tangseng_hit5_part2.png" id="137_0nm5i"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1171_3.tscn" id="138_1ba7n"]
 [ext_resource type="PackedScene" path="res://entities/heroes/tangseng/slots/slot1171_4.tscn" id="139_drvnf"]
@@ -300,6 +313,29 @@ variants = {
 2: ExtResource("18_nl3bj")
 }
 
+
+[node name="WaitSlot4Look2" type="Node2D" parent="Puppet/Poses/Wait"]
+position = Vector2(1.85, 9.5)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_xtn9n")
+}
+
+
+[node name="WaitSlot4Look3" type="Node2D" parent="Puppet/Poses/Wait"]
+position = Vector2(1.85, 9.5)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look3_ijkuf")
+}
+
+
+[node name="WaitSlot4Look4" type="Node2D" parent="Puppet/Poses/Wait"]
+position = Vector2(1.85, 9.5)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look4_4c9e4")
+}
 [node name="WaitSlot5" type="Node2D" parent="Puppet/Poses/Wait" unique_id=885511035]
 position = Vector2(-8.6, -2.1)
 rotation = 1.419287
@@ -501,6 +537,29 @@ variants = {
 2: ExtResource("82_6w8vg")
 }
 
+
+[node name="WalkSlot3Look2" type="Node2D" parent="Puppet/Poses/Walk"]
+position = Vector2(2.4, 9.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_60msr")
+}
+
+
+[node name="WalkSlot3Look3" type="Node2D" parent="Puppet/Poses/Walk"]
+position = Vector2(2.4, 9.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look3_gbj80")
+}
+
+
+[node name="WalkSlot3Look4" type="Node2D" parent="Puppet/Poses/Walk"]
+position = Vector2(2.4, 9.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look4_2mpdn")
+}
 [node name="WalkSlot4" type="Node2D" parent="Puppet/Poses/Walk" unique_id=353677060]
 position = Vector2(2.7, 22.8)
 rotation = -0.11289658
@@ -936,6 +995,13 @@ variants = {
 2: ExtResource("100_yhhpv")
 }
 
+
+[node name="Hit1Slot2Look2" type="Node2D" parent="Puppet/Poses/Hit1"]
+position = Vector2(-0.45, 5)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_3gbsx")
+}
 [node name="Hit1Slot3" type="Node2D" parent="Puppet/Poses/Hit1" unique_id=68385337]
 position = Vector2(12.3, 14.15)
 rotation = -0.15264933
@@ -1218,6 +1284,29 @@ variants = {
 2: ExtResource("112_p5ji6")
 }
 
+
+[node name="Hit3Slot4Look2" type="Node2D" parent="Puppet/Poses/Hit3"]
+position = Vector2(-0.25, 5.15)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_zarda")
+}
+
+
+[node name="Hit3Slot4Look3" type="Node2D" parent="Puppet/Poses/Hit3"]
+position = Vector2(-0.25, 5.15)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look3_p8nea")
+}
+
+
+[node name="Hit3Slot4Look4" type="Node2D" parent="Puppet/Poses/Hit3"]
+position = Vector2(-0.25, 5.15)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look4_lv4qq")
+}
 [node name="Hit3Slot5" type="Node2D" parent="Puppet/Poses/Hit3" unique_id=874508085]
 position = Vector2(-4.45, 6.4)
 rotation = -1.0597146
@@ -2004,6 +2093,29 @@ variants = {
 2: ExtResource("136_ymor3")
 }
 
+
+[node name="Hit5Slot2Look2" type="Node2D" parent="Puppet/Poses/Hit5"]
+position = Vector2(3.05, 7.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_vcsfa")
+}
+
+
+[node name="Hit5Slot2Look3" type="Node2D" parent="Puppet/Poses/Hit5"]
+position = Vector2(3.05, 7.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look3_9k8hb")
+}
+
+
+[node name="Hit5Slot2Look4" type="Node2D" parent="Puppet/Poses/Hit5"]
+position = Vector2(3.05, 7.1)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look4_hex41")
+}
 [node name="Hit5Slot3" type="Node2D" parent="Puppet/Poses/Hit5" unique_id=1075389583]
 position = Vector2(6.1, 24.6)
 rotation = -0.033984564
@@ -2180,6 +2292,13 @@ variants = {
 2: ExtResource("100_yhhpv")
 }
 
+
+[node name="Hit2Slot3Look2" type="Node2D" parent="Puppet/Poses/Hit2"]
+position = Vector2(-1.75, 5.95)
+script = ExtResource("2_77546")
+variants = {
+2: ExtResource("look2_3gbsx")
+}
 [node name="Hit2Slot4" type="Node2D" parent="Puppet/Poses/Hit2" unique_id=366466526]
 position = Vector2(-10.25, -3.5)
 rotation = 0.88197964

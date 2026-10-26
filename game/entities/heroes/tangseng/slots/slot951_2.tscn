@@ -1,53 +1,11 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_66.png" id="1_9mpl1"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_wait_1.png" id="2_8r6xj"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_wait_2.png" id="3_kkkda"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_wait_3.png" id="4_r1fqz"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_66.png" id="1_q3vhv"]
 
-[sub_resource type="Animation" id="Animation_k0cuj"]
-resource_name = "follow"
-length = 1.291667
-loop_mode = 1
-step = 0.0416667
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Slot9512Part1:texture")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333, 0.166667, 0.25, 0.75, 0.833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("1_9mpl1"), ExtResource("2_8r6xj"), ExtResource("3_kkkda"), ExtResource("4_r1fqz"), ExtResource("3_kkkda"), ExtResource("2_8r6xj")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Slot9512Part1:position")
-tracks/1/interp = 0
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.083333, 0.166667, 0.25, 0.75, 0.833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [Vector2(-14.25, -27.25), Vector2(-17.55, -27.25), Vector2(-18.25, -30.2), Vector2(-19.3, -29.45), Vector2(-18.25, -30.2), Vector2(-17.55, -27.25)]
-}
+[node name="Slot9512" type="Node2D" unique_id=1257232445]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_mh5xq"]
-_data = {
-&"follow": SubResource("Animation_k0cuj")
-}
-
-[node name="Slot9512" type="Node2D"]
-metadata/follow_action = true
-
-[node name="Slot9512Part1" type="Sprite2D" parent="."]
+[node name="Slot9512Part1" type="Sprite2D" parent="." unique_id=1433750231]
 position = Vector2(-14.25, -27.25)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_9mpl1")
+texture = ExtResource("1_q3vhv")
 centered = false
-
-[node name="Anim" type="AnimationPlayer" parent="."]
-libraries/ = SubResource("AnimationLibrary_mh5xq")

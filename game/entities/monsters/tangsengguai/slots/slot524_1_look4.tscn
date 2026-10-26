@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_walk_3.png" id="1_gvl56"]
+
+[node name="Slot5241Look4" type="Node2D"]
+
+[node name="Slot5241Look4Part1" type="Sprite2D" parent="."]
+position = Vector2(-13.85, -29.85)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_gvl56")
+centered = false

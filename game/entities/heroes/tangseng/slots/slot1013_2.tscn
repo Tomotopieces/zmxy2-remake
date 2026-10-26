@@ -1,53 +1,11 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_77.png" id="1_es7jf"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_walk_1.png" id="2_761ec"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_walk_2.png" id="3_9z269"]
-[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_walk_3.png" id="4_zhlb7"]
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_77.png" id="1_0ttsu"]
 
-[sub_resource type="Animation" id="Animation_e5fd7"]
-resource_name = "follow"
-length = 0.666667
-loop_mode = 1
-step = 0.0416667
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Slot10132Part1:texture")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("1_es7jf"), ExtResource("2_761ec"), ExtResource("3_9z269"), ExtResource("4_zhlb7")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Slot10132Part1:position")
-tracks/1/interp = 0
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [Vector2(-18.1, -29.85), Vector2(-13.85, -29.85), Vector2(-17.6, -29.85), Vector2(-13.85, -29.85)]
-}
+[node name="Slot10132" type="Node2D" unique_id=2094276497]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_fds52"]
-_data = {
-&"follow": SubResource("Animation_e5fd7")
-}
-
-[node name="Slot10132" type="Node2D"]
-metadata/follow_action = true
-
-[node name="Slot10132Part1" type="Sprite2D" parent="."]
+[node name="Slot10132Part1" type="Sprite2D" parent="." unique_id=566009788]
 position = Vector2(-18.1, -29.85)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_es7jf")
+texture = ExtResource("1_0ttsu")
 centered = false
-
-[node name="Anim" type="AnimationPlayer" parent="."]
-libraries/ = SubResource("AnimationLibrary_fds52")

@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_putong_jiasha_hit5_1.png" id="1_jrvb4"]
+
+[node name="Slot11342Look3" type="Node2D"]
+
+[node name="Slot11342Look3Part1" type="Sprite2D" parent="."]
+position = Vector2(-15.75, -28.3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jrvb4")
+centered = false

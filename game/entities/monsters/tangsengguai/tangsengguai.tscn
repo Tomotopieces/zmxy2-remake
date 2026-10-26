@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part3_4.png" id="5_6hhra"]
 [ext_resource type="Script" path="res://src/puppet/equip_slot.gd" id="6_vv4ky"]
 [ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot505_1.tscn" id="7_4oqad"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot505_1_look2.tscn" id="look2_0g51m"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot505_1_look3.tscn" id="look3_bf95n"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot505_1_look4.tscn" id="look4_xpvrb"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/bag_tangseng_wait_part7.png" id="8_1b7h4"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_frame_59.png" id="9_ncnba"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_walk_part1.png" id="10_825is"]
@@ -18,9 +21,13 @@
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_walk_part5.png" id="14_p4yhd"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_walk_part6.png" id="15_t0jwx"]
 [ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot524_1.tscn" id="16_keg6l"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot524_1_look2.tscn" id="look2_9ei8f"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot524_1_look3.tscn" id="look3_gl73r"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot524_1_look4.tscn" id="look4_kgfnh"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_walk_part9.png" id="17_7i3gc"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit1_part1.png" id="18_ut8sd"]
 [ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot539_1.tscn" id="19_s5rac"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot539_1_look2.tscn" id="look2_09gad"]
 [ext_resource type="Texture2D" path="res://entities/monsters/tangsengguai/tex/tangsengguai_hit1_part3.png" id="20_tjrox"]
 [ext_resource type="Texture2D" path="res://entities/monsters/tangsengguai/tex/tangsengguai_hit1_part4.png" id="21_kium7"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_shadow_hit3_part2.png" id="22_u1ux1"]
@@ -29,6 +36,9 @@
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part4.png" id="25_ifaj3"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part5.png" id="26_kxxev"]
 [ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot556_1.tscn" id="27_7ysut"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot556_1_look2.tscn" id="look2_l3ebl"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot556_1_look3.tscn" id="look3_jlgmx"]
+[ext_resource type="PackedScene" path="res://entities/monsters/tangsengguai/slots/slot556_1_look4.tscn" id="look4_zj3au"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part9.png" id="28_or3sg"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit3_part8.png" id="29_of2oy"]
 [ext_resource type="Texture2D" path="res://entities/heroes/tangseng/tex/tangseng_hit4_part1.png" id="30_kp5vs"]
@@ -137,6 +147,35 @@ variants = {
 }
 metadata/fx_children = true
 
+
+[node name="WaitSlot1Look2" type="Node2D" parent="Puppet/Poses/Wait"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-1.4, 7.75)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look2_0g51m")
+}
+metadata/fx_children = true
+
+
+[node name="WaitSlot1Look3" type="Node2D" parent="Puppet/Poses/Wait"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-1.4, 7.75)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look3_bf95n")
+}
+metadata/fx_children = true
+
+
+[node name="WaitSlot1Look4" type="Node2D" parent="Puppet/Poses/Wait"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-1.4, 7.75)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look4_xpvrb")
+}
+metadata/fx_children = true
 [node name="WaitPart4" type="Sprite2D" parent="Puppet/Poses/Wait" unique_id=868967425]
 material = SubResource("ShaderMaterial_ker7v")
 position = Vector2(-25.800001, -51.2)
@@ -213,6 +252,35 @@ variants = {
 }
 metadata/fx_children = true
 
+
+[node name="WalkSlot1Look2" type="Node2D" parent="Puppet/Poses/Walk"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(2.4, 9.1)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look2_9ei8f")
+}
+metadata/fx_children = true
+
+
+[node name="WalkSlot1Look3" type="Node2D" parent="Puppet/Poses/Walk"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(2.4, 9.1)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look3_gl73r")
+}
+metadata/fx_children = true
+
+
+[node name="WalkSlot1Look4" type="Node2D" parent="Puppet/Poses/Walk"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(2.4, 9.1)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look4_kgfnh")
+}
+metadata/fx_children = true
 [node name="WalkPart8" type="Sprite2D" parent="Puppet/Poses/Walk" unique_id=904445263]
 material = SubResource("ShaderMaterial_ker7v")
 position = Vector2(-27.8, -50.2)
@@ -246,6 +314,15 @@ variants = {
 }
 metadata/fx_children = true
 
+
+[node name="Hit1Slot1Look2" type="Node2D" parent="Puppet/Poses/Hit1"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-0.45, 5)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look2_09gad")
+}
+metadata/fx_children = true
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=2120671181]
 material = SubResource("ShaderMaterial_ker7v")
 position = Vector2(-32.2794, -4.280401)
@@ -341,6 +418,35 @@ variants = {
 }
 metadata/fx_children = true
 
+
+[node name="Hit2Slot1Look2" type="Node2D" parent="Puppet/Poses/Hit2"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-0.25, 5.15)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look2_l3ebl")
+}
+metadata/fx_children = true
+
+
+[node name="Hit2Slot1Look3" type="Node2D" parent="Puppet/Poses/Hit2"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-0.25, 5.15)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look3_jlgmx")
+}
+metadata/fx_children = true
+
+
+[node name="Hit2Slot1Look4" type="Node2D" parent="Puppet/Poses/Hit2"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-0.25, 5.15)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look4_zj3au")
+}
+metadata/fx_children = true
 [node name="Hit2Part8" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1005821322]
 material = SubResource("ShaderMaterial_ker7v")
 position = Vector2(-25.95, -54.35)
@@ -494,6 +600,15 @@ variants = {
 }
 metadata/fx_children = true
 
+
+[node name="Hit4Slot1Look2" type="Node2D" parent="Puppet/Poses/Hit4"]
+material = SubResource("ShaderMaterial_ker7v")
+position = Vector2(-1.75, 5.95)
+script = ExtResource("6_vv4ky")
+variants = {
+1: ExtResource("look2_09gad")
+}
+metadata/fx_children = true
 [node name="Hit4Part2" type="Sprite2D" parent="Puppet/Poses/Hit4" unique_id=628152989]
 material = SubResource("ShaderMaterial_ker7v")
 position = Vector2(-32.258003, 10.927801)
