@@ -13,7 +13,8 @@ var music_volume := 0.6
 var sfx_volume := 1.0
 var muted := false
 
-var _music: AudioStreamPlayer
+var _music: AudioStreamPlayer   ## the tune playing (or fading in); the one it replaced fades out on its own player
+const MUSIC_FADE := 1.0         ## seconds of every music fade in / out (a change cross-fades)
 var _amb: AudioStreamPlayer
 const VOICES := 24         ## copies of one effect at once (AudioStreamPlayer.max_polyphony: the oldest gives way)
 const DUCK_TIME := 0.03    ## seconds for overlapping copies to ease to their shared level
@@ -28,9 +29,7 @@ var _cache := {}
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
-	_music = AudioStreamPlayer.new()
-	_music.bus = "Music"
-	add_child(_music)
+	_music = _music_player()
 	_amb = AudioStreamPlayer.new()
 	_amb.bus = "SFX"
 	add_child(_amb)
@@ -125,18 +124,41 @@ func _process(delta: float) -> void:
 			var p: AudioStreamPlayer = _players[key]
 			p.volume_linear = lerpf(p.volume_linear, _share(ends.size()) * float(p.get_meta(&"gain")), k)
 
-## loop: false for jingles (the game-over tune plays once).
+## loop: false for jingles (the game-over tune plays once). Fades in over MUSIC_FADE while the previous tune fades out.
 func music(sound: String, loop := true) -> void:
 	var s := _stream(sound)
 	if s == null or _music.stream == s and _music.playing:
 		return
 	if s is AudioStreamMP3 or s is AudioStreamOggVorbis:
 		s.loop = loop
+	stop_music()   # (leaves a fresh idle player in _music)
 	_music.stream = s
+	_music.volume_linear = 0.0
 	_music.play()
+	_fade(_music, 1.0)
 
+## Fades the tune out over MUSIC_FADE.
 func stop_music() -> void:
-	_music.stop()
+	if not _music.playing:
+		return
+	var old := _music
+	_music = _music_player()
+	_fade(old, 0.0).finished.connect(old.queue_free)
+
+func _music_player() -> AudioStreamPlayer:
+	var p := AudioStreamPlayer.new()
+	p.bus = "Music"
+	add_child(p)
+	return p
+
+func _fade(p: AudioStreamPlayer, to: float) -> Tween:
+	var running: Tween = p.get_meta(&"fade") if p.has_meta(&"fade") else null
+	if running and running.is_valid():
+		running.kill()   # a tune still fading in fades out from where it got to
+	var tw := p.create_tween().set_ignore_time_scale().set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tw.tween_property(p, "volume_linear", to, maxf(MUSIC_FADE * absf(to - p.volume_linear), 0.01))
+	p.set_meta(&"fade", tw)
+	return tw
 
 ## A quiet looping background sound of the stage (rain, river, fire...; "" = none). Plays on the SFX bus.
 func ambience(sound: String, volume_db := -18.0) -> void:

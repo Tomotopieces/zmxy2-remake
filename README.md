@@ -91,3 +91,4 @@ only show those characters.
 - Per attack (`AttackData`, group Feel): `hitstop` (s; x1.5 on a crit), `hitstop_once` (multi-hit moves stop on their first hit only), `shake` (camera trauma 0..1, once per round of hits), `rumble` (gamepad). Hit-stop freezes the whole fight (`Level.world`: actors, bullets, effects) while the level, camera shake, HUD and menus go on; it never touches `Engine.time_scale` and is skipped during a boss's bullet time.
 - Camera shake: trauma model in `Level` (offset = 24 px × trauma², smooth noise, 1.8 trauma/s decay). Pause menu: 画面震动 / 手柄震动 switches (`src/core/feel.gd`, saved in user://settings.cfg); pad rumble runs at half strength (`Feel.RUMBLE_SCALE`).
 - Sounds: hero move sounds and hit sounds on monsters vary within ±10 % (`Snd.sfx_varied`).
+- Music: `Snd.music()` fades a tune in over `MUSIC_FADE` (1 s) while the previous one fades out; `Snd.stop_music()` fades out (`src/core/sound.gd`).
