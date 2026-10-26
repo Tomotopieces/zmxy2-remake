@@ -56,7 +56,7 @@ func show_select_role() -> void:
 	s.chosen.connect(func(role: String):
 		GameState.new_game(role)
 		_fade.play(_after_new_game))
-	s.cancelled.connect(show_menu)
+	s.cancelled.connect(func(): _fade.play(show_menu))
 	_swap(s)
 
 ## New game: the opening comic once, then the map.
@@ -72,7 +72,7 @@ func _after_new_game() -> void:
 func show_map() -> void:
 	var m: StageMap = STAGE_MAP.instantiate()
 	m.play.connect(func(st: Vector2i): _fade.play(start_stage.bind(st)))
-	m.to_menu.connect(show_menu)
+	m.to_menu.connect(func(): _fade.play(show_menu))
 	_swap(m)
 
 func start_stage(s: Vector2i) -> void:
