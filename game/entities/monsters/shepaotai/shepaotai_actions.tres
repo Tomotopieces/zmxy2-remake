@@ -1,10 +1,10 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://jxaydxrh4m0"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/shepaotai/tex/shepaotai_wait_part1.png" id="1_sehm4"]
-[ext_resource type="Texture2D" path="res://entities/monsters/shepaotai/tex/shepaotai_hurt_part1.png" id="2_vvere"]
+[ext_resource type="Texture2D" uid="uid://dwjwx4lwcqs56" path="res://entities/monsters/shepaotai/tex/shepaotai_wait_part1.png" id="1_sehm4"]
+[ext_resource type="Texture2D" uid="uid://bp2tfl6j3rh6u" path="res://entities/monsters/shepaotai/tex/shepaotai_hurt_part1.png" id="2_vvere"]
 
 [sub_resource type="Animation" id="Animation_shbyi"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -206,7 +206,7 @@ tracks/8/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_4lx16"]
-length = 0.041666666666666664
+length = 0.04166666666666666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false

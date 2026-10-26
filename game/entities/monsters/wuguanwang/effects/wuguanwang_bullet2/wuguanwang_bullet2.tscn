@@ -1,20 +1,21 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://d3nuhe1ftngjp"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_ecxey"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet2/tex/wuguanwang_bullet2_frame.png" id="2_j4utw"]
+[ext_resource type="Texture2D" uid="uid://jop48tvpmh1r" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet2/tex/wuguanwang_bullet2_frame_4.png" id="2_ebvgk"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet2/wuguanwang_bullet2_actions.tres" id="3_tbqev"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ubknf"]
 resource_local_to_scene = true
+size = Vector2(88, 38.9)
 
 [node name="Monster67Bullet2" type="Node2D" unique_id=1110663449]
 script = ExtResource("1_ecxey")
 actions = PackedStringArray("default")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1988849678]
-position = Vector2(-64.95, -27.05)
+position = Vector2(-174.85, 94.8)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_j4utw")
+texture = ExtResource("2_ebvgk")
 centered = false
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=1959702963]
@@ -23,8 +24,8 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=2129842373]
+position = Vector2(-116, 111)
 shape = SubResource("RectangleShape2D_ubknf")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="." unique_id=1533096089]
 callback_mode_process = 0

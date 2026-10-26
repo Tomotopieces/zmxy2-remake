@@ -1,28 +1,22 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://cvceanvmvyo2d"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hurt_part1.png" id="1_g35h3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="2_01vlg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="3_4pjc0"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_3.png" id="4_q7uhl"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_4.png" id="5_4prm6"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_5.png" id="6_urr0n"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_6.png" id="7_v8d5d"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_7.png" id="8_toxt7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_8.png" id="9_y87fg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_9.png" id="10_0beir"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_10.png" id="11_met0i"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_11.png" id="12_vems7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4.png" id="13_eefnv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part2.png" id="14_08yu8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part3.png" id="15_c5ixq"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="16_e5vg4"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part4.png" id="17_crbes"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="18_202lh"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part3.png" id="19_3te2m"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1_2.png" id="20_j6vt2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part1.png" id="21_xnxst"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="22_yu8cx"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2_2.png" id="23_8y3dx"]
+[ext_resource type="Texture2D" uid="uid://dnh7ageu4umfk" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="2_01vlg"]
+[ext_resource type="Texture2D" uid="uid://b47kkjya6feyv" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="3_4pjc0"]
+[ext_resource type="Texture2D" uid="uid://bkh3hdca5g1m1" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_3.png" id="4_q7uhl"]
+[ext_resource type="Texture2D" uid="uid://b5viuoneltkl" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_4.png" id="5_4prm6"]
+[ext_resource type="Texture2D" uid="uid://bbuweorhykeor" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_5.png" id="6_urr0n"]
+[ext_resource type="Texture2D" uid="uid://bmi2dqto0oc2t" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_6.png" id="7_v8d5d"]
+[ext_resource type="Texture2D" uid="uid://bew05e3ihndd0" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_7.png" id="8_toxt7"]
+[ext_resource type="Texture2D" uid="uid://blp5ty0wwpu26" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_8.png" id="9_y87fg"]
+[ext_resource type="Texture2D" uid="uid://bssxhonngpc7u" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_9.png" id="10_0beir"]
+[ext_resource type="Texture2D" uid="uid://hasf8lwgjy8v" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_10.png" id="11_met0i"]
+[ext_resource type="Texture2D" uid="uid://d06ommsxp6aex" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_11.png" id="12_vems7"]
+[ext_resource type="Texture2D" uid="uid://bbxpsws50pwg7" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4.png" id="13_eefnv"]
+[ext_resource type="Texture2D" uid="uid://812v5rp4srs5" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="16_e5vg4"]
+[ext_resource type="Texture2D" uid="uid://cdox2b1idf4bs" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part3.png" id="19_3te2m"]
+[ext_resource type="Texture2D" uid="uid://bhex2762ejk1w" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1_2.png" id="20_j6vt2"]
+[ext_resource type="Texture2D" uid="uid://1aqclbreun54" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="22_yu8cx"]
+[ext_resource type="Texture2D" uid="uid://bb0fwmtdgko2o" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2_2.png" id="23_8y3dx"]
 
 [sub_resource type="Animation" id="Animation_sonvo"]
 length = 1.0416666666666667
@@ -269,7 +263,7 @@ tracks/10/keys = {
 "times": PackedFloat32Array(0.125, 0.1666667, 0.2083333, 0.25, 0.2916667, 0.3333333, 0.375, 0.4166667, 0.4583333, 0.5, 0.5416667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-91.70, 9.96), Vector2(-118.85, 11.30), Vector2(-152.40, 14.34), Vector2(-183.55, 12.48), Vector2(-213.45, 13.66), Vector2(-243.40, 14.68), Vector2(-273.75, 12.82), Vector2(-299.30, 13.50), Vector2(-334.45, 14.00), Vector2(-365.60, 12.66), Vector2(-395.50, 13.84)]
+"values": [Vector2(-91.7, 9.96), Vector2(-118.85, 11.3), Vector2(-152.4, 14.34), Vector2(-183.55, 12.48), Vector2(-213.45, 13.66), Vector2(-243.4, 14.68), Vector2(-273.75, 12.82), Vector2(-299.3, 13.5), Vector2(-334.45, 14), Vector2(-365.6, 12.66), Vector2(-395.5, 13.84)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -281,7 +275,7 @@ tracks/11/keys = {
 "times": PackedFloat32Array(0.125, 0.1666667, 0.2083333, 0.25, 0.2916667, 0.3333333, 0.375, 0.4166667, 0.4583333, 0.5, 0.5416667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(148.00, 102.36), Vector2(154.40, 105.04), Vector2(148.00, 111.12), Vector2(146.40, 107.40), Vector2(147.20, 109.76), Vector2(148.00, 111.80), Vector2(148.00, 108.08), Vector2(157.60, 109.44), Vector2(148.00, 110.44), Vector2(146.40, 107.76), Vector2(147.20, 110.12)]
+"values": [Vector2(148, 102.36), Vector2(154.4, 105.04), Vector2(148, 111.12), Vector2(146.4, 107.4), Vector2(147.2, 109.76), Vector2(148, 111.8), Vector2(148, 108.08), Vector2(157.6, 109.44), Vector2(148, 110.44), Vector2(146.4, 107.76), Vector2(147.2, 110.12)]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -601,7 +595,7 @@ tracks/19/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_qiq00"]
-length = 0.20833333333333334
+length = 0.20833333333333337
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

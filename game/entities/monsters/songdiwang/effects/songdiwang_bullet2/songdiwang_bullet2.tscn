@@ -1,49 +1,50 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://ba5ixvbelypjb"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_d0wqt"]
-[ext_resource type="Texture2D" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet2/tex/songdiwang_bullet2_frame_2.png" id="2_lgu1w"]
-[ext_resource type="Texture2D" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet2/tex/songdiwang_bullet2_frame.png" id="3_vktc5"]
+[ext_resource type="Texture2D" uid="uid://dpbxnv5gs4ysf" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet2/tex/songdiwang_bullet2_frame_2.png" id="2_lgu1w"]
+[ext_resource type="Texture2D" uid="uid://byhpj231c0aom" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet2/tex/songdiwang_bullet2_frame.png" id="3_vktc5"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet2/songdiwang_bullet2_actions.tres" id="4_8xbki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gloyr"]
 resource_local_to_scene = true
+size = Vector2(186.7, 118.6)
 
 [node name="Monster64Bullet2" type="Node2D" unique_id=1472529281]
 script = ExtResource("1_d0wqt")
 actions = PackedStringArray("default")
 
 [node name="Monster64Bullet2Part1" type="Sprite2D" parent="." unique_id=1188013511]
-position = Vector2(-6.891, -53.952)
-scale = Vector2(0.3285, 0.3285)
+position = Vector2(-524.311, -54.017)
+scale = Vector2(0.5975, 0.3285)
 texture = ExtResource("2_lgu1w")
 centered = false
 
 [node name="Monster64Bullet2Part2" type="Sprite2D" parent="." unique_id=753881412]
-position = Vector2(-68.55, -62)
+position = Vector2(-584.262, -62)
 scale = Vector2(0.3285, 0.3285)
 texture = ExtResource("3_vktc5")
 centered = false
 
 [node name="Monster64Bullet2Part3" type="Sprite2D" parent="." unique_id=1710425436]
-position = Vector2(-52.341, -2.352)
-scale = Vector2(0.3285, 0.3285)
+position = Vector2(-569.761, -2.417)
+scale = Vector2(0.5975, 0.3285)
 texture = ExtResource("2_lgu1w")
 centered = false
 
 [node name="Monster64Bullet2Part4" type="Sprite2D" parent="." unique_id=908176226]
-position = Vector2(-114, -10.4)
+position = Vector2(-629.712, -10.4)
 scale = Vector2(0.3285, 0.3285)
 texture = ExtResource("3_vktc5")
 centered = false
 
 [node name="Monster64Bullet2Part5" type="Sprite2D" parent="." unique_id=1995653913]
-position = Vector2(-23.941, 43.998)
-scale = Vector2(0.3285, 0.3285)
+position = Vector2(-541.361, 43.933)
+scale = Vector2(0.5975, 0.3285)
 texture = ExtResource("2_lgu1w")
 centered = false
 
 [node name="Monster64Bullet2Part6" type="Sprite2D" parent="." unique_id=340147428]
-position = Vector2(-85.6, 35.95)
+position = Vector2(-601.312, 35.95)
 scale = Vector2(0.3285, 0.3285)
 texture = ExtResource("3_vktc5")
 centered = false
@@ -54,8 +55,8 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" unique_id=934742507]
+position = Vector2(-123.7, -2.7)
 shape = SubResource("RectangleShape2D_gloyr")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="." unique_id=2101136793]
 callback_mode_process = 0

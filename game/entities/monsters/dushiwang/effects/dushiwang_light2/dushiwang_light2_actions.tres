@@ -1,6 +1,4 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/monsters/dushiwang/tex/dushiwang_light2_hit3_and1_part1.png" id="1_t410i"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://tsxdhcupmks4"]
 
 [sub_resource type="Animation" id="Animation_ojg36"]
 tracks/0/type = "value"

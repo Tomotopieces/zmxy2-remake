@@ -1,12 +1,10 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://dy0hgrfkolto0"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hurt_part1.png" id="1_o43n4"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1_3.png" id="2_36lak"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1.png" id="3_efoxj"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1_2.png" id="4_gm4ma"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part2.png" id="5_xphc3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part2_2.png" id="6_e2k25"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pitianfu/tex/pitianfu_walk_part1.png" id="7_gaubq"]
+[ext_resource type="Texture2D" uid="uid://b4hc8lbe4kfr1" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1_3.png" id="2_36lak"]
+[ext_resource type="Texture2D" uid="uid://4oss6ryhrxfg" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1.png" id="3_efoxj"]
+[ext_resource type="Texture2D" uid="uid://oxhxsem863go" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part1_2.png" id="4_gm4ma"]
+[ext_resource type="Texture2D" uid="uid://41wvh5xnsn56" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part2.png" id="5_xphc3"]
+[ext_resource type="Texture2D" uid="uid://bp7kbtd81ux8" path="res://entities/monsters/pitianfu/tex/pitianfu_hit1_part2_2.png" id="6_e2k25"]
 
 [sub_resource type="Animation" id="Animation_snohv"]
 length = 0.25
@@ -139,6 +137,7 @@ tracks/9/keys = {
 
 [sub_resource type="Animation" id="Animation_5vvsb"]
 length = 0.5833333333333334
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -146,10 +145,10 @@ tracks/0/path = NodePath("Poses/Hit1/Hit1Part1:texture")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_36lak"), ExtResource("3_efoxj"), ExtResource("3_efoxj"), ExtResource("4_gm4ma")]
+"values": [ExtResource("2_36lak"), ExtResource("3_efoxj"), ExtResource("4_gm4ma")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -170,10 +169,10 @@ tracks/2/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.33333334, 0.41666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, false]
+"values": [false, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -230,10 +229,10 @@ tracks/7/path = NodePath("Hitbox/Shape:disabled")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.29166666, 0.375, 0.41666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, false, false, false, true]
+"values": [true, false, true]
 }
 tracks/8/type = "value"
 tracks/8/imported = false

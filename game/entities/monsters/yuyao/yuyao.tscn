@@ -1,46 +1,47 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://bw1gsoamnislv"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_jk6yq"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_walk_part1.png" id="2_umjne"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_walk_part2.png" id="3_cddt2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_wait_part1_6.png" id="4_cdd3x"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_hurt_part1.png" id="5_0sdt1"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_hit1_part1.png" id="6_tkj0x"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="7_4awwu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_hit1_part2.png" id="8_qm141"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_dead_part1.png" id="9_cvept"]
-[ext_resource type="Texture2D" path="res://entities/monsters/yuyao/tex/yuyao_dead_part2.png" id="10_puajp"]
-[ext_resource type="AnimationLibrary" path="res://entities/monsters/yuyao/yuyao_actions.tres" id="11_g0r8f"]
+[ext_resource type="Texture2D" uid="uid://eb8tudsjfjui" path="res://entities/monsters/yuyao/tex/yuyao_walk_part1.png" id="2_umjne"]
+[ext_resource type="Texture2D" uid="uid://b2ejqigpk1i27" path="res://entities/monsters/yuyao/tex/yuyao_walk_part2.png" id="3_cddt2"]
+[ext_resource type="Texture2D" uid="uid://cbbgv1xv65eok" path="res://entities/monsters/yuyao/tex/yuyao_wait_part1_6.png" id="4_cdd3x"]
+[ext_resource type="Texture2D" uid="uid://bd4eyeh3yenxq" path="res://entities/monsters/yuyao/tex/yuyao_hurt_part1.png" id="5_0sdt1"]
+[ext_resource type="Texture2D" uid="uid://dsj2favuyhscx" path="res://entities/monsters/yuyao/tex/yuyao_hit1_part1.png" id="6_tkj0x"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="7_4awwu"]
+[ext_resource type="Texture2D" uid="uid://c4elalv7wmko5" path="res://entities/monsters/yuyao/tex/yuyao_dead_part1.png" id="9_cvept"]
+[ext_resource type="Texture2D" uid="uid://bipjifgp40ehl" path="res://entities/monsters/yuyao/tex/yuyao_hit1_part2_2.png" id="9_ek37m"]
+[ext_resource type="Texture2D" uid="uid://fxog6ru3ts82" path="res://entities/monsters/yuyao/tex/yuyao_dead_part2.png" id="10_puajp"]
+[ext_resource type="AnimationLibrary" uid="uid://brsiako3vb4jr" path="res://entities/monsters/yuyao/yuyao_actions.tres" id="11_g0r8f"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uy00m"]
 shader = ExtResource("7_4awwu")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(0.7964559, -0.01564177, 0.8140225, 0, 1.0135884, 0.74533844, -0.26213178, 0, -0.7900444, 0.2903033, 0.46810928, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(0.31101963, 0.31101963, 0.31101963, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_484r8"]
 resource_local_to_scene = true
+size = Vector2(121.3, 115)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0jsmk"]
 resource_local_to_scene = true
+size = Vector2(45, 90)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(45, 90)
 
-[node name="Monster63" type="CharacterBody2D"]
+[node name="Monster63" type="CharacterBody2D" unique_id=510475426]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=1381777136]
@@ -92,17 +93,20 @@ texture = ExtResource("6_tkj0x")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=326575682]
-modulate = Color(1, 1, 1, 0.371)
+visible = false
+modulate = Color(1, 1, 1, 0.078)
 material = SubResource("ShaderMaterial_uy00m")
-position = Vector2(-197.75, -32.65)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_qm141")
+position = Vector2(-155.65, 28.5)
+rotation = -0.8802828
+scale = Vector2(0.5000525, 0.5000525)
+texture = ExtResource("9_ek37m")
 centered = false
 
 [node name="Dead" type="Node2D" parent="Puppet/Poses" unique_id=2109111137]
 visible = false
 
 [node name="DeadPart1" type="Sprite2D" parent="Puppet/Poses/Dead" unique_id=1774039378]
+visible = false
 position = Vector2(-111.7, -53.05)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_cvept")
@@ -120,6 +124,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1203769752]
+position = Vector2(-71.2, 8.75)
 shape = SubResource("RectangleShape2D_484r8")
 disabled = true
 
@@ -129,13 +134,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1589092638]
+position = Vector2(0.7, -1)
 shape = SubResource("RectangleShape2D_0jsmk")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1597482192]
 callback_mode_process = 0
 libraries/ = ExtResource("11_g0r8f")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1151500120]
 position = Vector2(0.7, -1)
 shape = SubResource("RectangleShape2D_Body")

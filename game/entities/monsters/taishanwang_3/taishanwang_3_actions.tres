@@ -1,31 +1,40 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://db4o5mughgxyt"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hurt_part1.png" id="1_fpoji"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="2_7bx43"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="3_klqxr"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_3.png" id="4_ecihg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_4.png" id="5_h3aoy"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_5.png" id="6_y6c4u"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_6.png" id="7_t646x"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_7.png" id="8_80x55"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_8.png" id="9_hhu4t"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_9.png" id="10_0e1f3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_10.png" id="11_aafy1"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_11.png" id="12_jf5oo"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4.png" id="13_h4sv6"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit1_part4.png" id="14_0et0w"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part2.png" id="15_ykcal"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part3.png" id="16_sj3qw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="17_bworc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part4.png" id="18_4jnk8"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="19_5qm4a"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part3.png" id="20_37a63"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit2_part3.png" id="21_4voca"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit2_part3_2.png" id="22_r2dsu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1_2.png" id="23_1lot2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part1.png" id="24_4y1a2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="25_bv6em"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2_2.png" id="26_unl1k"]
+[ext_resource type="Texture2D" uid="uid://dnh7ageu4umfk" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="2_7bx43"]
+[ext_resource type="Texture2D" uid="uid://b47kkjya6feyv" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="3_klqxr"]
+[ext_resource type="Texture2D" uid="uid://bkh3hdca5g1m1" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_3.png" id="4_ecihg"]
+[ext_resource type="Texture2D" uid="uid://b5viuoneltkl" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_4.png" id="5_h3aoy"]
+[ext_resource type="Texture2D" uid="uid://bbuweorhykeor" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_5.png" id="6_y6c4u"]
+[ext_resource type="Texture2D" uid="uid://bmi2dqto0oc2t" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_6.png" id="7_t646x"]
+[ext_resource type="Texture2D" uid="uid://bew05e3ihndd0" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_7.png" id="8_80x55"]
+[ext_resource type="Texture2D" uid="uid://blp5ty0wwpu26" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_8.png" id="9_hhu4t"]
+[ext_resource type="Texture2D" uid="uid://bssxhonngpc7u" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_9.png" id="10_0e1f3"]
+[ext_resource type="Texture2D" uid="uid://hasf8lwgjy8v" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_10.png" id="11_aafy1"]
+[ext_resource type="Texture2D" uid="uid://d06ommsxp6aex" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_11.png" id="12_jf5oo"]
+[ext_resource type="Texture2D" uid="uid://bbxpsws50pwg7" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4.png" id="13_h4sv6"]
+[ext_resource type="Texture2D" uid="uid://b864aeprifvng" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit1_part4.png" id="14_0et0w"]
+[ext_resource type="Texture2D" uid="uid://812v5rp4srs5" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="17_bworc"]
+[ext_resource type="Texture2D" uid="uid://cdox2b1idf4bs" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part3.png" id="20_37a63"]
+[ext_resource type="Texture2D" uid="uid://brog5ulep5vug" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit2_part3.png" id="21_4voca"]
+[ext_resource type="Texture2D" uid="uid://e6ffag2fdbem" path="res://entities/monsters/taishanwang_3/tex/taishanwang_3_hit2_part3_2.png" id="22_r2dsu"]
+[ext_resource type="Texture2D" uid="uid://bhex2762ejk1w" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1_2.png" id="23_1lot2"]
+[ext_resource type="Texture2D" uid="uid://1aqclbreun54" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="25_bv6em"]
+[ext_resource type="Texture2D" uid="uid://bb0fwmtdgko2o" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2_2.png" id="26_unl1k"]
+
+[sub_resource type="Animation" id="Animation_7venu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-164.93, 9.48)]
+}
 
 [sub_resource type="Animation" id="Animation_fxbgl"]
 length = 1.0416666666666667
@@ -142,6 +151,7 @@ tracks/8/keys = {
 
 [sub_resource type="Animation" id="Animation_lorqp"]
 length = 1.2083333333333333
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -221,10 +231,10 @@ tracks/6/path = NodePath("Poses/Hit1/Hit1Part4:visible")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.125, 1.0416666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -269,10 +279,10 @@ tracks/10/path = NodePath("Poses/Hit1/Hit1Part5:visible")
 tracks/10/interp = 0
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.125, 1.0416666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -317,10 +327,10 @@ tracks/14/path = NodePath("Hitbox/Shape:position")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1.0416666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(11.6, 41.1), Vector2(21.1, 42.6), Vector2(11.6, 42), Vector2(11.65, 43.2), Vector2(11.6, 43.2), Vector2(11.65, 42.6), Vector2(11.6, 43.2), Vector2(11.55, 42.6), Vector2(11.6, 41.4), Vector2(11.6, 42), Vector2(11.65, 41.4), Vector2(11.6, 41.4), Vector2(11.65, 41.4), Vector2(11.6, 42), Vector2(11.55, 42), Vector2(11.6, 43.2), Vector2(11.55, 43.2), Vector2(11.65, 42.6), Vector2(11.6, 43.2), Vector2(11.6, 42.6), Vector2(11.6, 41.4), Vector2(11.55, 34.75)]
+"values": [Vector2(11.6, 41.1), Vector2(21.1, 42.6), Vector2(11.6, 42), Vector2(11.65, 43.2), Vector2(11.6, 43.2), Vector2(11.65, 42.6), Vector2(11.6, 43.2), Vector2(11.55, 42.6), Vector2(11.6, 41.4), Vector2(11.6, 42), Vector2(11.65, 41.4), Vector2(11.6, 41.4), Vector2(11.65, 41.4), Vector2(11.6, 42), Vector2(11.55, 42), Vector2(11.6, 43.2), Vector2(11.55, 43.2), Vector2(11.65, 42.6), Vector2(11.6, 43.2), Vector2(11.6, 42.6), Vector2(11.6, 41.4)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -329,10 +339,10 @@ tracks/15/path = NodePath("Hitbox/Shape:shape:size")
 tracks/15/interp = 0
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1.0416666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(464, 150), Vector2(483, 153), Vector2(502, 154.2), Vector2(540.1, 156.6), Vector2(580.6, 156.6), Vector2(623.5, 155.4), Vector2(661.4, 156.6), Vector2(706.7, 155.4), Vector2(744.8, 153), Vector2(782.8, 154.2), Vector2(823.3, 153), Vector2(866.2, 153), Vector2(904.3, 153), Vector2(949.4, 154.2), Vector2(987.5, 154.2), Vector2(1025.6, 156.6), Vector2(1066.1, 156.6), Vector2(1108.9, 155.4), Vector2(1147, 156.6), Vector2(1242.8, 155.4), Vector2(1242.8, 153), Vector2(436.7, 155.3)]
+"values": [Vector2(464, 150), Vector2(483, 153), Vector2(502, 154.2), Vector2(540.1, 156.6), Vector2(580.6, 156.6), Vector2(623.5, 155.4), Vector2(661.4, 156.6), Vector2(706.7, 155.4), Vector2(744.8, 153), Vector2(782.8, 154.2), Vector2(823.3, 153), Vector2(866.2, 153), Vector2(904.3, 153), Vector2(949.4, 154.2), Vector2(987.5, 154.2), Vector2(1025.6, 156.6), Vector2(1066.1, 156.6), Vector2(1108.9, 155.4), Vector2(1147, 156.6), Vector2(1242.8, 155.4), Vector2(1242.8, 153)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
@@ -341,10 +351,10 @@ tracks/16/path = NodePath("Hitbox/Shape:disabled")
 tracks/16/interp = 0
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1.0416666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.125, 1.0416666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+"values": [true, false, true]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
@@ -399,6 +409,7 @@ tracks/20/keys = {
 
 [sub_resource type="Animation" id="Animation_82a2f"]
 length = 3.25
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -454,10 +465,10 @@ tracks/4/path = NodePath("Poses/Hit2/Hit2Part3:visible")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.625, 1, 1.625, 2.25, 2.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.625, 1, 2.25, 2.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [true, false, true, true, false, true]
+"values": [true, false, true, false, true]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -490,10 +501,10 @@ tracks/7/path = NodePath("Poses/Hit2/Hit2Part4:visible")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.625, 1.625, 2.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [true, false, true, false]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -538,10 +549,10 @@ tracks/11/path = NodePath("Poses/Hit2/Hit2Part5:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.625, 0.9583333, 1, 2.25, 2.5833333, 2.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.625, 1, 2.25, 2.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, false, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -562,10 +573,10 @@ tracks/13/path = NodePath("Hitbox/Shape:position")
 tracks/13/interp = 0
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 2.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.625, 1, 2.25, 2.625, 2.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-156.93, 9.48), Vector2(-636.85, 9.48), Vector2(-66.9, 9.5)]
+"values": [Vector2(-156.93, 9.48), Vector2(-164.93, 9.48), Vector2(-66.9, 9.5), Vector2(-2.9000015, 9.5), Vector2(85.1, 9.5)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
@@ -574,10 +585,10 @@ tracks/14/path = NodePath("Hitbox/Shape:shape:size")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 2.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.625),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225.00, 180.00), Vector2(225, 180)]
+"values": [Vector2(225, 180)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -586,7 +597,7 @@ tracks/15/path = NodePath("Hitbox/Shape:disabled")
 tracks/15/interp = 0
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.625, 1, 2.25, 2.6666667),
+"times": PackedFloat32Array(0, 0.625, 1.0416666, 2.25, 2.7083333),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [true, false, true, false, true]
@@ -661,7 +672,7 @@ tracks/19/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_2ir6n"]
-length = 0.20833333333333334
+length = 0.20833333333333337
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -999,6 +1010,7 @@ tracks/10/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_7venu"),
 &"dead": SubResource("Animation_fxbgl"),
 &"hit1": SubResource("Animation_lorqp"),
 &"hit2": SubResource("Animation_82a2f"),

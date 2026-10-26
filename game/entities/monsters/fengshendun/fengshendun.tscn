@@ -1,24 +1,25 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://ckto18pot8rku"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_iwfqc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_walk_part1.png" id="2_i4fbr"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hurt_part1.png" id="3_5wfce"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part1.png" id="4_qrkax"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2.png" id="5_5epx1"]
+[ext_resource type="Texture2D" uid="uid://bqmp0kigxjtdk" path="res://entities/monsters/fengshendun/tex/fengshendun_walk_part1.png" id="2_i4fbr"]
+[ext_resource type="Texture2D" uid="uid://d1cvmx3x1m5o5" path="res://entities/monsters/fengshendun/tex/fengshendun_hurt_part1.png" id="3_5wfce"]
+[ext_resource type="Texture2D" uid="uid://chxhf0vx7rons" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part1.png" id="4_qrkax"]
 [ext_resource type="AnimationLibrary" path="res://entities/monsters/fengshendun/fengshendun_actions.tres" id="6_fvi2a"]
+[ext_resource type="Texture2D" uid="uid://djhmi15ib6wrn" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2_2.png" id="6_r4h64"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmc3x"]
 resource_local_to_scene = true
+size = Vector2(200, 47)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_neqw6"]
 resource_local_to_scene = true
+size = Vector2(84, 148)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(84, 148)
 
-[node name="Monster80" type="CharacterBody2D"]
+[node name="Monster80" type="CharacterBody2D" unique_id=848462886]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=1896871482]
@@ -46,18 +47,18 @@ texture = ExtResource("3_5wfce")
 centered = false
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=148994148]
-visible = false
 
 [node name="Hit1Part1" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=890024824]
-position = Vector2(-44.750004, -49.15)
+position = Vector2(-188.05, -49.15)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_qrkax")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=566282336]
-position = Vector2(-220.85, -38.5)
+visible = false
+position = Vector2(-224.5, -24.55)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_5epx1")
+texture = ExtResource("6_r4h64")
 centered = false
 
 [node name="Wait" type="Node2D" parent="Puppet/Poses" unique_id=1328546864]
@@ -84,6 +85,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=823848692]
+position = Vector2(-102.8, 2)
 shape = SubResource("RectangleShape2D_bmc3x")
 disabled = true
 
@@ -93,13 +95,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1619342729]
+position = Vector2(2, 4.1)
 shape = SubResource("RectangleShape2D_neqw6")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=170144805]
 callback_mode_process = 0
 libraries/ = ExtResource("6_fvi2a")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1661470538]
 position = Vector2(2, 4.1)
 shape = SubResource("RectangleShape2D_Body")

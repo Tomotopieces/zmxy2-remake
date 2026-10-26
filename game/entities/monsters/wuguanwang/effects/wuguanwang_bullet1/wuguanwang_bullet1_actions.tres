@@ -1,16 +1,32 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://mkhivo5dg6q"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame.png" id="1_p8evc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_2.png" id="2_pploa"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_3.png" id="3_7ib2l"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_4.png" id="4_17j78"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_5.png" id="5_qbob0"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_6.png" id="6_utq4n"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_7.png" id="7_rbb53"]
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_8.png" id="8_3b3jb"]
+[ext_resource type="Texture2D" uid="uid://dgq0tfbnwxrea" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame.png" id="1_p8evc"]
+[ext_resource type="Texture2D" uid="uid://di4rqeb0cwauy" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_2.png" id="2_pploa"]
+[ext_resource type="Texture2D" uid="uid://dxrodxx8ry87p" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_3.png" id="3_7ib2l"]
+[ext_resource type="Texture2D" uid="uid://csu0psrqyldl8" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_4.png" id="4_17j78"]
+[ext_resource type="Texture2D" uid="uid://dr3wwpbsge663" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_5.png" id="5_qbob0"]
+[ext_resource type="Texture2D" uid="uid://bf6s3thows32i" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_6.png" id="6_utq4n"]
+[ext_resource type="Texture2D" uid="uid://buolairygnegk" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_7.png" id="7_rbb53"]
+[ext_resource type="Texture2D" uid="uid://c40lma0i43kj1" path="res://entities/monsters/wuguanwang/effects/wuguanwang_bullet1/tex/wuguanwang_bullet1_frame_8.png" id="8_3b3jb"]
+
+[sub_resource type="Animation" id="Animation_kc5n8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_p0fvm"]
 length = 0.9166666666666666
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -66,10 +82,10 @@ tracks/4/path = NodePath("Hitbox/Shape:disabled")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.875),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false]
+"values": [false, true]
 }
 tracks/5/type = "method"
 tracks/5/imported = false
@@ -102,5 +118,6 @@ tracks/6/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_kc5n8"),
 &"default": SubResource("Animation_p0fvm")
 }

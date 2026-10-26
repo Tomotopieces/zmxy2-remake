@@ -1,53 +1,52 @@
-[gd_scene format=3]
-
-[ext_resource type="Script" path="res://src/actors/monster.gd" id="actor_logic"]
+[gd_scene format=3 uid="uid://bn4ijwbsa7kq8"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_em6bw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part1.png" id="2_3lse6"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="3_n4dxv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="4_ffgma"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hurt_part1.png" id="5_175e5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part2.png" id="6_ubb8y"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part3.png" id="7_bkbmg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_2.png" id="8_l1o01"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="9_i2uve"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="10_aqkee"]
-[ext_resource type="Texture2D" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part4.png" id="11_gbxgi"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="12_otda6"]
-[ext_resource type="AnimationLibrary" path="res://entities/monsters/taishanwang_3/taishanwang_3_actions.tres" id="13_2ba1h"]
+[ext_resource type="Texture2D" uid="uid://k3ml0njrodcu" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part1.png" id="2_3lse6"]
+[ext_resource type="Texture2D" uid="uid://1aqclbreun54" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_walk_part2.png" id="3_n4dxv"]
+[ext_resource type="Texture2D" uid="uid://dnh7ageu4umfk" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_wait_part1.png" id="4_ffgma"]
+[ext_resource type="Texture2D" uid="uid://dkwonwi7wkxru" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hurt_part1.png" id="5_175e5"]
+[ext_resource type="Texture2D" uid="uid://f8vomw4ldq64" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part2.png" id="6_ubb8y"]
+[ext_resource type="Texture2D" uid="uid://deltk4r5mhtm4" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part3.png" id="7_bkbmg"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="9_i2uve"]
+[ext_resource type="Texture2D" uid="uid://d06ommsxp6aex" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit1_part4_11.png" id="9_yu4ge"]
+[ext_resource type="Texture2D" uid="uid://812v5rp4srs5" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part1.png" id="10_aqkee"]
+[ext_resource type="Texture2D" uid="uid://d0yycu8wx7e8i" path="res://entities/monsters/taishanwang_1/tex/taishanwang_1_hit2_part4.png" id="11_gbxgi"]
+[ext_resource type="Texture2D" uid="uid://qok8bkml73uu" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="12_otda6"]
+[ext_resource type="AnimationLibrary" uid="uid://db4o5mughgxyt" path="res://entities/monsters/taishanwang_3/taishanwang_3_actions.tres" id="13_2ba1h"]
+[ext_resource type="Script" uid="uid://dgv3nlp3cehov" path="res://src/actors/monster.gd" id="actor_logic"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ndh4"]
 shader = ExtResource("9_i2uve")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 93.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 94.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_se7hc"]
 shader = ExtResource("9_i2uve")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 21.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 22.0
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ssqt1"]
@@ -55,14 +54,16 @@ blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twtla"]
 resource_local_to_scene = true
+size = Vector2(225, 180)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xsxta"]
 resource_local_to_scene = true
+size = Vector2(100, 200)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_Body"]
 size = Vector2(100, 200)
 
-[node name="Monster75" type="CharacterBody2D"]
+[node name="Monster75" type="CharacterBody2D" unique_id=1695173624]
 script = ExtResource("actor_logic")
 
 [node name="Puppet" type="Node2D" parent="." unique_id=991688954]
@@ -114,41 +115,50 @@ texture = ExtResource("4_ffgma")
 centered = false
 
 [node name="Hit1Part2" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=1220425934]
+visible = false
 position = Vector2(-75.825, -109.625)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("6_ubb8y")
 centered = false
 
 [node name="Hit1Part3" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=264654056]
+visible = false
 position = Vector2(-56.025, -182.225)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("7_bkbmg")
 centered = false
 
 [node name="Hit1Part4" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=977484414]
-position = Vector2(-206.775, -42.905)
+visible = false
+modulate = Color(1, 1, 1, 0.219)
+position = Vector2(-707.4, -42.905)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("8_l1o01")
+texture = ExtResource("9_yu4ge")
 centered = false
 
 [node name="Hit1Part5" type="Sprite2D" parent="Puppet/Poses/Hit1" unique_id=795926797]
-position = Vector2(229.95, -41.105)
+visible = false
+modulate = Color(1, 1, 1, 0.219)
+position = Vector2(730.575, -41.105)
 rotation = 3.1415927
 scale = Vector2(0.6, -0.6)
-texture = ExtResource("8_l1o01")
+texture = ExtResource("9_yu4ge")
 centered = false
 
 [node name="Hit2" type="Node2D" parent="Puppet/Poses" unique_id=1022837969]
 visible = false
 
 [node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=571640722]
+visible = false
 material = SubResource("ShaderMaterial_2ndh4")
-position = Vector2(-260.5, -104)
-scale = Vector2(1.061, 0.75)
+position = Vector2(63.575, -111.05)
+rotation = 3.1415927
+scale = Vector2(1.061, -0.75)
 texture = ExtResource("10_aqkee")
 centered = false
 
 [node name="Hit2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=179092546]
+visible = false
 material = SubResource("ShaderMaterial_se7hc")
 position = Vector2(105.125, -104)
 rotation = 3.1415927
@@ -169,10 +179,13 @@ rotation = 0.58800256
 scale = Vector2(0.33892182, 0.33892182)
 texture = ExtResource("11_gbxgi")
 centered = false
+offset = Vector2(1535, 0)
 region_enabled = true
+region_rect = Rect2(1535, 0, 385, 385)
 
 [node name="Hit2Part5" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=1199492477]
-position = Vector2(-269.425, -80.538)
+visible = false
+position = Vector2(-129.475, -80.538)
 scale = Vector2(12.5, 0.9185)
 texture = ExtResource("12_otda6")
 centered = false
@@ -192,6 +205,7 @@ collision_mask = 0
 monitorable = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hitbox" unique_id=1594651112]
+position = Vector2(-164.93, 9.48)
 shape = SubResource("RectangleShape2D_twtla")
 disabled = true
 
@@ -201,13 +215,13 @@ collision_mask = 0
 monitoring = false
 
 [node name="Shape" type="CollisionShape2D" parent="Puppet/Hurtbox" unique_id=1975915751]
+position = Vector2(0.4, 9)
 shape = SubResource("RectangleShape2D_xsxta")
-disabled = true
 
 [node name="Anim" type="AnimationPlayer" parent="Puppet" unique_id=1869142140]
 callback_mode_process = 0
 libraries/ = ExtResource("13_2ba1h")
 
-[node name="Body" type="CollisionShape2D" parent="."]
+[node name="Body" type="CollisionShape2D" parent="." unique_id=1515529754]
 position = Vector2(0.4, 9)
 shape = SubResource("RectangleShape2D_Body")

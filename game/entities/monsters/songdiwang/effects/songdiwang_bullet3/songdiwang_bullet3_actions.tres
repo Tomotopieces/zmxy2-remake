@@ -1,9 +1,8 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/monsters/songdiwang/effects/songdiwang_bullet3/tex/songdiwang_bullet3_frame.png" id="1_gp5g3"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://csmi04dvtnl5j"]
 
 [sub_resource type="Animation" id="Animation_5mn1o"]
 length = 0.4166666666666667
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -11,10 +10,10 @@ tracks/0/path = NodePath("Sprite:visible")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, true, false, true, true]
+"values": [true, false, true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -47,10 +46,10 @@ tracks/3/path = NodePath("Hitbox/Shape:position")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.25, 0.29166666, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.25, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-101.05, -0.75), Vector2(-78.9, 53.65), Vector2(-64.6, -39.8), Vector2(-53.45, -1.15), Vector2(-102.7, -1.15)]
+"values": [Vector2(-101.05, -0.75), Vector2(-78.9, 53.65), Vector2(-64.6, -39.8), Vector2(-102.7, -1.15)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -59,10 +58,10 @@ tracks/4/path = NodePath("Hitbox/Shape:shape:size")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.25, 0.29166666, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.25, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(88.5, 176.5), Vector2(127.2, 112.1), Vector2(194.2, 177), Vector2(171.9, 115.3), Vector2(73.4, 115.3)]
+"values": [Vector2(88.5, 176.5), Vector2(127.2, 112.1), Vector2(194.2, 177), Vector2(73.4, 115.3)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -71,10 +70,10 @@ tracks/5/path = NodePath("Hitbox/Shape:disabled")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.16666667, 0.25, 0.29166666, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, false, true, false, false, false]
+"values": [false, true, false]
 }
 tracks/6/type = "method"
 tracks/6/imported = false

@@ -1,9 +1,35 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://dupnfvlekfbb7"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/wuguanwang/tex/wuguanwang_hit1_part2.png" id="1_qt1xb"]
+[sub_resource type="Animation" id="Animation_ai8c5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/Shape:shape:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(105.1, 180)]
+}
 
 [sub_resource type="Animation" id="Animation_6whfk"]
 length = 0.5416666666666666
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -83,10 +109,10 @@ tracks/6/path = NodePath("Hitbox/Shape:position")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833334, 0.25, 0.2916667, 0.33333334, 0.375, 0.4166667, 0.45833334, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-27.85, 3.85), Vector2(-27.85, 11.5), Vector2(-67.8, 3.8), Vector2(-107.7, 3.85), Vector2(-147.65, 3.85), Vector2(-187.6, 3.85), Vector2(-227.6, 3.8), Vector2(-267.55, 3.85), Vector2(-307.45, 3.85), Vector2(-347.4, 3.9), Vector2(-387.35, 3.8), Vector2(-414.7, 3.8), Vector2(-414.7, 9.05)]
+"values": [Vector2(7.500001, 4), Vector2(-32, 3), Vector2(-73, 3.8), Vector2(-112.5, 3.85), Vector2(-153, 3.85), Vector2(-192, 3.85), Vector2(-232, 3.4999971), Vector2(-272, 3.9999943), Vector2(-312.5, 3.9999943), Vector2(-352, 3.5000057), Vector2(-391.5, 3.9999971), Vector2(-419, 3.4999962), Vector2(-446, 3.5000124)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -95,10 +121,10 @@ tracks/7/path = NodePath("Hitbox/Shape:shape:size")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5),
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833334, 0.25, 0.2916667, 0.33333334, 0.375, 0.4166667, 0.45833334, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(105.1, 268.3), Vector2(105.1, 283.6), Vector2(108, 299), Vector2(111, 329.7), Vector2(113.9, 360.3), Vector2(116.8, 390.9), Vector2(119.8, 421.6), Vector2(122.7, 452.3), Vector2(125.7, 482.9), Vector2(128.6, 513.6), Vector2(131.5, 544.2), Vector2(133.6, 565.2), Vector2(133.6, 575.7)]
+"values": [Vector2(73, 180), Vector2(74, 210), Vector2(78, 240.4), Vector2(81, 272.3), Vector2(84, 302.3), Vector2(86, 332.3), Vector2(88, 363), Vector2(92.000015, 394), Vector2(95.000015, 424), Vector2(97.99999, 455), Vector2(98.999985, 486), Vector2(102.00001, 507), Vector2(104.00001, 527)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -143,5 +169,6 @@ tracks/10/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_ai8c5"),
 &"default": SubResource("Animation_6whfk")
 }

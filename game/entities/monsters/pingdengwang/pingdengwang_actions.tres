@@ -1,88 +1,98 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bd8drbhrwqmd1"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1.png" id="1_aikem"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_2.png" id="2_wedb5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_3.png" id="3_naqlp"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_4.png" id="4_dh5e2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_5.png" id="5_vyfg5"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_6.png" id="6_raepw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_7.png" id="7_b3i1d"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_8.png" id="8_5mvwu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_9.png" id="9_hoqky"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_10.png" id="10_6m0d8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_11.png" id="11_dkfyb"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_12.png" id="12_grrca"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_13.png" id="13_ko1m4"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_14.png" id="14_7p87u"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_15.png" id="15_mt4vo"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_16.png" id="16_6flfj"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_17.png" id="17_x6p02"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_18.png" id="18_ad0ur"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_19.png" id="19_6iy11"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_20.png" id="20_1ary3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1.png" id="21_l2jol"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_2.png" id="22_dgojb"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_3.png" id="23_csicp"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_4.png" id="24_67b2m"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_5.png" id="25_recjd"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_6.png" id="26_ip5jg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_7.png" id="27_7r8r7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_8.png" id="28_u3snk"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_9.png" id="29_dj120"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_10.png" id="30_xuy2j"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_11.png" id="31_6b2ij"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_12.png" id="32_omrtv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part2.png" id="33_3cadu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part2_2.png" id="34_fittc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1.png" id="35_c324p"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_2.png" id="36_dncv0"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_3.png" id="37_71yb7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_4.png" id="38_oc1ka"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part3.png" id="39_jxnqy"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part4.png" id="40_7pc0q"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part5.png" id="41_m3ghk"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part2.png" id="42_4tutk"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part1.png" id="43_ao8g2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2.png" id="44_ujkbq"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2_2.png" id="45_mup7o"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2_3.png" id="46_cs3yl"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part1.png" id="47_nxpfb"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part2.png" id="48_glew2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part3.png" id="49_nl4s2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part3_2.png" id="50_d6tv2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part1.png" id="51_chdoa"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part2.png" id="52_i0y72"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part3.png" id="53_0wdr3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part3_2.png" id="54_skwmh"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1.png" id="55_wjkvy"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_2.png" id="56_mkafg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_3.png" id="57_7q3at"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_4.png" id="58_h6ryc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part1.png" id="59_0t41j"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part1_2.png" id="60_kq6do"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part4.png" id="61_pbbuu"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part3.png" id="62_7jv72"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part2.png" id="63_merku"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part1.png" id="64_0jg6b"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part1_2.png" id="65_blrdg"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part4.png" id="66_bx76t"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part2.png" id="67_0btwq"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part3.png" id="68_nmo6i"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part1.png" id="69_wi0ha"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10.png" id="70_7ju7o"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10_2.png" id="71_wmllt"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10_3.png" id="72_1y3bl"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hurt_part1.png" id="73_jhbul"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1.png" id="74_4fvk2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_2.png" id="75_2f3x2"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_3.png" id="76_gpl06"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_4.png" id="77_s81fi"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_5.png" id="78_1h7ut"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_6.png" id="79_ruqud"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1.png" id="80_ur5oa"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_2.png" id="81_uryfd"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_3.png" id="82_m20l1"]
-[ext_resource type="Texture2D" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_4.png" id="83_mw8bq"]
+[ext_resource type="Texture2D" uid="uid://tjrajv3y8kb8" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1.png" id="1_aikem"]
+[ext_resource type="Texture2D" uid="uid://6shkgncmfasm" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_2.png" id="2_wedb5"]
+[ext_resource type="Texture2D" uid="uid://bccokrydw35gy" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_3.png" id="3_naqlp"]
+[ext_resource type="Texture2D" uid="uid://dta5f1i3i8uyo" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_4.png" id="4_dh5e2"]
+[ext_resource type="Texture2D" uid="uid://cgde3uhoi7rop" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_5.png" id="5_vyfg5"]
+[ext_resource type="Texture2D" uid="uid://baj66d7ffyhtb" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_6.png" id="6_raepw"]
+[ext_resource type="Texture2D" uid="uid://tfqsvd5y8kd" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_7.png" id="7_b3i1d"]
+[ext_resource type="Texture2D" uid="uid://gply6rxm8ygj" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_8.png" id="8_5mvwu"]
+[ext_resource type="Texture2D" uid="uid://cbccktgtusyag" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_9.png" id="9_hoqky"]
+[ext_resource type="Texture2D" uid="uid://2sox8pd4cpjq" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_10.png" id="10_6m0d8"]
+[ext_resource type="Texture2D" uid="uid://lspr4vbc276p" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_11.png" id="11_dkfyb"]
+[ext_resource type="Texture2D" uid="uid://duw1oy14fy0v6" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_12.png" id="12_grrca"]
+[ext_resource type="Texture2D" uid="uid://dt8ckngpdug0u" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_13.png" id="13_ko1m4"]
+[ext_resource type="Texture2D" uid="uid://b5o6v0hoqngl4" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_14.png" id="14_7p87u"]
+[ext_resource type="Texture2D" uid="uid://cy6juf6rt5vap" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_15.png" id="15_mt4vo"]
+[ext_resource type="Texture2D" uid="uid://btpxdirw4iwbo" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_16.png" id="16_6flfj"]
+[ext_resource type="Texture2D" uid="uid://c7gr8i7tjoleb" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_17.png" id="17_x6p02"]
+[ext_resource type="Texture2D" uid="uid://b3vn23sine84v" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_18.png" id="18_ad0ur"]
+[ext_resource type="Texture2D" uid="uid://dpc0apl4vwq6b" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_19.png" id="19_6iy11"]
+[ext_resource type="Texture2D" uid="uid://b46qcwnb6xmkx" path="res://entities/monsters/pingdengwang/tex/pingdengwang_dead_part1_20.png" id="20_1ary3"]
+[ext_resource type="Texture2D" uid="uid://bj6ndl04otr87" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1.png" id="21_l2jol"]
+[ext_resource type="Texture2D" uid="uid://dphnlt53d04i8" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_2.png" id="22_dgojb"]
+[ext_resource type="Texture2D" uid="uid://c74np58exvuke" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_3.png" id="23_csicp"]
+[ext_resource type="Texture2D" uid="uid://cl376or244lq2" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_4.png" id="24_67b2m"]
+[ext_resource type="Texture2D" uid="uid://gj832fstc2r3" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_5.png" id="25_recjd"]
+[ext_resource type="Texture2D" uid="uid://bah2cy0l83eme" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_6.png" id="26_ip5jg"]
+[ext_resource type="Texture2D" uid="uid://bxdjl0qsnhr5m" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_7.png" id="27_7r8r7"]
+[ext_resource type="Texture2D" uid="uid://dd587kxv6bqmd" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_8.png" id="28_u3snk"]
+[ext_resource type="Texture2D" uid="uid://4cmahqruv86o" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_9.png" id="29_dj120"]
+[ext_resource type="Texture2D" uid="uid://bk810ob8twvax" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_10.png" id="30_xuy2j"]
+[ext_resource type="Texture2D" uid="uid://gw1jshknreqy" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_11.png" id="31_6b2ij"]
+[ext_resource type="Texture2D" uid="uid://cxqoglnvi8cbr" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part1_12.png" id="32_omrtv"]
+[ext_resource type="Texture2D" uid="uid://4ro6d2e3h7g5" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part2.png" id="33_3cadu"]
+[ext_resource type="Texture2D" uid="uid://ci8eoc1q1ags5" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit1_part2_2.png" id="34_fittc"]
+[ext_resource type="Texture2D" uid="uid://d4i87mkgr7kt8" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1.png" id="35_c324p"]
+[ext_resource type="Texture2D" uid="uid://bnp4v8wbn3u1q" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_2.png" id="36_dncv0"]
+[ext_resource type="Texture2D" uid="uid://ddwp5rj013k1t" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_3.png" id="37_71yb7"]
+[ext_resource type="Texture2D" uid="uid://bma8aeleb01g4" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_part1_4.png" id="38_oc1ka"]
+[ext_resource type="Texture2D" uid="uid://dishnspbl4t7b" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2.png" id="44_ujkbq"]
+[ext_resource type="Texture2D" uid="uid://c0r7n2lyt1sgr" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2_2.png" id="45_mup7o"]
+[ext_resource type="Texture2D" uid="uid://dy30j6x051qam" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and1_part2_3.png" id="46_cs3yl"]
+[ext_resource type="Texture2D" uid="uid://cwpo63x8eyti1" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part3.png" id="49_nl4s2"]
+[ext_resource type="Texture2D" uid="uid://bahc3lxtg2jrd" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and2_part3_2.png" id="50_d6tv2"]
+[ext_resource type="Texture2D" uid="uid://7xp8i08vdima" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part3.png" id="53_0wdr3"]
+[ext_resource type="Texture2D" uid="uid://dvtcv3gn05cpw" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and3_part3_2.png" id="54_skwmh"]
+[ext_resource type="Texture2D" uid="uid://rcgc5uebrn6e" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1.png" id="55_wjkvy"]
+[ext_resource type="Texture2D" uid="uid://cxgu2mjatrnk3" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_2.png" id="56_mkafg"]
+[ext_resource type="Texture2D" uid="uid://bjfxp6spr1fxq" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_3.png" id="57_7q3at"]
+[ext_resource type="Texture2D" uid="uid://b2vmmcon8wayi" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit2_and4_part1_4.png" id="58_h6ryc"]
+[ext_resource type="Texture2D" uid="uid://dvhfmvaq4a6bn" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part1.png" id="59_0t41j"]
+[ext_resource type="Texture2D" uid="uid://b4vbg8hyukl04" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit3_part1_2.png" id="60_kq6do"]
+[ext_resource type="Texture2D" uid="uid://4dn538sc057" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part1.png" id="64_0jg6b"]
+[ext_resource type="Texture2D" uid="uid://ce5ydnuetgnau" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit4_part1_2.png" id="65_blrdg"]
+[ext_resource type="Texture2D" uid="uid://dhceh24aldxoa" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10.png" id="70_7ju7o"]
+[ext_resource type="Texture2D" uid="uid://cvkr0ibs0o7bf" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10_2.png" id="71_wmllt"]
+[ext_resource type="Texture2D" uid="uid://d1gn118akuls3" path="res://entities/monsters/pingdengwang/tex/pingdengwang_hit5_part10_3.png" id="72_1y3bl"]
+[ext_resource type="Texture2D" uid="uid://c5o7w7v60vfem" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1.png" id="74_4fvk2"]
+[ext_resource type="Texture2D" uid="uid://cgtn8t557jhj4" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_2.png" id="75_2f3x2"]
+[ext_resource type="Texture2D" uid="uid://dt0turbuipqnb" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_3.png" id="76_gpl06"]
+[ext_resource type="Texture2D" uid="uid://dmjrxwyvbknu8" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_4.png" id="77_s81fi"]
+[ext_resource type="Texture2D" uid="uid://bcl62yqu6iurr" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_5.png" id="78_1h7ut"]
+[ext_resource type="Texture2D" uid="uid://bgllyritwn5om" path="res://entities/monsters/pingdengwang/tex/pingdengwang_wait_part1_6.png" id="79_ruqud"]
+[ext_resource type="Texture2D" uid="uid://8yhux6xfcor3" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1.png" id="80_ur5oa"]
+[ext_resource type="Texture2D" uid="uid://d243tly0eo5g1" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_2.png" id="81_uryfd"]
+[ext_resource type="Texture2D" uid="uid://btalqy6s6war1" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_3.png" id="82_m20l1"]
+[ext_resource type="Texture2D" uid="uid://b26rhtwhg24yw" path="res://entities/monsters/pingdengwang/tex/pingdengwang_walk_part1_4.png" id="83_mw8bq"]
+
+[sub_resource type="Animation" id="Animation_8dxs8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:shape:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(794.9, 67.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/Shape:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-16.35, 27)]
+}
 
 [sub_resource type="Animation" id="Animation_m1e8y"]
 length = 1.0416666666666667
@@ -211,6 +221,7 @@ tracks/9/keys = {
 
 [sub_resource type="Animation" id="Animation_07xyd"]
 length = 1.8333333333333333
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -242,10 +253,10 @@ tracks/2/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.33333334, 0.41666666, 0.875, 0.9583333, 1.0416666, 1.5, 1.5833334, 1.6666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666, 0.875, 1.0416666, 1.5, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, false, true, true, false, true, true, false]
+"values": [false, true, false, true, false, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -254,10 +265,10 @@ tracks/3/path = NodePath("Poses/Hit1/Hit1Part2:texture")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.25, 0.33333334, 0.875, 0.9583333, 1.5, 1.5833334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 1.5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("33_3cadu"), ExtResource("33_3cadu"), ExtResource("33_3cadu"), ExtResource("33_3cadu"), ExtResource("34_fittc"), ExtResource("34_fittc")]
+"values": [ExtResource("33_3cadu"), ExtResource("34_fittc")]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -266,10 +277,10 @@ tracks/4/path = NodePath("Poses/Hit1/Hit1Part2:transform")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0.25, 0.33333334, 0.875, 0.9583333, 1.5, 1.5833334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 0.33333334, 0.875, 0.9583333, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Transform2D(0.5, 0, 0, 0.5, -168.8, -1.55), Transform2D(0.5, 0, 0, 0.5, -216, -1.55), Transform2D(0.5, 0, 0, 0.5, -168.8, -1.55), Transform2D(0.5, 0, 0, 0.5, -216, -1.55), Transform2D(0.5, 0, 0, 0.5, -160.05, -59.15), Transform2D(0.5, 0, 0, 0.5, -160.05, -59.15)]
+"values": [Transform2D(0.5, 0, 0, 0.5, -168.8, -1.55), Transform2D(0.5, 0, 0, 0.5, -216, -1.55), Transform2D(0.5, 0, 0, 0.5, -168.8, -1.55), Transform2D(0.5, 0, 0, 0.5, -216, -1.55), Transform2D(0.5, 0, 0, 0.5, -160.05, -59.15)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -290,10 +301,10 @@ tracks/6/path = NodePath("Hitbox/Shape:position")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0.25, 0.33333334, 0.41666666, 0.875, 0.9583333, 1.0416666, 1.5, 1.6666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 0.33333334, 0.875, 0.9583333, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-121.3, 25.4), Vector2(-123.3, 25.4), Vector2(-117.3, 25.4), Vector2(-121.3, 25.4), Vector2(-123.3, 25.4), Vector2(-117.3, 25.4), Vector2(-90, 14.8), Vector2(-84.25, 16.3)]
+"values": [Vector2(-121.3, 25.4), Vector2(-123.3, 25.4), Vector2(-121.3, 25.4), Vector2(-123.3, 25.4), Vector2(-90, 14.8)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -302,10 +313,10 @@ tracks/7/path = NodePath("Hitbox/Shape:shape:size")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0.25, 0.33333334, 0.41666666, 0.875, 0.9583333, 1.0416666, 1.5, 1.6666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 0.33333334, 0.875, 0.9583333, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(87, 42), Vector2(91, 42), Vector2(103, 54), Vector2(87, 42), Vector2(91, 42), Vector2(103, 54), Vector2(101, 128), Vector2(151.5, 150.8)]
+"values": [Vector2(87, 42), Vector2(91, 42), Vector2(87, 42), Vector2(91, 42), Vector2(101, 128)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -314,10 +325,10 @@ tracks/8/path = NodePath("Hitbox/Shape:disabled")
 tracks/8/interp = 0
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.33333334, 0.41666666, 0.625, 0.875, 0.9583333, 1.0416666, 1.25, 1.5, 1.6666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666, 0.875, 1.0416666, 1.5, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [true, false, false, false, true, false, false, false, true, false, false]
+"values": [true, false, true, false, true, false, true]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -1387,6 +1398,7 @@ tracks/8/keys = {
 
 [sub_resource type="Animation" id="Animation_oc8dg"]
 length = 2.875
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1394,10 +1406,10 @@ tracks/0/path = NodePath("Poses/Hit3/Hit3Part1:visible")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.7083333),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true]
+"values": [false, true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1454,10 +1466,10 @@ tracks/5/path = NodePath("Poses/Hit3/Hit3Part3:visible")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -1502,10 +1514,10 @@ tracks/9/path = NodePath("Poses/Hit3/Hit3Part4:visible")
 tracks/9/interp = 0
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -1694,10 +1706,10 @@ tracks/25/path = NodePath("Poses/Hit3/Hit3Part9:visible")
 tracks/25/interp = 0
 tracks/25/loop_wrap = true
 tracks/25/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, false, false]
+"values": [false, true, false]
 }
 tracks/26/type = "value"
 tracks/26/imported = false
@@ -1730,10 +1742,10 @@ tracks/28/path = NodePath("Poses/Hit3/Hit3Part10:visible")
 tracks/28/interp = 0
 tracks/28/loop_wrap = true
 tracks/28/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/29/type = "value"
 tracks/29/imported = false
@@ -1778,10 +1790,10 @@ tracks/32/path = NodePath("Poses/Hit3/Hit3Part11:visible")
 tracks/32/interp = 0
 tracks/32/loop_wrap = true
 tracks/32/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/33/type = "value"
 tracks/33/imported = false
@@ -1826,10 +1838,10 @@ tracks/36/path = NodePath("Poses/Hit3/Hit3Part12:visible")
 tracks/36/interp = 0
 tracks/36/loop_wrap = true
 tracks/36/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/37/type = "value"
 tracks/37/imported = false
@@ -1874,10 +1886,10 @@ tracks/40/path = NodePath("Poses/Hit3/Hit3Part13:visible")
 tracks/40/interp = 0
 tracks/40/loop_wrap = true
 tracks/40/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/41/type = "value"
 tracks/41/imported = false
@@ -1922,10 +1934,10 @@ tracks/44/path = NodePath("Poses/Hit3/Hit3Part14:visible")
 tracks/44/interp = 0
 tracks/44/loop_wrap = true
 tracks/44/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/45/type = "value"
 tracks/45/imported = false
@@ -1970,10 +1982,10 @@ tracks/48/path = NodePath("Poses/Hit3/Hit3Part15:visible")
 tracks/48/interp = 0
 tracks/48/loop_wrap = true
 tracks/48/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/49/type = "value"
 tracks/49/imported = false
@@ -2018,10 +2030,10 @@ tracks/52/path = NodePath("Poses/Hit3/Hit3Part16:visible")
 tracks/52/interp = 0
 tracks/52/loop_wrap = true
 tracks/52/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/53/type = "value"
 tracks/53/imported = false
@@ -2066,10 +2078,10 @@ tracks/56/path = NodePath("Poses/Hit3/Hit3Part17:visible")
 tracks/56/interp = 0
 tracks/56/loop_wrap = true
 tracks/56/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/57/type = "value"
 tracks/57/imported = false
@@ -2114,10 +2126,10 @@ tracks/60/path = NodePath("Poses/Hit3/Hit3Part18:visible")
 tracks/60/interp = 0
 tracks/60/loop_wrap = true
 tracks/60/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/61/type = "value"
 tracks/61/imported = false
@@ -2162,10 +2174,10 @@ tracks/64/path = NodePath("Poses/Hit3/Hit3Part19:visible")
 tracks/64/interp = 0
 tracks/64/loop_wrap = true
 tracks/64/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/65/type = "value"
 tracks/65/imported = false
@@ -2210,10 +2222,10 @@ tracks/68/path = NodePath("Poses/Hit3/Hit3Part20:visible")
 tracks/68/interp = 0
 tracks/68/loop_wrap = true
 tracks/68/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/69/type = "value"
 tracks/69/imported = false
@@ -2258,10 +2270,10 @@ tracks/72/path = NodePath("Poses/Hit3/Hit3Part21:visible")
 tracks/72/interp = 0
 tracks/72/loop_wrap = true
 tracks/72/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/73/type = "value"
 tracks/73/imported = false
@@ -2306,10 +2318,10 @@ tracks/76/path = NodePath("Poses/Hit3/Hit3Part22:visible")
 tracks/76/interp = 0
 tracks/76/loop_wrap = true
 tracks/76/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/77/type = "value"
 tracks/77/imported = false
@@ -2354,10 +2366,10 @@ tracks/80/path = NodePath("Poses/Hit3/Hit3Part23:visible")
 tracks/80/interp = 0
 tracks/80/loop_wrap = true
 tracks/80/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/81/type = "value"
 tracks/81/imported = false
@@ -2402,10 +2414,10 @@ tracks/84/path = NodePath("Poses/Hit3/Hit3Part24:visible")
 tracks/84/interp = 0
 tracks/84/loop_wrap = true
 tracks/84/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/85/type = "value"
 tracks/85/imported = false
@@ -2450,10 +2462,10 @@ tracks/88/path = NodePath("Poses/Hit3/Hit3Part25:visible")
 tracks/88/interp = 0
 tracks/88/loop_wrap = true
 tracks/88/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/89/type = "value"
 tracks/89/imported = false
@@ -2498,10 +2510,10 @@ tracks/92/path = NodePath("Poses/Hit3/Hit3Part26:visible")
 tracks/92/interp = 0
 tracks/92/loop_wrap = true
 tracks/92/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/93/type = "value"
 tracks/93/imported = false
@@ -2546,10 +2558,10 @@ tracks/96/path = NodePath("Poses/Hit3/Hit3Part27:visible")
 tracks/96/interp = 0
 tracks/96/loop_wrap = true
 tracks/96/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/97/type = "value"
 tracks/97/imported = false
@@ -2594,10 +2606,10 @@ tracks/100/path = NodePath("Poses/Hit3/Hit3Part28:visible")
 tracks/100/interp = 0
 tracks/100/loop_wrap = true
 tracks/100/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/101/type = "value"
 tracks/101/imported = false
@@ -2642,10 +2654,10 @@ tracks/104/path = NodePath("Poses/Hit3/Hit3Part29:visible")
 tracks/104/interp = 0
 tracks/104/loop_wrap = true
 tracks/104/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/105/type = "value"
 tracks/105/imported = false
@@ -2690,10 +2702,10 @@ tracks/108/path = NodePath("Poses/Hit3/Hit3Part30:visible")
 tracks/108/interp = 0
 tracks/108/loop_wrap = true
 tracks/108/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/109/type = "value"
 tracks/109/imported = false
@@ -2738,10 +2750,10 @@ tracks/112/path = NodePath("Poses/Hit3/Hit3Part31:visible")
 tracks/112/interp = 0
 tracks/112/loop_wrap = true
 tracks/112/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/113/type = "value"
 tracks/113/imported = false
@@ -2786,10 +2798,10 @@ tracks/116/path = NodePath("Poses/Hit3/Hit3Part32:visible")
 tracks/116/interp = 0
 tracks/116/loop_wrap = true
 tracks/116/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/117/type = "value"
 tracks/117/imported = false
@@ -2834,10 +2846,10 @@ tracks/120/path = NodePath("Poses/Hit3/Hit3Part33:visible")
 tracks/120/interp = 0
 tracks/120/loop_wrap = true
 tracks/120/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/121/type = "value"
 tracks/121/imported = false
@@ -2882,10 +2894,10 @@ tracks/124/path = NodePath("Poses/Hit3/Hit3Part34:visible")
 tracks/124/interp = 0
 tracks/124/loop_wrap = true
 tracks/124/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/125/type = "value"
 tracks/125/imported = false
@@ -2930,10 +2942,10 @@ tracks/128/path = NodePath("Poses/Hit3/Hit3Part35:visible")
 tracks/128/interp = 0
 tracks/128/loop_wrap = true
 tracks/128/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/129/type = "value"
 tracks/129/imported = false
@@ -2978,10 +2990,10 @@ tracks/132/path = NodePath("Poses/Hit3/Hit3Part36:visible")
 tracks/132/interp = 0
 tracks/132/loop_wrap = true
 tracks/132/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/133/type = "value"
 tracks/133/imported = false
@@ -3026,10 +3038,10 @@ tracks/136/path = NodePath("Poses/Hit3/Hit3Part37:visible")
 tracks/136/interp = 0
 tracks/136/loop_wrap = true
 tracks/136/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/137/type = "value"
 tracks/137/imported = false
@@ -3074,10 +3086,10 @@ tracks/140/path = NodePath("Poses/Hit3/Hit3Part38:visible")
 tracks/140/interp = 0
 tracks/140/loop_wrap = true
 tracks/140/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333, 2.75, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/141/type = "value"
 tracks/141/imported = false
@@ -3122,10 +3134,10 @@ tracks/144/path = NodePath("Poses/Hit3/Hit3Part39:visible")
 tracks/144/interp = 0
 tracks/144/loop_wrap = true
 tracks/144/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333, 2.625, 2.6666667, 2.7083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333, 1.6666666, 1.875, 2.7083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false, true, false]
 }
 tracks/145/type = "value"
 tracks/145/imported = false
@@ -3170,10 +3182,10 @@ tracks/148/path = NodePath("Hitbox/Shape:position")
 tracks/148/interp = 0
 tracks/148/loop_wrap = true
 tracks/148/keys = {
-"times": PackedFloat32Array(0.8333333, 0.9166667, 0.9583333, 1.0833334, 1.125, 1.25, 1.2916666, 1.4166666, 1.4583334, 1.5833334, 1.625, 1.75, 1.7916666, 1.875, 1.9583334, 2, 2.125, 2.1666667, 2.2916667, 2.3333333, 2.4583333, 2.5, 2.625, 2.6666667, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.8333334, 0.875, 0.9166667, 0.9583333, 1, 1.0416667, 1.0833334, 1.125, 1.1666667, 1.2083334, 1.25, 1.2916667, 1.3333334, 1.3750001, 1.4166667, 1.4583334, 1.5, 1.5416666, 1.5833333, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.875, 1.9166666, 1.9583333, 2, 2.0416665, 2.0833335, 2.125, 2.1666665, 2.2083335, 2.25, 2.2916667, 2.3333335, 2.375, 2.416667, 2.4583335, 2.5, 2.5416667, 2.5833335, 2.625, 2.6666667, 2.7083335, 2.75, 2.7916667, 2.8333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-16.35, 50.65), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 50.65), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6)]
+"values": [Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 58.65), Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6), Vector2(-16.35, 58.65), Vector2(-16.35, 51), Vector2(-16.35, 42.85), Vector2(-16.35, 35), Vector2(-16.35, 27), Vector2(-16.35, 34.9), Vector2(-16.35, 42.8), Vector2(-16.35, 50.6)]
 }
 tracks/149/type = "value"
 tracks/149/imported = false
@@ -3182,10 +3194,10 @@ tracks/149/path = NodePath("Hitbox/Shape:shape:size")
 tracks/149/interp = 0
 tracks/149/loop_wrap = true
 tracks/149/keys = {
-"times": PackedFloat32Array(0.8333333, 0.9166667, 0.9583333, 1.0833334, 1.125, 1.25, 1.2916666, 1.4166666, 1.4583334, 1.5833334, 1.625, 1.75, 1.7916666, 1.875, 1.9583334, 2, 2.125, 2.1666667, 2.2916667, 2.3333333, 2.4583333, 2.5, 2.625, 2.6666667, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.8333334, 0.875, 0.9166667, 0.9583333, 1, 1.0416667, 1.0833334, 1.125, 1.1666667, 1.2083334, 1.25, 1.2916667, 1.3333334, 1.3750001, 1.4166667, 1.4583334, 1.5, 1.5416666, 1.5833333, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.875, 1.9166666, 1.9583333, 2, 2.0416665, 2.0833335, 2.125, 2.1666665, 2.2083335, 2.25, 2.2916667, 2.3333335, 2.375, 2.416667, 2.4583335, 2.5, 2.5416667, 2.5833335, 2.625, 2.6666667, 2.7083335, 2.75, 2.7916667, 2.8333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(794.9, 20.1), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 20.1), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 35.6), Vector2(794.9, 20)]
+"values": [Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 4.7000017), Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20), Vector2(794.9, 4.7000017), Vector2(794.9, 20.000004), Vector2(794.9, 35.5), Vector2(794.9, 51.2), Vector2(794.9, 67.6), Vector2(794.9, 51.8), Vector2(794.9, 35.6), Vector2(794.9, 20)]
 }
 tracks/150/type = "value"
 tracks/150/imported = false
@@ -3194,10 +3206,10 @@ tracks/150/path = NodePath("Hitbox/Shape:disabled")
 tracks/150/interp = 0
 tracks/150/loop_wrap = true
 tracks/150/keys = {
-"times": PackedFloat32Array(0, 0.8333333, 0.9166667, 0.9583333, 1.0833334, 1.125, 1.25, 1.2916666, 1.4166666, 1.4583334, 1.5833334, 1.625, 1.75, 1.7916666, 1.875, 1.9583334, 2, 2.125, 2.1666667, 2.2916667, 2.3333333, 2.4583333, 2.5, 2.625, 2.6666667, 2.7916667, 2.8333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+"values": [true, false]
 }
 tracks/151/type = "value"
 tracks/151/imported = false
@@ -3255,6 +3267,7 @@ tracks/154/keys = {
 
 [sub_resource type="Animation" id="Animation_a3tgf"]
 length = 0.7916666666666666
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -3262,10 +3275,10 @@ tracks/0/path = NodePath("Poses/Hit4/Hit4Part1:visible")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true]
+"values": [false, true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -3298,10 +3311,10 @@ tracks/3/path = NodePath("Poses/Hit4/Hit4Part2:visible")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.375),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -3358,10 +3371,10 @@ tracks/8/path = NodePath("Poses/Hit4/Hit4Part4:visible")
 tracks/8/interp = 0
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.625),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -3430,10 +3443,10 @@ tracks/14/path = NodePath("Hitbox/Shape:disabled")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.375),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, false, false, false, false, false, false, false, false]
+"values": [true, false]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -3831,7 +3844,7 @@ tracks/27/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_intp6"]
-length = 0.20833333333333334
+length = 0.20833333333333337
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -4133,6 +4146,7 @@ tracks/7/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_8dxs8"),
 &"dead": SubResource("Animation_m1e8y"),
 &"hit1": SubResource("Animation_07xyd"),
 &"hit2": SubResource("Animation_k1l53"),

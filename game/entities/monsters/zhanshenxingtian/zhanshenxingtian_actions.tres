@@ -1,58 +1,62 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bkx7cxcbxkdac"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hurt_part1.png" id="1_m21hh"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1.png" id="2_cd6h1"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_2.png" id="3_3cjud"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_3.png" id="4_ofgas"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_4.png" id="5_ggwnw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_5.png" id="6_hkgsm"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_6.png" id="7_tt4nb"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1.png" id="8_lhjci"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_2.png" id="9_5rc5m"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_3.png" id="10_fq7cc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_4.png" id="11_sb4de"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_5.png" id="12_ukw7u"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2.png" id="13_72slv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2_2.png" id="14_xnay6"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2_3.png" id="15_8v1mw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1.png" id="16_adgnv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit2_part1.png" id="17_k1l18"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit2_part1_2.png" id="18_7rc3r"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_boss_dead/tex/fx_boss_dead_hit3_part10.png" id="19_qdj13"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part1.png" id="20_wihjc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part4.png" id="21_2t36c"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6.png" id="22_fw8wi"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6_2.png" id="23_81m20"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6_3.png" id="24_lbans"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part3.png" id="25_d0yci"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part8.png" id="26_f73nw"]
-[ext_resource type="Texture2D" path="res://entities/monsters/xingtian/tex/xingtian_hit2_and2_part80.png" id="27_21qev"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11.png" id="28_7n066"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_2.png" id="29_hdv3g"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_3.png" id="30_xkhtl"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_4.png" id="31_c7opl"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2.png" id="32_rbn1u"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_2.png" id="33_46eh8"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_3.png" id="34_c7yom"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_4.png" id="35_e2yvr"]
-[ext_resource type="Texture2D" path="res://entities/heroes/bajie/tex/bajie_hit1_part13.png" id="36_401vi"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2.png" id="37_fd7nc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_2.png" id="38_ellfx"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_3.png" id="39_qg3ud"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_4.png" id="40_gse71"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part5.png" id="41_78g7b"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part5_2.png" id="42_u1lba"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part7.png" id="43_c83qf"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part7_2.png" id="44_lgrqh"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part8.png" id="45_wqe37"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part8_2.png" id="46_6u2bc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part9.png" id="47_gdfmc"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_2.png" id="48_e76p3"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_3.png" id="49_gluwo"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_4.png" id="50_0yglv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_walk_part1.png" id="51_f6npo"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_walk_part2.png" id="52_0ho1h"]
-[ext_resource type="Texture2D" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_walk_part3.png" id="53_k2dlg"]
+[ext_resource type="Texture2D" uid="uid://cm6k382h05u4q" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hurt_part1.png" id="1_m21hh"]
+[ext_resource type="Texture2D" uid="uid://dk27gg5hw6c1l" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1.png" id="2_cd6h1"]
+[ext_resource type="Texture2D" uid="uid://cnk84serwx252" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_2.png" id="3_3cjud"]
+[ext_resource type="Texture2D" uid="uid://bi7io176gusfd" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_3.png" id="4_ofgas"]
+[ext_resource type="Texture2D" uid="uid://c4b5mihwcip0j" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_4.png" id="5_ggwnw"]
+[ext_resource type="Texture2D" uid="uid://dp1pbfx1hbjf2" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_5.png" id="6_hkgsm"]
+[ext_resource type="Texture2D" uid="uid://c3dfoiiow06ru" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_dead_part1_6.png" id="7_tt4nb"]
+[ext_resource type="Texture2D" uid="uid://wqc1cowqeau3" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1.png" id="8_lhjci"]
+[ext_resource type="Texture2D" uid="uid://dqm5l5ptt7odd" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_2.png" id="9_5rc5m"]
+[ext_resource type="Texture2D" uid="uid://u68ruwhoayrx" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_3.png" id="10_fq7cc"]
+[ext_resource type="Texture2D" uid="uid://b4tk2ph1y7k6t" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_4.png" id="11_sb4de"]
+[ext_resource type="Texture2D" uid="uid://86fhog1sgva8" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part1_5.png" id="12_ukw7u"]
+[ext_resource type="Texture2D" uid="uid://bbfdgc154r4ei" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2.png" id="13_72slv"]
+[ext_resource type="Texture2D" uid="uid://yhn5008xiy3u" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2_2.png" id="14_xnay6"]
+[ext_resource type="Texture2D" uid="uid://dxg8h5e8pungh" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit1_part2_3.png" id="15_8v1mw"]
+[ext_resource type="Texture2D" uid="uid://brcak643xex42" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1.png" id="16_adgnv"]
+[ext_resource type="Texture2D" uid="uid://bac5s4ikvkyla" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit2_part1.png" id="17_k1l18"]
+[ext_resource type="Texture2D" uid="uid://do0t7pj42dy71" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit2_part1_2.png" id="18_7rc3r"]
+[ext_resource type="Texture2D" uid="uid://co62dkcs7wuk4" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6.png" id="22_fw8wi"]
+[ext_resource type="Texture2D" uid="uid://cg2fypa1k2cur" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6_2.png" id="23_81m20"]
+[ext_resource type="Texture2D" uid="uid://bhfppv0me065j" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part6_3.png" id="24_lbans"]
+[ext_resource type="Texture2D" uid="uid://df0ybfav78knf" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11.png" id="28_7n066"]
+[ext_resource type="Texture2D" uid="uid://brdff7hjoeth5" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_2.png" id="29_hdv3g"]
+[ext_resource type="Texture2D" uid="uid://ci56asdyxhkp2" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_3.png" id="30_xkhtl"]
+[ext_resource type="Texture2D" uid="uid://hatov7qpj301" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part11_4.png" id="31_c7opl"]
+[ext_resource type="Texture2D" uid="uid://22ybmnbiswb" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2.png" id="32_rbn1u"]
+[ext_resource type="Texture2D" uid="uid://cqojnckvjel8q" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_2.png" id="33_46eh8"]
+[ext_resource type="Texture2D" uid="uid://bqo0t32pinux6" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_3.png" id="34_c7yom"]
+[ext_resource type="Texture2D" uid="uid://bscs7dwjbivvu" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit3_part2_4.png" id="35_e2yvr"]
+[ext_resource type="Texture2D" uid="uid://ubcw5wu8f00h" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2.png" id="37_fd7nc"]
+[ext_resource type="Texture2D" uid="uid://b3xjmnffo4pqh" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_2.png" id="38_ellfx"]
+[ext_resource type="Texture2D" uid="uid://vx4dxbwxrihu" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_3.png" id="39_qg3ud"]
+[ext_resource type="Texture2D" uid="uid://clp700qu64xm7" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part2_4.png" id="40_gse71"]
+[ext_resource type="Texture2D" uid="uid://lmljrqsto208" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part5.png" id="41_78g7b"]
+[ext_resource type="Texture2D" uid="uid://dtw314axja8os" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part5_2.png" id="42_u1lba"]
+[ext_resource type="Texture2D" uid="uid://drkgmft1vkqm8" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part7.png" id="43_c83qf"]
+[ext_resource type="Texture2D" uid="uid://dfwhd3y8ojhy4" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part7_2.png" id="44_lgrqh"]
+[ext_resource type="Texture2D" uid="uid://c6jehp8jcvly2" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part8.png" id="45_wqe37"]
+[ext_resource type="Texture2D" uid="uid://wnvaspno8hhp" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_hit4_part8_2.png" id="46_6u2bc"]
+[ext_resource type="Texture2D" uid="uid://bpushevn3tl02" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_2.png" id="48_e76p3"]
+[ext_resource type="Texture2D" uid="uid://bxubujwfg55iv" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_3.png" id="49_gluwo"]
+[ext_resource type="Texture2D" uid="uid://kw6t1ytj3i2v" path="res://entities/monsters/zhanshenxingtian/tex/zhanshenxingtian_wait_part1_4.png" id="50_0yglv"]
+
+[sub_resource type="Animation" id="Animation_7gqmt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/Shape:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_jksy5"]
 length = 1.0416666666666667
@@ -181,6 +185,7 @@ tracks/9/keys = {
 
 [sub_resource type="Animation" id="Animation_asjok"]
 length = 0.7916666666666666
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -212,10 +217,10 @@ tracks/2/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.33333334, 0.41666666, 0.5, 0.5833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.33333334, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -272,10 +277,10 @@ tracks/7/path = NodePath("Hitbox/Shape:disabled")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.33333334),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.33333334, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, false]
+"values": [true, false, true]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -542,6 +547,7 @@ tracks/16/keys = {
 
 [sub_resource type="Animation" id="Animation_fukw7"]
 length = 1.4166666666666667
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -573,10 +579,10 @@ tracks/2/path = NodePath("Poses/Hit3/Hit3Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.41666666, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, false, true, true, false, true]
+"values": [false, true, false, true, false, true]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -681,10 +687,10 @@ tracks/11/path = NodePath("Poses/Hit3/Hit3Part6:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.083333336, 0.41666666, 0.5, 0.5833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.083333336, 0.41666666, 0.5833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [true, false, true, true, false]
+"values": [true, false, true, false]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -789,10 +795,10 @@ tracks/20/path = NodePath("Poses/Hit3/Hit3Part10:visible")
 tracks/20/interp = 0
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(0, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/21/type = "value"
 tracks/21/imported = false
@@ -837,10 +843,10 @@ tracks/24/path = NodePath("Poses/Hit3/Hit3Part11:visible")
 tracks/24/interp = 0
 tracks/24/loop_wrap = true
 tracks/24/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/25/type = "value"
 tracks/25/imported = false
@@ -873,10 +879,10 @@ tracks/27/path = NodePath("Poses/Hit3/Hit3Part12:visible")
 tracks/27/interp = 0
 tracks/27/loop_wrap = true
 tracks/27/keys = {
-"times": PackedFloat32Array(0, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/28/type = "value"
 tracks/28/imported = false
@@ -921,10 +927,10 @@ tracks/31/path = NodePath("Poses/Hit3/Hit3Part13:visible")
 tracks/31/interp = 0
 tracks/31/loop_wrap = true
 tracks/31/keys = {
-"times": PackedFloat32Array(0, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/32/type = "value"
 tracks/32/imported = false
@@ -969,10 +975,10 @@ tracks/35/path = NodePath("Poses/Hit3/Hit3Part14:visible")
 tracks/35/interp = 0
 tracks/35/loop_wrap = true
 tracks/35/keys = {
-"times": PackedFloat32Array(0, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/36/type = "value"
 tracks/36/imported = false
@@ -1017,10 +1023,10 @@ tracks/39/path = NodePath("Poses/Hit3/Hit3Part15:visible")
 tracks/39/interp = 0
 tracks/39/loop_wrap = true
 tracks/39/keys = {
-"times": PackedFloat32Array(0, 0.7083333, 0.7916667, 0.875, 0.9583333, 1.0416666, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/40/type = "value"
 tracks/40/imported = false
@@ -1065,10 +1071,10 @@ tracks/43/path = NodePath("Hitbox/Shape:position")
 tracks/43/interp = 0
 tracks/43/loop_wrap = true
 tracks/43/keys = {
-"times": PackedFloat32Array(0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.7083333, 0.7916667, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.7083333, 0.7916667, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(28.05, -170.2), Vector2(24.95, -260.15), Vector2(15.4, -262.9), Vector2(27.25, -258.3), Vector2(15.4, -259.2), Vector2(33.15, 20.65), Vector2(5.5, 20.65), Vector2(5.5, 8.45), Vector2(630.2, 164.6)]
+"values": [Vector2(28.05, -170.2), Vector2(24.95, -260.15), Vector2(15.4, -262.9), Vector2(27.25, -258.3), Vector2(15.4, -259.2), Vector2(33.15, 20.65), Vector2(5.5, 20.65), Vector2(5.5, 8.45)]
 }
 tracks/44/type = "value"
 tracks/44/imported = false
@@ -1077,10 +1083,10 @@ tracks/44/path = NodePath("Hitbox/Shape:shape:size")
 tracks/44/interp = 0
 tracks/44/loop_wrap = true
 tracks/44/keys = {
-"times": PackedFloat32Array(0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.7083333, 0.7916667, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.7083333, 0.7916667, 1.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(469.5, 108), Vector2(475.7, 125.5), Vector2(473, 120), Vector2(496.7, 110.8), Vector2(473, 109), Vector2(928.1, 296.3), Vector2(983.4, 296.3), Vector2(983.4, 320.7), Vector2(2232.8, 633)]
+"values": [Vector2(469.5, 108), Vector2(475.7, 125.5), Vector2(473, 120), Vector2(496.7, 110.8), Vector2(473, 109), Vector2(928.1, 296.3), Vector2(983.4, 296.3), Vector2(983.4, 320.7)]
 }
 tracks/45/type = "value"
 tracks/45/imported = false
@@ -1089,10 +1095,10 @@ tracks/45/path = NodePath("Hitbox/Shape:disabled")
 tracks/45/interp = 0
 tracks/45/loop_wrap = true
 tracks/45/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.5, 0.7083333, 0.7916667, 1.125, 1.2083334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.5, 0.7083333, 1.2083334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [true, false, false, false, false, false, true, false, false, false, false]
+"values": [true, false, true, false, true]
 }
 tracks/46/type = "value"
 tracks/46/imported = false
@@ -1150,6 +1156,7 @@ tracks/49/keys = {
 
 [sub_resource type="Animation" id="Animation_sw7ep"]
 length = 2.625
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1181,10 +1188,10 @@ tracks/2/path = NodePath("Poses/Hit4/Hit4Part2:visible")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.5, 0.5416667, 0.5833333, 0.625, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.9166667, 0.9583333, 1, 1.0416666, 1.125, 1.1666666, 1.2083334, 1.25, 1.3333334, 1.375, 1.4166666, 1.4583334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.29166666, 0.41666666, 0.5, 0.625, 0.7083333, 0.8333333, 0.9166667, 1.0416666, 1.125, 1.25, 1.3333334, 1.4583334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false]
+"values": [false, true, false, true, false, true, false, true, false, true, false, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1217,10 +1224,10 @@ tracks/5/path = NodePath("Poses/Hit4/Hit4Part3:visible")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.375, 0.41666666, 0.45833334, 0.5, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.7916667, 0.8333333, 0.875, 0.9166667, 1, 1.0416666, 1.0833334, 1.125, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.4166666, 1.4583334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.29166666, 0.375, 0.5, 0.5833333, 0.7083333, 0.7916667, 0.9166667, 1, 1.125, 1.2083334, 1.3333334, 1.4166666, 1.4583334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, false]
+"values": [false, true, false, true, false, true, false, true, false, true, false, true, false, true, false]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -1253,10 +1260,10 @@ tracks/8/path = NodePath("Poses/Hit4/Hit4Part4:visible")
 tracks/8/interp = 0
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.625, 0.6666667, 0.7083333, 0.75, 0.8333333, 0.875, 0.9166667, 0.9583333, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.25, 1.2916666, 1.3333334, 1.375),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.125, 0.20833333, 0.33333334, 0.41666666, 0.5416667, 0.625, 0.75, 0.8333333, 0.9583333, 1.0416666, 1.1666666, 1.25, 1.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false, true, true, true, false]
+"values": [true, false, true, false, true, false, true, false, true, false, true, false, true, false]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -1289,10 +1296,10 @@ tracks/11/path = NodePath("Poses/Hit4/Hit4Part5:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 1.625, 1.6666666, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.875, 1.9166666, 1.9583334, 2, 2.0416667, 2.2083333, 2.25, 2.2916667, 2.3333333, 2.375, 2.4166667, 2.4583333, 2.5, 2.5416667, 2.5833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.625),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true]
+"values": [false, true]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -1325,10 +1332,10 @@ tracks/14/path = NodePath("Poses/Hit4/Hit4Part6:visible")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0, 2.0416667, 2.0833333, 2.125, 2.1666667, 2.2083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 2.0416667, 2.2083333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, true, true, false]
+"values": [false, true, false]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -1361,10 +1368,10 @@ tracks/17/path = NodePath("Poses/Hit4/Hit4Part7:visible")
 tracks/17/interp = 0
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.25, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.4583334),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+"values": [true, false]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
@@ -1397,10 +1404,10 @@ tracks/20/path = NodePath("Poses/Hit4/Hit4Part8:visible")
 tracks/20/interp = 0
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(0, 1.4583334, 1.5416666, 1.625),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.4583334, 1.625),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, false]
+"values": [false, true, false]
 }
 tracks/21/type = "value"
 tracks/21/imported = false
@@ -1481,10 +1488,10 @@ tracks/27/path = NodePath("Hitbox/Shape:disabled")
 tracks/27/interp = 0
 tracks/27/loop_wrap = true
 tracks/27/keys = {
-"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.375, 0.41666666, 0.45833334, 0.5833333, 0.625, 0.6666667, 0.7916667, 0.8333333, 0.875, 1, 1.0416666, 1.0833334, 1.2083334, 1.25, 1.2916666, 1.375, 1.4166666, 1.4583334, 1.625, 2.2083333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.4583334, 1.625, 2.2083333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true]
+"values": [false, true, false, true]
 }
 tracks/28/type = "value"
 tracks/28/imported = false
@@ -1926,6 +1933,7 @@ tracks/11/keys = {
 
 [resource]
 _data = {
+&"RESET": SubResource("Animation_7gqmt"),
 &"dead": SubResource("Animation_jksy5"),
 &"hit1": SubResource("Animation_asjok"),
 &"hit2": SubResource("Animation_dbmjy"),

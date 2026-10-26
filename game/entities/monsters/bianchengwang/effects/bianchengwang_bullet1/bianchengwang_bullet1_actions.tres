@@ -1,6 +1,4 @@
-[gd_resource type="AnimationLibrary" format=3]
-
-[ext_resource type="Texture2D" path="res://entities/monsters/bianchengwang/tex/bianchengwang_bullet1_hit2_part1.png" id="1_4memw"]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bfh7v10545brb"]
 
 [sub_resource type="Animation" id="Animation_io8m4"]
 length = 0.625
@@ -26,7 +24,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.1666667, 0.2083333, 0.25, 0.2916667, 0.3333333, 0.375, 0.4166667, 0.4583333, 0.5, 0.5416667, 0.5833333),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Vector2(-1.95, -0.90), Vector2(-47.75, -1.10), Vector2(-93.55, -1.30), Vector2(-139.35, -1.50), Vector2(-185.15, -1.70), Vector2(-230.95, -1.90), Vector2(-276.75, -2.10), Vector2(-322.55, -2.30), Vector2(-368.35, -2.55), Vector2(-414.15, -2.75), Vector2(-459.95, -2.95), Vector2(-505.75, -3.15), Vector2(-551.55, -3.35), Vector2(-597.35, -3.55), Vector2(-643.15, -3.75)]
+"values": [Vector2(-1.95, -0.9), Vector2(-47.75, -1.1), Vector2(-93.55, -1.3), Vector2(-139.35, -1.5), Vector2(-185.15, -1.7), Vector2(-230.95, -1.9), Vector2(-276.75, -2.1), Vector2(-322.55, -2.3), Vector2(-368.35, -2.55), Vector2(-414.15, -2.75), Vector2(-459.95, -2.95), Vector2(-505.75, -3.15), Vector2(-551.55, -3.35), Vector2(-597.35, -3.55), Vector2(-643.15, -3.75)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -38,7 +36,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(218.00, 12.00)]
+"values": [Vector2(218, 12)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false

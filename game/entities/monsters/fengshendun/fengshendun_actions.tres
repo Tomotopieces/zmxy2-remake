@@ -1,10 +1,7 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://ce6ge1qqio1xh"]
 
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hurt_part1.png" id="1_gquxv"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part1.png" id="2_c0hr7"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2.png" id="3_t5404"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2_2.png" id="4_asj5u"]
-[ext_resource type="Texture2D" path="res://entities/monsters/fengshendun/tex/fengshendun_walk_part1.png" id="5_x7y15"]
+[ext_resource type="Texture2D" uid="uid://bwubvyaix7hgi" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2.png" id="3_t5404"]
+[ext_resource type="Texture2D" uid="uid://djhmi15ib6wrn" path="res://entities/monsters/fengshendun/tex/fengshendun_hit1_part2_2.png" id="4_asj5u"]
 
 [sub_resource type="Animation" id="Animation_by55o"]
 length = 0.2916666666666667
@@ -137,6 +134,7 @@ tracks/9/keys = {
 
 [sub_resource type="Animation" id="Animation_vyyc1"]
 length = 0.5833333333333334
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -156,10 +154,10 @@ tracks/1/path = NodePath("Poses/Hit1/Hit1Part2:visible")
 tracks/1/interp = 0
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.33333334, 0.41666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true, true, false]
+"values": [false, true, false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -192,10 +190,10 @@ tracks/4/path = NodePath("Hitbox/Shape:position")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0.25, 0.29166666, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(-102.8, 2), Vector2(-102.8, 6), Vector2(-159.75, 2.25)]
+"values": [Vector2(-102.8, 2)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -204,10 +202,10 @@ tracks/5/path = NodePath("Hitbox/Shape:shape:size")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.25, 0.29166666, 0.375),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Vector2(200, 47), Vector2(200, 39), Vector2(109.5, 31.5)]
+"values": [Vector2(200, 47)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -216,10 +214,10 @@ tracks/6/path = NodePath("Hitbox/Shape:disabled")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.29166666, 0.375, 0.41666666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.41666666),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, false, false, false, true]
+"values": [true, false, true]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -273,7 +271,7 @@ tracks/10/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_0s66x"]
-length = 0.20833333333333334
+length = 0.20833333333333337
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
