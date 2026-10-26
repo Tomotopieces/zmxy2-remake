@@ -2,23 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://d0r2fylkm8sn8" path="res://stages/huodadiyu/tex/huodadiyu_near_00.png" id="1_3dbhp"]
 [ext_resource type="Texture2D" uid="uid://lm8ximvd6l38" path="res://stages/huodadiyu/tex/huodadiyu_ground_01.png" id="3_a3881"]
+[ext_resource type="Script" uid="uid://w1cmnxn1fqy4" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="PackedScene" path="res://entities/objects/exit_door/exit_door.tscn" id="x2l1okh"]
 [ext_resource type="Script" uid="uid://c2w24ryinhy47" path="res://src/level/layout/monster_spawn.gd" id="x63q36n"]
 [ext_resource type="Script" uid="uid://rtewtasbfcvk" path="res://src/level/layout/stage_layout.gd" id="xu6u2l3"]
-[ext_resource type="Script" path="res://src/level/layout/stage_boundary.gd" id="stage_boundary"]
 [ext_resource type="Script" uid="uid://byefl4coid4kt" path="res://src/level/layout/camera_stop.gd" id="xyjtj4v"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L1"]
-size = Vector2(20.01, 1000)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L2"]
-size = Vector2(899.96, 23.3)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L3"]
-size = Vector2(1900.02, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_L4"]
-size = Vector2(1900.05, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(1813, 871.65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
@@ -78,9 +69,15 @@ size = Vector2(1853.16, 591.45)
 
 [node name="Walls" type="Node2D" parent="Layout" unique_id=1193751453]
 
-[node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
+[node name="Boundary" type="StaticBody2D" parent="Layout/Walls" unique_id=2090886296]
+collision_mask = 0
 script = ExtResource("stage_boundary")
-rect = Rect2(-4.9, -370.65, 1822.94, 871.65)
+
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary" unique_id=48963221]
+position = Vector2(886.5, 65.18)
+shape = SubResource("RectangleShape2D_boundary")
+disabled = true
+debug_color = Color(1, 0.55, 0, 0.12)
 
 [node name="Stops" type="Node2D" parent="Layout" unique_id=538186566]
 

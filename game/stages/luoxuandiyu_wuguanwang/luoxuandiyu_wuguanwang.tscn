@@ -23,6 +23,9 @@ size = Vector2(1150.05, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_L5"]
 size = Vector2(167, 163.45)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(1110.95, 861.65)
+
 [node name="Scenery" type="Node2D" unique_id=331624786]
 
 [node name="Guides" type="Node2D" parent="." unique_id=1302189294]
@@ -80,7 +83,12 @@ size = Vector2(1756.2, 585.9)
 
 [node name="Boundary" type="StaticBody2D" parent="Layout/Walls"]
 script = ExtResource("stage_boundary")
-rect = Rect2(-86.95, -365.65, 1110.95, 861.65)
+
+[node name="Area" type="CollisionShape2D" parent="Layout/Walls/Boundary"]
+position = Vector2(468.53, 65.18)
+shape = SubResource("RectangleShape2D_boundary")
+disabled = true
+debug_color = Color(1, 0.55, 0, 0.12)
 
 [node name="Stops" type="Node2D" parent="Layout" unique_id=1318166238]
 

@@ -3,13 +3,13 @@
 0 #0 MOVE/walk hp=80/80 dx=90
 1 #0 MOVE/wait hp=64/80 dx=90
 39 #0 MOVE/walk hp=64/80 dx=88
-44 #0 ATTACK/hit1 hp=64/80 dx=78
-91 #0 MOVE/hit1 hp=64/80 dx=-107
-92 #0 MOVE/walk hp=64/80 dx=-105
-197 #0 MOVE/wait hp=48/80 dx=58
-561 #0 ATTACK/hit1 hp=16/80 dx=58
-608 #0 MOVE/hit1 hp=16/80 dx=-79
-609 #0 MOVE/wait hp=16/80 dx=-79
+45 #0 ATTACK/hit1 hp=64/80 dx=76
+92 #0 MOVE/hit1 hp=64/80 dx=-109
+93 #0 MOVE/walk hp=64/80 dx=-107
+199 #0 MOVE/wait hp=48/80 dx=58
+563 #0 ATTACK/hit1 hp=16/80 dx=58
+610 #0 MOVE/hit1 hp=16/80 dx=-79
+611 #0 MOVE/wait hp=16/80 dx=-79
 721 #0 DEAD/dead hp=0/80 dx=-79
 811 #0 gone
 # 30 mid
