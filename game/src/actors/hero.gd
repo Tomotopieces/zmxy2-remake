@@ -602,7 +602,6 @@ func take_hit(h: Hit) -> bool:
 		Feel.rumble(0.5, 0.15)
 	else:
 		Feel.rumble(0.3, 0.1)
-	add_rage(rage_for_damage(dmg))
 	_count_lock()
 	if hp <= 0:
 		_die()

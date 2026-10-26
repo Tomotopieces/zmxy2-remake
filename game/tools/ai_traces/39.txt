@@ -12,11 +12,9 @@
 1032 #0 ATTACK/hit1 hp=2400/6000 dx=-847
 1209 #0 MOVE/hit1 hp=2400/6000 dx=-847
 1210 #0 MOVE/walk hp=2400/6000 dx=-839
-1390 #0 ATTACK/hit1 hp=1200/6000 dx=302
-1567 #0 MOVE/hit1 hp=1200/6000 dx=302
-1568 #0 MOVE/wait hp=1200/6000 dx=302
-1621 #0 DEAD/dead hp=0/6000 dx=302
-1726 #0 gone
+1269 #0 ATTACK/hit1 hp=1200/6000 dx=-375
+1441 #0 DEAD/dead hp=0/6000 dx=-375
+1546 #0 gone
 # 39 mid
 0 #0 appears id=39 hp=6000 x=833
 0 #0 ATTACK/ready hp=6000/6000 dx=300

@@ -16,6 +16,8 @@ corner_radius_bottom_right = 1
 corner_radius_bottom_left = 1
 
 [sub_resource type="LabelSettings" id="LabelSettings_ifow5"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Stat" type="Control" unique_id=1539476760]
 layout_mode = 3
@@ -27,6 +29,8 @@ script = ExtResource("1_u0m63")
 layout_mode = 0
 offset_right = 42.0
 offset_bottom = 20.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
 theme_override_fonts/font = ExtResource("2_u0m63")
 theme_override_font_sizes/font_size = 14
 text = "装备"

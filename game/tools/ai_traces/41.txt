@@ -8,9 +8,7 @@
 357 #0 ATTACK/hit1 hp=1500/2500 dx=90
 404 #0 MOVE/hit1 hp=1000/2500 dx=90
 405 #0 MOVE/wait hp=1000/2500 dx=90
-586 #0 ATTACK/hit1 hp=500/2500 dx=90
-633 #0 MOVE/hit1 hp=500/2500 dx=90
-634 #0 MOVE/wait hp=500/2500 dx=90
+677 #0 ATTACK/hit1 hp=500/2500 dx=90
 721 #0 DEAD/dead hp=0/2500 dx=90
 786 #0 gone
 # 41 mid

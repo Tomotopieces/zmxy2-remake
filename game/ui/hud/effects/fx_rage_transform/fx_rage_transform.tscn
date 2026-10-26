@@ -1,50 +1,48 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://d1163r1ycgl8j"]
 
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_3p02s"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame.png" id="2_yaxfp"]
-[ext_resource type="Shader" path="res://src/puppet/sprite_fx.gdshader" id="3_pafe0"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_2.png" id="4_va8gl"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_3.png" id="5_u1kb8"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="6_pmm0d"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_4.png" id="7_t5i0l"]
-[ext_resource type="AnimationLibrary" path="res://ui/hud/effects/fx_rage_transform/fx_rage_transform_actions.tres" id="9_tfr2s"]
-
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_wukong_1.png" id="rage_wukong"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_tangseng_1.png" id="rage_tangseng"]
-[ext_resource type="Texture2D" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_bajie_1.png" id="rage_bajie"]
+[ext_resource type="Shader" uid="uid://ca7cq5fbwpytn" path="res://src/puppet/sprite_fx.gdshader" id="3_pafe0"]
+[ext_resource type="Texture2D" uid="uid://bnr7dkpjk4rr3" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_2.png" id="4_va8gl"]
+[ext_resource type="Texture2D" uid="uid://bto8dc05cn3v4" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_3.png" id="5_u1kb8"]
+[ext_resource type="Texture2D" uid="uid://bonpt430wemhq" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="6_pmm0d"]
+[ext_resource type="Texture2D" uid="uid://djjveyv04kmpp" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_frame_4.png" id="7_t5i0l"]
+[ext_resource type="AnimationLibrary" uid="uid://5370wgbsu8e6" path="res://ui/hud/effects/fx_rage_transform/fx_rage_transform_actions.tres" id="9_tfr2s"]
+[ext_resource type="Texture2D" uid="uid://daff6jo512vb0" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_bajie_1.png" id="rage_bajie"]
+[ext_resource type="Texture2D" uid="uid://b0vx31qe7i2mg" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_tangseng_1.png" id="rage_tangseng"]
+[ext_resource type="Texture2D" uid="uid://bbgybtqesxduw" path="res://ui/hud/effects/fx_rage_transform/tex/fx_rage_transform_wukong_1.png" id="rage_wukong"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r4trb"]
 shader = ExtResource("3_pafe0")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
 shader_parameter/blur = 56.0
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 57.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_djp3h"]
 shader = ExtResource("3_pafe0")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
-shader_parameter/blur = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 38.0
 shader_parameter/glow_strength = 2.9882812
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 39.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x3jop"]
@@ -52,24 +50,24 @@ shader = ExtResource("3_pafe0")
 shader_parameter/matrix_on = true
 shader_parameter/color_matrix = Projection(1.0155694, -0.011652753, 0.06940209, 0, 0.06503713, 0.9867137, -0.05959558, 0, -0.08060655, 0.024939055, 0.9901934, 0, 0, 0, 0, 1)
 shader_parameter/color_offset = Vector4(0, 0, 0, 0)
-shader_parameter/blur = null
-shader_parameter/glow_on = null
-shader_parameter/glow_color = null
-shader_parameter/glow_blur = null
-shader_parameter/glow_strength = null
-shader_parameter/glow2_on = null
-shader_parameter/glow2_color = null
-shader_parameter/glow2_blur = null
-shader_parameter/glow2_strength = null
-shader_parameter/solid = null
+shader_parameter/blur = 0.0
+shader_parameter/glow_on = false
+shader_parameter/glow_color = Color(1, 1, 1, 1)
+shader_parameter/glow_blur = 0.0
+shader_parameter/glow_strength = 1.0
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_71cox"]
 shader = ExtResource("3_pafe0")
-shader_parameter/matrix_on = null
-shader_parameter/color_matrix = null
-shader_parameter/color_offset = null
-shader_parameter/blur = null
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(0, 0, 0, 1)
 shader_parameter/glow_blur = 12.0
@@ -78,128 +76,263 @@ shader_parameter/glow2_on = true
 shader_parameter/glow2_color = Color(1, 1, 1, 1)
 shader_parameter/glow2_blur = 17.0
 shader_parameter/glow2_strength = 12.875
-shader_parameter/solid = null
+shader_parameter/solid = false
 shader_parameter/extend = 18.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_wukong2"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 0.999985
 shader_parameter/glow_strength = 0.636719
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 1.999985
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_wukong3"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 1.999969
 shader_parameter/glow_strength = 1.277344
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 2.999969
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_wukong4"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 3.000031
 shader_parameter/glow_strength = 1.917969
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.000031
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_wukong5"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 4.000015
 shader_parameter/glow_strength = 2.558594
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.000015
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_wukong6"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
-shader_parameter/glow_blur = 5
+shader_parameter/glow_blur = 0.0
 shader_parameter/glow_strength = 3.207031
-shader_parameter/extend = 6
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_tangseng2"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 0.999985
 shader_parameter/glow_strength = 0.75
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 1.999985
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_tangseng3"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 1.999969
 shader_parameter/glow_strength = 1.507813
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 2.999969
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_tangseng4"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 3.000031
 shader_parameter/glow_strength = 2.269531
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.000031
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_tangseng5"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
 shader_parameter/glow_blur = 4.000015
 shader_parameter/glow_strength = 3.027344
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.000015
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_tangseng6"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
-shader_parameter/glow_blur = 5
+shader_parameter/glow_blur = 0.0
 shader_parameter/glow_strength = 3.789063
-shader_parameter/extend = 6
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_bajie2"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.196078, 0.196078, 1)
 shader_parameter/glow_blur = 0.999985
 shader_parameter/glow_strength = 1.019531
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 1.999985
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_bajie3"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.396078, 0.396078, 1)
 shader_parameter/glow_blur = 1.999969
 shader_parameter/glow_strength = 2.039063
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 2.999969
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_bajie4"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.6, 0.6, 1)
 shader_parameter/glow_blur = 3.000031
 shader_parameter/glow_strength = 3.066406
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 4.000031
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_bajie5"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 0.8, 0.8, 1)
 shader_parameter/glow_blur = 4.000015
 shader_parameter/glow_strength = 4.089844
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
 shader_parameter/extend = 5.000015
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rage_bajie6"]
 shader = ExtResource("3_pafe0")
+shader_parameter/matrix_on = false
+shader_parameter/color_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/color_offset = Vector4(0, 0, 0, 0)
+shader_parameter/blur = 0.0
 shader_parameter/glow_on = true
 shader_parameter/glow_color = Color(1, 1, 1, 1)
-shader_parameter/glow_blur = 5
+shader_parameter/glow_blur = 0.0
 shader_parameter/glow_strength = 5.117188
-shader_parameter/extend = 6
+shader_parameter/glow2_on = false
+shader_parameter/glow2_color = Color(1, 1, 1, 1)
+shader_parameter/glow2_blur = 0.0
+shader_parameter/glow2_strength = 1.0
+shader_parameter/solid = false
+shader_parameter/extend = 0.0
 
 [node name="FxRageTransform" type="Node2D" unique_id=305413918]
 script = ExtResource("1_3p02s")
@@ -211,11 +344,13 @@ markers = {
 "bg": Vector2(-49.5, -0.3)
 }
 
-[node name="FxRageTransformFrame" type="Sprite2D" parent="." unique_id=1126141758]
-position = Vector2(-637.05, -397)
+[node name="FxRageTransformFrame" type="ColorRect" parent="." unique_id=988577303]
+offset_left = -637.05
+offset_top = -397.0
+offset_right = 1937.95
+offset_bottom = 1190.0
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_yaxfp")
-centered = false
+color = Color(0, 0, 0, 0.8117647)
 
 [node name="FxRageTransformFrame2" type="Sprite2D" parent="." unique_id=1442414742]
 modulate = Color(1, 1, 1, 0.129)
@@ -226,6 +361,7 @@ texture = ExtResource("4_va8gl")
 centered = false
 
 [node name="FxRageTransformFrame3" type="Sprite2D" parent="." unique_id=1688865710]
+visible = false
 material = SubResource("ShaderMaterial_djp3h")
 position = Vector2(665.5, -6.206)
 scale = Vector2(0.5, 0.32)
@@ -233,6 +369,7 @@ texture = ExtResource("5_u1kb8")
 centered = false
 
 [node name="FxPoisonFrame" type="Sprite2D" parent="." unique_id=1235474723]
+visible = false
 modulate = Color(1, 1, 1, 0.559)
 material = SubResource("ShaderMaterial_x3jop")
 position = Vector2(-144.22995, -147.29251)
@@ -243,6 +380,7 @@ texture = ExtResource("6_pmm0d")
 centered = false
 
 [node name="FxRageTransformFrame4" type="Sprite2D" parent="." unique_id=51362709]
+visible = false
 modulate = Color(1, 1, 1, 0.09)
 material = SubResource("ShaderMaterial_71cox")
 position = Vector2(-637.03204, -116.48386)
@@ -250,132 +388,156 @@ scale = Vector2(1.7085, 1.7085)
 texture = ExtResource("7_t5i0l")
 centered = false
 
-[node name="Wukong" type="Node2D" parent="."]
-
-[node name="FxRageTransformWukong1" type="Sprite2D" parent="Wukong"]
+[node name="Wukong" type="Node2D" parent="." unique_id=2029948742]
 visible = false
-transform = Transform2D(0.2778, 0, 0, 0.2778, -800.60732, -71.79096)
+
+[node name="FxRageTransformWukong1" type="Sprite2D" parent="Wukong" unique_id=1958937617]
+position = Vector2(-800.6073, -71.79096)
+scale = Vector2(0.2778, 0.2778)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="FxRageTransformWukong12" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong12" type="Sprite2D" parent="Wukong" unique_id=2077097681]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong2")
-transform = Transform2D(0.31225, 0, 0, 0.31225, -733.45515, -81.9642)
+position = Vector2(-733.45514, -81.9642)
+scale = Vector2(0.31225, 0.31225)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="FxRageTransformWukong13" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong13" type="Sprite2D" parent="Wukong" unique_id=584739667]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong3")
-transform = Transform2D(0.34665, 0, 0, 0.34665, -666.23651, -92.12028)
+position = Vector2(-666.2365, -92.12028)
+scale = Vector2(0.34665, 0.34665)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="FxRageTransformWukong14" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong14" type="Sprite2D" parent="Wukong" unique_id=421141327]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong4")
-transform = Transform2D(0.3811, 0, 0, 0.3811, -599.08434, -102.24352)
+position = Vector2(-599.08435, -102.24352)
+scale = Vector2(0.3811, 0.3811)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="FxRageTransformWukong15" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong15" type="Sprite2D" parent="Wukong" unique_id=1657849181]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong5")
-transform = Transform2D(0.41555, 0, 0, 0.41555, -531.93217, -112.41676)
+position = Vector2(-531.9322, -112.41676)
+scale = Vector2(0.41555, 0.41555)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="FxRageTransformWukong16" type="Sprite2D" parent="Wukong"]
+[node name="FxRageTransformWukong16" type="Sprite2D" parent="Wukong" unique_id=1897662407]
 visible = false
 material = SubResource("ShaderMaterial_rage_wukong6")
-transform = Transform2D(0.45, 0, 0, 0.45, -464.78, -122.59)
+position = Vector2(-464.78, -122.59)
+scale = Vector2(0.45, 0.45)
 texture = ExtResource("rage_wukong")
 centered = false
 
-[node name="Tangseng" type="Node2D" parent="."]
-
-[node name="FxRageTransformTangseng1" type="Sprite2D" parent="Tangseng"]
+[node name="Tangseng" type="Node2D" parent="." unique_id=241129715]
 visible = false
-transform = Transform2D(-0.27955, 0, 0, 0.27955, -641.09813, -78.84888)
+
+[node name="FxRageTransformTangseng1" type="Sprite2D" parent="Tangseng" unique_id=1675857492]
+position = Vector2(-633.09814, -78.84887)
+rotation = 3.1415927
+scale = Vector2(0.27955, -0.27955)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="FxRageTransformTangseng12" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng12" type="Sprite2D" parent="Tangseng" unique_id=13006656]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng2")
-transform = Transform2D(-0.321, 0, 0, 0.321, -525.2906, -92.6556)
+position = Vector2(-541.2906, -92.6556)
+rotation = 3.1415927
+scale = Vector2(0.321, -0.321)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="FxRageTransformTangseng13" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng13" type="Sprite2D" parent="Tangseng" unique_id=537687974]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng3")
-transform = Transform2D(-0.3624, 0, 0, 0.3624, -409.54864, -106.34464)
+position = Vector2(-449.54865, -106.344635)
+rotation = 3.1415927
+scale = Vector2(0.3624, -0.3624)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="FxRageTransformTangseng14" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng14" type="Sprite2D" parent="Tangseng" unique_id=955156193]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng4")
-transform = Transform2D(-0.40385, 0, 0, 0.40385, -293.79111, -120.10136)
+position = Vector2(-359.7911, -120.10136)
+rotation = 3.1415927
+scale = Vector2(0.40385, -0.40385)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="FxRageTransformTangseng15" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng15" type="Sprite2D" parent="Tangseng" unique_id=1008588431]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng5")
-transform = Transform2D(-0.4453, 0, 0, 0.4453, -177.93358, -133.75808)
+position = Vector2(-270.9336, -133.7581)
+rotation = 3.1415927
+scale = Vector2(0.4453, -0.4453)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="FxRageTransformTangseng16" type="Sprite2D" parent="Tangseng"]
+[node name="FxRageTransformTangseng16" type="Sprite2D" parent="Tangseng" unique_id=304049870]
 visible = false
 material = SubResource("ShaderMaterial_rage_tangseng6")
-transform = Transform2D(-0.48675, 0, 0, 0.48675, -62.22605, -147.5148)
+position = Vector2(-180.22607, -147.5148)
+rotation = 3.1415927
+scale = Vector2(0.48675, -0.48675)
 texture = ExtResource("rage_tangseng")
 centered = false
 
-[node name="Bajie" type="Node2D" parent="."]
-
-[node name="FxRageTransformBajie1" type="Sprite2D" parent="Bajie"]
+[node name="Bajie" type="Node2D" parent="." unique_id=1495103998]
 visible = false
-transform = Transform2D(0.5, 0, 0, 0.5, -879.35, -98.8)
+
+[node name="FxRageTransformBajie1" type="Sprite2D" parent="Bajie" unique_id=1046156237]
+position = Vector2(-823.35, -98.8)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="FxRageTransformBajie12" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie12" type="Sprite2D" parent="Bajie" unique_id=969758362]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie2")
-transform = Transform2D(0.53975, 0, 0, 0.53975, -807.3804, -108.927425)
+position = Vector2(-751.3804, -100.92742)
+scale = Vector2(0.53975, 0.53975)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="FxRageTransformBajie13" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie13" type="Sprite2D" parent="Bajie" unique_id=1494830754]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie3")
-transform = Transform2D(0.5795, 0, 0, 0.5795, -735.4608, -119.00485)
+position = Vector2(-679.4608, -111.00486)
+scale = Vector2(0.5795, 0.5795)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="FxRageTransformBajie14" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie14" type="Sprite2D" parent="Bajie" unique_id=132258528]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie4")
-transform = Transform2D(0.6193, 0, 0, 0.6193, -663.50432, -129.14319)
+position = Vector2(-615.5043, -121.143196)
+scale = Vector2(0.6193, 0.6193)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="FxRageTransformBajie15" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie15" type="Sprite2D" parent="Bajie" unique_id=1635980913]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie5")
-transform = Transform2D(0.65905, 0, 0, 0.65905, -591.58472, -139.220615)
+position = Vector2(-543.5847, -115.220634)
+scale = Vector2(0.65905, 0.65905)
 texture = ExtResource("rage_bajie")
 centered = false
 
-[node name="FxRageTransformBajie16" type="Sprite2D" parent="Bajie"]
+[node name="FxRageTransformBajie16" type="Sprite2D" parent="Bajie" unique_id=1270005897]
 visible = false
 material = SubResource("ShaderMaterial_rage_bajie6")
-transform = Transform2D(0.6988, 0, 0, 0.6988, -519.66512, -149.34804)
+position = Vector2(-479.66507, -117.34803)
+scale = Vector2(0.6988, 0.6988)
 texture = ExtResource("rage_bajie")
 centered = false
 

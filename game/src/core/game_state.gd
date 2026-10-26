@@ -35,8 +35,6 @@ var bag: Array[Item] = []                                        ## carried item
 var worn := {&"weapon": null, &"cloth": null, &"accessory": null, &"fabao": null, &"fashion": null, &"wing": null}   ## slot -> Item (null = empty)
 var buffs := {}                      ## timed buff -> seconds of stage time left (used items)
 var merit := 0                       ## 功勋: shop currency
-var merit_day := ""                  ## date of the last 功勋 reward (it is limited per day)
-var merit_times := 0                 ## rewards taken on merit_day
 var activity_days := {}              ## 活动 (七夕 / 国庆) -> date it was last entered: each one only once a day
 var moon_event := true                ## 中秋: BOSSes drop 小月饼 (switched in the 活动 window)
 var notice := ""                     ## shown by the next stage once it has loaded (e.g. the 七夕 reward)
@@ -471,8 +469,6 @@ func new_game(r := "wukong") -> void:
 	hhe_seen = false
 	buffs.clear()
 	merit = 0
-	merit_day = ""
-	merit_times = 0
 	activity_days.clear()
 	moon_event = true
 	notice = ""

@@ -1,13 +1,14 @@
-[gd_resource type="AnimationLibrary" format=3]
+[gd_resource type="AnimationLibrary" format=3 uid="uid://5370wgbsu8e6"]
 
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="2_ob3qs"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_2.png" id="3_4fo4y"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_3.png" id="4_cj5ac"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_4.png" id="5_qqf51"]
-[ext_resource type="Texture2D" path="res://entities/effects/fx_poison/tex/fx_poison_frame_5.png" id="6_hkdxy"]
+[ext_resource type="Texture2D" uid="uid://bonpt430wemhq" path="res://entities/effects/fx_poison/tex/fx_poison_frame.png" id="2_ob3qs"]
+[ext_resource type="Texture2D" uid="uid://cmwkc1doj3raj" path="res://entities/effects/fx_poison/tex/fx_poison_frame_2.png" id="3_4fo4y"]
+[ext_resource type="Texture2D" uid="uid://clrucnncvufqd" path="res://entities/effects/fx_poison/tex/fx_poison_frame_3.png" id="4_cj5ac"]
+[ext_resource type="Texture2D" uid="uid://126cocxlvyub" path="res://entities/effects/fx_poison/tex/fx_poison_frame_4.png" id="5_qqf51"]
+[ext_resource type="Texture2D" uid="uid://gi5b6evf4su5" path="res://entities/effects/fx_poison/tex/fx_poison_frame_5.png" id="6_hkdxy"]
 
 [sub_resource type="Animation" id="Animation_5kui3"]
 loop_mode = 1
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -356,6 +357,7 @@ tracks/28/keys = {
 "update": 1,
 "values": [false, true]
 }
+
 [resource]
 _data = {
 &"default": SubResource("Animation_5kui3")

@@ -187,18 +187,3 @@ static func buy(id: String, n: int) -> String:
 	GameState.profile_changed.emit()
 	return "购买成功"
 
-## 功勋 for killing the rewarded boss, a limited number of times per day. Returns the amount given.
-static func reward_merit(monster_id: int) -> int:
-	var m: Dictionary = _cat().shop.merit
-	if monster_id != int(m.monster):
-		return 0
-	var today := Time.get_date_string_from_system()
-	if GameState.merit_day != today:
-		GameState.merit_day = today
-		GameState.merit_times = 0
-	if GameState.merit_times >= int(m.per_day):
-		return 0
-	GameState.merit_times += 1
-	GameState.merit += int(m.amount)
-	GameState.profile_changed.emit()
-	return int(m.amount)

@@ -1,7 +1,7 @@
 class_name GroundItem
 extends CharacterBody2D
 ## Dropped equipment (my/FallEquipObj): falls to the floor and goes into the bag on touch.
-## Expires after a while unless it is boss loot; stays on the ground while the bag is full.
+## Expires after a while unless a boss dropped it; stays on the ground while the bag is full.
 
 var item: Item
 var _life := 0.0
@@ -9,13 +9,14 @@ var _keep := false
 var _taken := false
 var _sprite: Sprite2D
 
-static func spawn(id: String, pos: Vector2) -> GroundItem:
+## keep: never vanishes (everything a boss drops; other drops go after EquipmentCatalog.ground_life seconds).
+static func spawn(id: String, pos: Vector2, keep := false) -> GroundItem:
 	var d := EquipmentCatalog.find(id)
 	if d == null:
 		return null
 	var g := GroundItem.new()
 	g.item = d.roll()
-	g._keep = EquipmentCatalog.get_catalog().boss_loot.has(id)
+	g._keep = keep
 	g._sprite = Sprite2D.new()
 	g._sprite.texture = d.icon
 	g.add_child(g._sprite)

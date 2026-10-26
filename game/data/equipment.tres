@@ -1904,7 +1904,6 @@ items = {
 &"zisehuaban": SubResource("Resource_imhvv"),
 &"zhuzhiyinji": SubResource("Resource_5ilcn")
 }
-boss_loot = PackedStringArray("tianpengzhanyi", "jiuchidingpa", "qianghuashi_1", "dishalingjie", "dishayuanjia", "dishaquanzhang", "tianshagulian", "tianshayupao", "tianshayueji", "xuehaiyaoke", "xuehaixiehuang", "xuehaimojia", "lunhuizhang", "qingtianzhu", "jinlanjiasha", "dashengzhankai", "xiaoyuebing")
 use = {
 "huihuang": {
 "buff": "mp_regen"
@@ -1996,10 +1995,25 @@ kill_buffs = {
 "80": "gq_def"
 }
 kill_merit = {
+"60": {
+"merit": 100.0,
+"stage": [4.0, 1.0],
+"text": "获得 功勋+100"
+},
 "64": {
 "merit": 10.0,
 "stage": [9.0, 1.0],
 "text": "七夕快乐，获得 功勋+10"
+},
+"79": {
+"merit": 10.0,
+"stage": [11.0, 1.0],
+"text": "国庆快乐，获得 功勋+10"
+},
+"80": {
+"merit": 10.0,
+"stage": [11.0, 1.0],
+"text": "国庆快乐，获得 功勋+10"
 }
 }
 moon = {
@@ -2226,11 +2240,6 @@ fabao = {
 "mp_per_level": 10.0
 }
 shop = {
-"merit": {
-"amount": 50.0,
-"monster": 60.0,
-"per_day": 1.0
-},
 "pages": {
 "item": ["huihuang", "wududan", "qianghuashi_4", "qianghuashi_1", "qianghuashi_3", "shuangbeibaolv", "xingyunfu", "baodifu"],
 "look": ["tiantingzhiyi", "wukonghuangtouzhuang", "tangsenghuangtouzhuang", "bajiehuangtouzhuang", "wukonghongtouzhuang", "tangsenghongtouzhuang", "bajiehongtouzhuang", "wukongzhuangyuanfu", "tangsengzhuangyuanfu", "bajiezhuangyuanfu", "wukongxizhuang", "tangsengxizhuang", "bajiexizhuang"]

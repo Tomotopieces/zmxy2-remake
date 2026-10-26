@@ -62,7 +62,7 @@ static func _ground(m: Monster, id: String) -> void:
 	var v := Level.current.view_rect()
 	var sx := m.global_position.x - v.position.x
 	var push := -150.0 if sx > v.size.x - 10.0 else (150.0 if sx < 10.0 else 0.0)
-	GroundItem.spawn(id, m.global_position + Vector2(push + (Rng.randf() - 0.5) * 20.0, -100.0))
+	GroundItem.spawn(id, m.global_position + Vector2(push + (Rng.randf() - 0.5) * 20.0, -100.0), m.data.is_boss)
 
 static func _orb_count(t: DropTable) -> int:
 	var r := Rng.randf()

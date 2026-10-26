@@ -88,7 +88,6 @@ func _ready() -> void:
 	_check("buy stones", Forge.buy("qianghuashi_1", 3) == "购买成功" and GameState.count_of("qianghuashi_1") == 3 and GameState.merit == 910)
 	GameState.merit = 100
 	_check("merit short", Forge.buy("wukongzhuangyuanfu", 1) == "功勋不足")
-	_check("merit reward once a day", Forge.reward_merit(60) == 50 and Forge.reward_merit(60) == 0 and Forge.reward_merit(39) == 0)
 	# screens
 	for id in ["dishalingjie", "dishaquanzhang", "dishayuanjia", "xingyunfu", "baodifu", "putong_xingzhegun"]:
 		GameState.add_to_bag(GameState.make_item(id))

@@ -44,7 +44,7 @@ static func to_dict(g: Node) -> Dictionary:
 		"bag": g.bag.map(func(it: Item): return it.to_dict()), "worn": w,
 		"stage": [g.stage.x, g.stage.y], "progress": [g.progress.x, g.progress.y],
 		"opening_seen": g.opening_seen, "hhe_seen": g.hhe_seen, "buffs": g.buffs,
-		"merit": g.merit, "merit_day": g.merit_day, "merit_times": g.merit_times,
+		"merit": g.merit,
 		"activity_days": g.activity_days, "moon_event": g.moon_event,
 		"title": "Lv.%d  %s  %d-%d" % [g.level, g.hero_data.character, g.progress.x, g.progress.y],
 		"datetime": Time.get_datetime_string_from_system(false, true),
@@ -163,8 +163,6 @@ static func apply(g: Node, d: Dictionary) -> void:
 	g.opening_seen = d.get("opening_seen", true) == true
 	g.hhe_seen = d.get("hhe_seen", false) == true
 	g.merit = maxi(int(d.get("merit", 0)), 0)
-	g.merit_day = str(d.get("merit_day", ""))
-	g.merit_times = maxi(int(d.get("merit_times", 0)), 0)
 	g.moon_event = d.get("moon_event", true) != false
 	var ad = d.get("activity_days", {})
 	if ad is Dictionary:

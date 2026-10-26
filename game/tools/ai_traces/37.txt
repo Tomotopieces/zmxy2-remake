@@ -8,9 +8,10 @@
 278 #0 ATTACK/hit1 hp=600/1000 dx=90
 337 #0 MOVE/hit1 hp=600/1000 dx=90
 338 #0 MOVE/wait hp=600/1000 dx=90
-610 #0 ATTACK/hit1 hp=200/1000 dx=90
-669 #0 MOVE/hit1 hp=200/1000 dx=90
-670 #0 MOVE/wait hp=200/1000 dx=90
+519 #0 ATTACK/hit1 hp=400/1000 dx=90
+578 #0 MOVE/hit1 hp=200/1000 dx=90
+579 #0 MOVE/wait hp=200/1000 dx=90
+669 #0 ATTACK/hit1 hp=200/1000 dx=90
 721 #0 DEAD/dead hp=0/1000 dx=90
 798 #0 gone
 # 37 mid
@@ -24,12 +25,10 @@
 306 #0 ATTACK/hit1 hp=600/1000 dx=149
 365 #0 MOVE/hit1 hp=400/1000 dx=149
 366 #0 MOVE/wait hp=400/1000 dx=149
-456 #0 ATTACK/hit1 hp=400/1000 dx=149
-515 #0 MOVE/hit1 hp=400/1000 dx=149
-516 #0 MOVE/wait hp=400/1000 dx=149
-606 #0 ATTACK/hit1 hp=200/1000 dx=149
-665 #0 MOVE/hit1 hp=200/1000 dx=149
-666 #0 MOVE/wait hp=200/1000 dx=149
+547 #0 ATTACK/hit1 hp=200/1000 dx=149
+606 #0 MOVE/hit1 hp=200/1000 dx=149
+607 #0 MOVE/wait hp=200/1000 dx=149
+697 #0 ATTACK/hit1 hp=200/1000 dx=149
 721 #0 DEAD/dead hp=0/1000 dx=149
 798 #0 gone
 # 37 far

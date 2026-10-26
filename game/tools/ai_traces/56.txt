@@ -9,7 +9,7 @@
 489 #0 ATTACK/hit3 hp=16400/40000 dx=-82
 523 #0 MOVE/hit3 hp=17580/40000 dx=113
 524 #0 ATTACK/run hp=17580/40000 dx=117
-901 #0 DEAD/dead hp=0/40000 dx=282
+901 #0 DEAD/dead hp=0/40000 dx=-261
 1006 #0 gone
 # 56 mid
 0 #0 appears id=56 hp=40000 x=833
@@ -20,10 +20,10 @@
 132 #0 ATTACK/hit3 hp=32000/40000 dx=191
 166 #0 MOVE/hit3 hp=32400/40000 dx=-4
 167 #0 ATTACK/run hp=32400/40000 dx=-8
-559 #0 ATTACK/hit3 hp=8400/40000 dx=192
-593 #0 MOVE/hit3 hp=9980/40000 dx=-3
-594 #0 ATTACK/run hp=9980/40000 dx=-7
-901 #0 DEAD/dead hp=0/40000 dx=-111
+515 #0 ATTACK/hit3 hp=16400/40000 dx=-128
+549 #0 MOVE/hit3 hp=8400/40000 dx=-324
+550 #0 ATTACK/run hp=8400/40000 dx=-328
+901 #0 DEAD/dead hp=0/40000 dx=306
 1006 #0 gone
 # 56 far
 0 #0 appears id=56 hp=40000 x=833
@@ -34,8 +34,8 @@
 220 #0 ATTACK/hit3 hp=24000/40000 dx=189
 254 #0 MOVE/hit3 hp=24800/40000 dx=-6
 255 #0 ATTACK/run hp=24800/40000 dx=-10
-603 #0 ATTACK/hit3 hp=8800/40000 dx=101
-637 #0 MOVE/hit3 hp=8800/40000 dx=297
-638 #0 ATTACK/run hp=8800/40000 dx=301
-901 #0 DEAD/dead hp=0/40000 dx=438
+603 #0 ATTACK/hit3 hp=8800/40000 dx=-90
+637 #0 MOVE/hit3 hp=10360/40000 dx=105
+638 #0 ATTACK/run hp=10360/40000 dx=109
+901 #0 DEAD/dead hp=0/40000 dx=213
 1006 #0 gone
