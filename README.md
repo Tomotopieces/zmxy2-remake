@@ -19,9 +19,11 @@ Answers to the user: Simplified Chinese. Deleting files: Recycle Bin (`bash tool
 | (no shared actor folder) | a picture belongs to whoever it was drawn for — `<owner>_…` in that owner's `tex/`; a boss that borrows another's move (平等王) or a copy of a hero (悟空怪 / 唐僧怪, which use the hero's own pictures) references it there |
 | `game/assets/` | `items/<id>_fall.png` (item pictures: the drop picture, or `<id>_icon.png` = the original framed one when there is none), `fonts/`, `sounds/` |
 | `game/data/` | global tables: `equipment.tres` (every item; ids = full pinyin of the name), `drops.tres`, `stages.json` — edit them directly |
-| `.pi/skills/zmxy2-entity-migration/` | how to move / rename files and ids in this layout without breaking references (`tools/move_entity.js`), and the naming rules |
+| `tools/move_entity.js` | moves / renames files or folders under `game/` and rewrites every `res://` path to them (`node tools/move_entity.js <from> <to> ...`) |
 | `tools/extract/fix_scene_uids.js` | `--fix` refreshes stale texture uids in scenes ("missing dependency"). Pictures are named `<owner>_<use>.png` (`wukong_hit1_part3`, `tab_menu_background`) |
 | `.claude/skills/stage-rework/` | how to rework a stage's scene and design its look |
+
+Naming: item ids and folders are the full pinyin of the name (`putong_jiasha`, `qianghuashi_1`; never guessed initials — look the id up in `data/equipment.tres`); a renamed item id also needs an old-id entry in `SaveGame._migrate`. Pictures are `<owner>_<use>.png`. Scene nodes are readable PascalCase words. A thing used by one owner lives in that owner's folder (borrowed pictures are referenced there, not copied); only things several owners use go to a `shared/` folder.
 
 ## Run / test / export
 - Run: open `game/` in Godot 4.7 (F5). Debug builds: `~` console (items, teleport, boss fight), keys 1 refill / 2 hit boxes / 3 test gear / 4 kill all / 5 restart / 6 invincible / 7 invulnerable monsters glow yellow (temporary). F11 fullscreen. In a stage: C bag, V skills, B fabao, Esc / Tab settings — one menu (`TabMenu`, ui/tab_menu/tab_menu.tscn) with tabs 背包 / 技能 / 法宝 / 设置; the pad switches tabs with LT / RT.
@@ -72,6 +74,7 @@ Rim light / moon exist because 1-1…1-3 have a moon — they are not a general 
 - Monster AI: one `MonsterBrain` per monster (`entities/monsters/<name>/<name>_brain.gd`, templates `src/actors/brains/boss_b.gd` / `boss_d.gd`), parameters in `MonsterData.brain`. Hits: Hitbox/Hurtbox Area2D pairs keyed by the animation, de-duplicated per swing by serial (`combat/hit_dealer.gd`).
 - Activities (中秋 / 七夕 / 国庆) have a panel with on/off switches; 贪/嗔/痴 stacking, forge (`core/forge.gd`), fabao (`entities/fabao/`), skill/shop screens are in `ui/`.
 - Docs of the original's analysis were removed from the tree; they live in git history (`git log --diff-filter=D --name-only -- docs`).
+- Music: looping tunes must have `loop=true` in their `.ogg.import`. The web build plays sounds as Web Audio samples, which only loop cleanly when the file itself is imported looping; setting `stream.loop` in code makes the browser restart the sample and stutter at the seam.
 
 ## Branches
 `main` — released remake (remake 0.1: the scene-based remake with the new stage looks; earlier releases were v1.0…v1.3.1).

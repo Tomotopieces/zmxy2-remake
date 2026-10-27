@@ -130,7 +130,9 @@ func music(sound: String, loop := true) -> void:
 	var s := _stream(sound)
 	if s == null or _music.stream == s and _music.playing:
 		return
-	if s is AudioStreamMP3 or s is AudioStreamOggVorbis:
+	# Looping comes from the import (loop=true in the tune's .import): on the web a stream whose loop is switched in
+	# code is restarted by the browser at the seam, which stutters. Only a mismatch is corrected here.
+	if (s is AudioStreamMP3 or s is AudioStreamOggVorbis) and s.loop != loop:
 		s.loop = loop
 	stop_music()   # (leaves a fresh idle player in _music)
 	_music.stream = s
