@@ -408,6 +408,7 @@ tracks/16/keys = {
 
 [sub_resource type="Animation" id="Animation_uuoui"]
 length = 1.2083333333333333
+step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

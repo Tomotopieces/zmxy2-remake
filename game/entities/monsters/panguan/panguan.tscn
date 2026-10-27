@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://bcpy8tnbo8vos" path="res://src/puppet/puppet.gd" id="1_da746"]
 [ext_resource type="Texture2D" uid="uid://gt6u3rrjvki4" path="res://entities/monsters/panguan/tex/panguan_walk_part1.png" id="2_h2qji"]
 [ext_resource type="Texture2D" uid="uid://cy2kp301v1i5l" path="res://entities/monsters/panguan/tex/panguan_walk_part2.png" id="3_ne2pc"]
-[ext_resource type="Texture2D" uid="uid://bo8afh3gowed" path="res://entities/monsters/panguan/tex/panguan_hit2_part1.png" id="4_xo3qp"]
-[ext_resource type="Texture2D" uid="uid://c1pd3pjee7c1d" path="res://entities/monsters/panguan/tex/panguan_hit2_part2.png" id="5_aus7b"]
+[ext_resource type="Texture2D" uid="uid://caibljs0777lb" path="res://entities/monsters/panguan/tex/panguan_hit2_part1_3.png" id="5_8phvu"]
+[ext_resource type="Texture2D" uid="uid://blbutl0xqiu5f" path="res://entities/monsters/panguan/tex/panguan_hit2_part2_15.png" id="6_gbhnf"]
 [ext_resource type="Texture2D" uid="uid://dgyp6xq0dsc6" path="res://entities/monsters/panguan/tex/panguan_hit1_part1_2.png" id="7_h2qji"]
 [ext_resource type="Texture2D" uid="uid://weqpsahpxya5" path="res://entities/monsters/panguan/tex/panguan_hit1_part2_3.png" id="8_ne2pc"]
 [ext_resource type="Texture2D" uid="uid://b0y0c7xa68nmu" path="res://entities/monsters/panguan/tex/panguan_hurt_part1.png" id="9_dwfed"]
@@ -61,15 +61,15 @@ centered = false
 visible = false
 
 [node name="Hit2Part1" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=783943915]
-position = Vector2(-48.7, -93.4)
+position = Vector2(-67.85, -64.45)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_xo3qp")
+texture = ExtResource("5_8phvu")
 centered = false
 
 [node name="Hit2Part2" type="Sprite2D" parent="Puppet/Poses/Hit2" unique_id=90220559]
-position = Vector2(-121.45, -117.7)
+position = Vector2(-37.1, -48.65)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_aus7b")
+texture = ExtResource("6_gbhnf")
 centered = false
 
 [node name="Hit1" type="Node2D" parent="Puppet/Poses" unique_id=363301090]
