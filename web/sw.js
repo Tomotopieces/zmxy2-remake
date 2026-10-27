@@ -3,7 +3,7 @@
 // tools/web_chunks.js): a new build changes only the chunks around the changed files, so a returning player
 // downloads just those. index.pck is put back together here from the cached and the new chunks.
 // The engine (index.wasm) is cached under its hash; the small files under the build id.
-const BUILD = 'f94ee80ba9f6';
+const BUILD = 'd4922657a459';
 const STATIC = 'zmxy2-static-' + BUILD;
 const CHUNKS = 'zmxy2-chunks';
 const ENGINE = 'zmxy2-engine';
