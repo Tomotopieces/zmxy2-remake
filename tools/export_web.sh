@@ -13,9 +13,20 @@ PY="${PY:-/c/Users/Administrator/miniconda3/python.exe}"
 "$PY" tools/subset_fonts.py subset || exit 1
 trap '"$PY" tools/subset_fonts.py restore' EXIT
 (cd game && "$GODOT" --headless --path . --export-release Web ../web/index.html > ../tools/dl/web_export.log 2>&1) || { tail -20 tools/dl/web_export.log; exit 1; }
+# Godot's web build plays sounds as Web Audio samples and loops one by waiting for the "ended" event and starting it
+# again, which leaves an audible gap at the start of every loop of the music. Let the browser loop it itself instead.
+node -e '
+const fs = require("fs"), f = "web/index.js";
+const a = "this._source.buffer=this.getSample().getAudioBuffer()";
+let t = fs.readFileSync(f, "utf8");
+const n = t.split(a).length - 1;
+if (n !== 2) { console.error("index.js: expected 2 sample sources to patch, found " + n); process.exit(1); }
+t = t.split(a).join(a + ";if(this.getSample().loopMode===\"forward\"){this._source.loop=true}");
+fs.writeFileSync(f, t);
+' || exit 1
 cp game/web_shell/loading_bg.png game/web_shell/loading_bar_empty.png game/web_shell/loading_bar_full.png web/
 # the pack is published as chunks (web/chunks + web/pck.json) so an update downloads only what changed
 node tools/web_chunks.js web || exit 1
-build=$(cat web/pck.json web/index.wasm | sha1sum | cut -c1-12)
+build=$(cat web/pck.json web/index.wasm web/index.js | sha1sum | cut -c1-12)
 sed "s/__BUILD__/$build/" game/web_shell/sw.js > web/sw.js
 echo "web build $build"
