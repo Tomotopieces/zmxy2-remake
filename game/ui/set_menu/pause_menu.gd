@@ -10,7 +10,7 @@ signal to_menu
 const VOLUME_STEPS := 20   ## 5 % a step
 const BUSES := {"MusicVolume": &"Music", "SfxVolume": &"SFX", "AmbienceVolume": &"Ambience"}
 ## Gift code: the 绝 状元服 (the red one, not the shop's blue 状元服) of the current role, once per game.
-const GIFT_CODE := "give me the cloth"
+const GIFT_CODE := "give me the clothes"
 
 var in_stage := true   ## false on the map: no 继续游戏 / 返回地图
 var on_title := false  ## the title's 设置: no 返回标题界面 and no gift box either

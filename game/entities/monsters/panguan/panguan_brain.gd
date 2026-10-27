@@ -2,7 +2,9 @@ extends MonsterBrain
 ## Monster39 判官 (2-2 boss).
 ## Intro: plays "ready" (raises his hands) and then holds the casting pose, whose nested glow clips keep looping
 ## (puppet panguan_ready); invulnerable until the stage releases it (StageListener22 fires; real_start()).
-## Every hit2 interval it casts hit2 (self speed-up buff). Sped up: runs at high speed keeping ~400 px from the
+## Every hit2 interval it casts hit2 (self speed-up buff). The first countdown runs from his appearance, through the
+## intro (Monster39.hit2NeedCount counts from the constructor): the intro outlasts it, so he casts hit2 the moment the
+## fight starts and dashes off sped up. Sped up: runs at high speed keeping ~400 px from the
 ## target, hops, and attacks on its own short timer; normal: base AI with an invulnerable wind-up.
 ## hit1 fires three bolts (frames 10 / 31 / 52).
 
@@ -20,6 +22,7 @@ const CAST_PUPPET := "panguan_ready"
 const CAST_OFFSET := Vector2(0.1, -3.95)   ## body position in the ready frame of Monster39
 
 func setup() -> void:
+	_hit2_t = float(param("hit2_first", 3.0))
 	m.invuln = 9999.0
 	m.play_action(&"ready")
 	m.puppet.action_finished.connect(_hold_cast, CONNECT_ONE_SHOT)
@@ -49,16 +52,15 @@ func real_start() -> void:
 	m.invuln = float(param("start_invuln", 1.0))
 	m.state = Monster.State.MOVE
 	m.puppet.play(&"wait")
-	_hit2_t = float(param("hit2_first", 3.0))
 
 func can_be_hit() -> bool:
 	return _started
 
 func think(delta: float) -> void:
+	_hit2_t -= delta   # (also during the intro: then hit2 waits for the fight to start)
 	if not _started:
 		return
 	_speedup = maxf(_speedup - delta, 0.0)
-	_hit2_t -= delta
 	if _hit2_t <= 0.0 and m.state == Monster.State.MOVE:
 		_hit2_t = float(param("hit2_every", 30.0))
 		m.invuln = maxf(m.invuln, float(param("hit2_invuln", 1.33)))
