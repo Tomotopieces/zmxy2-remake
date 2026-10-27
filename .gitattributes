@@ -11,3 +11,9 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 # Web export (deployed as a static site): the engine and the resource pack
 web/*.wasm filter=lfs diff=lfs merge=lfs -text
+
+# Godot text resources stay LF in the working tree too (core.autocrlf would check them out CRLF): Godot keeps the \r
+# inside multi-line string values (Label text), so every line break of such a Label is drawn twice.
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
