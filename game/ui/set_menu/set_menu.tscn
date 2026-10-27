@@ -5,6 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://cw8asul3mo0ir" path="res://ui/components/set_btn.tscn" id="5_mav51"]
 [ext_resource type="PackedScene" path="res://ui/components/gauge_slider.tscn" id="gauge"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wvhbo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abi3o"]
+
 [node name="SetMenu" type="Control" unique_id=1936660815]
 layout_mode = 3
 anchors_preset = 0
@@ -28,36 +32,30 @@ offset_bottom = 500.0
 pivot_offset_ratio = Vector2(0.5, 0.5)
 mouse_filter = 2
 theme_override_constants/separation = 6
+alignment = 1
 
-[node name="BtnContinue" parent="VBoxContainer" unique_id=1077589236 instance=ExtResource("5_mav51")]
+[node name="MusicVolume" parent="VBoxContainer" unique_id=185250779 instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 4
-text = "继续游戏"
 
-[node name="MusicVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
-unique_name_in_owner = true
-layout_mode = 2
-caption = "音乐"
-
-[node name="SfxVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
+[node name="SfxVolume" parent="VBoxContainer" unique_id=464947667 instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
 caption = "音效"
 
-[node name="AmbienceVolume" parent="VBoxContainer" instance=ExtResource("gauge")]
+[node name="AmbienceVolume" parent="VBoxContainer" unique_id=1311277146 instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
 caption = "环境音"
 
-[node name="ScreenShake" parent="VBoxContainer" instance=ExtResource("gauge")]
+[node name="ScreenShake" parent="VBoxContainer" unique_id=1178575286 instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
 caption = "画面震动"
 steps = 3
 labels = PackedStringArray("关", "弱", "中", "强")
 
-[node name="PadRumble" parent="VBoxContainer" instance=ExtResource("gauge")]
+[node name="PadRumble" parent="VBoxContainer" unique_id=2019362363 instance=ExtResource("gauge")]
 unique_name_in_owner = true
 layout_mode = 2
 caption = "手柄震动"
@@ -81,3 +79,16 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "返回标题界面"
+
+[node name="BtnContinue" parent="VBoxContainer" unique_id=1077589236 instance=ExtResource("5_mav51")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "继续游戏"
+
+[node name="InputGift" type="LineEdit" parent="VBoxContainer" unique_id=1554377092]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wvhbo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_abi3o")
+alignment = 1

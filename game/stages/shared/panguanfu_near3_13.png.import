@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2pyv70vhkv0"
-path="res://.godot/imported/panguandian_near3_13.png-92c10ad3d925c70823f30c2efae74c14.ctex"
+path="res://.godot/imported/panguanfu_near3_13.png-8846d00bd38594f5b7aa89cf7f6a2595.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stages/shared/panguandian_near3_13.png"
-dest_files=["res://.godot/imported/panguandian_near3_13.png-92c10ad3d925c70823f30c2efae74c14.ctex"]
+source_file="res://stages/shared/panguanfu_near3_13.png"
+dest_files=["res://.godot/imported/panguanfu_near3_13.png-8846d00bd38594f5b7aa89cf7f6a2595.ctex"]
 
 [params]
 

@@ -43,7 +43,7 @@ static func to_dict(g: Node) -> Dictionary:
 		"passives": g.passives,
 		"bag": g.bag.map(func(it: Item): return it.to_dict()), "worn": w,
 		"stage": [g.stage.x, g.stage.y], "progress": [g.progress.x, g.progress.y],
-		"opening_seen": g.opening_seen, "hhe_seen": g.hhe_seen, "buffs": g.buffs,
+		"opening_seen": g.opening_seen, "hhe_seen": g.hhe_seen, "cloth_gift": g.cloth_gift, "buffs": g.buffs,
 		"merit": g.merit,
 		"activity_days": g.activity_days, "moon_event": g.moon_event,
 		"title": "Lv.%d  %s  %d-%d" % [g.level, g.hero_data.character, g.progress.x, g.progress.y],
@@ -162,6 +162,7 @@ static func apply(g: Node, d: Dictionary) -> void:
 	g.progress = _pair(d.get("progress"), Vector2i(1, 1))
 	g.opening_seen = d.get("opening_seen", true) == true
 	g.hhe_seen = d.get("hhe_seen", false) == true
+	g.cloth_gift = d.get("cloth_gift", false) == true
 	g.merit = maxi(int(d.get("merit", 0)), 0)
 	g.moon_event = d.get("moon_event", true) != false
 	var ad = d.get("activity_days", {})

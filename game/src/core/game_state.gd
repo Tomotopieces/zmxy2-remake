@@ -42,6 +42,7 @@ var stage := Vector2i(1, 1)          ## stage being played (or last played)
 var progress := Vector2i(1, 1)       ## furthest unlocked stage-level on the main path (1-1 .. 4-1)
 var opening_seen := false            ## opening comic shown
 var hhe_seen := false                ## 红孩儿 comic shown (first visit to 6-1)
+var cloth_gift := false              ## the gift code's 绝 状元服 was claimed (once per game)
 var slot := -1                       ## save slot of this game (-1 = never saved)
 
 func _ready() -> void:
@@ -292,6 +293,18 @@ func add_to_bag(item: Item, force := false) -> bool:
 	profile_changed.emit()
 	return true
 
+## The settings page's gift code: the current role's 绝·<角色>状元服, once per game. Returns the notice to show.
+func claim_cloth_gift() -> String:
+	if cloth_gift:
+		return "已经领取过了"
+	var item := make_item("jue_%szhuangyuanfu" % role)
+	if item == null:
+		return ""
+	if not add_to_bag(item):
+		return "背包已满"
+	cloth_gift = true
+	return "获得 %s" % item_data(item).display_name
+
 ## A fresh copy of a catalogue item (rolled stats).
 func make_item(id: String) -> Item:
 	var d := EquipmentCatalog.find(id)
@@ -467,6 +480,7 @@ func new_game(r := "wukong") -> void:
 	progress = Vector2i(1, 1)
 	opening_seen = false
 	hhe_seen = false
+	cloth_gift = false
 	buffs.clear()
 	merit = 0
 	activity_days.clear()

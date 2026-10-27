@@ -50,7 +50,7 @@ Every stage's scenery is an editor scene `stages/<stage>/<stage>.tscn` that the 
 - The layering is the user's job: never decide depth for him. A piece moved to a layer has x = scroll_scale × original x.
 - Every bitmap placement of the original is its own `Sprite2D` (named `<bitmap>_<n>`, painting order); nothing is merged. A row of one picture laid edge to edge (floor, haze) is ONE `TextureRect`: repeat on, stretch Tile, texture filter Nearest.
 - Mechanisms are scenes of their own with a script on the root and `@export` parameters, instanced under `Objects` at their real world position (no parallax), built from plain Sprite2D + AnimationPlayer — **never a Puppet** (parts are hidden in the editor). `Level` moves `Objects` into the world; the stage script (`stages/<stage>/<stage>.gd`) finds them there.
-- 5-1 (and boss rooms) have one painting + a floor: 2 nodes. 2-2 (`panguandian`) was ONE baked 4700x522 JPEG in the original; it was rebuilt from the loose bitmaps of 2-3; only the boss end (x ≥ 3745) stays a crop of the baked bitmap.
+- 5-1 (and boss rooms) have one painting + a floor: 2 nodes. 2-2 (`panguanfu`) was ONE baked 4700x522 JPEG in the original; it was rebuilt from the loose bitmaps of 2-3; only the boss end (x ≥ 3745) stays a crop of the baked bitmap.
 - Textures: `stages/<stage>/tex/<stage>_<layer>_<n>.png`; shared ones in `stages/shared/`.
 
 ## Actor scenes

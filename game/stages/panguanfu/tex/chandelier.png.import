@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5hq85qsap0si"
-path="res://.godot/imported/panguandian_near_tiles_2.png-7e0bcd213d8e27de4297034b0e234f4d.ctex"
+uid="uid://d2mf1xcbx7d5y"
+path="res://.godot/imported/chandelier.png-1a643d9e91749e125b4ffd6610da762c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stages/shared/panguandian_near_tiles_2.png"
-dest_files=["res://.godot/imported/panguandian_near_tiles_2.png-7e0bcd213d8e27de4297034b0e234f4d.ctex"]
+source_file="res://stages/panguanfu/tex/chandelier.png"
+dest_files=["res://.godot/imported/chandelier.png-1a643d9e91749e125b4ffd6610da762c.ctex"]
 
 [params]
 

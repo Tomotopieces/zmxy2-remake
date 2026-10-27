@@ -2,16 +2,18 @@ class_name PauseMenu
 extends Control
 ## 设置, a page of the TabMenu (ui/set_menu/set_menu.tscn): continue, the music / sound / ambience volumes and the
 ## screen shake / pad rumble levels (GaugeSlider: volumes in 5 % steps, shake and rumble 关 / 弱 / 中 / 强), help, back
-## to the map, back to the title.
+## to the map, back to the title, and the gift-code box (InputGift; not on the title).
 
 signal to_map
 signal to_menu
 
 const VOLUME_STEPS := 20   ## 5 % a step
 const BUSES := {"MusicVolume": &"Music", "SfxVolume": &"SFX", "AmbienceVolume": &"Ambience"}
+## Gift code: the 绝 状元服 (the red one, not the shop's blue 状元服) of the current role, once per game.
+const GIFT_CODE := "give me the cloth"
 
 var in_stage := true   ## false on the map: no 继续游戏 / 返回地图
-var on_title := false  ## the title's 设置: no 游戏帮助 / 返回标题界面 either (the title has its own 游戏帮助)
+var on_title := false  ## the title's 设置: no 返回标题界面 and no gift box either
 var _ui: UiLayout
 
 func _ready() -> void:
@@ -19,8 +21,11 @@ func _ready() -> void:
 	add_child(_ui)
 	for b in ["BtnContinue", "BtnBackToMap"]:
 		_ui.piece(b).visible = in_stage
-	for b in ["BtnHelp", "BtnBackToTitle"]:
-		_ui.piece(b).visible = not on_title
+	_ui.piece("BtnBackToTitle").visible = not on_title
+	var gift: LineEdit = _ui.piece("InputGift")
+	gift.visible = not on_title
+	gift.text_changed.connect(_on_gift_typed)
+	gift.text_submitted.connect(func(_t): gift.clear())
 	for s in BUSES:
 		var g: GaugeSlider = _ui.piece(s)
 		g.steps = VOLUME_STEPS
@@ -40,6 +45,17 @@ func _ready() -> void:
 		Feel.save_settings()
 		Feel.rumble(0.5, 0.15))
 	_ui.button_pressed.connect(_on_button)
+
+## The code works as soon as it has been typed (no Enter needed).
+func _on_gift_typed(text: String) -> void:
+	if text.strip_edges().to_lower() != GIFT_CODE:
+		return
+	var gift: LineEdit = _ui.piece("InputGift")
+	gift.clear()
+	gift.release_focus()
+	var msg := GameState.claim_cloth_gift()
+	if msg != "":
+		Toast.show_on(self, msg)
 
 static func _bus_volume(bus: StringName) -> float:
 	match bus:

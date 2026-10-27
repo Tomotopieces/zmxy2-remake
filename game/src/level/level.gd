@@ -74,7 +74,7 @@ static func music_for(s: Vector2i) -> String:
 ## Stage number -> its folder under stages/ (the pinyin of the stage's name).
 const STAGES := {
 	Vector2i(0, 1): "leitai", Vector2i(1, 1): "guicheng", Vector2i(1, 2): "wuchangxiang", Vector2i(1, 3): "guimenguan",
-	Vector2i(2, 1): "jieyinyuan", Vector2i(2, 2): "panguandian", Vector2i(2, 3): "yanluodian",
+	Vector2i(2, 1): "jieyinyuan", Vector2i(2, 2): "panguanfu", Vector2i(2, 3): "yanluodian",
 	Vector2i(3, 1): "wangchuanhe", Vector2i(3, 2): "naiheqiao", Vector2i(3, 3): "wangxiangtai", Vector2i(4, 1): "zhuanlundian",
 	Vector2i(5, 1): "baigumijing", Vector2i(6, 1): "niumogu", Vector2i(7, 1): "shibacengdiyu", Vector2i(8, 1): "huodadiyu",
 	Vector2i(9, 1): "qixihuodong", Vector2i(10, 1): "luoxuandiyu_dating", Vector2i(10, 2): "luoxuandiyu_wuguanwang",

@@ -1,6 +1,6 @@
 class_name MainMenu
 extends CanvasLayer
-## Title screen (main.tscn's Title node): 新的开始, 继续游戏 (save slots), 设置 (the menu's settings tab alone), 游戏帮助, 退出游戏.
+## Title screen (main.tscn's Title node): 新的开始, 继续游戏 (save slots), 设置 (the menu's settings tab alone, with 游戏帮助), 退出游戏.
 
 signal new_game
 signal continued
@@ -51,10 +51,5 @@ func _on_button(b: String) -> void:
 			m.tree_exited.connect(func(): _popup = null)
 			_popup = m
 			add_child(m)
-		"GameHelp":
-			var h := HelpPanel.new()
-			h.tree_exited.connect(func(): _popup = null)
-			_popup = h
-			add_child(h)
 		"QuitGame":
 			get_tree().quit()

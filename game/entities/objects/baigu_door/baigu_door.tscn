@@ -1,15 +1,21 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bw6lkid4573tb"]
 
-[ext_resource type="Script" path="res://entities/objects/baigu_door/baigu_door.gd" id="1_hqfna"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_closed.png" id="2_7wiro"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_back.png" id="3_4hrqi"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door.png" id="4_wvs0t"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_light.png" id="5_6urys"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door_2.png" id="6_2uy71"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door_3.png" id="7_4s1q6"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door_4.png" id="8_h2vxh"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door_5.png" id="9_13qlt"]
-[ext_resource type="Texture2D" path="res://entities/objects/baigu_door/tex/baigu_door_door_6.png" id="10_jjemt"]
+[ext_resource type="Script" uid="uid://ds8tx4avosg1g" path="res://entities/objects/baigu_door/baigu_door.gd" id="1_hqfna"]
+[ext_resource type="Texture2D" uid="uid://778t7r6a7fo4" path="res://entities/objects/baigu_door/tex/baigu_door_closed.png" id="2_7wiro"]
+[ext_resource type="Texture2D" uid="uid://ct3ouehhsyqpg" path="res://entities/objects/baigu_door/tex/baigu_door_back.png" id="3_4hrqi"]
+[ext_resource type="Texture2D" uid="uid://burxcwtu5lfrx" path="res://entities/objects/baigu_door/tex/baigu_door_door.png" id="4_wvs0t"]
+[ext_resource type="Texture2D" uid="uid://mluma66ievda" path="res://entities/objects/baigu_door/tex/baigu_door_light.png" id="5_6urys"]
+[ext_resource type="Texture2D" uid="uid://crv1mipi0ihin" path="res://entities/objects/baigu_door/tex/baigu_door_door_2.png" id="6_2uy71"]
+[ext_resource type="Texture2D" uid="uid://f17hhxahvgyo" path="res://entities/objects/baigu_door/tex/baigu_door_door_3.png" id="7_4s1q6"]
+[ext_resource type="Texture2D" uid="uid://cpdkypb01s8on" path="res://entities/objects/baigu_door/tex/baigu_door_door_4.png" id="8_h2vxh"]
+[ext_resource type="Texture2D" uid="uid://degqtwoiw8x5x" path="res://entities/objects/baigu_door/tex/baigu_door_door_5.png" id="9_13qlt"]
+[ext_resource type="Texture2D" uid="uid://u1b5o4u6r37o" path="res://entities/objects/baigu_door/tex/baigu_door_door_6.png" id="10_jjemt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_WeakSpot"]
+size = Vector2(41, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_EnterZone"]
+size = Vector2(324, 185.1)
 
 [sub_resource type="Animation" id="Animation_hqfna"]
 length = 2.0416666666666665
@@ -91,12 +97,6 @@ _data = {
 &"open": SubResource("Animation_hqfna")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_WeakSpot"]
-size = Vector2(41, 41)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_EnterZone"]
-size = Vector2(174, 101)
-
 [node name="BaiguDoor" type="Node2D" unique_id=1574346883]
 z_index = -8
 script = ExtResource("1_hqfna")
@@ -140,22 +140,21 @@ points = PackedVector2Array(-220.5, -90.5, 220.5, -90.5, 220.5, 0.5, -220.5, 0.5
 width = 2.0
 default_color = Color(1, 0.8, 0.2, 0.8)
 
-[node name="WeakSpot" type="Area2D" parent="."]
+[node name="WeakSpot" type="Area2D" parent="." unique_id=864375831]
 collision_layer = 32
 collision_mask = 0
 monitoring = false
 
-[node name="Shape" type="CollisionShape2D" parent="WeakSpot"]
-position = Vector2(0, 0)
+[node name="Shape" type="CollisionShape2D" parent="WeakSpot" unique_id=1556338077]
 shape = SubResource("RectangleShape2D_WeakSpot")
 
-[node name="EnterZone" type="Area2D" parent="."]
+[node name="EnterZone" type="Area2D" parent="." unique_id=926192271]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 
-[node name="Shape" type="CollisionShape2D" parent="EnterZone"]
-position = Vector2(-19, 42.4)
+[node name="Shape" type="CollisionShape2D" parent="EnterZone" unique_id=2103618344]
+position = Vector2(0, 84.45)
 shape = SubResource("RectangleShape2D_EnterZone")
 
 [node name="Anim" type="AnimationPlayer" parent="." unique_id=1075221011]

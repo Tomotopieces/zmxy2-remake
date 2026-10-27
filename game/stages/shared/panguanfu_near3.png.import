@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcoow8m8yf4e"
-path="res://.godot/imported/panguandian_near3_tiles.png-228ede57fb2995b021e0ae80e8f596cf.ctex"
+uid="uid://ce50xtej84j4r"
+path="res://.godot/imported/panguanfu_near3.png-c2148f5e3388586a6b2919cd9b851a55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stages/shared/panguandian_near3_tiles.png"
-dest_files=["res://.godot/imported/panguandian_near3_tiles.png-228ede57fb2995b021e0ae80e8f596cf.ctex"]
+source_file="res://stages/shared/panguanfu_near3.png"
+dest_files=["res://.godot/imported/panguanfu_near3.png-c2148f5e3388586a6b2919cd9b851a55.ctex"]
 
 [params]
 
