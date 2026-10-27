@@ -1,18 +1,12 @@
 extends Node
 ## Audio: Music / SFX buses (default_bus_layout.tres: the web build only plays on buses declared there), pooled one-shot players, volume settings persisted in user://settings.cfg.
-## Hotkeys: volume_down / volume_up / mute.
-
-signal volume_changed(master: float, muted: bool)
-
 const SETTINGS := "user://settings.cfg"
 const SOUND_DIR := "res://assets/sounds/"
-const STEP := 0.1
 
-var master := 0.3        ## linear 0..1, low by default
-var music_volume := 0.6
-var sfx_volume := 1.0
-var ambience_volume := 1.0   ## the stage ambience (rain, river...): its own bus "Ambience"
-var muted := false
+## Linear 0..1 per bus, set on the 设置 page (the only volume controls; the Master bus stays at full).
+var music_volume := 0.2
+var sfx_volume := 0.3
+var ambience_volume := 0.3   ## the stage ambience (rain, river...): its own bus "Ambience"
 
 var _music: AudioStreamPlayer   ## the tune playing (or fading in); the one it replaced fades out on its own player
 const MUSIC_FADE := 1.0         ## seconds of every music fade in / out (a change cross-fades)
@@ -37,14 +31,6 @@ func _ready() -> void:
 	_load_settings()
 	Feel.load_settings()
 	_apply()
-
-func _unhandled_input(e: InputEvent) -> void:
-	if e.is_action_pressed("volume_down"):
-		set_master(master - STEP)
-	elif e.is_action_pressed("volume_up"):
-		set_master(master + STEP)
-	elif e.is_action_pressed("mute"):
-		set_muted(not muted)
 
 func _stream(sound: String) -> AudioStream:
 	if sound == "":   # an action without a sound
@@ -179,12 +165,6 @@ func ambience(sound: String, volume_db := -18.0) -> void:
 	_amb.volume_db = volume_db
 	_amb.play()
 
-func set_master(v: float) -> void:
-	master = clampf(snappedf(v, 0.01), 0.0, 1.0)
-	muted = false
-	_apply()
-	_save_settings()
-
 ## Volume of one bus, 0..1 (设置 page sliders).
 func set_bus_volume(bus: StringName, v: float) -> void:
 	v = clampf(snappedf(v, 0.01), 0.0, 1.0)
@@ -195,31 +175,30 @@ func set_bus_volume(bus: StringName, v: float) -> void:
 	_apply()
 	_save_settings()
 
-func set_muted(v: bool) -> void:
-	muted = v
-	_apply()
-	_save_settings()
-
-## Re-applies the bus volumes and mute (also when the web page hides or shows the game).
+## Re-applies the bus volumes (also when the web page hides or shows the game: hidden = silent).
 func apply() -> void:
 	_apply()
 
 func _apply() -> void:
-	AudioServer.set_bus_volume_db(0, linear_to_db(master))
-	AudioServer.set_bus_mute(0, muted or master <= 0.0 or WebHost.hidden)
+	AudioServer.set_bus_volume_db(0, 0.0)
+	AudioServer.set_bus_mute(0, WebHost.hidden)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(music_volume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"), linear_to_db(sfx_volume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Ambience"), linear_to_db(ambience_volume))
-	volume_changed.emit(master, muted)
 
 func _load_settings() -> void:
 	var cf := ConfigFile.new()
 	if cf.load(SETTINGS) == OK:
-		master = _volume(cf.get_value("audio", "master", master), master)
 		music_volume = _volume(cf.get_value("audio", "music", music_volume), music_volume)
 		sfx_volume = _volume(cf.get_value("audio", "sfx", sfx_volume), sfx_volume)
 		ambience_volume = _volume(cf.get_value("audio", "ambience", ambience_volume), ambience_volume)
-		muted = cf.get_value("audio", "muted", muted) == true
+		# older settings had a master volume (the -/= keys) on top: fold it into the three buses once
+		if cf.has_section_key("audio", "master"):
+			var m := 0.0 if cf.get_value("audio", "muted", false) == true else _volume(cf.get_value("audio", "master"), 1.0)
+			music_volume = snappedf(music_volume * m, 0.05)
+			sfx_volume = snappedf(sfx_volume * m, 0.05)
+			ambience_volume = snappedf(ambience_volume * m, 0.05)
+			_save_settings()
 
 static func _volume(v: Variant, fallback: float) -> float:
 	return clampf(float(v), 0.0, 1.0) if v is float or v is int else fallback
@@ -227,10 +206,12 @@ static func _volume(v: Variant, fallback: float) -> float:
 func _save_settings() -> void:
 	var cf := ConfigFile.new()
 	cf.load(SETTINGS)
-	cf.set_value("audio", "master", master)
 	cf.set_value("audio", "music", music_volume)
 	cf.set_value("audio", "sfx", sfx_volume)
 	cf.set_value("audio", "ambience", ambience_volume)
-	cf.set_value("audio", "muted", muted)
+	if cf.has_section_key("audio", "master"):
+		cf.erase_section_key("audio", "master")
+	if cf.has_section_key("audio", "muted"):
+		cf.erase_section_key("audio", "muted")
 	if cf.save(SETTINGS) != OK:
 		push_warning("settings could not be saved")

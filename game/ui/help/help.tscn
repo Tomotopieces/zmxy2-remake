@@ -110,7 +110,6 @@ text = "移动
 背包 / 技能 / 法宝
 暂停
 返回
-音量 / 静音
 全屏"
 
 [node name="Keyboard" type="Label" parent="Panel/Controls" unique_id=228066009]
@@ -133,7 +132,6 @@ H
 C / V / B
 Esc / Tab
 Esc / Tab
-- / = / M
 F11"
 
 [node name="Gamepad" type="RichTextLabel" parent="Panel/Controls" unique_id=2112864165]
@@ -157,7 +155,6 @@ text = "[img=18x18]res://ui/pad_icons/xbox_stick_l.png[/img] / [img=18x18]res://
 [img=18x18]res://ui/pad_icons/xbox_button_view_outline.png[/img]（背包）
 [img=18x18]res://ui/pad_icons/xbox_button_menu_outline.png[/img]
 [img=18x18]res://ui/pad_icons/xbox_button_b_outline.png[/img]
-—
 —"
 scroll_active = false
 autowrap_mode = 0
